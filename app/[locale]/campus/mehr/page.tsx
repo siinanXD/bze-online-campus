@@ -7,6 +7,7 @@ export default async function Mehr({ params }: { params: Promise<{ locale: strin
   const { locale } = await params;
   const t = await getTranslations('campus');
   const links: [string, string][] = [
+    [t('fortschritt'), `/${locale}/campus/fortschritt`],
     [t('profil'), `/${locale}/campus/profil`],
     [t('datenschutz'), `/${locale}/datenschutz`],
     [t('impressum'), `/${locale}/impressum`],
@@ -16,7 +17,7 @@ export default async function Mehr({ params }: { params: Promise<{ locale: strin
       <h1 className="pt-2 text-2xl font-extrabold">{t('mehr')}</h1>
       <Card className="divide-y divide-border">
         {links.map(([label, href]) => (
-          <Link key={href} href={href} className="block py-3 first:pt-0 last:pb-0">{label}</Link>
+          <Link key={href} href={href} className="block py-3 first:pt-0 last:pb-0 touchable min-h-12">{label}</Link>
         ))}
       </Card>
       <LogoutButton />

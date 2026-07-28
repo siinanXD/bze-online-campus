@@ -422,14 +422,82 @@
     "profilPlatzhalter": "إعدادات إضافية (حجم الخط، الوضع الداكن، التذكيرات، تصدير البيانات) لاحقًا.",
     "datenschutz": "الخصوصية",
     "impressum": "بيانات الناشر",
-    "abmelden": "تسجيل الخروج"
+    "abmelden": "تسجيل الخروج",
+    "fortschritt": "التقدم والشارات",
+    "fortsetzenTitel": "متابعة التعلم",
+    "fortsetzenAlsNaechstes": "التالي: {thema}",
+    "fortsetzenRest": "{offen} أسئلة أساسية مفتوحة · {prozent} %",
+    "fortsetzenCta": "فتح"
   },
   "ausbilder": {
     "cockpit": "لوحة المدرّب",
-    "hinweis": "نظرة عامة على المتدرّبين المعيّنين لك. التحليلات التفصيلية لاحقًا.",
+    "hinweis": "نظرة عامة على المتدرّبين مع التقدم والنشاط وعلامات المخاطر.",
     "teilnehmer": "المتدرّبون",
     "keineTeilnehmer": "لا يوجد متدرّبون معيّنون لك بعد.",
-    "reviewLink": "مراجعة النصوص الحرة",
+    "nav": {
+      "label": "تنقل المدرّب",
+      "cockpit": "اللوحة",
+      "kohorte": "الفوج",
+      "review": "مراجعة النص الحر"
+    },
+    "spalten": {
+      "fortschritt": "التقدم",
+      "lernpunkte": "نقاط التعلم",
+      "fragenWoche": "أسئلة/أسبوع",
+      "quote": "نسبة الصحة",
+      "pruefungen": "الاختبارات",
+      "letzteNote": "آخر درجة",
+      "aktiveTage": "أيام نشطة",
+      "letzteAktivitaet": "آخر نشاط",
+      "risiko": "المخاطر"
+    },
+    "risiko": {
+      "ok": "لا مخاطر",
+      "aktivitaet": "أقل من 3 أيام تعلم/أسبوع",
+      "pruefungen": "اختباران متتاليان غير ناجحين"
+    },
+    "kohorte": {
+      "titel": "عرض الفوج",
+      "untertitel": "المتوسطات والمواضيع ذات أعلى نسبة خطأ.",
+      "keine": "لا أفواج ظاهرة.",
+      "teilnehmer": "المتدرّبون",
+      "fortschrittAvg": "متوسط التقدم",
+      "lernpunkteAvg": "متوسط نقاط التعلم",
+      "quoteAvg": "متوسط النسبة",
+      "schwachTitel": "أعلى نسبة خطأ جماعية",
+      "schwachKeine": "لا محاولات كافية للتقييم بعد.",
+      "versuche": "{n} محاولات",
+      "fehlerquote": "{wert} % أخطاء"
+    },
+    "detail": {
+      "zurueck": "العودة إلى اللوحة",
+      "nichtGefunden": "المتدرّب غير موجود أو غير معيّن لك.",
+      "bereiche": "التقدم حسب المجال",
+      "fertig": "مكتمل",
+      "offen": "مفتوح",
+      "fehlerschwerpunkte": "مواطن الخطأ",
+      "fehler": "{n} أخطاء مفتوحة",
+      "keineFehler": "لا مواطن خطأ مفتوحة.",
+      "heatmap": "النشاط (28 يومًا)",
+      "heatmapAria": "خريطة حرارية لمحاولات التعلم خلال 28 يومًا",
+      "heatmapHinweis": "الأغمق = محاولات أكثر في ذلك اليوم.",
+      "pruefungen": "الاختبارات",
+      "keinePruefungen": "لا اختبارات مُسلَّمة بعد.",
+      "pruefungOhneTitel": "اختبار أسبوعي",
+      "note": "درجة {n}",
+      "pruefungsreife": "جاهزية الامتحان / التوصية",
+      "kammerhinweis": "القبول لامتحان الغرفة يتم عبر الغرفة. هنا تؤكد توصية فقط — وليس القبول.",
+      "keineReife": "لم تُطلق توصية جاهزية بعد.",
+      "reifeOffen": "لم تُبلغ بعد",
+      "reifeEmpfohlen": "المعايير مستوفاة — التوصية معلّقة",
+      "reifeBestaetigt": "أُكّدت التوصية",
+      "kommentar": "تعليق",
+      "kommentarLabel": "تعليق على التوصية (اختياري)",
+      "bestaetigen": "تأكيد التوصية",
+      "bestaetigenLaeuft": "جارٍ الحفظ …",
+      "bestaetigenHinweis": "هذه توصية مدرّب وليست قبولًا للامتحان.",
+      "bestaetigenFehler": "فشل التأكيد. حاول مرة أخرى."
+    },
     "review": {
       "titel": "مراجعة النصوص الحرة",
       "untertitel": "تقييم إجابات النصوص الحرة المفتوحة ومراجعة اقتراحات الذكاء الاصطناعي.",
@@ -459,6 +527,69 @@
         "nutzermeldung": "بلاغ مستخدم",
         "sonstige": "مراجعة"
       }
+    },
+    "reviewLink": "مراجعة النصوص الحرة"
+  },
+  "fortschritt": {
+    "titel": "التقدم والشارات",
+    "untertitel": "أهدافك حتى جاهزية الامتحان — دون حظر للمحتوى.",
+    "nichtAngemeldet": "يرجى تسجيل الدخول.",
+    "gesamtLabel": "التقدم الإجمالي: {wert} بالمئة",
+    "lernpunkte": "نقاط التعلم",
+    "punkte": "نقاط",
+    "pruefungsreifeLink": "عرض جاهزية الامتحان",
+    "fortsetzen": "التالي",
+    "fortsetzenCta": "متابعة التعلم",
+    "empfehlungGrund": {
+      "kernfragen": "لا يزال هناك {offen} أسئلة أساسية مفتوحة",
+      "fachkunde": "لم تُقرأ المادة التخصصية بالكامل بعد",
+      "naechstes": "الموضوع التالي للمراجعة"
+    },
+    "gates": {
+      "phasen": "المراحل وجاهزية الامتحان",
+      "fachgebiete": "المجالات التخصصية",
+      "topics": "المواضيع"
+    },
+    "gateStatus": {
+      "offen": "ما زال مفتوحًا",
+      "erreicht": "تم بلوغه",
+      "empfohlen": "توصية للمدرّب",
+      "bestaetigt": "أكّدها المدرّب"
+    },
+    "prozentKurz": "{wert} %",
+    "lesezeitHinweis": "ملاحظة: وقت القراءة أقل من المطلوب — تذكير فقط، بلا حظر.",
+    "abzeichen": "الشارات",
+    "keineAbzeichen": "لا شارات في الكتالوج بعد.",
+    "abzeichenFrei": "مفعّلة",
+    "abzeichenGesperrt": "لم تُبلغ بعد",
+    "keineDaten": "لم تُحمَّل مراحل بعد.",
+    "pruefungsreife": {
+      "titel": "جاهزية الامتحان",
+      "untertitel": "المعايير وحالة توصية المدرّب.",
+      "zurueck": "العودة إلى التقدم",
+      "nichtAngemeldet": "يرجى تسجيل الدخول.",
+      "kammerhinweis": "القبول لامتحان الغرفة يتم عبر الغرفة وليس عبر هذا التطبيق. هنا ترى فقط جاهزية الامتحان وتوصية المدرّب.",
+      "kriteriumKern": "أُنجزت جميع الأسئلة الأساسية للمرحلة",
+      "kriteriumPruefungen": "اختبارات أسبوعية بـ 50 نقطة على الأقل: {ist} من {soll}",
+      "kriteriumErfuellt": "المعايير مستوفاة — التوصية ممكنة",
+      "kriteriumAusbilder": "أكّد المدرّب التوصية",
+      "statusOffen": "لم تُبلغ بعد",
+      "statusEmpfohlen": "أُرسلت توصية للمدرّب",
+      "statusBestaetigt": "أكّد المدرّب التوصية"
+    }
+  },
+  "achievement": {
+    "ersteKernfrage": {
+      "titel": "أول سؤال أساسي",
+      "beschreibung": "أنجزت أول سؤال أساسي."
+    },
+    "zehnKernfragen": {
+      "titel": "عشرة أسئلة أساسية",
+      "beschreibung": "أُنجزت عشرة أسئلة أساسية."
+    },
+    "hundertPunkte": {
+      "titel": "100 نقطة تعلم",
+      "beschreibung": "جمعت 100 نقطة تعلم."
     }
   }
 }
