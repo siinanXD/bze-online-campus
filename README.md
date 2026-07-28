@@ -55,7 +55,7 @@ Der Seed lädt: Träger BZE, Kammer IHK Aachen, IHK-100-Bewertungsschlüssel, Be
 
 - [x] **AP-00** Repo & Werkzeugkette — Monorepo, Next.js-Skelett, CI, Doku-Gate, `.env.example`
 - [x] **AP-01** Datenmodell — alle Tabellen aus Spec §3, RLS auf jeder Tabelle (mit Testnutzern je Rolle geprüft), MAF-Seed aus Fragenpool
-- [ ] **AP-02** Design-System & i18n — shadcn/ui-Basis, Tokens, RTL, WCAG 2.1 AA (i18n-Grundgerüst vorhanden, UI folgt)
+- [x] **AP-02** Design-System & i18n — Tailwind-Tokens (Spec §7), `@bze/ui`-Basiskomponenten (Button, Card, StatusBadge mit Farbe+Symbol+Label, ProgressRing, Chip), i18n de/ar mit RTL, Showcase-Startseite. Typecheck und `next build` grün.
 
 **Welle 1** — [ ] AP-03 Auth · [ ] AP-04 Shell/Landing · [ ] AP-05 Fachkunde · [ ] AP-06 Lernmodus · [ ] AP-07 Admin
 **Welle 2** — [ ] AP-08 Wochenprüfung · [ ] AP-09 KI-Freitextbewertung · [ ] AP-10 Fortschritt/Gates · [ ] AP-11 Ausbilder-Cockpit

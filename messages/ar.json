@@ -1,1 +1,15 @@
-{ "start": { "titel": "BZE Online Campus", "hinweis": "Scaffold ready. UI in AP-02+." } }
+{
+  "app": { "name": "منصة BZE", "traeger": "مركز التدريب المهني في أويسكيرشن" },
+  "nav": { "start": "الرئيسية", "lernen": "التعلّم", "pruefung": "الاختبار", "bericht": "التقرير", "mehr": "المزيد" },
+  "status": { "neu": "جديد", "einmalRichtig": "صحيح مرة واحدة", "falsch": "خطأ", "abgeschlossen": "مكتمل" },
+  "common": { "weiter": "التالي", "abbrechen": "إلغاء", "einloggen": "تسجيل الدخول", "sprache": "اللغة" },
+  "start": { "titel": "منصة BZE التعليمية", "hinweis": "الأساس ونظام التصميم جاهزان (AP-00 إلى AP-02). الواجهة تأتي في الموجة الأولى." },
+  "showcase": {
+    "titel": "نظام التصميم (AP-02)",
+    "komponenten": "المكوّنات الأساسية",
+    "aktionen": "الإجراءات",
+    "status": "حالة السؤال (لون + رمز + نص)",
+    "fortschritt": "التقدّم",
+    "hinweis": "اللون ليس الحامل الوحيد للمعلومة — لكل حالة رمز ونص."
+  }
+}

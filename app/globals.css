@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: 220 20% 97%;
+  --surface: 0 0% 100%;
+  --border: 220 14% 88%;
+  --fg: 222 30% 12%;
+  --muted: 220 9% 42%;
+  --accent: 243 62% 52%;        /* eine ruhige Akzentfarbe (Indigo) */
+  --accent-fg: 0 0% 100%;
+  --status-neu: 220 9% 55%;     /* neu = neutral-grau  ○ */
+  --status-teil: 142 45% 42%;   /* einmal richtig = hellgrün ◐ */
+  --status-falsch: 0 66% 48%;   /* falsch = rot ✕ */
+  --status-fertig: 142 65% 32%; /* abgeschlossen = kräftiges Grün ✓ */
+}
+.dark{
+  --bg: 222 30% 9%;
+  --surface: 222 24% 13%;
+  --border: 222 16% 22%;
+  --fg: 220 20% 94%;
+  --muted: 220 12% 66%;
+  --accent: 243 70% 66%;
+  --accent-fg: 222 40% 10%;
+}
+*{ box-sizing: border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  background: hsl(var(--bg));
+  color: hsl(var(--fg));
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+/* Sichtbarer Fokus für vollständige Tastaturbedienung (WCAG 2.1 AA) */
+:where(a,button,input,select,textarea,[tabindex]):focus-visible{
+  outline: 3px solid hsl(var(--accent));
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+/* Mindest-Berührungsziel */
+.touchable{ min-height: 48px; min-width: 48px; }

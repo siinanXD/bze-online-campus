@@ -1,1 +1,15 @@
-{ "start": { "titel": "BZE Online Campus", "hinweis": "Grundgerüst steht. Oberfläche folgt in AP-02 ff." } }
+{
+  "app": { "name": "BZE Online Campus", "traeger": "Berufsbildungszentrum Euskirchen" },
+  "nav": { "start": "Start", "lernen": "Lernen", "pruefung": "Prüfung", "bericht": "Bericht", "mehr": "Mehr" },
+  "status": { "neu": "Neu", "einmalRichtig": "Einmal richtig", "falsch": "Falsch", "abgeschlossen": "Abgeschlossen" },
+  "common": { "weiter": "Weiter", "abbrechen": "Abbrechen", "einloggen": "Einloggen", "sprache": "Sprache" },
+  "start": { "titel": "BZE Online Campus", "hinweis": "Fundament & Design-System stehen (AP-00 bis AP-02). Die Oberfläche folgt in Welle 1." },
+  "showcase": {
+    "titel": "Design-System (AP-02)",
+    "komponenten": "Basiskomponenten",
+    "aktionen": "Aktionen",
+    "status": "Fragenstatus (Farbe + Symbol + Textlabel)",
+    "fortschritt": "Fortschritt",
+    "hinweis": "Farbe ist nie der einzige Informationsträger — jeder Status trägt Symbol und Textlabel."
+  }
+}
