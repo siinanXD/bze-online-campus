@@ -428,6 +428,37 @@
     "cockpit": "لوحة المدرّب",
     "hinweis": "نظرة عامة على المتدرّبين المعيّنين لك. التحليلات التفصيلية لاحقًا.",
     "teilnehmer": "المتدرّبون",
-    "keineTeilnehmer": "لا يوجد متدرّبون معيّنون لك بعد."
+    "keineTeilnehmer": "لا يوجد متدرّبون معيّنون لك بعد.",
+    "reviewLink": "مراجعة النصوص الحرة",
+    "review": {
+      "titel": "مراجعة النصوص الحرة",
+      "untertitel": "تقييم إجابات النصوص الحرة المفتوحة ومراجعة اقتراحات الذكاء الاصطناعي.",
+      "zurueckCockpit": "إلى لوحة المدرّب",
+      "lernfeedbackHinweis": "تقييم الذكاء الاصطناعي هو تغذية راجعة للتعلم وليس درجة امتحان.",
+      "ausstehendTitel": "لم يُقيَّم بعد",
+      "ausstehendLeer": "لا توجد إجابات نصية مفتوحة.",
+      "queueTitel": "قائمة المراجعة",
+      "queueLeer": "لا توجد عناصر مراجعة مفتوحة.",
+      "statusOffen": "مفتوح",
+      "keineAntwort": "(بدون إجابة)",
+      "kiStarten": "بدء تقييم الذكاء الاصطناعي",
+      "staerken": "نقاط القوة",
+      "luecken": "الفجوات",
+      "hinweis": "ملاحظة",
+      "punkteConfidence": "النقاط: {punkte} · الثقة: {confidence} %",
+      "korrigiertePunkte": "النقاط المصححة",
+      "kommentar": "تعليق",
+      "bestaetigen": "تأكيد",
+      "korrigieren": "تصحيح",
+      "ablehnen": "رفض",
+      "fehlerAllgemein": "فشل الإجراء. حاول مرة أخرى.",
+      "grund": {
+        "niedrigeConfidence": "ثقة منخفضة",
+        "stichprobe": "عينة",
+        "einspruch": "اعتراض",
+        "nutzermeldung": "بلاغ مستخدم",
+        "sonstige": "مراجعة"
+      }
+    }
   }
 }

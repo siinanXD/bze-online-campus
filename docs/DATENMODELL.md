@@ -18,7 +18,7 @@ Postgres, UUID-Primärschlüssel, `created_at`/`updated_at` überall, **RLS auf 
 
 **Ausbildungsnachweis** — `nachweise`, `nachweis_signaturen`, `nachweis_korrekturen`
 
-**Qualität, Betrieb, Video** — `review_queue`, `quelldokumente`, `normen`, `frage_normen`, `ki_aufrufe`, `audit_log`, `videos`, `video_skripte`, `video_untertitel`
+**Qualität, Betrieb, Video** — `review_queue`, `quelldokumente`, `normen`, `frage_normen`, `ki_aufrufe`, `audit_log`, `videos`, `video_skripte`, `video_untertitel`, `freitext_bewertung_cache` (AP-09)
 
 ## RLS-Hilfsfunktionen
 
@@ -62,3 +62,4 @@ Gegen PostgreSQL 16 + pgvector:
 
 - `themen`-Hierarchie wird ab AP-05/06 mit Lerneinheiten bespielt.
 - Views aus Spec §4.1 (`v_fortschritt_*`, `v_wochenaktivitaet_nutzer`, `v_kohorten_uebersicht`) und `verarbeite_versuch()` gehören zu AP-06/AP-10 und folgen dort additiv.
+- AP-09: `freitext_bewertung_cache`, RPC `pruefung_freitext_abschliessen` (Migration `0005_freitext_bewertung.sql`), Edge Function `bewerte-freitext`.
