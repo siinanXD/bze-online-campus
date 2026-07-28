@@ -11,5 +11,44 @@
     "status": "Fragenstatus (Farbe + Symbol + Textlabel)",
     "fortschritt": "Fortschritt",
     "hinweis": "Farbe ist nie der einzige Informationsträger — jeder Status trägt Symbol und Textlabel."
+  },
+  "auth": {
+    "login": {
+      "titel": "Anmelden",
+      "untertitel": "Melde dich mit deinem Benutzernamen an.",
+      "benutzername": "Benutzername",
+      "passwort": "Passwort",
+      "anmelden": "Einloggen",
+      "ladeStatus": "Anmeldung läuft …"
+    },
+    "passwortAendern": {
+      "titel": "Neues Passwort festlegen",
+      "hinweis": "Aus Sicherheitsgründen musst du beim ersten Login ein eigenes Passwort vergeben.",
+      "neuesPasswort": "Neues Passwort",
+      "passwortWiederholen": "Passwort wiederholen",
+      "speichern": "Passwort speichern",
+      "ladeStatus": "Wird gespeichert …"
+    },
+    "sprachwahl": {
+      "titel": "Sprache und Kohorte",
+      "hinweis": "Wähle deine Sprache. Übungsfragen und Fachkunde bleiben immer zusätzlich auf Deutsch.",
+      "sprache": "Sprache",
+      "beitrittscode": "Kohorten-Code (optional)",
+      "beitrittscodeHinweis": "Den Code bekommst du von deiner Ausbildungsstätte. Du kannst ihn auch später eintragen.",
+      "weiter": "Weiter",
+      "ueberspringen": "Später festlegen",
+      "ladeStatus": "Wird gespeichert …",
+      "beitrittErfolgreich": "Kohorte „{kohorte}“ beigetreten."
+    },
+    "fehler": {
+      "pflichtfeld": "Bitte fülle alle Felder aus.",
+      "anmeldungFehlgeschlagen": "Benutzername oder Passwort ist falsch.",
+      "minLaenge": "Das Passwort muss mindestens 8 Zeichen haben.",
+      "stimmtNichtUeberein": "Die Passwörter stimmen nicht überein.",
+      "serverfehler": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+      "codeUngueltig": "Dieser Kohorten-Code ist ungültig.",
+      "beitrittNichtMoeglich": "Der Beitritt per Code ist gerade nicht möglich. Bitte wende dich an deine Verwaltung.",
+      "zuLang": "Das ist zu lang."
+    }
   }
 }
