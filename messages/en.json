@@ -401,5 +401,33 @@
     "freitextOffenTitel": "Freitext wird noch bewertet",
     "freitextOffenText": "Deine Multiple-Choice-Antworten sind ausgewertet. Sobald die Freitext-Aufgaben bewertet sind, erscheint hier deine Gesamtnote.",
     "mcVorlaeufig": "Multiple-Choice vorläufig: {erreicht} Punkte."
+  },
+  "campus": {
+    "start": "Start",
+    "lernen": "Lernen",
+    "lernenInfo": "Fragen üben nach Themen",
+    "pruefung": "Prüfung",
+    "pruefungInfo": "Wochenprüfung schreiben",
+    "themen": "Themen zum Üben",
+    "keineThemen": "Noch keine Fragen freigegeben.",
+    "topics": "Fachkunde",
+    "topicsInfo": "Lerneinheiten lesen",
+    "oeffnen": "Öffnen",
+    "profil": "Profil",
+    "mehr": "Mehr",
+    "benutzername": "Benutzername",
+    "name": "Name",
+    "rolle": "Rolle",
+    "sprache": "Sprache",
+    "profilPlatzhalter": "Weitere Einstellungen (Schriftgröße, Dunkelmodus, Erinnerungen, Datenexport) folgen.",
+    "datenschutz": "Datenschutz",
+    "impressum": "Impressum",
+    "abmelden": "Abmelden"
+  },
+  "ausbilder": {
+    "cockpit": "Ausbilder-Cockpit",
+    "hinweis": "Übersicht deiner zugewiesenen Teilnehmer. Detailauswertungen folgen in AP-11.",
+    "teilnehmer": "Teilnehmer",
+    "keineTeilnehmer": "Dir sind noch keine Teilnehmer zugewiesen."
   }
 }
