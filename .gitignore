@@ -9,3 +9,6 @@ out/
 supabase/.branches/
 supabase/.temp/
 coverage/
+
+*.tsbuildinfo
+.env.local
