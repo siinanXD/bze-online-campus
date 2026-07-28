@@ -3,11 +3,20 @@ import { cookies } from 'next/headers';
 
 type CookieToSet = { name: string; value: string; options: CookieOptions };
 
+function supabaseOrigin(url: string | undefined): string {
+  if (!url) return '';
+  try {
+    return new URL(url).origin;
+  } catch {
+    return url.replace(/\/rest\/v1\/?$/i, '').replace(/\/$/, '');
+  }
+}
+
 /** Server-Supabase-Client (RSC/Route Handler). RLS gilt über den Nutzer-JWT. */
 export async function createServerSupabase() {
   const cookieStore = await cookies();
   return createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    supabaseOrigin(process.env.NEXT_PUBLIC_SUPABASE_URL),
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
       cookies: {
