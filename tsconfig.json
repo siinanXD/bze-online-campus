@@ -27,6 +27,9 @@
       ],
       "@bze/core/mastery": [
         "./packages/core/mastery/index.ts"
+      ],
+      "@bze/core/bewertung": [
+        "./packages/core/bewertung/index.ts"
       ]
     },
     "lib": [
