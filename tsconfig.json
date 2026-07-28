@@ -18,6 +18,12 @@
       ],
       "@bze/db": [
         "./packages/db/index.ts"
+      ],
+      "@bze/db/server": [
+        "./packages/db/server.ts"
+      ],
+      "@bze/db/browser": [
+        "./packages/db/browser.ts"
       ]
     },
     "lib": [

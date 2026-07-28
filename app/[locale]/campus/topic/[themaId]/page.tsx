@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
-import { createServerSupabase } from '@bze/db';
+import { createServerSupabase } from '@bze/db/server';
 import { Card, ProgressRing } from '@bze/ui';
 // Relativer Import statt Alias: packages/ui/mdx ist kein eigenes pnpm-Workspace-Paket.
 import { extractKapitel } from '../../../../../packages/ui/mdx';

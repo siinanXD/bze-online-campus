@@ -1,4 +1,4 @@
-import type { createServerSupabase } from '@bze/db';
+import type { createServerSupabase } from '@bze/db/server';
 
 /**
  * Schreibt einen Eintrag in `audit_log` (Spec §3, §6.4 Nr. 27).

@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
-import { createServerSupabase } from '@bze/db';
+import { createServerSupabase } from '@bze/db/server';
 // Relativer Import statt Alias: packages/ui/mdx ist kein eigenes pnpm-Workspace-Paket.
 import { renderFachkundeMdx } from '../../../../../../../packages/ui/mdx';
 import { holeLerneinheit, holeLerneinheitenFuerThema, holeFortschritt, holeAktuellenNutzerId } from '../../../_lib/queries';

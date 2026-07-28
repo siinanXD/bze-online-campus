@@ -1,7 +1,7 @@
 'use server';
 
 import { z } from 'zod';
-import { createServerSupabase } from '@bze/db';
+import { createServerSupabase } from '@bze/db/server';
 
 /**
  * Persistenz des Lesefortschritts (SPEC §3 `lerneinheit_fortschritt`, §4.2). RLS erzwingt

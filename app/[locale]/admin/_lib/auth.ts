@@ -1,4 +1,4 @@
-import { createServerSupabase } from '@bze/db';
+import { createServerSupabase } from '@bze/db/server';
 import type { AdminProfil } from './types';
 
 export interface AdminSitzung {
