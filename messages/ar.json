@@ -213,5 +213,120 @@
       "beschreibung": "حدث خطأ ما. حاول مرة أخرى.",
       "erneutVersuchen": "أعد المحاولة"
     }
+  },
+  "admin": {
+    "titel": "الإدارة",
+    "untertitel": "إدارة المستخدمين وسجلّ المراجعة",
+    "nav": {
+      "beschriftung": "قسم الإدارة",
+      "nutzerverwaltung": "إدارة المستخدمين",
+      "auditLog": "سجلّ المراجعة"
+    },
+    "rollen": {
+      "teilnehmer": "متدرّب",
+      "ausbilder": "مدرّب",
+      "verwaltung": "إدارة",
+      "admin": "مسؤول النظام"
+    },
+    "zugriff": {
+      "titel": "لا توجد صلاحية وصول",
+      "hinweis": "هذا القسم مخصص للإدارة ومسؤولي النظام فقط. يرجى تسجيل الدخول بحساب لديه الصلاحية اللازمة.",
+      "eingeschraenktVerwaltung": "بصفتك إدارة، ترى فقط بيانات جهتك. بعض الإجراءات، مثل قراءة سجلّ المراجعة، مخصصة لمسؤولي النظام فقط."
+    },
+    "nutzer": {
+      "titel": "المستخدمون",
+      "suche": "بحث",
+      "suchePlatzhalter": "الاسم أو اسم المستخدم",
+      "rolleFilter": "تصفية حسب الدور",
+      "statusFilter": "تصفية حسب الحالة",
+      "kohorteFilter": "تصفية حسب الدفعة",
+      "aktiv": "نشط",
+      "inaktiv": "غير نشط",
+      "kohorteDrucken": "طباعة قائمة الدفعة",
+      "anlegen": "إنشاء مستخدم",
+      "leer": "لا يوجد مستخدمون مطابقون.",
+      "spalte": {
+        "name": "الاسم",
+        "benutzername": "اسم المستخدم",
+        "rolle": "الدور",
+        "status": "الحالة"
+      },
+      "feld": {
+        "vorname": "الاسم الأول",
+        "nachname": "اسم العائلة",
+        "benutzername": "اسم المستخدم",
+        "benutzernameHinweis": "أحرف صغيرة وأرقام ونقطة وشرطة وشرطة سفلية فقط، ٣ أحرف على الأقل.",
+        "rolle": "الدور",
+        "kohorte": "الدفعة",
+        "kohorteWaehlen": "اختر الدفعة",
+        "sprache": "اللغة"
+      },
+      "wirdAngelegt": "جارٍ الإنشاء …",
+      "zugangsdatenTitel": "بيانات الدخول — تظهر الآن فقط",
+      "zugangsdatenHinweis": "لا تُحفظ كلمة المرور المبدئية هذه في أي مكان ولا يمكن عرضها مرة أخرى بعد الآن. سجّلها أو اطبعها أو سلّمها الآن.",
+      "initialpasswort": "كلمة المرور المبدئية",
+      "weiterenAnlegen": "إنشاء مستخدم آخر",
+      "zurListe": "العودة إلى القائمة",
+      "nie": "لم يسجّل الدخول بعد",
+      "letzterLogin": "آخر تسجيل دخول",
+      "angelegtAm": "تاريخ الإنشاء",
+      "keineKohorte": "غير مسجّل في أي دفعة",
+      "mussPasswortAendern": "على هذا المستخدم تعيين كلمة مرور جديدة عند تسجيل الدخول القادم.",
+      "aktionenTitel": "الإجراءات",
+      "passwortZuruecksetzen": "إعادة تعيين كلمة المرور",
+      "passwortBestaetigung": "سيتم إنشاء كلمة مرور مبدئية جديدة، وتفقد كلمة المرور الحالية صلاحيتها فورًا.",
+      "bestaetigen": "تأكيد",
+      "deaktivieren": "تعطيل",
+      "aktivieren": "تفعيل",
+      "zuweisungenTitel": "التكليفات",
+      "keinAusbilderZugewiesen": "لم يتم تكليف مدرّب بعد.",
+      "keinTeilnehmerZugewiesen": "لم يتم تكليف متدرّب بعد.",
+      "ausbilderZuweisen": "تكليف مدرّب",
+      "teilnehmerZuweisen": "تكليف متدرّب",
+      "entfernen": "إزالة",
+      "bitteWaehlen": "يرجى الاختيار",
+      "zuweisen": "تكليف",
+      "passwortNichtVerfuegbar": "— (لم تعد متاحة)",
+      "jetztDrucken": "طباعة الآن",
+      "druckHinweis": "تظهر كلمات المرور المبدئية هنا فقط للمستخدمين الذين أُنشئوا للتو في هذا المتصفح. بعد ذلك لا يمكن استرجاعها — يمكن عند الحاجة إنشاء كلمة مرور جديدة عبر «إعادة تعيين كلمة المرور»."
+    },
+    "audit": {
+      "titel": "سجلّ المراجعة",
+      "nurAdmin": "سجلّ المراجعة متاح لمسؤولي النظام فقط.",
+      "feld": {
+        "aktion": "الإجراء يحتوي على",
+        "zielTyp": "نوع الهدف يحتوي على",
+        "von": "من",
+        "bis": "إلى"
+      },
+      "filtern": "تصفية",
+      "leer": "لا توجد إدخالات مطابقة لهذه التصفية.",
+      "spalte": {
+        "zeitpunkt": "الوقت",
+        "akteur": "المستخدم المنفّذ",
+        "aktion": "الإجراء",
+        "ziel": "الهدف",
+        "details": "التفاصيل"
+      },
+      "systemAkteur": "النظام",
+      "seitenNavigation": "الصفحات"
+    },
+    "fehler": {
+      "kein_zugriff": "لا توجد صلاحية وصول. يرجى تسجيل الدخول من جديد.",
+      "ungueltige_eingabe": "الإدخال غير صالح. يرجى مراجعة الحقول.",
+      "ungueltige_id": "مرجع غير صالح. يرجى إعادة تحميل الصفحة.",
+      "rolle_nicht_erlaubt": "لا يمكنك منح هذا الدور.",
+      "unerwartete_antwort": "استجابة غير متوقعة من الخادم. يرجى المحاولة لاحقًا.",
+      "edge_konfiguration_fehlt": "الوظيفة غير متاحة حاليًا (الإعدادات ناقصة).",
+      "edge_nicht_erreichbar": "الوظيفة غير متاحة حاليًا. يرجى التحقق من الاتصال.",
+      "nur_admin": "هذا الإجراء مخصص لمسؤولي النظام فقط.",
+      "zu_kurz": "قصير جدًا.",
+      "zu_lang": "طويل جدًا.",
+      "ungueltiges_format": "صيغة غير صالحة.",
+      "pflichtfeld": "حقل إلزامي.",
+      "laden": "تعذّر تحميل البيانات.",
+      "nicht_gefunden": "غير موجود.",
+      "allgemein": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+    }
   }
 }
