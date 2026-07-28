@@ -58,7 +58,19 @@ Gegen PostgreSQL 16 + pgvector:
 
 `supabase/seed/0001_maf_seed.sql`, erzeugt aus `MAF_Fragenpool_Charge1.json` durch `scripts/generate_seed.py` (deterministische uuid5-IDs, idempotent). Inhalt: Träger BZE, Kammer IHK Aachen, IHK-100-Schlüssel, Beruf MAF, 2 Phasen, 3 Prüfungsbereiche, 15 Themen, 70 Fragen (57 MC + 13 Freitext) im Status `entwurf`, Normbezüge als `normen`/`frage_normen`.
 
+## AP-06 / AP-10 — Fortschritt
+
+Migration [`0002_mastery.sql`](../supabase/migrations/0002_mastery.sql): `verarbeite_versuch()`, `kohorte_beitreten()`, erste Views `v_fortschritt_thema` / `v_fortschritt_bereich`.
+
+Migration [`0005_fortschritt.sql`](../supabase/migrations/0005_fortschritt.sql) (AP-10):
+
+- Views (security_invoker): `v_fortschritt_thema` (korrigierter Kern-Denominator), `v_fortschritt_bereich`, `v_fortschritt_phase`, `v_fortschritt_beruf`, `v_wochenaktivitaet_nutzer`, `v_kohorten_uebersicht`
+- `pruefe_achievements(user_id)`, `pruefe_pruefungsreife(user_id)` — von `verarbeite_versuch` aufgerufen
+- Unique `(user_id, phase_id)` auf `pruefungsreife`
+- Achievement-Katalog (3 Einträge: erste/zehn Kernfragen, 100 Lernpunkte)
+
+Kaskadenlogik und Fortsetzen-Empfehlung liegen in `@bze/core/fortschritt` (keine Inhaltssperre; Gates sind sichtbare Ziele). Prüfungsreife erzeugt eine **Ausbilderempfehlung**, keine Kammerzulassung.
+
 ## Offen / Folgepakete
 
 - `themen`-Hierarchie wird ab AP-05/06 mit Lerneinheiten bespielt.
-- Views aus Spec §4.1 (`v_fortschritt_*`, `v_wochenaktivitaet_nutzer`, `v_kohorten_uebersicht`) und `verarbeite_versuch()` gehören zu AP-06/AP-10 und folgen dort additiv.

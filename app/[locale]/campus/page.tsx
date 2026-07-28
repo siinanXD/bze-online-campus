@@ -1,21 +1,22 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
-import { Card, Button, Chip } from '@bze/ui';
+import { Card, Button, Chip, ProgressRing } from '@bze/ui';
 import { Greeting } from '@/components/shell';
+import { ladeFortsetzenEmpfehlung } from './fortschritt/_lib/queries';
 
 export default async function CampusStart({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations('campus');
   const supabase = await createServerSupabase();
 
-  // Vorname für Begrüßung
   const { data: { user } } = await supabase.auth.getUser();
   const { data: profil } = user
     ? await supabase.from('profiles').select('vorname').eq('id', user.id).maybeSingle()
     : { data: null };
 
-  // Themen mit freigegebenen Fragen (praktisch übbar)
+  const empfehlung = user ? await ladeFortsetzenEmpfehlung(user.id) : null;
+
   const { data: fragen } = await supabase
     .from('fragen')
     .select('thema_id, themen!inner(id,bezeichnung)')
@@ -29,6 +30,29 @@ export default async function CampusStart({ params }: { params: Promise<{ locale
   return (
     <main className="mx-auto max-w-2xl space-y-4 p-4">
       <Greeting name={profil?.vorname ?? undefined} />
+
+      {empfehlung && (
+        <Card className="flex items-center gap-3">
+          <ProgressRing
+            value={Math.round(empfehlung.anteil * 100)}
+            size={56}
+            label={`${Math.round(empfehlung.anteil * 100)} %`}
+          />
+          <div className="min-w-0 flex-1">
+            <p className="text-sm font-bold uppercase tracking-wide text-accent">{t('fortsetzenTitel')}</p>
+            <p className="font-semibold">{t('fortsetzenAlsNaechstes', { thema: empfehlung.bezeichnung })}</p>
+            <p className="text-sm text-muted">
+              {t('fortsetzenRest', {
+                offen: empfehlung.kernOffen,
+                prozent: Math.round(empfehlung.anteil * 100),
+              })}
+            </p>
+          </div>
+          <Link href={`/${locale}/campus/lernen/thema/${empfehlung.themaId}`}>
+            <Button>{t('fortsetzenCta')}</Button>
+          </Link>
+        </Card>
+      )}
 
       <div className="grid grid-cols-2 gap-3">
         <Link href={`/${locale}/campus/lernen`} className="block">

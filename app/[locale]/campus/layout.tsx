@@ -1,5 +1,6 @@
 import { createServerSupabase } from '@bze/db/server';
 import { Header, BottomNav } from '@/components/shell';
+import { ladeBerufFortschrittProzent } from './fortschritt/_lib/queries';
 
 export default async function CampusLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createServerSupabase();
@@ -7,11 +8,11 @@ export default async function CampusLayout({ children }: { children: React.React
 
   let fortschritt = 0;
   if (user) {
-    const { count: fertig } = await supabase.from('fragen_mastery')
-      .select('*', { count: 'exact', head: true }).eq('status', 'abgeschlossen');
-    const { count: gesamt } = await supabase.from('fragen_mastery')
-      .select('*', { count: 'exact', head: true });
-    if (gesamt && gesamt > 0) fortschritt = Math.round(((fertig ?? 0) / gesamt) * 100);
+    try {
+      fortschritt = await ladeBerufFortschrittProzent(user.id);
+    } catch {
+      fortschritt = 0;
+    }
   }
 
   return (

@@ -30,6 +30,9 @@
       ],
       "@bze/core/bewertung": [
         "./packages/core/bewertung/index.ts"
+      ],
+      "@bze/core/fortschritt": [
+        "./packages/core/fortschritt/index.ts"
       ]
     },
     "lib": [
