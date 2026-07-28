@@ -1,0 +1,2747 @@
+{
+  "meta": {
+    "beruf": "Maschinen- und Anlagenführer/-in",
+    "schwerpunkt": "Metall- und Kunststofftechnik",
+    "kammer": "IHK",
+    "rechtsgrundlage": "MaschFüAusbV vom 27.04.2004, zuletzt geändert 14.06.2023",
+    "dauer_monate_umschulung": 16,
+    "charge": "Pilotcharge 1",
+    "erstellt": "2026-07-28",
+    "status_hinweis": "Alle Fragen haben Status 'entwurf'. Vor Aufnahme in den Kernpool ist die Freigabe durch einen Ausbilder zwingend. Fragen mit enthaelt_zahlenwert=true benoetigen zusaetzlich eine Tabellenbuch-Fundstelle.",
+    "anzahl_mc": 57,
+    "anzahl_freitext": 13
+  },
+  "pruefungsbereiche": [
+    {
+      "code": "PT",
+      "bezeichnung": "Produktionstechnik",
+      "gewichtung_prozent": 50,
+      "pruefungsdauer_minuten": 120,
+      "themen": [
+        {
+          "code": "PT-TU",
+          "bezeichnung": "Technische Unterlagen"
+        },
+        {
+          "code": "PT-WS",
+          "bezeichnung": "Werkstoffe"
+        },
+        {
+          "code": "PT-WZ",
+          "bezeichnung": "Werkzeuge"
+        },
+        {
+          "code": "PT-MA",
+          "bezeichnung": "Funktion von Maschinen und Anlagen"
+        },
+        {
+          "code": "PT-PR",
+          "bezeichnung": "Prüfverfahren und Prüfmittel"
+        },
+        {
+          "code": "PT-FT",
+          "bezeichnung": "Fertigungstechniken"
+        }
+      ]
+    },
+    {
+      "code": "PP",
+      "bezeichnung": "Produktionsplanung",
+      "gewichtung_prozent": 30,
+      "pruefungsdauer_minuten": 60,
+      "themen": [
+        {
+          "code": "PP-AS",
+          "bezeichnung": "Arbeitsschritte"
+        },
+        {
+          "code": "PP-QS",
+          "bezeichnung": "Qualitätssicherung"
+        },
+        {
+          "code": "PP-IH",
+          "bezeichnung": "Vorbeugende Instandhaltung"
+        },
+        {
+          "code": "PP-PA",
+          "bezeichnung": "Produktionsanlagen"
+        },
+        {
+          "code": "PP-UP",
+          "bezeichnung": "Übergabeprotokoll"
+        }
+      ]
+    },
+    {
+      "code": "WISO",
+      "bezeichnung": "Wirtschafts- und Sozialkunde",
+      "gewichtung_prozent": 20,
+      "pruefungsdauer_minuten": 60,
+      "themen": [
+        {
+          "code": "WISO-BA",
+          "bezeichnung": "Berufsbildung, Arbeits- und Tarifrecht"
+        },
+        {
+          "code": "WISO-SV",
+          "bezeichnung": "Sozialversicherung und Mitbestimmung"
+        },
+        {
+          "code": "WISO-WI",
+          "bezeichnung": "Wirtschaftliche Zusammenhänge"
+        },
+        {
+          "code": "WISO-SU",
+          "bezeichnung": "Arbeitssicherheit und Umweltschutz"
+        }
+      ]
+    }
+  ],
+  "bestehensregel": "Praktischer und schriftlicher Teil jeweils mindestens ausreichend. Im schriftlichen Teil in zwei Prüfungsbereichen mindestens ausreichend, im dritten kein ungenügend.",
+  "fragen": [
+    {
+      "id": "PT-TU-001",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN ISO 128"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "In der europäischen Projektionsmethode (Methode 1) wird ein Bauteil in drei Ansichten dargestellt. Welche Ansicht steht rechts neben der Vorderansicht?",
+      "optionen": [
+        {
+          "text": "Die Ansicht von links",
+          "ist_korrekt": true,
+          "erklaerung": "In Methode 1 wird das Bauteil gedanklich um die Vorderansicht geklappt. Was man von links sieht, erscheint dadurch rechts."
+        },
+        {
+          "text": "Die Ansicht von rechts",
+          "ist_korrekt": false,
+          "erklaerung": "Das gilt in der amerikanischen Methode 3, die in Deutschland unüblich ist."
+        },
+        {
+          "text": "Die Ansicht von oben",
+          "ist_korrekt": false,
+          "erklaerung": "Die Draufsicht steht in Methode 1 unterhalb der Vorderansicht."
+        },
+        {
+          "text": "Die Rückansicht",
+          "ist_korrekt": false,
+          "erklaerung": "Die Rückansicht steht ganz außen und wird nur bei Bedarf gezeichnet."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-002",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN EN ISO 286"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Auf einer Zeichnung steht die Maßangabe Ø25 H7. Was bedeutet diese Angabe?",
+      "optionen": [
+        {
+          "text": "Eine Bohrung mit Nennmaß 25 mm und dem Toleranzfeld H7",
+          "ist_korrekt": true,
+          "erklaerung": "Großbuchstaben kennzeichnen Innenmaße. Bei H liegt das untere Abmaß bei null, die Bohrung wird also nie kleiner als das Nennmaß."
+        },
+        {
+          "text": "Eine Welle mit Nennmaß 25 mm und dem Toleranzfeld H7",
+          "ist_korrekt": false,
+          "erklaerung": "Wellen werden mit Kleinbuchstaben angegeben, zum Beispiel h7."
+        },
+        {
+          "text": "Eine Bohrung mit 25 mm Durchmesser und 7 mm Tiefe",
+          "ist_korrekt": false,
+          "erklaerung": "Die Tiefe wird separat angegeben, H7 ist eine Toleranzangabe."
+        },
+        {
+          "text": "Eine Bohrung, die auf 25,7 mm gefertigt werden soll",
+          "ist_korrekt": false,
+          "erklaerung": "H7 ist kein Maßzuschlag, sondern ein genormtes Toleranzfeld."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-003",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Maß auf einer technischen Zeichnung steht in runden Klammern. Wie ist damit umzugehen?",
+      "optionen": [
+        {
+          "text": "Es ist ein Hilfsmaß und dient nur der Information",
+          "ist_korrekt": true,
+          "erklaerung": "Hilfsmaße werden nicht toleriert und nicht geprüft. Sie ergeben sich rechnerisch aus anderen Maßen."
+        },
+        {
+          "text": "Es muss besonders genau eingehalten werden",
+          "ist_korrekt": false,
+          "erklaerung": "Für besonders enge Toleranzen stehen Toleranzangaben, keine Klammern."
+        },
+        {
+          "text": "Es ist ein Maß, das nachträglich geändert wurde",
+          "ist_korrekt": false,
+          "erklaerung": "Änderungen werden im Änderungsfeld dokumentiert."
+        },
+        {
+          "text": "Es gilt nur für die Prüfabteilung",
+          "ist_korrekt": false,
+          "erklaerung": "Hilfsmaße sind gerade nicht Gegenstand der Prüfung."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-004",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Linienart wird in einer technischen Zeichnung für verdeckte Kanten verwendet?",
+      "optionen": [
+        {
+          "text": "Schmale Strichlinie",
+          "ist_korrekt": true,
+          "erklaerung": "Verdeckte, also nicht sichtbare Kanten werden gestrichelt dargestellt."
+        },
+        {
+          "text": "Breite Volllinie",
+          "ist_korrekt": false,
+          "erklaerung": "Die breite Volllinie kennzeichnet sichtbare Kanten und Umrisse."
+        },
+        {
+          "text": "Strichpunktlinie",
+          "ist_korrekt": false,
+          "erklaerung": "Die Strichpunktlinie zeigt Mittellinien und Symmetrieachsen."
+        },
+        {
+          "text": "Schmale Freihandlinie",
+          "ist_korrekt": false,
+          "erklaerung": "Die Freihandlinie wird als Bruchkante bei Teilschnitten verwendet."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-005",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Eine Welle wird in einer Baugruppenzeichnung längs geschnitten dargestellt. Wie wird sie gezeichnet?",
+      "optionen": [
+        {
+          "text": "Ungeschnitten und ohne Schraffur",
+          "ist_korrekt": true,
+          "erklaerung": "Vollteile wie Wellen, Schrauben, Stifte und Niete werden längs nicht geschnitten dargestellt, weil ein Schnitt keine zusätzliche Information liefert."
+        },
+        {
+          "text": "Geschnitten mit Schraffur im Winkel von 45 Grad",
+          "ist_korrekt": false,
+          "erklaerung": "Das gilt für die übrigen geschnittenen Bauteile, nicht für längs geschnittene Vollteile."
+        },
+        {
+          "text": "Geschnitten mit kreuzweiser Schraffur",
+          "ist_korrekt": false,
+          "erklaerung": "Kreuzschraffur ist in der Bauteilzeichnung nicht üblich."
+        },
+        {
+          "text": "Vollständig weggelassen",
+          "ist_korrekt": false,
+          "erklaerung": "Die Welle bleibt sichtbar, sie wird nur nicht schraffiert."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-001",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Eigenschaft ist typisch für Thermoplaste?",
+      "optionen": [
+        {
+          "text": "Sie lassen sich bei Erwärmung wiederholt plastisch verformen",
+          "ist_korrekt": true,
+          "erklaerung": "Thermoplaste bestehen aus unvernetzten Makromolekülen. Beim Erwärmen gleiten diese aneinander ab, der Vorgang ist umkehrbar."
+        },
+        {
+          "text": "Sie zersetzen sich beim ersten Erwärmen",
+          "ist_korrekt": false,
+          "erklaerung": "Das trifft auf Duroplaste zu, die nach der Aushärtung nicht mehr aufschmelzbar sind."
+        },
+        {
+          "text": "Sie sind grundsätzlich elektrisch leitfähig",
+          "ist_korrekt": false,
+          "erklaerung": "Kunststoffe sind in der Regel Isolatoren, leitfähige Varianten sind Sonderfälle."
+        },
+        {
+          "text": "Sie sind immer transparent",
+          "ist_korrekt": false,
+          "erklaerung": "Transparenz hängt von der inneren Struktur ab, teilkristalline Thermoplaste sind meist trüb."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-002",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum lässt sich ein Duroplast nach der Verarbeitung nicht mehr umformen?",
+      "optionen": [
+        {
+          "text": "Die Makromoleküle sind engmaschig chemisch vernetzt",
+          "ist_korrekt": true,
+          "erklaerung": "Die Vernetzung entsteht beim Aushärten und ist nicht umkehrbar. Bei weiterer Erwärmung zersetzt sich der Werkstoff, statt zu erweichen."
+        },
+        {
+          "text": "Der Werkstoff enthält keine Weichmacher",
+          "ist_korrekt": false,
+          "erklaerung": "Weichmacher beeinflussen die Flexibilität, nicht die grundsätzliche Umformbarkeit."
+        },
+        {
+          "text": "Die Dichte ist zu hoch",
+          "ist_korrekt": false,
+          "erklaerung": "Die Dichte spielt für die Umformbarkeit keine entscheidende Rolle."
+        },
+        {
+          "text": "Er nimmt keine Feuchtigkeit auf",
+          "ist_korrekt": false,
+          "erklaerung": "Die Feuchteaufnahme ist eine andere Eigenschaft und für die Vernetzung nicht maßgeblich."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-003",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [
+        "DIN EN 10025"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "hinweis_pruefung": "Zahlenwert 235 gegen Tabellenbuch belegen",
+      "aufgabenstellung": "Was bedeutet die Werkstoffbezeichnung S235JR?",
+      "optionen": [
+        {
+          "text": "Baustahl mit einer Mindeststreckgrenze von 235 N/mm²",
+          "ist_korrekt": true,
+          "erklaerung": "S steht für Stahlbau, die Zahl gibt die Mindeststreckgrenze in N/mm² an, JR beschreibt die Kerbschlagarbeit bei Raumtemperatur."
+        },
+        {
+          "text": "Baustahl mit 2,35 Prozent Kohlenstoffgehalt",
+          "ist_korrekt": false,
+          "erklaerung": "Kohlenstoffgehalte werden bei Bezeichnungen wie C45 angegeben, nicht bei S-Stählen."
+        },
+        {
+          "text": "Stahl mit einer Zugfestigkeit von 235 N/mm²",
+          "ist_korrekt": false,
+          "erklaerung": "Die Zahl bezieht sich auf die Streckgrenze, nicht auf die Zugfestigkeit. Diese liegt deutlich höher."
+        },
+        {
+          "text": "Rostfreier Stahl der Sorte 235",
+          "ist_korrekt": false,
+          "erklaerung": "Nichtrostende Stähle tragen die Kennzeichnung X mit Legierungsangaben."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-004",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "hinweis_pruefung": "Kohlenstoffgehalt gegen Tabellenbuch belegen",
+      "aufgabenstellung": "Wofür steht die Werkstoffbezeichnung C45?",
+      "optionen": [
+        {
+          "text": "Unlegierter Stahl mit etwa 0,45 Prozent Kohlenstoff",
+          "ist_korrekt": true,
+          "erklaerung": "Bei unlegierten Stählen wird der Kohlenstoffgehalt mit dem Faktor 100 multipliziert angegeben."
+        },
+        {
+          "text": "Unlegierter Stahl mit 45 Prozent Kohlenstoff",
+          "ist_korrekt": false,
+          "erklaerung": "Ein solcher Gehalt ist technisch nicht möglich, Stahl enthält maximal etwa 2 Prozent Kohlenstoff."
+        },
+        {
+          "text": "Stahl mit einer Härte von 45 HRC",
+          "ist_korrekt": false,
+          "erklaerung": "Härteangaben werden gesondert und nicht in der Werkstoffbezeichnung geführt."
+        },
+        {
+          "text": "Chromlegierter Stahl mit 45 Prozent Chrom",
+          "ist_korrekt": false,
+          "erklaerung": "Chrom wird mit dem Kurzzeichen Cr in der Bezeichnung geführt."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-005",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welchen Zweck hat das Anlassen unmittelbar nach dem Härten eines Stahlbauteils?",
+      "optionen": [
+        {
+          "text": "Abbau von Spannungen und Verringerung der Sprödigkeit",
+          "ist_korrekt": true,
+          "erklaerung": "Nach dem Abschrecken ist das Gefüge hart, aber spröd und spannungsreich. Das Anlassen nimmt etwas Härte zurück und macht das Bauteil gebrauchsfähig."
+        },
+        {
+          "text": "Weitere Steigerung der Härte",
+          "ist_korrekt": false,
+          "erklaerung": "Anlassen senkt die Härte leicht ab, es steigert sie nicht."
+        },
+        {
+          "text": "Aufkohlen der Randschicht",
+          "ist_korrekt": false,
+          "erklaerung": "Das Aufkohlen ist Teil des Einsatzhärtens und findet vor dem Härten statt."
+        },
+        {
+          "text": "Erzeugen einer Korrosionsschutzschicht",
+          "ist_korrekt": false,
+          "erklaerung": "Korrosionsschutz entsteht durch Beschichten, nicht durch Anlassen."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-006",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein verzinktes Stahlblech wird an einer Stelle beschädigt, sodass der Stahl freiliegt. Warum rostet der Stahl dort trotzdem zunächst nicht?",
+      "optionen": [
+        {
+          "text": "Zink ist unedler als Eisen und wird als Opferanode zuerst abgetragen",
+          "ist_korrekt": true,
+          "erklaerung": "Man spricht von kathodischem Korrosionsschutz. Das Zink löst sich auf und schützt den Stahl, solange es vorhanden ist."
+        },
+        {
+          "text": "Zink versiegelt die Schadstelle sofort mechanisch",
+          "ist_korrekt": false,
+          "erklaerung": "Zink fließt nicht nach, der Schutz beruht auf einem elektrochemischen Vorgang."
+        },
+        {
+          "text": "Zink ist edler als Eisen und verhindert den Stromfluss",
+          "ist_korrekt": false,
+          "erklaerung": "Genau umgekehrt: Zink ist unedler. Wäre es edler, würde der Stahl schneller rosten."
+        },
+        {
+          "text": "Der Stahl ist an der Schadstelle bereits passiviert",
+          "ist_korrekt": false,
+          "erklaerung": "Unlegierter Stahl passiviert nicht, das ist eine Eigenschaft nichtrostender Stähle."
+        }
+      ]
+    },
+    {
+      "id": "PT-WZ-001",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Worin besteht der wesentliche Vorteil von Hartmetall gegenüber Schnellarbeitsstahl als Schneidstoff?",
+      "optionen": [
+        {
+          "text": "Höhere Warmhärte, dadurch höhere Schnittgeschwindigkeiten möglich",
+          "ist_korrekt": true,
+          "erklaerung": "Hartmetall behält seine Härte bis zu deutlich höheren Temperaturen. Der Nachteil ist die größere Sprödigkeit."
+        },
+        {
+          "text": "Höhere Zähigkeit, dadurch unempfindlich gegen Schläge",
+          "ist_korrekt": false,
+          "erklaerung": "Hartmetall ist spröder als HSS und gerade bei unterbrochenem Schnitt empfindlich."
+        },
+        {
+          "text": "Geringere Anschaffungskosten",
+          "ist_korrekt": false,
+          "erklaerung": "Hartmetallwerkzeuge sind in der Regel teurer in der Anschaffung."
+        },
+        {
+          "text": "Einfacheres Nachschleifen von Hand",
+          "ist_korrekt": false,
+          "erklaerung": "Hartmetall erfordert Diamantschleifscheiben, HSS lässt sich leichter nachschärfen."
+        }
+      ]
+    },
+    {
+      "id": "PT-WZ-002",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgabe hat der Freiwinkel Alpha an einer Drehmeißelschneide?",
+      "optionen": [
+        {
+          "text": "Er verhindert, dass die Freifläche an der bearbeiteten Oberfläche reibt",
+          "ist_korrekt": true,
+          "erklaerung": "Ohne Freiwinkel würde das Werkzeug schleifen statt schneiden. Reibung, Wärme und Verschleiß stiegen stark an."
+        },
+        {
+          "text": "Er lenkt den Span vom Werkstück weg",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Aufgabe des Spanwinkels und der Spanleitstufe."
+        },
+        {
+          "text": "Er erhöht die Stabilität der Schneidkante",
+          "ist_korrekt": false,
+          "erklaerung": "Ein größerer Freiwinkel schwächt die Schneide eher, als dass er sie stabilisiert."
+        },
+        {
+          "text": "Er bestimmt die Schnitttiefe",
+          "ist_korrekt": false,
+          "erklaerung": "Die Schnitttiefe wird über die Zustellung eingestellt, nicht über die Winkelgeometrie."
+        }
+      ]
+    },
+    {
+      "id": "PT-WZ-003",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Werkzeug erhält einen größeren Spanwinkel Gamma. Welche Folge hat das?",
+      "optionen": [
+        {
+          "text": "Die Schnittkraft sinkt, die Schneide wird jedoch schwächer",
+          "ist_korrekt": true,
+          "erklaerung": "Der Span wird leichter abgehoben, gleichzeitig verringert sich der Keilwinkel und damit die Stabilität der Schneide."
+        },
+        {
+          "text": "Die Schnittkraft steigt und die Schneide wird stabiler",
+          "ist_korrekt": false,
+          "erklaerung": "Der Zusammenhang ist genau umgekehrt."
+        },
+        {
+          "text": "Die Standzeit steigt bei allen Werkstoffen",
+          "ist_korrekt": false,
+          "erklaerung": "Bei spröden oder harten Werkstoffen kann ein großer Spanwinkel die Standzeit sogar verkürzen."
+        },
+        {
+          "text": "Der Freiwinkel wird automatisch größer",
+          "ist_korrekt": false,
+          "erklaerung": "Frei-, Keil- und Spanwinkel ergeben zusammen 90 Grad. Ein größerer Spanwinkel verkleinert den Keilwinkel, nicht den Freiwinkel."
+        }
+      ]
+    },
+    {
+      "id": "PT-WZ-004",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgaben erfüllt ein Kühlschmierstoff bei der Zerspanung in erster Linie?",
+      "optionen": [
+        {
+          "text": "Kühlen, Schmieren und Abtransport der Späne",
+          "ist_korrekt": true,
+          "erklaerung": "Die drei Funktionen wirken zusammen: weniger Wärme, geringere Reibung, freie Schnittzone."
+        },
+        {
+          "text": "Erhöhen der Schnitttiefe und der Vorschubkraft",
+          "ist_korrekt": false,
+          "erklaerung": "Diese Größen werden an der Maschine eingestellt."
+        },
+        {
+          "text": "Härten der Werkzeugschneide während des Schnitts",
+          "ist_korrekt": false,
+          "erklaerung": "Eine Härtung im laufenden Prozess findet nicht statt."
+        },
+        {
+          "text": "Verbessern der elektrischen Leitfähigkeit des Werkstücks",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist für die spanende Fertigung ohne Bedeutung."
+        }
+      ]
+    },
+    {
+      "id": "PT-WZ-005",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 2,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Für eine Serie zylindrischer Teile mit hohen Anforderungen an den Rundlauf soll das Spannmittel gewählt werden. Was ist geeignet?",
+      "optionen": [
+        {
+          "text": "Spannzange",
+          "ist_korrekt": true,
+          "erklaerung": "Die Spannzange umschließt das Werkstück gleichmäßig über den ganzen Umfang und erreicht dadurch eine hohe Rundlaufgenauigkeit."
+        },
+        {
+          "text": "Dreibackenfutter mit Standardbacken",
+          "ist_korrekt": false,
+          "erklaerung": "Es ist flexibel und schnell, erreicht aber eine geringere Rundlaufgenauigkeit als die Spannzange."
+        },
+        {
+          "text": "Maschinenschraubstock",
+          "ist_korrekt": false,
+          "erklaerung": "Er ist für prismatische Werkstücke am Fräsplatz gedacht."
+        },
+        {
+          "text": "Magnetspannplatte",
+          "ist_korrekt": false,
+          "erklaerung": "Sie eignet sich für flache ferromagnetische Werkstücke beim Schleifen."
+        }
+      ]
+    },
+    {
+      "id": "PT-MA-001",
+      "typ": "mc",
+      "thema": "PT-MA",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Hauptaufgabe erfüllt ein Getriebe in einer Produktionsmaschine?",
+      "optionen": [
+        {
+          "text": "Es wandelt Drehzahl und Drehmoment",
+          "ist_korrekt": true,
+          "erklaerung": "Wird die Drehzahl verringert, steigt das Drehmoment im gleichen Verhältnis, abzüglich der Verluste."
+        },
+        {
+          "text": "Es erzeugt die Antriebsleistung",
+          "ist_korrekt": false,
+          "erklaerung": "Die Leistung liefert der Motor, das Getriebe verteilt sie nur anders auf Drehzahl und Moment."
+        },
+        {
+          "text": "Es wandelt elektrische in mechanische Energie",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Aufgabe des Elektromotors."
+        },
+        {
+          "text": "Es gleicht Spannungsschwankungen im Netz aus",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür sind elektrische Betriebsmittel zuständig."
+        }
+      ]
+    },
+    {
+      "id": "PT-MA-002",
+      "typ": "mc",
+      "thema": "PT-MA",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Getriebe hat die Übersetzung i = 4. Was gilt für die Abtriebswelle gegenüber der Antriebswelle?",
+      "optionen": [
+        {
+          "text": "Die Drehzahl ist kleiner, das Drehmoment größer",
+          "ist_korrekt": true,
+          "erklaerung": "Bei i größer als 1 liegt eine Untersetzung vor. Drehzahl und Moment verhalten sich gegenläufig."
+        },
+        {
+          "text": "Die Drehzahl ist größer, das Drehmoment kleiner",
+          "ist_korrekt": false,
+          "erklaerung": "Das wäre eine Übersetzung ins Schnelle mit i kleiner als 1."
+        },
+        {
+          "text": "Drehzahl und Drehmoment sind beide größer",
+          "ist_korrekt": false,
+          "erklaerung": "Das würde bedeuten, dass das Getriebe Leistung erzeugt. Das ist nicht möglich."
+        },
+        {
+          "text": "Drehzahl und Drehmoment bleiben unverändert",
+          "ist_korrekt": false,
+          "erklaerung": "Das entspräche einer Übersetzung von 1, also einer reinen Kupplung."
+        }
+      ]
+    },
+    {
+      "id": "PT-MA-003",
+      "typ": "mc",
+      "thema": "PT-MA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Pneumatikventil wird als 5/2-Wegeventil bezeichnet. Was sagt diese Angabe aus?",
+      "optionen": [
+        {
+          "text": "Fünf Anschlüsse und zwei Schaltstellungen",
+          "ist_korrekt": true,
+          "erklaerung": "Die erste Zahl nennt immer die Anschlüsse, die zweite die Schaltstellungen."
+        },
+        {
+          "text": "Fünf Schaltstellungen und zwei Anschlüsse",
+          "ist_korrekt": false,
+          "erklaerung": "Die Reihenfolge ist genau umgekehrt."
+        },
+        {
+          "text": "Betriebsdruck 5 bar bei zwei Zylindern",
+          "ist_korrekt": false,
+          "erklaerung": "Druckangaben sind nicht Teil der Ventilbezeichnung."
+        },
+        {
+          "text": "Fünf Millimeter Nennweite in zwei Baugrößen",
+          "ist_korrekt": false,
+          "erklaerung": "Die Nennweite wird separat angegeben."
+        }
+      ]
+    },
+    {
+      "id": "PT-MA-004",
+      "typ": "mc",
+      "thema": "PT-MA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum werden für sehr hohe Kräfte hydraulische statt pneumatischer Antriebe eingesetzt?",
+      "optionen": [
+        {
+          "text": "Hydrauliköl ist nahezu inkompressibel, dadurch sind hohe Drücke und exakte Positionen möglich",
+          "ist_korrekt": true,
+          "erklaerung": "Luft lässt sich zusammendrücken. Unter Last federt ein Pneumatikzylinder nach, ein Hydraulikzylinder steht."
+        },
+        {
+          "text": "Hydrauliköl ist billiger als Druckluft",
+          "ist_korrekt": false,
+          "erklaerung": "Die Kostenfrage ist nicht der technische Grund für die Bauartwahl."
+        },
+        {
+          "text": "Hydraulikanlagen benötigen keine Wartung",
+          "ist_korrekt": false,
+          "erklaerung": "Hydraulik erfordert regelmäßige Filter- und Ölkontrolle."
+        },
+        {
+          "text": "Hydraulikzylinder arbeiten schneller als Pneumatikzylinder",
+          "ist_korrekt": false,
+          "erklaerung": "Pneumatik ist in der Regel die schnellere Technik, Hydraulik die kraftvollere."
+        }
+      ]
+    },
+    {
+      "id": "PT-MA-005",
+      "typ": "mc",
+      "thema": "PT-MA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "In welcher Reihenfolge arbeitet eine speicherprogrammierbare Steuerung einen Zyklus ab?",
+      "optionen": [
+        {
+          "text": "Eingänge einlesen, Programm bearbeiten, Ausgänge schreiben",
+          "ist_korrekt": true,
+          "erklaerung": "Das Prozessabbild wird zu Beginn eingelesen und am Ende ausgegeben. Zwischenzeitliche Signaländerungen wirken erst im nächsten Zyklus."
+        },
+        {
+          "text": "Ausgänge schreiben, Eingänge einlesen, Programm bearbeiten",
+          "ist_korrekt": false,
+          "erklaerung": "Die Ausgabe steht immer am Ende des Zyklus."
+        },
+        {
+          "text": "Programm bearbeiten, Eingänge einlesen, Ausgänge schreiben",
+          "ist_korrekt": false,
+          "erklaerung": "Ohne aktuelles Eingangsabbild kann das Programm nicht sinnvoll arbeiten."
+        },
+        {
+          "text": "Alle drei Schritte laufen gleichzeitig ab",
+          "ist_korrekt": false,
+          "erklaerung": "Die SPS arbeitet die Schritte sequenziell in einem festen Zyklus ab."
+        }
+      ]
+    },
+    {
+      "id": "PT-MA-006",
+      "typ": "mc",
+      "thema": "PT-MA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "An einer Anlage sollen Kunststoffteile berührungslos erkannt werden. Welcher Sensor ist ungeeignet?",
+      "optionen": [
+        {
+          "text": "Induktiver Näherungsschalter",
+          "ist_korrekt": true,
+          "erklaerung": "Der induktive Sensor arbeitet über ein elektromagnetisches Feld und spricht ausschließlich auf metallische Objekte an."
+        },
+        {
+          "text": "Kapazitiver Näherungsschalter",
+          "ist_korrekt": false,
+          "erklaerung": "Kapazitive Sensoren erfassen auch nichtmetallische Stoffe."
+        },
+        {
+          "text": "Optischer Sensor / Lichtschranke",
+          "ist_korrekt": false,
+          "erklaerung": "Optische Sensoren funktionieren unabhängig vom Werkstoff."
+        },
+        {
+          "text": "Ultraschallsensor",
+          "ist_korrekt": false,
+          "erklaerung": "Ultraschall arbeitet über Schallreflexion und ist materialunabhängig einsetzbar."
+        }
+      ]
+    },
+    {
+      "id": "PT-PR-001",
+      "typ": "mc",
+      "thema": "PT-PR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 1,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "hinweis_pruefung": "Nonius-Wert gegen Tabellenbuch belegen",
+      "aufgabenstellung": "Ein Messschieber besitzt einen Nonius mit 20 Teilstrichen. Welche Ablesegenauigkeit ergibt sich daraus?",
+      "optionen": [
+        {
+          "text": "0,05 mm",
+          "ist_korrekt": true,
+          "erklaerung": "Der Millimeter wird in 20 Teile geteilt, ein Teil entspricht 1 geteilt durch 20, also 0,05 mm."
+        },
+        {
+          "text": "0,02 mm",
+          "ist_korrekt": false,
+          "erklaerung": "0,02 mm ergibt sich bei einem Nonius mit 50 Teilstrichen."
+        },
+        {
+          "text": "0,1 mm",
+          "ist_korrekt": false,
+          "erklaerung": "0,1 mm entspricht einem Nonius mit 10 Teilstrichen."
+        },
+        {
+          "text": "0,2 mm",
+          "ist_korrekt": false,
+          "erklaerung": "Dieser Wert liegt weit über der üblichen Ablesegenauigkeit eines Messschiebers."
+        }
+      ]
+    },
+    {
+      "id": "PT-PR-002",
+      "typ": "mc",
+      "thema": "PT-PR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Worin unterscheidet sich Lehren vom Messen?",
+      "optionen": [
+        {
+          "text": "Lehren liefert nur die Aussage in Ordnung oder nicht in Ordnung, Messen liefert einen Zahlenwert",
+          "ist_korrekt": true,
+          "erklaerung": "Lehren ist schneller und im Serienbetrieb üblich, liefert aber keine Information über das tatsächliche Istmaß."
+        },
+        {
+          "text": "Lehren ist genauer als Messen",
+          "ist_korrekt": false,
+          "erklaerung": "Genauigkeit ist nicht das Unterscheidungsmerkmal, die Art der Aussage ist es."
+        },
+        {
+          "text": "Lehren wird nur an Kunststoffen angewendet",
+          "ist_korrekt": false,
+          "erklaerung": "Lehren wird werkstoffunabhängig eingesetzt."
+        },
+        {
+          "text": "Beim Lehren wird das Werkstück zerstört",
+          "ist_korrekt": false,
+          "erklaerung": "Lehren ist ein zerstörungsfreies Verfahren."
+        }
+      ]
+    },
+    {
+      "id": "PT-PR-003",
+      "typ": "mc",
+      "thema": "PT-PR",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Eine Bohrung wird mit einem Grenzlehrdorn geprüft. Wann ist das Werkstück in Ordnung?",
+      "optionen": [
+        {
+          "text": "Die Gutseite lässt sich einführen, die Ausschussseite nicht",
+          "ist_korrekt": true,
+          "erklaerung": "Die Gutseite entspricht dem Kleinstmaß, die Ausschussseite dem Größtmaß. Beide Bedingungen müssen zugleich erfüllt sein."
+        },
+        {
+          "text": "Beide Seiten lassen sich einführen",
+          "ist_korrekt": false,
+          "erklaerung": "Dann ist die Bohrung zu groß und das Teil Ausschuss."
+        },
+        {
+          "text": "Keine der beiden Seiten lässt sich einführen",
+          "ist_korrekt": false,
+          "erklaerung": "Dann ist die Bohrung zu klein, sie kann allerdings nachgearbeitet werden."
+        },
+        {
+          "text": "Nur die Ausschussseite lässt sich einführen",
+          "ist_korrekt": false,
+          "erklaerung": "Dieser Fall kann bei einem zylindrischen Lehrdorn nicht auftreten."
+        }
+      ]
+    },
+    {
+      "id": "PT-PR-004",
+      "typ": "mc",
+      "thema": "PT-PR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welchen Zweck hat die Prüfmittelüberwachung im Betrieb?",
+      "optionen": [
+        {
+          "text": "Sie stellt sicher, dass Prüfmittel innerhalb ihrer zulässigen Abweichung arbeiten",
+          "ist_korrekt": true,
+          "erklaerung": "Ein unbemerkt dejustiertes Messmittel erzeugt fehlerhafte Freigaben. Deshalb werden Prüfmittel in festen Intervallen kalibriert und dokumentiert."
+        },
+        {
+          "text": "Sie regelt, welcher Mitarbeiter welches Prüfmittel ausleihen darf",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist reine Betriebsmittelverwaltung, nicht der Kern der Prüfmittelüberwachung."
+        },
+        {
+          "text": "Sie legt die Toleranzen der Werkstücke fest",
+          "ist_korrekt": false,
+          "erklaerung": "Werkstücktoleranzen stehen in der Zeichnung."
+        },
+        {
+          "text": "Sie ersetzt die Endkontrolle der Bauteile",
+          "ist_korrekt": false,
+          "erklaerung": "Sie ist eine Voraussetzung für zuverlässige Kontrolle, kein Ersatz dafür."
+        }
+      ]
+    },
+    {
+      "id": "PT-FT-001",
+      "typ": "mc",
+      "thema": "PT-FT",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN 8580"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Zu welcher Hauptgruppe der Fertigungsverfahren nach DIN 8580 gehört das Spritzgießen?",
+      "optionen": [
+        {
+          "text": "Urformen",
+          "ist_korrekt": true,
+          "erklaerung": "Beim Urformen entsteht aus formlosem Stoff erstmals ein fester Körper mit geometrisch bestimmter Form."
+        },
+        {
+          "text": "Umformen",
+          "ist_korrekt": false,
+          "erklaerung": "Beim Umformen besitzt das Werkstück bereits eine Form, die verändert wird."
+        },
+        {
+          "text": "Trennen",
+          "ist_korrekt": false,
+          "erklaerung": "Beim Trennen wird der Zusammenhalt örtlich aufgehoben, etwa beim Zerspanen."
+        },
+        {
+          "text": "Fügen",
+          "ist_korrekt": false,
+          "erklaerung": "Beim Fügen werden mehrere Werkstücke dauerhaft verbunden."
+        }
+      ]
+    },
+    {
+      "id": "PT-FT-002",
+      "typ": "mc",
+      "thema": "PT-FT",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN 8580"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welches der folgenden Verfahren gehört zur Hauptgruppe Umformen?",
+      "optionen": [
+        {
+          "text": "Biegen",
+          "ist_korrekt": true,
+          "erklaerung": "Die Form wird plastisch verändert, Masse und Zusammenhalt bleiben erhalten."
+        },
+        {
+          "text": "Bohren",
+          "ist_korrekt": false,
+          "erklaerung": "Bohren ist ein Trennverfahren, es wird Werkstoff abgetragen."
+        },
+        {
+          "text": "Schweißen",
+          "ist_korrekt": false,
+          "erklaerung": "Schweißen zählt zum Fügen."
+        },
+        {
+          "text": "Lackieren",
+          "ist_korrekt": false,
+          "erklaerung": "Lackieren gehört zum Beschichten."
+        }
+      ]
+    },
+    {
+      "id": "PT-FT-003",
+      "typ": "mc",
+      "thema": "PT-FT",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 1,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "hinweis_pruefung": "Formel gegen Tabellenbuch belegen, Seitenangabe eintragen",
+      "aufgabenstellung": "Mit welcher Formel wird die Schnittgeschwindigkeit vc beim Drehen berechnet, wenn d in mm und n in 1/min angegeben sind?",
+      "optionen": [
+        {
+          "text": "vc = (π · d · n) / 1000 in m/min",
+          "ist_korrekt": true,
+          "erklaerung": "Der Umfang mal Drehzahl ergibt den Weg pro Minute. Die Division durch 1000 rechnet Millimeter in Meter um."
+        },
+        {
+          "text": "vc = (d · n) / 1000 in m/min",
+          "ist_korrekt": false,
+          "erklaerung": "Ohne Kreiszahl fehlt der Umfang, es würde nur mit dem Durchmesser gerechnet."
+        },
+        {
+          "text": "vc = (π · d) / n in m/min",
+          "ist_korrekt": false,
+          "erklaerung": "Die Drehzahl steht im Zähler, nicht im Nenner. Höhere Drehzahl bedeutet höhere Schnittgeschwindigkeit."
+        },
+        {
+          "text": "vc = (π · n) / (d · 1000) in m/min",
+          "ist_korrekt": false,
+          "erklaerung": "Der Durchmesser gehört in den Zähler."
+        }
+      ]
+    },
+    {
+      "id": "PT-FT-004",
+      "typ": "mc",
+      "thema": "PT-FT",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aussage zum Gleichlauffräsen trifft zu?",
+      "optionen": [
+        {
+          "text": "Es liefert meist die bessere Oberfläche, setzt aber einen spielfreien Vorschubantrieb voraus",
+          "ist_korrekt": true,
+          "erklaerung": "Der Fräser zieht den Tisch in Vorschubrichtung. Bei Spiel in der Spindel ruckt der Tisch, was zu Rattermarken oder Werkzeugbruch führen kann."
+        },
+        {
+          "text": "Es ist auf jeder Maschine ohne Einschränkung möglich",
+          "ist_korrekt": false,
+          "erklaerung": "Ältere Maschinen ohne spielfreie Spindel sind für Gleichlauf nicht geeignet."
+        },
+        {
+          "text": "Der Span beginnt dünn und wird zum Ende hin dicker",
+          "ist_korrekt": false,
+          "erklaerung": "Das beschreibt das Gegenlauffräsen. Beim Gleichlauf ist es umgekehrt."
+        },
+        {
+          "text": "Es erzeugt grundsätzlich höheren Werkzeugverschleiß",
+          "ist_korrekt": false,
+          "erklaerung": "Der Verschleiß ist beim Gleichlauf tendenziell geringer, weil das Werkzeug nicht auf der Oberfläche reibt, bevor es schneidet."
+        }
+      ]
+    },
+    {
+      "id": "PP-AS-001",
+      "typ": "mc",
+      "thema": "PP-AS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Angaben enthält ein Arbeitsplan üblicherweise?",
+      "optionen": [
+        {
+          "text": "Arbeitsvorgänge in ihrer Reihenfolge, Betriebsmittel und Vorgabezeiten",
+          "ist_korrekt": true,
+          "erklaerung": "Der Arbeitsplan beschreibt, was in welcher Reihenfolge womit und in welcher Zeit gefertigt wird."
+        },
+        {
+          "text": "Nur die Stückzahl und den Liefertermin",
+          "ist_korrekt": false,
+          "erklaerung": "Diese Angaben stehen im Fertigungsauftrag."
+        },
+        {
+          "text": "Die Konstruktionsmaße des Bauteils",
+          "ist_korrekt": false,
+          "erklaerung": "Maße stehen in der technischen Zeichnung."
+        },
+        {
+          "text": "Die Personalstammdaten der Mitarbeiter",
+          "ist_korrekt": false,
+          "erklaerung": "Personaldaten sind nicht Bestandteil des Arbeitsplans."
+        }
+      ]
+    },
+    {
+      "id": "PP-AS-002",
+      "typ": "mc",
+      "thema": "PP-AS",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Aus welchen beiden Bestandteilen setzt sich die Auftragszeit zusammen?",
+      "optionen": [
+        {
+          "text": "Rüstzeit und Ausführungszeit",
+          "ist_korrekt": true,
+          "erklaerung": "Die Rüstzeit fällt einmal je Auftrag an, die Ausführungszeit richtet sich nach der Stückzahl."
+        },
+        {
+          "text": "Grundzeit und Erholzeit",
+          "ist_korrekt": false,
+          "erklaerung": "Beides sind Bestandteile der Ausführungszeit, nicht der Auftragszeit insgesamt."
+        },
+        {
+          "text": "Liegezeit und Transportzeit",
+          "ist_korrekt": false,
+          "erklaerung": "Das sind Bestandteile der Durchlaufzeit."
+        },
+        {
+          "text": "Maschinenlaufzeit und Wartungszeit",
+          "ist_korrekt": false,
+          "erklaerung": "Wartung wird gesondert geplant und gehört nicht zur Auftragszeit."
+        }
+      ]
+    },
+    {
+      "id": "PP-AS-003",
+      "typ": "mc",
+      "thema": "PP-AS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Sie erhalten einen neuen Fertigungsauftrag. Welcher Schritt steht am Anfang?",
+      "optionen": [
+        {
+          "text": "Technische Unterlagen auf Vollständigkeit und Aktualität prüfen",
+          "ist_korrekt": true,
+          "erklaerung": "Wer mit einem veralteten Zeichnungsstand beginnt, produziert im schlimmsten Fall die ganze Serie falsch."
+        },
+        {
+          "text": "Sofort die Maschine anfahren, um Zeit zu sparen",
+          "ist_korrekt": false,
+          "erklaerung": "Ohne geprüfte Unterlagen ist das Ausschussrisiko hoch."
+        },
+        {
+          "text": "Die Endkontrolle terminieren",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist ein späterer Planungsschritt."
+        },
+        {
+          "text": "Das Übergabeprotokoll ausfüllen",
+          "ist_korrekt": false,
+          "erklaerung": "Das Übergabeprotokoll steht am Ende der Schicht oder des Auftrags."
+        }
+      ]
+    },
+    {
+      "id": "PP-QS-001",
+      "typ": "mc",
+      "thema": "PP-QS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wofür steht die Abkürzung SPC in der Qualitätssicherung?",
+      "optionen": [
+        {
+          "text": "Statistische Prozessregelung",
+          "ist_korrekt": true,
+          "erklaerung": "Aus dem Englischen Statistical Process Control. Der Prozess wird laufend über Stichproben überwacht, statt erst am Ende zu prüfen."
+        },
+        {
+          "text": "Serienprüfung nach Checkliste",
+          "ist_korrekt": false,
+          "erklaerung": "Diese Bezeichnung existiert im Qualitätswesen nicht."
+        },
+        {
+          "text": "Sicherheitsprüfung der Charge",
+          "ist_korrekt": false,
+          "erklaerung": "Chargenprüfungen sind ein anderes Thema."
+        },
+        {
+          "text": "Systematische Produktkontrolle am Ende der Fertigung",
+          "ist_korrekt": false,
+          "erklaerung": "SPC setzt bewusst währenddessen an, nicht am Ende."
+        }
+      ]
+    },
+    {
+      "id": "PP-QS-002",
+      "typ": "mc",
+      "thema": "PP-QS",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Stichprobenwert überschreitet in der Qualitätsregelkarte die obere Eingriffsgrenze. Wie ist zu reagieren?",
+      "optionen": [
+        {
+          "text": "Prozess anhalten oder korrigieren und die Ursache ermitteln",
+          "ist_korrekt": true,
+          "erklaerung": "Die Eingriffsgrenze signalisiert, dass der Prozess nicht mehr beherrscht ist. Weiterlaufen zu lassen erzeugt Ausschuss."
+        },
+        {
+          "text": "Weiterproduzieren, solange die Toleranzgrenze nicht überschritten ist",
+          "ist_korrekt": false,
+          "erklaerung": "Die Eingriffsgrenze liegt bewusst innerhalb der Toleranz, damit man reagieren kann, bevor Ausschuss entsteht."
+        },
+        {
+          "text": "Den Wert als Messfehler streichen",
+          "ist_korrekt": false,
+          "erklaerung": "Werte dürfen nicht ohne nachgewiesene Ursache verworfen werden."
+        },
+        {
+          "text": "Die Eingriffsgrenze nach oben verschieben",
+          "ist_korrekt": false,
+          "erklaerung": "Die Grenzen ergeben sich aus der Prozessstreuung und werden nicht dem Ergebnis angepasst."
+        }
+      ]
+    },
+    {
+      "id": "PP-QS-003",
+      "typ": "mc",
+      "thema": "PP-QS",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Worin unterscheidet sich der Prozessfähigkeitsindex cpk vom Index cp?",
+      "optionen": [
+        {
+          "text": "cpk berücksichtigt zusätzlich die Lage des Mittelwerts zur Toleranzmitte",
+          "ist_korrekt": true,
+          "erklaerung": "cp bewertet nur die Streuung. Ein Prozess kann eng streuen und trotzdem außermittig liegen, das zeigt erst der cpk-Wert."
+        },
+        {
+          "text": "cpk wird nur bei Kunststoffteilen verwendet",
+          "ist_korrekt": false,
+          "erklaerung": "Beide Kennwerte sind werkstoffunabhängig."
+        },
+        {
+          "text": "cpk bezieht sich auf die Maschine, cp auf den Bediener",
+          "ist_korrekt": false,
+          "erklaerung": "Maschinenfähigkeit wird mit cm und cmk bezeichnet."
+        },
+        {
+          "text": "cpk ist immer größer als cp",
+          "ist_korrekt": false,
+          "erklaerung": "cpk ist höchstens so groß wie cp und bei außermittiger Lage kleiner."
+        }
+      ]
+    },
+    {
+      "id": "PP-QS-004",
+      "typ": "mc",
+      "thema": "PP-QS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wozu dient ein 8D-Report?",
+      "optionen": [
+        {
+          "text": "Zur systematischen Bearbeitung einer Reklamation in acht festgelegten Schritten",
+          "ist_korrekt": true,
+          "erklaerung": "Der Report führt von der Sofortmaßnahme über die Ursachenanalyse bis zur Wirksamkeitsprüfung und verhindert, dass nur Symptome behoben werden."
+        },
+        {
+          "text": "Zur Berechnung der Prozessfähigkeit",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür werden cp und cpk verwendet."
+        },
+        {
+          "text": "Zur Dokumentation der Maschinenwartung",
+          "ist_korrekt": false,
+          "erklaerung": "Wartung wird im Wartungsplan und Wartungsnachweis geführt."
+        },
+        {
+          "text": "Zur Erfassung der Arbeitszeiten in acht Schichten",
+          "ist_korrekt": false,
+          "erklaerung": "Die Acht steht für acht Bearbeitungsschritte, nicht für Schichten."
+        }
+      ]
+    },
+    {
+      "id": "PP-IH-001",
+      "typ": "mc",
+      "thema": "PP-IH",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN 31051"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche vier Grundmaßnahmen der Instandhaltung nennt die DIN 31051?",
+      "optionen": [
+        {
+          "text": "Wartung, Inspektion, Instandsetzung, Verbesserung",
+          "ist_korrekt": true,
+          "erklaerung": "Die vier Maßnahmen greifen ineinander: erhalten, beurteilen, wiederherstellen, weiterentwickeln."
+        },
+        {
+          "text": "Reinigung, Schmierung, Reparatur, Austausch",
+          "ist_korrekt": false,
+          "erklaerung": "Das sind konkrete Tätigkeiten, keine Grundmaßnahmen im Sinne der Norm."
+        },
+        {
+          "text": "Planung, Steuerung, Kontrolle, Dokumentation",
+          "ist_korrekt": false,
+          "erklaerung": "Das beschreibt allgemeine Managementaufgaben."
+        },
+        {
+          "text": "Prüfen, Messen, Lehren, Protokollieren",
+          "ist_korrekt": false,
+          "erklaerung": "Das gehört in die Qualitätsprüfung."
+        }
+      ]
+    },
+    {
+      "id": "PP-IH-002",
+      "typ": "mc",
+      "thema": "PP-IH",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN 31051"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was versteht man unter Inspektion im Sinne der Instandhaltung?",
+      "optionen": [
+        {
+          "text": "Feststellen und Beurteilen des Ist-Zustands einschließlich der Ursachen für Abnutzung",
+          "ist_korrekt": true,
+          "erklaerung": "Die Inspektion verändert nichts an der Anlage, sie liefert die Grundlage für die Entscheidung, ob eingegriffen werden muss."
+        },
+        {
+          "text": "Wiederherstellen des Sollzustands nach einem Ausfall",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Instandsetzung."
+        },
+        {
+          "text": "Verzögern des Abbaus des Abnutzungsvorrats, etwa durch Schmieren",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Wartung."
+        },
+        {
+          "text": "Steigern der Zuverlässigkeit durch technische Änderungen",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Verbesserung."
+        }
+      ]
+    },
+    {
+      "id": "PP-IH-003",
+      "typ": "mc",
+      "thema": "PP-IH",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum ist eine vorbeugende Instandhaltung wirtschaftlich meist sinnvoller als das Abwarten bis zum Ausfall?",
+      "optionen": [
+        {
+          "text": "Weil geplante Stillstände kürzer und billiger sind als ungeplante",
+          "ist_korrekt": true,
+          "erklaerung": "Bei einem ungeplanten Ausfall kommen Folgeschäden, Eilbeschaffung von Ersatzteilen und Produktionsausfall zusammen."
+        },
+        {
+          "text": "Weil dabei keine Ersatzteile benötigt werden",
+          "ist_korrekt": false,
+          "erklaerung": "Ersatzteile werden auch bei vorbeugender Instandhaltung verbraucht, nur planbar."
+        },
+        {
+          "text": "Weil dadurch die Wartungskosten vollständig entfallen",
+          "ist_korrekt": false,
+          "erklaerung": "Die Kosten verschieben sich, sie entfallen nicht."
+        },
+        {
+          "text": "Weil Maschinen dadurch nie mehr ausfallen können",
+          "ist_korrekt": false,
+          "erklaerung": "Das Risiko sinkt deutlich, ausschließen lässt sich ein Ausfall nicht."
+        }
+      ]
+    },
+    {
+      "id": "PP-PA-001",
+      "typ": "mc",
+      "thema": "PP-PA",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Aus welchen drei Faktoren wird die Gesamtanlageneffektivität OEE gebildet?",
+      "optionen": [
+        {
+          "text": "Verfügbarkeit, Leistung und Qualität",
+          "ist_korrekt": true,
+          "erklaerung": "Die drei Faktoren werden multipliziert. Ein schwacher Faktor zieht das Gesamtergebnis stark nach unten."
+        },
+        {
+          "text": "Stückzahl, Rüstzeit und Personalkosten",
+          "ist_korrekt": false,
+          "erklaerung": "Das sind einzelne Kennzahlen, aber nicht die OEE-Faktoren."
+        },
+        {
+          "text": "Verfügbarkeit, Wartung und Instandsetzung",
+          "ist_korrekt": false,
+          "erklaerung": "Instandhaltung beeinflusst die Verfügbarkeit, ist aber kein eigener OEE-Faktor."
+        },
+        {
+          "text": "Taktzeit, Durchlaufzeit und Liegezeit",
+          "ist_korrekt": false,
+          "erklaerung": "Diese Größen beschreiben den Materialfluss."
+        }
+      ]
+    },
+    {
+      "id": "PP-PA-002",
+      "typ": "mc",
+      "thema": "PP-PA",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie lässt sich die Rüstzeit an einer Maschine am wirksamsten verkürzen?",
+      "optionen": [
+        {
+          "text": "Rüstschritte, die bei laufender Maschine möglich sind, aus dem Stillstand herausnehmen",
+          "ist_korrekt": true,
+          "erklaerung": "Die Trennung in internes und externes Rüsten ist der Kern der Rüstzeitoptimierung. Werkzeuge vorbereiten und Material bereitstellen kann meist parallel laufen."
+        },
+        {
+          "text": "Die Losgröße erhöhen, damit seltener gerüstet wird",
+          "ist_korrekt": false,
+          "erklaerung": "Das umgeht das Problem und erhöht die Bestände, statt die Rüstzeit selbst zu senken."
+        },
+        {
+          "text": "Auf die Qualitätsprüfung nach dem Rüsten verzichten",
+          "ist_korrekt": false,
+          "erklaerung": "Das spart Minuten und riskiert eine fehlerhafte Serie."
+        },
+        {
+          "text": "Mehr Personal für den Rüstvorgang einsetzen",
+          "ist_korrekt": false,
+          "erklaerung": "Das kann helfen, ist aber nicht der wirksamste Hebel und erhöht die Kosten."
+        }
+      ]
+    },
+    {
+      "id": "PP-PA-003",
+      "typ": "mc",
+      "thema": "PP-PA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was bedeutet das FIFO-Prinzip im Materialfluss?",
+      "optionen": [
+        {
+          "text": "Das zuerst eingelagerte Material wird zuerst entnommen",
+          "ist_korrekt": true,
+          "erklaerung": "First in, first out. So wird verhindert, dass Material überaltert oder Chargen sich vermischen."
+        },
+        {
+          "text": "Das zuletzt eingelagerte Material wird zuerst entnommen",
+          "ist_korrekt": false,
+          "erklaerung": "Das beschreibt das LIFO-Prinzip."
+        },
+        {
+          "text": "Das teuerste Material wird zuerst verbraucht",
+          "ist_korrekt": false,
+          "erklaerung": "Der Preis ist für die Entnahmereihenfolge nicht maßgeblich."
+        },
+        {
+          "text": "Material wird nach Größe sortiert entnommen",
+          "ist_korrekt": false,
+          "erklaerung": "FIFO bezieht sich auf die Zeit, nicht auf die Abmessungen."
+        }
+      ]
+    },
+    {
+      "id": "PP-UP-001",
+      "typ": "mc",
+      "thema": "PP-UP",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welchen Hauptzweck hat ein Schichtübergabeprotokoll?",
+      "optionen": [
+        {
+          "text": "Die nachfolgende Schicht lückenlos über Anlagenzustand und offene Punkte zu informieren",
+          "ist_korrekt": true,
+          "erklaerung": "Ohne dokumentierte Übergabe gehen Störungshinweise verloren und dieselben Fehler werden zweimal gesucht."
+        },
+        {
+          "text": "Die Arbeitszeit der Mitarbeiter zu erfassen",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür dient die Zeiterfassung."
+        },
+        {
+          "text": "Die Qualitätsprüfung zu ersetzen",
+          "ist_korrekt": false,
+          "erklaerung": "Das Protokoll dokumentiert Zustände, es prüft keine Bauteile."
+        },
+        {
+          "text": "Die Materialbestellung auszulösen",
+          "ist_korrekt": false,
+          "erklaerung": "Bestellungen laufen über die Disposition."
+        }
+      ]
+    },
+    {
+      "id": "PP-UP-002",
+      "typ": "mc",
+      "thema": "PP-UP",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Angabe gehört nicht in ein Schichtübergabeprotokoll?",
+      "optionen": [
+        {
+          "text": "Die private Telefonnummer des Kollegen",
+          "ist_korrekt": true,
+          "erklaerung": "Personenbezogene Daten ohne betrieblichen Zweck haben dort nichts zu suchen."
+        },
+        {
+          "text": "Aufgetretene Störungen und ergriffene Maßnahmen",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist eine Kernangabe der Übergabe."
+        },
+        {
+          "text": "Der aktuelle Auftrags- und Stückzahlstand",
+          "ist_korrekt": false,
+          "erklaerung": "Die Folgeschicht muss wissen, wo sie ansetzt."
+        },
+        {
+          "text": "Auffälligkeiten an Werkzeugen oder Prüfmitteln",
+          "ist_korrekt": false,
+          "erklaerung": "Solche Hinweise verhindern Ausschuss in der nächsten Schicht."
+        }
+      ]
+    },
+    {
+      "id": "WISO-BA-001",
+      "typ": "mc",
+      "thema": "WISO-BA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [
+        "BBiG"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "hinweis_pruefung": "Fristen gegen aktuelle BBiG-Fassung belegen",
+      "aufgabenstellung": "Wie lang darf die Probezeit in einem Berufsausbildungsverhältnis nach dem Berufsbildungsgesetz höchstens sein?",
+      "optionen": [
+        {
+          "text": "Vier Monate",
+          "ist_korrekt": true,
+          "erklaerung": "Das BBiG schreibt eine Probezeit von mindestens einem und höchstens vier Monaten vor."
+        },
+        {
+          "text": "Zwei Wochen",
+          "ist_korrekt": false,
+          "erklaerung": "Das liegt unterhalb der gesetzlichen Mindestdauer."
+        },
+        {
+          "text": "Sechs Monate",
+          "ist_korrekt": false,
+          "erklaerung": "Sechs Monate gelten im regulären Arbeitsverhältnis, nicht in der Ausbildung."
+        },
+        {
+          "text": "Zwölf Monate",
+          "ist_korrekt": false,
+          "erklaerung": "Eine so lange Probezeit ist im Ausbildungsverhältnis unzulässig."
+        }
+      ]
+    },
+    {
+      "id": "WISO-BA-002",
+      "typ": "mc",
+      "thema": "WISO-BA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "BBiG"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie kann ein Ausbildungsverhältnis während der Probezeit beendet werden?",
+      "optionen": [
+        {
+          "text": "Von beiden Seiten jederzeit ohne Einhaltung einer Frist und ohne Angabe von Gründen",
+          "ist_korrekt": true,
+          "erklaerung": "Die Probezeit dient beiden Seiten zur Prüfung, ob die Ausbildung passt. Die Kündigung muss allerdings schriftlich erfolgen."
+        },
+        {
+          "text": "Nur durch den Ausbildenden mit vierwöchiger Frist",
+          "ist_korrekt": false,
+          "erklaerung": "Beide Vertragsparteien haben das Kündigungsrecht."
+        },
+        {
+          "text": "Nur mit Zustimmung der zuständigen Kammer",
+          "ist_korrekt": false,
+          "erklaerung": "Eine Zustimmung der Kammer ist nicht erforderlich."
+        },
+        {
+          "text": "Gar nicht, die Probezeit muss vollständig abgeleistet werden",
+          "ist_korrekt": false,
+          "erklaerung": "Das widerspricht dem Zweck der Probezeit."
+        }
+      ]
+    },
+    {
+      "id": "WISO-BA-003",
+      "typ": "mc",
+      "thema": "WISO-BA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wer schließt einen Tarifvertrag ab?",
+      "optionen": [
+        {
+          "text": "Gewerkschaft und Arbeitgeberverband oder einzelner Arbeitgeber",
+          "ist_korrekt": true,
+          "erklaerung": "Tarifverträge sind Ausdruck der Tarifautonomie. Der Staat ist an ihrem Abschluss nicht beteiligt."
+        },
+        {
+          "text": "Betriebsrat und Geschäftsführung",
+          "ist_korrekt": false,
+          "erklaerung": "Diese beiden schließen Betriebsvereinbarungen ab."
+        },
+        {
+          "text": "Bundesarbeitsministerium und Gewerkschaft",
+          "ist_korrekt": false,
+          "erklaerung": "Der Staat mischt sich in Tarifverhandlungen grundsätzlich nicht ein."
+        },
+        {
+          "text": "Industrie- und Handelskammer und Arbeitnehmer",
+          "ist_korrekt": false,
+          "erklaerung": "Die Kammer ist zuständige Stelle für die Berufsbildung, nicht Tarifpartei."
+        }
+      ]
+    },
+    {
+      "id": "WISO-BA-004",
+      "typ": "mc",
+      "thema": "WISO-BA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [
+        "JArbSchG"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "hinweis_pruefung": "Stundenangaben gegen aktuelle JArbSchG-Fassung belegen",
+      "aufgabenstellung": "Wie viele Stunden darf ein Jugendlicher unter 18 Jahren nach dem Jugendarbeitsschutzgesetz regelmäßig täglich höchstens arbeiten?",
+      "optionen": [
+        {
+          "text": "Acht Stunden",
+          "ist_korrekt": true,
+          "erklaerung": "Die Wochenarbeitszeit ist auf 40 Stunden bei fünf Tagen begrenzt. Ein Ausgleich über die Woche ist unter bestimmten Bedingungen möglich."
+        },
+        {
+          "text": "Sechs Stunden",
+          "ist_korrekt": false,
+          "erklaerung": "Sechs Stunden ist keine gesetzliche Höchstgrenze der täglichen Arbeitszeit."
+        },
+        {
+          "text": "Zehn Stunden",
+          "ist_korrekt": false,
+          "erklaerung": "Zehn Stunden gelten unter Bedingungen für Erwachsene nach dem Arbeitszeitgesetz."
+        },
+        {
+          "text": "Zwölf Stunden",
+          "ist_korrekt": false,
+          "erklaerung": "Diese Dauer ist auch für Erwachsene nicht zulässig."
+        }
+      ]
+    },
+    {
+      "id": "WISO-SV-001",
+      "typ": "mc",
+      "thema": "WISO-SV",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welcher Zweig gehört nicht zur gesetzlichen Sozialversicherung in Deutschland?",
+      "optionen": [
+        {
+          "text": "Hausratversicherung",
+          "ist_korrekt": true,
+          "erklaerung": "Die Hausratversicherung ist eine private Sachversicherung."
+        },
+        {
+          "text": "Pflegeversicherung",
+          "ist_korrekt": false,
+          "erklaerung": "Sie ist der jüngste der fünf Zweige."
+        },
+        {
+          "text": "Unfallversicherung",
+          "ist_korrekt": false,
+          "erklaerung": "Sie wird allein vom Arbeitgeber getragen und über die Berufsgenossenschaften organisiert."
+        },
+        {
+          "text": "Arbeitslosenversicherung",
+          "ist_korrekt": false,
+          "erklaerung": "Sie ist ein gesetzlicher Zweig der Sozialversicherung."
+        }
+      ]
+    },
+    {
+      "id": "WISO-SV-002",
+      "typ": "mc",
+      "thema": "WISO-SV",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wer trägt die Beiträge zur gesetzlichen Unfallversicherung?",
+      "optionen": [
+        {
+          "text": "Allein der Arbeitgeber",
+          "ist_korrekt": true,
+          "erklaerung": "Die Unfallversicherung ist der einzige Zweig ohne Arbeitnehmeranteil. Träger sind die Berufsgenossenschaften."
+        },
+        {
+          "text": "Arbeitgeber und Arbeitnehmer je zur Hälfte",
+          "ist_korrekt": false,
+          "erklaerung": "Die hälftige Teilung gilt für Kranken-, Renten- und Arbeitslosenversicherung."
+        },
+        {
+          "text": "Allein der Arbeitnehmer",
+          "ist_korrekt": false,
+          "erklaerung": "Der Arbeitnehmer zahlt hier keinen Beitrag."
+        },
+        {
+          "text": "Der Staat aus Steuermitteln",
+          "ist_korrekt": false,
+          "erklaerung": "Die Finanzierung erfolgt über Beiträge der Unternehmen."
+        }
+      ]
+    },
+    {
+      "id": "WISO-SV-003",
+      "typ": "mc",
+      "thema": "WISO-SV",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [
+        "BetrVG"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "hinweis_pruefung": "Schwellenwert gegen aktuelle BetrVG-Fassung belegen",
+      "aufgabenstellung": "Ab welcher Zahl ständig beschäftigter wahlberechtigter Arbeitnehmer kann in einem Betrieb ein Betriebsrat gewählt werden?",
+      "optionen": [
+        {
+          "text": "Ab fünf",
+          "ist_korrekt": true,
+          "erklaerung": "Von diesen fünf müssen drei wählbar sein, also dem Betrieb mindestens sechs Monate angehören."
+        },
+        {
+          "text": "Ab drei",
+          "ist_korrekt": false,
+          "erklaerung": "Drei ist die Zahl der Wählbaren, nicht der Schwellenwert."
+        },
+        {
+          "text": "Ab zehn",
+          "ist_korrekt": false,
+          "erklaerung": "Zehn ist ein Schwellenwert in anderen Regelungen, etwa beim Kündigungsschutz."
+        },
+        {
+          "text": "Ab zwanzig",
+          "ist_korrekt": false,
+          "erklaerung": "Ab zwanzig entstehen zusätzliche Mitbestimmungsrechte, der Betriebsrat kann aber früher gebildet werden."
+        }
+      ]
+    },
+    {
+      "id": "WISO-WI-001",
+      "typ": "mc",
+      "thema": "WISO-WI",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Das Angebot eines Produkts steigt bei gleichbleibender Nachfrage. Welche Wirkung ist auf einem funktionierenden Markt zu erwarten?",
+      "optionen": [
+        {
+          "text": "Der Preis sinkt",
+          "ist_korrekt": true,
+          "erklaerung": "Bei Angebotsüberhang konkurrieren die Anbieter über den Preis."
+        },
+        {
+          "text": "Der Preis steigt",
+          "ist_korrekt": false,
+          "erklaerung": "Steigende Preise entstehen bei Nachfrageüberhang."
+        },
+        {
+          "text": "Der Preis bleibt konstant",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Ungleichgewicht führt in der Regel zu einer Preisanpassung."
+        },
+        {
+          "text": "Die Nachfrage sinkt automatisch mit",
+          "ist_korrekt": false,
+          "erklaerung": "Die Nachfrage war in der Aufgabenstellung ausdrücklich als konstant angenommen."
+        }
+      ]
+    },
+    {
+      "id": "WISO-WI-002",
+      "typ": "mc",
+      "thema": "WISO-WI",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie haften die Gesellschafter einer GmbH für Verbindlichkeiten der Gesellschaft?",
+      "optionen": [
+        {
+          "text": "Grundsätzlich nur mit ihrer Einlage, nicht mit dem Privatvermögen",
+          "ist_korrekt": true,
+          "erklaerung": "Die Haftungsbeschränkung ist der Kern dieser Rechtsform. Bei Pflichtverletzungen der Geschäftsführung kann es Ausnahmen geben."
+        },
+        {
+          "text": "Unbeschränkt mit ihrem gesamten Privatvermögen",
+          "ist_korrekt": false,
+          "erklaerung": "Das gilt für Einzelunternehmen und die Gesellschafter einer OHG."
+        },
+        {
+          "text": "Gar nicht, es haftet nur der Geschäftsführer persönlich",
+          "ist_korrekt": false,
+          "erklaerung": "Es haftet zunächst das Gesellschaftsvermögen."
+        },
+        {
+          "text": "Anteilig mit dem doppelten Betrag ihrer Einlage",
+          "ist_korrekt": false,
+          "erklaerung": "Eine solche Nachschusspflicht besteht nicht regelmäßig."
+        }
+      ]
+    },
+    {
+      "id": "WISO-SU-001",
+      "typ": "mc",
+      "thema": "WISO-SU",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wer muss die persönliche Schutzausrüstung im Betrieb bereitstellen und bezahlen?",
+      "optionen": [
+        {
+          "text": "Der Arbeitgeber",
+          "ist_korrekt": true,
+          "erklaerung": "Der Arbeitgeber stellt die PSA kostenfrei zur Verfügung. Der Beschäftigte ist verpflichtet, sie bestimmungsgemäß zu benutzen."
+        },
+        {
+          "text": "Der Beschäftigte auf eigene Kosten",
+          "ist_korrekt": false,
+          "erklaerung": "Eine Kostenbeteiligung der Beschäftigten ist unzulässig."
+        },
+        {
+          "text": "Die Berufsgenossenschaft",
+          "ist_korrekt": false,
+          "erklaerung": "Sie berät und überwacht, beschafft aber keine Ausrüstung."
+        },
+        {
+          "text": "Der Betriebsrat",
+          "ist_korrekt": false,
+          "erklaerung": "Der Betriebsrat wirkt beim Arbeitsschutz mit, ist aber nicht beschaffungspflichtig."
+        }
+      ]
+    },
+    {
+      "id": "WISO-SU-002",
+      "typ": "mc",
+      "thema": "WISO-SU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Rangfolge sieht das Kreislaufwirtschaftsgesetz für den Umgang mit Abfällen an erster Stelle vor?",
+      "optionen": [
+        {
+          "text": "Vermeidung",
+          "ist_korrekt": true,
+          "erklaerung": "Die Rangfolge lautet Vermeidung, Vorbereitung zur Wiederverwendung, Recycling, sonstige Verwertung, Beseitigung."
+        },
+        {
+          "text": "Recycling",
+          "ist_korrekt": false,
+          "erklaerung": "Recycling steht erst an dritter Stelle."
+        },
+        {
+          "text": "Energetische Verwertung",
+          "ist_korrekt": false,
+          "erklaerung": "Sie zählt zur sonstigen Verwertung und steht weiter hinten."
+        },
+        {
+          "text": "Beseitigung auf der Deponie",
+          "ist_korrekt": false,
+          "erklaerung": "Die Beseitigung ist die letzte Stufe."
+        }
+      ]
+    },
+    {
+      "id": "WISO-SU-003",
+      "typ": "mc",
+      "thema": "WISO-SU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Gefahrstoffbehälter trägt ein rautenförmiges Piktogramm mit einer Flamme. Was bedeutet das?",
+      "optionen": [
+        {
+          "text": "Der Stoff ist entzündbar",
+          "ist_korrekt": true,
+          "erklaerung": "Das GHS-Piktogramm mit Flamme kennzeichnet entzündbare Stoffe. Zünd- und Wärmequellen sind fernzuhalten."
+        },
+        {
+          "text": "Der Stoff ist ätzend",
+          "ist_korrekt": false,
+          "erklaerung": "Ätzende Stoffe tragen das Symbol mit zwei Reagenzgläsern, die Material und Hand angreifen."
+        },
+        {
+          "text": "Der Stoff ist umweltgefährdend",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür steht das Symbol mit Fisch und Baum."
+        },
+        {
+          "text": "Der Stoff steht unter Druck",
+          "ist_korrekt": false,
+          "erklaerung": "Gase unter Druck werden mit einer Gasflasche gekennzeichnet."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-F01",
+      "typ": "freitext",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Erklären Sie den grundlegenden Unterschied zwischen Thermoplasten und Duroplasten und nennen Sie zu jeder Gruppe ein Anwendungsbeispiel.",
+      "musterloesung": "Thermoplaste bestehen aus unvernetzten, fadenförmigen Makromolekülen. Beim Erwärmen werden sie weich und lassen sich wiederholt umformen und schweißen, beim Abkühlen erstarren sie erneut. Duroplaste sind nach dem Aushärten engmaschig chemisch vernetzt. Sie lassen sich nicht mehr aufschmelzen, sondern zersetzen sich bei starker Erwärmung. Beispiel Thermoplast: PP-Gehäuse, PE-Rohr. Beispiel Duroplast: Steckergehäuse aus Phenolharz, Schaltertaste.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Beschreibt Thermoplaste als unvernetzt und wiederholt umformbar",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Beschreibt Duroplaste als vernetzt und nicht wieder aufschmelzbar",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Nennt ein zutreffendes Thermoplast-Beispiel",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Nennt ein zutreffendes Duroplast-Beispiel",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "nicht vernetzt",
+          "linear aufgebaut",
+          "engmaschig vernetzt",
+          "ausgehärtet",
+          "nicht schmelzbar"
+        ],
+        "haeufige_fehler": [
+          "Verwechslung mit Elastomeren",
+          "Behauptung, Duroplaste seien schweißbar"
+        ]
+      }
+    },
+    {
+      "id": "PT-TU-F01",
+      "typ": "freitext",
+      "thema": "PT-TU",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Nennen Sie vier Angaben, die im Schriftfeld einer technischen Zeichnung enthalten sind.",
+      "musterloesung": "Benennung des Teils, Zeichnungsnummer, Maßstab, Werkstoff, Datum und Name des Zeichners, Projektionsmethode, Allgemeintoleranzen, Firmenname, Blattnummer und Änderungsstand.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Erste zutreffende Angabe",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Zweite zutreffende Angabe",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Dritte zutreffende Angabe",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Vierte zutreffende Angabe",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Teilebezeichnung",
+          "Zeichnungsnr.",
+          "Werkstoffangabe",
+          "Änderungsindex"
+        ],
+        "haeufige_fehler": [
+          "Nennung von Maßen, die nicht im Schriftfeld stehen"
+        ]
+      }
+    },
+    {
+      "id": "PT-WZ-F01",
+      "typ": "freitext",
+      "thema": "PT-WZ",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Beim Drehen wird die Schnittgeschwindigkeit erhöht. Erläutern Sie, welche Auswirkungen das auf Werkzeug und Bearbeitungszeit hat.",
+      "musterloesung": "Mit steigender Schnittgeschwindigkeit steigt die Temperatur in der Schnittzone deutlich an. Der Verschleiß an Frei- und Spanfläche nimmt zu, die Standzeit des Werkzeugs sinkt. Gleichzeitig verkürzt sich die Hauptzeit, weil pro Zeiteinheit mehr Werkstoff abgetragen wird. Wirtschaftlich muss deshalb ein Kompromiss zwischen kurzer Bearbeitungszeit und akzeptablen Werkzeugkosten gefunden werden. Die Oberflächengüte kann sich bis zu einem gewissen Punkt verbessern.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Nennt den Temperaturanstieg in der Schnittzone",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Stellt fest, dass die Standzeit sinkt",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Stellt fest, dass die Bearbeitungszeit sinkt",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Erkennt den wirtschaftlichen Zielkonflikt",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Werkzeuglebensdauer",
+          "Hauptzeit",
+          "Verschleiß nimmt zu"
+        ],
+        "haeufige_fehler": [
+          "Behauptung, die Standzeit steige mit der Schnittgeschwindigkeit"
+        ]
+      }
+    },
+    {
+      "id": "PT-PR-F01",
+      "typ": "freitext",
+      "thema": "PT-PR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Nennen Sie drei Messgrößen, die sich mit einem Messschieber ermitteln lassen, und erklären Sie, warum ein Messschieber für die Prüfung einer Passung nach IT7 in der Regel nicht ausreicht.",
+      "musterloesung": "Mit dem Messschieber lassen sich Außenmaße, Innenmaße und Tiefenmaße bestimmen, teilweise auch Absätze. Für eine Toleranz nach IT7 ist die Ablesegenauigkeit des Messschiebers zu grob und die Messunsicherheit im Verhältnis zur zulässigen Toleranz zu groß. Für solche Passungen werden Bügelmessschrauben, Innenmessgeräte oder Grenzlehren eingesetzt.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Nennt Außenmaß",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Nennt Innenmaß und Tiefenmaß",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Begründet mit zu grober Ablesegenauigkeit bzw. Messunsicherheit",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Nennt ein geeigneteres Prüfmittel",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Mikrometer",
+          "Bügelmessschraube",
+          "Grenzlehrdorn"
+        ],
+        "haeufige_fehler": [
+          "Behauptung, der Messschieber sei für alle Toleranzen ausreichend"
+        ]
+      }
+    },
+    {
+      "id": "PT-FT-F01",
+      "typ": "freitext",
+      "thema": "PT-FT",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN 8580"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Nennen Sie vier der sechs Hauptgruppen der Fertigungsverfahren nach DIN 8580 und geben Sie zu jeder ein Beispiel an.",
+      "musterloesung": "Urformen, Beispiel Gießen oder Spritzgießen. Umformen, Beispiel Biegen oder Tiefziehen. Trennen, Beispiel Drehen, Bohren oder Sägen. Fügen, Beispiel Schweißen oder Schrauben. Beschichten, Beispiel Lackieren oder Galvanisieren. Stoffeigenschaft ändern, Beispiel Härten oder Glühen.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Erste Hauptgruppe mit passendem Beispiel",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Zweite Hauptgruppe mit passendem Beispiel",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Dritte Hauptgruppe mit passendem Beispiel",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Vierte Hauptgruppe mit passendem Beispiel",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Stoffeigenschaften ändern",
+          "Zerspanen als Beispiel für Trennen"
+        ],
+        "haeufige_fehler": [
+          "Zuordnung von Schweißen zum Umformen"
+        ]
+      }
+    },
+    {
+      "id": "PT-MA-F01",
+      "typ": "freitext",
+      "thema": "PT-MA",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "An einer Produktionsanlage soll ein Zylinder eine schwere Last exakt positionieren und dort auch unter Last stehen bleiben. Begründen Sie, ob Sie einen pneumatischen oder einen hydraulischen Antrieb wählen.",
+      "musterloesung": "Es ist ein hydraulischer Antrieb zu wählen. Hydrauliköl ist nahezu inkompressibel, dadurch bleibt die Position auch unter wechselnder Last stabil und es lassen sich mit kleinen Zylindern große Kräfte erzeugen. Druckluft dagegen lässt sich zusammendrücken, ein Pneumatikzylinder würde unter Last nachfedern und die Position nicht exakt halten. Nachteile der Hydraulik sind der höhere Wartungsaufwand, die Leckagegefahr und die geringere Geschwindigkeit.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Entscheidet sich für Hydraulik",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Begründet mit der Inkompressibilität des Öls",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Nennt die hohe erreichbare Kraft",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Nennt mindestens einen Nachteil der Hydraulik",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Öl lässt sich nicht komprimieren",
+          "Luft federt nach"
+        ],
+        "haeufige_fehler": [
+          "Wahl der Pneumatik mit Verweis auf Geschwindigkeit, ohne die Positioniergenauigkeit zu berücksichtigen"
+        ]
+      }
+    },
+    {
+      "id": "PP-IH-F01",
+      "typ": "freitext",
+      "thema": "PP-IH",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN 31051"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Nennen und erläutern Sie die vier Grundmaßnahmen der Instandhaltung nach DIN 31051.",
+      "musterloesung": "Wartung verzögert den Abbau des Abnutzungsvorrats, zum Beispiel durch Schmieren, Reinigen und Nachstellen. Inspektion stellt den Ist-Zustand fest und beurteilt ihn, ohne einzugreifen. Instandsetzung stellt den Sollzustand nach einem Fehler oder Ausfall wieder her. Verbesserung steigert die Zuverlässigkeit oder Instandhaltbarkeit durch technische oder organisatorische Änderungen, ohne die geforderte Funktion zu ändern.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Wartung genannt und zutreffend erläutert",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Inspektion genannt und zutreffend erläutert",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Instandsetzung genannt und zutreffend erläutert",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Verbesserung genannt und zutreffend erläutert",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Abnutzungsvorrat erhalten",
+          "Zustand beurteilen",
+          "Sollzustand wiederherstellen"
+        ],
+        "haeufige_fehler": [
+          "Verwechslung von Wartung und Inspektion"
+        ]
+      }
+    },
+    {
+      "id": "PP-QS-F01",
+      "typ": "freitext",
+      "thema": "PP-QS",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Während der laufenden Serie überschreitet ein Stichprobenwert die obere Eingriffsgrenze der Qualitätsregelkarte. Beschreiben Sie Ihr Vorgehen.",
+      "musterloesung": "Zuerst die Messung wiederholen, um einen Mess- oder Ablesefehler auszuschließen. Bestätigt sich der Wert, den Prozess anhalten oder korrigieren, damit kein weiterer Ausschuss entsteht. Anschließend die seit der letzten in Ordnung befundenen Stichprobe gefertigten Teile sperren und prüfen. Die Ursache ermitteln, zum Beispiel Werkzeugverschleiß, Temperaturdrift oder falsche Einstellung, und beseitigen. Vorgang und Maßnahme dokumentieren, danach die Fertigung wieder freigeben und die Wirksamkeit überwachen. Vorgesetzten und Qualitätssicherung informieren.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Messung überprüfen bzw. Prozess anhalten",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Bereits gefertigte Teile sperren und prüfen",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Ursache ermitteln und beseitigen",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Dokumentation und Information der Verantwortlichen",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Rückverfolgung",
+          "Sperrlager",
+          "Vorgesetzten informieren"
+        ],
+        "haeufige_fehler": [
+          "Weiterproduzieren, weil die Toleranzgrenze noch nicht erreicht ist"
+        ]
+      }
+    },
+    {
+      "id": "PP-UP-F01",
+      "typ": "freitext",
+      "thema": "PP-UP",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Angaben sollte ein Schichtübergabeprotokoll mindestens enthalten? Nennen Sie vier Punkte.",
+      "musterloesung": "Auftrags- und Stückzahlstand sowie erreichter Fertigungsfortschritt. Aufgetretene Störungen und die dagegen ergriffenen Maßnahmen. Zustand von Maschine, Werkzeugen und Prüfmitteln einschließlich Auffälligkeiten. Bestand an Material und Hilfsstoffen sowie offene Punkte für die Folgeschicht. Qualitätsauffälligkeiten und gesperrte Teile. Datum, Schicht sowie Namen der übergebenden und übernehmenden Person.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Auftrags- bzw. Produktionsstand",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Störungen und Maßnahmen",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Zustand von Maschine, Werkzeug oder Material",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Offene Punkte bzw. Namen und Zeitpunkt der Übergabe",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Restmenge",
+          "Werkzeugstandzeit",
+          "Qualitätsauffälligkeiten"
+        ],
+        "haeufige_fehler": [
+          "Nennung reiner Zeiterfassungsdaten"
+        ]
+      }
+    },
+    {
+      "id": "PP-AS-F01",
+      "typ": "freitext",
+      "thema": "PP-AS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Sie sollen einen neuen Fertigungsauftrag an einer Ihnen bekannten Maschine vorbereiten. Beschreiben Sie die wesentlichen Arbeitsschritte bis zum Start der Serie.",
+      "musterloesung": "Technische Unterlagen prüfen, also Zeichnung, Arbeitsplan und Zeichnungsstand auf Vollständigkeit und Aktualität. Werkstoff und Hilfsstoffe bereitstellen und auf Kennzeichnung prüfen. Werkzeuge und Spannmittel auswählen, prüfen und rüsten. Maschinenparameter einstellen, Programm laden. Erstmuster fertigen und mit geeigneten Prüfmitteln gegen die Zeichnung prüfen. Erst nach Erstmusterfreigabe die Serie starten und laufend Stichproben nehmen. Sicherheitseinrichtungen vor dem Anlauf auf Funktion prüfen.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Technische Unterlagen und Material prüfen",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Werkzeuge und Spannmittel rüsten, Parameter einstellen",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Erstmuster fertigen und prüfen",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Freigabe abwarten, Sicherheitseinrichtungen prüfen bzw. Stichproben vorsehen",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Erstteilprüfung",
+          "Einrichten",
+          "Anfahrteil"
+        ],
+        "haeufige_fehler": [
+          "Serienstart ohne Erstmusterprüfung"
+        ]
+      }
+    },
+    {
+      "id": "WISO-SV-F01",
+      "typ": "freitext",
+      "thema": "WISO-SV",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Nennen Sie die fünf Zweige der gesetzlichen Sozialversicherung und geben Sie zu zweien davon je eine Leistung an.",
+      "musterloesung": "Krankenversicherung, Pflegeversicherung, Rentenversicherung, Arbeitslosenversicherung und Unfallversicherung. Leistungen zum Beispiel: Die Krankenversicherung übernimmt Behandlungskosten und zahlt Krankengeld. Die Rentenversicherung zahlt Altersrente und Erwerbsminderungsrente. Die Arbeitslosenversicherung zahlt Arbeitslosengeld und finanziert Weiterbildung. Die Unfallversicherung leistet nach Arbeitsunfällen und Berufskrankheiten.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Mindestens drei Zweige korrekt genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Alle fünf Zweige korrekt genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Erste zutreffende Leistung genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Zweite zutreffende Leistung genannt",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "gesetzliche Krankenversicherung",
+          "GRV",
+          "Berufsgenossenschaft"
+        ],
+        "haeufige_fehler": [
+          "Nennung privater Versicherungen wie Haftpflicht"
+        ]
+      }
+    },
+    {
+      "id": "WISO-BA-F01",
+      "typ": "freitext",
+      "thema": "WISO-BA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "BBiG"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Nennen Sie drei Pflichten des Ausbildenden und drei Pflichten der Auszubildenden nach dem Berufsbildungsgesetz.",
+      "musterloesung": "Pflichten des Ausbildenden: Vermittlung der Fertigkeiten und Kenntnisse des Ausbildungsberufsbildes, kostenlose Bereitstellung der Ausbildungsmittel, Freistellung für Berufsschule und Prüfungen, Zahlung einer angemessenen Vergütung, Führen eines Ausbildungsnachweises ermöglichen, Ausstellen eines Zeugnisses. Pflichten der Auszubildenden: Lernpflicht und Bemühenspflicht, Teilnahme am Berufsschulunterricht und an Prüfungen, Weisungen folgen, Sorgfaltspflicht im Umgang mit Werkzeugen und Material, Führen des Berichtshefts, Betriebsgeheimnisse wahren, Krankmeldung.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Zwei zutreffende Pflichten des Ausbildenden",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Dritte zutreffende Pflicht des Ausbildenden",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Zwei zutreffende Pflichten der Auszubildenden",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Dritte zutreffende Pflicht der Auszubildenden",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Berichtsheftpflicht",
+          "Freistellungspflicht",
+          "Vergütungspflicht"
+        ],
+        "haeufige_fehler": [
+          "Verwechslung der Pflichten beider Seiten"
+        ]
+      }
+    },
+    {
+      "id": "WISO-SU-F01",
+      "typ": "freitext",
+      "thema": "WISO-SU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "An Ihrer Maschine entstehen ölhaltige Späne und verbrauchtes Putztuch. Erläutern Sie, wie Sie damit umgehen und begründen Sie Ihr Vorgehen.",
+      "musterloesung": "Ölhaltige Späne und ölgetränkte Putztücher sind gefährliche Abfälle und dürfen nicht in den Restmüll. Sie werden getrennt in gekennzeichnete, verschließbare Behälter gegeben, die dafür vorgesehen sind. Späne werden möglichst abgetropft oder abgeschleudert, damit das Öl zurückgewonnen und die Späne dem Recycling zugeführt werden können. Ölgetränkte Tücher sind zusätzlich selbstentzündungsgefährdet und gehören deshalb in einen Metallbehälter mit Deckel. Grundlage sind die Betriebsanweisung und die Abfallhierarchie mit Vorrang der Verwertung vor der Beseitigung.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Getrennte Sammlung in gekennzeichneten Behältern",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Erkennt die Einstufung als gefährlicher Abfall",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Nennt Verwertung bzw. Ölrückgewinnung",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Nennt die Brandgefahr bei ölgetränkten Tüchern oder verweist auf die Betriebsanweisung",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Sonderabfall",
+          "Wertstoff",
+          "Selbstentzündung"
+        ],
+        "haeufige_fehler": [
+          "Entsorgung im Restmüll",
+          "Vermischen mit nicht gefährlichem Abfall"
+        ]
+      }
+    }
+  ]
+}
