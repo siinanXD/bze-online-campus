@@ -431,10 +431,73 @@
   },
   "ausbilder": {
     "cockpit": "Ausbilder-Cockpit",
-    "hinweis": "Übersicht deiner zugewiesenen Teilnehmer. Detailauswertungen folgen in AP-11.",
+    "hinweis": "Übersicht deiner zugewiesenen Teilnehmer mit Fortschritt, Aktivität und Risikomarkierung.",
     "teilnehmer": "Teilnehmer",
     "keineTeilnehmer": "Dir sind noch keine Teilnehmer zugewiesen.",
-    "reviewLink": "Freitext-Review",
+    "nav": {
+      "label": "Ausbilder-Navigation",
+      "cockpit": "Cockpit",
+      "kohorte": "Kohorte",
+      "review": "Freitext-Review"
+    },
+    "spalten": {
+      "fortschritt": "Fortschritt",
+      "lernpunkte": "Lernpunkte",
+      "fragenWoche": "Fragen/Woche",
+      "quote": "Richtig-Quote",
+      "pruefungen": "Prüfungen",
+      "letzteNote": "Letzte Note",
+      "aktiveTage": "Aktive Tage",
+      "letzteAktivitaet": "Letzte Aktivität",
+      "risiko": "Risiko"
+    },
+    "risiko": {
+      "ok": "Kein Risiko",
+      "aktivitaet": "Unter 3 Lerntagen/Woche",
+      "pruefungen": "Zwei Prüfungen in Folge nicht bestanden"
+    },
+    "kohorte": {
+      "titel": "Kohortenansicht",
+      "untertitel": "Durchschnitte und Themen mit hoher Fehlerquote.",
+      "keine": "Keine Kohorten sichtbar.",
+      "teilnehmer": "Teilnehmer",
+      "fortschrittAvg": "Fortschritt Ø",
+      "lernpunkteAvg": "Lernpunkte Ø",
+      "quoteAvg": "Quote Ø",
+      "schwachTitel": "Höchste gruppenweite Fehlerquote",
+      "schwachKeine": "Noch nicht genug Versuche für eine Auswertung.",
+      "versuche": "{n} Versuche",
+      "fehlerquote": "{wert} % Fehler"
+    },
+    "detail": {
+      "zurueck": "Zurück zum Cockpit",
+      "nichtGefunden": "Teilnehmer nicht gefunden oder nicht zugewiesen.",
+      "bereiche": "Fortschritt je Bereich",
+      "fertig": "Abgeschlossen",
+      "offen": "Offen",
+      "fehlerschwerpunkte": "Fehlerschwerpunkte",
+      "fehler": "{n} offen falsch",
+      "keineFehler": "Keine offenen Fehlerschwerpunkte.",
+      "heatmap": "Aktivität (28 Tage)",
+      "heatmapAria": "Heatmap der Lernversuche der letzten 28 Tage",
+      "heatmapHinweis": "Dunkler = mehr Versuche an diesem Tag.",
+      "pruefungen": "Prüfungen",
+      "keinePruefungen": "Noch keine abgegebenen Prüfungen.",
+      "pruefungOhneTitel": "Wochenprüfung",
+      "note": "Note {n}",
+      "pruefungsreife": "Prüfungsreife / Empfehlung",
+      "kammerhinweis": "Die Zulassung zur Kammerprüfung erfolgt durch die Kammer. Hier bestätigst du nur eine Empfehlung — keine Zulassung.",
+      "keineReife": "Noch keine Prüfungsreife-Empfehlung ausgelöst.",
+      "reifeOffen": "Noch nicht erreicht",
+      "reifeEmpfohlen": "Kriterien erfüllt — Empfehlung ausstehend",
+      "reifeBestaetigt": "Empfehlung bestätigt",
+      "kommentar": "Kommentar",
+      "kommentarLabel": "Kommentar zur Empfehlung (optional)",
+      "bestaetigen": "Empfehlung bestätigen",
+      "bestaetigenLaeuft": "Wird gespeichert …",
+      "bestaetigenHinweis": "Das ist eine Ausbilderempfehlung, keine Prüfungszulassung.",
+      "bestaetigenFehler": "Bestätigung fehlgeschlagen. Bitte erneut versuchen."
+    },
     "review": {
       "titel": "Freitext-Review",
       "untertitel": "Offene Freitext-Antworten bewerten und KI-Vorschläge prüfen.",
@@ -464,7 +527,8 @@
         "nutzermeldung": "Nutzermeldung",
         "sonstige": "Review"
       }
-    }
+    },
+    "reviewLink": "Freitext-Review"
   },
   "fortschritt": {
     "titel": "Fortschritt und Abzeichen",
