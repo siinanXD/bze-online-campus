@@ -15,6 +15,9 @@
       ],
       "@bze/config/*": [
         "./packages/config/*"
+      ],
+      "@bze/db": [
+        "./packages/db/index.ts"
       ]
     },
     "lib": [
