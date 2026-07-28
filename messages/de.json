@@ -167,5 +167,51 @@
         "kontaktPlatzhalter": "[Kontakt des Datenschutzbeauftragten wird ergänzt]"
       }
     }
+  },
+  "topic": {
+    "uebersicht": {
+      "kicker": "Thema"
+    },
+    "abschnitte": {
+      "fachkundeLesen": "Fachkunde lesen",
+      "fragenUeben": "Fragen üben",
+      "unterricht": "Unterricht"
+    },
+    "zeit": {
+      "minuten": "{minuten} Min",
+      "stundenMinuten": "{stunden} Std {minuten} Min"
+    },
+    "fachkundeLesen": {
+      "leer": "Für dieses Thema stehen noch keine Lerneinheiten bereit.",
+      "kapitelFortschritt": "{gelesen} von {gesamt} Kapiteln gelesen",
+      "demoHinweis": "Beispiel-Inhalt: Es sind noch keine freigegebenen Lerneinheiten aus der Datenbank vorhanden."
+    },
+    "fragenUeben": {
+      "hinweis": "Übe die Fragen zu diesem Thema, bis du sie sicher beherrschst.",
+      "cta": "Fragen üben"
+    },
+    "unterricht": {
+      "hinweis": "Videos folgen in Kürze."
+    },
+    "kapitel": {
+      "fortschritt": "{prozent} % der Kapitel gelesen",
+      "liste": "Kapitelübersicht"
+    },
+    "lerneinheit": {
+      "quellenTitel": "Quellen",
+      "lesezeitHinweis": "Das ging schneller als die geschätzte Lesezeit. Wirf bei Unsicherheit noch einen Blick zurück — weiter geht's trotzdem.",
+      "demoHinweis": "Beispiel-Inhalt: Dein Lesefortschritt wird hier nicht gespeichert.",
+      "daumenHoch": "Hilfreich",
+      "daumenRunter": "Nicht hilfreich",
+      "fehlerTitel": "Lerneinheit konnte nicht geladen werden",
+      "fehlerBeschreibung": "Etwas ist schiefgelaufen. Versuche es noch einmal.",
+      "nichtGefundenTitel": "Lerneinheit nicht gefunden",
+      "nichtGefundenBeschreibung": "Diese Lerneinheit gibt es nicht oder ist nicht mehr freigegeben."
+    },
+    "fehler": {
+      "titel": "Thema konnte nicht geladen werden",
+      "beschreibung": "Etwas ist schiefgelaufen. Versuche es noch einmal.",
+      "erneutVersuchen": "Erneut versuchen"
+    }
   }
 }

@@ -167,5 +167,51 @@
         "kontaktPlatzhalter": "[سيتم إضافة بيانات التواصل مع مسؤول حماية البيانات]"
       }
     }
+  },
+  "topic": {
+    "uebersicht": {
+      "kicker": "الموضوع"
+    },
+    "abschnitte": {
+      "fachkundeLesen": "قراءة المعرفة الفنية",
+      "fragenUeben": "التدريب على الأسئلة",
+      "unterricht": "الدروس"
+    },
+    "zeit": {
+      "minuten": "{minuten} د",
+      "stundenMinuten": "{stunden} س {minuten} د"
+    },
+    "fachkundeLesen": {
+      "leer": "لا توجد وحدات تعليمية متاحة بعد لهذا الموضوع.",
+      "kapitelFortschritt": "تمت قراءة {gelesen} من {gesamt} فصول",
+      "demoHinweis": "محتوى تجريبي: لا توجد بعد وحدات تعليمية معتمدة في قاعدة البيانات."
+    },
+    "fragenUeben": {
+      "hinweis": "تدرّب على أسئلة هذا الموضوع حتى تتقنها جيدًا.",
+      "cta": "ابدأ التدريب على الأسئلة"
+    },
+    "unterricht": {
+      "hinweis": "الفيديوهات ستتوفر قريبًا."
+    },
+    "kapitel": {
+      "fortschritt": "تمت قراءة {prozent}% من الفصول",
+      "liste": "قائمة الفصول"
+    },
+    "lerneinheit": {
+      "quellenTitel": "المصادر",
+      "lesezeitHinweis": "لقد أنهيت القراءة أسرع من الوقت المقدّر. راجع القسم إذا لم تكن متأكدًا — يمكنك المتابعة الآن.",
+      "demoHinweis": "محتوى تجريبي: لن يتم حفظ تقدمك في القراءة هنا.",
+      "daumenHoch": "مفيد",
+      "daumenRunter": "غير مفيد",
+      "fehlerTitel": "تعذّر تحميل الوحدة التعليمية",
+      "fehlerBeschreibung": "حدث خطأ ما. حاول مرة أخرى.",
+      "nichtGefundenTitel": "الوحدة التعليمية غير موجودة",
+      "nichtGefundenBeschreibung": "هذه الوحدة التعليمية غير موجودة أو لم تعد معتمدة."
+    },
+    "fehler": {
+      "titel": "تعذّر تحميل الموضوع",
+      "beschreibung": "حدث خطأ ما. حاول مرة أخرى.",
+      "erneutVersuchen": "أعد المحاولة"
+    }
   }
 }
