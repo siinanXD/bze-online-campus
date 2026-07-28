@@ -1,9 +1,31 @@
 {
-  "app": { "name": "BZE Online Campus", "traeger": "Berufsbildungszentrum Euskirchen" },
-  "nav": { "start": "Start", "lernen": "Lernen", "pruefung": "Prüfung", "bericht": "Bericht", "mehr": "Mehr" },
-  "status": { "neu": "Neu", "einmalRichtig": "Einmal richtig", "falsch": "Falsch", "abgeschlossen": "Abgeschlossen" },
-  "common": { "weiter": "Weiter", "abbrechen": "Abbrechen", "einloggen": "Einloggen", "sprache": "Sprache" },
-  "start": { "titel": "BZE Online Campus", "hinweis": "Fundament & Design-System stehen (AP-00 bis AP-02). Die Oberfläche folgt in Welle 1." },
+  "app": {
+    "name": "BZE Online Campus",
+    "traeger": "Berufsbildungszentrum Euskirchen"
+  },
+  "nav": {
+    "start": "Start",
+    "lernen": "Lernen",
+    "pruefung": "Prüfung",
+    "bericht": "Bericht",
+    "mehr": "Mehr"
+  },
+  "status": {
+    "neu": "Neu",
+    "einmalRichtig": "Einmal richtig",
+    "falsch": "Falsch",
+    "abgeschlossen": "Abgeschlossen"
+  },
+  "common": {
+    "weiter": "Weiter",
+    "abbrechen": "Abbrechen",
+    "einloggen": "Einloggen",
+    "sprache": "Sprache"
+  },
+  "start": {
+    "titel": "BZE Online Campus",
+    "hinweis": "Fundament & Design-System stehen (AP-00 bis AP-02). Die Oberfläche folgt in Welle 1."
+  },
   "showcase": {
     "titel": "Design-System (AP-02)",
     "komponenten": "Basiskomponenten",
@@ -11,5 +33,336 @@
     "status": "Fragenstatus (Farbe + Symbol + Textlabel)",
     "fortschritt": "Fortschritt",
     "hinweis": "Farbe ist nie der einzige Informationsträger — jeder Status trägt Symbol und Textlabel."
+  },
+  "auth": {
+    "login": {
+      "titel": "Anmelden",
+      "untertitel": "Melde dich mit deinem Benutzernamen an.",
+      "benutzername": "Benutzername",
+      "passwort": "Passwort",
+      "anmelden": "Einloggen",
+      "ladeStatus": "Anmeldung läuft …"
+    },
+    "passwortAendern": {
+      "titel": "Neues Passwort festlegen",
+      "hinweis": "Aus Sicherheitsgründen musst du beim ersten Login ein eigenes Passwort vergeben.",
+      "neuesPasswort": "Neues Passwort",
+      "passwortWiederholen": "Passwort wiederholen",
+      "speichern": "Passwort speichern",
+      "ladeStatus": "Wird gespeichert …"
+    },
+    "sprachwahl": {
+      "titel": "Sprache und Kohorte",
+      "hinweis": "Wähle deine Sprache. Übungsfragen und Fachkunde bleiben immer zusätzlich auf Deutsch.",
+      "sprache": "Sprache",
+      "beitrittscode": "Kohorten-Code (optional)",
+      "beitrittscodeHinweis": "Den Code bekommst du von deiner Ausbildungsstätte. Du kannst ihn auch später eintragen.",
+      "weiter": "Weiter",
+      "ueberspringen": "Später festlegen",
+      "ladeStatus": "Wird gespeichert …",
+      "beitrittErfolgreich": "Kohorte „{kohorte}“ beigetreten."
+    },
+    "fehler": {
+      "pflichtfeld": "Bitte fülle alle Felder aus.",
+      "anmeldungFehlgeschlagen": "Benutzername oder Passwort ist falsch.",
+      "minLaenge": "Das Passwort muss mindestens 8 Zeichen haben.",
+      "stimmtNichtUeberein": "Die Passwörter stimmen nicht überein.",
+      "serverfehler": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+      "codeUngueltig": "Dieser Kohorten-Code ist ungültig.",
+      "beitrittNichtMoeglich": "Der Beitritt per Code ist gerade nicht möglich. Bitte wende dich an deine Verwaltung.",
+      "zuLang": "Das ist zu lang."
+    }
+  },
+  "shell": {
+    "nav": {
+      "ariaLabel": "Hauptnavigation",
+      "start": "Start",
+      "lernen": "Lernen",
+      "pruefung": "Prüfung",
+      "bericht": "Bericht",
+      "mehr": "Mehr"
+    },
+    "header": {
+      "profil": "Profil öffnen",
+      "fortschrittLabel": "Gesamtfortschritt: {wert} Prozent"
+    },
+    "begruessung": {
+      "morgenMitName": "Guten Morgen, {name}!",
+      "morgenAllgemein": "Guten Morgen!",
+      "mittagMitName": "Guten Tag, {name}!",
+      "mittagAllgemein": "Guten Tag!",
+      "abendMitName": "Guten Abend, {name}!",
+      "abendAllgemein": "Guten Abend!"
+    },
+    "marketing": {
+      "footer": {
+        "ariaLabel": "Fußzeilen-Links",
+        "impressum": "Impressum",
+        "datenschutz": "Datenschutz"
+      },
+      "landing": {
+        "heroTitel": "Gut vorbereitet in die IHK-Prüfung",
+        "heroUntertitel": "Fachkunde lesen, Prüfungsfragen einzeln üben, Wochenprüfungen schreiben und den Ausbildungsnachweis führen – alles an einem Ort, entwickelt mit dem Berufsbildungszentrum Euskirchen.",
+        "ctaEinloggen": "Einloggen",
+        "ctaMehrErfahren": "Mehr erfahren",
+        "traegerTitel": "Ein Angebot des Berufsbildungszentrums Euskirchen",
+        "traegerText": "Der BZE Online Campus begleitet dich während deiner Umschulung oder Ausbildung durch die schriftliche Vorbereitung auf deine Kammerprüfung. Dein Ausbilder sieht deinen Fortschritt und unterstützt dich gezielt.",
+        "nutzenTitel": "Was die App für dich tut",
+        "nutzen": {
+          "fachkunde": {
+            "titel": "Fachkunde zum Nachlesen",
+            "text": "Zu jedem Thema stehen dir Tabellenbuch, Formeln und Fachkundetexte mit Quellenangabe zur Verfügung – damit du falsch beantwortete Fragen belegen kannst."
+          },
+          "fragenUeben": {
+            "titel": "Prüfungsfragen einzeln üben",
+            "text": "Wie in einer Fahrschul-App: Beantworte Pflichtprüfungsaufgaben einzeln, mit sofortigem Feedback und Erklärung."
+          },
+          "wochenpruefung": {
+            "titel": "Wochenprüfungen",
+            "text": "Regelmäßige Prüfungen zeigen dir, wo du stehst, und wie nah du deiner Prüfungsreife bist."
+          },
+          "berichtsheft": {
+            "titel": "Ausbildungsnachweis",
+            "text": "Führe dein Berichtsheft direkt in der App und behalte den Überblick über offene Zeiträume."
+          }
+        },
+        "einstiegTitel": "Bereit anzufangen?",
+        "einstiegText": "Melde dich mit den Zugangsdaten an, die du von deinem Ausbilder erhalten hast."
+      },
+      "impressum": {
+        "titel": "Impressum",
+        "anbieterTitel": "Anbieter",
+        "anbieterName": "Berufsbildungszentrum Euskirchen",
+        "anschriftPlatzhalter": "[Anschrift wird ergänzt]",
+        "vertretungTitel": "Vertretungsberechtigte Personen",
+        "vertretungPlatzhalter": "[Wird ergänzt]",
+        "kontaktTitel": "Kontakt",
+        "kontaktPlatzhalter": "[Telefon und E-Mail werden ergänzt]",
+        "verantwortlichTitel": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
+        "verantwortlichPlatzhalter": "[Wird ergänzt]",
+        "streitschlichtungTitel": "Streitschlichtung",
+        "streitschlichtungText": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit. Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+        "haftungTitel": "Haftungshinweis",
+        "haftungInhalteText": "Die Inhalte dieser App wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir dennoch keine Gewähr übernehmen; maßgeblich für die Prüfungszulassung ist ausschließlich die zuständige Kammer.",
+        "haftungLinksText": "Für die Inhalte verlinkter externer Seiten sind ausschließlich deren Betreiber verantwortlich.",
+        "urheberrechtTitel": "Urheberrecht",
+        "urheberrechtText": "Die durch die Betreiber erstellten Inhalte unterliegen dem deutschen Urheberrecht. Prüfungsaufgaben von Kammern oder Prüfungsverlagen werden nicht reproduziert."
+      },
+      "datenschutz": {
+        "titel": "Datenschutzerklärung",
+        "einleitung": "Der Schutz deiner Daten ist uns wichtig. Diese Erklärung informiert dich darüber, welche Daten wir wie verarbeiten.",
+        "verantwortlicherTitel": "Verantwortlicher",
+        "verantwortlicherPlatzhalter": "[Name, Anschrift und Kontakt des Verantwortlichen werden ergänzt]",
+        "erhebungTitel": "Welche Daten wir verarbeiten",
+        "erhebungText": "Wir verarbeiten die Daten, die für deine Anmeldung, dein Lernen und deinen Ausbildungsnachweis erforderlich sind, etwa Benutzername, Lernfortschritt, Prüfungsergebnisse und Berichtsheft-Einträge.",
+        "hostingTitel": "Hosting",
+        "hostingText": "Diese App wird ausschließlich auf Servern innerhalb der Europäischen Union betrieben.",
+        "kiTitel": "Einsatz von KI",
+        "kiText": "Für Lernfeedback und Formulierungshilfen setzen wir KI-Dienste ein, mit denen ein Auftragsverarbeitungsvertrag besteht und die deine Daten nicht zum Training verwenden. KI-Bewertungen sind Lernfeedback, keine Prüfungsleistung.",
+        "cookiesTitel": "Cookies und lokale Speicherung",
+        "cookiesText": "Diese App ist cookiefrei. Es wird ausschließlich technisch notwendige Speicherung verwendet, etwa für deine Anmeldung und für Offline-Funktionen.",
+        "rechteTitel": "Deine Rechte",
+        "rechteText": "Du hast das Recht auf Auskunft, Berichtigung, Löschung und Datenübertragbarkeit. Datenexport und Kontolöschung findest du in deinem Profil.",
+        "kontaktTitel": "Kontakt in Datenschutzfragen",
+        "kontaktPlatzhalter": "[Kontakt des Datenschutzbeauftragten wird ergänzt]",
+        "rechtsgrundlagenTitel": "Rechtsgrundlagen",
+        "rechtsgrundlagenText": "Die Verarbeitung erfolgt zur Durchführung deiner Ausbildung im Rahmen des mit dem Bildungsträger bestehenden Vertrags- bzw. Ausbildungsverhältnisses (Art. 6 Abs. 1 lit. b DSGVO) sowie zur Erfüllung rechtlicher Pflichten, etwa zum Ausbildungsnachweis (Art. 6 Abs. 1 lit. c DSGVO). Soweit eine Verarbeitung darüber hinausgeht, stützen wir sie auf ein berechtigtes Interesse an einer funktionierenden Lernplattform (Art. 6 Abs. 1 lit. f DSGVO) oder auf deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), die du jederzeit widerrufen kannst.",
+        "speicherTitel": "Speicherdauer",
+        "speicherText": "Wir speichern deine Daten nur so lange, wie es für die Ausbildung und die gesetzlich vorgeschriebene Aufbewahrung von Ausbildungsnachweisen erforderlich ist. Danach werden sie gelöscht oder anonymisiert. Dein Konto und die zugehörigen Lerndaten kannst du in deinem Profil löschen lassen.",
+        "auftragsverarbeiterTitel": "Auftragsverarbeiter und Empfänger",
+        "auftragsverarbeiterText": "Für Betrieb und Speicherung nutzen wir Dienstleister als Auftragsverarbeiter (Art. 28 DSGVO), deren Server ausschließlich in der Europäischen Union stehen (u. a. Datenbank- und Hosting-Dienst Supabase, Region EU). Eine Übermittlung deiner personenbezogenen Daten in Länder außerhalb der EU/des EWR findet nicht statt. Deine Daten werden nicht verkauft und nicht zu Werbezwecken weitergegeben.",
+        "beschwerdeTitel": "Beschwerderecht",
+        "beschwerdeText": "Wenn du der Ansicht bist, dass die Verarbeitung deiner Daten gegen das Datenschutzrecht verstößt, hast du das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in dem EU-Mitgliedstaat deines Wohnorts oder Arbeitsplatzes."
+      }
+    }
+  },
+  "topic": {
+    "uebersicht": {
+      "kicker": "Thema"
+    },
+    "abschnitte": {
+      "fachkundeLesen": "Fachkunde lesen",
+      "fragenUeben": "Fragen üben",
+      "unterricht": "Unterricht"
+    },
+    "zeit": {
+      "minuten": "{minuten} Min",
+      "stundenMinuten": "{stunden} Std {minuten} Min"
+    },
+    "fachkundeLesen": {
+      "leer": "Für dieses Thema stehen noch keine Lerneinheiten bereit.",
+      "kapitelFortschritt": "{gelesen} von {gesamt} Kapiteln gelesen",
+      "demoHinweis": "Beispiel-Inhalt: Es sind noch keine freigegebenen Lerneinheiten aus der Datenbank vorhanden."
+    },
+    "fragenUeben": {
+      "hinweis": "Übe die Fragen zu diesem Thema, bis du sie sicher beherrschst.",
+      "cta": "Fragen üben"
+    },
+    "unterricht": {
+      "hinweis": "Videos folgen in Kürze."
+    },
+    "kapitel": {
+      "fortschritt": "{prozent} % der Kapitel gelesen",
+      "liste": "Kapitelübersicht"
+    },
+    "lerneinheit": {
+      "quellenTitel": "Quellen",
+      "lesezeitHinweis": "Das ging schneller als die geschätzte Lesezeit. Wirf bei Unsicherheit noch einen Blick zurück — weiter geht's trotzdem.",
+      "demoHinweis": "Beispiel-Inhalt: Dein Lesefortschritt wird hier nicht gespeichert.",
+      "daumenHoch": "Hilfreich",
+      "daumenRunter": "Nicht hilfreich",
+      "fehlerTitel": "Lerneinheit konnte nicht geladen werden",
+      "fehlerBeschreibung": "Etwas ist schiefgelaufen. Versuche es noch einmal.",
+      "nichtGefundenTitel": "Lerneinheit nicht gefunden",
+      "nichtGefundenBeschreibung": "Diese Lerneinheit gibt es nicht oder ist nicht mehr freigegeben."
+    },
+    "fehler": {
+      "titel": "Thema konnte nicht geladen werden",
+      "beschreibung": "Etwas ist schiefgelaufen. Versuche es noch einmal.",
+      "erneutVersuchen": "Erneut versuchen"
+    }
+  },
+  "admin": {
+    "titel": "Administration",
+    "untertitel": "Nutzerverwaltung & Audit-Log",
+    "nav": {
+      "beschriftung": "Admin-Bereich",
+      "nutzerverwaltung": "Nutzerverwaltung",
+      "auditLog": "Audit-Log"
+    },
+    "rollen": {
+      "teilnehmer": "Teilnehmer",
+      "ausbilder": "Ausbilder",
+      "verwaltung": "Verwaltung",
+      "admin": "Admin"
+    },
+    "zugriff": {
+      "titel": "Kein Zugriff",
+      "hinweis": "Dieser Bereich ist Administration und Verwaltung vorbehalten. Bitte melde dich mit einem berechtigten Konto an.",
+      "eingeschraenktVerwaltung": "Als Verwaltung siehst du nur Daten deines eigenen Trägers. Einige Aktionen, z. B. das Audit-Log lesen, sind ausschließlich Administratoren vorbehalten."
+    },
+    "nutzer": {
+      "titel": "Nutzer",
+      "suche": "Suche",
+      "suchePlatzhalter": "Name oder Benutzername",
+      "rolleFilter": "Nach Rolle filtern",
+      "statusFilter": "Nach Status filtern",
+      "kohorteFilter": "Nach Kohorte filtern",
+      "aktiv": "Aktiv",
+      "inaktiv": "Inaktiv",
+      "kohorteDrucken": "Kohortenliste drucken",
+      "anlegen": "Nutzer anlegen",
+      "leer": "Keine Nutzer gefunden.",
+      "spalte": {
+        "name": "Name",
+        "benutzername": "Benutzername",
+        "rolle": "Rolle",
+        "status": "Status"
+      },
+      "feld": {
+        "vorname": "Vorname",
+        "nachname": "Nachname",
+        "benutzername": "Benutzername",
+        "benutzernameHinweis": "Nur Kleinbuchstaben, Ziffern, Punkt, Bindestrich und Unterstrich, mindestens 3 Zeichen.",
+        "rolle": "Rolle",
+        "kohorte": "Kohorte",
+        "kohorteWaehlen": "Kohorte wählen",
+        "sprache": "Sprache"
+      },
+      "wirdAngelegt": "Wird angelegt …",
+      "zugangsdatenTitel": "Zugangsdaten — nur jetzt sichtbar",
+      "zugangsdatenHinweis": "Dieses Initialpasswort wird nirgends gespeichert und kann danach nicht mehr angezeigt werden. Jetzt notieren, ausdrucken oder weitergeben.",
+      "initialpasswort": "Initialpasswort",
+      "weiterenAnlegen": "Weiteren Nutzer anlegen",
+      "zurListe": "Zurück zur Liste",
+      "nie": "Noch nie",
+      "letzterLogin": "Letzter Login",
+      "angelegtAm": "Angelegt am",
+      "keineKohorte": "Keiner Kohorte zugeordnet",
+      "mussPasswortAendern": "Dieser Nutzer muss beim nächsten Login ein neues Passwort vergeben.",
+      "aktionenTitel": "Aktionen",
+      "passwortZuruecksetzen": "Passwort zurücksetzen",
+      "passwortBestaetigung": "Ein neues Initialpasswort wird erzeugt, das bisherige Passwort verliert sofort seine Gültigkeit.",
+      "bestaetigen": "Bestätigen",
+      "deaktivieren": "Deaktivieren",
+      "aktivieren": "Aktivieren",
+      "zuweisungenTitel": "Zuweisungen",
+      "keinAusbilderZugewiesen": "Noch kein Ausbilder zugewiesen.",
+      "keinTeilnehmerZugewiesen": "Noch kein Teilnehmer zugewiesen.",
+      "ausbilderZuweisen": "Ausbilder zuweisen",
+      "teilnehmerZuweisen": "Teilnehmer zuweisen",
+      "entfernen": "Entfernen",
+      "bitteWaehlen": "Bitte wählen",
+      "zuweisen": "Zuweisen",
+      "passwortNichtVerfuegbar": "— (nicht mehr abrufbar)",
+      "jetztDrucken": "Jetzt drucken",
+      "druckHinweis": "Initialpasswörter erscheinen hier nur für Nutzer, die soeben in diesem Browser angelegt wurden. Danach sind sie nicht mehr abrufbar — bei Bedarf über „Passwort zurücksetzen” ein neues erzeugen."
+    },
+    "audit": {
+      "titel": "Audit-Log",
+      "nurAdmin": "Das Audit-Log ist ausschließlich für Administratoren einsehbar.",
+      "feld": {
+        "aktion": "Aktion enthält",
+        "zielTyp": "Ziel-Typ enthält",
+        "von": "Von",
+        "bis": "Bis"
+      },
+      "filtern": "Filtern",
+      "leer": "Keine Einträge für diesen Filter.",
+      "spalte": {
+        "zeitpunkt": "Zeitpunkt",
+        "akteur": "Akteur",
+        "aktion": "Aktion",
+        "ziel": "Ziel",
+        "details": "Details"
+      },
+      "systemAkteur": "System",
+      "seitenNavigation": "Seiten"
+    },
+    "fehler": {
+      "kein_zugriff": "Kein Zugriff. Bitte erneut anmelden.",
+      "ungueltige_eingabe": "Die Eingabe ist ungültig. Bitte die Felder prüfen.",
+      "ungueltige_id": "Ungültiger Verweis. Bitte die Seite neu laden.",
+      "rolle_nicht_erlaubt": "Diese Rolle darfst du nicht vergeben.",
+      "unerwartete_antwort": "Unerwartete Antwort vom Server. Bitte später erneut versuchen.",
+      "edge_konfiguration_fehlt": "Die Funktion ist derzeit nicht erreichbar (Konfiguration fehlt).",
+      "edge_nicht_erreichbar": "Die Funktion ist derzeit nicht erreichbar. Bitte die Verbindung prüfen.",
+      "nur_admin": "Diese Aktion ist Administratoren vorbehalten.",
+      "zu_kurz": "Zu kurz.",
+      "zu_lang": "Zu lang.",
+      "ungueltiges_format": "Ungültiges Format.",
+      "pflichtfeld": "Pflichtfeld.",
+      "laden": "Die Daten konnten nicht geladen werden.",
+      "nicht_gefunden": "Nicht gefunden.",
+      "allgemein": "Etwas ist schiefgelaufen. Bitte erneut versuchen."
+    }
+  },
+  "lernen": {
+    "titel": "Lernen",
+    "einstiegHinweis": "Wähle ein Thema, um Fragen zu üben. Der Lernmodus zeigt zuerst falsch beantwortete, dann neue und dann zur Wiederholung fällige Fragen.",
+    "themaLabel": "Thema",
+    "fortschritt": "Frage {pos} von {gesamt}",
+    "antworten": "Antworten",
+    "pruefe": "Prüfe …",
+    "weiter": "Weiter",
+    "beleg": "Beleg",
+    "spacingHinweis": "Zur Festigung wird diese Frage später erneut fällig (Wiederholungssperre).",
+    "feedback": {
+      "richtig": "Richtig.",
+      "falsch": "Das war nicht korrekt."
+    },
+    "fehler": {
+      "speichern": "Konnte nicht gespeichert werden. Bitte erneut versuchen."
+    },
+    "fertig": {
+      "titel": "Runde geschafft",
+      "zusammenfassung": "{richtig} von {gesamt} richtig."
+    },
+    "leer": {
+      "titel": "Keine Fragen offen",
+      "keineFreigegeben": "Für dieses Thema sind noch keine Fragen freigegeben.",
+      "allesFertig": "Alle Fragen dieses Themas sind abgeschlossen – stark!"
+    },
+    "freitextHinweis": "{n} Freitext-Aufgaben werden in der Wochenprüfung mit Bewertung geübt."
   }
 }

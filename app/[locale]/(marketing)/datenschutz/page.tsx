@@ -57,6 +57,34 @@ export default function DatenschutzSeite() {
         <p className="text-sm leading-relaxed text-muted">{t('rechteText')}</p>
       </section>
 
+      <section aria-labelledby="rechtsgrundlagen-titel" className="space-y-1.5">
+        <h2 id="rechtsgrundlagen-titel" className="text-sm font-bold uppercase tracking-wide text-accent">
+          {t('rechtsgrundlagenTitel')}
+        </h2>
+        <p className="text-sm leading-relaxed text-muted">{t('rechtsgrundlagenText')}</p>
+      </section>
+
+      <section aria-labelledby="speicher-titel" className="space-y-1.5">
+        <h2 id="speicher-titel" className="text-sm font-bold uppercase tracking-wide text-accent">
+          {t('speicherTitel')}
+        </h2>
+        <p className="text-sm leading-relaxed text-muted">{t('speicherText')}</p>
+      </section>
+
+      <section aria-labelledby="avv-titel" className="space-y-1.5">
+        <h2 id="avv-titel" className="text-sm font-bold uppercase tracking-wide text-accent">
+          {t('auftragsverarbeiterTitel')}
+        </h2>
+        <p className="text-sm leading-relaxed text-muted">{t('auftragsverarbeiterText')}</p>
+      </section>
+
+      <section aria-labelledby="beschwerde-titel" className="space-y-1.5">
+        <h2 id="beschwerde-titel" className="text-sm font-bold uppercase tracking-wide text-accent">
+          {t('beschwerdeTitel')}
+        </h2>
+        <p className="text-sm leading-relaxed text-muted">{t('beschwerdeText')}</p>
+      </section>
+
       <section aria-labelledby="kontakt-titel" className="space-y-1.5">
         <h2 id="kontakt-titel" className="text-sm font-bold uppercase tracking-wide text-accent">
           {t('kontaktTitel')}

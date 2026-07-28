@@ -164,7 +164,15 @@
         "rechteTitel": "Deine Rechte",
         "rechteText": "Du hast das Recht auf Auskunft, Berichtigung, Löschung und Datenübertragbarkeit. Datenexport und Kontolöschung findest du in deinem Profil.",
         "kontaktTitel": "Kontakt in Datenschutzfragen",
-        "kontaktPlatzhalter": "[Kontakt des Datenschutzbeauftragten wird ergänzt]"
+        "kontaktPlatzhalter": "[Kontakt des Datenschutzbeauftragten wird ergänzt]",
+        "rechtsgrundlagenTitel": "Rechtsgrundlagen",
+        "rechtsgrundlagenText": "Die Verarbeitung erfolgt zur Durchführung deiner Ausbildung im Rahmen des mit dem Bildungsträger bestehenden Vertrags- bzw. Ausbildungsverhältnisses (Art. 6 Abs. 1 lit. b DSGVO) sowie zur Erfüllung rechtlicher Pflichten, etwa zum Ausbildungsnachweis (Art. 6 Abs. 1 lit. c DSGVO). Soweit eine Verarbeitung darüber hinausgeht, stützen wir sie auf ein berechtigtes Interesse an einer funktionierenden Lernplattform (Art. 6 Abs. 1 lit. f DSGVO) oder auf deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), die du jederzeit widerrufen kannst.",
+        "speicherTitel": "Speicherdauer",
+        "speicherText": "Wir speichern deine Daten nur so lange, wie es für die Ausbildung und die gesetzlich vorgeschriebene Aufbewahrung von Ausbildungsnachweisen erforderlich ist. Danach werden sie gelöscht oder anonymisiert. Dein Konto und die zugehörigen Lerndaten kannst du in deinem Profil löschen lassen.",
+        "auftragsverarbeiterTitel": "Auftragsverarbeiter und Empfänger",
+        "auftragsverarbeiterText": "Für Betrieb und Speicherung nutzen wir Dienstleister als Auftragsverarbeiter (Art. 28 DSGVO), deren Server ausschließlich in der Europäischen Union stehen (u. a. Datenbank- und Hosting-Dienst Supabase, Region EU). Eine Übermittlung deiner personenbezogenen Daten in Länder außerhalb der EU/des EWR findet nicht statt. Deine Daten werden nicht verkauft und nicht zu Werbezwecken weitergegeben.",
+        "beschwerdeTitel": "Beschwerderecht",
+        "beschwerdeText": "Wenn du der Ansicht bist, dass die Verarbeitung deiner Daten gegen das Datenschutzrecht verstößt, hast du das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in dem EU-Mitgliedstaat deines Wohnorts oder Arbeitsplatzes."
       }
     }
   },
@@ -328,5 +336,33 @@
       "nicht_gefunden": "Nicht gefunden.",
       "allgemein": "Etwas ist schiefgelaufen. Bitte erneut versuchen."
     }
+  },
+  "lernen": {
+    "titel": "Lernen",
+    "einstiegHinweis": "Wähle ein Thema, um Fragen zu üben. Der Lernmodus zeigt zuerst falsch beantwortete, dann neue und dann zur Wiederholung fällige Fragen.",
+    "themaLabel": "Thema",
+    "fortschritt": "Frage {pos} von {gesamt}",
+    "antworten": "Antworten",
+    "pruefe": "Prüfe …",
+    "weiter": "Weiter",
+    "beleg": "Beleg",
+    "spacingHinweis": "Zur Festigung wird diese Frage später erneut fällig (Wiederholungssperre).",
+    "feedback": {
+      "richtig": "Richtig.",
+      "falsch": "Das war nicht korrekt."
+    },
+    "fehler": {
+      "speichern": "Konnte nicht gespeichert werden. Bitte erneut versuchen."
+    },
+    "fertig": {
+      "titel": "Runde geschafft",
+      "zusammenfassung": "{richtig} von {gesamt} richtig."
+    },
+    "leer": {
+      "titel": "Keine Fragen offen",
+      "keineFreigegeben": "Für dieses Thema sind noch keine Fragen freigegeben.",
+      "allesFertig": "Alle Fragen dieses Themas sind abgeschlossen – stark!"
+    },
+    "freitextHinweis": "{n} Freitext-Aufgaben werden in der Wochenprüfung mit Bewertung geübt."
   }
 }

@@ -24,6 +24,9 @@
       ],
       "@bze/db/browser": [
         "./packages/db/browser.ts"
+      ],
+      "@bze/core/mastery": [
+        "./packages/core/mastery/index.ts"
       ]
     },
     "lib": [
