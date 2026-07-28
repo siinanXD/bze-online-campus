@@ -11,5 +11,120 @@
     "status": "Fragenstatus (Farbe + Symbol + Textlabel)",
     "fortschritt": "Fortschritt",
     "hinweis": "Farbe ist nie der einzige Informationsträger — jeder Status trägt Symbol und Textlabel."
+  },
+  "admin": {
+    "titel": "Administration",
+    "untertitel": "Nutzerverwaltung & Audit-Log",
+    "nav": {
+      "beschriftung": "Admin-Bereich",
+      "nutzerverwaltung": "Nutzerverwaltung",
+      "auditLog": "Audit-Log"
+    },
+    "rollen": {
+      "teilnehmer": "Teilnehmer",
+      "ausbilder": "Ausbilder",
+      "verwaltung": "Verwaltung",
+      "admin": "Admin"
+    },
+    "zugriff": {
+      "titel": "Kein Zugriff",
+      "hinweis": "Dieser Bereich ist Administration und Verwaltung vorbehalten. Bitte melde dich mit einem berechtigten Konto an.",
+      "eingeschraenktVerwaltung": "Als Verwaltung siehst du nur Daten deines eigenen Trägers. Einige Aktionen, z. B. das Audit-Log lesen, sind ausschließlich Administratoren vorbehalten."
+    },
+    "nutzer": {
+      "titel": "Nutzer",
+      "suche": "Suche",
+      "suchePlatzhalter": "Name oder Benutzername",
+      "rolleFilter": "Nach Rolle filtern",
+      "statusFilter": "Nach Status filtern",
+      "kohorteFilter": "Nach Kohorte filtern",
+      "aktiv": "Aktiv",
+      "inaktiv": "Inaktiv",
+      "kohorteDrucken": "Kohortenliste drucken",
+      "anlegen": "Nutzer anlegen",
+      "leer": "Keine Nutzer gefunden.",
+      "spalte": {
+        "name": "Name",
+        "benutzername": "Benutzername",
+        "rolle": "Rolle",
+        "status": "Status"
+      },
+      "feld": {
+        "vorname": "Vorname",
+        "nachname": "Nachname",
+        "benutzername": "Benutzername",
+        "benutzernameHinweis": "Nur Kleinbuchstaben, Ziffern, Punkt, Bindestrich und Unterstrich, mindestens 3 Zeichen.",
+        "rolle": "Rolle",
+        "kohorte": "Kohorte",
+        "kohorteWaehlen": "Kohorte wählen",
+        "sprache": "Sprache"
+      },
+      "wirdAngelegt": "Wird angelegt …",
+      "zugangsdatenTitel": "Zugangsdaten — nur jetzt sichtbar",
+      "zugangsdatenHinweis": "Dieses Initialpasswort wird nirgends gespeichert und kann danach nicht mehr angezeigt werden. Jetzt notieren, ausdrucken oder weitergeben.",
+      "initialpasswort": "Initialpasswort",
+      "weiterenAnlegen": "Weiteren Nutzer anlegen",
+      "zurListe": "Zurück zur Liste",
+      "nie": "Noch nie",
+      "letzterLogin": "Letzter Login",
+      "angelegtAm": "Angelegt am",
+      "keineKohorte": "Keiner Kohorte zugeordnet",
+      "mussPasswortAendern": "Dieser Nutzer muss beim nächsten Login ein neues Passwort vergeben.",
+      "aktionenTitel": "Aktionen",
+      "passwortZuruecksetzen": "Passwort zurücksetzen",
+      "passwortBestaetigung": "Ein neues Initialpasswort wird erzeugt, das bisherige Passwort verliert sofort seine Gültigkeit.",
+      "bestaetigen": "Bestätigen",
+      "deaktivieren": "Deaktivieren",
+      "aktivieren": "Aktivieren",
+      "zuweisungenTitel": "Zuweisungen",
+      "keinAusbilderZugewiesen": "Noch kein Ausbilder zugewiesen.",
+      "keinTeilnehmerZugewiesen": "Noch kein Teilnehmer zugewiesen.",
+      "ausbilderZuweisen": "Ausbilder zuweisen",
+      "teilnehmerZuweisen": "Teilnehmer zuweisen",
+      "entfernen": "Entfernen",
+      "bitteWaehlen": "Bitte wählen",
+      "zuweisen": "Zuweisen",
+      "passwortNichtVerfuegbar": "— (nicht mehr abrufbar)",
+      "jetztDrucken": "Jetzt drucken",
+      "druckHinweis": "Initialpasswörter erscheinen hier nur für Nutzer, die soeben in diesem Browser angelegt wurden. Danach sind sie nicht mehr abrufbar — bei Bedarf über „Passwort zurücksetzen” ein neues erzeugen."
+    },
+    "audit": {
+      "titel": "Audit-Log",
+      "nurAdmin": "Das Audit-Log ist ausschließlich für Administratoren einsehbar.",
+      "feld": {
+        "aktion": "Aktion enthält",
+        "zielTyp": "Ziel-Typ enthält",
+        "von": "Von",
+        "bis": "Bis"
+      },
+      "filtern": "Filtern",
+      "leer": "Keine Einträge für diesen Filter.",
+      "spalte": {
+        "zeitpunkt": "Zeitpunkt",
+        "akteur": "Akteur",
+        "aktion": "Aktion",
+        "ziel": "Ziel",
+        "details": "Details"
+      },
+      "systemAkteur": "System",
+      "seitenNavigation": "Seiten"
+    },
+    "fehler": {
+      "kein_zugriff": "Kein Zugriff. Bitte erneut anmelden.",
+      "ungueltige_eingabe": "Die Eingabe ist ungültig. Bitte die Felder prüfen.",
+      "ungueltige_id": "Ungültiger Verweis. Bitte die Seite neu laden.",
+      "rolle_nicht_erlaubt": "Diese Rolle darfst du nicht vergeben.",
+      "unerwartete_antwort": "Unerwartete Antwort vom Server. Bitte später erneut versuchen.",
+      "edge_konfiguration_fehlt": "Die Funktion ist derzeit nicht erreichbar (Konfiguration fehlt).",
+      "edge_nicht_erreichbar": "Die Funktion ist derzeit nicht erreichbar. Bitte die Verbindung prüfen.",
+      "nur_admin": "Diese Aktion ist Administratoren vorbehalten.",
+      "zu_kurz": "Zu kurz.",
+      "zu_lang": "Zu lang.",
+      "ungueltiges_format": "Ungültiges Format.",
+      "pflichtfeld": "Pflichtfeld.",
+      "laden": "Die Daten konnten nicht geladen werden.",
+      "nicht_gefunden": "Nicht gefunden.",
+      "allgemein": "Etwas ist schiefgelaufen. Bitte erneut versuchen."
+    }
   }
 }
