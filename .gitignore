@@ -12,3 +12,9 @@ coverage/
 
 *.tsbuildinfo
 .env.local
+
+# Lokale Hilfs-SQL (Demo-Zugaenge o.ae.) - enthaelt Klartext-Passwoerter,
+# gehoert nie ins oeffentliche Repo.
+*.local.sql
+
+package-lock.json

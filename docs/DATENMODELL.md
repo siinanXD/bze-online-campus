@@ -18,7 +18,7 @@ Postgres, UUID-Primärschlüssel, `created_at`/`updated_at` überall, **RLS auf 
 
 **Ausbildungsnachweis** — `nachweise`, `nachweis_signaturen`, `nachweis_korrekturen`
 
-**Qualität, Betrieb, Video** — `review_queue`, `quelldokumente`, `normen`, `frage_normen`, `ki_aufrufe`, `audit_log`, `videos`, `video_skripte`, `video_untertitel`
+**Qualität, Betrieb, Video** — `review_queue`, `quelldokumente`, `normen`, `frage_normen`, `ki_aufrufe`, `audit_log`, `videos`, `video_skripte`, `video_untertitel`, `freitext_bewertung_cache` (AP-09)
 
 ## RLS-Hilfsfunktionen
 
@@ -62,7 +62,7 @@ Gegen PostgreSQL 16 + pgvector:
 
 Migration [`0002_mastery.sql`](../supabase/migrations/0002_mastery.sql): `verarbeite_versuch()`, `kohorte_beitreten()`, erste Views `v_fortschritt_thema` / `v_fortschritt_bereich`.
 
-Migration [`0005_fortschritt.sql`](../supabase/migrations/0005_fortschritt.sql) (AP-10):
+Migration [`0006_fortschritt.sql`](../supabase/migrations/0006_fortschritt.sql) (AP-10):
 
 - Views (security_invoker): `v_fortschritt_thema` (korrigierter Kern-Denominator), `v_fortschritt_bereich`, `v_fortschritt_phase`, `v_fortschritt_beruf`, `v_wochenaktivitaet_nutzer`, `v_kohorten_uebersicht`
 - `pruefe_achievements(user_id)`, `pruefe_pruefungsreife(user_id)` — von `verarbeite_versuch` aufgerufen
@@ -74,3 +74,4 @@ Kaskadenlogik und Fortsetzen-Empfehlung liegen in `@bze/core/fortschritt` (keine
 ## Offen / Folgepakete
 
 - `themen`-Hierarchie wird ab AP-05/06 mit Lerneinheiten bespielt.
+- AP-09: `freitext_bewertung_cache`, RPC `pruefung_freitext_abschliessen` (Migration `0005_freitext_bewertung.sql`), Edge Function `bewerte-freitext`.

@@ -433,7 +433,38 @@
     "cockpit": "Ausbilder-Cockpit",
     "hinweis": "Übersicht deiner zugewiesenen Teilnehmer. Detailauswertungen folgen in AP-11.",
     "teilnehmer": "Teilnehmer",
-    "keineTeilnehmer": "Dir sind noch keine Teilnehmer zugewiesen."
+    "keineTeilnehmer": "Dir sind noch keine Teilnehmer zugewiesen.",
+    "reviewLink": "Freitext-Review",
+    "review": {
+      "titel": "Freitext-Review",
+      "untertitel": "Offene Freitext-Antworten bewerten und KI-Vorschläge prüfen.",
+      "zurueckCockpit": "Zum Cockpit",
+      "lernfeedbackHinweis": "KI-Bewertung ist Lernfeedback, keine Prüfungsleistung.",
+      "ausstehendTitel": "Noch nicht bewertet",
+      "ausstehendLeer": "Keine offenen Freitext-Antworten.",
+      "queueTitel": "Review-Warteschlange",
+      "queueLeer": "Keine offenen Review-Einträge.",
+      "statusOffen": "Offen",
+      "keineAntwort": "(keine Antwort)",
+      "kiStarten": "KI-Bewertung starten",
+      "staerken": "Stärken",
+      "luecken": "Lücken",
+      "hinweis": "Hinweis",
+      "punkteConfidence": "Punkte: {punkte} · Sicherheit: {confidence} %",
+      "korrigiertePunkte": "Korrigierte Punkte",
+      "kommentar": "Kommentar",
+      "bestaetigen": "Bestätigen",
+      "korrigieren": "Korrigieren",
+      "ablehnen": "Ablehnen",
+      "fehlerAllgemein": "Aktion fehlgeschlagen. Bitte erneut versuchen.",
+      "grund": {
+        "niedrigeConfidence": "Niedrige Sicherheit",
+        "stichprobe": "Stichprobe",
+        "einspruch": "Einspruch",
+        "nutzermeldung": "Nutzermeldung",
+        "sonstige": "Review"
+      }
+    }
   },
   "fortschritt": {
     "titel": "Fortschritt und Abzeichen",
