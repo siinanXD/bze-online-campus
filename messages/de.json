@@ -11,5 +11,100 @@
     "status": "Fragenstatus (Farbe + Symbol + Textlabel)",
     "fortschritt": "Fortschritt",
     "hinweis": "Farbe ist nie der einzige Informationsträger — jeder Status trägt Symbol und Textlabel."
+  },
+  "shell": {
+    "nav": {
+      "ariaLabel": "Hauptnavigation",
+      "start": "Start",
+      "lernen": "Lernen",
+      "pruefung": "Prüfung",
+      "bericht": "Bericht",
+      "mehr": "Mehr"
+    },
+    "header": {
+      "profil": "Profil öffnen",
+      "fortschrittLabel": "Gesamtfortschritt: {wert} Prozent"
+    },
+    "begruessung": {
+      "morgenMitName": "Guten Morgen, {name}!",
+      "morgenAllgemein": "Guten Morgen!",
+      "mittagMitName": "Guten Tag, {name}!",
+      "mittagAllgemein": "Guten Tag!",
+      "abendMitName": "Guten Abend, {name}!",
+      "abendAllgemein": "Guten Abend!"
+    },
+    "marketing": {
+      "footer": {
+        "ariaLabel": "Fußzeilen-Links",
+        "impressum": "Impressum",
+        "datenschutz": "Datenschutz"
+      },
+      "landing": {
+        "heroTitel": "Gut vorbereitet in die IHK-Prüfung",
+        "heroUntertitel": "Fachkunde lesen, Prüfungsfragen einzeln üben, Wochenprüfungen schreiben und den Ausbildungsnachweis führen – alles an einem Ort, entwickelt mit dem Berufsbildungszentrum Euskirchen.",
+        "ctaEinloggen": "Einloggen",
+        "ctaMehrErfahren": "Mehr erfahren",
+        "traegerTitel": "Ein Angebot des Berufsbildungszentrums Euskirchen",
+        "traegerText": "Der BZE Online Campus begleitet dich während deiner Umschulung oder Ausbildung durch die schriftliche Vorbereitung auf deine Kammerprüfung. Dein Ausbilder sieht deinen Fortschritt und unterstützt dich gezielt.",
+        "nutzenTitel": "Was die App für dich tut",
+        "nutzen": {
+          "fachkunde": {
+            "titel": "Fachkunde zum Nachlesen",
+            "text": "Zu jedem Thema stehen dir Tabellenbuch, Formeln und Fachkundetexte mit Quellenangabe zur Verfügung – damit du falsch beantwortete Fragen belegen kannst."
+          },
+          "fragenUeben": {
+            "titel": "Prüfungsfragen einzeln üben",
+            "text": "Wie in einer Fahrschul-App: Beantworte Pflichtprüfungsaufgaben einzeln, mit sofortigem Feedback und Erklärung."
+          },
+          "wochenpruefung": {
+            "titel": "Wochenprüfungen",
+            "text": "Regelmäßige Prüfungen zeigen dir, wo du stehst, und wie nah du deiner Prüfungsreife bist."
+          },
+          "berichtsheft": {
+            "titel": "Ausbildungsnachweis",
+            "text": "Führe dein Berichtsheft direkt in der App und behalte den Überblick über offene Zeiträume."
+          }
+        },
+        "einstiegTitel": "Bereit anzufangen?",
+        "einstiegText": "Melde dich mit den Zugangsdaten an, die du von deinem Ausbilder erhalten hast."
+      },
+      "impressum": {
+        "titel": "Impressum",
+        "anbieterTitel": "Anbieter",
+        "anbieterName": "Berufsbildungszentrum Euskirchen",
+        "anschriftPlatzhalter": "[Anschrift wird ergänzt]",
+        "vertretungTitel": "Vertretungsberechtigte Personen",
+        "vertretungPlatzhalter": "[Wird ergänzt]",
+        "kontaktTitel": "Kontakt",
+        "kontaktPlatzhalter": "[Telefon und E-Mail werden ergänzt]",
+        "verantwortlichTitel": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
+        "verantwortlichPlatzhalter": "[Wird ergänzt]",
+        "streitschlichtungTitel": "Streitschlichtung",
+        "streitschlichtungText": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit. Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+        "haftungTitel": "Haftungshinweis",
+        "haftungInhalteText": "Die Inhalte dieser App wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir dennoch keine Gewähr übernehmen; maßgeblich für die Prüfungszulassung ist ausschließlich die zuständige Kammer.",
+        "haftungLinksText": "Für die Inhalte verlinkter externer Seiten sind ausschließlich deren Betreiber verantwortlich.",
+        "urheberrechtTitel": "Urheberrecht",
+        "urheberrechtText": "Die durch die Betreiber erstellten Inhalte unterliegen dem deutschen Urheberrecht. Prüfungsaufgaben von Kammern oder Prüfungsverlagen werden nicht reproduziert."
+      },
+      "datenschutz": {
+        "titel": "Datenschutzerklärung",
+        "einleitung": "Der Schutz deiner Daten ist uns wichtig. Diese Erklärung informiert dich darüber, welche Daten wir wie verarbeiten.",
+        "verantwortlicherTitel": "Verantwortlicher",
+        "verantwortlicherPlatzhalter": "[Name, Anschrift und Kontakt des Verantwortlichen werden ergänzt]",
+        "erhebungTitel": "Welche Daten wir verarbeiten",
+        "erhebungText": "Wir verarbeiten die Daten, die für deine Anmeldung, dein Lernen und deinen Ausbildungsnachweis erforderlich sind, etwa Benutzername, Lernfortschritt, Prüfungsergebnisse und Berichtsheft-Einträge.",
+        "hostingTitel": "Hosting",
+        "hostingText": "Diese App wird ausschließlich auf Servern innerhalb der Europäischen Union betrieben.",
+        "kiTitel": "Einsatz von KI",
+        "kiText": "Für Lernfeedback und Formulierungshilfen setzen wir KI-Dienste ein, mit denen ein Auftragsverarbeitungsvertrag besteht und die deine Daten nicht zum Training verwenden. KI-Bewertungen sind Lernfeedback, keine Prüfungsleistung.",
+        "cookiesTitel": "Cookies und lokale Speicherung",
+        "cookiesText": "Diese App ist cookiefrei. Es wird ausschließlich technisch notwendige Speicherung verwendet, etwa für deine Anmeldung und für Offline-Funktionen.",
+        "rechteTitel": "Deine Rechte",
+        "rechteText": "Du hast das Recht auf Auskunft, Berichtigung, Löschung und Datenübertragbarkeit. Datenexport und Kontolöschung findest du in deinem Profil.",
+        "kontaktTitel": "Kontakt in Datenschutzfragen",
+        "kontaktPlatzhalter": "[Kontakt des Datenschutzbeauftragten wird ergänzt]"
+      }
+    }
   }
 }
