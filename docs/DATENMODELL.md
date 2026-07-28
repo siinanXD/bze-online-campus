@@ -71,6 +71,10 @@ Migration [`0005_fortschritt.sql`](../supabase/migrations/0005_fortschritt.sql) 
 
 Kaskadenlogik und Fortsetzen-Empfehlung liegen in `@bze/core/fortschritt` (keine Inhaltssperre; Gates sind sichtbare Ziele). Prüfungsreife erzeugt eine **Ausbilderempfehlung**, keine Kammerzulassung.
 
+## AP-11 — Ausbilder-Bestätigung
+
+Migration [`0006_ausbilder_pruefungsreife.sql`](../supabase/migrations/0006_ausbilder_pruefungsreife.sql): Policy `pruefungsreife_betreuer_update` — Ausbilder/Verwaltung dürfen `pruefungsreife` der betreuten Teilnehmer aktualisieren (Bestätigung + Kommentar). Cockpit liest `v_wochenaktivitaet_nutzer` / `v_fortschritt_beruf` / `v_kohorten_uebersicht`.
+
 ## Offen / Folgepakete
 
 - `themen`-Hierarchie wird ab AP-05/06 mit Lerneinheiten bespielt.

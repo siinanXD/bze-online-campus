@@ -431,9 +431,73 @@
   },
   "ausbilder": {
     "cockpit": "لوحة المدرّب",
-    "hinweis": "نظرة عامة على المتدرّبين المعيّنين لك. التحليلات التفصيلية لاحقًا.",
+    "hinweis": "نظرة عامة على المتدرّبين مع التقدم والنشاط وعلامات المخاطر.",
     "teilnehmer": "المتدرّبون",
-    "keineTeilnehmer": "لا يوجد متدرّبون معيّنون لك بعد."
+    "keineTeilnehmer": "لا يوجد متدرّبون معيّنون لك بعد.",
+    "nav": {
+      "label": "تنقل المدرّب",
+      "cockpit": "اللوحة",
+      "kohorte": "الفوج",
+      "review": "مراجعة النص الحر"
+    },
+    "spalten": {
+      "fortschritt": "التقدم",
+      "lernpunkte": "نقاط التعلم",
+      "fragenWoche": "أسئلة/أسبوع",
+      "quote": "نسبة الصحة",
+      "pruefungen": "الاختبارات",
+      "letzteNote": "آخر درجة",
+      "aktiveTage": "أيام نشطة",
+      "letzteAktivitaet": "آخر نشاط",
+      "risiko": "المخاطر"
+    },
+    "risiko": {
+      "ok": "لا مخاطر",
+      "aktivitaet": "أقل من 3 أيام تعلم/أسبوع",
+      "pruefungen": "اختباران متتاليان غير ناجحين"
+    },
+    "kohorte": {
+      "titel": "عرض الفوج",
+      "untertitel": "المتوسطات والمواضيع ذات أعلى نسبة خطأ.",
+      "keine": "لا أفواج ظاهرة.",
+      "teilnehmer": "المتدرّبون",
+      "fortschrittAvg": "متوسط التقدم",
+      "lernpunkteAvg": "متوسط نقاط التعلم",
+      "quoteAvg": "متوسط النسبة",
+      "schwachTitel": "أعلى نسبة خطأ جماعية",
+      "schwachKeine": "لا محاولات كافية للتقييم بعد.",
+      "versuche": "{n} محاولات",
+      "fehlerquote": "{wert} % أخطاء"
+    },
+    "detail": {
+      "zurueck": "العودة إلى اللوحة",
+      "nichtGefunden": "المتدرّب غير موجود أو غير معيّن لك.",
+      "bereiche": "التقدم حسب المجال",
+      "fertig": "مكتمل",
+      "offen": "مفتوح",
+      "fehlerschwerpunkte": "مواطن الخطأ",
+      "fehler": "{n} أخطاء مفتوحة",
+      "keineFehler": "لا مواطن خطأ مفتوحة.",
+      "heatmap": "النشاط (28 يومًا)",
+      "heatmapAria": "خريطة حرارية لمحاولات التعلم خلال 28 يومًا",
+      "heatmapHinweis": "الأغمق = محاولات أكثر في ذلك اليوم.",
+      "pruefungen": "الاختبارات",
+      "keinePruefungen": "لا اختبارات مُسلَّمة بعد.",
+      "pruefungOhneTitel": "اختبار أسبوعي",
+      "note": "درجة {n}",
+      "pruefungsreife": "جاهزية الامتحان / التوصية",
+      "kammerhinweis": "القبول لامتحان الغرفة يتم عبر الغرفة. هنا تؤكد توصية فقط — وليس القبول.",
+      "keineReife": "لم تُطلق توصية جاهزية بعد.",
+      "reifeOffen": "لم تُبلغ بعد",
+      "reifeEmpfohlen": "المعايير مستوفاة — التوصية معلّقة",
+      "reifeBestaetigt": "أُكّدت التوصية",
+      "kommentar": "تعليق",
+      "kommentarLabel": "تعليق على التوصية (اختياري)",
+      "bestaetigen": "تأكيد التوصية",
+      "bestaetigenLaeuft": "جارٍ الحفظ …",
+      "bestaetigenHinweis": "هذه توصية مدرّب وليست قبولًا للامتحان.",
+      "bestaetigenFehler": "فشل التأكيد. حاول مرة أخرى."
+    }
   },
   "fortschritt": {
     "titel": "التقدم والشارات",
