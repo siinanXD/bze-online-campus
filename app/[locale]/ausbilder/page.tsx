@@ -1,9 +1,15 @@
 import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
 import { Card } from '@bze/ui';
+import Link from 'next/link';
 import { LogoutButton } from '../campus/_components/logout-button';
 
-export default async function AusbilderCockpit() {
+export default async function AusbilderCockpit({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   const t = await getTranslations('ausbilder');
   const supabase = await createServerSupabase();
   const { data: zuw } = await supabase
@@ -12,9 +18,17 @@ export default async function AusbilderCockpit() {
 
   return (
     <main className="mx-auto max-w-3xl space-y-4 p-4">
-      <div className="flex items-center justify-between pt-2">
+      <div className="flex flex-wrap items-center justify-between gap-2 pt-2">
         <h1 className="text-2xl font-extrabold">{t('cockpit')}</h1>
-        <LogoutButton />
+        <div className="flex items-center gap-3">
+          <Link
+            href={`/${locale}/ausbilder/review`}
+            className="touchable text-sm font-semibold text-accent underline-offset-4 hover:underline"
+          >
+            {t('reviewLink')}
+          </Link>
+          <LogoutButton />
+        </div>
       </div>
       <p className="text-muted">{t('hinweis')}</p>
       <Card>
@@ -25,7 +39,8 @@ export default async function AusbilderCockpit() {
           <ul className="divide-y divide-border">
             {(zuw as any[]).map((z, i) => (
               <li key={i} className="py-2 text-sm">
-                {z.profiles?.vorname} {z.profiles?.nachname} <span className="text-muted">({z.profiles?.benutzername})</span>
+                {z.profiles?.vorname} {z.profiles?.nachname}{' '}
+                <span className="text-muted">({z.profiles?.benutzername})</span>
               </li>
             ))}
           </ul>

@@ -30,7 +30,13 @@ const bearbeiteLocale = createIntlMiddleware({
 });
 
 /** Pfade UNTERHALB des Locale-Präfixes, die ohne Anmeldung erreichbar sein müssen. */
-const OEFFENTLICHE_PFADE = new Set<string>(['/login']);
+const OEFFENTLICHE_PFADE = new Set<string>([
+  '/login',
+  '/',
+  '/impressum',
+  '/datenschutz',
+  '/showcase',
+]);
 
 const ROLLEN_STARTSEITE: Record<Rolle, string> = {
   teilnehmer: 'campus',
@@ -49,33 +55,61 @@ export async function middleware(request: NextRequest) {
     return response;
   }
 
-  // Schritt 2: Supabase-Session lesen (Cookies zwischen Request/Response spiegeln)
-  const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    {
-      cookies: {
-        getAll: () => request.cookies.getAll(),
-        setAll: (cookiesToSet: CookieZumSetzen[]) => {
-          cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value));
-          response = NextResponse.next({ request });
-          cookiesToSet.forEach(({ name, value, options }) => response.cookies.set(name, value, options));
-        },
-      },
-    },
-  );
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
   const segmente = request.nextUrl.pathname.split('/').filter(Boolean);
   const locale = (locales as readonly string[]).includes(segmente[0] ?? '') ? segmente[0]! : defaultLocale;
   const pfadOhneLocale = '/' + segmente.slice(1).join('/');
+  const istOeffentlich =
+    OEFFENTLICHE_PFADE.has(pfadOhneLocale) ||
+    [...OEFFENTLICHE_PFADE].some((p) => pfadOhneLocale === p || pfadOhneLocale.startsWith(`${p}/`));
+
+  const supabaseUrl = (() => {
+    const raw = process.env.NEXT_PUBLIC_SUPABASE_URL ?? '';
+    try {
+      return new URL(raw).origin;
+    } catch {
+      return raw.replace(/\/rest\/v1\/?$/i, '').replace(/\/$/, '');
+    }
+  })();
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? '';
+
+  // Ohne gültige Env-Werte kein Auth-Roundtrip — sonst hängt/bricht die Middleware
+  // und die Seite rendert ohne Locale-Header (Internal Server Error).
+  if (!supabaseUrl || !supabaseAnonKey) {
+    if (istOeffentlich) return response;
+    const ziel = request.nextUrl.clone();
+    ziel.pathname = `/${locale}/login`;
+    return NextResponse.redirect(ziel);
+  }
+
+  // Schritt 2: Supabase-Session lesen (Cookies zwischen Request/Response spiegeln)
+  const supabase = createServerClient(supabaseUrl, supabaseAnonKey, {
+    cookies: {
+      getAll: () => request.cookies.getAll(),
+      setAll: (cookiesToSet: CookieZumSetzen[]) => {
+        cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value));
+        response = NextResponse.next({ request });
+        cookiesToSet.forEach(({ name, value, options }) =>
+          response.cookies.set(name, value, options),
+        );
+      },
+    },
+  });
+
+  let user: { id: string } | null = null;
+  try {
+    const { data } = await supabase.auth.getUser();
+    user = data.user;
+  } catch {
+    // Netzwerk-/Key-Fehler: öffentlich erlauben, sonst Login
+    if (istOeffentlich) return response;
+    const ziel = request.nextUrl.clone();
+    ziel.pathname = `/${locale}/login`;
+    return NextResponse.redirect(ziel);
+  }
 
   // Schritt 3: unangemeldete Nutzer → Login
   if (!user) {
-    if (OEFFENTLICHE_PFADE.has(pfadOhneLocale)) {
+    if (istOeffentlich) {
       return response;
     }
     const ziel = request.nextUrl.clone();
