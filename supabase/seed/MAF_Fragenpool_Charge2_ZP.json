@@ -1,0 +1,2915 @@
+{
+  "meta": {
+    "beruf": "Maschinen- und Anlagenführer/-in",
+    "schwerpunkt": "Metall- und Kunststofftechnik",
+    "kammer": "IHK",
+    "rechtsgrundlage": "MaschFüAusbV vom 27.04.2004, zuletzt geändert 14.06.2023",
+    "charge": "Charge 2 – Zwischenprüfungsniveau (Phase 1)",
+    "erstellt": "2026-07-29",
+    "zielpruefung": "zwischenpruefung",
+    "format_hinweis": "Aufgaben im Stil einer schriftlichen Zwischenprüfung: geschlossene Aufgaben mit fünf Auswahlantworten, davon genau eine richtig. Rechenaufgaben stehen am Ende und sind als enthaelt_zahlenwert markiert.",
+    "urheberrecht": "Alle Aufgaben sind Eigenentwicklungen des BZE. Es wurden keine Aufgaben von Kammern oder Prüfungsverlagen übernommen, nachgebaut oder paraphrasiert. Übernommen wurde ausschließlich die Prüfungsstruktur (Anzahl, Antwortformat, Themenverteilung), die selbst nicht schutzfähig ist.",
+    "status_hinweis": "Alle Fragen haben Status 'entwurf'. Freigabe durch einen Ausbilder ist zwingend. Fragen mit enthaelt_zahlenwert=true benoetigen zusaetzlich eine Tabellenbuch-Fundstelle und sind deshalb kern=false.",
+    "anzahl_mc": 62,
+    "anzahl_freitext": 6
+  },
+  "uebungspruefungen": [
+    {
+      "code": "ZP-UE-01",
+      "titel": "Übungs-Zwischenprüfung 01 – Metall- und Kunststofftechnik",
+      "bearbeitungszeit_minuten": 120,
+      "hinweis": "35 Aufgaben mit je fünf Auswahlantworten. Genau eine Antwort ist richtig. Aufgaben 31 bis 35 sind Rechenaufgaben; Nebenrechnungen sind erlaubt und werden nicht bewertet.",
+      "aufgaben": [
+        "PT-TU-101",
+        "PT-TU-102",
+        "PT-TU-103",
+        "PT-TU-104",
+        "PT-TU-105",
+        "PT-TU-106",
+        "PT-TU-107",
+        "PT-TU-108",
+        "WISO-SU-101",
+        "WISO-SU-102",
+        "PT-WS-101",
+        "PT-WS-102",
+        "PT-WS-103",
+        "PT-WS-104",
+        "PT-WS-105",
+        "PT-WS-106",
+        "PT-FT-104",
+        "PT-FT-105",
+        "PT-WZ-105",
+        "PT-WZ-106",
+        "PT-PR-101",
+        "PT-PR-102",
+        "PT-PR-103",
+        "PT-WZ-101",
+        "PT-WZ-102",
+        "PT-WZ-103",
+        "PT-FT-101",
+        "PT-FT-102",
+        "PP-QS-101",
+        "PP-AS-101",
+        "PT-RE-101",
+        "PT-RE-102",
+        "PT-RE-103",
+        "PT-RE-104",
+        "PT-RE-105"
+      ]
+    },
+    {
+      "code": "ZP-UE-02",
+      "titel": "Übungs-Zwischenprüfung 02 – Metall- und Kunststofftechnik",
+      "bearbeitungszeit_minuten": 120,
+      "hinweis": "35 Aufgaben mit je fünf Auswahlantworten. Genau eine Antwort ist richtig. Aufgaben 31 bis 35 sind Rechenaufgaben.",
+      "aufgaben": [
+        "PT-TU-109",
+        "PT-TU-110",
+        "PT-TU-104",
+        "PT-TU-107",
+        "PT-TU-102",
+        "PT-MA-101",
+        "PT-MA-102",
+        "PT-MA-103",
+        "WISO-SU-103",
+        "WISO-SU-104",
+        "PT-WS-107",
+        "PT-WS-108",
+        "PT-WS-109",
+        "PT-WS-103",
+        "PT-WS-105",
+        "PT-FT-103",
+        "PT-FT-106",
+        "PT-FT-102",
+        "PT-WZ-104",
+        "PT-WZ-107",
+        "PT-PR-104",
+        "PT-PR-105",
+        "PT-PR-106",
+        "PT-WZ-102",
+        "PT-MA-104",
+        "PP-QS-102",
+        "PP-QS-103",
+        "PP-AS-102",
+        "PP-IH-101",
+        "PP-AS-101",
+        "PT-RE-106",
+        "PT-RE-107",
+        "PT-RE-108",
+        "PT-RE-109",
+        "PT-RE-110"
+      ]
+    }
+  ],
+  "fragen": [
+    {
+      "id": "PT-TU-101",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN ISO 128"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "In einer technischen Zeichnung sind Kanten dargestellt, die vom Betrachter aus hinter dem Werkstoff liegen. Welche Linienart wird dafür verwendet?",
+      "optionen": [
+        {
+          "text": "Breite Volllinie",
+          "ist_korrekt": false,
+          "erklaerung": "Die breite Volllinie zeigt sichtbare Kanten und Umrisse."
+        },
+        {
+          "text": "Schmale Strichlinie",
+          "ist_korrekt": true,
+          "erklaerung": "Verdeckte Kanten werden mit der schmalen Strichlinie gezeichnet."
+        },
+        {
+          "text": "Breite Strichpunktlinie",
+          "ist_korrekt": false,
+          "erklaerung": "Die breite Strichpunktlinie kennzeichnet Bereiche mit besonderer Behandlung, etwa gehärtete Flächen."
+        },
+        {
+          "text": "Schmale Strichpunktlinie",
+          "ist_korrekt": false,
+          "erklaerung": "Die Strichpunktlinie kennzeichnet Mittellinien, Symmetrielinien und Lochkreise."
+        },
+        {
+          "text": "Schmale Freihandlinie",
+          "ist_korrekt": false,
+          "erklaerung": "Die Freihandlinie begrenzt Teilschnitte und Bruchdarstellungen."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-102",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN ISO 128"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Bauteil ist in der europäischen Projektionsmethode dargestellt. Welche Ansicht wird unter der Vorderansicht gezeichnet?",
+      "optionen": [
+        {
+          "text": "Die Ansicht von links",
+          "ist_korrekt": false,
+          "erklaerung": "Die Ansicht von links steht rechts neben der Vorderansicht."
+        },
+        {
+          "text": "Die Untersicht",
+          "ist_korrekt": false,
+          "erklaerung": "Die Untersicht steht in Methode 1 oberhalb der Vorderansicht."
+        },
+        {
+          "text": "Die Ansicht von rechts",
+          "ist_korrekt": false,
+          "erklaerung": "Die Ansicht von rechts steht links neben der Vorderansicht."
+        },
+        {
+          "text": "Die Draufsicht",
+          "ist_korrekt": true,
+          "erklaerung": "In Methode 1 wird das Bauteil weggeklappt: Was man von oben sieht, erscheint unterhalb der Vorderansicht."
+        },
+        {
+          "text": "Die Rückansicht",
+          "ist_korrekt": false,
+          "erklaerung": "Die Rückansicht steht seitlich ganz außen und wird nur bei Bedarf gezeichnet."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-103",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Von einem symmetrischen Gehäuse soll gleichzeitig die äußere Form und der innere Aufbau gezeigt werden. Eine Hälfte bleibt in Ansicht, die andere Hälfte wird geschnitten dargestellt. Wie heißt diese Schnittart?",
+      "optionen": [
+        {
+          "text": "Ausbruch mit Schnittverlauf",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Ausbruch legt eine einzelne Stelle frei, teilt das Bauteil aber nicht in Ansichts- und Schnitthälfte."
+        },
+        {
+          "text": "Halbschnitt",
+          "ist_korrekt": true,
+          "erklaerung": "Der Halbschnitt zeigt bei symmetrischen Bauteilen eine Hälfte in Ansicht und eine Hälfte im Schnitt."
+        },
+        {
+          "text": "Vollschnitt",
+          "ist_korrekt": false,
+          "erklaerung": "Beim Vollschnitt wird das gesamte Bauteil durchgeschnitten dargestellt."
+        },
+        {
+          "text": "Profilschnitt",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Profilschnitt ist keine genormte Schnittart der technischen Zeichnung."
+        },
+        {
+          "text": "Teilschnitt",
+          "ist_korrekt": false,
+          "erklaerung": "Der Teilschnitt öffnet nur einen begrenzten Bereich und wird von einer Freihandlinie begrenzt."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-104",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN EN ISO 1302"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "An einer Fläche steht ein Oberflächenzeichen, dessen offenes Dreieck durch einen zusätzlichen Kreis ergänzt ist. Was bedeutet das für die Fertigung?",
+      "optionen": [
+        {
+          "text": "Die Fläche muss spanend bearbeitet werden.",
+          "ist_korrekt": false,
+          "erklaerung": "Materialabtrag wird durch einen zusätzlichen Querstrich am Zeichen gefordert, nicht durch den Kreis."
+        },
+        {
+          "text": "Die Fläche muss lackiert werden.",
+          "ist_korrekt": false,
+          "erklaerung": "Beschichtungen werden als Textangabe am Oberflächenzeichen ergänzt."
+        },
+        {
+          "text": "Die Fläche darf nicht materialabtragend bearbeitet werden.",
+          "ist_korrekt": true,
+          "erklaerung": "Der Kreis im Oberflächenzeichen bedeutet: kein Materialabtrag zulässig, die Fläche bleibt im Herstellungszustand."
+        },
+        {
+          "text": "Die Fläche wird nicht geprüft.",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Oberflächenzeichen macht eine Vorgabe und schließt eine Prüfung nicht aus."
+        },
+        {
+          "text": "Die Fläche muss gehärtet werden.",
+          "ist_korrekt": false,
+          "erklaerung": "Wärmebehandlungen werden durch eine breite Strichpunktlinie und einen Textzusatz angegeben."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-105",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie wird der Durchmesser einer zylindrischen Drehteilstufe in einer technischen Zeichnung korrekt bemaßt?",
+      "optionen": [
+        {
+          "text": "Der Durchmesser wird ausschließlich in der Draufsicht bemaßt.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Durchmesser wird dort bemaßt, wo die Form am deutlichsten erkennbar ist."
+        },
+        {
+          "text": "Das Durchmesserzeichen entfällt, wenn die Stufe geschnitten dargestellt ist.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Schnittdarstellung ändert die Bemaßungsregel nicht."
+        },
+        {
+          "text": "Das Durchmesserzeichen steht vor der Maßzahl.",
+          "ist_korrekt": true,
+          "erklaerung": "Der Durchmesser wird als Zeichen unmittelbar vor der Maßzahl angegeben, zum Beispiel als Vorsatz vor der Zahl 25."
+        },
+        {
+          "text": "Das Durchmesserzeichen steht hinter der Maßzahl.",
+          "ist_korrekt": false,
+          "erklaerung": "Das Zeichen steht immer vor der Maßzahl."
+        },
+        {
+          "text": "Statt des Durchmessers wird immer der Radius bemaßt.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Radius wird nur bei Rundungen und Teilkreisbögen bemaßt, nicht bei vollen Zylindern."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-106",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wozu dient das Schriftfeld einer technischen Zeichnung?",
+      "optionen": [
+        {
+          "text": "Es ersetzt die Stückliste.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Stückliste ist ein eigenes Dokument beziehungsweise ein eigener Bereich der Zeichnung."
+        },
+        {
+          "text": "Es gibt die Prüfmittel vor, mit denen gemessen werden muss.",
+          "ist_korrekt": false,
+          "erklaerung": "Prüfmittel werden im Prüfplan festgelegt."
+        },
+        {
+          "text": "Es enthält ausschließlich die Toleranzen.",
+          "ist_korrekt": false,
+          "erklaerung": "Allgemeintoleranzen können dort vermerkt sein, sie sind aber nicht der Zweck des Schriftfelds."
+        },
+        {
+          "text": "Es enthält die Arbeitsanweisung für die Montage.",
+          "ist_korrekt": false,
+          "erklaerung": "Montageschritte stehen in der Arbeitsanweisung, nicht im Schriftfeld."
+        },
+        {
+          "text": "Es enthält verwaltende Angaben wie Benennung, Zeichnungsnummer, Maßstab und Werkstoff.",
+          "ist_korrekt": true,
+          "erklaerung": "Das Schriftfeld fasst die identifizierenden und verwaltenden Angaben zur Zeichnung zusammen."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-107",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Eine Zeichnung trägt die Angabe „Maßstab 2:1“. Was bedeutet das?",
+      "optionen": [
+        {
+          "text": "Das Werkstück ist doppelt so groß gezeichnet wie in Wirklichkeit.",
+          "ist_korrekt": true,
+          "erklaerung": "Bei 2:1 handelt es sich um eine Vergrößerung; die eingetragenen Maßzahlen bleiben aber die wirklichen Maße."
+        },
+        {
+          "text": "Die eingetragenen Maßzahlen müssen verdoppelt werden.",
+          "ist_korrekt": false,
+          "erklaerung": "Maßzahlen geben immer die wirkliche Größe an und werden nie umgerechnet."
+        },
+        {
+          "text": "Die Zeichnung ist ohne Maßstab erstellt.",
+          "ist_korrekt": false,
+          "erklaerung": "Eine Zeichnung ohne Maßstab trägt die Angabe „ohne Maßstab“ oder „o. M.“."
+        },
+        {
+          "text": "Das Werkstück ist halb so groß gezeichnet wie in Wirklichkeit.",
+          "ist_korrekt": false,
+          "erklaerung": "Das wäre der Verkleinerungsmaßstab 1:2."
+        },
+        {
+          "text": "Die eingetragenen Maßzahlen müssen halbiert werden.",
+          "ist_korrekt": false,
+          "erklaerung": "Auch hier gilt: Maßzahlen sind stets Istmaße des Bauteils."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-108",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "In einer Schnittdarstellung sind zwei aneinanderliegende Bauteile schraffiert. Woran erkennt man, dass es sich um zwei verschiedene Teile handelt?",
+      "optionen": [
+        {
+          "text": "Zwischen beiden Teilen wird eine Strichpunktlinie gezeichnet.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Strichpunktlinie ist Mittel- und Symmetrielinie."
+        },
+        {
+          "text": "Die Schraffuren beider Teile verlaufen in unterschiedlicher Richtung oder mit unterschiedlichem Abstand.",
+          "ist_korrekt": true,
+          "erklaerung": "Aneinandergrenzende Teile werden durch abweichende Schraffurrichtung oder abweichenden Linienabstand unterschieden."
+        },
+        {
+          "text": "Die Schraffur wird bei einem Teil durch Punkte ersetzt.",
+          "ist_korrekt": false,
+          "erklaerung": "Punktierte Flächen kennzeichnen keine Bauteilgrenze."
+        },
+        {
+          "text": "Die Trennstelle bleibt vollständig weiß.",
+          "ist_korrekt": false,
+          "erklaerung": "Weiße Flächen im Schnitt bedeuten, dass dort kein Werkstoff geschnitten wurde."
+        },
+        {
+          "text": "Nur eines der beiden Teile wird schraffiert.",
+          "ist_korrekt": false,
+          "erklaerung": "Beide geschnittenen Teile werden schraffiert."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-109",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wofür wird in einer technischen Zeichnung die schmale Strichpunktlinie verwendet?",
+      "optionen": [
+        {
+          "text": "Für verdeckte Kanten",
+          "ist_korrekt": false,
+          "erklaerung": "Verdeckte Kanten werden mit der schmalen Strichlinie dargestellt."
+        },
+        {
+          "text": "Für Umrisse und sichtbare Kanten",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür wird die breite Volllinie verwendet."
+        },
+        {
+          "text": "Für Mittel-, Symmetrie- und Lochkreislinien",
+          "ist_korrekt": true,
+          "erklaerung": "Die schmale Strichpunktlinie kennzeichnet Mittellinien, Symmetrieachsen und Lochkreise."
+        },
+        {
+          "text": "Für Maß- und Maßhilfslinien",
+          "ist_korrekt": false,
+          "erklaerung": "Maßlinien und Maßhilfslinien sind schmale Volllinien."
+        },
+        {
+          "text": "Für die Begrenzung von Teilschnitten",
+          "ist_korrekt": false,
+          "erklaerung": "Teilschnitte werden mit der schmalen Freihandlinie begrenzt."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-110",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN EN ISO 286"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Eine Bohrung trägt die Angabe H7, die zugehörige Welle die Angabe h6. Welche Aussage über diese Passung ist richtig?",
+      "optionen": [
+        {
+          "text": "Die Angabe legt die Werkstoffhärte fest.",
+          "ist_korrekt": false,
+          "erklaerung": "Härteangaben stehen als Textzusatz in der Zeichnung."
+        },
+        {
+          "text": "Es handelt sich um eine Übermaßpassung; die Welle ist stets größer als die Bohrung.",
+          "ist_korrekt": false,
+          "erklaerung": "Bei H7/h6 kann die Welle die Bohrung nie überschreiten."
+        },
+        {
+          "text": "Es handelt sich um eine Spielpassung im System Einheitsbohrung; die Welle ist nie größer als die Bohrung.",
+          "ist_korrekt": true,
+          "erklaerung": "Der Großbuchstabe H kennzeichnet die Einheitsbohrung. Bei h6 liegt das Höchstmaß der Welle auf der Nennmaßlinie, es entsteht immer Spiel oder im Grenzfall Nullspiel."
+        },
+        {
+          "text": "Die Angabe legt die Oberflächenrauheit fest.",
+          "ist_korrekt": false,
+          "erklaerung": "Rauheiten werden über das Oberflächenzeichen angegeben."
+        },
+        {
+          "text": "Es handelt sich um eine Übergangspassung im System Einheitswelle.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Großbuchstabe bei der Bohrung zeigt die Einheitsbohrung an, nicht die Einheitswelle."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-101",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Werkstoffeigenschaft beschreibt den Widerstand, den ein Werkstoff dem Eindringen eines härteren Körpers entgegensetzt?",
+      "optionen": [
+        {
+          "text": "Die Bruchdehnung",
+          "ist_korrekt": false,
+          "erklaerung": "Die Bruchdehnung gibt die bleibende Längenänderung nach dem Zugversuch an."
+        },
+        {
+          "text": "Die Elastizität",
+          "ist_korrekt": false,
+          "erklaerung": "Elastizität ist die Fähigkeit, nach Entlastung in die Ausgangsform zurückzukehren."
+        },
+        {
+          "text": "Die Zähigkeit",
+          "ist_korrekt": false,
+          "erklaerung": "Zähigkeit beschreibt die Fähigkeit, Verformungsarbeit ohne Bruch aufzunehmen."
+        },
+        {
+          "text": "Die Härte",
+          "ist_korrekt": true,
+          "erklaerung": "Härte ist definiert als Widerstand gegen das Eindringen eines anderen Körpers."
+        },
+        {
+          "text": "Die Wärmeleitfähigkeit",
+          "ist_korrekt": false,
+          "erklaerung": "Sie beschreibt den Wärmetransport im Werkstoff."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-102",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welches der genannten Metalle zählt zu den Leichtmetallen?",
+      "optionen": [
+        {
+          "text": "Zink",
+          "ist_korrekt": false,
+          "erklaerung": "Zink liegt deutlich über der Dichtegrenze der Leichtmetalle."
+        },
+        {
+          "text": "Kupfer",
+          "ist_korrekt": false,
+          "erklaerung": "Kupfer ist ein Schwermetall."
+        },
+        {
+          "text": "Blei",
+          "ist_korrekt": false,
+          "erklaerung": "Blei ist eines der schwersten Gebrauchsmetalle."
+        },
+        {
+          "text": "Chrom",
+          "ist_korrekt": false,
+          "erklaerung": "Chrom ist ein Schwermetall und wird vor allem als Legierungselement eingesetzt."
+        },
+        {
+          "text": "Magnesium",
+          "ist_korrekt": true,
+          "erklaerung": "Magnesium gehört mit Aluminium und Titan zu den Leichtmetallen; die Grenze liegt bei einer Dichte von 5 kg/dm³."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-103",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Größe wird im Zugversuch mit dem Formelzeichen Rm bezeichnet?",
+      "optionen": [
+        {
+          "text": "Die Bruchdehnung",
+          "ist_korrekt": false,
+          "erklaerung": "Die Bruchdehnung trägt das Formelzeichen A."
+        },
+        {
+          "text": "Die Streckgrenze",
+          "ist_korrekt": false,
+          "erklaerung": "Die Streckgrenze trägt das Formelzeichen Re."
+        },
+        {
+          "text": "Die Zugfestigkeit",
+          "ist_korrekt": true,
+          "erklaerung": "Rm ist die Zugfestigkeit, also die auf den Ausgangsquerschnitt bezogene Höchstkraft."
+        },
+        {
+          "text": "Die Brinellhärte",
+          "ist_korrekt": false,
+          "erklaerung": "Die Brinellhärte wird mit HBW angegeben."
+        },
+        {
+          "text": "Den Elastizitätsmodul",
+          "ist_korrekt": false,
+          "erklaerung": "Der Elastizitätsmodul trägt das Formelzeichen E."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-104",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Kunststoffbauteil lässt sich nach dem Aushärten nicht mehr aufschmelzen und zersetzt sich bei starker Erwärmung. Zu welcher Kunststoffgruppe gehört es?",
+      "optionen": [
+        {
+          "text": "Zu den Duroplasten",
+          "ist_korrekt": true,
+          "erklaerung": "Duroplaste sind nach dem Aushärten engmaschig vernetzt und daher nicht mehr schmelzbar."
+        },
+        {
+          "text": "Zu den Thermoplastischen Elastomeren",
+          "ist_korrekt": false,
+          "erklaerung": "Diese Gruppe lässt sich gerade wegen ihres thermoplastischen Anteils wieder aufschmelzen."
+        },
+        {
+          "text": "Zu den Thermoplasten",
+          "ist_korrekt": false,
+          "erklaerung": "Thermoplaste lassen sich wiederholt erwärmen und umformen."
+        },
+        {
+          "text": "Zu den Elastomeren",
+          "ist_korrekt": false,
+          "erklaerung": "Elastomere sind weitmaschig vernetzt und bleiben dauerhaft gummielastisch."
+        },
+        {
+          "text": "Zu den Faserverbundwerkstoffen",
+          "ist_korrekt": false,
+          "erklaerung": "Faserverbund beschreibt den Aufbau, nicht das Temperaturverhalten der Matrix."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-105",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN EN 10027-1"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Werkstoff trägt die Kurzbezeichnung S235JR. Was gibt die Zahl 235 an?",
+      "optionen": [
+        {
+          "text": "Die Mindeststreckgrenze in N/mm²",
+          "ist_korrekt": true,
+          "erklaerung": "Der Kennbuchstabe S steht für Stähle für den Stahlbau; die Zahl nennt die Mindeststreckgrenze in N/mm²."
+        },
+        {
+          "text": "Die Brinellhärte",
+          "ist_korrekt": false,
+          "erklaerung": "Härtewerte sind in dieser Bezeichnung nicht enthalten."
+        },
+        {
+          "text": "Den Kohlenstoffgehalt in Hundertstel Prozent",
+          "ist_korrekt": false,
+          "erklaerung": "Der Kohlenstoffgehalt wird bei Bezeichnungen wie C45 angegeben."
+        },
+        {
+          "text": "Die Zugfestigkeit in N/mm²",
+          "ist_korrekt": false,
+          "erklaerung": "Bei Stählen mit dem Kennbuchstaben S bezieht sich die Zahl auf die Streckgrenze."
+        },
+        {
+          "text": "Die Bruchdehnung in Prozent",
+          "ist_korrekt": false,
+          "erklaerung": "Die Bruchdehnung ist nicht Teil dieser Kurzbezeichnung."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-106",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welcher Stoff ist in einer Fertigung ein Hilfsstoff?",
+      "optionen": [
+        {
+          "text": "Das zugekaufte Wälzlager der Baugruppe",
+          "ist_korrekt": false,
+          "erklaerung": "Das Wälzlager wird eingebaut und ist damit Fremdbauteil im Erzeugnis."
+        },
+        {
+          "text": "Die Sechskantschraube der Montagegruppe",
+          "ist_korrekt": false,
+          "erklaerung": "Die Schraube bleibt im Erzeugnis und zählt zu den Bauteilen."
+        },
+        {
+          "text": "Das Kunststoffgranulat für das Spritzgussteil",
+          "ist_korrekt": false,
+          "erklaerung": "Das Granulat geht in das Erzeugnis ein und ist damit Rohstoff."
+        },
+        {
+          "text": "Das Stangenmaterial aus Automatenstahl",
+          "ist_korrekt": false,
+          "erklaerung": "Das Stangenmaterial wird zum Werkstück und ist Rohstoff."
+        },
+        {
+          "text": "Die Kühlschmieremulsion an der Drehmaschine",
+          "ist_korrekt": true,
+          "erklaerung": "Kühlschmierstoff wird für die Fertigung verbraucht, geht aber nicht in das Erzeugnis ein – das ist ein Hilfs- beziehungsweise Betriebsstoff."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-107",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welches Verfahren wird angewendet, um einen gehärteten Stahl weniger spröde und damit zäher zu machen?",
+      "optionen": [
+        {
+          "text": "Abschrecken",
+          "ist_korrekt": false,
+          "erklaerung": "Abschrecken ist der Schritt, der die Härte und damit auch die Sprödigkeit erzeugt."
+        },
+        {
+          "text": "Aufkohlen",
+          "ist_korrekt": false,
+          "erklaerung": "Aufkohlen reichert die Randschicht mit Kohlenstoff an und bereitet das Härten vor."
+        },
+        {
+          "text": "Nitrieren",
+          "ist_korrekt": false,
+          "erklaerung": "Nitrieren erhöht die Randhärte durch Stickstoffaufnahme."
+        },
+        {
+          "text": "Normalglühen",
+          "ist_korrekt": false,
+          "erklaerung": "Normalglühen erzeugt ein gleichmäßiges Gefüge, wird aber nicht nach dem Härten zur Zähigkeitssteuerung eingesetzt."
+        },
+        {
+          "text": "Anlassen",
+          "ist_korrekt": true,
+          "erklaerung": "Beim Anlassen wird der gehärtete Stahl erneut erwärmt; Härtespannungen bauen sich ab und die Zähigkeit steigt."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-108",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein unlegierter Stahl steht ungeschützt in feuchter Hallenluft. Welche Korrosionsart tritt dabei auf?",
+      "optionen": [
+        {
+          "text": "Flächenkorrosion durch Sauerstoff und Feuchtigkeit",
+          "ist_korrekt": true,
+          "erklaerung": "Feuchte Luft und Luftsauerstoff führen bei unlegiertem Stahl zu flächigem Rostabtrag."
+        },
+        {
+          "text": "Spannungsrisskorrosion",
+          "ist_korrekt": false,
+          "erklaerung": "Diese setzt Zugspannungen und ein bestimmtes Angriffsmittel voraus."
+        },
+        {
+          "text": "Erosionskorrosion",
+          "ist_korrekt": false,
+          "erklaerung": "Diese entsteht durch schnell strömende Medien."
+        },
+        {
+          "text": "Kontaktkorrosion",
+          "ist_korrekt": false,
+          "erklaerung": "Kontaktkorrosion setzt zwei unterschiedlich edle Metalle in leitender Verbindung voraus."
+        },
+        {
+          "text": "Interkristalline Korrosion",
+          "ist_korrekt": false,
+          "erklaerung": "Diese tritt entlang der Korngrenzen vor allem bei bestimmten nichtrostenden Stählen auf."
+        }
+      ]
+    },
+    {
+      "id": "PT-WS-109",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum wird für Werkstücke, die auf Drehautomaten in großer Stückzahl gefertigt werden, häufig Automatenstahl eingesetzt?",
+      "optionen": [
+        {
+          "text": "Weil er besonders gut schweißbar ist",
+          "ist_korrekt": false,
+          "erklaerung": "Der erhöhte Schwefelgehalt verschlechtert die Schweißeignung."
+        },
+        {
+          "text": "Weil er korrosionsbeständig ist",
+          "ist_korrekt": false,
+          "erklaerung": "Automatenstahl ist nicht nichtrostend."
+        },
+        {
+          "text": "Weil er eine besonders hohe Zugfestigkeit besitzt",
+          "ist_korrekt": false,
+          "erklaerung": "Automatenstahl wird nicht wegen hoher Festigkeit gewählt."
+        },
+        {
+          "text": "Weil er kurzbrechende Späne bildet und dadurch den automatischen Ablauf sichert",
+          "ist_korrekt": true,
+          "erklaerung": "Legierungszusätze wie Schwefel führen zu kurzbrechenden Spänen; das verhindert Spänewickel und Störungen im Automatenbetrieb."
+        },
+        {
+          "text": "Weil er ein Leichtmetall ist",
+          "ist_korrekt": false,
+          "erklaerung": "Automatenstahl ist ein Eisenwerkstoff."
+        }
+      ]
+    },
+    {
+      "id": "PT-WZ-101",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgabe hat der Freiwinkel Alpha am Schneidkeil eines Drehmeißels?",
+      "optionen": [
+        {
+          "text": "Er bestimmt die Stabilität des Schneidkeils allein.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Keilstabilität ergibt sich vor allem aus dem Keilwinkel Beta."
+        },
+        {
+          "text": "Er legt die Schnittgeschwindigkeit fest.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Schnittgeschwindigkeit wird aus Werkstoff und Werkzeug gewählt, nicht aus einem Winkel."
+        },
+        {
+          "text": "Er bestimmt die Oberflächenhärte des Werkstücks.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Härte hängt vom Werkstoff und der Wärmebehandlung ab."
+        },
+        {
+          "text": "Er verhindert, dass die Werkzeugfläche unterhalb der Schneide am Werkstück reibt.",
+          "ist_korrekt": true,
+          "erklaerung": "Der Freiwinkel schafft Abstand zwischen Freifläche und Schnittfläche und mindert so Reibung und Wärme."
+        },
+        {
+          "text": "Er lenkt den Span ab und beeinflusst die Spanform.",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Aufgabe des Spanwinkels Gamma."
+        }
+      ]
+    },
+    {
+      "id": "PT-WZ-102",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aussage über die drei Schneidenwinkel am Schneidkeil ist richtig?",
+      "optionen": [
+        {
+          "text": "Der Freiwinkel ist immer größer als der Keilwinkel.",
+          "ist_korrekt": false,
+          "erklaerung": "In der Praxis ist der Freiwinkel der kleinste der drei Winkel."
+        },
+        {
+          "text": "Frei-, Keil- und Spanwinkel ergeben zusammen 90°.",
+          "ist_korrekt": true,
+          "erklaerung": "Am Schneidkeil gilt: Alpha + Beta + Gamma = 90°. Aus zwei bekannten Winkeln lässt sich der dritte berechnen."
+        },
+        {
+          "text": "Der Keilwinkel ist immer größer als 90°.",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Keilwinkel über 90° würde keinen Schnitt mehr zulassen."
+        },
+        {
+          "text": "Frei-, Keil- und Spanwinkel ergeben zusammen 180°.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Summe der drei Winkel am Schneidkeil beträgt 90°, nicht 180°."
+        },
+        {
+          "text": "Der Spanwinkel ist bei jedem Werkstoff gleich groß.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Spanwinkel wird an den Werkstoff angepasst und kann auch negativ sein."
+        }
+      ]
+    },
+    {
+      "id": "PT-WZ-103",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum wird ein Spiralbohrer mit Kühlschmierstoff versorgt?",
+      "optionen": [
+        {
+          "text": "Um die Bohrung zu härten",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Härten der Bohrungswand ist nicht Zweck der Kühlschmierung."
+        },
+        {
+          "text": "Um den Spitzenwinkel des Bohrers zu verändern",
+          "ist_korrekt": false,
+          "erklaerung": "Der Spitzenwinkel ist eine feste Geometriegröße des Werkzeugs."
+        },
+        {
+          "text": "Um den Bohrer elektrisch zu isolieren",
+          "ist_korrekt": false,
+          "erklaerung": "Eine elektrische Isolierung ist beim Bohren nicht erforderlich."
+        },
+        {
+          "text": "Um die Standzeit zu senken und den Wechselrhythmus zu vereinheitlichen",
+          "ist_korrekt": false,
+          "erklaerung": "Kühlschmierung soll die Standzeit erhöhen, nicht senken."
+        },
+        {
+          "text": "Um Wärme abzuführen, die Reibung zu verringern und die Späne aus der Bohrung zu spülen",
+          "ist_korrekt": true,
+          "erklaerung": "Kühlen, Schmieren und Spänetransport sind die drei Aufgaben des Kühlschmierstoffs beim Bohren."
+        }
+      ]
+    },
+    {
+      "id": "PT-WZ-104",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welches Werkzeug wird verwendet, um eine Nutmutter an einer Welle anzuziehen?",
+      "optionen": [
+        {
+          "text": "Ein Innensechskantschlüssel",
+          "ist_korrekt": false,
+          "erklaerung": "Dieser passt nur zu Schrauben mit Innensechskant."
+        },
+        {
+          "text": "Ein Hakenschlüssel",
+          "ist_korrekt": true,
+          "erklaerung": "Der Hakenschlüssel greift in die Stirnnuten der Nutmutter ein."
+        },
+        {
+          "text": "Eine Wasserpumpenzange",
+          "ist_korrekt": false,
+          "erklaerung": "Sie beschädigt die Mutter und überträgt das Drehmoment nicht definiert."
+        },
+        {
+          "text": "Ein Ringschlüssel",
+          "ist_korrekt": false,
+          "erklaerung": "Der Ringschlüssel greift an Außensechskanten."
+        },
+        {
+          "text": "Ein Torx-Schraubendreher",
+          "ist_korrekt": false,
+          "erklaerung": "Torx ist ein Innenprofil an Schrauben, nicht an Nutmuttern."
+        }
+      ]
+    },
+    {
+      "id": "PT-WZ-105",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum wird beim Anziehen sicherheitsrelevanter Schraubverbindungen ein Drehmomentschlüssel eingesetzt?",
+      "optionen": [
+        {
+          "text": "Weil das Gewinde dadurch nicht geschmiert werden muss",
+          "ist_korrekt": false,
+          "erklaerung": "Der Reibwert und damit der Schmierzustand beeinflussen das Ergebnis sogar erheblich."
+        },
+        {
+          "text": "Weil die Vorspannkraft der Verbindung nur über ein definiertes Anzugsmoment reproduzierbar eingestellt werden kann",
+          "ist_korrekt": true,
+          "erklaerung": "Das Anzugsmoment ist die praktisch messbare Größe, über die die geforderte Vorspannkraft eingestellt und wiederholbar dokumentiert wird."
+        },
+        {
+          "text": "Weil dadurch die Schraubenfestigkeitsklasse erhöht wird",
+          "ist_korrekt": false,
+          "erklaerung": "Die Festigkeitsklasse ist eine Werkstoffeigenschaft der Schraube."
+        },
+        {
+          "text": "Weil damit auf eine Schraubensicherung immer verzichtet werden kann",
+          "ist_korrekt": false,
+          "erklaerung": "Ob eine zusätzliche Sicherung nötig ist, legt die Konstruktion fest."
+        },
+        {
+          "text": "Weil sich damit die Schraube schneller eindrehen lässt",
+          "ist_korrekt": false,
+          "erklaerung": "Geschwindigkeit ist nicht der Zweck; das Vorspannen erfolgt im letzten Anzugsschritt."
+        }
+      ]
+    },
+    {
+      "id": "PT-WZ-106",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Sägeblatt für die Handbügelsäge hat geschränkte oder gewellte Zähne. Welchen Zweck hat diese Zahnanordnung?",
+      "optionen": [
+        {
+          "text": "Sie verlängert die Zahnteilung.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Zahnteilung wird durch die Zahnzahl je Länge festgelegt."
+        },
+        {
+          "text": "Sie erhöht die Härte der Zähne.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Härte entsteht durch Werkstoff und Wärmebehandlung."
+        },
+        {
+          "text": "Sie ersetzt den Kühlschmierstoff vollständig.",
+          "ist_korrekt": false,
+          "erklaerung": "Bei längeren Schnitten in Stahl bleibt Kühlschmierung sinnvoll."
+        },
+        {
+          "text": "Sie macht das Sägeblatt elastischer.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Elastizität ergibt sich aus Werkstoff und Blattdicke."
+        },
+        {
+          "text": "Sie erzeugt einen Schnittspalt, der breiter ist als das Sägeblatt, und verhindert dadurch das Klemmen.",
+          "ist_korrekt": true,
+          "erklaerung": "Durch die seitlich versetzten Zähne wird der Schnittspalt breiter als der Blattrücken; das Blatt läuft frei."
+        }
+      ]
+    },
+    {
+      "id": "PT-WZ-107",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Beim Bohren in einen harten, spröden Werkstoff soll die Schneidkante möglichst stabil sein. Wie muss der Spitzenwinkel des Bohrers gegenüber dem Normalfall gewählt werden?",
+      "optionen": [
+        {
+          "text": "Der Spitzenwinkel wird nur nach dem Bohrungsdurchmesser gewählt.",
+          "ist_korrekt": false,
+          "erklaerung": "Maßgeblich ist in erster Linie der Werkstoff."
+        },
+        {
+          "text": "Der Spitzenwinkel spielt beim Bohren keine Rolle.",
+          "ist_korrekt": false,
+          "erklaerung": "Er ist eine der wichtigsten Geometriegrößen des Bohrers."
+        },
+        {
+          "text": "Größer, weil dadurch der Keilwinkel an der Schneide zunimmt",
+          "ist_korrekt": true,
+          "erklaerung": "Bei harten und spröden Werkstoffen wird ein größerer Spitzenwinkel gewählt; die Schneide wird stumpfer und damit standfester."
+        },
+        {
+          "text": "Kleiner, weil dadurch die Schneide stabiler wird",
+          "ist_korrekt": false,
+          "erklaerung": "Ein kleinerer Spitzenwinkel erzeugt eine spitzere und damit empfindlichere Schneide."
+        },
+        {
+          "text": "Der Spitzenwinkel wird nur nach der Bohrtiefe gewählt.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Bohrtiefe beeinflusst Spanabfuhr und Kühlung, nicht die Grundgeometrie."
+        }
+      ]
+    },
+    {
+      "id": "PT-PR-101",
+      "typ": "mc",
+      "thema": "PT-PR",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "In welcher Auswahlantwort ist ausschließlich ein anzeigendes Prüfmittel genannt?",
+      "optionen": [
+        {
+          "text": "Grenzrachenlehre",
+          "ist_korrekt": false,
+          "erklaerung": "Die Grenzrachenlehre lehrt nur „gut“ oder „ausschuss“ und zeigt keinen Zahlenwert an."
+        },
+        {
+          "text": "Fühlerlehre",
+          "ist_korrekt": false,
+          "erklaerung": "Die Fühlerlehre verkörpert ein festes Maß."
+        },
+        {
+          "text": "Bügelmessschraube",
+          "ist_korrekt": true,
+          "erklaerung": "Die Bügelmessschraube zeigt einen ablesbaren Messwert an und ist damit ein anzeigendes Messmittel."
+        },
+        {
+          "text": "Haarwinkel",
+          "ist_korrekt": false,
+          "erklaerung": "Der Haarwinkel ist eine Lehre zum Prüfen der Rechtwinkligkeit."
+        },
+        {
+          "text": "Radiuslehre",
+          "ist_korrekt": false,
+          "erklaerung": "Die Radiuslehre ist eine Formlehre ohne Anzeige."
+        }
+      ]
+    },
+    {
+      "id": "PT-PR-102",
+      "typ": "mc",
+      "thema": "PT-PR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wozu dient die Tiefenmessstange eines Messschiebers?",
+      "optionen": [
+        {
+          "text": "Zum Anreißen von Mittellinien",
+          "ist_korrekt": false,
+          "erklaerung": "Zum Anreißen dienen Anreißnadel und Höhenreißer."
+        },
+        {
+          "text": "Zum Messen von Bohrungs- und Nuttiefen",
+          "ist_korrekt": true,
+          "erklaerung": "Die Tiefenmessstange fährt beim Öffnen des Messschiebers aus und misst Tiefen von einer Anlagefläche aus."
+        },
+        {
+          "text": "Zum Messen von Innendurchmessern",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür sind die oberen Messschneiden vorgesehen."
+        },
+        {
+          "text": "Zum Messen von Außenmaßen",
+          "ist_korrekt": false,
+          "erklaerung": "Außenmaße werden mit den großen Messschenkeln gemessen."
+        },
+        {
+          "text": "Zum Prüfen der Rechtwinkligkeit",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür wird ein Anschlagwinkel verwendet."
+        }
+      ]
+    },
+    {
+      "id": "PT-PR-103",
+      "typ": "mc",
+      "thema": "PT-PR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Werkstück wird unmittelbar nach dem Fräsen im warmen Zustand gemessen. Welche Folge hat das für das Messergebnis?",
+      "optionen": [
+        {
+          "text": "Das Werkstück ist durch die Wärme dauerhaft geschrumpft.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Wärmedehnung ist reversibel, das Teil kehrt beim Abkühlen auf sein Maß zurück."
+        },
+        {
+          "text": "Nur digitale Messmittel zeigen dann falsch an.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Ursache liegt am Werkstück, nicht an der Anzeigeart."
+        },
+        {
+          "text": "Das Ergebnis ist unbeeinflusst, weil Messmittel temperaturunabhängig sind.",
+          "ist_korrekt": false,
+          "erklaerung": "Sowohl Werkstück als auch Messmittel dehnen sich mit der Temperatur."
+        },
+        {
+          "text": "Das Werkstück ist durch die Wärmedehnung zu groß und wird nach dem Abkühlen kleiner.",
+          "ist_korrekt": true,
+          "erklaerung": "Deshalb wird bei Maßprüfungen die Bezugstemperatur von 20 °C angestrebt und das Teil vor dem Messen temperiert."
+        },
+        {
+          "text": "Die Wärme verändert nur die Rauheit, nicht das Maß.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Längenausdehnung wirkt unmittelbar auf das Maß."
+        }
+      ]
+    },
+    {
+      "id": "PT-PR-104",
+      "typ": "mc",
+      "thema": "PT-PR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Eine Bohrung wird mit einer Grenzlehrdorn geprüft. Wann gilt die Bohrung als maßhaltig?",
+      "optionen": [
+        {
+          "text": "Wenn die Gutseite eingeht und die Ausschussseite nicht eingeht",
+          "ist_korrekt": true,
+          "erklaerung": "Das ist die Grundregel der Grenzlehre: Gutseite muss passen, Ausschussseite darf nicht passen."
+        },
+        {
+          "text": "Wenn beide Seiten des Lehrdorns eingehen",
+          "ist_korrekt": false,
+          "erklaerung": "Geht auch die Ausschussseite ein, ist die Bohrung zu groß."
+        },
+        {
+          "text": "Wenn nur die Ausschussseite eingeht",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist praktisch nicht möglich und wäre in jedem Fall Ausschuss."
+        },
+        {
+          "text": "Wenn keine der beiden Seiten eingeht",
+          "ist_korrekt": false,
+          "erklaerung": "Dann ist die Bohrung zu klein."
+        },
+        {
+          "text": "Wenn die Gutseite mit leichter Gewaltanwendung eingetrieben werden kann",
+          "ist_korrekt": false,
+          "erklaerung": "Lehren werden nie eingetrieben; das beschädigt Lehre und Werkstück und verfälscht das Ergebnis."
+        }
+      ]
+    },
+    {
+      "id": "PT-PR-105",
+      "typ": "mc",
+      "thema": "PT-PR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was versteht man beim Messen unter dem Begriff „Abweichung“?",
+      "optionen": [
+        {
+          "text": "Den Unterschied zwischen Istmaß und Sollmaß",
+          "ist_korrekt": true,
+          "erklaerung": "Die Abweichung ist die Differenz zwischen gemessenem Istmaß und vorgegebenem Sollmaß."
+        },
+        {
+          "text": "Die Rauheit der Messfläche",
+          "ist_korrekt": false,
+          "erklaerung": "Die Rauheit ist eine Oberflächenkenngröße."
+        },
+        {
+          "text": "Die Anzahl der geprüften Werkstücke",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist der Stichprobenumfang."
+        },
+        {
+          "text": "Den Unterschied zwischen Höchstmaß und Mindestmaß",
+          "ist_korrekt": false,
+          "erklaerung": "Diese Differenz ist die Maßtoleranz."
+        },
+        {
+          "text": "Die Ablesegenauigkeit des Messmittels",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist der Skalenteilungswert beziehungsweise die Auflösung."
+        }
+      ]
+    },
+    {
+      "id": "PT-PR-106",
+      "typ": "mc",
+      "thema": "PT-PR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie sollte eine Anreißnadel aus Stahl beschaffen sein?",
+      "optionen": [
+        {
+          "text": "Schaft gehärtet, Spitze weich",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist genau die falsche Verteilung; der Schaft würde spröde brechen."
+        },
+        {
+          "text": "Schaft und Spitze weich",
+          "ist_korrekt": false,
+          "erklaerung": "Eine weiche Spitze wird sofort stumpf und reißt keine saubere Linie."
+        },
+        {
+          "text": "Schaft und Spitze weichgeglüht",
+          "ist_korrekt": false,
+          "erklaerung": "Weichgeglüht ist die Spitze für das Anreißen unbrauchbar."
+        },
+        {
+          "text": "Schaft und Spitze vollständig gehärtet",
+          "ist_korrekt": false,
+          "erklaerung": "Ein durchgehärteter Schaft ist bruchgefährdet."
+        },
+        {
+          "text": "Schaft zäh, Spitze gehärtet",
+          "ist_korrekt": true,
+          "erklaerung": "Die gehärtete Spitze bleibt scharf, der zähe Schaft bricht bei Biegebeanspruchung nicht."
+        }
+      ]
+    },
+    {
+      "id": "PT-FT-101",
+      "typ": "mc",
+      "thema": "PT-FT",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN 8580"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Zu welcher Hauptgruppe der Fertigungsverfahren gehört das Biegen eines Blechwinkels in der Abkantpresse?",
+      "optionen": [
+        {
+          "text": "Trennen",
+          "ist_korrekt": false,
+          "erklaerung": "Beim Trennen wird der Zusammenhalt örtlich aufgehoben."
+        },
+        {
+          "text": "Fügen",
+          "ist_korrekt": false,
+          "erklaerung": "Beim Fügen werden mehrere Teile zusammengebracht."
+        },
+        {
+          "text": "Beschichten",
+          "ist_korrekt": false,
+          "erklaerung": "Beschichten trägt eine Schicht auf das Werkstück auf."
+        },
+        {
+          "text": "Umformen",
+          "ist_korrekt": true,
+          "erklaerung": "Beim Biegen wird die Form plastisch geändert; Masse und Zusammenhalt bleiben erhalten."
+        },
+        {
+          "text": "Urformen",
+          "ist_korrekt": false,
+          "erklaerung": "Beim Urformen entsteht der Zusammenhalt erstmalig, zum Beispiel beim Gießen."
+        }
+      ]
+    },
+    {
+      "id": "PT-FT-102",
+      "typ": "mc",
+      "thema": "PT-FT",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN 8580"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welches Fertigungsverfahren gehört zur Hauptgruppe Urformen?",
+      "optionen": [
+        {
+          "text": "Härten einer Welle",
+          "ist_korrekt": false,
+          "erklaerung": "Härten gehört zur Hauptgruppe Stoffeigenschaft ändern."
+        },
+        {
+          "text": "Nieten zweier Bleche",
+          "ist_korrekt": false,
+          "erklaerung": "Nieten gehört zum Fügen."
+        },
+        {
+          "text": "Spritzgießen eines Kunststoffgehäuses",
+          "ist_korrekt": true,
+          "erklaerung": "Beim Spritzgießen entsteht die Form aus formlosem Stoff; das ist Urformen."
+        },
+        {
+          "text": "Tiefziehen einer Blechschale",
+          "ist_korrekt": false,
+          "erklaerung": "Tiefziehen ist Umformen."
+        },
+        {
+          "text": "Fräsen einer Nut",
+          "ist_korrekt": false,
+          "erklaerung": "Fräsen ist Spanen mit geometrisch bestimmter Schneide und gehört zum Trennen."
+        }
+      ]
+    },
+    {
+      "id": "PT-FT-103",
+      "typ": "mc",
+      "thema": "PT-FT",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Verbindungsart liegt bei einer Passfederverbindung zwischen Welle und Nabe vor?",
+      "optionen": [
+        {
+          "text": "Stoff- und kraftschlüssig zugleich",
+          "ist_korrekt": false,
+          "erklaerung": "Bei der Passfeder wird kein Werkstoff verbunden."
+        },
+        {
+          "text": "Es liegt keine feste Verbindung vor.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Verbindung überträgt Drehmoment und ist lösbar, aber fest."
+        },
+        {
+          "text": "Kraftschlüssig durch Reibung",
+          "ist_korrekt": false,
+          "erklaerung": "Reibschluss liegt zum Beispiel bei einem Pressverband oder einer Kegelspannverbindung vor."
+        },
+        {
+          "text": "Stoffschlüssig",
+          "ist_korrekt": false,
+          "erklaerung": "Stoffschluss entsteht durch Schweißen, Löten oder Kleben."
+        },
+        {
+          "text": "Formschlüssig",
+          "ist_korrekt": true,
+          "erklaerung": "Die Passfeder überträgt das Drehmoment durch die ineinandergreifende Form von Nut und Feder."
+        }
+      ]
+    },
+    {
+      "id": "PT-FT-104",
+      "typ": "mc",
+      "thema": "PT-FT",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Verbindung ist zerstörungsfrei lösbar?",
+      "optionen": [
+        {
+          "text": "Die Klebeverbindung",
+          "ist_korrekt": false,
+          "erklaerung": "Die Klebeschicht wird beim Trennen zerstört."
+        },
+        {
+          "text": "Die Schraubenverbindung",
+          "ist_korrekt": true,
+          "erklaerung": "Schraubenverbindungen lassen sich lösen und wieder herstellen, ohne dass Teile zerstört werden."
+        },
+        {
+          "text": "Die Schweißverbindung",
+          "ist_korrekt": false,
+          "erklaerung": "Sie lässt sich nur durch Trennen der Naht lösen."
+        },
+        {
+          "text": "Der Presssitz einer Buchse nach dem Einpressen",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Auspressen beschädigt in der Regel die Fügeflächen; die Verbindung gilt als bedingt lösbar."
+        },
+        {
+          "text": "Die Nietverbindung",
+          "ist_korrekt": false,
+          "erklaerung": "Der Niet muss zum Lösen aufgebohrt werden."
+        }
+      ]
+    },
+    {
+      "id": "PT-FT-105",
+      "typ": "mc",
+      "thema": "PT-FT",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Gewinde soll in eine vorhandene Grundbohrung geschnitten werden. Welcher Arbeitsschritt geht dem Gewindeschneiden unmittelbar voraus?",
+      "optionen": [
+        {
+          "text": "Das Härten der Bohrungswand",
+          "ist_korrekt": false,
+          "erklaerung": "Eine gehärtete Wand ließe sich nicht mehr schneiden."
+        },
+        {
+          "text": "Das Reiben der Bohrung auf Passmaß",
+          "ist_korrekt": false,
+          "erklaerung": "Reiben stellt eine Passbohrung her, keine Gewindekernbohrung."
+        },
+        {
+          "text": "Das Aufbohren auf den Nenndurchmesser des Gewindes",
+          "ist_korrekt": false,
+          "erklaerung": "Die Bohrung muss den kleineren Kerndurchmesser haben, sonst trägt das Gewinde nicht."
+        },
+        {
+          "text": "Das Verstemmen der Bohrung",
+          "ist_korrekt": false,
+          "erklaerung": "Verstemmen ist ein Sicherungsverfahren und hier unpassend."
+        },
+        {
+          "text": "Das Ansenken der Bohrungskante",
+          "ist_korrekt": true,
+          "erklaerung": "Die angesenkte Kante führt den Gewindebohrer beim Anschneiden und verhindert einen aufgeworfenen Gewindeanfang."
+        }
+      ]
+    },
+    {
+      "id": "PT-FT-106",
+      "typ": "mc",
+      "thema": "PT-FT",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Spritzgussteil aus Thermoplast zeigt an einer dickwandigen Stelle eine Einfallstelle. Welche Ursache ist dafür typisch?",
+      "optionen": [
+        {
+          "text": "Die Form war zu stark gekühlt.",
+          "ist_korrekt": false,
+          "erklaerung": "Eine kalte Form fördert eher unvollständige Füllung und schlechte Oberflächen."
+        },
+        {
+          "text": "Die Schwindung des dickwandigen Bereichs wurde beim Abkühlen nicht ausreichend durch Nachdruck ausgeglichen.",
+          "ist_korrekt": true,
+          "erklaerung": "Dickwandige Bereiche erstarren zuletzt und schwinden am stärksten; fehlt Nachdruck oder Nachdruckzeit, zieht die Oberfläche ein."
+        },
+        {
+          "text": "Der Werkstoff war zu trocken.",
+          "ist_korrekt": false,
+          "erklaerung": "Zu feuchtes Granulat verursacht Schlieren, zu trockenes verursacht keine Einfallstellen."
+        },
+        {
+          "text": "Die Entformung erfolgte zu spät.",
+          "ist_korrekt": false,
+          "erklaerung": "Späte Entformung verlängert die Zykluszeit, erzeugt aber keine Einfallstellen."
+        },
+        {
+          "text": "Das Werkzeug war nicht entlüftet.",
+          "ist_korrekt": false,
+          "erklaerung": "Fehlende Entlüftung führt zu Brandstellen und unvollständiger Füllung."
+        }
+      ]
+    },
+    {
+      "id": "PT-MA-101",
+      "typ": "mc",
+      "thema": "PT-MA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgabe hat die Wartungseinheit in einer Druckluftanlage?",
+      "optionen": [
+        {
+          "text": "Sie filtert die Luft, regelt den Arbeitsdruck und stellt ihn konstant bereit.",
+          "ist_korrekt": true,
+          "erklaerung": "Filter, Druckregelventil mit Manometer und je nach Ausführung ein Öler bereiten die Druckluft für die Anlage auf."
+        },
+        {
+          "text": "Sie speichert die Druckluft für Lastspitzen.",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Aufgabe des Druckluftbehälters."
+        },
+        {
+          "text": "Sie erzeugt die Druckluft.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Druckluft wird vom Kompressor erzeugt."
+        },
+        {
+          "text": "Sie steuert die Bewegungsrichtung des Zylinders.",
+          "ist_korrekt": false,
+          "erklaerung": "Das übernimmt das Wegeventil."
+        },
+        {
+          "text": "Sie begrenzt die Kolbengeschwindigkeit.",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür werden Drosselrückschlagventile eingesetzt."
+        }
+      ]
+    },
+    {
+      "id": "PT-MA-102",
+      "typ": "mc",
+      "thema": "PT-MA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Womit wird an einem Pneumatikzylinder die Ausfahrgeschwindigkeit eingestellt?",
+      "optionen": [
+        {
+          "text": "Mit einem Wegeventil",
+          "ist_korrekt": false,
+          "erklaerung": "Das Wegeventil schaltet die Bewegungsrichtung."
+        },
+        {
+          "text": "Mit einem Drosselrückschlagventil",
+          "ist_korrekt": true,
+          "erklaerung": "Das Drosselrückschlagventil begrenzt den Volumenstrom in einer Richtung und stellt so die Geschwindigkeit ein."
+        },
+        {
+          "text": "Mit einem Manometer",
+          "ist_korrekt": false,
+          "erklaerung": "Das Manometer zeigt nur den Druck an."
+        },
+        {
+          "text": "Mit einem Druckbegrenzungsventil",
+          "ist_korrekt": false,
+          "erklaerung": "Dieses begrenzt den Druck, nicht die Geschwindigkeit."
+        },
+        {
+          "text": "Mit einem Schalldämpfer",
+          "ist_korrekt": false,
+          "erklaerung": "Der Schalldämpfer mindert das Ausströmgeräusch."
+        }
+      ]
+    },
+    {
+      "id": "PT-MA-103",
+      "typ": "mc",
+      "thema": "PT-MA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was versteht man in der Regelungstechnik unter einer Störgröße?",
+      "optionen": [
+        {
+          "text": "Den gemessenen Istwert der Regelgröße",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Regelgröße selbst."
+        },
+        {
+          "text": "Eine von außen einwirkende Größe, die eine unerwünschte Abweichung der Regelgröße verursacht",
+          "ist_korrekt": true,
+          "erklaerung": "Die Störgröße wirkt ungewollt auf die Regelstrecke; der Regler gleicht ihre Wirkung aus."
+        },
+        {
+          "text": "Die Stellgröße des Reglers",
+          "ist_korrekt": false,
+          "erklaerung": "Die Stellgröße ist das Ausgangssignal des Reglers an die Strecke."
+        },
+        {
+          "text": "Den vorgegebenen Sollwert der Regelgröße",
+          "ist_korrekt": false,
+          "erklaerung": "Der Sollwert ist die Führungsgröße."
+        },
+        {
+          "text": "Die Differenz zwischen Soll- und Istwert",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Regelabweichung."
+        }
+      ]
+    },
+    {
+      "id": "PT-MA-104",
+      "typ": "mc",
+      "thema": "PT-MA",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Störzeitendiagramm zeigt für eine Anlage die Summe der Stillstandszeiten je Verursacher. Nach welchem Grundsatz wird die Reihenfolge der Abstellmaßnahmen festgelegt?",
+      "optionen": [
+        {
+          "text": "Beginnend beim Verursacher mit der kleinsten Störzeit",
+          "ist_korrekt": false,
+          "erklaerung": "Das bindet Aufwand ohne nennenswerte Wirkung."
+        },
+        {
+          "text": "In der Reihenfolge, in der die Störungen aufgetreten sind",
+          "ist_korrekt": false,
+          "erklaerung": "Die zeitliche Reihenfolge sagt nichts über die Wirkung einer Maßnahme aus."
+        },
+        {
+          "text": "Nach der Anzahl der beteiligten Mitarbeiter",
+          "ist_korrekt": false,
+          "erklaerung": "Maßgeblich ist die Wirkung auf die Anlagenverfügbarkeit."
+        },
+        {
+          "text": "Nach alphabetischer Reihenfolge der Baugruppen",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist kein technisches Kriterium."
+        },
+        {
+          "text": "Beginnend beim Verursacher mit der größten Störzeit",
+          "ist_korrekt": true,
+          "erklaerung": "Wer die meiste Stillstandszeit verursacht, bringt bei Behebung den größten Gewinn an Verfügbarkeit."
+        }
+      ]
+    },
+    {
+      "id": "PP-QS-101",
+      "typ": "mc",
+      "thema": "PP-QS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was bezeichnet man in der Qualitätssicherung als Fehler?",
+      "optionen": [
+        {
+          "text": "Eine unvollständige Schichtübergabe",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist ein Mangel im Ablauf, nicht die Definition des Begriffs Fehler."
+        },
+        {
+          "text": "Die Nichterfüllung einer festgelegten Forderung",
+          "ist_korrekt": true,
+          "erklaerung": "Ein Fehler liegt vor, wenn ein Merkmal eine dokumentierte Anforderung nicht erfüllt."
+        },
+        {
+          "text": "Den Ausfall einer Maschine",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist eine Störung; sie kann Fehler verursachen, ist aber selbst keiner."
+        },
+        {
+          "text": "Jede Abweichung, die der Prüfer bemerkt",
+          "ist_korrekt": false,
+          "erklaerung": "Nicht jede bemerkte Abweichung verletzt eine Forderung."
+        },
+        {
+          "text": "Eine zu eng gewählte Toleranz",
+          "ist_korrekt": false,
+          "erklaerung": "Eine enge Toleranz ist eine Vorgabe, kein Fehler."
+        }
+      ]
+    },
+    {
+      "id": "PP-QS-102",
+      "typ": "mc",
+      "thema": "PP-QS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welchen Vorteil bietet die fertigungsbegleitende Prüfung gegenüber der reinen Endprüfung?",
+      "optionen": [
+        {
+          "text": "Sie macht Prüfmittel überflüssig.",
+          "ist_korrekt": false,
+          "erklaerung": "Prüfmittel werden weiterhin benötigt."
+        },
+        {
+          "text": "Sie erlaubt es, auf eine Freigabe des ersten Teils zu verzichten.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Erstteilfreigabe bleibt üblich und sinnvoll."
+        },
+        {
+          "text": "Sie verlängert planmäßig die Durchlaufzeit.",
+          "ist_korrekt": false,
+          "erklaerung": "Das wäre ein Nachteil, kein Vorteil."
+        },
+        {
+          "text": "Sie ersetzt die Dokumentation der Prüfergebnisse.",
+          "ist_korrekt": false,
+          "erklaerung": "Ergebnisse müssen weiterhin dokumentiert werden."
+        },
+        {
+          "text": "Abweichungen werden früh erkannt, sodass weniger Ausschuss und Nacharbeit entstehen.",
+          "ist_korrekt": true,
+          "erklaerung": "Wer während der Fertigung prüft, kann den Prozess nachstellen, bevor eine ganze Charge unbrauchbar wird."
+        }
+      ]
+    },
+    {
+      "id": "PP-QS-103",
+      "typ": "mc",
+      "thema": "PP-QS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Werkstückmaß liegt außerhalb der Toleranz, kann aber durch einen weiteren Arbeitsgang auf Maß gebracht werden. Wie wird dieses Teil im Qualitätswesen eingestuft?",
+      "optionen": [
+        {
+          "text": "Als Sonderfreigabe",
+          "ist_korrekt": false,
+          "erklaerung": "Eine Sonderfreigabe verwendet das Teil trotz Abweichung ohne Nacharbeit."
+        },
+        {
+          "text": "Als Prüfmittelabweichung",
+          "ist_korrekt": false,
+          "erklaerung": "Diese läge vor, wenn das Messmittel selbst fehlerhaft wäre."
+        },
+        {
+          "text": "Als Ausschuss",
+          "ist_korrekt": false,
+          "erklaerung": "Ausschuss ist ein Teil, das nicht mehr brauchbar gemacht werden kann."
+        },
+        {
+          "text": "Als Gutteil",
+          "ist_korrekt": false,
+          "erklaerung": "Im vorliegenden Zustand erfüllt das Teil die Forderung nicht."
+        },
+        {
+          "text": "Als Nacharbeitsteil",
+          "ist_korrekt": true,
+          "erklaerung": "Nacharbeit liegt vor, wenn ein fehlerhaftes Teil mit vertretbarem Aufwand in einen forderungsgerechten Zustand gebracht werden kann."
+        }
+      ]
+    },
+    {
+      "id": "PP-AS-101",
+      "typ": "mc",
+      "thema": "PP-AS",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aussage über Arbeitsanweisungen ist richtig?",
+      "optionen": [
+        {
+          "text": "Arbeitsanweisungen sind Empfehlungen und können nach eigenem Ermessen abgewandelt werden.",
+          "ist_korrekt": false,
+          "erklaerung": "Sie sind verbindlich; Abweichungen müssen abgestimmt und dokumentiert werden."
+        },
+        {
+          "text": "Arbeitsanweisungen sind verbindlich und beschreiben den geforderten Arbeitsablauf nachvollziehbar.",
+          "ist_korrekt": true,
+          "erklaerung": "Sie legen den Ablauf so fest, dass die Ausführung reproduzierbar und überprüfbar ist."
+        },
+        {
+          "text": "Arbeitsanweisungen ersetzen die technische Zeichnung.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Zeichnung bleibt die maßgebliche Vorgabe für Geometrie und Maße."
+        },
+        {
+          "text": "Arbeitsanweisungen werden nur im Umgang mit Gefahrstoffen erstellt.",
+          "ist_korrekt": false,
+          "erklaerung": "Betriebsanweisungen betreffen Gefahrstoffe; Arbeitsanweisungen beschreiben allgemein Arbeitsabläufe."
+        },
+        {
+          "text": "Arbeitsanweisungen gelten nur für neue Mitarbeiter.",
+          "ist_korrekt": false,
+          "erklaerung": "Sie gelten für alle, die die Tätigkeit ausführen."
+        }
+      ]
+    },
+    {
+      "id": "PP-AS-102",
+      "typ": "mc",
+      "thema": "PP-AS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "In welcher Reihenfolge werden die Arbeitsschritte für ein gedrehtes Bauteil mit Gewindebohrung sinnvoll geplant?",
+      "optionen": [
+        {
+          "text": "Gewinde schneiden – Bohren – Drehen – Entgraten",
+          "ist_korrekt": false,
+          "erklaerung": "Ohne Bohrung lässt sich kein Innengewinde schneiden."
+        },
+        {
+          "text": "Drehen – Bohren – Gewinde schneiden – Entgraten",
+          "ist_korrekt": true,
+          "erklaerung": "Zuerst die Grundform herstellen, dann die Kernbohrung, dann das Gewinde, zuletzt entgraten."
+        },
+        {
+          "text": "Drehen – Gewinde schneiden – Bohren – Entgraten",
+          "ist_korrekt": false,
+          "erklaerung": "Die Kernbohrung muss vor dem Gewindeschneiden vorhanden sein."
+        },
+        {
+          "text": "Entgraten – Drehen – Gewinde schneiden – Bohren",
+          "ist_korrekt": false,
+          "erklaerung": "Entgraten steht am Ende der Bearbeitung."
+        },
+        {
+          "text": "Bohren – Entgraten – Gewinde schneiden – Drehen",
+          "ist_korrekt": false,
+          "erklaerung": "Das Drehen der Grundform gehört an den Anfang."
+        }
+      ]
+    },
+    {
+      "id": "PP-IH-101",
+      "typ": "mc",
+      "thema": "PP-IH",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was ist das Ziel der vorbeugenden Instandhaltung?",
+      "optionen": [
+        {
+          "text": "Durch geplante Maßnahmen Ausfälle zu vermeiden und die Verfügbarkeit zu sichern",
+          "ist_korrekt": true,
+          "erklaerung": "Vorbeugende Instandhaltung wird nach Zeit oder Zustand geplant und setzt vor dem Schaden an."
+        },
+        {
+          "text": "Die Anlagendokumentation zu ersetzen",
+          "ist_korrekt": false,
+          "erklaerung": "Die Dokumentation ist Grundlage der Instandhaltung, nicht ihr Ersatz."
+        },
+        {
+          "text": "Wartungsarbeiten ausschließlich von externen Firmen ausführen zu lassen",
+          "ist_korrekt": false,
+          "erklaerung": "Wer die Arbeiten ausführt, ist eine organisatorische Frage."
+        },
+        {
+          "text": "Reparaturen erst nach dem Ausfall der Anlage auszuführen",
+          "ist_korrekt": false,
+          "erklaerung": "Das beschreibt die ausfallbedingte Instandsetzung."
+        },
+        {
+          "text": "Die Ersatzteilhaltung vollständig abzuschaffen",
+          "ist_korrekt": false,
+          "erklaerung": "Geplante Instandhaltung setzt planbare Ersatzteile gerade voraus."
+        }
+      ]
+    },
+    {
+      "id": "WISO-SU-101",
+      "typ": "mc",
+      "thema": "WISO-SU",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "ASR A1.3"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein rundes Sicherheitszeichen mit blauem Grund und weißem Symbol hängt am Eingang der Fertigungshalle. Welche Bedeutung hat diese Zeichenart?",
+      "optionen": [
+        {
+          "text": "Es schreibt ein bestimmtes Verhalten vor, zum Beispiel das Tragen einer Schutzausrüstung.",
+          "ist_korrekt": true,
+          "erklaerung": "Blaue runde Zeichen sind Gebotszeichen."
+        },
+        {
+          "text": "Es kennzeichnet eine Brandschutzeinrichtung.",
+          "ist_korrekt": false,
+          "erklaerung": "Brandschutzzeichen sind rechteckig und rot."
+        },
+        {
+          "text": "Es warnt vor einer Gefahrenquelle.",
+          "ist_korrekt": false,
+          "erklaerung": "Warnzeichen sind gelbe Dreiecke mit schwarzem Rand."
+        },
+        {
+          "text": "Es verbietet eine Handlung.",
+          "ist_korrekt": false,
+          "erklaerung": "Verbotszeichen sind rund mit rotem Rand und rotem Schrägbalken auf weißem Grund."
+        },
+        {
+          "text": "Es kennzeichnet einen Rettungsweg.",
+          "ist_korrekt": false,
+          "erklaerung": "Rettungszeichen sind rechteckig und grün."
+        }
+      ]
+    },
+    {
+      "id": "WISO-SU-102",
+      "typ": "mc",
+      "thema": "WISO-SU",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "An einer Werkzeugmaschine ist Hydrauliköl auf den Hallenboden ausgelaufen. Wie wird fachgerecht vorgegangen?",
+      "optionen": [
+        {
+          "text": "Das Öl mit Wasser verdünnen und in den Bodenablauf spülen",
+          "ist_korrekt": false,
+          "erklaerung": "Öl darf niemals in die Kanalisation gelangen; das ist ein Umweltdelikt."
+        },
+        {
+          "text": "Das Öl mit Reinigungsbenzin lösen und trocknen lassen",
+          "ist_korrekt": false,
+          "erklaerung": "Reinigungsbenzin ist leicht entzündlich und vergrößert die Gefahr erheblich."
+        },
+        {
+          "text": "Die Stelle bis zum Schichtende offen lassen und danach melden",
+          "ist_korrekt": false,
+          "erklaerung": "Die Rutschgefahr muss sofort beseitigt werden."
+        },
+        {
+          "text": "Die Stelle sichern, das Öl mit Ölbindemittel aufnehmen und als Sonderabfall entsorgen",
+          "ist_korrekt": true,
+          "erklaerung": "Absichern gegen Rutschgefahr, Bindemittel aufbringen, aufnehmen und getrennt als gefährlicher Abfall entsorgen."
+        },
+        {
+          "text": "Das Öl mit Metallspänen abstreuen und zurück in den Spänebehälter geben",
+          "ist_korrekt": false,
+          "erklaerung": "Ölhaltige Späne gehören nicht in den normalen Spänebehälter und lösen die Rutschgefahr nicht."
+        }
+      ]
+    },
+    {
+      "id": "WISO-SU-103",
+      "typ": "mc",
+      "thema": "WISO-SU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum darf beim Arbeiten an einer laufenden Bohrmaschine keine Schutzhandschuhe getragen werden?",
+      "optionen": [
+        {
+          "text": "Weil Handschuhe elektrisch leitend sind",
+          "ist_korrekt": false,
+          "erklaerung": "Die Gefahr an der Bohrmaschine ist mechanisch, nicht elektrisch."
+        },
+        {
+          "text": "Weil Handschuhe den Kühlschmierstoff aufnehmen",
+          "ist_korrekt": false,
+          "erklaerung": "Hautschutz ist wichtig, ist aber nicht der Grund für dieses Verbot."
+        },
+        {
+          "text": "Weil Handschuhe die Späneabfuhr behindern",
+          "ist_korrekt": false,
+          "erklaerung": "Die Späneabfuhr wird durch Werkzeug und Kühlschmierstoff bestimmt."
+        },
+        {
+          "text": "Weil der Handschuh vom rotierenden Werkzeug erfasst und die Hand mitgezogen werden kann",
+          "ist_korrekt": true,
+          "erklaerung": "An rotierenden Teilen besteht Einzugsgefahr; deshalb sind Handschuhe dort verboten."
+        },
+        {
+          "text": "Weil Handschuhe die Messgenauigkeit verringern",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist kein Sicherheitsgrund und beim Bohren nicht maßgeblich."
+        }
+      ]
+    },
+    {
+      "id": "WISO-SU-104",
+      "typ": "mc",
+      "thema": "WISO-SU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wo findet man verbindliche Angaben zu Gefahren, Schutzmaßnahmen und Erster Hilfe im Umgang mit einem Kühlschmierstoff?",
+      "optionen": [
+        {
+          "text": "In der technischen Zeichnung des Werkstücks",
+          "ist_korrekt": false,
+          "erklaerung": "Die Zeichnung beschreibt das Bauteil."
+        },
+        {
+          "text": "Im Arbeitsvertrag",
+          "ist_korrekt": false,
+          "erklaerung": "Dieser regelt das Arbeitsverhältnis."
+        },
+        {
+          "text": "In der Betriebsanweisung, die auf Grundlage des Sicherheitsdatenblatts erstellt wurde",
+          "ist_korrekt": true,
+          "erklaerung": "Der Betrieb erstellt aus dem Sicherheitsdatenblatt des Herstellers eine arbeitsplatzbezogene Betriebsanweisung."
+        },
+        {
+          "text": "Im Wartungsplan der Maschine",
+          "ist_korrekt": false,
+          "erklaerung": "Dieser regelt Instandhaltungstätigkeiten."
+        },
+        {
+          "text": "Im Prüfplan der Qualitätssicherung",
+          "ist_korrekt": false,
+          "erklaerung": "Der Prüfplan legt Prüfmerkmale und Prüfmittel fest."
+        }
+      ]
+    },
+    {
+      "id": "PT-RE-101",
+      "typ": "mc",
+      "thema": "PT-FT",
+      "schwierigkeit": 2,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Eine Fertigungslinie stellt in 8 Stunden 2 400 Bauteile her. Wie viele Bauteile entstehen bei gleicher Leistung in 5 Stunden 30 Minuten?",
+      "optionen": [
+        {
+          "text": "1 320 Bauteile",
+          "ist_korrekt": false,
+          "erklaerung": "Dieser Wert entsteht, wenn mit 240 Teilen je Stunde gerechnet wird."
+        },
+        {
+          "text": "2 200 Bauteile",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde die Zeit falsch als Anteil gerechnet."
+        },
+        {
+          "text": "1 800 Bauteile",
+          "ist_korrekt": false,
+          "erklaerung": "Das wären 6 volle Stunden."
+        },
+        {
+          "text": "1 650 Bauteile",
+          "ist_korrekt": true,
+          "erklaerung": "2 400 Teile / 8 h = 300 Teile/h. 5,5 h × 300 Teile/h = 1 650 Teile."
+        },
+        {
+          "text": "1 500 Bauteile",
+          "ist_korrekt": false,
+          "erklaerung": "Das entspricht 5 Stunden ohne die 30 Minuten."
+        }
+      ]
+    },
+    {
+      "id": "PT-RE-102",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Quader aus Aluminium hat die Maße 120 mm × 50 mm × 20 mm. Wie groß ist sein Volumen in cm³?",
+      "optionen": [
+        {
+          "text": "V = 12 cm³",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde um den Faktor 10 zu klein gerechnet."
+        },
+        {
+          "text": "V = 1 200 cm³",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde nur durch 100 geteilt."
+        },
+        {
+          "text": "V = 600 cm³",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde nur durch 200 statt durch 1 000 geteilt."
+        },
+        {
+          "text": "V = 120 cm³",
+          "ist_korrekt": true,
+          "erklaerung": "120 mm × 50 mm × 20 mm = 120 000 mm³. 1 cm³ = 1 000 mm³, also V = 120 cm³."
+        },
+        {
+          "text": "V = 60 cm³",
+          "ist_korrekt": false,
+          "erklaerung": "Das entspricht nur einer Teilfläche mal Höhe."
+        }
+      ]
+    },
+    {
+      "id": "PT-RE-103",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 2,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "An einem Drehmeißel wurden der Freiwinkel Alpha = 8° und der Spanwinkel Gamma = 12° gemessen. Wie groß ist der Keilwinkel Beta?",
+      "optionen": [
+        {
+          "text": "Beta = 78°",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde nur der Freiwinkel abgezogen."
+        },
+        {
+          "text": "Beta = 62°",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurden die Winkel falsch abgezogen."
+        },
+        {
+          "text": "Beta = 90°",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Keilwinkel von 90° würde nicht mehr schneiden."
+        },
+        {
+          "text": "Beta = 82°",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde nur der Spanwinkel abgezogen und falsch gerundet."
+        },
+        {
+          "text": "Beta = 70°",
+          "ist_korrekt": true,
+          "erklaerung": "Es gilt Alpha + Beta + Gamma = 90°. Beta = 90° − 8° − 12° = 70°."
+        }
+      ]
+    },
+    {
+      "id": "PT-RE-104",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Behälter wird mit 250 L einer Flüssigkeit der Dichte 0,92 g/mL gefüllt. Welche Masse hat die Füllung?",
+      "optionen": [
+        {
+          "text": "m = 23 kg",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde um den Faktor 10 zu klein gerechnet."
+        },
+        {
+          "text": "m = 230 kg",
+          "ist_korrekt": true,
+          "erklaerung": "0,92 g/mL entspricht 0,92 kg/L. 250 L × 0,92 kg/L = 230 kg."
+        },
+        {
+          "text": "m = 92 kg",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde nur die Dichte mit 100 multipliziert."
+        },
+        {
+          "text": "m = 250 kg",
+          "ist_korrekt": false,
+          "erklaerung": "Das gälte nur bei einer Dichte von 1,0 kg/L."
+        },
+        {
+          "text": "m = 272 kg",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde durch die Dichte geteilt statt multipliziert."
+        }
+      ]
+    },
+    {
+      "id": "PT-RE-105",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Eine Welle hat das Nennmaß 40 mm, das Höchstmaß 40,025 mm und das Mindestmaß 39,984 mm. Wie groß ist die Maßtoleranz?",
+      "optionen": [
+        {
+          "text": "T = 0,009 mm",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurden die Abmaße voneinander abgezogen statt Höchst- und Mindestmaß."
+        },
+        {
+          "text": "T = 0,041 mm",
+          "ist_korrekt": true,
+          "erklaerung": "T = Höchstmaß − Mindestmaß = 40,025 mm − 39,984 mm = 0,041 mm."
+        },
+        {
+          "text": "T = 0,025 mm",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist das obere Abmaß."
+        },
+        {
+          "text": "T = 0,016 mm",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist der Betrag des unteren Abmaßes."
+        },
+        {
+          "text": "T = 0,059 mm",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde vom Nennmaß aus falsch addiert."
+        }
+      ]
+    },
+    {
+      "id": "PT-RE-106",
+      "typ": "mc",
+      "thema": "PT-FT",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Winkel wird aus Blech rechtwinklig gebogen. Die Außenschenkel sollen 80 mm und 50 mm betragen, der Ausgleichswert für die Biegung ist mit v = 5 mm vorgegeben. Wie lang muss der Blechzuschnitt (gestreckte Länge L) sein?",
+      "optionen": [
+        {
+          "text": "L = 120 mm",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde der Ausgleichswert doppelt abgezogen."
+        },
+        {
+          "text": "L = 130 mm",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Summe der Außenschenkel ohne Ausgleichswert."
+        },
+        {
+          "text": "L = 135 mm",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde der Ausgleichswert addiert statt abgezogen."
+        },
+        {
+          "text": "L = 125 mm",
+          "ist_korrekt": true,
+          "erklaerung": "L = Summe der Außenschenkel − Ausgleichswert = 80 mm + 50 mm − 5 mm = 125 mm."
+        },
+        {
+          "text": "L = 145 mm",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde zusätzlich ein nicht vorhandener Schenkel berücksichtigt."
+        }
+      ]
+    },
+    {
+      "id": "PT-RE-107",
+      "typ": "mc",
+      "thema": "PT-PR",
+      "schwierigkeit": 2,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Von 1 250 gefertigten Teilen einer Schicht sind 25 Teile Ausschuss. Wie hoch ist die Ausschussquote?",
+      "optionen": [
+        {
+          "text": "2,0 %",
+          "ist_korrekt": true,
+          "erklaerung": "25 / 1 250 = 0,02 = 2,0 %."
+        },
+        {
+          "text": "1,0 %",
+          "ist_korrekt": false,
+          "erklaerung": "Das entspräche 12,5 Ausschussteilen."
+        },
+        {
+          "text": "2,5 %",
+          "ist_korrekt": false,
+          "erklaerung": "Das entspräche rund 31 Ausschussteilen."
+        },
+        {
+          "text": "5,0 %",
+          "ist_korrekt": false,
+          "erklaerung": "Das entspräche 62,5 Ausschussteilen."
+        },
+        {
+          "text": "0,2 %",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde um den Faktor 10 zu klein gerechnet."
+        }
+      ]
+    },
+    {
+      "id": "PT-RE-108",
+      "typ": "mc",
+      "thema": "PT-MA",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Pneumatikzylinder hat einen Kolbendurchmesser von 50 mm und wird mit einem Betriebsdruck von 6 bar beaufschlagt. Welche theoretische Kraft wirkt beim Ausfahren (ohne Reibungsverluste)? Hinweis: 1 bar = 0,1 N/mm².",
+      "optionen": [
+        {
+          "text": "F ≈ 2 356 N",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde die Fläche verdoppelt."
+        },
+        {
+          "text": "F ≈ 1 178 N",
+          "ist_korrekt": true,
+          "erklaerung": "A = π/4 × (50 mm)² = 1 963,5 mm². p = 6 bar = 0,6 N/mm². F = p × A = 0,6 N/mm² × 1 963,5 mm² ≈ 1 178 N."
+        },
+        {
+          "text": "F ≈ 11 781 N",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde bar fälschlich als 1 N/mm² eingesetzt."
+        },
+        {
+          "text": "F ≈ 589 N",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde mit dem Radius von 12,5 mm gerechnet."
+        },
+        {
+          "text": "F ≈ 118 N",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde mit dem Durchmesser statt der Fläche gerechnet."
+        }
+      ]
+    },
+    {
+      "id": "PT-RE-109",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Stahlstab mit dem Querschnitt 200 mm² wird mit einer Zugkraft von 30 kN belastet. Wie groß ist die Zugspannung?",
+      "optionen": [
+        {
+          "text": "σ = 60 N/mm²",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde mit 12 kN gerechnet."
+        },
+        {
+          "text": "σ = 1 500 N/mm²",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde um den Faktor 10 zu groß gerechnet."
+        },
+        {
+          "text": "σ = 15 N/mm²",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde kN nicht in N umgerechnet."
+        },
+        {
+          "text": "σ = 150 N/mm²",
+          "ist_korrekt": true,
+          "erklaerung": "σ = F / S = 30 000 N / 200 mm² = 150 N/mm²."
+        },
+        {
+          "text": "σ = 600 N/mm²",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde durch 50 mm² geteilt."
+        }
+      ]
+    },
+    {
+      "id": "PT-RE-110",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Werkstück mit dem Durchmesser 80 mm wird mit einer Drehzahl von 400 min⁻¹ gedreht. Wie groß ist die Schnittgeschwindigkeit?",
+      "optionen": [
+        {
+          "text": "vc ≈ 201 m/min",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde der Durchmesser verdoppelt."
+        },
+        {
+          "text": "vc ≈ 100 m/min",
+          "ist_korrekt": true,
+          "erklaerung": "vc = π × d × n = 3,1416 × 0,08 m × 400 min⁻¹ ≈ 100,5 m/min."
+        },
+        {
+          "text": "vc ≈ 1 005 m/min",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde mm nicht in m umgerechnet."
+        },
+        {
+          "text": "vc ≈ 32 m/min",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde π vergessen."
+        },
+        {
+          "text": "vc ≈ 50 m/min",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde mit dem Radius statt dem Durchmesser gerechnet."
+        }
+      ]
+    },
+    {
+      "id": "PT-TU-F02",
+      "typ": "freitext",
+      "thema": "PT-TU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Nennen Sie vier Angaben, die im Schriftfeld einer technischen Zeichnung stehen, und erklären Sie, warum die Zeichnungsnummer für die Fertigung besonders wichtig ist.",
+      "musterloesung": "Im Schriftfeld stehen unter anderem: Benennung des Teils, Zeichnungsnummer, Maßstab, Werkstoff, Ersteller und Datum, Allgemeintoleranzen sowie die Projektionsmethode. Die Zeichnungsnummer ist die eindeutige Kennung des Dokuments. Über sie werden Fertigungsauftrag, Stückliste, Prüfplan und Änderungsstand einander zugeordnet. Ohne eindeutige Zeichnungsnummer könnte nach einer Änderung ein veralteter Zeichnungsstand gefertigt werden.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Nennt zwei zutreffende Schriftfeldangaben",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Nennt zwei weitere zutreffende Schriftfeldangaben",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Beschreibt die Zeichnungsnummer als eindeutige Kennung des Dokuments",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Stellt den Bezug zu Auftrag, Stückliste oder Änderungsstand her",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Teilenummer",
+          "Sachnummer",
+          "Index",
+          "Revisionsstand",
+          "Blattnummer"
+        ],
+        "haeufige_fehler": [
+          "Verwechslung von Zeichnungsnummer und Auftragsnummer",
+          "Nennung von Maßen als Schriftfeldangabe"
+        ]
+      }
+    },
+    {
+      "id": "PT-WS-F02",
+      "typ": "freitext",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Erklären Sie, warum ein Werkstück nach dem Härten zusätzlich angelassen wird. Gehen Sie dabei auf Härte und Zähigkeit ein.",
+      "musterloesung": "Beim Härten wird der Stahl auf Härtetemperatur erwärmt und abgeschreckt. Dabei entsteht ein sehr hartes, aber sprödes Gefüge, und es bleiben hohe innere Spannungen zurück. Ein so behandeltes Werkstück kann bei Stoßbeanspruchung reißen oder brechen. Beim anschließenden Anlassen wird das Bauteil erneut auf eine niedrigere Temperatur erwärmt und langsam abgekühlt. Dadurch bauen sich Spannungen ab, die Härte nimmt etwas ab und die Zähigkeit steigt deutlich. Über die Anlasstemperatur lässt sich einstellen, wie das Verhältnis von Härte zu Zähigkeit für den jeweiligen Einsatzfall ausfällt.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Beschreibt den Zustand nach dem Härten als hart und spröde",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Nennt innere Spannungen bzw. Rissgefahr als Problem",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Beschreibt Anlassen als erneutes Erwärmen auf niedrigere Temperatur",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Beschreibt die Wirkung: Härte sinkt leicht, Zähigkeit steigt",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Eigenspannungen",
+          "Härtespannungen",
+          "zäher",
+          "weniger bruchempfindlich",
+          "Vergüten"
+        ],
+        "haeufige_fehler": [
+          "Anlassen mit Normalglühen verwechselt",
+          "Behauptung, die Härte steige durch Anlassen"
+        ]
+      }
+    },
+    {
+      "id": "PT-PR-F02",
+      "typ": "freitext",
+      "thema": "PT-PR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Nennen Sie drei Einflüsse, die beim Messen mit dem Messschieber zu einem falschen Messergebnis führen können, und geben Sie zu jedem Einfluss an, wie Sie ihn vermeiden.",
+      "musterloesung": "1. Verschmutzte Messflächen oder Späne zwischen Messschenkel und Werkstück: Messflächen und Werkstück vor dem Messen reinigen. 2. Zu hoher oder ungleichmäßiger Messdruck, dadurch Verkanten der Schenkel: mit gefühlvollem, gleichmäßigem Druck messen und den Messschieber rechtwinklig ansetzen. 3. Temperaturunterschied zwischen Werkstück und Messmittel: Werkstück vor dem Messen auf Raumtemperatur bringen, Bezugstemperatur 20 °C. Weitere zulässige Antworten: Ablesefehler durch schräges Ansehen der Skala (senkrecht ablesen), beschädigte oder abgenutzte Messflächen (Messmittel prüfen und ggf. aussondern), nicht auf Null stehender Messschieber (Nullstellung vor dem Messen kontrollieren).",
+      "bewertungsraster": {
+        "max_punkte": 6,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Nennt einen zutreffenden Einflussfaktor",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Nennt die passende Vermeidungsmaßnahme dazu",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Nennt einen zweiten zutreffenden Einflussfaktor",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Nennt die passende Vermeidungsmaßnahme dazu",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Nennt einen dritten zutreffenden Einflussfaktor",
+            "punkte": 1
+          },
+          {
+            "id": "k6",
+            "beschreibung": "Nennt die passende Vermeidungsmaßnahme dazu",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Verkanten",
+          "Messkraft",
+          "Nullpunktkontrolle",
+          "Parallaxe",
+          "Wärmedehnung"
+        ],
+        "haeufige_fehler": [
+          "Nennung von Einflüssen ohne Maßnahme",
+          "Verwechslung von Messfehler und Werkstückfehler"
+        ]
+      }
+    },
+    {
+      "id": "PT-FT-F02",
+      "typ": "freitext",
+      "thema": "PT-FT",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN 8580"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ordnen Sie die folgenden Fertigungsverfahren jeweils einer Hauptgruppe nach DIN 8580 zu und begründen Sie Ihre Zuordnung kurz: Sandgießen, Tiefziehen, Bohren, Schweißen.",
+      "musterloesung": "Sandgießen gehört zum Urformen, weil aus formlosem Stoff erstmalig ein fester Körper mit bestimmter Form entsteht. Tiefziehen gehört zum Umformen, weil die Form eines vorhandenen Körpers plastisch geändert wird, Masse und Zusammenhalt aber erhalten bleiben. Bohren gehört zum Trennen, weil der Zusammenhalt örtlich aufgehoben und Werkstoff in Form von Spänen abgetragen wird. Schweißen gehört zum Fügen, weil zwei Teile dauerhaft und stoffschlüssig verbunden werden.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Sandgießen korrekt dem Urformen zugeordnet und begründet",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Tiefziehen korrekt dem Umformen zugeordnet und begründet",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Bohren korrekt dem Trennen zugeordnet und begründet",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Schweißen korrekt dem Fügen zugeordnet und begründet",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "formloser Stoff",
+          "plastische Formänderung",
+          "Spanen",
+          "stoffschlüssig verbinden"
+        ],
+        "haeufige_fehler": [
+          "Tiefziehen dem Trennen zugeordnet",
+          "Schweißen dem Stoffeigenschaftändern zugeordnet"
+        ]
+      }
+    },
+    {
+      "id": "PP-QS-F02",
+      "typ": "freitext",
+      "thema": "PP-QS",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Bei der fertigungsbegleitenden Prüfung stellen Sie fest, dass ein Maß seit mehreren Teilen langsam in Richtung der oberen Toleranzgrenze wandert, aber noch innerhalb der Toleranz liegt. Beschreiben Sie, wie Sie vorgehen und begründen Sie Ihr Vorgehen.",
+      "musterloesung": "Der Trend zeigt an, dass der Prozess sich systematisch verändert, zum Beispiel durch Werkzeugverschleiß oder durch das Warmlaufen der Maschine. Ich unterbreche nicht sofort die Fertigung, weil die Teile noch in der Toleranz liegen, greife aber ein, bevor Ausschuss entsteht: Ich dokumentiere die Messwerte, informiere den Einrichter beziehungsweise den Vorgesetzten, prüfe die naheliegende Ursache – Schneidenverschleiß, Werkzeugstandzeit, Spannmittel –, korrigiere den Werkzeugkorrekturwert oder wechsle das Werkzeug und prüfe das erste Teil nach der Korrektur besonders sorgfältig. Anschließend beobachte ich die folgenden Teile in kürzeren Abständen. So bleibt der Prozess beherrscht und es entsteht kein Ausschuss.",
+      "bewertungsraster": {
+        "max_punkte": 5,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Erkennt den Trend als Hinweis auf eine systematische Prozessveränderung",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Nennt eine plausible Ursache (z. B. Werkzeugverschleiß, Temperaturgang)",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Beschreibt Dokumentation und Information der zuständigen Person",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Nennt eine konkrete Korrekturmaßnahme (Korrekturwert, Werkzeugwechsel)",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Nennt die Nachkontrolle bzw. engere Prüfabstände nach der Korrektur",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Standzeit",
+          "Werkzeugkorrektur",
+          "Einrichter informieren",
+          "Erstteilprüfung"
+        ],
+        "haeufige_fehler": [
+          "Sofortiger Produktionsstopp ohne Begründung",
+          "Abwarten bis Ausschuss entsteht"
+        ]
+      }
+    },
+    {
+      "id": "WISO-SU-F02",
+      "typ": "freitext",
+      "thema": "WISO-SU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "An Ihrer Maschine ist eine Schutzeinrichtung defekt. Der Auftrag ist eilig. Beschreiben Sie, wie Sie sich verhalten, und begründen Sie Ihr Verhalten.",
+      "musterloesung": "Ich nehme die Maschine nicht in Betrieb beziehungsweise stelle sie still und sichere sie gegen unbefugtes Einschalten. Den Defekt melde ich unverzüglich dem Vorgesetzten und der Instandhaltung und dokumentiere ihn. Erst nach Instandsetzung und Freigabe der Schutzeinrichtung wird weitergearbeitet. Begründung: Schutzeinrichtungen dürfen nach Arbeitsschutzrecht und Unfallverhütungsvorschriften nicht umgangen oder außer Betrieb gesetzt werden. Der Zeitdruck eines Auftrags rechtfertigt keine Gefährdung von Leben und Gesundheit; außerdem trage ich als Beschäftigter die Pflicht, erkannte Mängel zu melden.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Maschine wird nicht betrieben bzw. stillgesetzt und gesichert",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Meldung an Vorgesetzten/Instandhaltung",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Weiterarbeit erst nach Instandsetzung und Freigabe",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Begründung mit Arbeitsschutz/Meldepflicht statt mit Termindruck",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "gegen Wiedereinschalten sichern",
+          "Sicherheitseinrichtung nicht überbrücken",
+          "Unfallverhütungsvorschrift"
+        ],
+        "haeufige_fehler": [
+          "Weiterarbeit mit besonderer Vorsicht",
+          "Überbrücken der Schutzeinrichtung mit Zustimmung des Kollegen"
+        ]
+      }
+    }
+  ]
+}

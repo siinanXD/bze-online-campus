@@ -1,11 +1,21 @@
 #!/usr/bin/env python3
-"""Erzeugt supabase/seed/0001_maf_seed.sql aus MAF_Fragenpool_Charge1.json.
+"""Erzeugt supabase/seed/0001_maf_seed.sql aus allen MAF_Fragenpool_*.json.
 Deterministische UUIDs (uuid5) je Fachobjekt, damit der Seed idempotent bleibt.
 Alle Fragen behalten Status 'entwurf' (Spec: Ausbilderfreigabe zwingend)."""
 import json, uuid, pathlib
 
 BASE = pathlib.Path(__file__).resolve().parent.parent
+# Charge 1 traegt die Struktur (Pruefungsbereiche/Themen), weitere Chargen nur Fragen.
+CHARGEN = sorted((BASE / "supabase/seed").glob("MAF_Fragenpool_*.json"))
 POOL = json.load(open(BASE / "supabase/seed/MAF_Fragenpool_Charge1.json", encoding="utf-8"))
+ALLE_FRAGEN = []
+_gesehen = set()
+for _pfad in CHARGEN:
+    for _fr in json.load(open(_pfad, encoding="utf-8"))["fragen"]:
+        if _fr["id"] in _gesehen:
+            raise SystemExit(f"Frage-ID {_fr['id']} kommt in mehreren Chargen vor")
+        _gesehen.add(_fr["id"])
+        ALLE_FRAGEN.append(_fr)
 NS = uuid.UUID("11111111-2222-3333-4444-555555555555")
 
 def uid(*parts):
@@ -29,7 +39,7 @@ PHASE2  = uid("phase", BERUF, 2)
 
 out = []
 out.append("-- AUTOGENERIERT von scripts/generate_seed.py — nicht von Hand ändern.")
-out.append("-- Quelle: supabase/seed/MAF_Fragenpool_Charge1.json")
+out.append("-- Quelle: " + ", ".join(p.name for p in CHARGEN))
 out.append("begin;\n")
 
 # Träger
@@ -74,7 +84,7 @@ for i, pb in enumerate(POOL["pruefungsbereiche"], start=1):
 out.append("")
 # Fragen
 mc = ft = 0
-for fr in POOL["fragen"]:
+for fr in ALLE_FRAGEN:
     fid = uid("frage", fr["id"])
     thema = themen_uuid.get(fr["thema"])
     if not thema:
