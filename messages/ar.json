@@ -692,5 +692,108 @@
     "installieren": {
       "hinweis": "يمكن تثبيت هذا التطبيق على الشاشة الرئيسية."
     }
+  },
+  "berichtsheft": {
+    "titel": "سجل التدريب",
+    "untertitel": "احتفظ بسجل تدريبك، واكتشف الفجوات، وصدّره للتسجيل في الامتحان.",
+    "neuerEintrag": "إدخال جديد",
+    "nichtAngemeldet": "يرجى تسجيل الدخول.",
+    "nichtGefunden": "لم يتم العثور على السجل.",
+    "leer": "لم تُنشئ أي سجل بعد.",
+    "zurueck": "العودة إلى النظرة العامة",
+    "neuTitel": "سجل جديد",
+    "keinInhalt": "لا توجد بيانات.",
+    "kiFormuliertHinweis": "أُنشئ بمساعدة الصياغة بالذكاء الاصطناعي — المحتوى منك.",
+    "ausbildungsjahrKurz": "السنة التدريبية {jahr}",
+    "luecken": {
+      "titel": "عرض الفجوات",
+      "keine": "لا توجد أسابيع مفتوحة في الفترة الحالية.",
+      "hinweis": "{anzahl} أسابيع بدون سجل في الأسابيع الأخيرة.",
+      "kw": "الأسبوع {kw}/{jahr}"
+    },
+    "art": {
+      "tag": "تقرير يومي",
+      "woche": "تقرير أسبوعي",
+      "monat": "تقرير شهري",
+      "fach": "تقرير تخصصي"
+    },
+    "status": {
+      "entwurf": "مسودة",
+      "eingereicht": "تم التقديم",
+      "signiert_teilnehmer": "موقّع منك",
+      "signiert_ausbilder": "مُوقّع من المدرّب",
+      "beanstandet": "مُعترض عليه"
+    },
+    "form": {
+      "art": "نوع التقرير",
+      "ausbildungsjahr": "السنة التدريبية",
+      "zeitraumVon": "الفترة من",
+      "zeitraumBis": "الفترة إلى",
+      "taetigkeiten": "الأنشطة المُنجزة",
+      "taetigkeitenHilfe": "تكفي الكلمات المفتاحية — تحوّلها مساعدة الصياغة إلى جُمل كاملة.",
+      "unterweisungen": "التوجيهات / التدريب داخل المنشأة",
+      "berufsschulthemen": "المدرسة المهنية (المواضيع)",
+      "rahmenplan": "بنود الخطة الإطارية",
+      "rahmenplanHilfe": "اربط التقرير بالبنود المناسبة من خطة التدريب الإطارية.",
+      "speichern": "حفظ",
+      "speichernLaeuft": "جارٍ الحفظ …",
+      "abbrechen": "إلغاء",
+      "diktatStart": "بدء الإملاء",
+      "diktatStop": "إيقاف الإملاء",
+      "diktatLaeuft": "الإملاء قيد التشغيل — تحدّث الآن."
+    },
+    "ki": {
+      "titel": "مساعدة الصياغة بالذكاء الاصطناعي",
+      "knopf": "صياغة النص",
+      "laeuft": "جارٍ الصياغة …",
+      "hinweis": "مساعدة الصياغة بالذكاء الاصطناعي — المحتوى منك.",
+      "fehler": "فشلت الصياغة. حاول مرة أخرى."
+    },
+    "aktion": {
+      "einreichen": "تقديم",
+      "signieren": "توقيع",
+      "laeuft": "جارٍ التنفيذ …",
+      "signaturBestaetigung": "أؤكد أن البيانات صحيحة وكاملة."
+    },
+    "beanstandung": {
+      "titel": "اعتراض من المدرّب"
+    },
+    "export": {
+      "knopf": "تصدير كـ PDF",
+      "laeuft": "جارٍ الإنشاء …",
+      "fehler": "فشل التصدير."
+    },
+    "fehler": {
+      "speichern_fehlgeschlagen": "فشل الحفظ. حاول مرة أخرى.",
+      "nicht_gefunden": "لم يتم العثور على السجل.",
+      "gesperrt": "هذا السجل موقّع ومقفل.",
+      "aktion": "فشلت العملية. حاول مرة أخرى."
+    },
+    "pruefung": {
+      "seiteTitel": "مراجعة سجل التدريب",
+      "seiteHinweis": "راجع الفترات المفتوحة للمتدربين المُسندين، ووقّع أو اعترض.",
+      "navKurz": "سجل التدريب",
+      "zuPruefen": "بحاجة إلى مراجعة",
+      "keineOffenen": "لا توجد سجلات مفتوحة للمراجعة.",
+      "uebrige": "سجلات أخرى",
+      "keineUebrigen": "لا توجد سجلات أخرى.",
+      "zurueck": "العودة إلى القائمة",
+      "titel": "المراجعة",
+      "signieren": "التوقيع المضاد",
+      "signierenHinweis": "بالتوقيع المضاد يُقفل السجل نهائيًا.",
+      "beanstanden": "اعتراض",
+      "beanstandenSenden": "إرسال الاعتراض",
+      "korrigieren": "تصحيح",
+      "korrigierenHinweis": "السجلات الموقّعة مقفلة. يُوثَّق أي تصحيح مع التبرير.",
+      "korrigierenSenden": "حفظ التصحيح",
+      "begruendungLabel": "التبرير",
+      "feld": {
+        "taetigkeiten": "الأنشطة المُنجزة",
+        "unterweisungen": "التوجيهات",
+        "berufsschulthemen": "المدرسة المهنية (المواضيع)"
+      },
+      "verlauf": "السجل (الاعتراضات / التصحيحات)",
+      "fehler": "فشلت العملية. حاول مرة أخرى."
+    }
   }
 }

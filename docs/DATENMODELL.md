@@ -92,6 +92,25 @@ Migration [`0012_monitoring.sql`](../supabase/migrations/0012_monitoring.sql): A
 - `themen`-Hierarchie wird ab AP-05/06 mit Lerneinheiten bespielt.
 - AP-09: `freitext_bewertung_cache`, RPC `pruefung_freitext_abschliessen` (Migration `0005_freitext_bewertung.sql`), Edge Function `bewerte-freitext`.
 
+## AP-18 — Ausbildungsnachweis (Berichtsheft)
+
+Migration [`0008_berichtsheft.sql`](../supabase/migrations/0008_berichtsheft.sql): **additiv**, ändert keine bestehenden Objekte. Die Tabellen `nachweise`, `nachweis_signaturen`, `nachweis_korrekturen` und ihre RLS-Policies stammen unverändert aus `0001_datenmodell.sql` (signierte Nachweise sind für Teilnehmer schreibgeschützt — Spec §3 Regel 15).
+
+Neu in 0008:
+
+- Indizes `nachweise_user_zeitraum_idx`, `nachweis_signaturen_nachweis_idx`, `nachweis_korrekturen_nachweis_idx` für Kalender-/Lückenansicht und Ausbilderlisten.
+- Helfer `nachweis_ist_betreuer(teilnehmer)` — Admin/Verwaltung oder zugewiesener Ausbilder (`app_betreut`).
+- Statusübergänge als `SECURITY DEFINER`-RPCs (Berechtigung wird intern über `auth.uid()` / `nachweis_ist_betreuer` geprüft, Ausführung nur für `authenticated` + `service_role`):
+  - `nachweis_einreichen(id)` — Teilnehmer: `entwurf|beanstandet → eingereicht`
+  - `nachweis_signieren_teilnehmer(id, hash)` — Teilnehmer: `eingereicht → signiert_teilnehmer`, legt Signaturzeile an
+  - `nachweis_signieren_ausbilder(id, hash)` — Ausbilder: `signiert_teilnehmer → signiert_ausbilder`, legt Signaturzeile an
+  - `nachweis_beanstanden(id, begruendung)` — Ausbilder: `eingereicht|signiert_teilnehmer → beanstandet`, dokumentiert die Begründung als `nachweis_korrekturen`-Eintrag
+  - `nachweis_korrektur(id, nachher, begruendung)` — Ausbilder: Korrektur eines **signierten** Blatts; Status bleibt, `vorher/nachher` + Begründung werden protokolliert (Spec §3 Regel 15)
+
+Der Signatur-`hash` entsteht in der Server Action aus `signaturKlartext()` (`@bze/core/nachweis`, SHA-256 über Inhalt + Status) und macht nachträgliche, undokumentierte Änderungen erkennbar.
+
+Kern-/Logikschicht: `@bze/core/nachweis` (Statusübergänge, Sperrlogik, ISO-Kalenderwochen-Lückenanzeige) mit `node:test`-Tests. Edge Functions: `formuliere-nachweis` (KI-Formulierungshilfe — formuliert ausschließlich aus Nutzereingaben, Spec Grundregel 14) und `berichtsheft-pdf` (druckfertiger HTML-Export, je Blatt Name/Ausbildungsjahr/Zeitraum).
+
 ## Welle 3 — Migrationsnummern (reserviert)
 
 Parallele Worktrees dürfen nur die zugewiesene Nummer verwenden. Bestehende Migrationen werden nie geändert.

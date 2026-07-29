@@ -692,5 +692,108 @@
     "installieren": {
       "hinweis": "Diese App lässt sich auf dem Startbildschirm installieren."
     }
+  },
+  "berichtsheft": {
+    "titel": "Ausbildungsnachweis",
+    "untertitel": "Führe dein Berichtsheft, erkenne Lücken und exportiere es für die Prüfungsanmeldung.",
+    "neuerEintrag": "Neuer Eintrag",
+    "nichtAngemeldet": "Bitte melde dich an.",
+    "nichtGefunden": "Nachweis nicht gefunden.",
+    "leer": "Du hast noch keinen Nachweis angelegt.",
+    "zurueck": "Zurück zur Übersicht",
+    "neuTitel": "Neuer Nachweis",
+    "keinInhalt": "Keine Angabe.",
+    "kiFormuliertHinweis": "Mit KI-Formulierungshilfe erstellt — Inhalte stammen von dir.",
+    "ausbildungsjahrKurz": "{jahr}. Ausbildungsjahr",
+    "luecken": {
+      "titel": "Lückenanzeige",
+      "keine": "Keine offenen Wochen im aktuellen Zeitraum.",
+      "hinweis": "{anzahl} Wochen ohne Nachweis in den letzten Wochen.",
+      "kw": "KW {kw}/{jahr}"
+    },
+    "art": {
+      "tag": "Tagesbericht",
+      "woche": "Wochenbericht",
+      "monat": "Monatsbericht",
+      "fach": "Fachbericht"
+    },
+    "status": {
+      "entwurf": "Entwurf",
+      "eingereicht": "Eingereicht",
+      "signiert_teilnehmer": "Von dir signiert",
+      "signiert_ausbilder": "Vom Ausbilder gegengezeichnet",
+      "beanstandet": "Beanstandet"
+    },
+    "form": {
+      "art": "Berichtsart",
+      "ausbildungsjahr": "Ausbildungsjahr",
+      "zeitraumVon": "Zeitraum von",
+      "zeitraumBis": "Zeitraum bis",
+      "taetigkeiten": "Ausgeführte Tätigkeiten",
+      "taetigkeitenHilfe": "Stichworte genügen — die KI-Formulierungshilfe macht daraus ganze Sätze.",
+      "unterweisungen": "Unterweisungen / betrieblicher Unterricht",
+      "berufsschulthemen": "Berufsschule (Themen)",
+      "rahmenplan": "Rahmenplan-Positionen",
+      "rahmenplanHilfe": "Ordne den Bericht passenden Positionen des Ausbildungsrahmenplans zu.",
+      "speichern": "Speichern",
+      "speichernLaeuft": "Wird gespeichert …",
+      "abbrechen": "Abbrechen",
+      "diktatStart": "Diktat starten",
+      "diktatStop": "Diktat beenden",
+      "diktatLaeuft": "Diktat läuft — sprich jetzt."
+    },
+    "ki": {
+      "titel": "KI-Formulierungshilfe",
+      "knopf": "Text formulieren",
+      "laeuft": "Wird formuliert …",
+      "hinweis": "KI-Formulierungshilfe — Inhalte stammen von dir.",
+      "fehler": "Die Formulierung ist fehlgeschlagen. Bitte versuche es erneut."
+    },
+    "aktion": {
+      "einreichen": "Einreichen",
+      "signieren": "Signieren",
+      "laeuft": "Wird ausgeführt …",
+      "signaturBestaetigung": "Ich bestätige, dass die Angaben richtig und vollständig sind."
+    },
+    "beanstandung": {
+      "titel": "Beanstandung durch den Ausbilder"
+    },
+    "export": {
+      "knopf": "Als PDF exportieren",
+      "laeuft": "Wird erstellt …",
+      "fehler": "Export fehlgeschlagen."
+    },
+    "fehler": {
+      "speichern_fehlgeschlagen": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
+      "nicht_gefunden": "Nachweis nicht gefunden.",
+      "gesperrt": "Dieser Nachweis ist signiert und gesperrt.",
+      "aktion": "Aktion fehlgeschlagen. Bitte versuche es erneut."
+    },
+    "pruefung": {
+      "seiteTitel": "Berichtsheft-Prüfung",
+      "seiteHinweis": "Offene Zeiträume der zugewiesenen Teilnehmer prüfen, gegenzeichnen oder beanstanden.",
+      "navKurz": "Berichtsheft",
+      "zuPruefen": "Zu prüfen",
+      "keineOffenen": "Keine offenen Nachweise zur Prüfung.",
+      "uebrige": "Übrige Nachweise",
+      "keineUebrigen": "Keine weiteren Nachweise.",
+      "zurueck": "Zurück zur Liste",
+      "titel": "Prüfung",
+      "signieren": "Gegenzeichnen",
+      "signierenHinweis": "Mit dem Gegenzeichnen wird der Nachweis endgültig gesperrt.",
+      "beanstanden": "Beanstanden",
+      "beanstandenSenden": "Beanstandung senden",
+      "korrigieren": "Korrigieren",
+      "korrigierenHinweis": "Signierte Nachweise sind gesperrt. Eine Korrektur wird mit Begründung dokumentiert.",
+      "korrigierenSenden": "Korrektur speichern",
+      "begruendungLabel": "Begründung",
+      "feld": {
+        "taetigkeiten": "Ausgeführte Tätigkeiten",
+        "unterweisungen": "Unterweisungen",
+        "berufsschulthemen": "Berufsschule (Themen)"
+      },
+      "verlauf": "Verlauf (Beanstandungen / Korrekturen)",
+      "fehler": "Aktion fehlgeschlagen. Bitte versuche es erneut."
+    }
   }
 }

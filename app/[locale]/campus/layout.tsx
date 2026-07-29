@@ -19,7 +19,7 @@ export default async function CampusLayout({ children }: { children: React.React
     <div className="min-h-screen pb-20">
       <Header value={fortschritt} />
       {children}
-      <BottomNav berichtsheftAktiv={false} />
+      <BottomNav berichtsheftAktiv={true} />
     </div>
   );
 }

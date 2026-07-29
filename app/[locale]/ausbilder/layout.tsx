@@ -11,10 +11,14 @@ export default async function AusbilderLayout({
 }) {
   const { locale } = await params;
   const t = await getTranslations('ausbilder');
+  // AP-18: Berichtsheft-Prüfung erreichbar machen. Label aus dem berichtsheft-Namespace,
+  // um den ausbilder-Namespace (AP-11) nicht zu verändern.
+  const tBericht = await getTranslations('berichtsheft');
   const nav: [string, string][] = [
     [t('nav.cockpit'), `/${locale}/ausbilder`],
     [t('nav.kohorte'), `/${locale}/ausbilder/kohorte`],
     [t('nav.review'), `/${locale}/ausbilder/review`],
+    [tBericht('pruefung.navKurz'), `/${locale}/ausbilder/berichtsheft`],
   ];
 
   return (
