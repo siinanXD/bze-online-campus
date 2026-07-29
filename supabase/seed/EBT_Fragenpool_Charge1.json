@@ -1,0 +1,1087 @@
+{
+  "meta": {
+    "beruf": "Elektroniker/-in für Betriebstechnik",
+    "beruf_slug": "elektroniker-betriebstechnik",
+    "bezeichnung_lang": "Elektroniker/-in für Betriebstechnik",
+    "kammer": "IHK",
+    "dauer_monate_umschulung": null,
+    "charge": "Charge 1 – Grundlagen",
+    "erstellt": "2026-07-29",
+    "struktur_hinweis": "Gewichtung und Prüfungsdauer der Prüfungsbereiche sind leer gelassen und vom Ausbilder anhand der geltenden Ausbildungsordnung und der Vorgaben der IHK Aachen einzutragen.",
+    "urheberrecht": "Eigenentwicklung des BZE. Keine Übernahme von Aufgaben der Kammern oder Prüfungsverlage.",
+    "status_hinweis": "Alle Fragen im Status 'entwurf'. Freigabe durch Ausbilder zwingend. Fragen mit enthaelt_zahlenwert=true brauchen vor der Freigabe eine Fundstelle und stehen deshalb auf kern=false.",
+    "sicherheitshinweis": "Fragen zu den fünf Sicherheitsregeln und zum Arbeiten unter Spannung sind sicherheitskritisch. Sie dürfen nur nach fachlicher Prüfung durch eine Elektrofachkraft freigegeben werden.",
+    "anzahl_mc": 20,
+    "anzahl_freitext": 3
+  },
+  "pruefungsbereiche": [
+    {
+      "code": "EBT-GR",
+      "bezeichnung": "Elektrotechnische Grundlagen",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "EBT-GR-GG",
+          "bezeichnung": "Grundgrößen und Gesetze"
+        },
+        {
+          "code": "EBT-GR-SP",
+          "bezeichnung": "Schaltpläne und Bauelemente"
+        }
+      ]
+    },
+    {
+      "code": "EBT-IN",
+      "bezeichnung": "Installations- und Betriebstechnik",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "EBT-IN-AN",
+          "bezeichnung": "Anlagen, Betriebsmittel und Motoren"
+        },
+        {
+          "code": "EBT-IN-SC",
+          "bezeichnung": "Schutzmaßnahmen und Prüfungen"
+        },
+        {
+          "code": "EBT-IN-AU",
+          "bezeichnung": "Automatisierung und Steuerungstechnik"
+        }
+      ]
+    },
+    {
+      "code": "EBT-WISO",
+      "bezeichnung": "Wirtschafts- und Sozialkunde",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "EBT-WISO-AR",
+          "bezeichnung": "Arbeitsrecht und Arbeitssicherheit"
+        },
+        {
+          "code": "EBT-WISO-BW",
+          "bezeichnung": "Betriebliche Zusammenhänge"
+        }
+      ]
+    }
+  ],
+  "uebungspruefungen": [
+    {
+      "code": "EBT-UE-01",
+      "titel": "Übungsprüfung Elektroniker für Betriebstechnik – Grundlagen",
+      "bearbeitungszeit_minuten": 60,
+      "hinweis": "20 Aufgaben mit je fünf Auswahlantworten, genau eine Antwort ist richtig.",
+      "aufgaben": [
+        "EBT-GR-GG-101",
+        "EBT-GR-GG-102",
+        "EBT-GR-GG-103",
+        "EBT-GR-GG-104",
+        "EBT-GR-GG-105",
+        "EBT-GR-SP-101",
+        "EBT-GR-SP-102",
+        "EBT-GR-SP-103",
+        "EBT-IN-AN-101",
+        "EBT-IN-AN-102",
+        "EBT-IN-AN-103",
+        "EBT-IN-SC-101",
+        "EBT-IN-SC-102",
+        "EBT-IN-SC-103",
+        "EBT-IN-SC-104",
+        "EBT-IN-AU-101",
+        "EBT-IN-AU-102",
+        "EBT-WISO-AR-101",
+        "EBT-WISO-AR-102",
+        "EBT-WISO-BW-101"
+      ]
+    }
+  ],
+  "fragen": [
+    {
+      "id": "EBT-GR-GG-101",
+      "typ": "mc",
+      "thema": "EBT-GR-GG",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie lautet das ohmsche Gesetz?",
+      "optionen": [
+        {
+          "text": "U = I / R",
+          "ist_korrekt": false,
+          "erklaerung": "Das ergibt nicht die Spannung."
+        },
+        {
+          "text": "U = I × P",
+          "ist_korrekt": false,
+          "erklaerung": "Diese Beziehung existiert so nicht."
+        },
+        {
+          "text": "U = R × I",
+          "ist_korrekt": true,
+          "erklaerung": "Die Spannung ist das Produkt aus Widerstand und Stromstärke."
+        },
+        {
+          "text": "U = P × R",
+          "ist_korrekt": false,
+          "erklaerung": "Auch das ist keine gültige Umstellung."
+        },
+        {
+          "text": "U = R / I",
+          "ist_korrekt": false,
+          "erklaerung": "Hier ist die Beziehung falsch umgestellt."
+        }
+      ]
+    },
+    {
+      "id": "EBT-GR-GG-102",
+      "typ": "mc",
+      "thema": "EBT-GR-GG",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was gilt für eine Reihenschaltung von Widerständen?",
+      "optionen": [
+        {
+          "text": "Die Leistung ist an allen Widerständen gleich groß.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Leistung hängt vom jeweiligen Widerstandswert ab."
+        },
+        {
+          "text": "Der Gesamtwiderstand ist kleiner als der kleinste Einzelwiderstand.",
+          "ist_korrekt": false,
+          "erklaerung": "Auch das gilt für die Parallelschaltung."
+        },
+        {
+          "text": "Durch alle Widerstände fließt derselbe Strom, die Teilspannungen addieren sich.",
+          "ist_korrekt": true,
+          "erklaerung": "In der Reihenschaltung ist der Strom überall gleich; die Summe der Teilspannungen ergibt die Gesamtspannung."
+        },
+        {
+          "text": "Die Ströme der Zweige addieren sich.",
+          "ist_korrekt": false,
+          "erklaerung": "Zweigströme gibt es nur in der Parallelschaltung."
+        },
+        {
+          "text": "An allen Widerständen liegt dieselbe Spannung an.",
+          "ist_korrekt": false,
+          "erklaerung": "Das gilt in der Parallelschaltung."
+        }
+      ]
+    },
+    {
+      "id": "EBT-GR-GG-103",
+      "typ": "mc",
+      "thema": "EBT-GR-GG",
+      "schwierigkeit": 2,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "An einem Widerstand von 40 Ω liegt eine Spannung von 230 V. Welcher Strom fließt?",
+      "optionen": [
+        {
+          "text": "I = 5,75 A",
+          "ist_korrekt": true,
+          "erklaerung": "I = U / R = 230 V / 40 Ω = 5,75 A."
+        },
+        {
+          "text": "I = 57,5 A",
+          "ist_korrekt": false,
+          "erklaerung": "Kommafehler um den Faktor 10."
+        },
+        {
+          "text": "I = 0,17 A",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde der Widerstand durch die Spannung geteilt."
+        },
+        {
+          "text": "I = 9 200 A",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde multipliziert statt dividiert."
+        },
+        {
+          "text": "I = 0,575 A",
+          "ist_korrekt": false,
+          "erklaerung": "Kommafehler um den Faktor 10 in die andere Richtung."
+        }
+      ]
+    },
+    {
+      "id": "EBT-GR-GG-104",
+      "typ": "mc",
+      "thema": "EBT-GR-GG",
+      "schwierigkeit": 2,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Verbraucher nimmt bei 230 V einen Strom von 8 A auf. Welche Wirkleistung nimmt er auf, wenn es sich um einen rein ohmschen Verbraucher handelt?",
+      "optionen": [
+        {
+          "text": "P = 1 840 W",
+          "ist_korrekt": true,
+          "erklaerung": "P = U × I = 230 V × 8 A = 1 840 W."
+        },
+        {
+          "text": "P = 28,75 W",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde dividiert statt multipliziert."
+        },
+        {
+          "text": "P = 18 400 W",
+          "ist_korrekt": false,
+          "erklaerung": "Kommafehler um den Faktor 10."
+        },
+        {
+          "text": "P = 238 W",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurden die Werte addiert."
+        },
+        {
+          "text": "P = 460 W",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde mit 2 A gerechnet."
+        }
+      ]
+    },
+    {
+      "id": "EBT-GR-GG-105",
+      "typ": "mc",
+      "thema": "EBT-GR-GG",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wovon hängt der Widerstand eines Leiters ab?",
+      "optionen": [
+        {
+          "text": "Vom Werkstoff, der Länge, dem Querschnitt und der Temperatur",
+          "ist_korrekt": true,
+          "erklaerung": "Der spezifische Widerstand des Werkstoffs, die Leiterlänge, der Querschnitt und die Temperatur bestimmen den Leiterwiderstand."
+        },
+        {
+          "text": "Nur von der Isolierung",
+          "ist_korrekt": false,
+          "erklaerung": "Die Isolierung schützt, führt aber keinen Strom."
+        },
+        {
+          "text": "Nur von der angelegten Spannung",
+          "ist_korrekt": false,
+          "erklaerung": "Der Widerstand ist eine Eigenschaft des Leiters, nicht der Spannung."
+        },
+        {
+          "text": "Nur von der Stromstärke",
+          "ist_korrekt": false,
+          "erklaerung": "Die Stromstärke stellt sich erst infolge des Widerstands ein."
+        },
+        {
+          "text": "Nur von der Verlegeart",
+          "ist_korrekt": false,
+          "erklaerung": "Die Verlegeart beeinflusst die Strombelastbarkeit, nicht den Widerstandswert selbst."
+        }
+      ]
+    },
+    {
+      "id": "EBT-GR-SP-101",
+      "typ": "mc",
+      "thema": "EBT-GR-SP",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was zeigt ein Stromlaufplan in aufgelöster Darstellung?",
+      "optionen": [
+        {
+          "text": "Nur die Klemmenbelegung",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist der Klemmenplan."
+        },
+        {
+          "text": "Die Bedienoberfläche der Steuerung",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Teil der Visualisierung."
+        },
+        {
+          "text": "Den Stromweg und die Wirkungsweise der Schaltung, wobei zusammengehörige Teile eines Betriebsmittels getrennt gezeichnet werden",
+          "ist_korrekt": true,
+          "erklaerung": "Spule und Kontakte eines Schützes stehen an unterschiedlichen Stellen und werden über die Betriebsmittelkennzeichnung zugeordnet."
+        },
+        {
+          "text": "Die räumliche Anordnung der Geräte im Schaltschrank",
+          "ist_korrekt": false,
+          "erklaerung": "Das leistet der Aufbau- oder Anordnungsplan."
+        },
+        {
+          "text": "Die Materialliste der Anlage",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Stückliste."
+        }
+      ]
+    },
+    {
+      "id": "EBT-GR-SP-102",
+      "typ": "mc",
+      "thema": "EBT-GR-SP",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Funktion hat ein Schütz in einer Motorsteuerung?",
+      "optionen": [
+        {
+          "text": "Es schaltet den Laststromkreis über einen elektromagnetisch betätigten Kontaktsatz.",
+          "ist_korrekt": true,
+          "erklaerung": "Die Spule zieht bei Ansteuerung an und schließt die Hauptkontakte; so wird ein großer Strom mit kleiner Steuerleistung geschaltet."
+        },
+        {
+          "text": "Es erdet das Gehäuse des Motors.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Erdung erfolgt über den Schutzleiter."
+        },
+        {
+          "text": "Es wandelt Wechselspannung in Gleichspannung.",
+          "ist_korrekt": false,
+          "erklaerung": "Das leistet ein Gleichrichter."
+        },
+        {
+          "text": "Es begrenzt den Kurzschlussstrom.",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Aufgabe der Sicherung bzw. des Leitungsschutzschalters."
+        },
+        {
+          "text": "Es misst die Drehzahl des Motors.",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür wird ein Drehzahlgeber eingesetzt."
+        }
+      ]
+    },
+    {
+      "id": "EBT-GR-SP-103",
+      "typ": "mc",
+      "thema": "EBT-GR-SP",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wozu dient eine Selbsthalteschaltung mit Schütz?",
+      "optionen": [
+        {
+          "text": "Sie begrenzt den Anlaufstrom des Motors.",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür gibt es Stern-Dreieck-Anlauf oder Sanftanlaufgeräte."
+        },
+        {
+          "text": "Sie hält den Motor nach dem Loslassen des Tastschalters weiter in Betrieb.",
+          "ist_korrekt": true,
+          "erklaerung": "Ein Hilfskontakt des Schützes überbrückt den Einschalttaster und hält die Spule bestromt, bis der Ausschalttaster den Stromkreis unterbricht."
+        },
+        {
+          "text": "Sie schaltet den Motor bei Überlast selbsttätig ab.",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Aufgabe des Überlastrelais."
+        },
+        {
+          "text": "Sie erhöht die Motordrehzahl.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Drehzahl hängt von Frequenz und Polpaarzahl ab."
+        },
+        {
+          "text": "Sie ersetzt den Motorschutzschalter.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Motorschutz bleibt zwingend erforderlich."
+        }
+      ]
+    },
+    {
+      "id": "EBT-IN-AN-101",
+      "typ": "mc",
+      "thema": "EBT-IN-AN",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie ändert man die Drehrichtung eines Drehstrom-Asynchronmotors?",
+      "optionen": [
+        {
+          "text": "Durch Vertauschen von Neutralleiter und Schutzleiter",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist unzulässig und lebensgefährlich."
+        },
+        {
+          "text": "Durch Einbau eines größeren Motorschutzschalters",
+          "ist_korrekt": false,
+          "erklaerung": "Der Motorschutz hat mit der Drehrichtung nichts zu tun."
+        },
+        {
+          "text": "Durch Umklemmen von Stern auf Dreieck",
+          "ist_korrekt": false,
+          "erklaerung": "Das ändert die Spannung an den Wicklungen, nicht die Drehrichtung."
+        },
+        {
+          "text": "Durch Vertauschen zweier Außenleiter",
+          "ist_korrekt": true,
+          "erklaerung": "Werden zwei der drei Außenleiter getauscht, dreht das Drehfeld in die andere Richtung."
+        },
+        {
+          "text": "Durch Erhöhen der Spannung",
+          "ist_korrekt": false,
+          "erklaerung": "Die Spannung beeinflusst die Drehrichtung nicht."
+        }
+      ]
+    },
+    {
+      "id": "EBT-IN-AN-102",
+      "typ": "mc",
+      "thema": "EBT-IN-AN",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgabe hat ein Frequenzumrichter am Drehstrommotor?",
+      "optionen": [
+        {
+          "text": "Er wandelt Drehstrom in Gleichstrom für den Motor um.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Zwischenkreis arbeitet mit Gleichspannung, der Motor erhält aber wieder Wechselgrößen."
+        },
+        {
+          "text": "Er erhöht die Polpaarzahl des Motors.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Polpaarzahl ist durch die Wicklung fest vorgegeben."
+        },
+        {
+          "text": "Er ersetzt den Schutzleiter.",
+          "ist_korrekt": false,
+          "erklaerung": "Schutzmaßnahmen bleiben unabhängig davon erforderlich."
+        },
+        {
+          "text": "Er dient ausschließlich der Blindleistungskompensation.",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Aufgabe von Kompensationsanlagen."
+        },
+        {
+          "text": "Er stellt die Drehzahl über die Frequenz der Ausgangsspannung ein.",
+          "ist_korrekt": true,
+          "erklaerung": "Die Drehfelddrehzahl hängt von der Frequenz ab; über sie wird die Motordrehzahl stufenlos gesteuert."
+        }
+      ]
+    },
+    {
+      "id": "EBT-IN-AN-103",
+      "typ": "mc",
+      "thema": "EBT-IN-AN",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgabe hat ein Leitungsschutzschalter?",
+      "optionen": [
+        {
+          "text": "Er verbessert den Leistungsfaktor.",
+          "ist_korrekt": false,
+          "erklaerung": "Das leistet die Kompensation."
+        },
+        {
+          "text": "Er schützt Personen vor gefährlichen Körperströmen.",
+          "ist_korrekt": false,
+          "erklaerung": "Personenschutz bei Fehlerströmen leistet die Fehlerstrom-Schutzeinrichtung."
+        },
+        {
+          "text": "Er ersetzt die Isolationsmessung bei der Prüfung.",
+          "ist_korrekt": false,
+          "erklaerung": "Prüfungen sind eigenständig durchzuführen."
+        },
+        {
+          "text": "Er begrenzt die Betriebsspannung.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Spannung wird vom Netz vorgegeben."
+        },
+        {
+          "text": "Er schützt die Leitung vor Überlast und Kurzschluss.",
+          "ist_korrekt": true,
+          "erklaerung": "Der thermische Auslöser reagiert auf Überlast, der magnetische auf Kurzschluss."
+        }
+      ]
+    },
+    {
+      "id": "EBT-IN-SC-101",
+      "typ": "mc",
+      "thema": "EBT-IN-SC",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN VDE 0105-100"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "In welcher Reihenfolge werden die fünf Sicherheitsregeln beim Herstellen des spannungsfreien Zustands angewendet?",
+      "optionen": [
+        {
+          "text": "Freischalten – erden – Spannungsfreiheit feststellen – abdecken – sichern",
+          "ist_korrekt": false,
+          "erklaerung": "Die Spannungsfreiheit muss vor dem Erden festgestellt werden."
+        },
+        {
+          "text": "Spannungsfreiheit feststellen – freischalten – erden – abdecken – sichern",
+          "ist_korrekt": false,
+          "erklaerung": "Vor dem Freischalten darf nicht auf Spannungsfreiheit geprüft und gearbeitet werden."
+        },
+        {
+          "text": "Abdecken – freischalten – prüfen – sichern – erden",
+          "ist_korrekt": false,
+          "erklaerung": "Die Reihenfolge ist vertauscht."
+        },
+        {
+          "text": "Freischalten – gegen Wiedereinschalten sichern – Spannungsfreiheit feststellen – erden und kurzschließen – benachbarte, unter Spannung stehende Teile abdecken oder abschranken",
+          "ist_korrekt": true,
+          "erklaerung": "Diese Reihenfolge ist verbindlich und darf nicht verändert werden."
+        },
+        {
+          "text": "Erden und kurzschließen – freischalten – sichern – prüfen – abdecken",
+          "ist_korrekt": false,
+          "erklaerung": "Erden vor dem Freischalten wäre lebensgefährlich."
+        }
+      ]
+    },
+    {
+      "id": "EBT-IN-SC-102",
+      "typ": "mc",
+      "thema": "EBT-IN-SC",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgabe hat eine Fehlerstrom-Schutzeinrichtung (RCD)?",
+      "optionen": [
+        {
+          "text": "Sie begrenzt die Spannung auf 50 V.",
+          "ist_korrekt": false,
+          "erklaerung": "Spannungsbegrenzung erfolgt über Schutzkleinspannung."
+        },
+        {
+          "text": "Sie misst dauerhaft den Isolationswiderstand.",
+          "ist_korrekt": false,
+          "erklaerung": "Das leistet ein Isolationsüberwachungsgerät im IT-System."
+        },
+        {
+          "text": "Sie schaltet ab, wenn die Summe der zu- und abfließenden Ströme eine Differenz aufweist.",
+          "ist_korrekt": true,
+          "erklaerung": "Ein Fehlerstrom, der über Erde abfließt, erzeugt diese Differenz; die Einrichtung trennt den Stromkreis und schützt vor gefährlichen Körperströmen."
+        },
+        {
+          "text": "Sie schaltet bei Überschreiten des Bemessungsstroms der Leitung ab.",
+          "ist_korrekt": false,
+          "erklaerung": "Das leistet der Leitungsschutzschalter."
+        },
+        {
+          "text": "Sie ersetzt den Schutzleiter.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Schutzleiter bleibt Bestandteil der Schutzmaßnahme."
+        }
+      ]
+    },
+    {
+      "id": "EBT-IN-SC-103",
+      "typ": "mc",
+      "thema": "EBT-IN-SC",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Womit darf die Spannungsfreiheit einer Anlage festgestellt werden?",
+      "optionen": [
+        {
+          "text": "Durch Rückfrage beim Kollegen, ob abgeschaltet wurde",
+          "ist_korrekt": false,
+          "erklaerung": "Eine Auskunft ersetzt die eigene Messung nicht."
+        },
+        {
+          "text": "Mit einem zweipoligen Spannungsprüfer, dessen Funktion vor und nach der Messung geprüft wurde",
+          "ist_korrekt": true,
+          "erklaerung": "Nur ein geeigneter zweipoliger Spannungsprüfer ist zulässig, und seine Funktion muss vor und nach dem Feststellen kontrolliert werden."
+        },
+        {
+          "text": "Mit einem berührungslosen Phasenprüfstift allein",
+          "ist_korrekt": false,
+          "erklaerung": "Einpolige Prüfer sind dafür nicht zulässig; sie können bei bestimmten Fehlern eine Spannung nicht anzeigen."
+        },
+        {
+          "text": "Durch Beobachten der Signalleuchten am Schaltschrank",
+          "ist_korrekt": false,
+          "erklaerung": "Eine erloschene Leuchte beweist keine Spannungsfreiheit."
+        },
+        {
+          "text": "Durch Anfassen mit isolierten Handschuhen",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist lebensgefährlich und niemals zulässig."
+        }
+      ]
+    },
+    {
+      "id": "EBT-IN-SC-104",
+      "typ": "mc",
+      "thema": "EBT-IN-SC",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Farbe kennzeichnet in einer Installation den Schutzleiter?",
+      "optionen": [
+        {
+          "text": "Grau",
+          "ist_korrekt": false,
+          "erklaerung": "Grau wird für Außenleiter verwendet."
+        },
+        {
+          "text": "Schwarz",
+          "ist_korrekt": false,
+          "erklaerung": "Schwarz wird für Außenleiter verwendet."
+        },
+        {
+          "text": "Blau",
+          "ist_korrekt": false,
+          "erklaerung": "Blau kennzeichnet den Neutralleiter."
+        },
+        {
+          "text": "Braun",
+          "ist_korrekt": false,
+          "erklaerung": "Braun wird für Außenleiter verwendet."
+        },
+        {
+          "text": "Grün-gelb",
+          "ist_korrekt": true,
+          "erklaerung": "Die Kennzeichnung grün-gelb ist ausschließlich dem Schutzleiter vorbehalten."
+        }
+      ]
+    },
+    {
+      "id": "EBT-IN-AU-101",
+      "typ": "mc",
+      "thema": "EBT-IN-AU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie arbeitet eine speicherprogrammierbare Steuerung im zyklischen Betrieb?",
+      "optionen": [
+        {
+          "text": "Sie arbeitet ausschließlich analoge Signale ab.",
+          "ist_korrekt": false,
+          "erklaerung": "Digitale und analoge Signale sind gleichermaßen möglich."
+        },
+        {
+          "text": "Eingänge lesen – Programm bearbeiten – Ausgänge schreiben, danach beginnt der Zyklus erneut",
+          "ist_korrekt": true,
+          "erklaerung": "Das ist der Zyklus aus Prozessabbild der Eingänge, Programmbearbeitung und Prozessabbild der Ausgänge."
+        },
+        {
+          "text": "Sie liest die Eingänge erst nach dem Schreiben der Ausgänge.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Reihenfolge im Zyklus ist umgekehrt."
+        },
+        {
+          "text": "Sie schaltet die Ausgänge unabhängig vom Programm.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Ausgänge folgen dem Programmergebnis."
+        },
+        {
+          "text": "Sie bearbeitet das Programm nur einmalig beim Einschalten.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Anlauf erfolgt einmalig, das zyklische Programm läuft dauerhaft."
+        }
+      ]
+    },
+    {
+      "id": "EBT-IN-AU-102",
+      "typ": "mc",
+      "thema": "EBT-IN-AU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Ausgang soll nur dann eingeschaltet werden, wenn zwei Sensoren gleichzeitig ein Signal liefern. Welche logische Verknüpfung wird programmiert?",
+      "optionen": [
+        {
+          "text": "ODER-Verknüpfung",
+          "ist_korrekt": false,
+          "erklaerung": "Bei ODER genügt ein Signal."
+        },
+        {
+          "text": "Speicherbaustein ohne Bedingung",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Speicher hält den Zustand, verknüpft aber nicht."
+        },
+        {
+          "text": "UND-Verknüpfung",
+          "ist_korrekt": true,
+          "erklaerung": "Der Ausgang wird nur wahr, wenn beide Eingänge gleichzeitig wahr sind."
+        },
+        {
+          "text": "NICHT-Verknüpfung",
+          "ist_korrekt": false,
+          "erklaerung": "Die Negation kehrt ein Signal um."
+        },
+        {
+          "text": "Exklusiv-ODER-Verknüpfung",
+          "ist_korrekt": false,
+          "erklaerung": "Diese wird wahr, wenn genau ein Eingang wahr ist."
+        }
+      ]
+    },
+    {
+      "id": "EBT-WISO-AR-101",
+      "typ": "mc",
+      "thema": "EBT-WISO-AR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was ist eine Elektrofachkraft?",
+      "optionen": [
+        {
+          "text": "Jede Person, die eine Unterweisung erhalten hat",
+          "ist_korrekt": false,
+          "erklaerung": "Das beschreibt die elektrotechnisch unterwiesene Person."
+        },
+        {
+          "text": "Jede Person mit einem gültigen Führerschein für Flurförderzeuge",
+          "ist_korrekt": false,
+          "erklaerung": "Das betrifft eine andere Qualifikation."
+        },
+        {
+          "text": "Ausschließlich der Meister des Betriebs",
+          "ist_korrekt": false,
+          "erklaerung": "Die Eigenschaft ist nicht an den Meistertitel gebunden."
+        },
+        {
+          "text": "Jede Person, die im Schaltschrank arbeiten möchte",
+          "ist_korrekt": false,
+          "erklaerung": "Der Wunsch begründet keine Befähigung."
+        },
+        {
+          "text": "Wer aufgrund fachlicher Ausbildung, Kenntnisse und Erfahrung die übertragenen Arbeiten beurteilen und Gefahren erkennen kann",
+          "ist_korrekt": true,
+          "erklaerung": "Entscheidend sind Ausbildung, Kenntnis der einschlägigen Bestimmungen und Erfahrung, bezogen auf die konkrete Tätigkeit."
+        }
+      ]
+    },
+    {
+      "id": "EBT-WISO-AR-102",
+      "typ": "mc",
+      "thema": "EBT-WISO-AR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Kollege erleidet einen Stromunfall und ist noch mit dem Betriebsmittel in Berührung. Was ist zuerst zu tun?",
+      "optionen": [
+        {
+          "text": "Abwarten, bis der Betriebselektriker eintrifft",
+          "ist_korrekt": false,
+          "erklaerung": "Zeitverlust kostet bei Stromunfällen Leben."
+        },
+        {
+          "text": "Zuerst die Unfallanzeige ausfüllen",
+          "ist_korrekt": false,
+          "erklaerung": "Die Dokumentation erfolgt später."
+        },
+        {
+          "text": "Zuerst Wasser über die Unfallstelle gießen",
+          "ist_korrekt": false,
+          "erklaerung": "Wasser leitet und vergrößert die Gefahr."
+        },
+        {
+          "text": "Den Stromkreis abschalten bzw. den Verunfallten mit isolierendem Hilfsmittel vom Stromkreis trennen",
+          "ist_korrekt": true,
+          "erklaerung": "Eigenschutz geht vor: erst Stromfluss unterbrechen, dann Notruf und Erste Hilfe."
+        },
+        {
+          "text": "Den Verunfallten sofort mit den Händen wegziehen",
+          "ist_korrekt": false,
+          "erklaerung": "Damit gerät der Helfer selbst in den Stromkreis."
+        }
+      ]
+    },
+    {
+      "id": "EBT-WISO-BW-101",
+      "typ": "mc",
+      "thema": "EBT-WISO-BW",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum wird eine elektrische Anlage nach Errichtung und danach wiederkehrend geprüft?",
+      "optionen": [
+        {
+          "text": "Weil sonst kein Frequenzumrichter eingesetzt werden darf",
+          "ist_korrekt": false,
+          "erklaerung": "Die beiden Sachverhalte hängen nicht zusammen."
+        },
+        {
+          "text": "Weil die Prüfung die Betriebskosten senkt",
+          "ist_korrekt": false,
+          "erklaerung": "Wirtschaftlichkeit ist nicht der Prüfgrund."
+        },
+        {
+          "text": "Weil sonst die Stromrechnung nicht erstellt werden kann",
+          "ist_korrekt": false,
+          "erklaerung": "Die Abrechnung erfolgt über den Zähler."
+        },
+        {
+          "text": "Weil die Wirksamkeit der Schutzmaßnahmen nachgewiesen und Alterung oder Beschädigung erkannt werden muss",
+          "ist_korrekt": true,
+          "erklaerung": "Erst- und Wiederholungsprüfung sichern, dass die Anlage über ihre Nutzungsdauer sicher bleibt; die Ergebnisse werden dokumentiert."
+        },
+        {
+          "text": "Weil Prüfungen die Gewährleistung des Herstellers verlängern",
+          "ist_korrekt": false,
+          "erklaerung": "Die Gewährleistung richtet sich nach dem Vertrag."
+        }
+      ]
+    },
+    {
+      "id": "EBT-IN-F01",
+      "typ": "freitext",
+      "thema": "EBT-IN-SC",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN VDE 0105-100"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Nennen Sie die fünf Sicherheitsregeln in der richtigen Reihenfolge und erklären Sie, warum die Reihenfolge nicht verändert werden darf.",
+      "musterloesung": "1. Freischalten. 2. Gegen Wiedereinschalten sichern. 3. Spannungsfreiheit allseitig feststellen. 4. Erden und kurzschließen. 5. Benachbarte, unter Spannung stehende Teile abdecken oder abschranken. Die Reihenfolge ist zwingend, weil jeder Schritt den nächsten erst sicher macht: Ohne Freischalten wäre jede weitere Handlung an spannungsführenden Teilen; ohne Sicherung gegen Wiedereinschalten könnte die Anlage während der Arbeit erneut unter Spannung gesetzt werden; erst nach dem Feststellen der Spannungsfreiheit darf geerdet werden, weil ein Erden unter Spannung einen Kurzschluss mit Lichtbogen auslösen würde. Das Abdecken benachbarter Teile schützt zuletzt vor unbeabsichtigtem Berühren im Arbeitsumfeld.",
+      "bewertungsraster": {
+        "max_punkte": 7,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Regel 1 Freischalten genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Regel 2 gegen Wiedereinschalten sichern genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Regel 3 Spannungsfreiheit feststellen genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Regel 4 Erden und Kurzschließen genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Regel 5 Abdecken/Abschranken genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k6",
+            "beschreibung": "Reihenfolge vollständig korrekt",
+            "punkte": 1
+          },
+          {
+            "id": "k7",
+            "beschreibung": "Begründung, dass jeder Schritt den nächsten absichert",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "allpolig trennen",
+          "Verbotsschild anbringen",
+          "zweipoliger Spannungsprüfer",
+          "kurzschließen und erden"
+        ],
+        "haeufige_fehler": [
+          "Erden vor dem Feststellen der Spannungsfreiheit",
+          "Weglassen der Sicherung gegen Wiedereinschalten"
+        ]
+      }
+    },
+    {
+      "id": "EBT-GR-F01",
+      "typ": "freitext",
+      "thema": "EBT-GR-GG",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Erklären Sie den Unterschied zwischen Reihen- und Parallelschaltung von Widerständen anhand von Strom, Spannung und Gesamtwiderstand.",
+      "musterloesung": "In der Reihenschaltung fließt durch alle Widerstände derselbe Strom. Die Teilspannungen addieren sich zur Gesamtspannung, und der Gesamtwiderstand ist die Summe der Einzelwiderstände; er ist damit größer als jeder Einzelwiderstand. In der Parallelschaltung liegt an allen Widerständen dieselbe Spannung an. Die Zweigströme addieren sich zum Gesamtstrom, und der Gesamtwiderstand ist kleiner als der kleinste Einzelwiderstand, weil sich die Leitwerte addieren.",
+      "bewertungsraster": {
+        "max_punkte": 6,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Reihenschaltung: Strom überall gleich",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Reihenschaltung: Teilspannungen addieren sich",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Reihenschaltung: Gesamtwiderstand ist die Summe",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Parallelschaltung: Spannung überall gleich",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Parallelschaltung: Zweigströme addieren sich",
+            "punkte": 1
+          },
+          {
+            "id": "k6",
+            "beschreibung": "Parallelschaltung: Gesamtwiderstand kleiner als kleinster Einzelwiderstand",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Spannungsteiler",
+          "Stromteiler",
+          "Leitwerte addieren sich"
+        ],
+        "haeufige_fehler": [
+          "Vertauschen der Regeln für Strom und Spannung"
+        ]
+      }
+    },
+    {
+      "id": "EBT-IN-F02",
+      "typ": "freitext",
+      "thema": "EBT-IN-AN",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Drehstrommotor an einer Förderanlage läuft nach dem Einschalten nicht an, brummt aber hörbar. Beschreiben Sie ein systematisches Vorgehen zur Fehlersuche.",
+      "musterloesung": "Das Brummen ohne Anlauf deutet auf den Ausfall eines Außenleiters hin, der Motor läuft dann nur zweiphasig. Vorgehen: 1. Anlage sicher stillsetzen, Motorschutz zurücksetzen und den Auslösegrund dokumentieren. 2. Sichtprüfung von Klemmkasten, Leitungen und Anschlüssen auf lose oder verschmorte Stellen. 3. Sicherungen und Motorschutzschalter auf Auslösung eines einzelnen Außenleiters prüfen. 4. Im freigeschalteten Zustand die Wicklungen auf Durchgang und gleichmäßige Widerstandswerte sowie gegen den Schutzleiter auf Isolation messen. 5. Mechanik prüfen: blockierte Last, schwergängiges Lager oder festsitzende Bremse können den Anlauf ebenfalls verhindern. 6. Fehler beheben, Schutzeinrichtungen prüfen, Probelauf durchführen und Ergebnis dokumentieren. Alle Messungen an spannungsführenden Teilen nur als Elektrofachkraft und nach den fünf Sicherheitsregeln.",
+      "bewertungsraster": {
+        "max_punkte": 6,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Erkennt Phasenausfall als naheliegende Ursache",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Sichere Stillsetzung und Beachtung der Sicherheitsregeln",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Sichtprüfung Anschlüsse und Klemmkasten",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Prüfung von Sicherungen bzw. Motorschutz",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Messung von Wicklungsdurchgang und Isolation",
+            "punkte": 1
+          },
+          {
+            "id": "k6",
+            "beschreibung": "Prüfung der Mechanik und abschließender Probelauf mit Dokumentation",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "zweiphasiger Lauf",
+          "Phasenausfall",
+          "Wicklungsschluss",
+          "blockierte Last"
+        ],
+        "haeufige_fehler": [
+          "Messen unter Spannung ohne Befähigung",
+          "Wiederholtes Einschalten ohne Ursachenklärung"
+        ]
+      }
+    }
+  ]
+}

@@ -2,14 +2,14 @@
 """Prüft Fragenpool-JSON-Dateien auf strukturelle Fehler, bevor sie in den Seed wandern.
 
 Aufruf:  python3 scripts/pruefe_fragenpool.py [datei ...]
-Ohne Argument werden alle supabase/seed/MAF_Fragenpool_*.json geprüft.
+Ohne Argument werden alle supabase/seed/*_Fragenpool_*.json geprüft.
 Exit-Code 1, sobald ein Fehler gefunden wurde.
 """
 import json, pathlib, sys, collections
 
 BASE = pathlib.Path(__file__).resolve().parent.parent
 THEMEN = set()
-for pfad in (BASE / "supabase/seed").glob("MAF_Fragenpool_*.json"):
+for pfad in (BASE / "supabase/seed").glob("*_Fragenpool_*.json"):
     pool = json.load(open(pfad, encoding="utf-8"))
     for pb in pool.get("pruefungsbereiche", []):
         THEMEN.update(t["code"] for t in pb["themen"])
@@ -81,7 +81,7 @@ def pruefe(pfad: pathlib.Path) -> None:
 
 
 dateien = [pathlib.Path(a) for a in sys.argv[1:]] or sorted(
-    (BASE / "supabase/seed").glob("MAF_Fragenpool_*.json"))
+    (BASE / "supabase/seed").glob("*_Fragenpool_*.json"))
 for d in dateien:
     pruefe(d)
 

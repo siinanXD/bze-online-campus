@@ -1,0 +1,973 @@
+{
+  "meta": {
+    "beruf": "Tischler/-in",
+    "beruf_slug": "tischler",
+    "bezeichnung_lang": "Tischler/-in",
+    "kammer": "HWK",
+    "dauer_monate_umschulung": null,
+    "charge": "Charge 1 – Grundlagen",
+    "erstellt": "2026-07-29",
+    "struktur_hinweis": "Handwerksberuf, zuständig ist die Handwerkskammer. Gewichtung und Prüfungsdauer der Prüfungsbereiche sind leer gelassen und vom Ausbilder nach der geltenden Ausbildungsordnung und den Vorgaben der HWK Aachen einzutragen.",
+    "urheberrecht": "Eigenentwicklung des BZE. Keine Übernahme von Aufgaben der Kammern oder Prüfungsverlage.",
+    "status_hinweis": "Alle Fragen im Status 'entwurf'. Freigabe durch Ausbilder zwingend. Fragen mit enthaelt_zahlenwert=true brauchen vor der Freigabe eine Fundstelle und stehen deshalb auf kern=false.",
+    "anzahl_mc": 18,
+    "anzahl_freitext": 3
+  },
+  "pruefungsbereiche": [
+    {
+      "code": "TIS-WS",
+      "bezeichnung": "Werkstoffe und Technische Unterlagen",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "TIS-WS-HO",
+          "bezeichnung": "Holz und Holzwerkstoffe"
+        },
+        {
+          "code": "TIS-WS-ZE",
+          "bezeichnung": "Zeichnung, Skizze und Aufmaß"
+        }
+      ]
+    },
+    {
+      "code": "TIS-FE",
+      "bezeichnung": "Fertigung und Montage",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "TIS-FE-VB",
+          "bezeichnung": "Holzverbindungen und Beschläge"
+        },
+        {
+          "code": "TIS-FE-MA",
+          "bezeichnung": "Maschinen und Werkzeuge"
+        },
+        {
+          "code": "TIS-FE-OB",
+          "bezeichnung": "Oberflächenbehandlung"
+        }
+      ]
+    },
+    {
+      "code": "TIS-WISO",
+      "bezeichnung": "Wirtschafts- und Sozialkunde",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "TIS-WISO-SU",
+          "bezeichnung": "Arbeitssicherheit und Umweltschutz"
+        },
+        {
+          "code": "TIS-WISO-BW",
+          "bezeichnung": "Kalkulation und Kundenauftrag"
+        }
+      ]
+    }
+  ],
+  "uebungspruefungen": [
+    {
+      "code": "TIS-UE-01",
+      "titel": "Übungsprüfung Tischler – Grundlagen",
+      "bearbeitungszeit_minuten": 60,
+      "hinweis": "18 Aufgaben mit je fünf Auswahlantworten, genau eine Antwort ist richtig.",
+      "aufgaben": [
+        "TIS-WS-HO-101",
+        "TIS-WS-HO-102",
+        "TIS-WS-HO-103",
+        "TIS-WS-HO-104",
+        "TIS-WS-ZE-101",
+        "TIS-WS-ZE-102",
+        "TIS-WS-ZE-103",
+        "TIS-FE-VB-101",
+        "TIS-FE-VB-102",
+        "TIS-FE-VB-103",
+        "TIS-FE-MA-101",
+        "TIS-FE-MA-102",
+        "TIS-FE-MA-103",
+        "TIS-FE-OB-101",
+        "TIS-FE-OB-102",
+        "TIS-WISO-SU-101",
+        "TIS-WISO-SU-102",
+        "TIS-WISO-BW-101"
+      ]
+    }
+  ],
+  "fragen": [
+    {
+      "id": "TIS-WS-HO-101",
+      "typ": "mc",
+      "thema": "TIS-WS-HO",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Holzart gehört zu den Nadelhölzern?",
+      "optionen": [
+        {
+          "text": "Nussbaum",
+          "ist_korrekt": false,
+          "erklaerung": "Der Nussbaum ist ein Laubholz."
+        },
+        {
+          "text": "Eiche",
+          "ist_korrekt": false,
+          "erklaerung": "Die Eiche ist ein Laubholz."
+        },
+        {
+          "text": "Ahorn",
+          "ist_korrekt": false,
+          "erklaerung": "Der Ahorn ist ein Laubholz."
+        },
+        {
+          "text": "Buche",
+          "ist_korrekt": false,
+          "erklaerung": "Die Buche ist ein Laubholz."
+        },
+        {
+          "text": "Fichte",
+          "ist_korrekt": true,
+          "erklaerung": "Die Fichte ist eines der wichtigsten heimischen Nadelhölzer."
+        }
+      ]
+    },
+    {
+      "id": "TIS-WS-HO-102",
+      "typ": "mc",
+      "thema": "TIS-WS-HO",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum arbeitet Holz auch nach dem Einbau noch?",
+      "optionen": [
+        {
+          "text": "Weil sich die Zellstruktur chemisch zersetzt",
+          "ist_korrekt": false,
+          "erklaerung": "Das wäre Fäulnis und kein normales Verhalten."
+        },
+        {
+          "text": "Weil die Oberflächenbehandlung das Holz dehnt",
+          "ist_korrekt": false,
+          "erklaerung": "Die Beschichtung bremst den Feuchteaustausch eher."
+        },
+        {
+          "text": "Weil es Feuchtigkeit aus der Umgebungsluft aufnimmt und wieder abgibt",
+          "ist_korrekt": true,
+          "erklaerung": "Holz ist hygroskopisch: Es quillt bei steigender und schwindet bei fallender Luftfeuchte."
+        },
+        {
+          "text": "Weil das Holz nach dem Einbau nachreift",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Nachreifen gibt es bei Holz nicht."
+        },
+        {
+          "text": "Weil das Eigengewicht die Fasern staucht",
+          "ist_korrekt": false,
+          "erklaerung": "Das erklärt kein Quellen und Schwinden."
+        }
+      ]
+    },
+    {
+      "id": "TIS-WS-HO-103",
+      "typ": "mc",
+      "thema": "TIS-WS-HO",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "In welcher Richtung schwindet Holz am stärksten?",
+      "optionen": [
+        {
+          "text": "In allen Richtungen gleich",
+          "ist_korrekt": false,
+          "erklaerung": "Holz ist anisotrop, das Verhalten ist richtungsabhängig."
+        },
+        {
+          "text": "Holz schwindet grundsätzlich nicht.",
+          "ist_korrekt": false,
+          "erklaerung": "Schwinden und Quellen sind typische Holzeigenschaften."
+        },
+        {
+          "text": "In Faserrichtung (längs)",
+          "ist_korrekt": false,
+          "erklaerung": "Längs ist das Schwindmaß am geringsten."
+        },
+        {
+          "text": "In tangentialer Richtung",
+          "ist_korrekt": true,
+          "erklaerung": "Tangential, also entlang der Jahrringe, schwindet Holz am stärksten – deutlich mehr als radial und um ein Vielfaches mehr als längs."
+        },
+        {
+          "text": "In radialer Richtung",
+          "ist_korrekt": false,
+          "erklaerung": "Radial schwindet Holz etwa halb so stark wie tangential."
+        }
+      ]
+    },
+    {
+      "id": "TIS-WS-HO-104",
+      "typ": "mc",
+      "thema": "TIS-WS-HO",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wodurch unterscheidet sich Sperrholz von Spanplatte?",
+      "optionen": [
+        {
+          "text": "Sperrholz enthält keinen Klebstoff.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Furnierlagen werden verleimt."
+        },
+        {
+          "text": "Sperrholz besteht aus kreuzweise verleimten Furnierlagen, Spanplatte aus verleimten Holzspänen.",
+          "ist_korrekt": true,
+          "erklaerung": "Die kreuzweise Lagenanordnung gibt Sperrholz seine hohe Formstabilität und Festigkeit."
+        },
+        {
+          "text": "Der Unterschied liegt nur in der Plattendicke.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Unterschied liegt im Aufbau."
+        },
+        {
+          "text": "Spanplatte ist immer wasserfest.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Feuchtebeständigkeit hängt von der Plattenart ab."
+        },
+        {
+          "text": "Sperrholz ist ein Vollholz, Spanplatte ein Furnier.",
+          "ist_korrekt": false,
+          "erklaerung": "Beide sind Holzwerkstoffe, keines ist Vollholz."
+        }
+      ]
+    },
+    {
+      "id": "TIS-WS-ZE-101",
+      "typ": "mc",
+      "thema": "TIS-WS-ZE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wozu dient ein Aufmaß beim Kundenauftrag?",
+      "optionen": [
+        {
+          "text": "Es dokumentiert die Arbeitszeit.",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür dient der Stundenzettel."
+        },
+        {
+          "text": "Es ist nur bei Neubauten erforderlich.",
+          "ist_korrekt": false,
+          "erklaerung": "Gerade im Bestand ist das Aufmaß unverzichtbar."
+        },
+        {
+          "text": "Es erfasst die tatsächlichen Maße vor Ort als Grundlage für Fertigung und Montage.",
+          "ist_korrekt": true,
+          "erklaerung": "Wände sind selten im Lot und im Winkel; nur das Aufmaß sichert passgenaue Bauteile."
+        },
+        {
+          "text": "Es ersetzt den schriftlichen Auftrag.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Auftrag regelt Leistung und Preis."
+        },
+        {
+          "text": "Es legt den Werkstoff fest.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Werkstoff wird im Angebot festgelegt."
+        }
+      ]
+    },
+    {
+      "id": "TIS-WS-ZE-102",
+      "typ": "mc",
+      "thema": "TIS-WS-ZE",
+      "schwierigkeit": 2,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Eine Platte misst 2 400 mm × 1 200 mm. Wie viele Quadratmeter Fläche hat sie?",
+      "optionen": [
+        {
+          "text": "28,8 m²",
+          "ist_korrekt": false,
+          "erklaerung": "Kommafehler um den Faktor 10."
+        },
+        {
+          "text": "288 m²",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde mm nicht in m umgerechnet."
+        },
+        {
+          "text": "3,60 m²",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurden die Seiten addiert statt multipliziert."
+        },
+        {
+          "text": "0,288 m²",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde um den Faktor 10 zu klein gerechnet."
+        },
+        {
+          "text": "2,88 m²",
+          "ist_korrekt": true,
+          "erklaerung": "2,4 m × 1,2 m = 2,88 m²."
+        }
+      ]
+    },
+    {
+      "id": "TIS-WS-ZE-103",
+      "typ": "mc",
+      "thema": "TIS-WS-ZE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was gibt eine Schnittdarstellung in einer Möbelzeichnung wieder?",
+      "optionen": [
+        {
+          "text": "Nur die Außenansicht des fertigen Möbels",
+          "ist_korrekt": false,
+          "erklaerung": "Die Außenansicht zeigt die Ansicht, nicht den Aufbau."
+        },
+        {
+          "text": "Die Reihenfolge der Montage",
+          "ist_korrekt": false,
+          "erklaerung": "Das beschreibt die Montageanleitung."
+        },
+        {
+          "text": "Die Farbgestaltung der Oberfläche",
+          "ist_korrekt": false,
+          "erklaerung": "Farbangaben stehen in der Leistungsbeschreibung."
+        },
+        {
+          "text": "Den Lieferumfang der Beschläge",
+          "ist_korrekt": false,
+          "erklaerung": "Das leistet die Stückliste."
+        },
+        {
+          "text": "Den inneren Aufbau, etwa Korpusverbindungen, Bodenlagen und Rückwandanschluss",
+          "ist_korrekt": true,
+          "erklaerung": "Der Schnitt macht den konstruktiven Aufbau sichtbar, der in der Ansicht verdeckt bleibt."
+        }
+      ]
+    },
+    {
+      "id": "TIS-FE-VB-101",
+      "typ": "mc",
+      "thema": "TIS-FE-VB",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Verbindung ist eine klassische Rahmenverbindung im Tischlerhandwerk?",
+      "optionen": [
+        {
+          "text": "Schlitz-und-Zapfen-Verbindung",
+          "ist_korrekt": true,
+          "erklaerung": "Sie verbindet Rahmenhölzer formschlüssig und wird zusätzlich verleimt."
+        },
+        {
+          "text": "Nietverbindung",
+          "ist_korrekt": false,
+          "erklaerung": "Nieten ist im Metallbau üblich."
+        },
+        {
+          "text": "Kehlnaht",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist eine Schweißnahtform im Metallbau."
+        },
+        {
+          "text": "Presspassung nach ISO-Toleranz",
+          "ist_korrekt": false,
+          "erklaerung": "Das gehört zum Maschinenbau."
+        },
+        {
+          "text": "Bördelverbindung",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist eine Blechverbindung."
+        }
+      ]
+    },
+    {
+      "id": "TIS-FE-VB-102",
+      "typ": "mc",
+      "thema": "TIS-FE-VB",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Worauf ist beim Verleimen einer Massivholzplatte besonders zu achten?",
+      "optionen": [
+        {
+          "text": "Darauf, die Presse sofort nach dem Auftrag wieder zu lösen",
+          "ist_korrekt": false,
+          "erklaerung": "Die Presszeit des Klebstoffs muss eingehalten werden."
+        },
+        {
+          "text": "Darauf, ausschließlich Nadelholz zu verwenden",
+          "ist_korrekt": false,
+          "erklaerung": "Die Holzart ist nicht entscheidend für die Verleimregeln."
+        },
+        {
+          "text": "Darauf, dass das Holz möglichst nass ist",
+          "ist_korrekt": false,
+          "erklaerung": "Zu hohe Holzfeuchte stört die Aushärtung und führt später zu Fugen."
+        },
+        {
+          "text": "Darauf, den Leim einseitig sehr dick aufzutragen",
+          "ist_korrekt": false,
+          "erklaerung": "Zu dicke Leimfugen sind schwächer als dünne, satte Fugen."
+        },
+        {
+          "text": "Auf ausreichenden Pressdruck, saubere Fugen und die Beachtung der Holzfeuchte",
+          "ist_korrekt": true,
+          "erklaerung": "Nur bei passender Holzfeuchte, sauberer Fuge und gleichmäßigem Pressdruck hält die Leimfuge dauerhaft."
+        }
+      ]
+    },
+    {
+      "id": "TIS-FE-VB-103",
+      "typ": "mc",
+      "thema": "TIS-FE-VB",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgabe hat ein Topfband an einer Möbeltür?",
+      "optionen": [
+        {
+          "text": "Es ersetzt den Schließmechanismus.",
+          "ist_korrekt": false,
+          "erklaerung": "Verschlüsse und Dämpfer sind eigene Beschläge."
+        },
+        {
+          "text": "Es dichtet die Tür gegen Staub ab.",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür wären Dichtungen zuständig."
+        },
+        {
+          "text": "Es trägt das Gewicht des gesamten Korpus.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Korpus trägt sich selbst."
+        },
+        {
+          "text": "Es verhindert das Arbeiten des Holzes.",
+          "ist_korrekt": false,
+          "erklaerung": "Quellen und Schwinden lassen sich durch Beschläge nicht unterbinden."
+        },
+        {
+          "text": "Es verbindet die Tür beweglich mit dem Korpus und lässt sich in mehreren Richtungen justieren.",
+          "ist_korrekt": true,
+          "erklaerung": "Topfbänder sind in Höhe, Tiefe und Seite verstellbar, sodass Fugenbild und Lauf eingestellt werden können."
+        }
+      ]
+    },
+    {
+      "id": "TIS-FE-MA-101",
+      "typ": "mc",
+      "thema": "TIS-FE-MA",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Schutzeinrichtung ist an der Tischkreissäge beim Trennschnitt zwingend erforderlich?",
+      "optionen": [
+        {
+          "text": "Handschuhe",
+          "ist_korrekt": false,
+          "erklaerung": "Handschuhe sind an rotierenden Werkzeugen wegen der Einzugsgefahr verboten."
+        },
+        {
+          "text": "Ein zweiter Anschlag hinter dem Blatt",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Anschlag hinter dem Blatt begünstigt sogar das Verklemmen."
+        },
+        {
+          "text": "Eine Absaugung als alleinige Schutzmaßnahme",
+          "ist_korrekt": false,
+          "erklaerung": "Die Absaugung schützt die Atemwege, ersetzt aber keine mechanische Schutzeinrichtung."
+        },
+        {
+          "text": "Ein Blattschutz genügt ohne Schiebestock.",
+          "ist_korrekt": false,
+          "erklaerung": "Bei schmalen Werkstücken ist der Schiebestock zusätzlich erforderlich."
+        },
+        {
+          "text": "Spaltkeil und Schutzhaube",
+          "ist_korrekt": true,
+          "erklaerung": "Der Spaltkeil verhindert das Klemmen des Schnittspalts und damit Rückschlag, die Haube schützt vor dem Blatt."
+        }
+      ]
+    },
+    {
+      "id": "TIS-FE-MA-102",
+      "typ": "mc",
+      "thema": "TIS-FE-MA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was versteht man beim Arbeiten an der Tischkreissäge unter Rückschlag?",
+      "optionen": [
+        {
+          "text": "Das Ausbrechen der Schnittkante an der Unterseite",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Ausriss und ein Qualitätsproblem."
+        },
+        {
+          "text": "Das Verlaufen des Schnitts aus der Linie",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist ein Führungsfehler."
+        },
+        {
+          "text": "Das Zurückfedern des Anschlags",
+          "ist_korrekt": false,
+          "erklaerung": "Der Anschlag wird festgeklemmt."
+        },
+        {
+          "text": "Das Absacken der Drehzahl unter Last",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Drehzahleinbruch."
+        },
+        {
+          "text": "Das plötzliche Zurückschleudern des Werkstücks entgegen der Vorschubrichtung",
+          "ist_korrekt": true,
+          "erklaerung": "Klemmt das Werkstück am aufsteigenden Blattbereich, wird es mit hoher Geschwindigkeit zurückgeschleudert – eine der häufigsten schweren Unfallursachen."
+        }
+      ]
+    },
+    {
+      "id": "TIS-FE-MA-103",
+      "typ": "mc",
+      "thema": "TIS-FE-MA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum wird an Holzbearbeitungsmaschinen eine Absauganlage betrieben?",
+      "optionen": [
+        {
+          "text": "Weil sie das Holz vorwärmt",
+          "ist_korrekt": false,
+          "erklaerung": "Eine Vorwärmung findet nicht statt."
+        },
+        {
+          "text": "Weil Holzstaub gesundheitsschädlich ist und mit Luft ein explosionsfähiges Gemisch bilden kann",
+          "ist_korrekt": true,
+          "erklaerung": "Feiner Holzstaub belastet die Atemwege, bestimmte Stäube gelten als krebserzeugend; zusätzlich besteht Staubexplosionsgefahr."
+        },
+        {
+          "text": "Weil dadurch die Maschine schneller läuft",
+          "ist_korrekt": false,
+          "erklaerung": "Die Drehzahl bleibt unverändert."
+        },
+        {
+          "text": "Weil die Absaugung den Gehörschutz ersetzt",
+          "ist_korrekt": false,
+          "erklaerung": "Lärmschutz bleibt eigenständig erforderlich."
+        },
+        {
+          "text": "Weil dadurch der Werkzeugverschleiß entfällt",
+          "ist_korrekt": false,
+          "erklaerung": "Verschleiß tritt weiterhin auf."
+        }
+      ]
+    },
+    {
+      "id": "TIS-FE-OB-101",
+      "typ": "mc",
+      "thema": "TIS-FE-OB",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum wird eine Holzoberfläche vor dem Lackieren geschliffen und entstaubt?",
+      "optionen": [
+        {
+          "text": "Damit die Holzart erkennbar wird",
+          "ist_korrekt": false,
+          "erklaerung": "Die Bestimmung der Holzart ist nicht Zweck des Schliffs."
+        },
+        {
+          "text": "Damit der Lack gleichmäßig haftet und keine Einschlüsse oder Riefen sichtbar bleiben",
+          "ist_korrekt": true,
+          "erklaerung": "Der Schliff öffnet die Oberfläche und ebnet sie ein; Staubreste würden sich im Lackfilm abzeichnen."
+        },
+        {
+          "text": "Damit das Holz nicht mehr arbeitet",
+          "ist_korrekt": false,
+          "erklaerung": "Quellen und Schwinden bleiben bestehen."
+        },
+        {
+          "text": "Damit das Holz schneller trocknet",
+          "ist_korrekt": false,
+          "erklaerung": "Die Trocknung hängt vom Lacksystem und Klima ab."
+        },
+        {
+          "text": "Damit weniger Lack benötigt wird",
+          "ist_korrekt": false,
+          "erklaerung": "Ein offener Schliff kann sogar mehr Material aufnehmen."
+        }
+      ]
+    },
+    {
+      "id": "TIS-FE-OB-102",
+      "typ": "mc",
+      "thema": "TIS-FE-OB",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie unterscheiden sich Lack und Öl als Oberflächenbehandlung grundsätzlich?",
+      "optionen": [
+        {
+          "text": "Öl ist immer für Außenbauteile ungeeignet.",
+          "ist_korrekt": false,
+          "erklaerung": "Es gibt speziell für den Außenbereich geeignete Ölsysteme."
+        },
+        {
+          "text": "Beide Systeme sind chemisch identisch.",
+          "ist_korrekt": false,
+          "erklaerung": "Aufbau und Wirkung unterscheiden sich deutlich."
+        },
+        {
+          "text": "Lack dringt tiefer ein als Öl.",
+          "ist_korrekt": false,
+          "erklaerung": "Es ist umgekehrt."
+        },
+        {
+          "text": "Lack bildet einen geschlossenen Film auf der Oberfläche, Öl dringt in das Holz ein.",
+          "ist_korrekt": true,
+          "erklaerung": "Der Lackfilm liegt auf und schützt mechanisch; geölte Flächen bleiben offenporiger und lassen sich stellenweise nachbehandeln."
+        },
+        {
+          "text": "Öl bildet einen dickeren Film als Lack.",
+          "ist_korrekt": false,
+          "erklaerung": "Öl bildet gerade keinen tragenden Film."
+        }
+      ]
+    },
+    {
+      "id": "TIS-WISO-SU-101",
+      "typ": "mc",
+      "thema": "TIS-WISO-SU",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche persönliche Schutzausrüstung ist beim Arbeiten an der Abrichthobelmaschine typischerweise erforderlich?",
+      "optionen": [
+        {
+          "text": "Ein Vollschutzanzug",
+          "ist_korrekt": false,
+          "erklaerung": "Dieser ist hier nicht vorgesehen und behindert die Arbeit."
+        },
+        {
+          "text": "Nur Handschuhe",
+          "ist_korrekt": false,
+          "erklaerung": "Handschuhe sind an rotierenden Werkzeugen gefährlich."
+        },
+        {
+          "text": "Gehörschutz und Schutzbrille, keine Handschuhe",
+          "ist_korrekt": true,
+          "erklaerung": "Lärm und Späne erfordern Gehör- und Augenschutz; Handschuhe sind an der rotierenden Messerwelle wegen Einzugsgefahr verboten."
+        },
+        {
+          "text": "Nur Sicherheitsschuhe",
+          "ist_korrekt": false,
+          "erklaerung": "Sie sind sinnvoll, reichen aber nicht aus."
+        },
+        {
+          "text": "Schweißerschutzschild",
+          "ist_korrekt": false,
+          "erklaerung": "Der gehört zur Schweißtechnik."
+        }
+      ]
+    },
+    {
+      "id": "TIS-WISO-SU-102",
+      "typ": "mc",
+      "thema": "TIS-WISO-SU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie werden lösemittelhaltige Lackreste in der Tischlerei entsorgt?",
+      "optionen": [
+        {
+          "text": "Im Spänebunker zusammen mit dem Holzstaub",
+          "ist_korrekt": false,
+          "erklaerung": "Das erhöht zusätzlich die Brandgefahr."
+        },
+        {
+          "text": "Als gefährlicher Abfall über den dafür vorgesehenen Sammelbehälter",
+          "ist_korrekt": true,
+          "erklaerung": "Lösemittelhaltige Reste sind gefährlicher Abfall und werden getrennt gesammelt und nachweislich entsorgt."
+        },
+        {
+          "text": "Über den Abfluss",
+          "ist_korrekt": false,
+          "erklaerung": "Das belastet das Abwasser und ist verboten."
+        },
+        {
+          "text": "Durch Verbrennen im Werkstattofen",
+          "ist_korrekt": false,
+          "erklaerung": "Das setzt Schadstoffe frei und ist unzulässig."
+        },
+        {
+          "text": "Über den Hausmüll",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist unzulässig."
+        }
+      ]
+    },
+    {
+      "id": "TIS-WISO-BW-101",
+      "typ": "mc",
+      "thema": "TIS-WISO-BW",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Aus welchen Bestandteilen setzt sich der Angebotspreis eines Tischlerauftrags im Kern zusammen?",
+      "optionen": [
+        {
+          "text": "Der Einkaufspreis des Lieferanten",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist nur ein Teil der Materialkosten."
+        },
+        {
+          "text": "Ausschließlich die Materialkosten",
+          "ist_korrekt": false,
+          "erklaerung": "Damit würde der Betrieb keine Arbeitszeit vergütet bekommen."
+        },
+        {
+          "text": "Materialkosten, Lohnkosten, Gemeinkosten und Gewinnzuschlag",
+          "ist_korrekt": true,
+          "erklaerung": "Auf die Einzelkosten werden Gemeinkosten und ein Gewinnzuschlag aufgeschlagen; daraus entsteht der Angebotspreis."
+        },
+        {
+          "text": "Ein pauschaler Betrag je Quadratmeter Werkstattfläche",
+          "ist_korrekt": false,
+          "erklaerung": "So wird kein Auftrag kalkuliert."
+        },
+        {
+          "text": "Ausschließlich die Arbeitszeit",
+          "ist_korrekt": false,
+          "erklaerung": "Das Material bliebe unberücksichtigt."
+        }
+      ]
+    },
+    {
+      "id": "TIS-WS-F01",
+      "typ": "freitext",
+      "thema": "TIS-WS-HO",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Erklären Sie, was man unter dem Arbeiten des Holzes versteht, und nennen Sie zwei konstruktive Maßnahmen, mit denen Sie die Folgen im Möbelbau berücksichtigen.",
+      "musterloesung": "Holz ist hygroskopisch: Es nimmt bei hoher Luftfeuchte Feuchtigkeit auf und quillt, bei trockener Luft gibt es Feuchtigkeit ab und schwindet. Die Formänderung ist richtungsabhängig und tangential am größten, in Faserrichtung praktisch vernachlässigbar. Konstruktive Maßnahmen: Massivholzflächen werden nicht starr eingeleimt, sondern über Nut und Feder oder Langlöcher beweglich gehalten, damit sich die Breite ändern kann. Rückwände und Füllungen werden in Nuten lose eingeschoben statt verleimt. Weitere zulässige Antworten: Verwendung formstabiler Holzwerkstoffe für breite Flächen, Einbau bei passender Ausgleichsfeuchte, allseitig gleiche Oberflächenbehandlung.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Beschreibt Feuchteaufnahme und -abgabe als Ursache",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Nennt Quellen und Schwinden bzw. die Richtungsabhängigkeit",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Nennt eine zutreffende konstruktive Maßnahme",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Nennt eine zweite zutreffende Maßnahme",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "hygroskopisch",
+          "Ausgleichsfeuchte",
+          "Nut und Feder",
+          "Langloch",
+          "gleitende Befestigung"
+        ],
+        "haeufige_fehler": [
+          "Behauptung, Holzwerkstoffe arbeiteten überhaupt nicht",
+          "Starres Verleimen als Lösung genannt"
+        ]
+      }
+    },
+    {
+      "id": "TIS-FE-F01",
+      "typ": "freitext",
+      "thema": "TIS-FE-MA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Beschreiben Sie vier Maßnahmen, mit denen Sie das Rückschlagrisiko an der Tischkreissäge verringern.",
+      "musterloesung": "1. Spaltkeil richtig eingestellt verwenden, damit sich der Schnittspalt nicht hinter dem Blatt schließt. 2. Schutzhaube und bei schmalen Werkstücken Schiebestock beziehungsweise Schiebeholz benutzen. 3. Werkstück sauber am Parallelanschlag führen, Anschlag bei Bedarf zurückversetzen, damit das Werkstück hinter dem Blatt frei liegt. 4. Nur gerade, saubere und spannungsarme Werkstücke schneiden, verzogenes Holz vorher richten. Ergänzend: scharfes, passendes Sägeblatt verwenden, nicht hinter dem Blatt stehen, Schnitthöhe nur wenig über Werkstückdicke einstellen.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Nennt den korrekt eingestellten Spaltkeil",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Nennt Schutzhaube und/oder Schiebestock",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Nennt sichere Werkstückführung am Anschlag",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Nennt eine weitere zutreffende Maßnahme",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Schiebeholz",
+          "scharfes Sägeblatt",
+          "nicht in der Schnittlinie stehen",
+          "verzogenes Holz vorrichten"
+        ],
+        "haeufige_fehler": [
+          "Handschuhe als Schutzmaßnahme genannt",
+          "Entfernen des Spaltkeils zur besseren Sicht"
+        ]
+      }
+    },
+    {
+      "id": "TIS-WISO-F01",
+      "typ": "freitext",
+      "thema": "TIS-WISO-BW",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Kunde beanstandet nach der Montage einen Einbauschrank, weil eine Tür schleift. Beschreiben Sie Ihr Vorgehen von der Reklamation bis zur Abnahme.",
+      "musterloesung": "1. Reklamation sachlich aufnehmen, Termin vereinbaren und dem Kunden zusichern, dass der Mangel geprüft wird. 2. Vor Ort den Fehler eingrenzen: Fugenbild messen, prüfen, ob der Korpus im Lot und in der Waage steht, ob sich der Untergrund gesetzt hat oder ob die Bänder verstellt sind. 3. Ursache dokumentieren, auch mit Blick darauf, ob es sich um einen Ausführungsmangel oder um bauseitige Ursachen handelt. 4. Mangel beheben, in der Regel durch Ausrichten des Korpus und Justieren der Topfbänder in Höhe, Seite und Tiefe. 5. Funktion prüfen: Tür mehrfach öffnen und schließen, gleichmäßige Fuge kontrollieren. 6. Ergebnis gemeinsam mit dem Kunden abnehmen und die Nacharbeit schriftlich festhalten.",
+      "bewertungsraster": {
+        "max_punkte": 5,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Sachliche Aufnahme der Reklamation und Terminvereinbarung",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Systematische Ursachensuche vor Ort",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Dokumentation der Ursache",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Fachgerechte Behebung (Ausrichten, Bänder justieren)",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Funktionsprüfung und Abnahme mit dem Kunden",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Fugenbild",
+          "Bänder einstellen",
+          "Korpus ausrichten",
+          "Nacharbeit dokumentieren"
+        ],
+        "haeufige_fehler": [
+          "Zurückweisung der Reklamation ohne Prüfung",
+          "Behebung ohne Ursachenklärung"
+        ]
+      }
+    }
+  ]
+}

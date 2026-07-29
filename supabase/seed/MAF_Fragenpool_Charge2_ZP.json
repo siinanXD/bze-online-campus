@@ -11,7 +11,10 @@
     "urheberrecht": "Alle Aufgaben sind Eigenentwicklungen des BZE. Es wurden keine Aufgaben von Kammern oder Prüfungsverlagen übernommen, nachgebaut oder paraphrasiert. Übernommen wurde ausschließlich die Prüfungsstruktur (Anzahl, Antwortformat, Themenverteilung), die selbst nicht schutzfähig ist.",
     "status_hinweis": "Alle Fragen haben Status 'entwurf'. Freigabe durch einen Ausbilder ist zwingend. Fragen mit enthaelt_zahlenwert=true benoetigen zusaetzlich eine Tabellenbuch-Fundstelle und sind deshalb kern=false.",
     "anzahl_mc": 62,
-    "anzahl_freitext": 6
+    "anzahl_freitext": 6,
+    "beruf_slug": "maf-metall",
+    "bezeichnung_lang": "Maschinen- und Anlagenführer/-in – Metall- und Kunststofftechnik",
+    "dauer_monate_umschulung": 16
   },
   "uebungspruefungen": [
     {
