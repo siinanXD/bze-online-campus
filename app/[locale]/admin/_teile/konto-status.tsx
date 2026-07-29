@@ -9,8 +9,8 @@ export function KontoStatusBadge({ aktiv, label }: { aktiv: boolean; label: stri
     <span
       className={
         aktiv
-          ? 'inline-flex items-center gap-1.5 rounded-full border border-accent bg-surface px-2.5 py-1 text-xs font-semibold text-accent'
-          : 'inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-2.5 py-1 text-xs font-semibold text-muted'
+          ? 'inline-flex items-center gap-1.5 rounded-full border border-primary bg-surface px-2.5 py-1 text-xs font-semibold text-primary'
+          : 'inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-2.5 py-1 text-xs font-semibold text-fg-muted'
       }
       role="status"
     >

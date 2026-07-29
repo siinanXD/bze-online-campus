@@ -21,7 +21,7 @@ export default async function AdminLayout({
       <main className="mx-auto max-w-md p-4 pt-10">
         <Card>
           <h1 className="text-lg font-bold">{t('zugriff.titel')}</h1>
-          <p className="mt-2 text-sm text-muted">{t('zugriff.hinweis')}</p>
+          <p className="mt-2 text-sm text-fg-muted">{t('zugriff.hinweis')}</p>
         </Card>
       </main>
     );
@@ -33,17 +33,17 @@ export default async function AdminLayout({
     <div className="mx-auto max-w-6xl p-4 pb-24">
       <header className="mb-4 flex flex-wrap items-center justify-between gap-2 pt-2">
         <div>
-          <p className="text-xs text-muted">{t('titel')}</p>
+          <p className="text-xs text-fg-muted">{t('titel')}</p>
           <h1 className="text-2xl font-extrabold">{t('untertitel')}</h1>
         </div>
-        <p className="rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-muted">
+        <p className="rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-fg-muted">
           {sitzung.profil.vorname} {sitzung.profil.nachname} ·{' '}
           <span className="font-semibold text-fg">{t(`rollen.${sitzung.profil.rolle}`)}</span>
         </p>
       </header>
 
       {!istAdmin && (
-        <p className="mb-4 rounded-xl border border-border bg-surface px-3 py-2 text-sm text-muted">
+        <p className="mb-4 rounded-xl border border-border bg-surface px-3 py-2 text-sm text-fg-muted">
           {t('zugriff.eingeschraenktVerwaltung')}
         </p>
       )}

@@ -174,6 +174,15 @@
         "beschwerdeTitel": "Şikâyet hakkı",
         "beschwerdeText": "Verilerinizin işlenmesinin veri koruma hukukunu ihlal ettiğini düşünüyorsanız, özellikle ikamet ettiğiniz veya çalıştığınız AB üye devletinde bir veri koruma denetim makamına şikâyette bulunma hakkına sahipsiniz."
       }
+    },
+    "darstellung": {
+      "titel": "Görünüm",
+      "system": "Sistem",
+      "hell": "Açık",
+      "dunkel": "Koyu"
+    },
+    "sprung": {
+      "label": "İçeriğe geç"
     }
   },
   "topic": {

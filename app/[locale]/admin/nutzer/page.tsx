@@ -69,11 +69,11 @@ export default async function NutzerListePage({
         <div className="flex flex-wrap gap-2">
           {filter.kohorte && (
             <Link href={`/${locale}/admin/nutzer/kohorte/${filter.kohorte}/drucken`}>
-              <Button variant="soft">{t('nutzer.kohorteDrucken')}</Button>
+              <Button variante="sekundaer">{t('nutzer.kohorteDrucken')}</Button>
             </Link>
           )}
           <Link href={`/${locale}/admin/nutzer/neu`}>
-            <Button variant="primary">{t('nutzer.anlegen')}</Button>
+            <Button variante="primary">{t('nutzer.anlegen')}</Button>
           </Link>
         </div>
       </div>
@@ -90,7 +90,7 @@ export default async function NutzerListePage({
 
       {!error && nutzer.length === 0 && (
         <Card>
-          <p className="text-sm text-muted">{t('nutzer.leer')}</p>
+          <p className="text-sm text-fg-muted">{t('nutzer.leer')}</p>
         </Card>
       )}
 
@@ -98,7 +98,7 @@ export default async function NutzerListePage({
         <Card className="overflow-x-auto p-0">
           <table className="w-full min-w-[560px] border-collapse text-start text-sm">
             <thead>
-              <tr className="border-b border-border text-start text-xs uppercase tracking-wide text-muted">
+              <tr className="border-b border-border text-start text-xs uppercase tracking-wide text-fg-muted">
                 <th className="px-4 py-3 text-start font-semibold">{t('nutzer.spalte.name')}</th>
                 <th className="px-4 py-3 text-start font-semibold">{t('nutzer.spalte.benutzername')}</th>
                 <th className="px-4 py-3 text-start font-semibold">{t('nutzer.spalte.rolle')}</th>
@@ -109,11 +109,11 @@ export default async function NutzerListePage({
               {nutzer.map((n) => (
                 <tr key={n.id} className="border-b border-border last:border-0 hover:bg-bg">
                   <td className="px-4 py-3">
-                    <Link href={`/${locale}/admin/nutzer/${n.id}`} className="font-semibold text-accent underline-offset-2 hover:underline">
+                    <Link href={`/${locale}/admin/nutzer/${n.id}`} className="font-semibold text-primary underline-offset-2 hover:underline">
                       {n.vorname} {n.nachname}
                     </Link>
                   </td>
-                  <td className="px-4 py-3 text-muted">{n.benutzername}</td>
+                  <td className="px-4 py-3 text-fg-muted">{n.benutzername}</td>
                   <td className="px-4 py-3">{t(`rollen.${n.rolle}`)}</td>
                   <td className="px-4 py-3">
                     <KontoStatusBadge aktiv={n.aktiv} label={n.aktiv ? t('nutzer.aktiv') : t('nutzer.inaktiv')} />

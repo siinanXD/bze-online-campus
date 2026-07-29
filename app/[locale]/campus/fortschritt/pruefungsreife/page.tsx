@@ -17,7 +17,7 @@ export default async function PruefungsreifePage({
   if (!user) {
     return (
       <main className="mx-auto max-w-2xl p-4">
-        <p className="text-muted">{t('nichtAngemeldet')}</p>
+        <p className="text-fg-muted">{t('nichtAngemeldet')}</p>
       </main>
     );
   }
@@ -28,14 +28,14 @@ export default async function PruefungsreifePage({
     <main className="mx-auto max-w-2xl space-y-4 p-4">
       <Link
         href={`/${locale}/campus/fortschritt`}
-        className="touchable inline-flex min-h-12 items-center text-sm font-semibold text-accent underline-offset-4 hover:underline"
+        className="touchable inline-flex min-h-12 items-center text-sm font-semibold text-primary underline-offset-4 hover:underline"
       >
         {t('zurueck')}
       </Link>
       <h1 className="text-2xl font-extrabold">{t('titel')}</h1>
-      <p className="text-sm text-muted">{t('untertitel')}</p>
+      <p className="text-sm text-fg-muted">{t('untertitel')}</p>
 
-      <Card className="border-accent/40 bg-accent/5" role="note">
+      <Card className="border-primary/40 bg-primary/5" role="note">
         <p className="flex gap-2 text-sm font-medium">
           <span aria-hidden="true">ℹ</span>
           <span>{t('kammerhinweis')}</span>
@@ -85,7 +85,7 @@ export default async function PruefungsreifePage({
 function Kriterium({ ok, label }: { ok: boolean; label: string }) {
   return (
     <li className="flex items-start gap-2" role="status">
-      <span aria-hidden="true" className={ok ? 'text-status-fertig' : 'text-muted'}>
+      <span aria-hidden="true" className={ok ? 'text-status-fertig' : 'text-fg-muted'}>
         {ok ? '✓' : '○'}
       </span>
       <span>{label}</span>

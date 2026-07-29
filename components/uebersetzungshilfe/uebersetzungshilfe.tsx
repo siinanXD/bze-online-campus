@@ -82,7 +82,7 @@ export function Uebersetzungshilfe({
         aria-controls={regionId}
         className={cn(
           'touchable mt-2 inline-flex items-center gap-1.5 rounded-lg px-2 py-2',
-          'text-sm font-semibold text-accent underline-offset-2 hover:underline',
+          'text-sm font-semibold text-primary underline-offset-2 hover:underline',
         )}
       >
         <span aria-hidden="true">{offen ? '▾' : '▸'}</span>
@@ -97,15 +97,15 @@ export function Uebersetzungshilfe({
           lang={locale}
           className="mt-2 rounded-xl border-s-2 border-border bg-surface/60 px-3 py-2"
         >
-          <p className="mb-1 text-xs font-bold uppercase tracking-wide text-muted">
+          <p className="mb-1 text-xs font-bold uppercase tracking-wide text-fg-muted">
             {t('uebersetzungLabel')}
           </p>
           {hatUebersetzung ? (
             <p className="text-base leading-relaxed">{uebersetzung}</p>
           ) : (
-            <p className="text-sm italic text-muted">{t('nichtVerfuegbar')}</p>
+            <p className="text-sm italic text-fg-muted">{t('nichtVerfuegbar')}</p>
           )}
-          <p className="mt-2 inline-flex items-center gap-1 text-xs text-muted">
+          <p className="mt-2 inline-flex items-center gap-1 text-xs text-fg-muted">
             <span aria-hidden="true">ℹ</span>
             {t('hinweis')}
           </p>

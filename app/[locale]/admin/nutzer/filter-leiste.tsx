@@ -26,7 +26,7 @@ export function FilterLeiste({ kohorten }: { kohorten: { id: string; bezeichnung
   return (
     <div className="space-y-3">
       <div>
-        <label htmlFor="nutzer-suche" className="mb-1 block text-xs font-semibold text-muted">
+        <label htmlFor="nutzer-suche" className="mb-1 block text-xs font-semibold text-fg-muted">
           {t('nutzer.suche')}
         </label>
         <input
@@ -35,7 +35,7 @@ export function FilterLeiste({ kohorten }: { kohorten: { id: string; bezeichnung
           defaultValue={params.get('q') ?? ''}
           placeholder={t('nutzer.suchePlatzhalter')}
           onChange={(e) => aktualisiere('q', e.currentTarget.value || null)}
-          className="touchable w-full rounded-xl border border-border bg-surface px-3 py-2 text-[15px] text-fg placeholder:text-muted"
+          className="touchable w-full rounded-xl border border-border bg-surface px-3 py-2 text-[15px] text-fg placeholder:text-fg-muted"
         />
       </div>
 

@@ -52,7 +52,7 @@ export default async function Ergebnis({ params }: { params: Promise<{ locale: s
       {gesamt == null ? (
         <Card>
           <p className="font-semibold">{t('freitextOffenTitel')}</p>
-          <p className="mt-1 text-muted">{t('freitextOffenText')}</p>
+          <p className="mt-1 text-fg-muted">{t('freitextOffenText')}</p>
           <p className="mt-3 text-sm">{t('mcVorlaeufig', { erreicht: Number(erg.mc_punkte ?? 0).toFixed(1) })}</p>
         </Card>
       ) : (
@@ -65,19 +65,19 @@ export default async function Ergebnis({ params }: { params: Promise<{ locale: s
             <p className={erg.bestanden ? 'font-semibold text-status-fertig' : 'font-semibold text-status-falsch'}>
               {erg.bestanden ? '✓ ' + t('bestanden') : '✕ ' + t('nichtBestanden')}
             </p>
-            <p className="text-sm text-muted">{t('von100', { punkte: Number(gesamt).toFixed(1) })}</p>
+            <p className="text-sm text-fg-muted">{t('von100', { punkte: Number(gesamt).toFixed(1) })}</p>
           </div>
         </Card>
       )}
 
       {proBereich.size > 0 && (
         <Card>
-          <h2 className="mb-2 text-sm font-bold uppercase tracking-wide text-accent">{t('nachBereich')}</h2>
+          <h2 className="mb-2 text-sm font-bold uppercase tracking-wide text-primary">{t('nachBereich')}</h2>
           <ul className="space-y-1.5">
             {[...proBereich.entries()].map(([name, s]) => (
               <li key={name} className="flex items-center justify-between text-sm">
                 <span>{name}</span>
-                <span className="tabular-nums text-muted">{s.richtig}/{s.gesamt}</span>
+                <span className="tabular-nums text-fg-muted">{s.richtig}/{s.gesamt}</span>
               </li>
             ))}
           </ul>
@@ -86,12 +86,12 @@ export default async function Ergebnis({ params }: { params: Promise<{ locale: s
 
       {schwaechste.length > 0 && (
         <Card>
-          <h2 className="mb-2 text-sm font-bold uppercase tracking-wide text-accent">{t('schwaechste')}</h2>
+          <h2 className="mb-2 text-sm font-bold uppercase tracking-wide text-primary">{t('schwaechste')}</h2>
           <ul className="space-y-1.5">
             {schwaechste.map((th) => (
               <li key={th.name} className="flex items-center justify-between text-sm">
                 <span>{th.name}</span>
-                <span className="tabular-nums text-muted">{Math.round(th.quote * 100)}%</span>
+                <span className="tabular-nums text-fg-muted">{Math.round(th.quote * 100)}%</span>
               </li>
             ))}
           </ul>

@@ -9,10 +9,10 @@ export type BudgetStatus = 'ok' | 'warnung' | 'ueberschritten' | 'keinBudget';
  * Akzentflächen (neutral → Umriss → gefüllt).
  */
 const MAP: Record<BudgetStatus, { symbol: string; klasse: string }> = {
-  ok: { symbol: '✓', klasse: 'border-border bg-surface text-muted' },
-  warnung: { symbol: '!', klasse: 'border-accent bg-surface text-accent' },
-  ueberschritten: { symbol: '‼', klasse: 'border-accent bg-accent text-accent-fg' },
-  keinBudget: { symbol: '–', klasse: 'border-border bg-surface text-muted' },
+  ok: { symbol: '✓', klasse: 'border-border bg-surface text-fg-muted' },
+  warnung: { symbol: '!', klasse: 'border-primary bg-surface text-primary' },
+  ueberschritten: { symbol: '‼', klasse: 'border-primary bg-primary text-fg-onPrimary' },
+  keinBudget: { symbol: '–', klasse: 'border-border bg-surface text-fg-muted' },
 };
 
 export function BudgetBadge({ status, label }: { status: BudgetStatus; label: string }) {

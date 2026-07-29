@@ -12,10 +12,10 @@ export function Quellenliste({ quellen }: { quellen: FachkundeQuelle[] }) {
   if (quellen.length === 0) return null;
   return (
     <Card className="mt-6">
-      <h2 className="mb-3 text-sm font-bold uppercase tracking-wide text-accent">
+      <h2 className="mb-3 text-sm font-bold uppercase tracking-wide text-primary">
         {t('lerneinheit.quellenTitel')}
       </h2>
-      <ul className="space-y-2 text-sm text-muted">
+      <ul className="space-y-2 text-sm text-fg-muted">
         {quellen.map((quelle, i) => (
           <li key={`${quelle.titel}-${i}`}>
             <span className="font-semibold text-fg">{quelle.titel}</span>

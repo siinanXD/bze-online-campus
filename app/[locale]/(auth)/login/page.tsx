@@ -10,9 +10,9 @@ export default async function LoginSeite({ params }: { params: Promise<{ locale:
   return (
     <>
       <header className="text-center">
-        <p className="text-xs text-muted">{tApp('traeger')}</p>
+        <p className="text-xs text-fg-muted">{tApp('traeger')}</p>
         <h1 className="text-2xl font-extrabold">{t('titel')}</h1>
-        <p className="mt-1 text-muted">{t('untertitel')}</p>
+        <p className="mt-1 text-fg-muted">{t('untertitel')}</p>
       </header>
       <Card>
         <LoginForm locale={locale} />

@@ -29,7 +29,7 @@ export function FragenRunner({ queue }: { queue: LernFrage[] }) {
     return (
       <Card>
         <h2 className="text-lg font-bold">{t('fertig.titel')}</h2>
-        <p className="mt-1 text-muted">{t('fertig.zusammenfassung', { richtig: richtigZahl, gesamt: queue.length })}</p>
+        <p className="mt-1 text-fg-muted">{t('fertig.zusammenfassung', { richtig: richtigZahl, gesamt: queue.length })}</p>
       </Card>
     );
   }
@@ -57,7 +57,7 @@ export function FragenRunner({ queue }: { queue: LernFrage[] }) {
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between text-sm text-muted">
+      <div className="flex items-center justify-between text-sm text-fg-muted">
         <span>{t('fortschritt', { pos: i + 1, gesamt: queue.length })}</span>
         {feedback && (
           <StatusBadge
@@ -83,8 +83,8 @@ export function FragenRunner({ queue }: { queue: LernFrage[] }) {
                 aria-pressed={gewaehlt === o.id}
                 className={cn(
                   'touchable flex w-full items-start gap-2 rounded-xl border p-3 text-start text-[15px] transition',
-                  !beantwortet && gewaehlt === o.id && 'border-accent ring-2 ring-accent',
-                  !beantwortet && gewaehlt !== o.id && 'border-border hover:border-accent',
+                  !beantwortet && gewaehlt === o.id && 'border-primary ring-2 ring-primary',
+                  !beantwortet && gewaehlt !== o.id && 'border-border hover:border-primary',
                   istRichtige && 'border-status-fertig text-status-fertig',
                   istGewaehltFalsch && 'border-status-falsch text-status-falsch',
                   beantwortet && !istRichtige && !istGewaehltFalsch && 'border-border opacity-70',
@@ -106,13 +106,13 @@ export function FragenRunner({ queue }: { queue: LernFrage[] }) {
             <p className="font-semibold">
               {feedback!.ergebnis.ist_korrekt ? t('feedback.richtig') : t('feedback.falsch')}
             </p>
-            {feedback!.richtigErklaerung && <p className="text-muted">{feedback!.richtigErklaerung}</p>}
+            {feedback!.richtigErklaerung && <p className="text-fg-muted">{feedback!.richtigErklaerung}</p>}
             {!feedback!.ergebnis.ist_korrekt && fund && (
-              <p className="text-muted">
+              <p className="text-fg-muted">
                 {t('beleg')}: {fund.auflage ?? ''} {fund.seite ? `S. ${fund.seite}` : ''}{fund.tabelle ? `, ${fund.tabelle}` : ''}
               </p>
             )}
-            {feedback!.ergebnis.spacing_gesperrt && <p className="text-xs text-muted">{t('spacingHinweis')}</p>}
+            {feedback!.ergebnis.spacing_gesperrt && <p className="text-xs text-fg-muted">{t('spacingHinweis')}</p>}
           </div>
         )}
       </Card>

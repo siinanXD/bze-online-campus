@@ -54,9 +54,9 @@ export default async function CampusStart({ params }: { params: Promise<{ locale
             label={`${Math.round(empfehlung.anteil * 100)} %`}
           />
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-bold uppercase tracking-wide text-accent">{t('fortsetzenTitel')}</p>
+            <p className="text-sm font-bold uppercase tracking-wide text-primary">{t('fortsetzenTitel')}</p>
             <p className="font-semibold">{t('fortsetzenAlsNaechstes', { thema: empfehlung.bezeichnung })}</p>
-            <p className="text-sm text-muted">
+            <p className="text-sm text-fg-muted">
               {t('fortsetzenRest', {
                 offen: empfehlung.kernOffen,
                 prozent: Math.round(empfehlung.anteil * 100),
@@ -74,17 +74,17 @@ export default async function CampusStart({ params }: { params: Promise<{ locale
 
       <div className="grid grid-cols-2 gap-3">
         <Link href={`/${locale}/campus/lernen`} className="block">
-          <Card className="h-full"><p className="font-semibold">{t('lernen')}</p><p className="text-sm text-muted">{t('lernenInfo')}</p></Card>
+          <Card className="h-full"><p className="font-semibold">{t('lernen')}</p><p className="text-sm text-fg-muted">{t('lernenInfo')}</p></Card>
         </Link>
         <Link href={`/${locale}/campus/pruefung`} className="block">
-          <Card className="h-full"><p className="font-semibold">{t('pruefung')}</p><p className="text-sm text-muted">{t('pruefungInfo')}</p></Card>
+          <Card className="h-full"><p className="font-semibold">{t('pruefung')}</p><p className="text-sm text-fg-muted">{t('pruefungInfo')}</p></Card>
         </Link>
       </div>
 
       <Card>
-        <h2 className="mb-2 text-sm font-bold uppercase tracking-wide text-accent">{t('themen')}</h2>
+        <h2 className="mb-2 text-sm font-bold uppercase tracking-wide text-primary">{t('themen')}</h2>
         {themen.length === 0 ? (
-          <p className="text-sm text-muted">{t('keineThemen')}</p>
+          <p className="text-sm text-fg-muted">{t('keineThemen')}</p>
         ) : (
           <div className="flex flex-wrap gap-2">
             {themen.map(([id, name]) => (
@@ -99,10 +99,10 @@ export default async function CampusStart({ params }: { params: Promise<{ locale
       <Card className="flex items-center justify-between">
         <div>
           <p className="font-semibold">{t('topics')}</p>
-          <p className="text-sm text-muted">{t('topicsInfo')}</p>
+          <p className="text-sm text-fg-muted">{t('topicsInfo')}</p>
         </div>
         {themen[0] && (
-          <Link href={`/${locale}/campus/topic/${themen[0][0]}`}><Button variant="soft">{t('oeffnen')}</Button></Link>
+          <Link href={`/${locale}/campus/topic/${themen[0][0]}`}><Button variante="sekundaer">{t('oeffnen')}</Button></Link>
         )}
       </Card>
     </main>

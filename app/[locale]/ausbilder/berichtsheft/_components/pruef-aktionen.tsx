@@ -66,7 +66,7 @@ export function PruefAktionen({
         {kannBeanstanden && (
           <Button
             type="button"
-            variant="soft"
+            variante="sekundaer"
             className="min-h-12"
             disabled={pending}
             onClick={() => setBeanstandungOffen((o) => !o)}
@@ -77,7 +77,7 @@ export function PruefAktionen({
         {kannKorrigieren && (
           <Button
             type="button"
-            variant="ghost"
+            variante="leise"
             className="min-h-12"
             disabled={pending}
             onClick={() => setKorrekturOffen((o) => !o)}
@@ -87,7 +87,7 @@ export function PruefAktionen({
         )}
       </div>
 
-      {kannSignieren && <p className="text-xs text-muted">{t('signierenHinweis')}</p>}
+      {kannSignieren && <p className="text-xs text-fg-muted">{t('signierenHinweis')}</p>}
 
       {beanstandungOffen && (
         <div className="space-y-2 rounded-lg border border-status-falsch/40 p-3">
@@ -114,7 +114,7 @@ export function PruefAktionen({
 
       {korrekturOffen && (
         <div className="space-y-2 rounded-lg border border-border p-3">
-          <p className="text-xs text-muted">{t('korrigierenHinweis')}</p>
+          <p className="text-xs text-fg-muted">{t('korrigierenHinweis')}</p>
           {(['taetigkeiten', 'unterweisungen', 'berufsschulthemen'] as const).map((feld) => (
             <label key={feld} className="block text-sm">
               <span className="mb-1 block font-medium">{t(`feld.${feld}`)}</span>

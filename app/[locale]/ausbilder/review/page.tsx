@@ -133,12 +133,12 @@ export default async function AusbilderReviewSeite({
         <h1 className="text-2xl font-extrabold">{t('titel')}</h1>
         <Link
           href={`/${locale}/ausbilder`}
-          className="touchable text-sm font-semibold text-accent underline-offset-4 hover:underline"
+          className="touchable text-sm font-semibold text-primary underline-offset-4 hover:underline"
         >
           {t('zurueckCockpit')}
         </Link>
       </div>
-      <p className="text-muted">{t('untertitel')}</p>
+      <p className="text-fg-muted">{t('untertitel')}</p>
       <ReviewClient offeneVersuche={offeneVersuche} reviews={reviews} />
     </main>
   );

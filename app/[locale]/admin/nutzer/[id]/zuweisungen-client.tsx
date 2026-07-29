@@ -65,15 +65,15 @@ export function ZuweisungenClient({
   return (
     <div className="space-y-3">
       {zugewiesen.length === 0 ? (
-        <p className="text-sm text-muted">{leerText}</p>
+        <p className="text-sm text-fg-muted">{leerText}</p>
       ) : (
         <ul className="space-y-2">
           {zugewiesen.map((p) => (
             <li key={p.id} className="flex items-center justify-between gap-3 rounded-xl border border-border px-3 py-2">
               <span className="text-[15px]">
-                {p.vorname} {p.nachname} <span className="text-muted">· {p.benutzername}</span>
+                {p.vorname} {p.nachname} <span className="text-fg-muted">· {p.benutzername}</span>
               </span>
-              <Button variant="ghost" disabled={istPending} onClick={() => entfernen(p.id)}>
+              <Button variante="leise" disabled={istPending} onClick={() => entfernen(p.id)}>
                 {t('nutzer.entfernen')}
               </Button>
             </li>
@@ -84,7 +84,7 @@ export function ZuweisungenClient({
       {verfuegbar.length > 0 && (
         <div className="flex flex-wrap items-end gap-2 pt-2">
           <div className="flex-1 min-w-[200px]">
-            <label htmlFor={`zuweisen-${richtung}`} className="mb-1 block text-xs font-semibold text-muted">
+            <label htmlFor={`zuweisen-${richtung}`} className="mb-1 block text-xs font-semibold text-fg-muted">
               {auswahlText}
             </label>
             <select
@@ -101,7 +101,7 @@ export function ZuweisungenClient({
               ))}
             </select>
           </div>
-          <Button variant="primary" disabled={!ausgewaehlt || istPending} onClick={zuweisen}>
+          <Button variante="primary" disabled={!ausgewaehlt || istPending} onClick={zuweisen}>
             {t('nutzer.zuweisen')}
           </Button>
         </div>

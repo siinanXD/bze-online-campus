@@ -24,7 +24,7 @@ export function Header({ value = 0, profilHref }: HeaderProps) {
   return (
     <header className="sticky top-0 z-40 flex items-center justify-between gap-3 border-b border-border bg-surface/95 px-4 py-2.5 backdrop-blur">
       <div className="min-w-0">
-        <p className="truncate text-xs font-medium text-muted">{t('app.traeger')}</p>
+        <p className="truncate text-xs font-medium text-fg-muted">{t('app.traeger')}</p>
         <p className="truncate text-sm font-bold text-fg">{t('app.name')}</p>
       </div>
       <div className="flex items-center gap-3">
@@ -32,7 +32,7 @@ export function Header({ value = 0, profilHref }: HeaderProps) {
         <Link
           href={href}
           aria-label={t('shell.header.profil')}
-          className="touchable inline-flex items-center justify-center rounded-full border border-border bg-surface text-fg transition hover:border-accent hover:text-accent"
+          className="touchable inline-flex items-center justify-center rounded-full border border-border bg-surface text-fg transition hover:border-primary hover:text-primary"
         >
           <ProfilIcon />
         </Link>

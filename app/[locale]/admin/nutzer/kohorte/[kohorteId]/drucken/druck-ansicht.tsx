@@ -53,26 +53,26 @@ export function DruckAnsicht({
     <div className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-3 print:hidden">
         <h2 className="text-lg font-bold">{texte.titel}</h2>
-        <Button variant="primary" onClick={() => window.print()}>
+        <Button variante="primary" onClick={() => window.print()}>
           {texte.drucken}
         </Button>
       </div>
 
-      <p className="text-sm text-muted print:hidden">{texte.hinweis}</p>
+      <p className="text-sm text-fg-muted print:hidden">{texte.hinweis}</p>
 
       <Card className="print:border-0 print:p-0 print:shadow-none">
         <header className="mb-4 hidden print:block">
-          <p className="text-sm text-muted">{texte.traeger}</p>
+          <p className="text-sm text-fg-muted">{texte.traeger}</p>
           <h1 className="text-xl font-extrabold">{kohorteBezeichnung}</h1>
         </header>
         <h2 className="mb-3 text-base font-bold print:hidden">{kohorteBezeichnung}</h2>
 
         {mitglieder.length === 0 ? (
-          <p className="text-sm text-muted">{texte.keineMitglieder}</p>
+          <p className="text-sm text-fg-muted">{texte.keineMitglieder}</p>
         ) : (
           <table className="w-full border-collapse text-start text-sm">
             <thead>
-              <tr className="border-b border-border text-start text-xs uppercase tracking-wide text-muted">
+              <tr className="border-b border-border text-start text-xs uppercase tracking-wide text-fg-muted">
                 <th className="px-2 py-2 text-start font-semibold">{texte.spalteName}</th>
                 <th className="px-2 py-2 text-start font-semibold">{texte.spalteBenutzername}</th>
                 <th className="px-2 py-2 text-start font-semibold">{texte.spaltePasswort}</th>

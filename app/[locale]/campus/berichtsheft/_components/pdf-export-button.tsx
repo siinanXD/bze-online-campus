@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from 'react';
 import { useTranslations } from 'next-intl';
-import { Button } from '@bze/ui';
+import { Button, type ButtonVariante } from '@bze/ui';
 import { holeBerichtsheftHtml } from '../_lib/actions';
 
 /**
@@ -11,10 +11,10 @@ import { holeBerichtsheftHtml } from '../_lib/actions';
  */
 export function PdfExportButton({
   nachweisId,
-  variant = 'soft',
+  variante = 'sekundaer',
 }: {
   nachweisId?: string;
-  variant?: 'primary' | 'soft' | 'ghost';
+  variante?: ButtonVariante;
 }) {
   const t = useTranslations('berichtsheft');
   const [fehler, setFehler] = useState<string | null>(null);
@@ -24,7 +24,7 @@ export function PdfExportButton({
     <span className="inline-flex flex-col items-start gap-1">
       <Button
         type="button"
-        variant={variant}
+        variante={variante}
         className="min-h-12"
         disabled={pending}
         onClick={() => {

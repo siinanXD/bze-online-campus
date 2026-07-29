@@ -121,7 +121,7 @@ export function SprachwahlForm({ locale }: { locale: string }) {
           onChange={(ereignis) => setBeitrittscode(ereignis.target.value.toUpperCase())}
           className="touchable w-full rounded-xl border border-border bg-bg px-3 text-[15px] uppercase tracking-wide text-fg"
         />
-        <p className="mt-1 text-start text-xs text-muted">{t('beitrittscodeHinweis')}</p>
+        <p className="mt-1 text-start text-xs text-fg-muted">{t('beitrittscodeHinweis')}</p>
       </div>
 
       {hinweis && (
@@ -143,7 +143,7 @@ export function SprachwahlForm({ locale }: { locale: string }) {
         </Button>
         <Button
           type="button"
-          variant="ghost"
+          variante="leise"
           className="w-full"
           disabled={pending}
           onClick={() => weiterZuCampus(sprache)}

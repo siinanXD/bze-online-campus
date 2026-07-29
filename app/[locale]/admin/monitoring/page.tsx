@@ -159,7 +159,7 @@ export default async function MonitoringPage({
     { label: t('kennzahl.durchschnitt'), wert: ms(kennzahlen.avg_latenz_ms) },
   ];
 
-  const tabellenKopf = 'px-4 py-3 text-start text-xs font-semibold uppercase tracking-wide text-muted';
+  const tabellenKopf = 'px-4 py-3 text-start text-xs font-semibold uppercase tracking-wide text-fg-muted';
   const zelle = 'px-4 py-3';
   const zahlZelle = 'px-4 py-3 text-end tabular-nums';
 
@@ -167,10 +167,10 @@ export default async function MonitoringPage({
     <div className="space-y-4">
       <div>
         <h2 className="text-lg font-bold">{t('titel')}</h2>
-        <p className="mt-1 text-sm text-muted">{t('einleitung')}</p>
+        <p className="mt-1 text-sm text-fg-muted">{t('einleitung')}</p>
       </div>
 
-      <p className="rounded-xl border border-border bg-surface px-3 py-2 text-xs text-muted">
+      <p className="rounded-xl border border-border bg-surface px-3 py-2 text-xs text-fg-muted">
         {t('hinweisLernfeedback')}
       </p>
 
@@ -188,12 +188,12 @@ export default async function MonitoringPage({
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
         {kennzahlKarten.map((k) => (
           <Card key={k.label} className="p-4">
-            <p className="text-xs text-muted">{k.label}</p>
+            <p className="text-xs text-fg-muted">{k.label}</p>
             <p className="mt-1 text-xl font-extrabold tabular-nums">{k.wert}</p>
           </Card>
         ))}
       </div>
-      <p className="text-xs text-muted">{t('cacheHinweis')}</p>
+      <p className="text-xs text-fg-muted">{t('cacheHinweis')}</p>
 
       {/* Budget */}
       <Card className="overflow-x-auto p-0">
@@ -201,7 +201,7 @@ export default async function MonitoringPage({
           <h3 className="text-base font-bold">{t('budget.titel')}</h3>
         </div>
         {budget.length === 0 ? (
-          <p className="p-4 text-sm text-muted">{t('budget.leer')}</p>
+          <p className="p-4 text-sm text-fg-muted">{t('budget.leer')}</p>
         ) : (
           <table className="mt-2 w-full min-w-[560px] border-collapse text-sm">
             <thead>
@@ -241,7 +241,7 @@ export default async function MonitoringPage({
           <h3 className="text-base font-bold">{t('trend.titel')}</h3>
         </div>
         {trend.length === 0 ? (
-          <p className="p-4 text-sm text-muted">{t('leer')}</p>
+          <p className="p-4 text-sm text-fg-muted">{t('leer')}</p>
         ) : (
           <table className="mt-2 w-full min-w-[560px] border-collapse text-sm">
             <thead>
@@ -275,7 +275,7 @@ export default async function MonitoringPage({
             <h3 className="text-base font-bold">{t('nachFunktion.titel')}</h3>
           </div>
           {funktionen.length === 0 ? (
-            <p className="p-4 text-sm text-muted">{t('leer')}</p>
+            <p className="p-4 text-sm text-fg-muted">{t('leer')}</p>
           ) : (
             <table className="mt-2 w-full min-w-[420px] border-collapse text-sm">
               <thead>
@@ -306,7 +306,7 @@ export default async function MonitoringPage({
             <h3 className="text-base font-bold">{t('nachTraeger.titel')}</h3>
           </div>
           {traeger.length === 0 ? (
-            <p className="p-4 text-sm text-muted">{t('leer')}</p>
+            <p className="p-4 text-sm text-fg-muted">{t('leer')}</p>
           ) : (
             <table className="mt-2 w-full min-w-[420px] border-collapse text-sm">
               <thead>
@@ -335,10 +335,10 @@ export default async function MonitoringPage({
         <Card className="overflow-x-auto p-0">
           <div className="p-4 pb-0">
             <h3 className="text-base font-bold">{t('nachKohorte.titel')}</h3>
-            <p className="mt-1 text-xs text-muted">{t('nachKohorte.hinweis')}</p>
+            <p className="mt-1 text-xs text-fg-muted">{t('nachKohorte.hinweis')}</p>
           </div>
           {kohorten.length === 0 ? (
-            <p className="p-4 text-sm text-muted">{t('leer')}</p>
+            <p className="p-4 text-sm text-fg-muted">{t('leer')}</p>
           ) : (
             <table className="mt-2 w-full min-w-[420px] border-collapse text-sm">
               <thead>
@@ -367,7 +367,7 @@ export default async function MonitoringPage({
             <h3 className="text-base font-bold">{t('topNutzer.titel')}</h3>
           </div>
           {nutzer.length === 0 ? (
-            <p className="p-4 text-sm text-muted">{t('leer')}</p>
+            <p className="p-4 text-sm text-fg-muted">{t('leer')}</p>
           ) : (
             <table className="mt-2 w-full min-w-[420px] border-collapse text-sm">
               <thead>

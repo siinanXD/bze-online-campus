@@ -74,7 +74,7 @@ export function BottomNav({ berichtsheftAktiv = true, className }: BottomNavProp
                 aria-current={aktiv ? 'page' : undefined}
                 className={cn(
                   'touchable flex min-h-[48px] flex-col items-center justify-center gap-0.5 px-1 py-2 text-[11px] leading-tight transition',
-                  aktiv ? 'font-bold text-accent' : 'font-medium text-muted hover:text-fg',
+                  aktiv ? 'font-bold text-primary' : 'font-medium text-fg-muted hover:text-fg',
                 )}
               >
                 <Icon active={aktiv} />

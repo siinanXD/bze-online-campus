@@ -8,7 +8,7 @@ import type { NachweisStatus } from '@bze/core/nachweis';
  */
 const MAP: Record<NachweisStatus, { symbol: string; token: string }> = {
   entwurf: { symbol: '○', token: 'text-status-neu border-status-neu' },
-  eingereicht: { symbol: '➤', token: 'text-accent border-accent' },
+  eingereicht: { symbol: '➤', token: 'text-primary border-primary' },
   signiert_teilnehmer: { symbol: '✍', token: 'text-status-teil border-status-teil' },
   signiert_ausbilder: { symbol: '✓', token: 'text-status-fertig border-status-fertig' },
   beanstandet: { symbol: '✕', token: 'text-status-falsch border-status-falsch' },

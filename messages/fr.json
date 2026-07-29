@@ -174,6 +174,15 @@
         "beschwerdeTitel": "Droit de réclamation",
         "beschwerdeText": "Si vous estimez que le traitement de vos données enfreint le droit de la protection des données, vous avez le droit d’introduire une réclamation auprès d’une autorité de contrôle, notamment dans l’État membre de l’UE de votre résidence ou de votre lieu de travail."
       }
+    },
+    "darstellung": {
+      "titel": "Apparence",
+      "system": "Système",
+      "hell": "Clair",
+      "dunkel": "Sombre"
+    },
+    "sprung": {
+      "label": "Aller au contenu"
     }
   },
   "topic": {

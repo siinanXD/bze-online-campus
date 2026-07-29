@@ -31,7 +31,7 @@ export default async function AuditLogPage({
     return (
       <Card>
         <h2 className="text-lg font-bold">{t('audit.titel')}</h2>
-        <p className="mt-2 text-sm text-muted">{t('audit.nurAdmin')}</p>
+        <p className="mt-2 text-sm text-fg-muted">{t('audit.nurAdmin')}</p>
       </Card>
     );
   }
@@ -96,7 +96,7 @@ export default async function AuditLogPage({
 
       {!error && eintraege.length === 0 && (
         <Card>
-          <p className="text-sm text-muted">{t('audit.leer')}</p>
+          <p className="text-sm text-fg-muted">{t('audit.leer')}</p>
         </Card>
       )}
 
@@ -104,7 +104,7 @@ export default async function AuditLogPage({
         <Card className="overflow-x-auto p-0">
           <table className="w-full min-w-[720px] border-collapse text-start text-sm">
             <thead>
-              <tr className="border-b border-border text-start text-xs uppercase tracking-wide text-muted">
+              <tr className="border-b border-border text-start text-xs uppercase tracking-wide text-fg-muted">
                 <th className="px-4 py-3 text-start font-semibold">{t('audit.spalte.zeitpunkt')}</th>
                 <th className="px-4 py-3 text-start font-semibold">{t('audit.spalte.akteur')}</th>
                 <th className="px-4 py-3 text-start font-semibold">{t('audit.spalte.aktion')}</th>
@@ -117,18 +117,18 @@ export default async function AuditLogPage({
                 const akteur = e.akteur_id ? akteure.get(e.akteur_id) : undefined;
                 return (
                   <tr key={e.id} className="border-b border-border align-top last:border-0 hover:bg-bg">
-                    <td className="whitespace-nowrap px-4 py-3 text-muted">{formatiereDatum(e.created_at)}</td>
+                    <td className="whitespace-nowrap px-4 py-3 text-fg-muted">{formatiereDatum(e.created_at)}</td>
                     <td className="px-4 py-3">
                       {akteur ? `${akteur.vorname ?? ''} ${akteur.nachname ?? ''}`.trim() || akteur.benutzername : t('audit.systemAkteur')}
                     </td>
                     <td className="px-4 py-3 font-semibold">{e.aktion}</td>
-                    <td className="px-4 py-3 text-muted">
+                    <td className="px-4 py-3 text-fg-muted">
                       {e.ziel_typ ?? '—'}
                       {e.ziel_id ? <span className="block font-mono text-xs">{e.ziel_id}</span> : null}
                     </td>
                     <td className="px-4 py-3">
                       {e.details ? (
-                        <pre className="max-w-xs overflow-x-auto whitespace-pre-wrap break-words text-xs text-muted">
+                        <pre className="max-w-xs overflow-x-auto whitespace-pre-wrap break-words text-xs text-fg-muted">
                           {JSON.stringify(e.details)}
                         </pre>
                       ) : (
@@ -152,7 +152,7 @@ export default async function AuditLogPage({
               aria-current={s === seite ? 'page' : undefined}
               className={
                 s === seite
-                  ? 'touchable inline-flex items-center justify-center rounded-xl border border-accent bg-accent px-3 text-sm font-semibold text-accent-fg'
+                  ? 'touchable inline-flex items-center justify-center rounded-xl border border-primary bg-primary px-3 text-sm font-semibold text-fg-onPrimary'
                   : 'touchable inline-flex items-center justify-center rounded-xl border border-border bg-surface px-3 text-sm font-semibold text-fg hover:bg-bg'
               }
             >

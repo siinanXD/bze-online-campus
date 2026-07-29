@@ -117,7 +117,7 @@ export function PruefungRunner({
     <main className="mx-auto max-w-2xl p-4 pb-28">
       {/* Kopf: Timer + Fortschritt */}
       <div className="sticky top-0 z-10 -mx-4 mb-3 flex items-center justify-between border-b border-border bg-bg px-4 py-2">
-        <span className="text-sm text-muted">{t('frageXvonN', { pos: idx + 1, n: fragen.length })}</span>
+        <span className="text-sm text-fg-muted">{t('frageXvonN', { pos: idx + 1, n: fragen.length })}</span>
         <span className={cn('rounded-full border px-3 py-1 text-sm font-bold tabular-nums',
           knapp ? 'border-status-falsch text-status-falsch' : 'border-border text-fg')}
           role="timer" aria-live="off">
@@ -135,8 +135,8 @@ export function PruefungRunner({
               aria-current={i === idx ? 'true' : undefined}
               aria-label={t('zuFrage', { n: i + 1 }) + (done ? ' ✓' : '') + (mark ? ' ⚑' : '')}
               className={cn('relative h-9 w-9 rounded-md border text-xs font-semibold',
-                i === idx && 'ring-2 ring-accent',
-                done ? 'border-status-fertig text-status-fertig' : 'border-border text-muted')}>
+                i === idx && 'ring-2 ring-primary',
+                done ? 'border-status-fertig text-status-fertig' : 'border-border text-fg-muted')}>
               {i + 1}
               {mark && <span aria-hidden className="absolute -right-1 -top-1 text-[10px]">⚑</span>}
             </button>
@@ -146,10 +146,10 @@ export function PruefungRunner({
 
       <Card>
         <div className="mb-2 flex items-center justify-between">
-          <span className="text-xs font-semibold uppercase tracking-wide text-accent">
+          <span className="text-xs font-semibold uppercase tracking-wide text-primary">
             {frage.typ === 'mc' ? t('mc') : t('freitext')}
           </span>
-          <button type="button" onClick={toggleMark} className="touchable text-sm text-muted"
+          <button type="button" onClick={toggleMark} className="touchable text-sm text-fg-muted"
             aria-pressed={markiert.has(frage.id)}>
             {markiert.has(frage.id) ? t('markiertAn') : t('markieren')}
           </button>
@@ -162,7 +162,7 @@ export function PruefungRunner({
               <button key={o.id} type="button" onClick={() => setMc(o.id)}
                 aria-pressed={antworten[frage.id]?.option_id === o.id}
                 className={cn('touchable flex w-full items-start gap-2 rounded-xl border p-3 text-start text-[15px]',
-                  antworten[frage.id]?.option_id === o.id ? 'border-accent ring-2 ring-accent' : 'border-border hover:border-accent')}>
+                  antworten[frage.id]?.option_id === o.id ? 'border-primary ring-2 ring-primary' : 'border-border hover:border-primary')}>
                 <span aria-hidden className="mt-0.5 font-bold">
                   {antworten[frage.id]?.option_id === o.id ? '●' : '○'}
                 </span>
@@ -178,7 +178,7 @@ export function PruefungRunner({
               rows={6} lang="de"
               className="w-full rounded-xl border border-border bg-surface p-3 text-[15px]"
               placeholder={t('freitextPlatzhalter')} />
-            <p className="mt-1 text-xs text-muted">{t('freitextNurDeutsch')}</p>
+            <p className="mt-1 text-xs text-fg-muted">{t('freitextNurDeutsch')}</p>
           </div>
         )}
       </Card>
@@ -187,7 +187,7 @@ export function PruefungRunner({
 
       {/* Navigation */}
       <div className="mt-4 flex gap-2">
-        <Button variant="soft" className="flex-1" disabled={idx === 0} onClick={() => setIdx((n) => Math.max(0, n - 1))}>
+        <Button variante="sekundaer" className="flex-1" disabled={idx === 0} onClick={() => setIdx((n) => Math.max(0, n - 1))}>
           {t('zurueck')}
         </Button>
         {idx < fragen.length - 1 ? (
@@ -202,9 +202,9 @@ export function PruefungRunner({
         <div role="dialog" aria-modal="true" className="fixed inset-0 z-20 flex items-end justify-center bg-black/40 p-4 sm:items-center">
           <Card className="w-full max-w-md">
             <h2 className="text-lg font-bold">{t('abgabeTitel')}</h2>
-            <p className="mt-1 text-sm text-muted">{t('abgabeInfo', { beantwortet: anzahlBeantwortet, gesamt: fragen.length })}</p>
+            <p className="mt-1 text-sm text-fg-muted">{t('abgabeInfo', { beantwortet: anzahlBeantwortet, gesamt: fragen.length })}</p>
             <div className="mt-4 flex gap-2">
-              <Button variant="soft" className="flex-1" onClick={() => setDialog(false)} disabled={absenden}>{t('abbrechen')}</Button>
+              <Button variante="sekundaer" className="flex-1" onClick={() => setDialog(false)} disabled={absenden}>{t('abbrechen')}</Button>
               <Button className="flex-1" onClick={abgeben} disabled={absenden}>{absenden ? t('sende') : t('jetztAbgeben')}</Button>
             </div>
           </Card>

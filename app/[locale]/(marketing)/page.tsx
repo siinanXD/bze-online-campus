@@ -19,11 +19,11 @@ export default function Landingpage() {
         <h1 id="hero-titel" className="text-2xl font-extrabold text-fg sm:text-3xl">
           {t('heroTitel')}
         </h1>
-        <p className="text-base text-muted">{t('heroUntertitel')}</p>
+        <p className="text-base text-fg-muted">{t('heroUntertitel')}</p>
         <div className="flex flex-wrap gap-3 pt-2">
           <Link
             href={`/${locale}/login`}
-            className="touchable inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-[15px] font-semibold text-accent-fg transition hover:brightness-110"
+            className="touchable inline-flex items-center justify-center rounded-xl bg-primary px-5 py-3 text-[15px] font-semibold text-fg-onPrimary transition hover:brightness-110"
           >
             {t('ctaEinloggen')}
           </Link>
@@ -40,7 +40,7 @@ export default function Landingpage() {
         <h2 id="traeger-titel" className="text-lg font-bold text-fg">
           {t('traegerTitel')}
         </h2>
-        <p className="text-sm leading-relaxed text-muted">{t('traegerText')}</p>
+        <p className="text-sm leading-relaxed text-fg-muted">{t('traegerText')}</p>
       </section>
 
       <section id="nutzen" aria-labelledby="nutzen-titel" className="space-y-4 text-start">
@@ -50,8 +50,8 @@ export default function Landingpage() {
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {NUTZEN_KEYS.map((key) => (
             <Card key={key}>
-              <h3 className="mb-1.5 text-sm font-bold text-accent">{t(`nutzen.${key}.titel`)}</h3>
-              <p className="text-sm text-muted">{t(`nutzen.${key}.text`)}</p>
+              <h3 className="mb-1.5 text-sm font-bold text-primary">{t(`nutzen.${key}.titel`)}</h3>
+              <p className="text-sm text-fg-muted">{t(`nutzen.${key}.text`)}</p>
             </Card>
           ))}
         </div>
@@ -61,10 +61,10 @@ export default function Landingpage() {
         <h2 id="einstieg-titel" className="mb-1.5 text-lg font-bold text-fg">
           {t('einstiegTitel')}
         </h2>
-        <p className="mb-4 text-sm text-muted">{t('einstiegText')}</p>
+        <p className="mb-4 text-sm text-fg-muted">{t('einstiegText')}</p>
         <Link
           href={`/${locale}/login`}
-          className="touchable inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-[15px] font-semibold text-accent-fg transition hover:brightness-110"
+          className="touchable inline-flex items-center justify-center rounded-xl bg-primary px-5 py-3 text-[15px] font-semibold text-fg-onPrimary transition hover:brightness-110"
         >
           {t('ctaEinloggen')}
         </Link>

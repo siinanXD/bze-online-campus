@@ -46,7 +46,7 @@ export function PruefungsreifeForm({
           maxLength={2000}
         />
       </label>
-      <p className="text-xs text-muted">{t('bestaetigenHinweis')}</p>
+      <p className="text-xs text-fg-muted">{t('bestaetigenHinweis')}</p>
       {fehler && <p className="text-sm text-status-falsch" role="alert">{fehler}</p>}
       <Button type="submit" disabled={pending} className="min-h-12">
         {pending ? t('bestaetigenLaeuft') : t('bestaetigen')}

@@ -88,7 +88,7 @@ export function ReviewClient({
     <div className="space-y-6">
       <p
         role="note"
-        className="rounded-xl border border-border bg-surface px-3 py-2 text-sm text-muted"
+        className="rounded-xl border border-border bg-surface px-3 py-2 text-sm text-fg-muted"
       >
         <span aria-hidden="true" className="me-2">
           ℹ
@@ -105,13 +105,13 @@ export function ReviewClient({
       <section className="space-y-3">
         <h2 className="text-lg font-bold">{t('ausstehendTitel')}</h2>
         {offeneVersuche.length === 0 ? (
-          <p className="text-sm text-muted">{t('ausstehendLeer')}</p>
+          <p className="text-sm text-fg-muted">{t('ausstehendLeer')}</p>
         ) : (
           offeneVersuche.map((v) => (
             <Card key={v.id}>
               <div className="flex flex-wrap items-start justify-between gap-2">
                 <div>
-                  <p className="text-xs text-muted">{v.teilnehmer}</p>
+                  <p className="text-xs text-fg-muted">{v.teilnehmer}</p>
                   <p className="mt-1 font-semibold">{v.aufgabenstellung}</p>
                 </div>
                 <StatusBadge status="neu" label={t('statusOffen')} />
@@ -133,13 +133,13 @@ export function ReviewClient({
       <section className="space-y-3">
         <h2 className="text-lg font-bold">{t('queueTitel')}</h2>
         {reviews.length === 0 ? (
-          <p className="text-sm text-muted">{t('queueLeer')}</p>
+          <p className="text-sm text-fg-muted">{t('queueLeer')}</p>
         ) : (
           reviews.map((r) => (
             <Card key={r.id}>
               <div className="flex flex-wrap items-start justify-between gap-2">
                 <div>
-                  <p className="text-xs text-muted">{r.teilnehmer}</p>
+                  <p className="text-xs text-fg-muted">{r.teilnehmer}</p>
                   <p className="mt-1 font-semibold">{r.aufgabenstellung}</p>
                 </div>
                 <StatusBadge
@@ -168,7 +168,7 @@ export function ReviewClient({
                       {r.verbesserungshinweis}
                     </p>
                   )}
-                  <p className="text-muted">
+                  <p className="text-fg-muted">
                     {t('punkteConfidence', {
                       punkte: r.erzielte_punkte ?? '–',
                       confidence:

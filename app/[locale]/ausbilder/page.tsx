@@ -17,12 +17,12 @@ export default async function AusbilderCockpit({
     <main className="mx-auto max-w-6xl space-y-4 p-4">
       <div className="pt-2">
         <h1 className="text-2xl font-extrabold">{t('cockpit')}</h1>
-        <p className="text-sm text-muted">{t('hinweis')}</p>
+        <p className="text-sm text-fg-muted">{t('hinweis')}</p>
       </div>
 
       {zeilen.length === 0 ? (
         <Card>
-          <p className="text-sm text-muted">{t('keineTeilnehmer')}</p>
+          <p className="text-sm text-fg-muted">{t('keineTeilnehmer')}</p>
         </Card>
       ) : (
         <>
@@ -35,23 +35,23 @@ export default async function AusbilderCockpit({
                     <div>
                       <Link
                         href={`/${locale}/ausbilder/teilnehmer/${z.userId}`}
-                        className="touchable font-semibold text-accent underline-offset-4 hover:underline"
+                        className="touchable font-semibold text-primary underline-offset-4 hover:underline"
                       >
                         {z.vorname} {z.nachname}
                       </Link>
-                      <p className="text-xs text-muted">({z.benutzername})</p>
+                      <p className="text-xs text-fg-muted">({z.benutzername})</p>
                     </div>
                     <RisikoBadge aktivitaet={z.risikoAktivitaet} pruefungen={z.risikoPruefungen} />
                   </div>
                   <dl className="grid grid-cols-2 gap-2 text-sm">
-                    <div><dt className="text-muted">{t('spalten.fortschritt')}</dt><dd className="font-semibold">{z.fortschrittProzent} %</dd></div>
-                    <div><dt className="text-muted">{t('spalten.lernpunkte')}</dt><dd className="font-semibold">{z.lernpunkte}</dd></div>
-                    <div><dt className="text-muted">{t('spalten.fragenWoche')}</dt><dd className="font-semibold">{z.fragenProWoche}</dd></div>
-                    <div><dt className="text-muted">{t('spalten.quote')}</dt><dd className="font-semibold">{z.richtigFalschQuote != null ? `${z.richtigFalschQuote} %` : '—'}</dd></div>
-                    <div><dt className="text-muted">{t('spalten.pruefungen')}</dt><dd className="font-semibold">{z.pruefungenAnzahl}</dd></div>
-                    <div><dt className="text-muted">{t('spalten.letzteNote')}</dt><dd className="font-semibold">{z.letzteNote ?? '—'}</dd></div>
-                    <div><dt className="text-muted">{t('spalten.aktiveTage')}</dt><dd className="font-semibold">{z.aktiveLerntage}</dd></div>
-                    <div><dt className="text-muted">{t('spalten.letzteAktivitaet')}</dt><dd className="font-semibold">{z.letzteAktivitaet ? new Date(z.letzteAktivitaet).toLocaleDateString(locale) : '—'}</dd></div>
+                    <div><dt className="text-fg-muted">{t('spalten.fortschritt')}</dt><dd className="font-semibold">{z.fortschrittProzent} %</dd></div>
+                    <div><dt className="text-fg-muted">{t('spalten.lernpunkte')}</dt><dd className="font-semibold">{z.lernpunkte}</dd></div>
+                    <div><dt className="text-fg-muted">{t('spalten.fragenWoche')}</dt><dd className="font-semibold">{z.fragenProWoche}</dd></div>
+                    <div><dt className="text-fg-muted">{t('spalten.quote')}</dt><dd className="font-semibold">{z.richtigFalschQuote != null ? `${z.richtigFalschQuote} %` : '—'}</dd></div>
+                    <div><dt className="text-fg-muted">{t('spalten.pruefungen')}</dt><dd className="font-semibold">{z.pruefungenAnzahl}</dd></div>
+                    <div><dt className="text-fg-muted">{t('spalten.letzteNote')}</dt><dd className="font-semibold">{z.letzteNote ?? '—'}</dd></div>
+                    <div><dt className="text-fg-muted">{t('spalten.aktiveTage')}</dt><dd className="font-semibold">{z.aktiveLerntage}</dd></div>
+                    <div><dt className="text-fg-muted">{t('spalten.letzteAktivitaet')}</dt><dd className="font-semibold">{z.letzteAktivitaet ? new Date(z.letzteAktivitaet).toLocaleDateString(locale) : '—'}</dd></div>
                   </dl>
                 </Card>
               </li>
@@ -62,7 +62,7 @@ export default async function AusbilderCockpit({
           <Card className="hidden overflow-x-auto md:block">
             <table className="w-full min-w-[900px] text-left text-sm">
               <thead>
-                <tr className="border-b border-border text-xs uppercase tracking-wide text-muted">
+                <tr className="border-b border-border text-xs uppercase tracking-wide text-fg-muted">
                   <th className="py-2 pe-2 font-bold">{t('teilnehmer')}</th>
                   <th className="py-2 pe-2 font-bold">{t('spalten.fortschritt')}</th>
                   <th className="py-2 pe-2 font-bold">{t('spalten.lernpunkte')}</th>
@@ -81,11 +81,11 @@ export default async function AusbilderCockpit({
                     <td className="py-3 pe-2">
                       <Link
                         href={`/${locale}/ausbilder/teilnehmer/${z.userId}`}
-                        className="touchable font-semibold text-accent underline-offset-4 hover:underline"
+                        className="touchable font-semibold text-primary underline-offset-4 hover:underline"
                       >
                         {z.vorname} {z.nachname}
                       </Link>
-                      <div className="text-xs text-muted">{z.benutzername}</div>
+                      <div className="text-xs text-fg-muted">{z.benutzername}</div>
                     </td>
                     <td className="py-3 pe-2 font-semibold">{z.fortschrittProzent} %</td>
                     <td className="py-3 pe-2">{z.lernpunkte}</td>

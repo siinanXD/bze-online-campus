@@ -10,7 +10,7 @@ export default async function PasswortAendernSeite({ params }: { params: Promise
     <>
       <header className="text-center">
         <h1 className="text-2xl font-extrabold">{t('titel')}</h1>
-        <p className="mt-1 text-muted">{t('hinweis')}</p>
+        <p className="mt-1 text-fg-muted">{t('hinweis')}</p>
       </header>
       <Card>
         <PasswortForm locale={locale} />
