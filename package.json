@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "test": "node --import tsx --test packages/core/fortschritt/kaskade.test.ts",
+    "test": "node --import tsx --test packages/core/fortschritt/kaskade.test.ts packages/core/nachweis/nachweis.test.ts",
     "db:reset": "supabase db reset",
     "seed:generate": "python3 scripts/generate_seed.py"
   },

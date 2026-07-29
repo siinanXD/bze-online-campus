@@ -162,7 +162,7 @@ Parallele Worktrees dürfen nur die zugewiesene Nummer verwenden. Bestehende Mig
 | `0008` | AP-18 Ausbildungsnachweis | `0008_berichtsheft` |
 | `0009` | AP-12 Fragengenerator | `0009_fragengenerator` |
 | `0010` | AP-13 Wochenbericht | `0010_wochenbericht` |
-| `0011` | AP-15 PWA/Offline | `0011_pwa` (nur falls DB nötig) |
+| `0011` | AP-15 PWA/Offline | *nicht genutzt* (Offline-Outbox nur IndexedDB) |
 | `0012` | AP-16 Monitoring | `0012_monitoring` (nur falls DB nötig) |
 | `0013` | AP-14 i18n-Vollausbau | `0013_i18n` (nur falls DB nötig) |
 
