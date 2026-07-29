@@ -321,23 +321,75 @@ Lernstatus (bestehende Semantik beibehalten, Farbe NIE allein):
 
 --- 3.3 Schrift ---
 
-Inter als variable Font, SELBST GEHOSTET über next/font/local.
-Dateien: public/fonts/Inter-Variable.woff2 (Gewichte 400–700, subset latin,
-latin-ext, cyrillic für uk, arabic wird über Fallback bedient).
-Für Arabisch: 'Noto Sans Arabic' ebenfalls lokal, per unicode-range gebunden.
-Einbindung in app/[locale]/layout.tsx:
+Inter (variabel, Gewichte 400–700) und Noto Sans Arabic (variabel), beide
+SELBST GEHOSTET. Die Dateien liegen BEREITS im Repository unter public/fonts/
+und sind nach Unicode-Bereichen aufgeteilt, damit ein deutscher Nutzer nur
+48 KB lädt statt der vollen Schrift:
 
-  import localFont from 'next/font/local';
-  const inter = localFont({
-    src: '../../public/fonts/Inter-Variable.woff2',
-    variable: '--font-sans',
-    display: 'swap',
-    weight: '400 700',
-    fallback: ['system-ui', 'Segoe UI', 'Roboto', 'sans-serif'],
-  });
+  public/fonts/inter-latin.woff2         48 KB  de, en, fr (Grundbestand)
+  public/fonts/inter-latin-ext.woff2     85 KB  tr und Sonderzeichen
+  public/fonts/inter-cyrillic.woff2      19 KB  uk
+  public/fonts/noto-sans-arabic.woff2   166 KB  ar
+  public/fonts/Inter-LICENSE.txt                SIL Open Font License 1.1
+  public/fonts/NotoSansArabic-LICENSE.txt       SIL Open Font License 1.1
 
-Der Service-Worker cached /fonts/* mit Strategie cache-first, damit offline
-kein Fallback-Sprung entsteht.
+Einbindung als @font-face in app/globals.css, direkt nach den @tailwind-
+Direktiven. Der Browser lädt über unicode-range nur, was der angezeigte Text
+tatsächlich braucht. next/font/local wird hier NICHT verwendet, weil es keine
+unicode-range-Aufteilung unterstützt.
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('/fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,
+    U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,
+    U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('/fonts/inter-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,
+    U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,
+    U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('/fonts/inter-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+}
+@font-face {
+  font-family: 'Noto Sans Arabic';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('/fonts/noto-sans-arabic.woff2') format('woff2');
+  unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,
+    U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,
+    U+FE70-FE74,U+FE76-FEFC;
+}
+
+Die Variable --font-sans wird in app/globals.css gesetzt, nicht per JS:
+
+  :root { --font-sans: 'Inter', 'Noto Sans Arabic'; }
+
+Reihenfolge ist wichtig: Inter zuerst, Noto Sans Arabic als zweite Familie.
+Durch die unicode-range greift automatisch die passende Schrift je Zeichen.
+
+Der Service-Worker cached /fonts/*.woff2 mit Strategie cache-first und
+unbegrenzter Haltbarkeit (die Dateien sind versioniert unveränderlich),
+damit offline kein Fallback-Sprung entsteht.
+
+Die beiden LICENSE-Dateien bleiben im Repository und werden mit ausgeliefert;
+die SIL Open Font License verlangt das. Nicht löschen, nicht umbenennen.
 
 Typo-Skala (Name — Größe / Zeilenhöhe / Gewicht / Laufweite — Verwendung):
   display   2.25rem / 2.5rem  / 700 / -0.02em   Nur Marketing und Login-Titel
@@ -898,9 +950,11 @@ Arbeite streng in dieser Reihenfolge. Nach jedem Schritt müssen
 einzeln mit aussagekräftiger deutscher Commit-Nachricht.
 
  1. TOKENS
-    app/globals.css und tailwind.config.ts exakt wie in Abschnitt 3 ersetzen.
-    Inter und Noto Sans Arabic lokal einbinden, Service-Worker-Cache für
-    /fonts/* ergänzen. Inline-Skript gegen das Theme-Aufblitzen in
+    app/globals.css und tailwind.config.ts exakt wie in Abschnitt 3 ersetzen,
+    inklusive der vier @font-face-Blöcke. Die Schriftdateien liegen bereits
+    in public/fonts/ — nichts herunterladen, nichts über next/font einbinden.
+    Service-Worker-Cache für /fonts/*.woff2 ergänzen.
+    Inline-Skript gegen das Theme-Aufblitzen in
     app/[locale]/layout.tsx. dir-Attribut aus dem Locale ableiten.
     Vorhandene Verwendungen der alten Klassennamen (accent, bg, surface)
     projektweit auf die neuen Token migrieren — nichts darf danach noch
