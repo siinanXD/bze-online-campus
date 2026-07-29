@@ -75,6 +75,18 @@ Kaskadenlogik und Fortsetzen-Empfehlung liegen in `@bze/core/fortschritt` (keine
 
 Migration [`0007_ausbilder_pruefungsreife.sql`](../supabase/migrations/0007_ausbilder_pruefungsreife.sql): Policy `pruefungsreife_betreuer_update` — Ausbilder/Verwaltung dürfen `pruefungsreife` der betreuten Teilnehmer aktualisieren (Bestätigung + Kommentar). Cockpit liest `v_wochenaktivitaet_nutzer` / `v_fortschritt_beruf` / `v_kohorten_uebersicht`.
 
+## AP-16 — Betriebsüberwachung (Monitoring)
+
+Migration [`0012_monitoring.sql`](../supabase/migrations/0012_monitoring.sql): Aggregationen über `ki_aufrufe` als **SECURITY-INVOKER-Funktionen** (kein `security definer`, kein `service_role`), damit die RLS-Policy `ki_read` gilt — Admin sieht alles, Verwaltung ausschließlich den eigenen Träger.
+
+- `ki_kennzahlen(von, bis, funktion?)` — Aufrufe, Fehler, Cache-Treffer, Kosten, p95-/Ø-Latenz für ein Zeitfenster `[von, bis)`
+- `ki_trend(von, bis, granularitaet, funktion?)` — Kosten/Aufrufe je Tag/Woche/Monat (`date_trunc`)
+- `ki_nach_funktion(von, bis)`, `ki_nach_traeger(von, bis, funktion?)`, `ki_nach_kohorte(von, bis, funktion?)`
+- `ki_top_nutzer(von, bis, funktion?, limit=20)` — Top-Nutzer nach Kosten (Namen via `LEFT JOIN profiles`)
+- `ki_budget()` — Budgetstatus des laufenden Kalendermonats je Träger; Budget aus `traeger.einstellungen->>'monatsbudget_eur'` (Default 200)
+
+**Cache-Trefferquote ist eine dokumentierte Schätzung.** `ki_aufrufe` besitzt kein `aus_cache`-Flag; ein Treffer wird erkannt als erfolgreicher Aufruf mit `kosten_eur = 0`, ohne Token und mit einem Modell, das nicht `mock%` ist (Werte, die die Edge Functions bei Cache-Treffern schreiben). Ein exaktes Flag wäre ein späteres additives Feld in `ki_aufrufe` (Zuständigkeit AP-01/AP-09). Mehrfach-Kohortenmitgliedschaften eines Nutzers können Kosten in `ki_nach_kohorte` mehreren Kohorten zurechnen.
+
 ## Offen / Folgepakete
 
 - `themen`-Hierarchie wird ab AP-05/06 mit Lerneinheiten bespielt.

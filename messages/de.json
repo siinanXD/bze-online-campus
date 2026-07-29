@@ -228,7 +228,8 @@
     "nav": {
       "beschriftung": "Admin-Bereich",
       "nutzerverwaltung": "Nutzerverwaltung",
-      "auditLog": "Audit-Log"
+      "auditLog": "Audit-Log",
+      "monitoring": "Monitoring"
     },
     "rollen": {
       "teilnehmer": "Teilnehmer",
@@ -318,6 +319,84 @@
       },
       "systemAkteur": "System",
       "seitenNavigation": "Seiten"
+    },
+    "monitoring": {
+      "titel": "LLM-Betriebsüberwachung",
+      "einleitung": "Kosten, Auslastung und Qualität der KI-Aufrufe. Als Verwaltung siehst du ausschließlich den eigenen Träger.",
+      "hinweisLernfeedback": "KI-Ausgaben sind Lernfeedback, keine Prüfungsleistung.",
+      "zeitraum": {
+        "beschriftung": "Zeitraum",
+        "tag": "Täglich (30 Tage)",
+        "woche": "Wöchentlich (12 Wochen)",
+        "monat": "Monatlich (12 Monate)"
+      },
+      "funktion": {
+        "beschriftung": "Funktion",
+        "alle": "Alle Funktionen"
+      },
+      "anwenden": "Anwenden",
+      "kennzahl": {
+        "kosten": "Kosten gesamt",
+        "aufrufe": "Aufrufe",
+        "fehlerquote": "Fehlerquote",
+        "cacheQuote": "Cache-Trefferquote",
+        "p95": "p95-Latenz",
+        "durchschnitt": "Ø-Latenz"
+      },
+      "cacheHinweis": "Die Cache-Trefferquote ist eine Schätzung (erfolgreiche Aufrufe ohne Kosten und ohne Token).",
+      "budget": {
+        "titel": "Budget im laufenden Monat",
+        "traeger": "Träger",
+        "budget": "Monatsbudget",
+        "verbraucht": "Verbraucht",
+        "auslastung": "Auslastung",
+        "status": "Status",
+        "ok": "Im Rahmen",
+        "warnung": "Warnung",
+        "ueberschritten": "Überschritten",
+        "keinBudget": "Kein Budget hinterlegt",
+        "leer": "Keine Träger sichtbar."
+      },
+      "trend": {
+        "titel": "Kostenverlauf",
+        "bucket": "Zeitpunkt",
+        "kosten": "Kosten",
+        "aufrufe": "Aufrufe",
+        "fehler": "Fehler",
+        "cache": "Cache"
+      },
+      "nachFunktion": {
+        "titel": "Kosten nach Funktion",
+        "funktion": "Funktion",
+        "aufrufe": "Aufrufe",
+        "fehler": "Fehler",
+        "kosten": "Kosten"
+      },
+      "nachTraeger": {
+        "titel": "Kosten nach Träger",
+        "traeger": "Träger",
+        "aufrufe": "Aufrufe",
+        "fehler": "Fehler",
+        "kosten": "Kosten"
+      },
+      "nachKohorte": {
+        "titel": "Kosten nach Kohorte",
+        "kohorte": "Kohorte",
+        "aufrufe": "Aufrufe",
+        "kosten": "Kosten",
+        "hinweis": "Mehrfachmitgliedschaften können Kosten mehreren Kohorten zurechnen."
+      },
+      "topNutzer": {
+        "titel": "Top 20 Nutzer nach Kosten",
+        "nutzer": "Nutzer",
+        "aufrufe": "Aufrufe",
+        "fehler": "Fehler",
+        "kosten": "Kosten"
+      },
+      "leer": "Für diesen Zeitraum liegen keine KI-Aufrufe vor.",
+      "unbekannterNutzer": "Unbekannter Nutzer",
+      "ohneTraeger": "Ohne Träger",
+      "ohneKohorte": "Ohne Kohorte"
     },
     "fehler": {
       "kein_zugriff": "Kein Zugriff. Bitte erneut anmelden.",
