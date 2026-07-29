@@ -228,7 +228,8 @@
     "nav": {
       "beschriftung": "Admin-Bereich",
       "nutzerverwaltung": "Nutzerverwaltung",
-      "auditLog": "Audit-Log"
+      "auditLog": "Audit-Log",
+      "monitoring": "Monitoring"
     },
     "rollen": {
       "teilnehmer": "Teilnehmer",
@@ -318,6 +319,84 @@
       },
       "systemAkteur": "System",
       "seitenNavigation": "Seiten"
+    },
+    "monitoring": {
+      "titel": "LLM-Betriebsüberwachung",
+      "einleitung": "Kosten, Auslastung und Qualität der KI-Aufrufe. Als Verwaltung siehst du ausschließlich den eigenen Träger.",
+      "hinweisLernfeedback": "KI-Ausgaben sind Lernfeedback, keine Prüfungsleistung.",
+      "zeitraum": {
+        "beschriftung": "Zeitraum",
+        "tag": "Täglich (30 Tage)",
+        "woche": "Wöchentlich (12 Wochen)",
+        "monat": "Monatlich (12 Monate)"
+      },
+      "funktion": {
+        "beschriftung": "Funktion",
+        "alle": "Alle Funktionen"
+      },
+      "anwenden": "Anwenden",
+      "kennzahl": {
+        "kosten": "Kosten gesamt",
+        "aufrufe": "Aufrufe",
+        "fehlerquote": "Fehlerquote",
+        "cacheQuote": "Cache-Trefferquote",
+        "p95": "p95-Latenz",
+        "durchschnitt": "Ø-Latenz"
+      },
+      "cacheHinweis": "Die Cache-Trefferquote ist eine Schätzung (erfolgreiche Aufrufe ohne Kosten und ohne Token).",
+      "budget": {
+        "titel": "Budget im laufenden Monat",
+        "traeger": "Träger",
+        "budget": "Monatsbudget",
+        "verbraucht": "Verbraucht",
+        "auslastung": "Auslastung",
+        "status": "Status",
+        "ok": "Im Rahmen",
+        "warnung": "Warnung",
+        "ueberschritten": "Überschritten",
+        "keinBudget": "Kein Budget hinterlegt",
+        "leer": "Keine Träger sichtbar."
+      },
+      "trend": {
+        "titel": "Kostenverlauf",
+        "bucket": "Zeitpunkt",
+        "kosten": "Kosten",
+        "aufrufe": "Aufrufe",
+        "fehler": "Fehler",
+        "cache": "Cache"
+      },
+      "nachFunktion": {
+        "titel": "Kosten nach Funktion",
+        "funktion": "Funktion",
+        "aufrufe": "Aufrufe",
+        "fehler": "Fehler",
+        "kosten": "Kosten"
+      },
+      "nachTraeger": {
+        "titel": "Kosten nach Träger",
+        "traeger": "Träger",
+        "aufrufe": "Aufrufe",
+        "fehler": "Fehler",
+        "kosten": "Kosten"
+      },
+      "nachKohorte": {
+        "titel": "Kosten nach Kohorte",
+        "kohorte": "Kohorte",
+        "aufrufe": "Aufrufe",
+        "kosten": "Kosten",
+        "hinweis": "Mehrfachmitgliedschaften können Kosten mehreren Kohorten zurechnen."
+      },
+      "topNutzer": {
+        "titel": "Top 20 Nutzer nach Kosten",
+        "nutzer": "Nutzer",
+        "aufrufe": "Aufrufe",
+        "fehler": "Fehler",
+        "kosten": "Kosten"
+      },
+      "leer": "Für diesen Zeitraum liegen keine KI-Aufrufe vor.",
+      "unbekannterNutzer": "Unbekannter Nutzer",
+      "ohneTraeger": "Ohne Träger",
+      "ohneKohorte": "Ohne Kohorte"
     },
     "fehler": {
       "kein_zugriff": "Kein Zugriff. Bitte erneut anmelden.",
@@ -427,9 +506,100 @@
     "fortsetzenTitel": "Weiterlernen",
     "fortsetzenAlsNaechstes": "Als Nächstes: {thema}",
     "fortsetzenRest": "{offen} Kernfragen offen · {prozent} %",
-    "fortsetzenCta": "Öffnen"
+    "fortsetzenCta": "Öffnen",
+    "wochenbericht": {
+      "titel": "Wochenbericht",
+      "kw": "KW {kw} · {jahr}",
+      "quote": "{quote} % richtig · {bearbeitet} Fragen",
+      "trend": {
+        "besser": "Besser als letzte Woche",
+        "schlechter": "Schwächer als letzte Woche",
+        "gleich": "Stabil zur Vorwoche",
+        "neu": "Erste ausgewertete Woche"
+      },
+      "verbesserungen": "Verbesserungen",
+      "empfehlung": "Empfehlung",
+      "schwaechsteThemen": "Schwächste Themen",
+      "lernfeedbackHinweis": "Automatisches Lernfeedback — keine offizielle Prüfungsbewertung.",
+      "gelesen": "Gelesen",
+      "markiereGelesen": "Als gelesen markieren",
+      "markiereLaeuft": "Wird gespeichert …",
+      "keinBericht": "Noch kein Wochenbericht. Dein erster Bericht erscheint nach einer Übungswoche.",
+      "fehler": "Konnte nicht gespeichert werden. Bitte erneut versuchen."
+    },
+    "merkkarte": {
+      "titel": "Merksatz",
+      "zaehler": "{position}/{gesamt}",
+      "naechster": "Nächster Merksatz"
+    }
   },
   "ausbilder": {
+    "fragen": {
+      "navKurz": "Fragen",
+      "titel": "Fragenverwaltung",
+      "untertitel": "Fragen im Batch erzeugen, verifizieren und freigeben. Entwürfe sind noch nicht für Teilnehmer sichtbar.",
+      "zurueckCockpit": "Zurück zum Cockpit",
+      "fehlerAllgemein": "Es ist ein Fehler aufgetreten.",
+      "entwurfHinweis": "KI-erzeugte Fragen sind zunächst Entwürfe. Kernfragen werden immer manuell freigegeben.",
+      "generatorTitel": "Fragen erzeugen (Batch)",
+      "thema": "Thema",
+      "keineThemen": "Keine Themen verfügbar",
+      "themaPflicht": "Bitte ein Thema wählen.",
+      "anzahl": "Anzahl (max. 50)",
+      "typ": {
+        "label": "Fragetyp",
+        "mc": "Multiple Choice",
+        "freitext": "Freitext"
+      },
+      "schwierigkeit": "Schwierigkeit",
+      "schwierigkeitKurz": "Stufe {n}",
+      "zielpool": "Zielpool",
+      "zielpoolErweiterung": "Erweiterungspool",
+      "zielpoolKern": "Kernpool",
+      "quellenhinweis": "Quellenhierarchie wird hart durchgesetzt: Zahlenwerte ohne belastbare Fundstelle werden abgelehnt und gelangen nie in den Kernpool.",
+      "generieren": "Fragen erzeugen",
+      "genErgebnis": "{erstellt} erstellt, {abgelehnt} abgelehnt, {dubletten} Dubletten verworfen, {review} zur Prüfung markiert.",
+      "alleVerifizieren": "Alle Entwürfe verifizieren ({n})",
+      "massenfreigabe": "Ausgewählte freigeben ({n})",
+      "entwuerfeTitel": "Entwürfe ({n})",
+      "verifizierteTitel": "Verifiziert ({n})",
+      "leer": "Keine Fragen in dieser Liste.",
+      "status": {
+        "entwurf": "Entwurf",
+        "verifiziert": "Verifiziert",
+        "freigegeben": "Freigegeben",
+        "gesperrt": "Gesperrt",
+        "pruefungNoetig": "Prüfung nötig"
+      },
+      "kern": "Kernfrage",
+      "kernMarkieren": "Als Kernfrage markieren",
+      "quellenstufe": "Quellenstufe",
+      "fundstelle": "Fundstelle",
+      "zahlenwert": "Zahlenwert",
+      "normbezuege": "Normbezüge",
+      "ohneAngabe": "keine Angabe",
+      "ja": "ja",
+      "nein": "nein",
+      "verifBestaetigt": "Verifikation bestätigt",
+      "verifOffen": "Verifikation mit Einwänden",
+      "confidence": "Confidence {n}%",
+      "grund": {
+        "aehnlichkeit": "Ähnlichkeit zu hoch",
+        "verifikationFehlgeschlagen": "Verifikation fehlgeschlagen",
+        "stichprobe": "Stichprobe",
+        "sonstige": "Prüfung nötig"
+      },
+      "auswaehlen": "Auswählen",
+      "verifizieren": "Verifizieren",
+      "freigeben": "Freigeben",
+      "bearbeiten": "Bearbeiten",
+      "sperren": "Sperren",
+      "aufgabenstellung": "Aufgabenstellung",
+      "optionen": "Antwortoptionen",
+      "alsKorrekt": "Als korrekt markieren",
+      "speichern": "Speichern",
+      "abbrechen": "Abbrechen"
+    },
     "cockpit": "Ausbilder-Cockpit",
     "hinweis": "Übersicht deiner zugewiesenen Teilnehmer mit Fortschritt, Aktivität und Risikomarkierung.",
     "teilnehmer": "Teilnehmer",
@@ -591,5 +761,138 @@
       "titel": "100 Lernpunkte",
       "beschreibung": "Du hast 100 Lernpunkte gesammelt."
     }
+  },
+  "pwa": {
+    "offline": {
+      "titel": "Offline",
+      "text": "Keine Internetverbindung. Deine Eingaben werden gespeichert und automatisch gesendet, sobald du wieder online bist."
+    },
+    "online": {
+      "titel": "Wieder online",
+      "text": "Deine gespeicherten Eingaben werden übertragen."
+    },
+    "update": {
+      "titel": "Neue Version verfügbar",
+      "text": "Aktualisiere, um die neueste Version des Campus zu laden.",
+      "aktion": "Jetzt aktualisieren",
+      "spaeter": "Später"
+    },
+    "sync": {
+      "ausstehend": "{anzahl} Eingaben warten auf Übertragung."
+    },
+    "installieren": {
+      "hinweis": "Diese App lässt sich auf dem Startbildschirm installieren."
+    }
+  },
+  "berichtsheft": {
+    "titel": "Ausbildungsnachweis",
+    "untertitel": "Führe dein Berichtsheft, erkenne Lücken und exportiere es für die Prüfungsanmeldung.",
+    "neuerEintrag": "Neuer Eintrag",
+    "nichtAngemeldet": "Bitte melde dich an.",
+    "nichtGefunden": "Nachweis nicht gefunden.",
+    "leer": "Du hast noch keinen Nachweis angelegt.",
+    "zurueck": "Zurück zur Übersicht",
+    "neuTitel": "Neuer Nachweis",
+    "keinInhalt": "Keine Angabe.",
+    "kiFormuliertHinweis": "Mit KI-Formulierungshilfe erstellt — Inhalte stammen von dir.",
+    "ausbildungsjahrKurz": "{jahr}. Ausbildungsjahr",
+    "luecken": {
+      "titel": "Lückenanzeige",
+      "keine": "Keine offenen Wochen im aktuellen Zeitraum.",
+      "hinweis": "{anzahl} Wochen ohne Nachweis in den letzten Wochen.",
+      "kw": "KW {kw}/{jahr}"
+    },
+    "art": {
+      "tag": "Tagesbericht",
+      "woche": "Wochenbericht",
+      "monat": "Monatsbericht",
+      "fach": "Fachbericht"
+    },
+    "status": {
+      "entwurf": "Entwurf",
+      "eingereicht": "Eingereicht",
+      "signiert_teilnehmer": "Von dir signiert",
+      "signiert_ausbilder": "Vom Ausbilder gegengezeichnet",
+      "beanstandet": "Beanstandet"
+    },
+    "form": {
+      "art": "Berichtsart",
+      "ausbildungsjahr": "Ausbildungsjahr",
+      "zeitraumVon": "Zeitraum von",
+      "zeitraumBis": "Zeitraum bis",
+      "taetigkeiten": "Ausgeführte Tätigkeiten",
+      "taetigkeitenHilfe": "Stichworte genügen — die KI-Formulierungshilfe macht daraus ganze Sätze.",
+      "unterweisungen": "Unterweisungen / betrieblicher Unterricht",
+      "berufsschulthemen": "Berufsschule (Themen)",
+      "rahmenplan": "Rahmenplan-Positionen",
+      "rahmenplanHilfe": "Ordne den Bericht passenden Positionen des Ausbildungsrahmenplans zu.",
+      "speichern": "Speichern",
+      "speichernLaeuft": "Wird gespeichert …",
+      "abbrechen": "Abbrechen",
+      "diktatStart": "Diktat starten",
+      "diktatStop": "Diktat beenden",
+      "diktatLaeuft": "Diktat läuft — sprich jetzt."
+    },
+    "ki": {
+      "titel": "KI-Formulierungshilfe",
+      "knopf": "Text formulieren",
+      "laeuft": "Wird formuliert …",
+      "hinweis": "KI-Formulierungshilfe — Inhalte stammen von dir.",
+      "fehler": "Die Formulierung ist fehlgeschlagen. Bitte versuche es erneut."
+    },
+    "aktion": {
+      "einreichen": "Einreichen",
+      "signieren": "Signieren",
+      "laeuft": "Wird ausgeführt …",
+      "signaturBestaetigung": "Ich bestätige, dass die Angaben richtig und vollständig sind."
+    },
+    "beanstandung": {
+      "titel": "Beanstandung durch den Ausbilder"
+    },
+    "export": {
+      "knopf": "Als PDF exportieren",
+      "laeuft": "Wird erstellt …",
+      "fehler": "Export fehlgeschlagen."
+    },
+    "fehler": {
+      "speichern_fehlgeschlagen": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
+      "nicht_gefunden": "Nachweis nicht gefunden.",
+      "gesperrt": "Dieser Nachweis ist signiert und gesperrt.",
+      "aktion": "Aktion fehlgeschlagen. Bitte versuche es erneut."
+    },
+    "pruefung": {
+      "seiteTitel": "Berichtsheft-Prüfung",
+      "seiteHinweis": "Offene Zeiträume der zugewiesenen Teilnehmer prüfen, gegenzeichnen oder beanstanden.",
+      "navKurz": "Berichtsheft",
+      "zuPruefen": "Zu prüfen",
+      "keineOffenen": "Keine offenen Nachweise zur Prüfung.",
+      "uebrige": "Übrige Nachweise",
+      "keineUebrigen": "Keine weiteren Nachweise.",
+      "zurueck": "Zurück zur Liste",
+      "titel": "Prüfung",
+      "signieren": "Gegenzeichnen",
+      "signierenHinweis": "Mit dem Gegenzeichnen wird der Nachweis endgültig gesperrt.",
+      "beanstanden": "Beanstanden",
+      "beanstandenSenden": "Beanstandung senden",
+      "korrigieren": "Korrigieren",
+      "korrigierenHinweis": "Signierte Nachweise sind gesperrt. Eine Korrektur wird mit Begründung dokumentiert.",
+      "korrigierenSenden": "Korrektur speichern",
+      "begruendungLabel": "Begründung",
+      "feld": {
+        "taetigkeiten": "Ausgeführte Tätigkeiten",
+        "unterweisungen": "Unterweisungen",
+        "berufsschulthemen": "Berufsschule (Themen)"
+      },
+      "verlauf": "Verlauf (Beanstandungen / Korrekturen)",
+      "fehler": "Aktion fehlgeschlagen. Bitte versuche es erneut."
+    }
+  },
+  "uebersetzungshilfe": {
+    "einblenden": "Übersetzung einblenden",
+    "ausblenden": "Übersetzung ausblenden",
+    "originalLabel": "Original (Deutsch)",
+    "uebersetzungLabel": "Übersetzung",
+    "hinweis": "Lernhilfe — Prüfungsinhalte bleiben Deutsch.",
+    "nichtVerfuegbar": "Für diesen Abschnitt gibt es noch keine freigegebene Übersetzung."
   }
 }

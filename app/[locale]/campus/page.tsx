@@ -3,6 +3,8 @@ import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
 import { Card, Button, Chip, ProgressRing } from '@bze/ui';
 import { Greeting } from '@/components/shell';
+import { WochenberichtKarte, Merkkarte } from '@/components/dashboard';
+import type { Wochenbericht } from '@/components/dashboard';
 import { ladeFortsetzenEmpfehlung } from './fortschritt/_lib/queries';
 
 export default async function CampusStart({ params }: { params: Promise<{ locale: string }> }) {
@@ -16,6 +18,19 @@ export default async function CampusStart({ params }: { params: Promise<{ locale
     : { data: null };
 
   const empfehlung = user ? await ladeFortsetzenEmpfehlung(user.id) : null;
+
+  // Neuester Wochenbericht des Teilnehmers (RLS: nur eigener Bericht).
+  const { data: berichtRow } = user
+    ? await supabase
+        .from('wochenberichte')
+        .select('id, jahr, kalenderwoche, inhalt, merksaetze, gelesen')
+        .eq('user_id', user.id)
+        .order('jahr', { ascending: false })
+        .order('kalenderwoche', { ascending: false })
+        .limit(1)
+        .maybeSingle()
+    : { data: null };
+  const wochenbericht = (berichtRow as Wochenbericht | null) ?? null;
 
   const { data: fragen } = await supabase
     .from('fragen')
@@ -53,6 +68,9 @@ export default async function CampusStart({ params }: { params: Promise<{ locale
           </Link>
         </Card>
       )}
+
+      {wochenbericht && <WochenberichtKarte bericht={wochenbericht} />}
+      <Merkkarte merksaetze={wochenbericht?.merksaetze ?? null} />
 
       <div className="grid grid-cols-2 gap-3">
         <Link href={`/${locale}/campus/lernen`} className="block">

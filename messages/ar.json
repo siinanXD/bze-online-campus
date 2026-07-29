@@ -228,7 +228,8 @@
     "nav": {
       "beschriftung": "قسم الإدارة",
       "nutzerverwaltung": "إدارة المستخدمين",
-      "auditLog": "سجلّ المراجعة"
+      "auditLog": "سجلّ المراجعة",
+      "monitoring": "المراقبة"
     },
     "rollen": {
       "teilnehmer": "متدرّب",
@@ -318,6 +319,84 @@
       },
       "systemAkteur": "النظام",
       "seitenNavigation": "الصفحات"
+    },
+    "monitoring": {
+      "titel": "مراقبة تشغيل الذكاء الاصطناعي",
+      "einleitung": "التكاليف والاستخدام وجودة استدعاءات الذكاء الاصطناعي. بصفتك إدارة، ترى مركزك التدريبي فقط.",
+      "hinweisLernfeedback": "مخرجات الذكاء الاصطناعي هي تغذية راجعة للتعلّم وليست أداءً في الاختبار.",
+      "zeitraum": {
+        "beschriftung": "الفترة",
+        "tag": "يوميًا (30 يومًا)",
+        "woche": "أسبوعيًا (12 أسبوعًا)",
+        "monat": "شهريًا (12 شهرًا)"
+      },
+      "funktion": {
+        "beschriftung": "الوظيفة",
+        "alle": "كل الوظائف"
+      },
+      "anwenden": "تطبيق",
+      "kennzahl": {
+        "kosten": "إجمالي التكاليف",
+        "aufrufe": "الاستدعاءات",
+        "fehlerquote": "معدل الأخطاء",
+        "cacheQuote": "معدل إصابة الذاكرة المؤقتة",
+        "p95": "زمن الاستجابة p95",
+        "durchschnitt": "متوسط زمن الاستجابة"
+      },
+      "cacheHinweis": "معدل إصابة الذاكرة المؤقتة تقديري (استدعاءات ناجحة بلا تكلفة وبلا رموز).",
+      "budget": {
+        "titel": "الميزانية في الشهر الحالي",
+        "traeger": "المركز التدريبي",
+        "budget": "الميزانية الشهرية",
+        "verbraucht": "المُستهلك",
+        "auslastung": "نسبة الاستخدام",
+        "status": "الحالة",
+        "ok": "ضمن الحد",
+        "warnung": "تحذير",
+        "ueberschritten": "تم التجاوز",
+        "keinBudget": "لا توجد ميزانية محددة",
+        "leer": "لا توجد مراكز تدريبية مرئية."
+      },
+      "trend": {
+        "titel": "تطور التكاليف",
+        "bucket": "الوقت",
+        "kosten": "التكاليف",
+        "aufrufe": "الاستدعاءات",
+        "fehler": "الأخطاء",
+        "cache": "الذاكرة المؤقتة"
+      },
+      "nachFunktion": {
+        "titel": "التكاليف حسب الوظيفة",
+        "funktion": "الوظيفة",
+        "aufrufe": "الاستدعاءات",
+        "fehler": "الأخطاء",
+        "kosten": "التكاليف"
+      },
+      "nachTraeger": {
+        "titel": "التكاليف حسب المركز التدريبي",
+        "traeger": "المركز التدريبي",
+        "aufrufe": "الاستدعاءات",
+        "fehler": "الأخطاء",
+        "kosten": "التكاليف"
+      },
+      "nachKohorte": {
+        "titel": "التكاليف حسب المجموعة",
+        "kohorte": "المجموعة",
+        "aufrufe": "الاستدعاءات",
+        "kosten": "التكاليف",
+        "hinweis": "قد تُنسب التكاليف إلى عدة مجموعات عند تعدد العضويات."
+      },
+      "topNutzer": {
+        "titel": "أعلى 20 مستخدمًا حسب التكلفة",
+        "nutzer": "المستخدم",
+        "aufrufe": "الاستدعاءات",
+        "fehler": "الأخطاء",
+        "kosten": "التكاليف"
+      },
+      "leer": "لا توجد استدعاءات للذكاء الاصطناعي في هذه الفترة.",
+      "unbekannterNutzer": "مستخدم غير معروف",
+      "ohneTraeger": "بدون مركز تدريبي",
+      "ohneKohorte": "بدون مجموعة"
     },
     "fehler": {
       "kein_zugriff": "لا توجد صلاحية وصول. يرجى تسجيل الدخول من جديد.",
@@ -427,9 +506,100 @@
     "fortsetzenTitel": "متابعة التعلم",
     "fortsetzenAlsNaechstes": "التالي: {thema}",
     "fortsetzenRest": "{offen} أسئلة أساسية مفتوحة · {prozent} %",
-    "fortsetzenCta": "فتح"
+    "fortsetzenCta": "فتح",
+    "wochenbericht": {
+      "titel": "التقرير الأسبوعي",
+      "kw": "الأسبوع {kw} · {jahr}",
+      "quote": "{quote}٪ صحيحة · {bearbeitet} أسئلة",
+      "trend": {
+        "besser": "أفضل من الأسبوع الماضي",
+        "schlechter": "أضعف من الأسبوع الماضي",
+        "gleich": "مستقر مقارنة بالأسبوع الماضي",
+        "neu": "أول أسبوع تم تقييمه"
+      },
+      "verbesserungen": "التحسينات",
+      "empfehlung": "التوصية",
+      "schwaechsteThemen": "أضعف المواضيع",
+      "lernfeedbackHinweis": "ملاحظات تعلّم تلقائية — وليست تقييمًا رسميًا للامتحان.",
+      "gelesen": "مقروء",
+      "markiereGelesen": "وضع علامة كمقروء",
+      "markiereLaeuft": "جارٍ الحفظ …",
+      "keinBericht": "لا يوجد تقرير أسبوعي بعد. سيظهر تقريرك الأول بعد أسبوع من التمرين.",
+      "fehler": "تعذّر الحفظ. يرجى المحاولة مرة أخرى."
+    },
+    "merkkarte": {
+      "titel": "جملة للتذكّر",
+      "zaehler": "{position}/{gesamt}",
+      "naechster": "التالي"
+    }
   },
   "ausbilder": {
+    "fragen": {
+      "navKurz": "الأسئلة",
+      "titel": "إدارة الأسئلة",
+      "untertitel": "إنشاء الأسئلة دفعةً واحدة والتحقق منها واعتمادها. المسودّات غير مرئية للمتدرّبين بعد.",
+      "zurueckCockpit": "العودة إلى لوحة القيادة",
+      "fehlerAllgemein": "حدث خطأ.",
+      "entwurfHinweis": "الأسئلة المُولّدة بالذكاء الاصطناعي تكون مسودّات في البداية. أسئلة النواة تُعتمد دائمًا يدويًا.",
+      "generatorTitel": "إنشاء الأسئلة (دفعة)",
+      "thema": "الموضوع",
+      "keineThemen": "لا توجد مواضيع متاحة",
+      "themaPflicht": "الرجاء اختيار موضوع.",
+      "anzahl": "العدد (حد أقصى 50)",
+      "typ": {
+        "label": "نوع السؤال",
+        "mc": "اختيار من متعدد",
+        "freitext": "نص حر"
+      },
+      "schwierigkeit": "الصعوبة",
+      "schwierigkeitKurz": "المستوى {n}",
+      "zielpool": "المجموعة المستهدفة",
+      "zielpoolErweiterung": "مجموعة التوسيع",
+      "zielpoolKern": "مجموعة النواة",
+      "quellenhinweis": "يُطبَّق تسلسل المصادر بصرامة: القيم العددية بدون مرجع موثوق تُرفض ولا تدخل مجموعة النواة أبدًا.",
+      "generieren": "إنشاء الأسئلة",
+      "genErgebnis": "تم إنشاء {erstellt}، ورُفض {abgelehnt}، وأُلغيت {dubletten} مكرّرة، وحُدّدت {review} للمراجعة.",
+      "alleVerifizieren": "التحقق من كل المسودّات ({n})",
+      "massenfreigabe": "اعتماد المحدّد ({n})",
+      "entwuerfeTitel": "المسودّات ({n})",
+      "verifizierteTitel": "تم التحقق ({n})",
+      "leer": "لا توجد أسئلة في هذه القائمة.",
+      "status": {
+        "entwurf": "مسودّة",
+        "verifiziert": "تم التحقق",
+        "freigegeben": "معتمد",
+        "gesperrt": "محظور",
+        "pruefungNoetig": "بحاجة إلى مراجعة"
+      },
+      "kern": "سؤال نواة",
+      "kernMarkieren": "تحديد كسؤال نواة",
+      "quellenstufe": "مستوى المصدر",
+      "fundstelle": "المرجع",
+      "zahlenwert": "قيمة عددية",
+      "normbezuege": "المراجع المعيارية",
+      "ohneAngabe": "غير محدّد",
+      "ja": "نعم",
+      "nein": "لا",
+      "verifBestaetigt": "تم تأكيد التحقق",
+      "verifOffen": "التحقق مع اعتراضات",
+      "confidence": "الثقة {n}%",
+      "grund": {
+        "aehnlichkeit": "تشابه مرتفع جدًا",
+        "verifikationFehlgeschlagen": "فشل التحقق",
+        "stichprobe": "عيّنة",
+        "sonstige": "بحاجة إلى مراجعة"
+      },
+      "auswaehlen": "تحديد",
+      "verifizieren": "تحقّق",
+      "freigeben": "اعتماد",
+      "bearbeiten": "تعديل",
+      "sperren": "حظر",
+      "aufgabenstellung": "نص السؤال",
+      "optionen": "خيارات الإجابة",
+      "alsKorrekt": "تحديد كإجابة صحيحة",
+      "speichern": "حفظ",
+      "abbrechen": "إلغاء"
+    },
     "cockpit": "لوحة المدرّب",
     "hinweis": "نظرة عامة على المتدرّبين مع التقدم والنشاط وعلامات المخاطر.",
     "teilnehmer": "المتدرّبون",
@@ -591,5 +761,138 @@
       "titel": "100 نقطة تعلم",
       "beschreibung": "جمعت 100 نقطة تعلم."
     }
+  },
+  "pwa": {
+    "offline": {
+      "titel": "غير متصل",
+      "text": "لا يوجد اتصال بالإنترنت. سيتم حفظ إدخالاتك وإرسالها تلقائيًا عند عودة الاتصال."
+    },
+    "online": {
+      "titel": "عاد الاتصال",
+      "text": "يتم الآن إرسال إدخالاتك المحفوظة."
+    },
+    "update": {
+      "titel": "يتوفر إصدار جديد",
+      "text": "قم بالتحديث لتحميل أحدث إصدار من المنصة.",
+      "aktion": "حدّث الآن",
+      "spaeter": "لاحقًا"
+    },
+    "sync": {
+      "ausstehend": "{anzahl} إدخالات في انتظار الإرسال."
+    },
+    "installieren": {
+      "hinweis": "يمكن تثبيت هذا التطبيق على الشاشة الرئيسية."
+    }
+  },
+  "berichtsheft": {
+    "titel": "سجل التدريب",
+    "untertitel": "احتفظ بسجل تدريبك، واكتشف الفجوات، وصدّره للتسجيل في الامتحان.",
+    "neuerEintrag": "إدخال جديد",
+    "nichtAngemeldet": "يرجى تسجيل الدخول.",
+    "nichtGefunden": "لم يتم العثور على السجل.",
+    "leer": "لم تُنشئ أي سجل بعد.",
+    "zurueck": "العودة إلى النظرة العامة",
+    "neuTitel": "سجل جديد",
+    "keinInhalt": "لا توجد بيانات.",
+    "kiFormuliertHinweis": "أُنشئ بمساعدة الصياغة بالذكاء الاصطناعي — المحتوى منك.",
+    "ausbildungsjahrKurz": "السنة التدريبية {jahr}",
+    "luecken": {
+      "titel": "عرض الفجوات",
+      "keine": "لا توجد أسابيع مفتوحة في الفترة الحالية.",
+      "hinweis": "{anzahl} أسابيع بدون سجل في الأسابيع الأخيرة.",
+      "kw": "الأسبوع {kw}/{jahr}"
+    },
+    "art": {
+      "tag": "تقرير يومي",
+      "woche": "تقرير أسبوعي",
+      "monat": "تقرير شهري",
+      "fach": "تقرير تخصصي"
+    },
+    "status": {
+      "entwurf": "مسودة",
+      "eingereicht": "تم التقديم",
+      "signiert_teilnehmer": "موقّع منك",
+      "signiert_ausbilder": "مُوقّع من المدرّب",
+      "beanstandet": "مُعترض عليه"
+    },
+    "form": {
+      "art": "نوع التقرير",
+      "ausbildungsjahr": "السنة التدريبية",
+      "zeitraumVon": "الفترة من",
+      "zeitraumBis": "الفترة إلى",
+      "taetigkeiten": "الأنشطة المُنجزة",
+      "taetigkeitenHilfe": "تكفي الكلمات المفتاحية — تحوّلها مساعدة الصياغة إلى جُمل كاملة.",
+      "unterweisungen": "التوجيهات / التدريب داخل المنشأة",
+      "berufsschulthemen": "المدرسة المهنية (المواضيع)",
+      "rahmenplan": "بنود الخطة الإطارية",
+      "rahmenplanHilfe": "اربط التقرير بالبنود المناسبة من خطة التدريب الإطارية.",
+      "speichern": "حفظ",
+      "speichernLaeuft": "جارٍ الحفظ …",
+      "abbrechen": "إلغاء",
+      "diktatStart": "بدء الإملاء",
+      "diktatStop": "إيقاف الإملاء",
+      "diktatLaeuft": "الإملاء قيد التشغيل — تحدّث الآن."
+    },
+    "ki": {
+      "titel": "مساعدة الصياغة بالذكاء الاصطناعي",
+      "knopf": "صياغة النص",
+      "laeuft": "جارٍ الصياغة …",
+      "hinweis": "مساعدة الصياغة بالذكاء الاصطناعي — المحتوى منك.",
+      "fehler": "فشلت الصياغة. حاول مرة أخرى."
+    },
+    "aktion": {
+      "einreichen": "تقديم",
+      "signieren": "توقيع",
+      "laeuft": "جارٍ التنفيذ …",
+      "signaturBestaetigung": "أؤكد أن البيانات صحيحة وكاملة."
+    },
+    "beanstandung": {
+      "titel": "اعتراض من المدرّب"
+    },
+    "export": {
+      "knopf": "تصدير كـ PDF",
+      "laeuft": "جارٍ الإنشاء …",
+      "fehler": "فشل التصدير."
+    },
+    "fehler": {
+      "speichern_fehlgeschlagen": "فشل الحفظ. حاول مرة أخرى.",
+      "nicht_gefunden": "لم يتم العثور على السجل.",
+      "gesperrt": "هذا السجل موقّع ومقفل.",
+      "aktion": "فشلت العملية. حاول مرة أخرى."
+    },
+    "pruefung": {
+      "seiteTitel": "مراجعة سجل التدريب",
+      "seiteHinweis": "راجع الفترات المفتوحة للمتدربين المُسندين، ووقّع أو اعترض.",
+      "navKurz": "سجل التدريب",
+      "zuPruefen": "بحاجة إلى مراجعة",
+      "keineOffenen": "لا توجد سجلات مفتوحة للمراجعة.",
+      "uebrige": "سجلات أخرى",
+      "keineUebrigen": "لا توجد سجلات أخرى.",
+      "zurueck": "العودة إلى القائمة",
+      "titel": "المراجعة",
+      "signieren": "التوقيع المضاد",
+      "signierenHinweis": "بالتوقيع المضاد يُقفل السجل نهائيًا.",
+      "beanstanden": "اعتراض",
+      "beanstandenSenden": "إرسال الاعتراض",
+      "korrigieren": "تصحيح",
+      "korrigierenHinweis": "السجلات الموقّعة مقفلة. يُوثَّق أي تصحيح مع التبرير.",
+      "korrigierenSenden": "حفظ التصحيح",
+      "begruendungLabel": "التبرير",
+      "feld": {
+        "taetigkeiten": "الأنشطة المُنجزة",
+        "unterweisungen": "التوجيهات",
+        "berufsschulthemen": "المدرسة المهنية (المواضيع)"
+      },
+      "verlauf": "السجل (الاعتراضات / التصحيحات)",
+      "fehler": "فشلت العملية. حاول مرة أخرى."
+    }
+  },
+  "uebersetzungshilfe": {
+    "einblenden": "إظهار الترجمة",
+    "ausblenden": "إخفاء الترجمة",
+    "originalLabel": "الأصل (بالألمانية)",
+    "uebersetzungLabel": "الترجمة",
+    "hinweis": "مساعدة تعليمية — يبقى محتوى الامتحان بالألمانية.",
+    "nichtVerfuegbar": "لا توجد ترجمة معتمدة لهذا النص بعد."
   }
 }

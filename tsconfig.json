@@ -33,6 +33,9 @@
       ],
       "@bze/core/fortschritt": [
         "./packages/core/fortschritt/index.ts"
+      ],
+      "@bze/core/nachweis": [
+        "./packages/core/nachweis/index.ts"
       ]
     },
     "lib": [
