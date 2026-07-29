@@ -165,3 +165,17 @@ Parallele Worktrees dürfen nur die zugewiesene Nummer verwenden. Bestehende Mig
 | `0011` | AP-15 PWA/Offline | `0011_pwa` (nur falls DB nötig) |
 | `0012` | AP-16 Monitoring | `0012_monitoring` (nur falls DB nötig) |
 | `0013` | AP-14 i18n-Vollausbau | `0013_i18n` (nur falls DB nötig) |
+
+## AP-14 — Mehrsprachigkeit (Vollausbau)
+
+Migration [`0013_i18n.sql`](../supabase/migrations/0013_i18n.sql): **additiv**. `fragen_uebersetzungen` (inkl. RLS `fue_read`/`fue_manage`), `lerneinheiten`, `ki_aufrufe`, `app_rolle`/`app_is_admin` und `set_updated_at` stammen unverändert aus `0001_datenmodell.sql`. Deutsch bleibt Quelle; Übersetzungen erscheinen ausschließlich **zusätzlich**, sind dauerhaft gecacht und **unfreigegeben bis Ausbilderbestätigung** (Spec §5).
+
+Neu in 0013:
+
+- Tabelle `lerneinheiten_uebersetzungen (lerneinheit_id, sprache, titel, abschnitte jsonb, freigegeben, created_at, updated_at)`, Primärschlüssel `(lerneinheit_id, sprache)`, FK auf `lerneinheiten(id) on delete cascade`. Pendant zu `fragen_uebersetzungen` aus 0001, das für Lerneinheiten fehlte. `abschnitte` spiegelt `lerneinheiten.abschnitte` (`[{titel,inhalt,minuten}]`); `minuten` wird unverändert übernommen.
+- RLS: `leu_read` (freigegebene Übersetzung für alle, sonst nur Ausbilder/Verwaltung/Admin) und `leu_manage` (nur Ausbilder/Verwaltung/Admin) — Muster wie `fue_read`/`fue_manage`. Trigger `trg_lerneinheiten_uebersetzungen_updated` pflegt `updated_at` über `set_updated_at()`.
+- Ausbilderfreigabe als **SECURITY DEFINER**-RPCs (Rollenprüfung intern über `app_rolle`/`app_is_admin`, Rückgabe = Anzahl freigegebener Zeilen), `grant execute` nur für `authenticated`:
+  - `frage_uebersetzung_freigeben(p_frage_id uuid, p_sprache text default null)` — setzt `fragen_uebersetzungen.freigegeben = true`; `p_sprache = null` gibt alle Sprachen der Frage frei.
+  - `lerneinheit_uebersetzung_freigeben(p_lerneinheit_id uuid, p_sprache text default null)` — analog für `lerneinheiten_uebersetzungen`.
+
+Edge Functions: `uebersetze-frage` (nur Kernpool `fragen.kern = true`; schreibt `fragen_uebersetzungen`) und `uebersetze-lerneinheit` (nur freigegebene Lerneinheiten; schreibt `lerneinheiten_uebersetzungen`). Beide erzeugen in die fünf Zielsprachen (en, fr, ar, uk, tr — Quelle Deutsch ausgenommen), setzen `freigegeben = false`, überspringen bereits vorhandene Sprachen (dauerhafter Cache), unterstützen `LLM_MOCK=1`, protokollieren in `ki_aufrufe` und prüfen das Trägerbudget. Anzeige über die client-seitige Komponente `components/uebersetzungshilfe` (deutsches Original bleibt sichtbar, Übersetzung nur zusätzlich darunter).

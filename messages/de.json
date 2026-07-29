@@ -886,5 +886,13 @@
       "verlauf": "Verlauf (Beanstandungen / Korrekturen)",
       "fehler": "Aktion fehlgeschlagen. Bitte versuche es erneut."
     }
+  },
+  "uebersetzungshilfe": {
+    "einblenden": "Übersetzung einblenden",
+    "ausblenden": "Übersetzung ausblenden",
+    "originalLabel": "Original (Deutsch)",
+    "uebersetzungLabel": "Übersetzung",
+    "hinweis": "Lernhilfe — Prüfungsinhalte bleiben Deutsch.",
+    "nichtVerfuegbar": "Für diesen Abschnitt gibt es noch keine freigegebene Übersetzung."
   }
 }
