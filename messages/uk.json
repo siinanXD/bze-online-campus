@@ -506,7 +506,32 @@
     "fortsetzenTitel": "Weiterlernen",
     "fortsetzenAlsNaechstes": "Als Nächstes: {thema}",
     "fortsetzenRest": "{offen} Kernfragen offen · {prozent} %",
-    "fortsetzenCta": "Öffnen"
+    "fortsetzenCta": "Öffnen",
+    "wochenbericht": {
+      "titel": "Тижневий звіт",
+      "kw": "Тиждень {kw} · {jahr}",
+      "quote": "{quote} % правильно · {bearbeitet} запитань",
+      "trend": {
+        "besser": "Краще, ніж минулого тижня",
+        "schlechter": "Слабше, ніж минулого тижня",
+        "gleich": "Стабільно порівняно з минулим тижнем",
+        "neu": "Перший оцінений тиждень"
+      },
+      "verbesserungen": "Покращення",
+      "empfehlung": "Рекомендація",
+      "schwaechsteThemen": "Найслабші теми",
+      "lernfeedbackHinweis": "Автоматичний навчальний зворотний зв’язок — не офіційна оцінка іспиту.",
+      "gelesen": "Прочитано",
+      "markiereGelesen": "Позначити як прочитане",
+      "markiereLaeuft": "Збереження …",
+      "keinBericht": "Ще немає тижневого звіту. Перший звіт з’явиться після тижня практики.",
+      "fehler": "Не вдалося зберегти. Спробуйте ще раз."
+    },
+    "merkkarte": {
+      "titel": "Нагадування",
+      "zaehler": "{position}/{gesamt}",
+      "naechster": "Наступне нагадування"
+    }
   },
   "ausbilder": {
     "cockpit": "Ausbilder-Cockpit",

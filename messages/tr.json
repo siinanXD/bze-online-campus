@@ -506,7 +506,32 @@
     "fortsetzenTitel": "Weiterlernen",
     "fortsetzenAlsNaechstes": "Als Nächstes: {thema}",
     "fortsetzenRest": "{offen} Kernfragen offen · {prozent} %",
-    "fortsetzenCta": "Öffnen"
+    "fortsetzenCta": "Öffnen",
+    "wochenbericht": {
+      "titel": "Haftalık rapor",
+      "kw": "Hafta {kw} · {jahr}",
+      "quote": "%{quote} doğru · {bearbeitet} soru",
+      "trend": {
+        "besser": "Geçen haftadan daha iyi",
+        "schlechter": "Geçen haftadan daha zayıf",
+        "gleich": "Geçen haftaya göre sabit",
+        "neu": "İlk değerlendirilen hafta"
+      },
+      "verbesserungen": "İyileştirmeler",
+      "empfehlung": "Öneri",
+      "schwaechsteThemen": "En zayıf konular",
+      "lernfeedbackHinweis": "Otomatik öğrenme geri bildirimi — resmi bir sınav değerlendirmesi değildir.",
+      "gelesen": "Okundu",
+      "markiereGelesen": "Okundu olarak işaretle",
+      "markiereLaeuft": "Kaydediliyor …",
+      "keinBericht": "Henüz haftalık rapor yok. İlk raporun bir alıştırma haftasından sonra görünür.",
+      "fehler": "Kaydedilemedi. Lütfen tekrar deneyin."
+    },
+    "merkkarte": {
+      "titel": "Hatırlatma notu",
+      "zaehler": "{position}/{gesamt}",
+      "naechster": "Sonraki not"
+    }
   },
   "ausbilder": {
     "cockpit": "Ausbilder-Cockpit",

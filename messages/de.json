@@ -506,7 +506,32 @@
     "fortsetzenTitel": "Weiterlernen",
     "fortsetzenAlsNaechstes": "Als Nächstes: {thema}",
     "fortsetzenRest": "{offen} Kernfragen offen · {prozent} %",
-    "fortsetzenCta": "Öffnen"
+    "fortsetzenCta": "Öffnen",
+    "wochenbericht": {
+      "titel": "Wochenbericht",
+      "kw": "KW {kw} · {jahr}",
+      "quote": "{quote} % richtig · {bearbeitet} Fragen",
+      "trend": {
+        "besser": "Besser als letzte Woche",
+        "schlechter": "Schwächer als letzte Woche",
+        "gleich": "Stabil zur Vorwoche",
+        "neu": "Erste ausgewertete Woche"
+      },
+      "verbesserungen": "Verbesserungen",
+      "empfehlung": "Empfehlung",
+      "schwaechsteThemen": "Schwächste Themen",
+      "lernfeedbackHinweis": "Automatisches Lernfeedback — keine offizielle Prüfungsbewertung.",
+      "gelesen": "Gelesen",
+      "markiereGelesen": "Als gelesen markieren",
+      "markiereLaeuft": "Wird gespeichert …",
+      "keinBericht": "Noch kein Wochenbericht. Dein erster Bericht erscheint nach einer Übungswoche.",
+      "fehler": "Konnte nicht gespeichert werden. Bitte erneut versuchen."
+    },
+    "merkkarte": {
+      "titel": "Merksatz",
+      "zaehler": "{position}/{gesamt}",
+      "naechster": "Nächster Merksatz"
+    }
   },
   "ausbilder": {
     "cockpit": "Ausbilder-Cockpit",

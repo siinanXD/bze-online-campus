@@ -506,7 +506,32 @@
     "fortsetzenTitel": "Weiterlernen",
     "fortsetzenAlsNaechstes": "Als Nächstes: {thema}",
     "fortsetzenRest": "{offen} Kernfragen offen · {prozent} %",
-    "fortsetzenCta": "Öffnen"
+    "fortsetzenCta": "Öffnen",
+    "wochenbericht": {
+      "titel": "Weekly report",
+      "kw": "Week {kw} · {jahr}",
+      "quote": "{quote}% correct · {bearbeitet} questions",
+      "trend": {
+        "besser": "Better than last week",
+        "schlechter": "Weaker than last week",
+        "gleich": "Stable vs. last week",
+        "neu": "First evaluated week"
+      },
+      "verbesserungen": "Improvements",
+      "empfehlung": "Recommendation",
+      "schwaechsteThemen": "Weakest topics",
+      "lernfeedbackHinweis": "Automated learning feedback — not an official exam assessment.",
+      "gelesen": "Read",
+      "markiereGelesen": "Mark as read",
+      "markiereLaeuft": "Saving …",
+      "keinBericht": "No weekly report yet. Your first report appears after a week of practice.",
+      "fehler": "Could not be saved. Please try again."
+    },
+    "merkkarte": {
+      "titel": "Note to remember",
+      "zaehler": "{position}/{gesamt}",
+      "naechster": "Next note"
+    }
   },
   "ausbilder": {
     "cockpit": "Ausbilder-Cockpit",

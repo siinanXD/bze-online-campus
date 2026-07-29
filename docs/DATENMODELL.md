@@ -111,6 +111,30 @@ Der Signatur-`hash` entsteht in der Server Action aus `signaturKlartext()` (`@bz
 
 Kern-/Logikschicht: `@bze/core/nachweis` (Statusübergänge, Sperrlogik, ISO-Kalenderwochen-Lückenanzeige) mit `node:test`-Tests. Edge Functions: `formuliere-nachweis` (KI-Formulierungshilfe — formuliert ausschließlich aus Nutzereingaben, Spec Grundregel 14) und `berichtsheft-pdf` (druckfertiger HTML-Export, je Blatt Name/Ausbildungsjahr/Zeitraum).
 
+## AP-13 — Wochenbericht & Merkkarten (Migration `0010_wochenbericht`)
+
+Die Tabelle `wochenberichte` (`user_id`, `jahr`, `kalenderwoche`, `inhalt` jsonb,
+`merksaetze` jsonb, `gelesen` bool; RLS `wochenberichte_own` = `user_id = auth.uid()`)
+stammt aus `0001_datenmodell`. Migration `0010` ergänzt **additiv**:
+
+- **Indizes** `wochenberichte_user_zeit_idx` (neuester Bericht je Nutzer) und
+  `wochenberichte_user_ungelesen_idx` (partieller Index auf ungelesene Berichte).
+- **RPC** `wochenbericht_gelesen(p_bericht_id uuid) → boolean` — markiert den
+  Bericht des Aufrufers als gelesen. Läuft mit **Aufruferrechten** (`security invoker`);
+  die bestehende Policy stellt sicher, dass nur der Eigentümer schreibt. `grant execute` für `authenticated`.
+- **View** `v_wochenbericht_neueste` (`security_invoker = true`) — neuester Bericht
+  je Nutzer; RLS von `wochenberichte` greift, Teilnehmer sehen nur den eigenen.
+- **pg_cron-Hinweis** (kommentiert): Zeitplan `0 20 * * 0` (So 20:00) ruft die Edge
+  Function `erzeuge-wochenbericht` mit `x-cron-secret`-Header auf. Lokal oft nicht
+  verfügbar (`pg_cron`/`pg_net`), daher auskommentiert — Details in der Function-README.
+
+`inhalt` speichert `{ zusammenfassung, verbesserungen, empfehlung, statistik }`
+(Statistik: bearbeitet, richtig/falsch, Richtig-Quote, Vorwochenvergleich, Trend,
+drei schwächste Themen). `merksaetze` ist ein Array `[{ text, thema? }]` mit
+3–5 kurzen Merksätzen zu **tatsächlich falsch beantworteten** Fragen (Spec §5).
+Erzeugung ausschließlich in der Edge Function `erzeuge-wochenbericht`
+(LLM in Nutzersprache, `ki_aufrufe`-Protokollierung, Budgetprüfung).
+
 ## Welle 3 — Migrationsnummern (reserviert)
 
 Parallele Worktrees dürfen nur die zugewiesene Nummer verwenden. Bestehende Migrationen werden nie geändert.

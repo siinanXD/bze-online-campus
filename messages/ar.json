@@ -506,7 +506,32 @@
     "fortsetzenTitel": "متابعة التعلم",
     "fortsetzenAlsNaechstes": "التالي: {thema}",
     "fortsetzenRest": "{offen} أسئلة أساسية مفتوحة · {prozent} %",
-    "fortsetzenCta": "فتح"
+    "fortsetzenCta": "فتح",
+    "wochenbericht": {
+      "titel": "التقرير الأسبوعي",
+      "kw": "الأسبوع {kw} · {jahr}",
+      "quote": "{quote}٪ صحيحة · {bearbeitet} أسئلة",
+      "trend": {
+        "besser": "أفضل من الأسبوع الماضي",
+        "schlechter": "أضعف من الأسبوع الماضي",
+        "gleich": "مستقر مقارنة بالأسبوع الماضي",
+        "neu": "أول أسبوع تم تقييمه"
+      },
+      "verbesserungen": "التحسينات",
+      "empfehlung": "التوصية",
+      "schwaechsteThemen": "أضعف المواضيع",
+      "lernfeedbackHinweis": "ملاحظات تعلّم تلقائية — وليست تقييمًا رسميًا للامتحان.",
+      "gelesen": "مقروء",
+      "markiereGelesen": "وضع علامة كمقروء",
+      "markiereLaeuft": "جارٍ الحفظ …",
+      "keinBericht": "لا يوجد تقرير أسبوعي بعد. سيظهر تقريرك الأول بعد أسبوع من التمرين.",
+      "fehler": "تعذّر الحفظ. يرجى المحاولة مرة أخرى."
+    },
+    "merkkarte": {
+      "titel": "جملة للتذكّر",
+      "zaehler": "{position}/{gesamt}",
+      "naechster": "التالي"
+    }
   },
   "ausbilder": {
     "cockpit": "لوحة المدرّب",

@@ -506,7 +506,32 @@
     "fortsetzenTitel": "Weiterlernen",
     "fortsetzenAlsNaechstes": "Als Nächstes: {thema}",
     "fortsetzenRest": "{offen} Kernfragen offen · {prozent} %",
-    "fortsetzenCta": "Öffnen"
+    "fortsetzenCta": "Öffnen",
+    "wochenbericht": {
+      "titel": "Rapport hebdomadaire",
+      "kw": "Semaine {kw} · {jahr}",
+      "quote": "{quote} % correct · {bearbeitet} questions",
+      "trend": {
+        "besser": "Mieux que la semaine dernière",
+        "schlechter": "Plus faible que la semaine dernière",
+        "gleich": "Stable par rapport à la semaine dernière",
+        "neu": "Première semaine évaluée"
+      },
+      "verbesserungen": "Améliorations",
+      "empfehlung": "Recommandation",
+      "schwaechsteThemen": "Sujets les plus faibles",
+      "lernfeedbackHinweis": "Retour d’apprentissage automatique — pas une évaluation officielle d’examen.",
+      "gelesen": "Lu",
+      "markiereGelesen": "Marquer comme lu",
+      "markiereLaeuft": "Enregistrement …",
+      "keinBericht": "Pas encore de rapport hebdomadaire. Ton premier rapport apparaît après une semaine d’exercices.",
+      "fehler": "Enregistrement impossible. Merci de réessayer."
+    },
+    "merkkarte": {
+      "titel": "Point à retenir",
+      "zaehler": "{position}/{gesamt}",
+      "naechster": "Point suivant"
+    }
   },
   "ausbilder": {
     "cockpit": "Ausbilder-Cockpit",
