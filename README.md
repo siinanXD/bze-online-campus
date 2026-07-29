@@ -92,7 +92,7 @@ pg_cron-Hinweis).
 
 **Welle 1** — [x] AP-03 Auth · [x] AP-04 Shell/Landing · [x] AP-05 Fachkunde · [x] AP-06 Lernmodus · [x] AP-07 Admin  _(Welle 1 komplett, Integrationsbuild grün)_
 **Welle 2** — [x] AP-08 Wochenprüfung · [x] AP-09 KI-Freitextbewertung · [x] AP-10 Fortschritt/Gates · [x] AP-11 Ausbilder-Cockpit
-**Welle 3** — [ ] AP-12 Fragengenerator · [x] AP-13 Wochenbericht · [ ] AP-14 i18n-Vollausbau · [x] AP-15 PWA/Offline · [x] AP-16 Monitoring · [x] AP-18 Ausbildungsnachweis
+**Welle 3** — [x] AP-12 Fragengenerator · [x] AP-13 Wochenbericht · [ ] AP-14 i18n-Vollausbau · [x] AP-15 PWA/Offline · [x] AP-16 Monitoring · [x] AP-18 Ausbildungsnachweis
 **Später** — [ ] AP-17 Erklärvideos (Remotion)
 
 ## Validierung AP-01

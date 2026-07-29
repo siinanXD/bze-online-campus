@@ -135,6 +135,24 @@ drei schwächste Themen). `merksaetze` ist ein Array `[{ text, thema? }]` mit
 Erzeugung ausschließlich in der Edge Function `erzeuge-wochenbericht`
 (LLM in Nutzersprache, `ki_aufrufe`-Protokollierung, Budgetprüfung).
 
+## AP-12 — Fragen- und Inhaltsproduktion
+
+Migration [`0009_fragengenerator.sql`](../supabase/migrations/0009_fragengenerator.sql): **additiv**. Die Tabellen `fragen`, `antwortoptionen`, `freitext_loesungen`, `review_queue`, `frage_normen`, `ki_aufrufe` und ihre RLS-Policies stammen unverändert aus `0001_datenmodell.sql`.
+
+Neu in 0009:
+
+- Additive Spalte `fragen.normbezuege jsonb not null default '[]'` — verpflichtendes Ausgabefeld des Generators (Spec §5), Array normalisierter Normkürzel (z. B. `["DIN EN ISO 2768-1"]`). Die relationale Verknüpfung über `frage_normen` bleibt möglich; die Spalte ist die selbsttragende Generator-/Verifier-Ausgabe.
+- Vektorindex `fragen_embedding_cos_idx` (`ivfflat … vector_cosine_ops`, lists=100) für die Kosinus-Dublettensuche; Filterindizes `fragen_status_thema_idx`, `fragen_kern_status_idx`.
+- `frage_dubletten(thema_id, embedding, schwelle=0.92, exclude?, limit=5)` — **SECURITY DEFINER**, gibt Bestandsfragen desselben Themas mit Kosinus-Ähnlichkeit ≥ Schwelle zurück (Spec §5 Schritt 1). Aufruf aus der Edge Function `generiere-fragen` (service_role) und für `authenticated`.
+- Statusübergänge als **SECURITY DEFINER**-RPCs (Rollenprüfung intern über `app_rolle`/`app_is_admin`, setzen `geprueft_von`/`geprueft_am`):
+  - `frage_status_setzen(frage_id, status)` — beliebiger Statuswechsel durch Ausbilder/Verwaltung/Admin.
+  - `frage_freigeben(frage_id)` — `verifiziert|pruefung_noetig → freigegeben`, schließt offene `review_queue`-Einträge der Frage. Kernfragen werden **immer** hierüber manuell freigegeben (Spec §5).
+  - `fragen_freigeben_viele(ids[])` — Massenfreigabe; nur `verifiziert|pruefung_noetig` werden freigegeben, Rückgabe = Anzahl.
+
+**Embedding-Einschränkung (dokumentiert):** Im Mock-/Offline-Betrieb (`LLM_MOCK=1` oder fehlender `LLM_API_KEY`) erzeugt `generiere-fragen` ein **hash-basiertes Pseudo-Embedding** (Bag-of-Words auf 1536 Buckets, L2-normiert). Es liefert eine deterministische, rein lexikalische Kosinus-Ähnlichkeit ohne semantisches Verständnis — ausreichend, um nahezu identische Entwürfe als Dubletten zu erkennen, aber kein Ersatz für echte Embeddings im Produktivbetrieb. Der n-Gramm-Vergleich läuft mangels Volltext der Trägerskripte gegen die Aufgabenstellungen des Bestands desselben Themas (Proxy für den Quelltext).
+
+Edge Functions: `generiere-fragen` (Batch, Quellenhierarchie hart, Dubletten-/n-Gramm-Check, ruft anschließend `verifiziere-frage`) und `verifiziere-frage` (unabhängiger Modellaufruf; `verifiziert` → Erweiterungspool automatisch `freigegeben` mit 10 % Stichprobe, Kernfragen bleiben zur manuellen Freigabe). Oberfläche: `app/[locale]/ausbilder/fragen` (Batch-Generator, Entwurfs-/Verifikationsliste, Inline-Bearbeitung, Kernpool-Markierung, Massenfreigabe, Anzeige von Quellenstufe/Fundstelle, Dublettenhinweise).
+
 ## Welle 3 — Migrationsnummern (reserviert)
 
 Parallele Worktrees dürfen nur die zugewiesene Nummer verwenden. Bestehende Migrationen werden nie geändert.
