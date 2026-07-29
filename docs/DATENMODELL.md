@@ -79,3 +79,16 @@ Migration [`0007_ausbilder_pruefungsreife.sql`](../supabase/migrations/0007_ausb
 
 - `themen`-Hierarchie wird ab AP-05/06 mit Lerneinheiten bespielt.
 - AP-09: `freitext_bewertung_cache`, RPC `pruefung_freitext_abschliessen` (Migration `0005_freitext_bewertung.sql`), Edge Function `bewerte-freitext`.
+
+## Welle 3 — Migrationsnummern (reserviert)
+
+Parallele Worktrees dürfen nur die zugewiesene Nummer verwenden. Bestehende Migrationen werden nie geändert.
+
+| Nr | Paket | Dateiname (Präfix) |
+|----|-------|---------------------|
+| `0008` | AP-18 Ausbildungsnachweis | `0008_berichtsheft` |
+| `0009` | AP-12 Fragengenerator | `0009_fragengenerator` |
+| `0010` | AP-13 Wochenbericht | `0010_wochenbericht` |
+| `0011` | AP-15 PWA/Offline | `0011_pwa` (nur falls DB nötig) |
+| `0012` | AP-16 Monitoring | `0012_monitoring` (nur falls DB nötig) |
+| `0013` | AP-14 i18n-Vollausbau | `0013_i18n` (nur falls DB nötig) |
