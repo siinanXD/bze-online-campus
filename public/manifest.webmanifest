@@ -1,0 +1,41 @@
+{
+  "id": "/de/campus",
+  "name": "BZE Online Campus",
+  "short_name": "BZE Campus",
+  "description": "Lern- und Prüfungsplattform für die Vorbereitung auf die schriftliche Kammerprüfung.",
+  "lang": "de",
+  "dir": "ltr",
+  "start_url": "/de/campus",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#4039d1",
+  "background_color": "#f5f6f8",
+  "categories": ["education"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/maskable.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

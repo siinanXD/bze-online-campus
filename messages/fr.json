@@ -591,5 +591,27 @@
       "titel": "100 Lernpunkte",
       "beschreibung": "Du hast 100 Lernpunkte gesammelt."
     }
+  },
+  "pwa": {
+    "offline": {
+      "titel": "Offline",
+      "text": "Keine Internetverbindung. Deine Eingaben werden gespeichert und automatisch gesendet, sobald du wieder online bist."
+    },
+    "online": {
+      "titel": "Wieder online",
+      "text": "Deine gespeicherten Eingaben werden übertragen."
+    },
+    "update": {
+      "titel": "Neue Version verfügbar",
+      "text": "Aktualisiere, um die neueste Version des Campus zu laden.",
+      "aktion": "Jetzt aktualisieren",
+      "spaeter": "Später"
+    },
+    "sync": {
+      "ausstehend": "{anzahl} Eingaben warten auf Übertragung."
+    },
+    "installieren": {
+      "hinweis": "Diese App lässt sich auf dem Startbildschirm installieren."
+    }
   }
 }

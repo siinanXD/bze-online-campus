@@ -49,6 +49,20 @@ supabase db reset      # Migration 0001 + Seed 0001
 
 Der Seed lädt: Träger BZE, Kammer IHK Aachen, IHK-100-Bewertungsschlüssel, Beruf MAF mit 2 Phasen, 3 Prüfungsbereichen, 15 Themen und **70 Fragen (57 MC + 13 Freitext)** im Status `entwurf`. Aufnahme in den Kernpool erfordert Ausbilderfreigabe (Spec §2, Regel 7).
 
+## PWA & Offline (AP-15)
+
+Die App ist als installierbare PWA ausgelegt (Manifest, Standalone-Display, Icons). Ein handgeschriebener Service Worker (`public/sw.js`, siehe [`docs/adr/0003-pwa-serwist.md`](docs/adr/0003-pwa-serwist.md)) precached die App-Shell, cached statische Assets (Stale-While-Revalidate) und Navigationen (Network-First mit Offline-Fallback `public/offline.html`). Offline abgegebene Eingaben landen in einer IndexedDB-Outbox (`service-worker/offline-db.ts`) und werden per Background Sync übertragen, sobald wieder Verbindung besteht. Ein sichtbarer Offline-Indikator und ein Update-Hinweis (`service-worker/`) sind im Root-Layout eingebunden.
+
+**Lokal testen:**
+
+```bash
+pnpm build && pnpm start          # Service Worker greift nur im Produktionsbuild sinnvoll
+```
+
+- Installierbarkeit/Manifest: DevTools → Application → Manifest.
+- Offline-Fallback: DevTools → Network → „Offline", dann Navigation.
+- Offline-Indikator und Update-Hinweis: Netz trennen bzw. `VERSION` in `public/sw.js` erhöhen und neu laden.
+
 ## Stand der Arbeitspakete
 
 **Welle 0 (seriell)**
@@ -59,7 +73,7 @@ Der Seed lädt: Träger BZE, Kammer IHK Aachen, IHK-100-Bewertungsschlüssel, Be
 
 **Welle 1** — [x] AP-03 Auth · [x] AP-04 Shell/Landing · [x] AP-05 Fachkunde · [x] AP-06 Lernmodus · [x] AP-07 Admin  _(Welle 1 komplett, Integrationsbuild grün)_
 **Welle 2** — [x] AP-08 Wochenprüfung · [x] AP-09 KI-Freitextbewertung · [x] AP-10 Fortschritt/Gates · [x] AP-11 Ausbilder-Cockpit
-**Welle 3** — [ ] AP-12 Fragengenerator · [ ] AP-13 Wochenbericht · [ ] AP-14 i18n-Vollausbau · [ ] AP-15 PWA/Offline · [ ] AP-16 Monitoring · [ ] AP-18 Ausbildungsnachweis
+**Welle 3** — [ ] AP-12 Fragengenerator · [ ] AP-13 Wochenbericht · [ ] AP-14 i18n-Vollausbau · [x] AP-15 PWA/Offline · [ ] AP-16 Monitoring · [ ] AP-18 Ausbildungsnachweis
 **Später** — [ ] AP-17 Erklärvideos (Remotion)
 
 ## Validierung AP-01
