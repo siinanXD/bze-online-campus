@@ -12,46 +12,13 @@ import {
   generiereFragen,
   verifiziereFragen,
 } from './actions';
-
-export type ThemaOption = { id: string; bezeichnung: string };
-
-export type FrageAnsicht = {
-  id: string;
-  thema: string;
-  typ: string;
-  aufgabenstellung: string;
-  status: string;
-  kern: boolean;
-  kiGeneriert: boolean;
-  schwierigkeit: number | null;
-  quellenstufe: number | null;
-  fundstelle: string | null;
-  enthaeltZahlenwert: boolean;
-  normbezuege: string[];
-  verifikation: { bestaetigt: boolean; einwaende: string[]; confidence: number | null } | null;
-  reviewGruende: string[];
-  optionen: Array<{ id: string; text: string; ist_korrekt: boolean; erklaerung: string | null }>;
-};
-
-const STATUS_UI: Record<string, { s: FrageStatus; key: string }> = {
-  entwurf: { s: 'neu', key: 'entwurf' },
-  verifiziert: { s: 'einmal_richtig', key: 'verifiziert' },
-  freigegeben: { s: 'abgeschlossen', key: 'freigegeben' },
-  gesperrt: { s: 'falsch', key: 'gesperrt' },
-  pruefung_noetig: { s: 'falsch', key: 'pruefungNoetig' },
-};
-
-const GRUND_KEY: Record<string, string> = {
-  aehnlichkeit_zu_hoch: 'aehnlichkeit',
-  verifikation_fehlgeschlagen: 'verifikationFehlgeschlagen',
-  stichprobe: 'stichprobe',
-};
-
-type EditForm = {
-  aufgabenstellung: string;
-  kern: boolean;
-  optionen: Array<{ id: string; text: string; ist_korrekt: boolean; erklaerung: string }>;
-};
+import {
+  GRUND_KEY,
+  STATUS_UI,
+  type EditForm,
+  type FrageAnsicht,
+  type ThemaOption,
+} from './_lib/typen';
 
 export function FragenClient({
   themen,
