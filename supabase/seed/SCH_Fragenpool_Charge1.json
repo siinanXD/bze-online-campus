@@ -1,0 +1,858 @@
+{
+  "meta": {
+    "beruf": "Schweißtechnik (modulare Lehrgänge)",
+    "beruf_slug": "schweisstechnik",
+    "bezeichnung_lang": "Schweißtechnik – modulare Lehrgänge und Schweißerprüfung",
+    "kammer": "IHK",
+    "dauer_monate_umschulung": null,
+    "charge": "Charge 1 – Grundlagen",
+    "erstellt": "2026-07-29",
+    "struktur_hinweis": "Kein Kammerausbildungsberuf, sondern modulare Lehrgänge mit Schweißerprüfung durch eine anerkannte Prüfstelle. Die Kammerzuordnung ist nur ein technischer Platzhalter des Datenmodells und vom Ausbilder zu prüfen. Prüfungsgruppen, Bewertungsschlüssel und Gültigkeitsfristen richten sich nach dem jeweiligen Regelwerk und sind vom Ausbilder einzutragen.",
+    "urheberrecht": "Eigenentwicklung des BZE. Keine Übernahme von Aufgaben der Kammern, Prüfstellen oder Prüfungsverlage.",
+    "status_hinweis": "Alle Fragen im Status 'entwurf'. Freigabe durch Ausbilder zwingend. Angaben zu Prüfbereichen, Fristen und Kennwerten aus Normen sind vor der Freigabe an der geltenden Normfassung zu belegen; deshalb tragen die betroffenen Fragen keine Zahlenwerte.",
+    "anzahl_mc": 16,
+    "anzahl_freitext": 2
+  },
+  "pruefungsbereiche": [
+    {
+      "code": "SCH-VF",
+      "bezeichnung": "Schweißverfahren und Werkstoffe",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "SCH-VF-VE",
+          "bezeichnung": "Verfahren und Zusatzwerkstoffe"
+        },
+        {
+          "code": "SCH-VF-NA",
+          "bezeichnung": "Nahtformen und Schweißpositionen"
+        }
+      ]
+    },
+    {
+      "code": "SCH-QS",
+      "bezeichnung": "Qualität und Sicherheit",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "SCH-QS-FE",
+          "bezeichnung": "Schweißfehler und Prüfung"
+        },
+        {
+          "code": "SCH-QS-AS",
+          "bezeichnung": "Arbeitssicherheit beim Schweißen"
+        }
+      ]
+    }
+  ],
+  "uebungspruefungen": [
+    {
+      "code": "SCH-UE-01",
+      "titel": "Übungstest Schweißtechnik – Grundlagen",
+      "bearbeitungszeit_minuten": 45,
+      "hinweis": "16 Aufgaben mit je fünf Auswahlantworten, genau eine Antwort ist richtig. Der Test ersetzt keine Schweißerprüfung nach Regelwerk.",
+      "aufgaben": [
+        "SCH-VF-VE-101",
+        "SCH-VF-VE-102",
+        "SCH-VF-VE-103",
+        "SCH-VF-VE-104",
+        "SCH-VF-VE-105",
+        "SCH-VF-NA-101",
+        "SCH-VF-NA-102",
+        "SCH-VF-NA-103",
+        "SCH-QS-FE-101",
+        "SCH-QS-FE-102",
+        "SCH-QS-FE-103",
+        "SCH-QS-FE-104",
+        "SCH-QS-AS-101",
+        "SCH-QS-AS-102",
+        "SCH-QS-AS-103",
+        "SCH-QS-AS-104"
+      ]
+    }
+  ],
+  "fragen": [
+    {
+      "id": "SCH-VF-VE-101",
+      "typ": "mc",
+      "thema": "SCH-VF-VE",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wodurch wird beim Metall-Schutzgasschweißen (MSG) die Schmelze vor der Umgebungsluft geschützt?",
+      "optionen": [
+        {
+          "text": "Durch das Abdecken mit einer Keramikplatte",
+          "ist_korrekt": false,
+          "erklaerung": "Badsicherungen formen die Wurzel, ersetzen aber nicht den Gasschutz."
+        },
+        {
+          "text": "Durch ein zugeführtes Schutzgas aus der Brennerdüse",
+          "ist_korrekt": true,
+          "erklaerung": "Das Schutzgas verdrängt Luftsauerstoff und Stickstoff von der Schmelze und verhindert so Poren und Versprödung."
+        },
+        {
+          "text": "Durch aufgestreutes Schweißpulver",
+          "ist_korrekt": false,
+          "erklaerung": "Das trifft auf das Unterpulverschweißen zu."
+        },
+        {
+          "text": "Durch Wasserdampf aus dem Werkstück",
+          "ist_korrekt": false,
+          "erklaerung": "Feuchtigkeit ist im Gegenteil eine Fehlerquelle."
+        },
+        {
+          "text": "Durch die Umhüllung der Stabelektrode",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist der Schutzmechanismus beim Lichtbogenhandschweißen."
+        }
+      ]
+    },
+    {
+      "id": "SCH-VF-VE-102",
+      "typ": "mc",
+      "thema": "SCH-VF-VE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was unterscheidet das WIG-Schweißen von den MSG-Verfahren?",
+      "optionen": [
+        {
+          "text": "Beim WIG-Schweißen schmilzt die Elektrode als Zusatzwerkstoff ab.",
+          "ist_korrekt": false,
+          "erklaerung": "Das beschreibt die MSG-Verfahren."
+        },
+        {
+          "text": "Beim WIG-Schweißen wird kein Schutzgas benötigt.",
+          "ist_korrekt": false,
+          "erklaerung": "WIG arbeitet gerade unter inertem Schutzgas."
+        },
+        {
+          "text": "WIG ist nur für unlegierte Stähle geeignet.",
+          "ist_korrekt": false,
+          "erklaerung": "WIG wird gerade für nichtrostende Stähle und Aluminium geschätzt."
+        },
+        {
+          "text": "WIG arbeitet ohne elektrischen Lichtbogen.",
+          "ist_korrekt": false,
+          "erklaerung": "Auch WIG ist ein Lichtbogenverfahren."
+        },
+        {
+          "text": "Beim WIG-Schweißen brennt der Lichtbogen an einer nicht abschmelzenden Wolframelektrode; der Zusatzwerkstoff wird getrennt zugeführt.",
+          "ist_korrekt": true,
+          "erklaerung": "Dadurch lassen sich Wärmeeinbringung und Zusatzwerkstoff unabhängig steuern – gut für Wurzellagen und dünne Bleche."
+        }
+      ]
+    },
+    {
+      "id": "SCH-VF-VE-103",
+      "typ": "mc",
+      "thema": "SCH-VF-VE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum müssen basisch umhüllte Stabelektroden trocken gelagert und vor dem Einsatz gegebenenfalls rückgetrocknet werden?",
+      "optionen": [
+        {
+          "text": "Weil sie sonst zu schnell abschmelzen",
+          "ist_korrekt": false,
+          "erklaerung": "Die Abschmelzleistung hängt von Stromstärke und Elektrodentyp ab."
+        },
+        {
+          "text": "Weil feuchte Elektroden nicht in den Halter passen",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist kein technischer Zusammenhang."
+        },
+        {
+          "text": "Weil Feuchtigkeit in der Umhüllung Wasserstoff in die Naht einbringt und Risse begünstigt",
+          "ist_korrekt": true,
+          "erklaerung": "Wasserstoffinduzierte Kaltrisse sind eine typische Folge feuchter Elektroden; die Rücktrocknung erfolgt nach Herstellerangabe."
+        },
+        {
+          "text": "Weil die Umhüllung sonst elektrisch leitend wird",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist nicht die maßgebliche Wirkung."
+        },
+        {
+          "text": "Weil das Schutzgas sonst verunreinigt wird",
+          "ist_korrekt": false,
+          "erklaerung": "Beim Lichtbogenhandschweißen wird kein Schutzgas zugeführt."
+        }
+      ]
+    },
+    {
+      "id": "SCH-VF-VE-104",
+      "typ": "mc",
+      "thema": "SCH-VF-VE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgabe hat die Schlacke, die sich beim Lichtbogenhandschweißen auf der Naht bildet?",
+      "optionen": [
+        {
+          "text": "Sie schützt die erstarrende Naht vor der Luft und verzögert die Abkühlung; danach muss sie vollständig entfernt werden.",
+          "ist_korrekt": true,
+          "erklaerung": "Verbleibt Schlacke zwischen den Lagen, entstehen Schlackeneinschlüsse als Bindefehler."
+        },
+        {
+          "text": "Sie leitet den Schweißstrom.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Strom fließt über Elektrode und Werkstück."
+        },
+        {
+          "text": "Sie zeigt an, dass die Stromstärke zu niedrig war.",
+          "ist_korrekt": false,
+          "erklaerung": "Schlackenbildung ist verfahrensbedingt normal."
+        },
+        {
+          "text": "Sie ersetzt eine Korrosionsschutzbeschichtung.",
+          "ist_korrekt": false,
+          "erklaerung": "Korrosionsschutz erfolgt gesondert."
+        },
+        {
+          "text": "Sie erhöht dauerhaft die Festigkeit der Naht und bleibt liegen.",
+          "ist_korrekt": false,
+          "erklaerung": "Schlacke ist kein tragender Werkstoff."
+        }
+      ]
+    },
+    {
+      "id": "SCH-VF-VE-105",
+      "typ": "mc",
+      "thema": "SCH-VF-VE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum muss die Fügestelle vor dem Schweißen von Rost, Zunder, Öl und Farbe gereinigt werden?",
+      "optionen": [
+        {
+          "text": "Nur aus optischen Gründen",
+          "ist_korrekt": false,
+          "erklaerung": "Der Grund ist die Nahtqualität."
+        },
+        {
+          "text": "Weil Verunreinigungen Poren, Bindefehler und Spritzer verursachen",
+          "ist_korrekt": true,
+          "erklaerung": "Sie zersetzen sich im Lichtbogen und bringen Gase und Fremdstoffe in die Schmelze."
+        },
+        {
+          "text": "Weil die Naht sonst zu breit wird",
+          "ist_korrekt": false,
+          "erklaerung": "Die Nahtbreite hängt von Führung und Parametern ab."
+        },
+        {
+          "text": "Weil sonst kein Schutzgas benötigt wird",
+          "ist_korrekt": false,
+          "erklaerung": "Das Schutzgas bleibt in jedem Fall erforderlich."
+        },
+        {
+          "text": "Weil sonst der Schweißstrom nicht eingestellt werden kann",
+          "ist_korrekt": false,
+          "erklaerung": "Die Einstellung erfolgt unabhängig davon."
+        }
+      ]
+    },
+    {
+      "id": "SCH-VF-NA-101",
+      "typ": "mc",
+      "thema": "SCH-VF-NA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wozu dient eine Nahtvorbereitung mit V-Fuge an dickeren Blechen?",
+      "optionen": [
+        {
+          "text": "Damit die Bleche sich beim Schweißen nicht erwärmen",
+          "ist_korrekt": false,
+          "erklaerung": "Wärmeeintrag ist verfahrensbedingt unvermeidlich."
+        },
+        {
+          "text": "Damit der Zusatzwerkstoff bis zur Wurzel gelangt und die Verbindung über den gesamten Querschnitt durchgeschweißt wird",
+          "ist_korrekt": true,
+          "erklaerung": "Ohne Öffnungswinkel bliebe der Nahtgrund unerreichbar und es entstünde ein Wurzelfehler."
+        },
+        {
+          "text": "Damit kein Verzug entsteht",
+          "ist_korrekt": false,
+          "erklaerung": "Verzug wird durch Schweißfolge und Heften begrenzt, nicht durch die Fuge allein."
+        },
+        {
+          "text": "Damit weniger Zusatzwerkstoff benötigt wird",
+          "ist_korrekt": false,
+          "erklaerung": "Die Fuge erhöht den Bedarf eher."
+        },
+        {
+          "text": "Damit auf die Reinigung verzichtet werden kann",
+          "ist_korrekt": false,
+          "erklaerung": "Die Reinigung bleibt erforderlich."
+        }
+      ]
+    },
+    {
+      "id": "SCH-VF-NA-102",
+      "typ": "mc",
+      "thema": "SCH-VF-NA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum werden Bauteile vor dem Schweißen geheftet?",
+      "optionen": [
+        {
+          "text": "Um den Schweißstrom zu prüfen",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür gibt es Probeschweißungen an Reststücken."
+        },
+        {
+          "text": "Um Lage und Spaltmaß zu fixieren und den Verzug während des Schweißens zu begrenzen",
+          "ist_korrekt": true,
+          "erklaerung": "Heftstellen halten die Geometrie; sie müssen ausreichend fest sein und werden beim Überschweißen sauber eingebunden."
+        },
+        {
+          "text": "Um die Schlackenbildung zu verringern",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist kein Zusammenhang."
+        },
+        {
+          "text": "Um die Naht optisch zu markieren",
+          "ist_korrekt": false,
+          "erklaerung": "Markierungen erfolgen durch Anreißen."
+        },
+        {
+          "text": "Heften ist nur bei Aluminium erforderlich.",
+          "ist_korrekt": false,
+          "erklaerung": "Geheftet wird werkstoffunabhängig."
+        }
+      ]
+    },
+    {
+      "id": "SCH-VF-NA-103",
+      "typ": "mc",
+      "thema": "SCH-VF-NA",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum ist das Schweißen in Zwangslagen anspruchsvoller als in Wannenlage?",
+      "optionen": [
+        {
+          "text": "Weil in Zwangslagen kein Schutzgas verwendet werden darf",
+          "ist_korrekt": false,
+          "erklaerung": "Schutzgas wird auch dort eingesetzt."
+        },
+        {
+          "text": "Weil in Zwangslagen keine Nahtvorbereitung möglich ist",
+          "ist_korrekt": false,
+          "erklaerung": "Die Vorbereitung erfolgt wie sonst auch."
+        },
+        {
+          "text": "Weil das Schmelzbad nicht allein durch die Schwerkraft gehalten wird und Wärmeeinbringung sowie Brennerführung genauer gesteuert werden müssen",
+          "ist_korrekt": true,
+          "erklaerung": "In Positionen über Kopf oder steigend fließt das Bad ohne angepasste Parameter und Führung ab; deshalb sind Zwangslagen in Prüfungen gesondert nachzuweisen."
+        },
+        {
+          "text": "Weil Zwangslagen nur mit automatisierten Anlagen zulässig sind",
+          "ist_korrekt": false,
+          "erklaerung": "Sie werden gerade von Hand ausgeführt und geprüft."
+        },
+        {
+          "text": "Weil dabei grundsätzlich mit höherer Stromstärke gearbeitet wird",
+          "ist_korrekt": false,
+          "erklaerung": "Häufig wird die Wärmeeinbringung eher reduziert."
+        }
+      ]
+    },
+    {
+      "id": "SCH-QS-FE-101",
+      "typ": "mc",
+      "thema": "SCH-QS-FE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was versteht man unter einem Bindefehler in einer Schweißnaht?",
+      "optionen": [
+        {
+          "text": "Eine fehlende Verbindung zwischen Schweißgut und Grundwerkstoff oder zwischen zwei Lagen",
+          "ist_korrekt": true,
+          "erklaerung": "Typische Ursachen sind zu geringe Wärmeeinbringung, falsche Brennerführung oder nicht entfernte Schlacke."
+        },
+        {
+          "text": "Überhöhtes Schweißgut auf der Nahtoberseite",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist eine Nahtüberhöhung."
+        },
+        {
+          "text": "Eine gasgefüllte Hohlstelle im Schweißgut",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist eine Pore."
+        },
+        {
+          "text": "Einen Riss quer zur Nahtrichtung",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist ein Riss, ein eigener Fehlertyp."
+        },
+        {
+          "text": "Eine Kerbe am Nahtübergang",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist ein Einbrandkerbe."
+        }
+      ]
+    },
+    {
+      "id": "SCH-QS-FE-102",
+      "typ": "mc",
+      "thema": "SCH-QS-FE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Ursache haben Poren in einer Schweißnaht typischerweise?",
+      "optionen": [
+        {
+          "text": "Zu gründliche Reinigung der Fügestelle",
+          "ist_korrekt": false,
+          "erklaerung": "Gründliche Reinigung verhindert Poren."
+        },
+        {
+          "text": "Zu kurze Lichtbogenlänge",
+          "ist_korrekt": false,
+          "erklaerung": "Ein zu langer Lichtbogen ist die kritischere Richtung, weil der Gasschutz leidet."
+        },
+        {
+          "text": "Verwendung eines zu großen Öffnungswinkels",
+          "ist_korrekt": false,
+          "erklaerung": "Das beeinflusst den Zusatzbedarf, nicht die Porenbildung."
+        },
+        {
+          "text": "Zu langsames Abkühlen der Naht",
+          "ist_korrekt": false,
+          "erklaerung": "Langsame Abkühlung wirkt Rissen eher entgegen."
+        },
+        {
+          "text": "Gase, die durch Feuchtigkeit, Verunreinigung oder gestörten Gasschutz in die Schmelze gelangen",
+          "ist_korrekt": true,
+          "erklaerung": "Zugluft, verstopfte Gasdüse, feuchte Elektroden oder ölige Bleche sind die häufigsten Auslöser."
+        }
+      ]
+    },
+    {
+      "id": "SCH-QS-FE-103",
+      "typ": "mc",
+      "thema": "SCH-QS-FE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welches Prüfverfahren ist eine zerstörungsfreie Prüfung einer Schweißnaht?",
+      "optionen": [
+        {
+          "text": "Der Kerbschlagbiegeversuch",
+          "ist_korrekt": false,
+          "erklaerung": "Ebenfalls ein zerstörendes Verfahren."
+        },
+        {
+          "text": "Die Sichtprüfung",
+          "ist_korrekt": true,
+          "erklaerung": "Die Sichtprüfung ist das erste und wichtigste zerstörungsfreie Verfahren; weitere sind Eindring-, Magnetpulver-, Ultraschall- und Durchstrahlungsprüfung."
+        },
+        {
+          "text": "Die Makroschliffprüfung",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür wird ein Querschnitt herausgetrennt."
+        },
+        {
+          "text": "Der Biegeversuch",
+          "ist_korrekt": false,
+          "erklaerung": "Auch dieser ist zerstörend."
+        },
+        {
+          "text": "Der Zugversuch am Probestück",
+          "ist_korrekt": false,
+          "erklaerung": "Dabei wird die Probe zerstört."
+        }
+      ]
+    },
+    {
+      "id": "SCH-QS-FE-104",
+      "typ": "mc",
+      "thema": "SCH-QS-FE",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wodurch entsteht Verzug an einem geschweißten Bauteil?",
+      "optionen": [
+        {
+          "text": "Durch die Kennzeichnung der Naht",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist ohne Einfluss."
+        },
+        {
+          "text": "Durch ungleichmäßige Erwärmung und Abkühlung, die Schrumpfungen und Eigenspannungen erzeugt",
+          "ist_korrekt": true,
+          "erklaerung": "Weil das Bauteil örtlich erhitzt wird, schrumpft der erwärmte Bereich beim Abkühlen und zieht das Bauteil aus der Form."
+        },
+        {
+          "text": "Durch zu gründliches Reinigen der Fugenflanken",
+          "ist_korrekt": false,
+          "erklaerung": "Reinigung erzeugt keinen Verzug."
+        },
+        {
+          "text": "Nur durch fehlerhaftes Grundmaterial",
+          "ist_korrekt": false,
+          "erklaerung": "Verzug tritt auch bei einwandfreiem Werkstoff auf."
+        },
+        {
+          "text": "Ausschließlich durch zu wenig Zusatzwerkstoff",
+          "ist_korrekt": false,
+          "erklaerung": "Die Menge des Zusatzwerkstoffs ist nicht die Ursache."
+        }
+      ]
+    },
+    {
+      "id": "SCH-QS-AS-101",
+      "typ": "mc",
+      "thema": "SCH-QS-AS",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wovor schützt der Schweißerschutzschild mit geeignetem Sichtfilter?",
+      "optionen": [
+        {
+          "text": "Vor der optischen Strahlung des Lichtbogens, insbesondere vor UV-Strahlung, sowie vor Spritzern",
+          "ist_korrekt": true,
+          "erklaerung": "UV-Strahlung verursacht die schmerzhafte Verblitzung der Augen; der Filter muss zur Stromstärke passen."
+        },
+        {
+          "text": "Vor Schweißrauch in den Atemwegen",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür sind Absaugung und gegebenenfalls Atemschutz erforderlich."
+        },
+        {
+          "text": "Vor Verbrennungen an den Händen",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür sind Schweißerhandschuhe da."
+        },
+        {
+          "text": "Vor Lärm",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür ist Gehörschutz vorgesehen."
+        },
+        {
+          "text": "Vor elektrischem Schlag",
+          "ist_korrekt": false,
+          "erklaerung": "Davor schützen trockene, isolierende Ausrüstung und ordnungsgemäße Anlagen."
+        }
+      ]
+    },
+    {
+      "id": "SCH-QS-AS-102",
+      "typ": "mc",
+      "thema": "SCH-QS-AS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum muss beim Schweißen abgesaugt oder für ausreichende Lüftung gesorgt werden?",
+      "optionen": [
+        {
+          "text": "Weil dadurch die Naht schneller abkühlt",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist nicht der Zweck."
+        },
+        {
+          "text": "Weil die Absaugung das Schutzgas ersetzt",
+          "ist_korrekt": false,
+          "erklaerung": "Zu starke Absaugung direkt am Bad kann den Gasschutz sogar stören."
+        },
+        {
+          "text": "Nur wegen der Geruchsbelästigung",
+          "ist_korrekt": false,
+          "erklaerung": "Es geht um Gesundheitsschutz."
+        },
+        {
+          "text": "Weil sonst der Lichtbogen erlischt",
+          "ist_korrekt": false,
+          "erklaerung": "Der Lichtbogen brennt unabhängig davon."
+        },
+        {
+          "text": "Weil Schweißrauche gesundheitsschädliche Partikel und Gase enthalten",
+          "ist_korrekt": true,
+          "erklaerung": "Je nach Werkstoff und Verfahren können die Rauche als krebserzeugend eingestuft sein; die Erfassung an der Entstehungsstelle hat Vorrang."
+        }
+      ]
+    },
+    {
+      "id": "SCH-QS-AS-103",
+      "typ": "mc",
+      "thema": "SCH-QS-AS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Maßnahme ist bei Schweißarbeiten in brandgefährdeten Bereichen vorgeschrieben?",
+      "optionen": [
+        {
+          "text": "Es sind keine besonderen Maßnahmen erforderlich, wenn WIG geschweißt wird.",
+          "ist_korrekt": false,
+          "erklaerung": "Auch WIG erzeugt Zündquellen und Wärme."
+        },
+        {
+          "text": "Die Arbeit muss nur außerhalb der Betriebszeiten erfolgen.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Uhrzeit ersetzt keine Schutzmaßnahme."
+        },
+        {
+          "text": "Eine mündliche Absprache mit einem Kollegen genügt.",
+          "ist_korrekt": false,
+          "erklaerung": "Für brandgefährdete Bereiche ist die schriftliche Erlaubnis vorgesehen."
+        },
+        {
+          "text": "Eine schriftliche Erlaubnis (Schweißerlaubnis) mit festgelegten Schutzmaßnahmen und Brandwache",
+          "ist_korrekt": true,
+          "erklaerung": "Brennbares wird entfernt oder abgedeckt, Löschmittel bereitgestellt und die Brandwache auch nach Arbeitsende fortgeführt."
+        },
+        {
+          "text": "Es genügt, den Feuerlöscher im Nachbarraum zu wissen.",
+          "ist_korrekt": false,
+          "erklaerung": "Löschmittel müssen unmittelbar bereitstehen."
+        }
+      ]
+    },
+    {
+      "id": "SCH-QS-AS-104",
+      "typ": "mc",
+      "thema": "SCH-QS-AS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie ist eine Gasflasche am Arbeitsplatz zu handhaben?",
+      "optionen": [
+        {
+          "text": "Nach Arbeitsende geöffnet lassen, um den Schlauch zu entlasten",
+          "ist_korrekt": false,
+          "erklaerung": "Das Flaschenventil wird geschlossen und die Leitung entspannt."
+        },
+        {
+          "text": "Liegend rollen und ungesichert abstellen",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist unzulässig und gefährlich."
+        },
+        {
+          "text": "In der Nähe einer Wärmequelle lagern, damit der Druck stabil bleibt",
+          "ist_korrekt": false,
+          "erklaerung": "Wärme erhöht den Druck und ist zu vermeiden."
+        },
+        {
+          "text": "Mit Öl oder Fett am Ventil geschmeidig halten",
+          "ist_korrekt": false,
+          "erklaerung": "Öl und Fett an Sauerstoffarmaturen können sich schlagartig entzünden."
+        },
+        {
+          "text": "Stehend transportieren und gegen Umfallen sichern, Ventilschutzkappe beim Transport aufsetzen",
+          "ist_korrekt": true,
+          "erklaerung": "Ein abgeschlagenes Ventil kann die Flasche zum Geschoss machen; deshalb Kappe, Sicherung und schonende Handhabung."
+        }
+      ]
+    },
+    {
+      "id": "SCH-QS-F01",
+      "typ": "freitext",
+      "thema": "SCH-QS-FE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Nennen Sie vier typische Schweißnahtfehler und geben Sie zu jedem eine mögliche Ursache an.",
+      "musterloesung": "1. Poren – Feuchtigkeit, verschmutztes Blech, gestörter Gasschutz durch Zugluft oder verstopfte Düse. 2. Bindefehler – zu geringe Wärmeeinbringung, falsche Brennerführung, nicht entfernte Schlacke zwischen den Lagen. 3. Einbrandkerbe am Nahtübergang – zu hohe Stromstärke oder zu schnelle Schweißgeschwindigkeit, falscher Anstellwinkel. 4. Wurzelfehler beziehungsweise fehlender Durchschweißung – zu geringer Öffnungswinkel, zu großer Steg, zu wenig Wärme im Nahtgrund. Weitere zulässige Antworten: Risse durch Wasserstoff oder zu schnelle Abkühlung, Schlackeneinschlüsse, Nahtüberhöhung, Kantenversatz.",
+      "bewertungsraster": {
+        "max_punkte": 8,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Erster Fehler korrekt benannt",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Passende Ursache zum ersten Fehler",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Zweiter Fehler korrekt benannt",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Passende Ursache zum zweiten Fehler",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Dritter Fehler korrekt benannt",
+            "punkte": 1
+          },
+          {
+            "id": "k6",
+            "beschreibung": "Passende Ursache zum dritten Fehler",
+            "punkte": 1
+          },
+          {
+            "id": "k7",
+            "beschreibung": "Vierter Fehler korrekt benannt",
+            "punkte": 1
+          },
+          {
+            "id": "k8",
+            "beschreibung": "Passende Ursache zum vierten Fehler",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Gaseinschluss",
+          "mangelnde Bindung",
+          "Randkerbe",
+          "Wurzelrückfall",
+          "Kaltriss"
+        ],
+        "haeufige_fehler": [
+          "Fehler ohne Ursache genannt",
+          "Verwechslung von Pore und Bindefehler"
+        ]
+      }
+    },
+    {
+      "id": "SCH-QS-F02",
+      "typ": "freitext",
+      "thema": "SCH-QS-AS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Beschreiben Sie die Gefährdungen beim Lichtbogenschweißen und ordnen Sie jeder Gefährdung eine Schutzmaßnahme zu.",
+      "musterloesung": "Optische Strahlung: UV- und IR-Strahlung des Lichtbogens schädigen Augen und Haut – Schutzschild mit passendem Sichtfilter, geschlossene Schweißerkleidung, Abschirmung des Arbeitsplatzes gegenüber Dritten. Schweißrauche und Gase: gesundheitsschädlich bis krebserzeugend – Absaugung an der Entstehungsstelle, Lüftung, bei Bedarf Atemschutz. Hitze, Funken und glühende Teile: Verbrennungs- und Brandgefahr – Schweißerhandschuhe, schwer entflammbare Kleidung, brennbare Stoffe entfernen, Löschmittel und Brandwache, in brandgefährdeten Bereichen Schweißerlaubnis. Elektrische Gefährdung: Stromschlag besonders bei Nässe und in engen Räumen – einwandfreie Geräte und Leitungen, trockene isolierende Unterlage und Kleidung, Geräte mit geeigneter Leerlaufspannung, Prüfung der Anlage. Lärm und mechanische Gefährdungen beim Richten und Schleifen: Gehör- und Augenschutz.",
+      "bewertungsraster": {
+        "max_punkte": 8,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Optische Strahlung als Gefährdung genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Passende Schutzmaßnahme dazu",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Schweißrauche/Gase als Gefährdung genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Passende Schutzmaßnahme dazu",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Brand- bzw. Verbrennungsgefahr genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k6",
+            "beschreibung": "Passende Schutzmaßnahme dazu",
+            "punkte": 1
+          },
+          {
+            "id": "k7",
+            "beschreibung": "Elektrische Gefährdung genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k8",
+            "beschreibung": "Passende Schutzmaßnahme dazu",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Verblitzen der Augen",
+          "Erfassung an der Entstehungsstelle",
+          "Brandwache",
+          "isolierende Unterlage",
+          "Schweißerlaubnis"
+        ],
+        "haeufige_fehler": [
+          "Gefährdungen ohne zugeordnete Maßnahme",
+          "Schutzschild als Schutz gegen Rauch genannt"
+        ]
+      }
+    }
+  ]
+}

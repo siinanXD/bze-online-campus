@@ -1,0 +1,998 @@
+{
+  "meta": {
+    "beruf": "Kfz-Mechatroniker/-in",
+    "beruf_slug": "kfz-mechatroniker",
+    "bezeichnung_lang": "Kraftfahrzeugmechatroniker/-in",
+    "kammer": "HWK",
+    "dauer_monate_umschulung": null,
+    "charge": "Charge 1 – Grundlagen",
+    "erstellt": "2026-07-29",
+    "struktur_hinweis": "Zuständige Stelle vor Freigabe prüfen: Der Beruf wird sowohl im Handwerk als auch in der Industrie ausgebildet. Voreingestellt ist die Handwerkskammer; Gewichtung und Prüfungsdauer sind vom Ausbilder einzutragen.",
+    "urheberrecht": "Eigenentwicklung des BZE. Keine Übernahme von Aufgaben der Kammern oder Prüfungsverlage.",
+    "status_hinweis": "Alle Fragen im Status 'entwurf'. Freigabe durch Ausbilder zwingend. Fragen mit enthaelt_zahlenwert=true brauchen vor der Freigabe eine Fundstelle und stehen deshalb auf kern=false.",
+    "sicherheitshinweis": "Fragen zu Hochvoltsystemen sind sicherheitskritisch und dürfen nur nach Prüfung durch eine für HV-Systeme qualifizierte Fachkraft freigegeben werden.",
+    "anzahl_mc": 18,
+    "anzahl_freitext": 3
+  },
+  "pruefungsbereiche": [
+    {
+      "code": "KFZ-FZ",
+      "bezeichnung": "Fahrzeugtechnik",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "KFZ-FZ-MO",
+          "bezeichnung": "Motor und Antrieb"
+        },
+        {
+          "code": "KFZ-FZ-FW",
+          "bezeichnung": "Fahrwerk, Bremsen und Räder"
+        },
+        {
+          "code": "KFZ-FZ-EL",
+          "bezeichnung": "Fahrzeugelektrik und Hochvolt"
+        }
+      ]
+    },
+    {
+      "code": "KFZ-SE",
+      "bezeichnung": "Service und Diagnose",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "KFZ-SE-DI",
+          "bezeichnung": "Diagnose und Messtechnik"
+        },
+        {
+          "code": "KFZ-SE-WA",
+          "bezeichnung": "Wartung und Kundendienst"
+        }
+      ]
+    },
+    {
+      "code": "KFZ-WISO",
+      "bezeichnung": "Wirtschafts- und Sozialkunde",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "KFZ-WISO-SU",
+          "bezeichnung": "Arbeitssicherheit und Umweltschutz"
+        },
+        {
+          "code": "KFZ-WISO-BW",
+          "bezeichnung": "Kundenauftrag und Betrieb"
+        }
+      ]
+    }
+  ],
+  "uebungspruefungen": [
+    {
+      "code": "KFZ-UE-01",
+      "titel": "Übungsprüfung Kfz-Mechatroniker – Grundlagen",
+      "bearbeitungszeit_minuten": 60,
+      "hinweis": "18 Aufgaben mit je fünf Auswahlantworten, genau eine Antwort ist richtig.",
+      "aufgaben": [
+        "KFZ-FZ-MO-101",
+        "KFZ-FZ-MO-102",
+        "KFZ-FZ-MO-103",
+        "KFZ-FZ-MO-104",
+        "KFZ-FZ-FW-101",
+        "KFZ-FZ-FW-102",
+        "KFZ-FZ-FW-103",
+        "KFZ-FZ-FW-104",
+        "KFZ-FZ-EL-101",
+        "KFZ-FZ-EL-102",
+        "KFZ-FZ-EL-103",
+        "KFZ-SE-DI-101",
+        "KFZ-SE-DI-102",
+        "KFZ-SE-WA-101",
+        "KFZ-SE-WA-102",
+        "KFZ-WISO-SU-101",
+        "KFZ-WISO-SU-102",
+        "KFZ-WISO-BW-101"
+      ]
+    }
+  ],
+  "fragen": [
+    {
+      "id": "KFZ-FZ-MO-101",
+      "typ": "mc",
+      "thema": "KFZ-FZ-MO",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "In welcher Reihenfolge laufen die Takte des Viertaktmotors ab?",
+      "optionen": [
+        {
+          "text": "Ausstoßen – Verdichten – Ansaugen – Arbeiten",
+          "ist_korrekt": false,
+          "erklaerung": "Die Reihenfolge ist vollständig vertauscht."
+        },
+        {
+          "text": "Arbeiten – Ansaugen – Verdichten – Ausstoßen",
+          "ist_korrekt": false,
+          "erklaerung": "Der Arbeitstakt folgt erst auf die Verdichtung."
+        },
+        {
+          "text": "Ansaugen – Verdichten – Arbeiten – Ausstoßen",
+          "ist_korrekt": true,
+          "erklaerung": "Diese vier Takte bilden einen vollständigen Arbeitszyklus über zwei Kurbelwellenumdrehungen."
+        },
+        {
+          "text": "Ansaugen – Arbeiten – Verdichten – Ausstoßen",
+          "ist_korrekt": false,
+          "erklaerung": "Verdichtung und Arbeitstakt sind vertauscht."
+        },
+        {
+          "text": "Verdichten – Ansaugen – Ausstoßen – Arbeiten",
+          "ist_korrekt": false,
+          "erklaerung": "Ohne vorheriges Ansaugen gäbe es nichts zu verdichten."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-FZ-MO-102",
+      "typ": "mc",
+      "thema": "KFZ-FZ-MO",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Worin unterscheidet sich der Dieselmotor grundsätzlich vom Ottomotor?",
+      "optionen": [
+        {
+          "text": "Der Dieselmotor saugt kein Gemisch und keine Luft an.",
+          "ist_korrekt": false,
+          "erklaerung": "Er saugt Luft an."
+        },
+        {
+          "text": "Der Dieselmotor benötigt eine höhere Zündspannung.",
+          "ist_korrekt": false,
+          "erklaerung": "Er benötigt gar keine Zündspannung."
+        },
+        {
+          "text": "Der Dieselmotor arbeitet grundsätzlich im Zweitaktverfahren.",
+          "ist_korrekt": false,
+          "erklaerung": "Pkw-Dieselmotoren arbeiten im Viertaktverfahren."
+        },
+        {
+          "text": "Beim Dieselmotor entzündet sich der eingespritzte Kraftstoff durch die Hitze der verdichteten Luft (Selbstzündung).",
+          "ist_korrekt": true,
+          "erklaerung": "Der Ottomotor benötigt dagegen eine Fremdzündung durch die Zündkerze."
+        },
+        {
+          "text": "Der Dieselmotor arbeitet ohne Kurbelwelle.",
+          "ist_korrekt": false,
+          "erklaerung": "Beide Bauarten haben eine Kurbelwelle."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-FZ-MO-103",
+      "typ": "mc",
+      "thema": "KFZ-FZ-MO",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgabe hat das Motoröl neben dem Schmieren?",
+      "optionen": [
+        {
+          "text": "Es dient als Kraftstoffzusatz.",
+          "ist_korrekt": false,
+          "erklaerung": "Öl gehört nicht in den Kraftstoff des Viertaktmotors."
+        },
+        {
+          "text": "Es ersetzt das Kühlmittel vollständig.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Kühlkreislauf bleibt erforderlich."
+        },
+        {
+          "text": "Es erhöht die Verdichtung des Motors.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Verdichtung ergibt sich aus der Bauart."
+        },
+        {
+          "text": "Es kühlt, reinigt, dichtet den Kolbenring-Zylinder-Bereich ab und schützt vor Korrosion.",
+          "ist_korrekt": true,
+          "erklaerung": "Motoröl übernimmt mehrere Funktionen gleichzeitig; deshalb sind Ölqualität und Wechselintervall vorgeschrieben."
+        },
+        {
+          "text": "Es filtert die Ansaugluft.",
+          "ist_korrekt": false,
+          "erklaerung": "Das leistet der Luftfilter."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-FZ-MO-104",
+      "typ": "mc",
+      "thema": "KFZ-FZ-MO",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgabe hat der Katalysator im Abgassystem eines Ottomotors?",
+      "optionen": [
+        {
+          "text": "Er kühlt das Abgas auf Umgebungstemperatur.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Katalysator benötigt im Gegenteil Betriebstemperatur."
+        },
+        {
+          "text": "Er senkt den Kraftstoffverbrauch direkt.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Verbrauch wird nicht durch den Katalysator gesenkt."
+        },
+        {
+          "text": "Er filtert mechanisch die Rußpartikel aus.",
+          "ist_korrekt": false,
+          "erklaerung": "Das leistet der Partikelfilter."
+        },
+        {
+          "text": "Er erhöht die Motorleistung.",
+          "ist_korrekt": false,
+          "erklaerung": "Abgasnachbehandlung erhöht die Leistung nicht."
+        },
+        {
+          "text": "Er wandelt Schadstoffe im Abgas chemisch in weniger schädliche Bestandteile um.",
+          "ist_korrekt": true,
+          "erklaerung": "Kohlenmonoxid, unverbrannte Kohlenwasserstoffe und Stickoxide werden am Katalysator umgesetzt; dafür ist das richtige Gemischverhältnis nötig."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-FZ-FW-101",
+      "typ": "mc",
+      "thema": "KFZ-FZ-FW",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum arbeitet eine hydraulische Bremsanlage zuverlässig nur mit luftfreier Flüssigkeit?",
+      "optionen": [
+        {
+          "text": "Weil Luft die Bremsscheiben abkühlt",
+          "ist_korrekt": false,
+          "erklaerung": "Das hätte keine negative Wirkung auf den Druckaufbau."
+        },
+        {
+          "text": "Weil Luft die Bremsflüssigkeit einfärbt",
+          "ist_korrekt": false,
+          "erklaerung": "Verfärbung ist kein Funktionsproblem."
+        },
+        {
+          "text": "Weil Luft den Siedepunkt der Flüssigkeit anhebt",
+          "ist_korrekt": false,
+          "erklaerung": "Der Siedepunkt sinkt vor allem durch aufgenommenes Wasser."
+        },
+        {
+          "text": "Weil Luft den Bremsbelagverschleiß senkt",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Zusammenhang besteht nicht."
+        },
+        {
+          "text": "Weil Luft komprimierbar ist und der Pedalweg dadurch weich und lang wird",
+          "ist_korrekt": true,
+          "erklaerung": "Flüssigkeit ist praktisch inkompressibel; Luftblasen federn den Druck ab und die Bremswirkung sinkt."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-FZ-FW-102",
+      "typ": "mc",
+      "thema": "KFZ-FZ-FW",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum ist Bremsflüssigkeit regelmäßig zu wechseln?",
+      "optionen": [
+        {
+          "text": "Weil sie hygroskopisch ist und aufgenommenes Wasser den Siedepunkt senkt",
+          "ist_korrekt": true,
+          "erklaerung": "Sinkt der Siedepunkt, kann sich bei starker Bremsbelastung Dampf bilden und die Bremse versagt (Dampfblasenbildung)."
+        },
+        {
+          "text": "Weil sie den Bremsbelag angreift",
+          "ist_korrekt": false,
+          "erklaerung": "Der Belag liegt außerhalb des Hydraulikkreises."
+        },
+        {
+          "text": "Weil der Gesetzgeber eine jährliche Neubefüllung des Behälters fordert",
+          "ist_korrekt": false,
+          "erklaerung": "Maßgeblich sind die Herstellervorgaben, und der technische Grund ist die Wasseraufnahme."
+        },
+        {
+          "text": "Weil sie sich bei Kälte verfestigt",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Einfrieren ist nicht das typische Problem."
+        },
+        {
+          "text": "Weil sie mit der Zeit dickflüssiger wird und die Leitungen verstopft",
+          "ist_korrekt": false,
+          "erklaerung": "Verstopfung ist nicht der maßgebliche Grund."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-FZ-FW-103",
+      "typ": "mc",
+      "thema": "KFZ-FZ-FW",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Folge hat ein deutlich zu geringer Reifenfülldruck?",
+      "optionen": [
+        {
+          "text": "Erhöhter Rollwiderstand, stärkere Erwärmung und erhöhter Verschleiß an den Reifenschultern",
+          "ist_korrekt": true,
+          "erklaerung": "Die Walkarbeit steigt; das erhöht Verbrauch und Temperatur und kann bis zum Reifenschaden führen."
+        },
+        {
+          "text": "Verkürzter Bremsweg auf nasser Fahrbahn",
+          "ist_korrekt": false,
+          "erklaerung": "Der Bremsweg verlängert sich eher."
+        },
+        {
+          "text": "Verschleiß ausschließlich in der Reifenmitte",
+          "ist_korrekt": false,
+          "erklaerung": "Mittiger Verschleiß deutet auf zu hohen Druck hin."
+        },
+        {
+          "text": "Keine Auswirkung, solange das Profil ausreichend ist",
+          "ist_korrekt": false,
+          "erklaerung": "Der Fülldruck ist sicherheitsrelevant."
+        },
+        {
+          "text": "Gleichmäßiger Verschleiß über die gesamte Lauffläche",
+          "ist_korrekt": false,
+          "erklaerung": "Gleichmäßiger Verschleiß setzt korrekten Druck voraus."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-FZ-FW-104",
+      "typ": "mc",
+      "thema": "KFZ-FZ-FW",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Eine Radmutter ist mit 120 Nm anzuziehen. Der Drehmomentschlüssel ist versehentlich auf 80 Nm eingestellt. Um wie viel Prozent liegt das aufgebrachte Moment unter dem Sollwert?",
+      "optionen": [
+        {
+          "text": "um rund 66 %",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist der Anteil des Istwerts am Sollwert, nicht die Abweichung."
+        },
+        {
+          "text": "um rund 50 %",
+          "ist_korrekt": false,
+          "erklaerung": "Das entspräche 60 Nm."
+        },
+        {
+          "text": "um rund 33 %",
+          "ist_korrekt": true,
+          "erklaerung": "(120 Nm − 80 Nm) / 120 Nm = 0,333, also rund 33 %."
+        },
+        {
+          "text": "um rund 40 %",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde auf 80 Nm statt auf 120 Nm bezogen und falsch gerundet."
+        },
+        {
+          "text": "um rund 25 %",
+          "ist_korrekt": false,
+          "erklaerung": "Das entspräche 90 Nm."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-FZ-EL-101",
+      "typ": "mc",
+      "thema": "KFZ-FZ-EL",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgabe hat der Generator (die Lichtmaschine) im Fahrzeug?",
+      "optionen": [
+        {
+          "text": "Er startet den Verbrennungsmotor.",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Aufgabe des Anlassers."
+        },
+        {
+          "text": "Er speichert elektrische Energie.",
+          "ist_korrekt": false,
+          "erklaerung": "Gespeichert wird in der Batterie."
+        },
+        {
+          "text": "Er versorgt das Bordnetz und lädt die Batterie, sobald der Motor läuft.",
+          "ist_korrekt": true,
+          "erklaerung": "Der Generator wandelt mechanische in elektrische Energie und deckt den Bedarf des Bordnetzes."
+        },
+        {
+          "text": "Er wandelt Gleichspannung in Hochvoltspannung.",
+          "ist_korrekt": false,
+          "erklaerung": "Das leisten im Hybridfahrzeug andere Komponenten."
+        },
+        {
+          "text": "Er regelt die Motordrehzahl.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Drehzahl regelt das Motorsteuergerät."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-FZ-EL-102",
+      "typ": "mc",
+      "thema": "KFZ-FZ-EL",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Woran erkennt man im Fahrzeug Leitungen und Bauteile des Hochvoltsystems?",
+      "optionen": [
+        {
+          "text": "Hochvoltleitungen sind nicht besonders gekennzeichnet.",
+          "ist_korrekt": false,
+          "erklaerung": "Eine Kennzeichnung ist gerade vorgeschrieben."
+        },
+        {
+          "text": "Am größeren Leitungsquerschnitt allein",
+          "ist_korrekt": false,
+          "erklaerung": "Der Querschnitt allein ist kein sicheres Erkennungsmerkmal."
+        },
+        {
+          "text": "An der blauen Kennzeichnung",
+          "ist_korrekt": false,
+          "erklaerung": "Blau ist nicht die HV-Kennfarbe im Fahrzeug."
+        },
+        {
+          "text": "An der orangefarbenen Kennzeichnung und den Warnhinweisen",
+          "ist_korrekt": true,
+          "erklaerung": "Orange gekennzeichnete Leitungen und HV-Warnschilder markieren spannungsführende Hochvoltkomponenten."
+        },
+        {
+          "text": "An der grün-gelben Kennzeichnung",
+          "ist_korrekt": false,
+          "erklaerung": "Grün-gelb ist in der Gebäudeinstallation dem Schutzleiter vorbehalten."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-FZ-EL-103",
+      "typ": "mc",
+      "thema": "KFZ-FZ-EL",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wer darf an einem Hochvoltsystem eines Fahrzeugs arbeiten?",
+      "optionen": [
+        {
+          "text": "Nur Personen mit der erforderlichen HV-Qualifikation für die jeweilige Tätigkeitsstufe",
+          "ist_korrekt": true,
+          "erklaerung": "Der Zugang zu HV-Arbeiten ist nach Qualifikationsstufen geregelt; ohne die passende Stufe darf das System nicht geöffnet werden."
+        },
+        {
+          "text": "Der Kunde selbst nach Einweisung",
+          "ist_korrekt": false,
+          "erklaerung": "Kunden dürfen keine HV-Arbeiten ausführen."
+        },
+        {
+          "text": "Jeder, der Sicherheitsschuhe trägt",
+          "ist_korrekt": false,
+          "erklaerung": "Persönliche Schutzausrüstung ersetzt keine Qualifikation."
+        },
+        {
+          "text": "Jeder Mitarbeiter der Werkstatt",
+          "ist_korrekt": false,
+          "erklaerung": "Ohne besondere Qualifikation ist das unzulässig und lebensgefährlich."
+        },
+        {
+          "text": "Auszubildende ohne Aufsicht, sofern das Fahrzeug steht",
+          "ist_korrekt": false,
+          "erklaerung": "Ein stehendes Fahrzeug ist nicht automatisch spannungsfrei."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-SE-DI-101",
+      "typ": "mc",
+      "thema": "KFZ-SE-DI",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was sagt ein ausgelesener Fehlerspeichereintrag über die Ursache eines Fehlers aus?",
+      "optionen": [
+        {
+          "text": "Er benennt die defekte Komponente eindeutig und abschließend.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Eintrag beschreibt ein erkanntes Symptom, nicht zwingend das defekte Bauteil."
+        },
+        {
+          "text": "Er ersetzt die Sichtprüfung am Fahrzeug.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Sichtprüfung bleibt Teil der Diagnose."
+        },
+        {
+          "text": "Er ist ein Hinweis auf den betroffenen Signalpfad und muss durch eigene Messungen bestätigt werden.",
+          "ist_korrekt": true,
+          "erklaerung": "Ein Eintrag zu einem Sensorsignal kann auch von Leitung, Steckverbindung oder Steuergerät stammen; die geführte Fehlersuche schließt das ein."
+        },
+        {
+          "text": "Er lässt sich ohne Diagnosegerät durch Abklemmen der Batterie sicher beheben.",
+          "ist_korrekt": false,
+          "erklaerung": "Das löscht allenfalls den Eintrag, nicht die Ursache."
+        },
+        {
+          "text": "Er entsteht nur bei mechanischen Schäden.",
+          "ist_korrekt": false,
+          "erklaerung": "Die meisten Einträge betreffen elektrische oder plausibilitätsbezogene Fehler."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-SE-DI-102",
+      "typ": "mc",
+      "thema": "KFZ-SE-DI",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie wird ein Multimeter zur Messung der Stromstärke in einen Stromkreis eingebunden?",
+      "optionen": [
+        {
+          "text": "Zwischen Karosserie und Batterie-Pluspol",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist keine definierte Messanordnung für den Verbraucherstrom."
+        },
+        {
+          "text": "Ohne Verbindung, nur über den Näherungssensor",
+          "ist_korrekt": false,
+          "erklaerung": "Berührungslos misst nur eine Stromzange."
+        },
+        {
+          "text": "Parallel zum Verbraucher",
+          "ist_korrekt": false,
+          "erklaerung": "Parallel misst man die Spannung; im Strommessbereich würde das einen Kurzschluss erzeugen."
+        },
+        {
+          "text": "In Reihe zum Verbraucher",
+          "ist_korrekt": true,
+          "erklaerung": "Der zu messende Strom muss durch das Messgerät fließen, deshalb wird der Stromkreis aufgetrennt und das Gerät in Reihe eingefügt."
+        },
+        {
+          "text": "Parallel zur Sicherung im ausgebauten Zustand",
+          "ist_korrekt": false,
+          "erklaerung": "Das entspricht keiner zulässigen Strommessung mit dem Multimeter."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-SE-WA-101",
+      "typ": "mc",
+      "thema": "KFZ-SE-WA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum sind bei Wartungsarbeiten die Herstellervorgaben einzuhalten?",
+      "optionen": [
+        {
+          "text": "Weil die Vorgaben lediglich Empfehlungen ohne praktische Bedeutung sind",
+          "ist_korrekt": false,
+          "erklaerung": "Sie sind für die fachgerechte Ausführung maßgeblich."
+        },
+        {
+          "text": "Weil sie den Arbeitsaufwand immer verringern",
+          "ist_korrekt": false,
+          "erklaerung": "Der Aufwand ist nicht der Grund."
+        },
+        {
+          "text": "Weil nur so Betriebssicherheit, Gewährleistung und Nachvollziehbarkeit der Arbeiten gewahrt bleiben",
+          "ist_korrekt": true,
+          "erklaerung": "Vorgaben zu Betriebsstoffen, Anzugsmomenten und Intervallen sind Teil der bestimmungsgemäßen Verwendung des Fahrzeugs."
+        },
+        {
+          "text": "Weil sie ausschließlich für Neufahrzeuge gelten",
+          "ist_korrekt": false,
+          "erklaerung": "Sie gelten über die gesamte Nutzungsdauer."
+        },
+        {
+          "text": "Weil sie die gesetzliche Hauptuntersuchung ersetzen",
+          "ist_korrekt": false,
+          "erklaerung": "Die Hauptuntersuchung bleibt unabhängig erforderlich."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-SE-WA-102",
+      "typ": "mc",
+      "thema": "KFZ-SE-WA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Fahrzeug soll auf der Hebebühne angehoben werden. Was ist dabei zu beachten?",
+      "optionen": [
+        {
+          "text": "Die Tragarme nur locker anlegen, damit man sie schnell nachjustieren kann",
+          "ist_korrekt": false,
+          "erklaerung": "Die Arme müssen gesichert sein."
+        },
+        {
+          "text": "Während des Hebens unter dem Fahrzeug arbeiten, um Zeit zu sparen",
+          "ist_korrekt": false,
+          "erklaerung": "Der Aufenthalt unter dem Fahrzeug während des Hebens ist verboten."
+        },
+        {
+          "text": "Die Aufnahmepunkte des Herstellers nutzen und die Lastverteilung prüfen",
+          "ist_korrekt": true,
+          "erklaerung": "Falsche Aufnahmepunkte beschädigen den Unterboden und können zum Abrutschen des Fahrzeugs führen."
+        },
+        {
+          "text": "Die Sicherung der Hebebühne ist nur bei Nutzfahrzeugen erforderlich.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Sicherung gilt unabhängig von der Fahrzeugklasse."
+        },
+        {
+          "text": "Das Fahrzeug möglichst weit vorn aufnehmen, damit der Motor gut zugänglich ist",
+          "ist_korrekt": false,
+          "erklaerung": "Eine einseitige Aufnahme gefährdet die Standsicherheit."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-WISO-SU-101",
+      "typ": "mc",
+      "thema": "KFZ-WISO-SU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie wird Altöl aus einem Ölwechsel entsorgt?",
+      "optionen": [
+        {
+          "text": "Durch Verbrennen in der Werkstattheizung",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist ohne entsprechende Zulassung unzulässig."
+        },
+        {
+          "text": "Getrennt gesammelt und über einen zugelassenen Entsorger als gefährlicher Abfall abgegeben",
+          "ist_korrekt": true,
+          "erklaerung": "Altöl darf nicht mit anderen Stoffen vermischt werden und unterliegt der Nachweispflicht."
+        },
+        {
+          "text": "Zusammen mit Bremsflüssigkeit in einem Sammelbehälter",
+          "ist_korrekt": false,
+          "erklaerung": "Vermischen verschiedener Abfallarten ist unzulässig."
+        },
+        {
+          "text": "Im Restmüll, sofern die Menge gering ist",
+          "ist_korrekt": false,
+          "erklaerung": "Die Menge ändert nichts an der Einstufung."
+        },
+        {
+          "text": "Über den Werkstattabfluss",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist ein Umweltdelikt."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-WISO-SU-102",
+      "typ": "mc",
+      "thema": "KFZ-WISO-SU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum darf ein Verbrennungsmotor in einer geschlossenen Halle nur mit Abgasabsaugung laufen?",
+      "optionen": [
+        {
+          "text": "Weil sonst die Diagnosegeräte falsch messen",
+          "ist_korrekt": false,
+          "erklaerung": "Der Grund ist der Gesundheitsschutz."
+        },
+        {
+          "text": "Weil sonst der Motor überhitzt",
+          "ist_korrekt": false,
+          "erklaerung": "Die Kühlung ist nicht der Grund für die Absaugung."
+        },
+        {
+          "text": "Weil dadurch der Kraftstoffverbrauch sinkt",
+          "ist_korrekt": false,
+          "erklaerung": "Der Verbrauch ändert sich dadurch nicht."
+        },
+        {
+          "text": "Weil Abgase Kohlenmonoxid enthalten, das geruchlos ist und zum Tod führen kann",
+          "ist_korrekt": true,
+          "erklaerung": "Kohlenmonoxid blockiert den Sauerstofftransport im Blut; die Vergiftung tritt ohne Vorwarnung ein."
+        },
+        {
+          "text": "Weil die Abgase die Hallenbeleuchtung stören",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist kein Sicherheitsgrund."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-WISO-BW-101",
+      "typ": "mc",
+      "thema": "KFZ-WISO-BW",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Kunde beauftragt eine Inspektion. Während der Arbeit wird ein zusätzlicher, kostenpflichtiger Mangel festgestellt. Wie ist zu verfahren?",
+      "optionen": [
+        {
+          "text": "Den Kunden informieren und die Zustimmung einholen, bevor die zusätzliche Arbeit ausgeführt wird",
+          "ist_korrekt": true,
+          "erklaerung": "Der Auftragsumfang wird vom Kunden bestimmt; Mehrarbeit bedarf seiner Zustimmung, die dokumentiert werden sollte."
+        },
+        {
+          "text": "Die Arbeit sofort ausführen und später berechnen",
+          "ist_korrekt": false,
+          "erklaerung": "Ohne Zustimmung ist die Vergütung nicht gesichert und das Vorgehen unzulässig."
+        },
+        {
+          "text": "Den Mangel nur mündlich beim nächsten Besuch ansprechen",
+          "ist_korrekt": false,
+          "erklaerung": "Die Information gehört zeitnah und nachvollziehbar zum aktuellen Auftrag."
+        },
+        {
+          "text": "Den Mangel nicht erwähnen, wenn er die Verkehrssicherheit nicht sofort gefährdet",
+          "ist_korrekt": false,
+          "erklaerung": "Festgestellte Mängel gehören in die Rückmeldung an den Kunden."
+        },
+        {
+          "text": "Das Fahrzeug ohne Rückmeldung stilllegen",
+          "ist_korrekt": false,
+          "erklaerung": "Dazu ist die Werkstatt nicht befugt."
+        }
+      ]
+    },
+    {
+      "id": "KFZ-FZ-F01",
+      "typ": "freitext",
+      "thema": "KFZ-FZ-FW",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Kunde beschreibt, dass das Bremspedal weich ist und sich bis fast zum Bodenblech durchtreten lässt. Nennen Sie drei mögliche Ursachen und beschreiben Sie, wie Sie vorgehen.",
+      "musterloesung": "Mögliche Ursachen: Luft im Bremssystem, Leckage an Leitung, Radbremszylinder oder Bremssattel, Defekt im Hauptbremszylinder (innere Undichtigkeit), stark abgenutzte Beläge oder überhitzte Bremsflüssigkeit mit Dampfblasenbildung. Vorgehen: Zuerst das Fahrzeug als möglicherweise nicht verkehrssicher behandeln und den Kunden darauf hinweisen. Dann Flüssigkeitsstand und Sichtprüfung des gesamten Systems auf Leckagen, Prüfung der Beläge und Scheiben, Prüfung des Siedepunkts der Bremsflüssigkeit. Ergibt sich keine äußere Leckage, ist der Hauptbremszylinder zu prüfen. Nach der Instandsetzung wird das System entlüftet, der Pedalweg kontrolliert und eine Bremsprüfung durchgeführt; das Ergebnis wird dokumentiert.",
+      "bewertungsraster": {
+        "max_punkte": 6,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Nennt Luft im System als Ursache",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Nennt eine Leckage als Ursache",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Nennt eine dritte plausible Ursache",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Weist auf die eingeschränkte Verkehrssicherheit hin",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Beschreibt systematische Sicht- und Funktionsprüfung",
+            "punkte": 1
+          },
+          {
+            "id": "k6",
+            "beschreibung": "Nennt Entlüften und abschließende Bremsprüfung mit Dokumentation",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Dampfblasenbildung",
+          "Hauptbremszylinder undicht",
+          "Bremsleitung porös",
+          "Siedepunktmessung"
+        ],
+        "haeufige_fehler": [
+          "Nur Nachfüllen der Bremsflüssigkeit ohne Ursachensuche",
+          "Fahrzeugrückgabe ohne Bremsprüfung"
+        ]
+      }
+    },
+    {
+      "id": "KFZ-SE-F01",
+      "typ": "freitext",
+      "thema": "KFZ-SE-DI",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Beschreiben Sie die Schritte einer systematischen Fehlersuche an einem Fahrzeug, von der Kundenannahme bis zur Übergabe.",
+      "musterloesung": "1. Kundenbefragung: Wann tritt der Fehler auf, bei welcher Temperatur, Drehzahl oder Fahrsituation, seit wann. 2. Fehler nachvollziehen, wenn möglich durch Probefahrt oder Nachstellen der Bedingungen. 3. Sichtprüfung von Bauteilen, Leitungen und Steckverbindungen. 4. Fehlerspeicher auslesen und Einträge zusammen mit Umgebungsbedingungen bewerten. 5. Anhand von Schaltplan und geführter Fehlersuche gezielt messen und den Fehler eingrenzen, statt Teile zu tauschen. 6. Ursache beheben und die Reparatur dokumentieren. 7. Fehlerspeicher löschen, Funktion durch Probefahrt und erneutes Auslesen prüfen. 8. Fahrzeug übergeben und dem Kunden Ursache, Maßnahme und gegebenenfalls weitere Empfehlungen erklären.",
+      "bewertungsraster": {
+        "max_punkte": 6,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Kundenbefragung und Erfassung der Fehlerbedingungen",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Fehler nachvollziehen bzw. Sichtprüfung",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Fehlerspeicher auslesen und bewerten",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Gezieltes Messen nach Schaltplan statt Teiletausch",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Instandsetzung mit Dokumentation",
+            "punkte": 1
+          },
+          {
+            "id": "k6",
+            "beschreibung": "Funktionsprüfung und Kundenübergabe mit Erklärung",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "geführte Fehlersuche",
+          "Umgebungsbedingungen",
+          "Probefahrt",
+          "Messwerte im Istzustand"
+        ],
+        "haeufige_fehler": [
+          "Teiletausch auf Verdacht",
+          "Löschen des Fehlerspeichers ohne Ursachenklärung"
+        ]
+      }
+    },
+    {
+      "id": "KFZ-WISO-F01",
+      "typ": "freitext",
+      "thema": "KFZ-WISO-SU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Nennen Sie vier Abfallarten, die in einer Kfz-Werkstatt getrennt zu erfassen sind, und begründen Sie, warum eine Vermischung unzulässig ist.",
+      "musterloesung": "Getrennt zu erfassen sind unter anderem: Altöl, Ölfilter und ölverschmutzte Betriebsmittel, Bremsflüssigkeit, Kühlerfrostschutzmittel, Altbatterien, Altreifen sowie Lösemittel- und Lackreste. Eine Vermischung ist unzulässig, weil sich vermischte Abfälle nicht mehr sortenrein verwerten lassen und die gesamte Menge dann als gefährlicher Abfall entsorgt werden muss. Außerdem können sich unverträgliche Stoffe gegenseitig gefährlich beeinflussen, und der gesetzlich geforderte Entsorgungsnachweis wäre nicht mehr führbar.",
+      "bewertungsraster": {
+        "max_punkte": 6,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Nennt Altöl bzw. ölverschmutzte Betriebsmittel",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Nennt eine zweite zutreffende Abfallart",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Nennt eine dritte zutreffende Abfallart",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Nennt eine vierte zutreffende Abfallart",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Begründet mit der Verwertbarkeit bzw. Sortenreinheit",
+            "punkte": 1
+          },
+          {
+            "id": "k6",
+            "beschreibung": "Nennt rechtliche Nachweispflicht oder Gefährdungsaspekt",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Sonderabfall",
+          "gefährlicher Abfall",
+          "Entsorgungsnachweis",
+          "sortenrein"
+        ],
+        "haeufige_fehler": [
+          "Nennung von Hausmüll als getrennte Sonderabfallart",
+          "Behauptung, geringe Mengen dürften vermischt werden"
+        ]
+      }
+    }
+  ]
+}
