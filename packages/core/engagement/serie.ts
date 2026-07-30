@@ -7,8 +7,8 @@
  * Anlass für die Erinnerung am Abend (siehe `benachrichtigung/anlaesse`).
  */
 
-import { tageDazwischen, vortag } from './kalender.ts';
-import type { Kalendertag, Serie, SerienStatus } from './types.ts';
+import { tageDazwischen, vortag } from './kalender';
+import type { Kalendertag, Serie, SerienStatus } from './types';
 
 /**
  * Entfernt Duplikate und sortiert absteigend (jüngster Tag zuerst).

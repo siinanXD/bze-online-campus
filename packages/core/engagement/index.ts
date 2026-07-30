@@ -10,9 +10,9 @@
  * `kalender` liefert die Tag- und Stundenrechnung, auf der alles davon aufsetzt.
  */
 
-export * from './types.ts';
-export * from './kalender.ts';
-export * from './serie.ts';
-export * from './tagesziel.ts';
-export * from './faelligkeit.ts';
-export * from './abzeichen.ts';
+export * from './types';
+export * from './kalender';
+export * from './serie';
+export * from './tagesziel';
+export * from './faelligkeit';
+export * from './abzeichen';

@@ -7,9 +7,9 @@
  *  2. Eine Mindestpause je Anlass, damit derselbe Hinweis nicht täglich kommt.
  */
 
-import { alsKalendertag } from '../engagement/kalender.ts';
-import { endlicheZahl } from '../werte/zahl.ts';
-import type { Anlass, ProtokollEintrag, PushEinstellungen } from './types.ts';
+import { alsKalendertag } from '../engagement/kalender';
+import { endlicheZahl } from '../werte/zahl';
+import type { Anlass, ProtokollEintrag, PushEinstellungen } from './types';
 
 /** Voreinstellung: höchstens zwei Benachrichtigungen pro Tag. */
 export const STANDARD_MAX_PRO_TAG = 2;
