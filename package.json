@@ -4,6 +4,9 @@
   "version": "0.1.0",
   "description": "BZE Online Campus — Lern- und Prüfungsplattform (PWA) für Bildungsträger.",
   "packageManager": "pnpm@9.7.0",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
