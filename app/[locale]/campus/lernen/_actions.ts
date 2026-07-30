@@ -2,6 +2,34 @@
 import { z } from 'zod';
 import { createServerSupabase } from '@bze/db/server';
 import type { VersuchErgebnis } from '@bze/core/mastery';
+import { alsKalendertag } from '@bze/core/engagement';
+
+/**
+ * Hält fest, dass heute gelernt wurde — Grundlage für Lernserie und Tagesziel.
+ *
+ * Bewusst serverseitig und nach dem eigentlichen Versuch: das Festhalten darf
+ * das Beantworten weder blockieren noch mit einem Fehler überschreiben. Der
+ * Kalendertag wird in der Zeitzone der Person gebildet (aus den
+ * Push-Einstellungen, sonst Europe/Berlin für den Erstpiloten Euskirchen),
+ * damit jemand, der um 23:30 lernt, den richtigen Tag gutgeschrieben bekommt.
+ */
+async function haltLernaktivitaetFest(
+  supabase: Awaited<ReturnType<typeof createServerSupabase>>,
+  userId: string,
+): Promise<void> {
+  try {
+    const { data } = await supabase
+      .from('push_einstellungen')
+      .select('zeitzone')
+      .eq('user_id', userId)
+      .maybeSingle();
+    const tag = alsKalendertag(new Date(), data?.zeitzone ?? 'Europe/Berlin');
+    await supabase.rpc('notiere_lernaktivitaet', { p_tag: tag, p_antworten: 1 });
+  } catch {
+    // Die Lernaktivität ist Beiwerk — ein Fehler hier darf den Versuch nicht
+    // beeinträchtigen, der bereits gespeichert ist.
+  }
+}
 
 const Eingabe = z.object({
   frageId: z.string().uuid(),
@@ -39,6 +67,9 @@ export async function beantworteMc(input: unknown): Promise<AntwortFeedback> {
     p_antwort_sprache: 'de',
   });
   if (error) throw new Error('Versuch konnte nicht gespeichert werden.');
+
+  const { data: { user } } = await supabase.auth.getUser();
+  if (user) await haltLernaktivitaetFest(supabase, user.id);
 
   return {
     ergebnis: data as VersuchErgebnis,
