@@ -16,7 +16,7 @@ import {
  * RLS regelt den Zugriff (SPEC §3): Teilnehmer sehen nur `lerneinheiten` mit Status
  * `freigegeben`, `lerneinheit_fortschritt` ist auf die eigene Zeile beschränkt. Diese Funktionen
  * verlassen sich bewusst nicht zusätzlich auf Anwendungscode für den Zugriffsschutz
- * (AGENTS.md §2), sie filtern nur, was ohnehin über RLS sichtbar ist.
+ * (CONTRIBUTING.md §2), sie filtern nur, was ohnehin über RLS sichtbar ist.
  */
 
 export async function holeThema(supabase: SupabaseClient, themaId: string): Promise<Thema | null> {

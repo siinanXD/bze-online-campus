@@ -2,7 +2,7 @@ import { z } from 'zod';
 
 /**
  * Zod-Schema für die YAML-Frontmatter der Fachkunde-Lerneinheiten (SPEC §11 AP-05).
- * Faktenbelegpflicht (AGENTS.md §2, SPEC §2 Regel 8): jede Lerneinheit trägt mindestens
+ * Faktenbelegpflicht (CONTRIBUTING.md §2, SPEC §2 Regel 8): jede Lerneinheit trägt mindestens
  * eine Quellenangabe. Seitenzahlen dürfen ein Platzhalter sein ("S. [vom Ausbilder]"),
  * aber das Feld selbst ist Pflicht — leer ist richtig, raten ist falsch.
  */

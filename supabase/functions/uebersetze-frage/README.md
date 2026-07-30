@@ -3,7 +3,7 @@
 Erzeugt Zusatz-Übersetzungen zu Prüfungsfragen in die Zielsprachen und legt sie in
 `fragen_uebersetzungen` ab (Spec §5 `uebersetze_frage`).
 
-**Nicht verhandelbar (Spec §5 / AGENTS.md Regel 4):**
+**Nicht verhandelbar (Spec §5 / CONTRIBUTING.md Regel 4):**
 
 - **Nur der Kernpool wird übersetzt** (`fragen.kern = true`). Nicht-Kernfragen
   werden übersprungen (`kein_kernpool`).

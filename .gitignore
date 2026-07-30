@@ -19,6 +19,12 @@ coverage/
 
 package-lock.json
 
+# Lokale Werkzeug- und Editorkonfiguration
+.claude/
+CLAUDE.md
+.idea/
+.vscode/
+
 # Ausgaben der Design-Screenshots
 /shots/
 galerie.html

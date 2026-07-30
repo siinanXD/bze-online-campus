@@ -4,7 +4,7 @@ Lern- und Prüfungsplattform (installierbare PWA) für Bildungsträger. Teilnehm
 
 **Erstpilot:** Maschinen- und Anlagenführer/-in, Schwerpunkt Metall- und Kunststofftechnik · Kammer IHK Aachen · Kunde Berufsbildungszentrum Euskirchen.
 
-Die maßgebliche Spezifikation ist [`docs/SPEC.md`](docs/SPEC.md), die Arbeitsregeln stehen in [`AGENTS.md`](AGENTS.md).
+Die maßgebliche Spezifikation ist [`docs/SPEC.md`](docs/SPEC.md), die Arbeitsregeln stehen in [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Stack
 
@@ -21,19 +21,33 @@ Die maßgebliche Spezifikation ist [`docs/SPEC.md`](docs/SPEC.md), die Arbeitsre
 
 Die maßgebliche Spezifikation ist [`docs/SPEC.md`](docs/SPEC.md), die Architektur der
 Schichten steht in [`docs/ARCHITEKTUR.md`](docs/ARCHITEKTUR.md), die Arbeitsregeln in
-[`AGENTS.md`](AGENTS.md).
+[`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-## Setup in unter 10 Minuten
+## Lokal starten
+
+Voraussetzungen: Node ≥ 22, pnpm 9.7 (`corepack enable`), Docker (für Supabase),
+Supabase CLI ≥ 2, Python ≥ 3.12 für die Skripte.
 
 ```bash
 pnpm install
-cp .env.example .env.local          # Supabase-URL und Keys eintragen
-supabase start                      # lokale Supabase-Instanz
-supabase db reset                   # spielt Migrationen + Seed ein
 pnpm dev                            # http://localhost:3000/de
 ```
 
-Der Seed wird aus dem Fragenpool erzeugt:
+Ohne Supabase-Zugangsdaten sind nur die öffentlichen Seiten erreichbar
+(`/de`, `/de/login`, `/de/showcase`, Impressum, Datenschutz) — alles andere
+leitet die Middleware bewusst auf den Login um. Für den vollen Durchlauf:
+
+```bash
+cp .env.example .env.local          # Werte aus der Ausgabe von `supabase start`
+supabase start                      # Postgres, Auth, Storage, Studio, Mail-Catcher
+supabase db reset                   # Migrationen + Seed einspielen
+```
+
+Welche Variable woher kommt, wie der erste Anmeldezugang entsteht (es gibt keine
+Selbstregistrierung) und wie Edge Functions lokal laufen, steht in
+[`docs/LOKAL-EINRICHTEN.md`](docs/LOKAL-EINRICHTEN.md).
+
+Der Seed ist generiert, nicht handgeschrieben:
 
 ```bash
 pnpm seed:generate                  # supabase/seed/0001_maf_seed.sql aus JSON
@@ -53,7 +67,8 @@ service-worker/      PWA-Client: Offline-Outbox und Push-Client
 messages/            Übersetzungen de,en,fr,ar,uk,tr
 content/fachkunde/   MDX-Lerninhalte
 tests/               unit, integration, e2e, helpers
-docs/                SPEC.md, DATENMODELL.md, ARCHITEKTUR.md, adr/
+docs/                SPEC.md, DATENMODELL.md, ARCHITEKTUR.md, DESIGN.md,
+                     LOKAL-EINRICHTEN.md, adr/
 scripts/             generate_seed.py, generate_i18n.py
 ```
 
@@ -141,10 +156,20 @@ Fehler; das Opt-in samt stiller Zeiten steht im Profil. Migration
 **Welle 4** — [x] AP-17 Erinnerungen & Lernfokus (Web Push, Lernserie, Tagesziel, Fehler-Wiedervorlage)
 **Später** — [ ] Erklärvideos (Remotion)
 
-## Validierung AP-01
+## Datenmodell: geprüfter Stand
 
-Migration und Seed wurden gegen PostgreSQL 16 + pgvector geprüft: Migration läuft fehlerfrei, Seed lädt 70 Fragen / 228 Antwortoptionen / 13 Musterlösungen, RLS ist auf allen Tabellen aktiv. RLS-Verhalten je Rolle getestet: Teilnehmer sieht nur `freigegeben`-Inhalte und eigene Daten, Ausbilder nur zugewiesene Teilnehmer, Admin alles.
+Migration und Seed laufen gegen PostgreSQL 16 mit pgvector fehlerfrei; der Seed lädt 70 Fragen, 228 Antwortoptionen und 13 Musterlösungen, RLS ist auf allen Tabellen aktiv. Das Zugriffsverhalten wurde mit je einem Testnutzer pro Rolle geprüft: Teilnehmer sehen nur freigegebene Inhalte und eigene Daten, Ausbilder nur zugewiesene Teilnehmer, Admin alles.
 
-## Nicht verhandelbar (Kurzform, Details in AGENTS.md)
+## Grenzen und offene Punkte
+
+Ehrlicher Stand, damit niemand falsche Erwartungen mitnimmt:
+
+- **Fachliche Verifikation der Fragen steht aus.** Der Pool ist maschinell erzeugt und liegt im Status `entwurf`; produktiv wird eine Frage erst nach Ausbilderfreigabe. Migration `0003` gibt für die Erprobung nur eine kleine, zahlenwertfreie Auswahl frei und ist vor echtem Einsatz zurückzunehmen.
+- **Kein Pilotbetrieb mit echten Teilnehmenden.** Alle Aussagen zu Verhalten und Leistung stammen aus lokalen Läufen und Tests, nicht aus dem Feld.
+- **E2E-Abdeckung ist ein Gerüst**, kein vollständiger Regressionsschutz — bislang Smoke-Tests der Hauptpfade.
+- **Der erste Admin wird per SQL angelegt** (siehe `docs/LOKAL-EINRICHTEN.md`); ein Bootstrap-Weg über die Oberfläche fehlt.
+- **Erklärvideos (Remotion)** sind spezifiziert, aber nicht gebaut.
+
+## Nicht verhandelbar (Kurzform, Details in CONTRIBUTING.md)
 
 Prüfungsinhalte immer Deutsch · keine Zahlenwerte ohne Fundstelle · keine Reproduktion geschützter Prüfungsaufgaben · die App vergibt keine Prüfungszulassung · KI-Bewertung ist Lernfeedback · keine Secrets im Client · RLS auf jeder Tabelle · Farbe nie alleiniger Informationsträger.

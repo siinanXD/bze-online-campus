@@ -1,8 +1,24 @@
-# AGENTS.md — Regeln für die Arbeit in diesem Repository
+# Mitarbeit
 
-Diese Datei liegt im Wurzelverzeichnis und wird zu Beginn **jeder** Session gelesen. Sie gilt für menschliche Mitarbeit und für Agenten gleichermaßen.
+Wer an diesem Repository arbeitet, liest zuerst diese Datei. Die fachliche
+Spezifikation steht in `docs/SPEC.md`, die Schichten in `docs/ARCHITEKTUR.md`,
+das Einrichten der lokalen Umgebung in `docs/LOKAL-EINRICHTEN.md`. Hier steht
+nur, **wie** gearbeitet wird.
 
-Die fachliche Spezifikation steht in `docs/SPEC.md`. Diese Datei hier regelt nur, **wie** gearbeitet wird.
+## Kurzfassung für den Einstieg
+
+- **Fachliche Entscheidung** → `packages/core/<domäne>`: rein, datenbankfrei,
+  Zeit als Parameter, mit Unit-Test.
+- **Daten lesen** → `app/**/_lib/*-queries.ts`, keine Entscheidungen.
+- **Daten schreiben** → `app/**/_lib/*-actions.ts` mit `'use server'`, jede
+  Eingabe über ein Zod-Schema.
+- **Darstellung** → Server Components laden, Client Components in
+  `_components/` tragen die Interaktion.
+- **SQL** → additive Migration in `supabase/migrations/`, RLS auf jeder neuen
+  Tabelle, `docs/DATENMODELL.md` mitpflegen (CI-Gate).
+- Namen und Kommentare auf Deutsch, kein `new Date()` ohne Argument in der
+  Domäne, Kalendertage als `YYYY-MM-DD` in der Zeitzone der Person.
+- Vor jedem Commit: `pnpm typecheck && pnpm lint && pnpm test`.
 
 ---
 
@@ -38,15 +54,14 @@ Diese Punkte stehen über jeder Aufgabenstellung. Wenn eine Anweisung ihnen wide
 
 ---
 
-## 3 — Eine Session, ein Arbeitspaket
+## 3 — Ein Branch, ein Arbeitspaket
 
-Arbeite niemals an mehreren Arbeitspaketen gleichzeitig. Zu Beginn jeder Session:
+Nie an mehreren Arbeitspaketen gleichzeitig arbeiten. Bevor der erste Code entsteht:
 
-1. `git status` prüfen, sauberen Stand herstellen
-2. Das Arbeitspaket benennen, an dem gearbeitet wird
+1. Sauberen Stand herstellen (`git status`)
+2. Das Arbeitspaket benennen und den Branch danach schneiden
 3. Prüfen, ob dessen Abhängigkeiten in `main` sind
-4. In `docs/SPEC.md` den zugehörigen Abschnitt lesen
-5. Erst dann Code schreiben
+4. Den zugehörigen Abschnitt in `docs/SPEC.md` lesen
 
 **Welle 0 (AP-00, AP-01, AP-02) ist streng seriell.** Beginne kein Paket aus Welle 1, bevor alle drei in `main` gemergt sind. Andernfalls baut jeder Zweig eigene Typen und eigene Tokens, und die Zusammenführung kostet mehr, als die Parallelität eingebracht hat.
 
@@ -150,10 +165,11 @@ Ein leeres Feld mit offener Frage ist besser als ein plausibel aussehender falsc
 
 ---
 
-## 9 — Zum Schluss jeder Session
+## 9 — Bevor der Pull Request aufgeht
 
-1. Alle Änderungen committet, nichts liegt uncommitted herum
-2. `README.md` und betroffene Dokumentation aktualisiert
+1. Alles committet, nichts liegt unversioniert herum
+2. `README.md` und betroffene Dokumentation aktualisiert, Gates grün
 3. Häkchenliste der Arbeitspakete im README nachgezogen
-4. Kurze Zusammenfassung: was fertig ist, was offen blieb, was als Nächstes ansteht
-5. Offene Fragen ausdrücklich benennen, nicht verschweigen
+4. Im Pull Request: was fertig ist, was offen blieb, welche Grenzfälle geprüft
+   wurden
+5. Offene fachliche Fragen ausdrücklich benennen, nicht verschweigen

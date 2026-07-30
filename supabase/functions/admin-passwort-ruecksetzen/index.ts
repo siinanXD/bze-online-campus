@@ -8,7 +8,7 @@
 //
 // Setzt EIN NEUES Temporärpasswort für einen bestehenden Nutzer und erzwingt
 // den Passwortwechsel beim nächsten Login. Läuft ausschließlich mit dem
-// Service-Role-Key (siehe AGENTS.md §2 „Keine Secrets im Client“) und kann
+// Service-Role-Key (siehe CONTRIBUTING.md §2 „Keine Secrets im Client“) und kann
 // ein bestehendes Passwort weder einsehen noch direkt setzen — es wird immer
 // neu erzeugt (Spec §5 „nutzer_anlegen / admin_passwort_ruecksetzen“).
 //

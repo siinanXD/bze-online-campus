@@ -8,7 +8,7 @@ Login (`muss_passwort_aendern = true`). Siehe `docs/SPEC.md` §5.
 
 Passwörter liegen in `auth.users` und sind nur über die Supabase Auth Admin
 API (`auth.admin.updateUserById`) änderbar, die den Service-Role-Key
-voraussetzt. Der Service-Role-Key darf laut AGENTS.md §2 niemals im Client
+voraussetzt. Der Service-Role-Key darf laut CONTRIBUTING.md §2 niemals im Client
 oder im normalen App-Code stehen — deshalb ausschließlich hier, serverseitig,
 mit eigener Rollenprüfung.
 

@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
 /**
- * Zod-Schemas für die Systemgrenze Supabase → Topic-/Lerneinheit-Seiten (AGENTS.md §7
+ * Zod-Schemas für die Systemgrenze Supabase → Topic-/Lerneinheit-Seiten (CONTRIBUTING.md §7
  * "Zod-Validierung an jeder Systemgrenze"). Es existiert noch kein generierter `Database`-Typ
  * (AP-01 liefert ihn perspektivisch), deshalb werden die Supabase-Antworten hier explizit
  * geprüft statt blind gecastet.

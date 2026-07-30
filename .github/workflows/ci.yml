@@ -13,9 +13,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm typecheck
       - run: pnpm lint
-      # Tests liefen bisher nicht in der CI — der wichtigste Zugewinn hier.
-      # Deckt Unit (packages/core) und Integration (Domain↔Versender) ab.
-      # E2E hat einen eigenen, optionalen Job (braucht eine laufende App).
+      # Unit (packages/core) und Integration. E2E laeuft nicht hier —
+      # dafuer braucht es eine laufende Anwendung (E2E_BASE_URL).
       - run: pnpm test
 
   python:
@@ -37,12 +36,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Neue Domain- und Bibliotheksdateien bleiben klein
-        # Bewusst NICHT projektweit: bestehende UI-Bildschirme (showcase,
-        # Runner) sind gewachsen und werden nicht ohne Not zerschlagen. Das
-        # Gate schützt die gut geschnittene Domain davor, wieder auszuufern.
-        # Grenze 240 Zeilen: großzügig genug für eine zusammenhängende
-        # Einheit (die größte bestehende Domaindatei, kaskade.ts, liegt knapp
-        # darunter), eng genug, dass Vermischung von Belangen auffällt.
+        # Gilt nur fuer packages/core: die Domaenenlogik soll in lesbaren
+        # Einheiten bleiben. UI-Bildschirme sind bewusst ausgenommen.
+        # 240 Zeilen fasst eine zusammenhaengende Einheit, faellt aber auf,
+        # wenn mehrere Belange in einer Datei landen.
         run: |
           GRENZE=240
           FEHLER=0

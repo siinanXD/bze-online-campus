@@ -33,7 +33,20 @@ Format nach [Keep a Changelog](https://keepachangelog.com/de/1.0.0/).
 - **Werkzeuge**: `pyproject.toml` mit ruff-Konfiguration; npm-Skripte `test:unit`,
   `test:integration`, `test:e2e`, `lint:py`, `format:py`.
 - Architekturdokument [`docs/ARCHITEKTUR.md`](docs/ARCHITEKTUR.md),
-  [`CHANGELOG.md`](CHANGELOG.md), PR-Vorlage, `CLAUDE.md`.
+  [`CHANGELOG.md`](CHANGELOG.md), PR-Vorlage.
+- Einrichtungsanleitung [`docs/LOKAL-EINRICHTEN.md`](docs/LOKAL-EINRICHTEN.md):
+  Voraussetzungen, Herkunft jeder Umgebungsvariable, erster Anmeldezugang,
+  Edge Functions lokal, häufige Stolpersteine.
+- `supabase/config.toml`, damit `supabase start` und `supabase db reset` ohne
+  vorheriges `supabase init` laufen (Ports, lokaler Mail-Catcher, keine
+  Selbstregistrierung).
+- Designsystem-Dokumentation [`docs/DESIGN.md`](docs/DESIGN.md): Tokens,
+  Komponenteninventar und die verbindlichen Zugänglichkeitsregeln.
+
+### Entfernt
+
+- `docs/DESIGN-MASTERPROMPT.md` — die enthaltenen Designentscheidungen stehen
+  jetzt als Dokumentation in `docs/DESIGN.md`.
 
 ### Geändert
 
@@ -43,6 +56,10 @@ Format nach [Keep a Changelog](https://keepachangelog.com/de/1.0.0/).
   ausgelagert, damit die Server-Seite nicht mehr aus einer `'use client'`-Datei
   importiert.
 - Python-Skripte auf PEP 8 / ruff gebracht, Docstrings für alle Funktionen.
+- Arbeitsregeln von `AGENTS.md` nach [`CONTRIBUTING.md`](CONTRIBUTING.md) mit
+  Einstiegs-Kurzfassung; Verweise im Code nachgezogen.
+- README: Abschnitt „Lokal starten" korrigiert (Voraussetzungen, Verhalten ohne
+  Zugangsdaten) und um „Grenzen und offene Punkte" ergänzt.
 
 ### Behoben
 

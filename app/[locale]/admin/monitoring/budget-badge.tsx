@@ -3,7 +3,7 @@ import { cn } from '@bze/ui';
 export type BudgetStatus = 'ok' | 'warnung' | 'ueberschritten' | 'keinBudget';
 
 /**
- * Budget-Status als Farbe + Symbol + Textlabel (AGENTS.md §2: Farbe nie
+ * Budget-Status als Farbe + Symbol + Textlabel (CONTRIBUTING.md §2: Farbe nie
  * alleiniger Träger). Bewusst ohne Grün/Rot — diese sind laut Design-Regel
  * dem Lernstatus vorbehalten. Unterschieden wird über Symbol, Label und
  * Akzentflächen (neutral → Umriss → gefüllt).
