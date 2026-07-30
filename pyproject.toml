@@ -1,0 +1,16 @@
+# Konfiguration der Python-Hilfsskripte (scripts/).
+#
+# Das Projekt ist eine Next.js-/TypeScript-Anwendung; Python dient nur der
+# Erzeugung von Seed und Übersetzungen. ruff hält diese Skripte an denselben
+# Standard wie die übrigen Vorzeige-Repos (Zeilenlänge 100, E/F/W/I/UP).
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP"]
+# E501 (Zeilenlänge) bleibt aktiv über `line-length`; die langen
+# Übersetzungstupel in generate_i18n.py sind bewusst einzeilig gehalten,
+# weil ein Umbruch die Lesbarkeit der (de, en, fr, uk, tr)-Reihung zerstört.
+ignore = ["E501"]
