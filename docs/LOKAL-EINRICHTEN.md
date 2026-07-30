@@ -54,7 +54,10 @@ Danach ausfüllen:
 | `NEXT_PUBLIC_SUPABASE_URL` | Ausgabe von `supabase start` → *API URL*. Nur die Origin, **kein** `/rest/v1`. | ja |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Ausgabe von `supabase start` → *anon key*. | ja |
 | `SUPABASE_SERVICE_ROLE_KEY` | Ausgabe von `supabase start` → *service_role key*. Nur für Edge Functions, nie im Client. | nur für Functions |
-| `LLM_API_KEY`, `LLM_BASE_URL`, `LLM_MODELL` | Beim eigenen LLM-Anbieter. Für die Erprobung stattdessen `LLM_MOCK=1` setzen — dann rechnet eine Heuristik ohne externen Aufruf. | nein |
+| `LLM_API_KEY`, `LLM_BASE_URL`, `LLM_MODELL` | Beim eigenen OpenAI-kompatiblen LLM-Anbieter. Für Edge-Function-Erprobung stattdessen `LLM_MOCK=1` setzen; der Admin-Content-Generator nutzt `AI_MOCK_MODE=true` für lokale Mock-Inhalte. | nur für echte LLM-Aufrufe |
+| `AI_MOCK_MODE` | `true` erzwingt den Mock-Provider ohne externen Aufruf. `false` nutzt den echten serverseitigen LLM-Provider nur mit gesetztem `LLM_API_KEY`. | ja für Content-Generator |
+| `CONTENT_SOURCE_MODE` | Für den Admin-Content-Generator auf `generated` setzen. | ja für Content-Generator |
+| `RAG_ENABLED` | Für den aktuellen Stand auf `false` setzen; RAG ist noch nicht aktiv. | ja für Content-Generator |
 | `NEXT_PUBLIC_VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY` | `npx web-push generate-vapid-keys` — der private Schlüssel bleibt serverseitig. | nur für Push |
 | `VAPID_SUBJECT` | Eigene Kontaktadresse als `mailto:`. | nur für Push |
 
@@ -132,6 +135,19 @@ protokolliert und gegen das Monatsbudget des Trägers geprüft. Cron-getriebene
 Functions (`sende-erinnerungen`, `erzeuge-wochenbericht`) erwarten den Header
 `x-cron-secret`; die jeweilige README neben der Function beschreibt Aufruf und
 Nutzlast.
+
+Der Admin-Content-Generator ist kein Edge-Function-Aufruf. Für den lokalen
+Mock-Ablauf reichen `AI_MOCK_MODE=true`, `CONTENT_SOURCE_MODE=generated` und
+`RAG_ENABLED=false`. Er schreibt Jobs in `content_generation_jobs`, protokolliert
+Aufrufe in `ki_aufrufe` und speichert Inhalte erst nach expliziter
+Preview-Freigabe durch Verwaltung/Admin.
+
+Für echte Content-Generierung `AI_MOCK_MODE=false` setzen und einen
+OpenAI-kompatiblen Anbieter ueber `LLM_API_KEY`, `LLM_BASE_URL` und `LLM_MODELL`
+konfigurieren. Ohne API-Key erscheint ein verstaendlicher Hinweis; es gibt
+keinen stillen Wechsel auf einen kostenpflichtigen Provider. RAG bleibt mit
+`RAG_ENABLED=false` deaktiviert. Automatisierte Tests mocken den Provider und
+duerfen keine echten kostenpflichtigen API-Aufrufe ausloesen.
 
 ## 7 — Seed neu erzeugen
 

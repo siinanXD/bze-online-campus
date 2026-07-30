@@ -13,6 +13,10 @@ shadow_port = 54320
 # pgvector ist Teil des Postgres-Images ab 15; Migration 0001 legt die Extension an.
 major_version = 15
 
+[db.seed]
+enabled = true
+sql_paths = ["./seed/*.sql"]
+
 [db.pooler]
 enabled = false
 port = 54329
