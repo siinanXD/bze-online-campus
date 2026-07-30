@@ -428,6 +428,9 @@
   "lernen": {
     "titel": "Learn",
     "einstiegHinweis": "Choose a topic to practise questions. The learning mode shows incorrectly answered questions first, then new ones, then questions due for review.",
+    "uebersicht": "Your topics",
+    "fragenStand": "{fertig} of {gesamt} questions mastered",
+    "gesamtFortschritt": "Overall progress {prozent} percent",
     "themaLabel": "Topic",
     "fortschritt": "Question {pos} of {gesamt}",
     "antworten": "Answer",

@@ -428,6 +428,9 @@
   "lernen": {
     "titel": "Lernen",
     "einstiegHinweis": "Wähle ein Thema, um Fragen zu üben. Der Lernmodus zeigt zuerst falsch beantwortete, dann neue und dann zur Wiederholung fällige Fragen.",
+    "uebersicht": "Deine Themen",
+    "fragenStand": "{fertig} von {gesamt} Fragen sicher",
+    "gesamtFortschritt": "Gesamtfortschritt {prozent} Prozent",
     "themaLabel": "Thema",
     "fortschritt": "Frage {pos} von {gesamt}",
     "antworten": "Antworten",

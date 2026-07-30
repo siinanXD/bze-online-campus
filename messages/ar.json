@@ -428,6 +428,9 @@
   "lernen": {
     "titel": "التعلّم",
     "einstiegHinweis": "اختر موضوعًا لممارسة الأسئلة. يعرض وضع التعلّم أولًا الأسئلة المُجاب عنها خطأً، ثم الجديدة، ثم المستحقّة للمراجعة.",
+    "uebersicht": "موضوعاتك",
+    "fragenStand": "{fertig} من {gesamt} أسئلة مُتقَنة",
+    "gesamtFortschritt": "التقدّم الإجمالي {prozent} بالمئة",
     "themaLabel": "الموضوع",
     "fortschritt": "سؤال {pos} من {gesamt}",
     "antworten": "إجابة",

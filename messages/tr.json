@@ -428,6 +428,9 @@
   "lernen": {
     "titel": "Öğren",
     "einstiegHinweis": "Soru çalışmak için bir konu seçin. Öğrenme modu önce yanlış yanıtlanan soruları, ardından yenileri, sonra tekrar zamanı gelenleri gösterir.",
+    "uebersicht": "Konuların",
+    "fragenStand": "{fertig}/{gesamt} soru güvenli",
+    "gesamtFortschritt": "Toplam ilerleme yüzde {prozent}",
     "themaLabel": "Konu",
     "fortschritt": "Soru {pos}/{gesamt}",
     "antworten": "Yanıtla",

@@ -428,6 +428,9 @@
   "lernen": {
     "titel": "Apprendre",
     "einstiegHinweis": "Choisissez un thème pour vous entraîner. Le mode apprentissage affiche d’abord les questions mal répondues, puis les nouvelles, puis celles à réviser.",
+    "uebersicht": "Vos thèmes",
+    "fragenStand": "{fertig} sur {gesamt} questions maîtrisées",
+    "gesamtFortschritt": "Progression globale {prozent} pour cent",
     "themaLabel": "Thème",
     "fortschritt": "Question {pos} sur {gesamt}",
     "antworten": "Répondre",
