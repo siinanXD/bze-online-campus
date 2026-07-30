@@ -1,0 +1,1077 @@
+{
+  "meta": {
+    "beruf": "Industriemechaniker/-in",
+    "beruf_slug": "industriemechaniker",
+    "bezeichnung_lang": "Industriemechaniker/-in",
+    "kammer": "IHK",
+    "dauer_monate_umschulung": null,
+    "charge": "Charge 1 – Grundlagen",
+    "erstellt": "2026-07-29",
+    "struktur_hinweis": "Die Prüfungsbereiche bilden die schriftlichen Bereiche des Berufs ab. Gewichtung und Prüfungsdauer sind bewusst leer gelassen und vom Ausbilder anhand der geltenden Ausbildungsordnung und der Vorgaben der IHK Aachen einzutragen.",
+    "urheberrecht": "Eigenentwicklung des BZE. Keine Übernahme von Aufgaben der Kammern oder Prüfungsverlage.",
+    "status_hinweis": "Alle Fragen im Status 'entwurf'. Freigabe durch Ausbilder zwingend. Fragen mit enthaelt_zahlenwert=true brauchen vor der Freigabe eine Tabellenbuch-Fundstelle und stehen deshalb auf kern=false.",
+    "anzahl_mc": 20,
+    "anzahl_freitext": 3
+  },
+  "pruefungsbereiche": [
+    {
+      "code": "IM-FT",
+      "bezeichnung": "Fertigungstechnik",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "IM-FT-ZE",
+          "bezeichnung": "Technische Zeichnungen und Toleranzen"
+        },
+        {
+          "code": "IM-FT-SP",
+          "bezeichnung": "Spanende Fertigung"
+        },
+        {
+          "code": "IM-FT-WS",
+          "bezeichnung": "Werkstoffe und Wärmebehandlung"
+        }
+      ]
+    },
+    {
+      "code": "IM-BT",
+      "bezeichnung": "Betriebstechnik",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "IM-BT-MO",
+          "bezeichnung": "Montage und Verbindungstechnik"
+        },
+        {
+          "code": "IM-BT-IH",
+          "bezeichnung": "Instandhaltung und Wartung"
+        },
+        {
+          "code": "IM-BT-ST",
+          "bezeichnung": "Steuerungstechnik, Hydraulik und Pneumatik"
+        }
+      ]
+    },
+    {
+      "code": "IM-WISO",
+      "bezeichnung": "Wirtschafts- und Sozialkunde",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "IM-WISO-AR",
+          "bezeichnung": "Arbeitsrecht und Arbeitssicherheit"
+        },
+        {
+          "code": "IM-WISO-BW",
+          "bezeichnung": "Betriebliche Zusammenhänge"
+        }
+      ]
+    }
+  ],
+  "uebungspruefungen": [
+    {
+      "code": "IM-UE-01",
+      "titel": "Übungsprüfung Industriemechaniker – Grundlagen",
+      "bearbeitungszeit_minuten": 60,
+      "hinweis": "20 Aufgaben mit je fünf Auswahlantworten, genau eine Antwort ist richtig.",
+      "aufgaben": [
+        "IM-FT-ZE-101",
+        "IM-FT-ZE-102",
+        "IM-FT-ZE-103",
+        "IM-FT-ZE-104",
+        "IM-FT-SP-101",
+        "IM-FT-SP-102",
+        "IM-FT-SP-103",
+        "IM-FT-SP-104",
+        "IM-FT-WS-101",
+        "IM-FT-WS-102",
+        "IM-BT-MO-101",
+        "IM-BT-MO-102",
+        "IM-BT-IH-101",
+        "IM-BT-IH-102",
+        "IM-BT-ST-101",
+        "IM-BT-ST-102",
+        "IM-BT-ST-103",
+        "IM-WISO-AR-101",
+        "IM-WISO-AR-102",
+        "IM-WISO-BW-101"
+      ]
+    }
+  ],
+  "fragen": [
+    {
+      "id": "IM-FT-ZE-101",
+      "typ": "mc",
+      "thema": "IM-FT-ZE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN EN ISO 286"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was gibt die Maßtoleranz eines Bauteilmaßes an?",
+      "optionen": [
+        {
+          "text": "Die Anzahl der zulässigen Nacharbeitsschritte",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist keine Größe der Maßeintragung."
+        },
+        {
+          "text": "Den Mittelwert aus mehreren Messungen",
+          "ist_korrekt": false,
+          "erklaerung": "Der Mittelwert ist ein Auswerteergebnis, keine Vorgabe."
+        },
+        {
+          "text": "Die Differenz zwischen Höchstmaß und Mindestmaß",
+          "ist_korrekt": true,
+          "erklaerung": "Die Toleranz ist die zulässige Spanne, in der das Istmaß liegen darf."
+        },
+        {
+          "text": "Die zulässige Rauheit der Oberfläche",
+          "ist_korrekt": false,
+          "erklaerung": "Die Rauheit wird über das Oberflächenzeichen vorgegeben."
+        },
+        {
+          "text": "Die Differenz zwischen Istmaß und Nennmaß",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Maßabweichung."
+        }
+      ]
+    },
+    {
+      "id": "IM-FT-ZE-102",
+      "typ": "mc",
+      "thema": "IM-FT-ZE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aussage über Form- und Lagetoleranzen ist richtig?",
+      "optionen": [
+        {
+          "text": "Sie werden nur in Baugruppenzeichnungen eingetragen.",
+          "ist_korrekt": false,
+          "erklaerung": "Sie stehen typischerweise in der Einzelteilzeichnung."
+        },
+        {
+          "text": "Sie gelten nur für gedrehte Bauteile.",
+          "ist_korrekt": false,
+          "erklaerung": "Sie gelten für alle Bauteilarten."
+        },
+        {
+          "text": "Sie begrenzen Abweichungen der Gestalt und der Lage von Elementen zueinander.",
+          "ist_korrekt": true,
+          "erklaerung": "Ebenheit, Rundheit, Parallelität oder Rechtwinkligkeit werden über Form- und Lagetoleranzen begrenzt."
+        },
+        {
+          "text": "Sie ersetzen die Maßtoleranzen vollständig.",
+          "ist_korrekt": false,
+          "erklaerung": "Beide Toleranzarten stehen nebeneinander."
+        },
+        {
+          "text": "Sie beschreiben die Werkstofffestigkeit.",
+          "ist_korrekt": false,
+          "erklaerung": "Festigkeitswerte sind Werkstoffkennwerte."
+        }
+      ]
+    },
+    {
+      "id": "IM-FT-ZE-103",
+      "typ": "mc",
+      "thema": "IM-FT-ZE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wozu dient eine Stückliste?",
+      "optionen": [
+        {
+          "text": "Sie enthält die Arbeitsschritte in ihrer Reihenfolge.",
+          "ist_korrekt": false,
+          "erklaerung": "Das leistet der Arbeitsplan."
+        },
+        {
+          "text": "Sie ersetzt die Zusammenbauzeichnung.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Zeichnung zeigt die Lage der Teile, die Stückliste zählt sie auf."
+        },
+        {
+          "text": "Sie enthält die Prüfprotokolle der Fertigung.",
+          "ist_korrekt": false,
+          "erklaerung": "Prüfprotokolle sind Aufzeichnungen der Qualitätssicherung."
+        },
+        {
+          "text": "Sie führt alle Einzelteile einer Baugruppe mit Menge, Benennung und Werkstoff auf.",
+          "ist_korrekt": true,
+          "erklaerung": "Die Stückliste ist die Grundlage für Beschaffung, Fertigung und Montage."
+        },
+        {
+          "text": "Sie legt die Toleranzen der Einzelteile fest.",
+          "ist_korrekt": false,
+          "erklaerung": "Toleranzen stehen in der Zeichnung."
+        }
+      ]
+    },
+    {
+      "id": "IM-FT-ZE-104",
+      "typ": "mc",
+      "thema": "IM-FT-ZE",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Eine Bohrung hat das Nennmaß 25 mm mit dem oberen Abmaß +0,021 mm und dem unteren Abmaß 0 mm. Wie groß sind Höchstmaß und Toleranz?",
+      "optionen": [
+        {
+          "text": "Höchstmaß 24,979 mm, Toleranz 0,021 mm",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde das Abmaß abgezogen statt addiert."
+        },
+        {
+          "text": "Höchstmaß 25,21 mm, Toleranz 0,21 mm",
+          "ist_korrekt": false,
+          "erklaerung": "Kommafehler um den Faktor 10."
+        },
+        {
+          "text": "Höchstmaß 25,021 mm, Toleranz 0,021 mm",
+          "ist_korrekt": true,
+          "erklaerung": "Höchstmaß = Nennmaß + oberes Abmaß. Toleranz = Höchstmaß − Mindestmaß = 25,021 mm − 25,000 mm."
+        },
+        {
+          "text": "Höchstmaß 25,000 mm, Toleranz 0,021 mm",
+          "ist_korrekt": false,
+          "erklaerung": "Das Nennmaß ist hier das Mindestmaß, nicht das Höchstmaß."
+        },
+        {
+          "text": "Höchstmaß 25,021 mm, Toleranz 0,042 mm",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde die Toleranz verdoppelt."
+        }
+      ]
+    },
+    {
+      "id": "IM-FT-SP-101",
+      "typ": "mc",
+      "thema": "IM-FT-SP",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Größen bestimmen beim Drehen gemeinsam das Zeitspanvolumen?",
+      "optionen": [
+        {
+          "text": "Kühlschmierstoffmenge und Werkzeugstandzeit",
+          "ist_korrekt": false,
+          "erklaerung": "Beides beeinflusst den Prozess, ist aber nicht Teil der Berechnung."
+        },
+        {
+          "text": "Nur die Drehzahl",
+          "ist_korrekt": false,
+          "erklaerung": "Die Drehzahl allein sagt nichts über den Abtrag aus."
+        },
+        {
+          "text": "Werkstückgewicht und Spannkraft",
+          "ist_korrekt": false,
+          "erklaerung": "Diese betreffen die Spannung des Werkstücks."
+        },
+        {
+          "text": "Freiwinkel und Spanwinkel",
+          "ist_korrekt": false,
+          "erklaerung": "Das sind Werkzeuggeometrien, keine Schnittgrößen."
+        },
+        {
+          "text": "Schnittgeschwindigkeit, Vorschub und Schnitttiefe",
+          "ist_korrekt": true,
+          "erklaerung": "Diese drei Schnittgrößen ergeben zusammen das je Zeiteinheit abgetragene Volumen."
+        }
+      ]
+    },
+    {
+      "id": "IM-FT-SP-102",
+      "typ": "mc",
+      "thema": "IM-FT-SP",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Worin unterscheidet sich das Gleichlauffräsen vom Gegenlauffräsen?",
+      "optionen": [
+        {
+          "text": "Beim Gleichlauffräsen laufen Vorschubrichtung und Schneidenbewegung im Eingriff gleichgerichtet, der Span beginnt dick und endet dünn.",
+          "ist_korrekt": true,
+          "erklaerung": "Daraus ergeben sich geringere Reibung und bessere Oberflächen, aber die Maschine muss spielfrei sein."
+        },
+        {
+          "text": "Beim Gegenlauffräsen entsteht grundsätzlich kein Span.",
+          "ist_korrekt": false,
+          "erklaerung": "Auch beim Gegenlauffräsen wird gespant."
+        },
+        {
+          "text": "Der Unterschied betrifft nur die Kühlschmierung.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Unterschied liegt in der Eingriffsrichtung."
+        },
+        {
+          "text": "Gegenlauffräsen ist nur an CNC-Maschinen möglich.",
+          "ist_korrekt": false,
+          "erklaerung": "Beide Verfahren sind an konventionellen und CNC-Maschinen möglich."
+        },
+        {
+          "text": "Beim Gleichlauffräsen dreht sich das Werkzeug schneller.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Drehzahl ist unabhängig von der Fräsrichtung."
+        }
+      ]
+    },
+    {
+      "id": "IM-FT-SP-103",
+      "typ": "mc",
+      "thema": "IM-FT-SP",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Werkzeug zeigt nach kurzer Einsatzzeit eine deutlich abgerundete Schneidkante und die Oberfläche des Werkstücks wird schlechter. Was liegt vor?",
+      "optionen": [
+        {
+          "text": "Ein Spannungsriss im Werkstück",
+          "ist_korrekt": false,
+          "erklaerung": "Das beträfe das Werkstück, nicht die Schneide."
+        },
+        {
+          "text": "Zu geringe Werkstückhärte",
+          "ist_korrekt": false,
+          "erklaerung": "Weiche Werkstoffe verschleißen die Schneide gerade weniger."
+        },
+        {
+          "text": "Verschleiß der Schneide",
+          "ist_korrekt": true,
+          "erklaerung": "Freiflächen- und Kolkverschleiß runden die Schneidkante ab; die Standzeit ist erreicht, das Werkzeug muss gewechselt oder nachgeschliffen werden."
+        },
+        {
+          "text": "Ein zu großer Freiwinkel von Werk aus",
+          "ist_korrekt": false,
+          "erklaerung": "Die Geometrie ändert sich nicht von selbst im Betrieb."
+        },
+        {
+          "text": "Ein Fehler des Messschiebers",
+          "ist_korrekt": false,
+          "erklaerung": "Das Messmittel erklärt keine abgerundete Schneide."
+        }
+      ]
+    },
+    {
+      "id": "IM-FT-SP-104",
+      "typ": "mc",
+      "thema": "IM-FT-SP",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Fräser mit dem Durchmesser 63 mm soll mit einer Schnittgeschwindigkeit von 100 m/min laufen. Welche Drehzahl ist einzustellen?",
+      "optionen": [
+        {
+          "text": "n ≈ 253 min⁻¹",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde mit dem doppelten Durchmesser gerechnet."
+        },
+        {
+          "text": "n ≈ 505 min⁻¹",
+          "ist_korrekt": true,
+          "erklaerung": "n = vc / (π × d) = 100 m/min / (3,1416 × 0,063 m) ≈ 505 min⁻¹."
+        },
+        {
+          "text": "n ≈ 1 010 min⁻¹",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde mit dem Radius gerechnet."
+        },
+        {
+          "text": "n ≈ 1 587 min⁻¹",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde π vergessen."
+        },
+        {
+          "text": "n ≈ 6 300 min⁻¹",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde mm nicht in m umgerechnet."
+        }
+      ]
+    },
+    {
+      "id": "IM-FT-WS-101",
+      "typ": "mc",
+      "thema": "IM-FT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was versteht man unter dem Vergüten eines Stahls?",
+      "optionen": [
+        {
+          "text": "Das Glühen bis zur vollständigen Entfestigung",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Weichglühen."
+        },
+        {
+          "text": "Härten mit anschließendem Anlassen auf höhere Temperatur",
+          "ist_korrekt": true,
+          "erklaerung": "Vergüten ist die Kombination aus Härten und Anlassen und erzeugt ein ausgewogenes Verhältnis von Festigkeit und Zähigkeit."
+        },
+        {
+          "text": "Das Anreichern der Randschicht mit Kohlenstoff",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Aufkohlen bzw. Einsatzhärten."
+        },
+        {
+          "text": "Nur das Abschrecken in Wasser",
+          "ist_korrekt": false,
+          "erklaerung": "Abschrecken ist nur ein Teilschritt des Härtens."
+        },
+        {
+          "text": "Das Aufbringen einer Korrosionsschutzschicht",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Beschichten."
+        }
+      ]
+    },
+    {
+      "id": "IM-FT-WS-102",
+      "typ": "mc",
+      "thema": "IM-FT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum wird ein Bauteil einsatzgehärtet statt durchgehärtet?",
+      "optionen": [
+        {
+          "text": "Weil das Bauteil dadurch leichter wird",
+          "ist_korrekt": false,
+          "erklaerung": "Die Masse ändert sich praktisch nicht."
+        },
+        {
+          "text": "Weil eine harte, verschleißfeste Randschicht bei zähem Kern entstehen soll",
+          "ist_korrekt": true,
+          "erklaerung": "Der zähe Kern nimmt Stoßbeanspruchung auf, die harte Randschicht widersteht dem Verschleiß."
+        },
+        {
+          "text": "Weil das Bauteil dadurch korrosionsbeständig wird",
+          "ist_korrekt": false,
+          "erklaerung": "Korrosionsschutz erfordert andere Maßnahmen."
+        },
+        {
+          "text": "Weil sich das Bauteil danach besser schweißen lässt",
+          "ist_korrekt": false,
+          "erklaerung": "Die Schweißeignung wird dadurch nicht verbessert."
+        },
+        {
+          "text": "Weil dadurch der Werkstoff billiger wird",
+          "ist_korrekt": false,
+          "erklaerung": "Kosten sind nicht der technische Grund."
+        }
+      ]
+    },
+    {
+      "id": "IM-BT-MO-101",
+      "typ": "mc",
+      "thema": "IM-BT-MO",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wodurch überträgt eine vorgespannte Schraubenverbindung Querkräfte zwischen zwei Blechen?",
+      "optionen": [
+        {
+          "text": "Durch die Unterlegscheibe allein",
+          "ist_korrekt": false,
+          "erklaerung": "Die Scheibe verteilt die Flächenpressung, überträgt aber nicht die Querkraft."
+        },
+        {
+          "text": "Durch Reibung in der Trennfuge, die aus der Vorspannkraft entsteht",
+          "ist_korrekt": true,
+          "erklaerung": "Die Vorspannkraft presst die Bauteile aufeinander; die Reibung in der Trennfuge überträgt die Querkraft."
+        },
+        {
+          "text": "Durch das Gewindespiel",
+          "ist_korrekt": false,
+          "erklaerung": "Spiel überträgt keine Kraft."
+        },
+        {
+          "text": "Durch Formschluss des Schraubenschafts in der Bohrung",
+          "ist_korrekt": false,
+          "erklaerung": "Das gilt nur bei Passschrauben als Sonderfall."
+        },
+        {
+          "text": "Durch Stoffschluss zwischen Schraube und Blech",
+          "ist_korrekt": false,
+          "erklaerung": "Stoffschluss entsteht nur beim Schweißen, Löten oder Kleben."
+        }
+      ]
+    },
+    {
+      "id": "IM-BT-MO-102",
+      "typ": "mc",
+      "thema": "IM-BT-MO",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgabe hat ein Wellendichtring an einer Getriebeausgangswelle?",
+      "optionen": [
+        {
+          "text": "Er zentriert die Welle im Gehäuse.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Zentrierung übernehmen die Lager."
+        },
+        {
+          "text": "Er verhindert den Austritt von Schmierstoff und das Eindringen von Schmutz.",
+          "ist_korrekt": true,
+          "erklaerung": "Die Dichtlippe liegt an der Welle an und dichtet den Gehäusedurchtritt ab."
+        },
+        {
+          "text": "Er begrenzt die Drehzahl der Welle.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Drehzahl bestimmt der Antrieb."
+        },
+        {
+          "text": "Er überträgt das Drehmoment auf die Nabe.",
+          "ist_korrekt": false,
+          "erklaerung": "Das leisten Passfeder, Pressverband oder Spannsatz."
+        },
+        {
+          "text": "Er gleicht Fluchtungsfehler zwischen zwei Wellen aus.",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür gibt es Ausgleichskupplungen."
+        }
+      ]
+    },
+    {
+      "id": "IM-BT-IH-101",
+      "typ": "mc",
+      "thema": "IM-BT-IH",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche vier Grundmaßnahmen umfasst die Instandhaltung?",
+      "optionen": [
+        {
+          "text": "Schmieren, Reinigen, Lackieren, Verpacken",
+          "ist_korrekt": false,
+          "erklaerung": "Das sind Einzeltätigkeiten, keine Grundmaßnahmen."
+        },
+        {
+          "text": "Warten, Inspizieren, Instandsetzen, Verbessern",
+          "ist_korrekt": true,
+          "erklaerung": "Diese vier Maßnahmen bilden die Instandhaltung nach der üblichen Einteilung."
+        },
+        {
+          "text": "Messen, Steuern, Regeln, Überwachen",
+          "ist_korrekt": false,
+          "erklaerung": "Das sind Begriffe der Automatisierungstechnik."
+        },
+        {
+          "text": "Analysieren, Dokumentieren, Schulen, Auditieren",
+          "ist_korrekt": false,
+          "erklaerung": "Das sind Aufgaben des Qualitätsmanagements."
+        },
+        {
+          "text": "Planen, Fertigen, Prüfen, Liefern",
+          "ist_korrekt": false,
+          "erklaerung": "Das beschreibt den Auftragsdurchlauf."
+        }
+      ]
+    },
+    {
+      "id": "IM-BT-IH-102",
+      "typ": "mc",
+      "thema": "IM-BT-IH",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Wälzlager läuft auffällig laut und wird heiß. Welche Ursache ist am wahrscheinlichsten?",
+      "optionen": [
+        {
+          "text": "Das Gehäuse ist zu dick lackiert.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Lackschicht beeinflusst die Lagerung nicht nennenswert."
+        },
+        {
+          "text": "Die Drehrichtung ist falsch herum.",
+          "ist_korrekt": false,
+          "erklaerung": "Wälzlager laufen in beide Richtungen."
+        },
+        {
+          "text": "Der Wellendichtring fehlt.",
+          "ist_korrekt": false,
+          "erklaerung": "Das führt zu Leckage, nicht unmittelbar zu heißem Lauf."
+        },
+        {
+          "text": "Die Welle ist zu kurz.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Wellenlänge erklärt kein Lagergeräusch."
+        },
+        {
+          "text": "Der Schmierstoff ist verbraucht oder das Lager ist beschädigt.",
+          "ist_korrekt": true,
+          "erklaerung": "Mangelschmierung und Laufbahnschäden führen zu erhöhter Reibung, Geräusch und Temperatur."
+        }
+      ]
+    },
+    {
+      "id": "IM-BT-ST-101",
+      "typ": "mc",
+      "thema": "IM-BT-ST",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Worin unterscheidet sich eine Steuerung von einer Regelung?",
+      "optionen": [
+        {
+          "text": "Eine Steuerung ist immer elektrisch, eine Regelung immer pneumatisch.",
+          "ist_korrekt": false,
+          "erklaerung": "Beide gibt es in allen Energiearten."
+        },
+        {
+          "text": "Eine Steuerung arbeitet ohne Rückführung des Ergebnisses, eine Regelung mit geschlossenem Wirkungskreis.",
+          "ist_korrekt": true,
+          "erklaerung": "Die Regelung misst die Regelgröße und korrigiert laufend, die Steuerung wirkt in offener Kette."
+        },
+        {
+          "text": "Der Unterschied betrifft nur die Bezeichnung im Schaltplan.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Unterschied ist funktional."
+        },
+        {
+          "text": "Eine Regelung arbeitet ohne Messglied.",
+          "ist_korrekt": false,
+          "erklaerung": "Ohne Messung gäbe es keine Rückführung."
+        },
+        {
+          "text": "Eine Steuerung ist immer schneller als eine Regelung.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Geschwindigkeit hängt vom System ab."
+        }
+      ]
+    },
+    {
+      "id": "IM-BT-ST-102",
+      "typ": "mc",
+      "thema": "IM-BT-ST",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aufgabe hat das Druckbegrenzungsventil in einem Hydrauliksystem?",
+      "optionen": [
+        {
+          "text": "Es speichert Druckenergie für Lastspitzen.",
+          "ist_korrekt": false,
+          "erklaerung": "Das leistet der Hydrospeicher."
+        },
+        {
+          "text": "Es kühlt das Hydrauliköl.",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür gibt es den Ölkühler."
+        },
+        {
+          "text": "Es schaltet die Bewegungsrichtung des Zylinders um.",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Aufgabe des Wegeventils."
+        },
+        {
+          "text": "Es begrenzt den Systemdruck und schützt die Anlage vor Überlastung.",
+          "ist_korrekt": true,
+          "erklaerung": "Bei Erreichen des eingestellten Drucks öffnet es und führt das Öl zum Tank zurück."
+        },
+        {
+          "text": "Es filtert das Hydrauliköl.",
+          "ist_korrekt": false,
+          "erklaerung": "Das übernimmt der Filter."
+        }
+      ]
+    },
+    {
+      "id": "IM-BT-ST-103",
+      "typ": "mc",
+      "thema": "IM-BT-ST",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Hydraulikzylinder mit der Kolbenfläche 20 cm² soll eine Kraft von 12 kN aufbringen. Welcher Druck ist erforderlich? Hinweis: 1 bar = 0,1 N/mm².",
+      "optionen": [
+        {
+          "text": "p = 60 bar",
+          "ist_korrekt": true,
+          "erklaerung": "A = 20 cm² = 2 000 mm². p = F / A = 12 000 N / 2 000 mm² = 6 N/mm² = 60 bar."
+        },
+        {
+          "text": "p = 6 bar",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde cm² nicht in mm² umgerechnet."
+        },
+        {
+          "text": "p = 600 bar",
+          "ist_korrekt": false,
+          "erklaerung": "Kommafehler bei der Umrechnung N/mm² in bar."
+        },
+        {
+          "text": "p = 24 bar",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde die Fläche falsch angesetzt."
+        },
+        {
+          "text": "p = 240 bar",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde um den Faktor 4 zu groß gerechnet."
+        }
+      ]
+    },
+    {
+      "id": "IM-WISO-AR-101",
+      "typ": "mc",
+      "thema": "IM-WISO-AR",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wer ist im Betrieb für die Bereitstellung der persönlichen Schutzausrüstung verantwortlich?",
+      "optionen": [
+        {
+          "text": "Die Krankenkasse",
+          "ist_korrekt": false,
+          "erklaerung": "Sie ist im Arbeitsschutz nicht zuständig."
+        },
+        {
+          "text": "Der Betriebsrat",
+          "ist_korrekt": false,
+          "erklaerung": "Der Betriebsrat wirkt mit, ist aber nicht beschaffungspflichtig."
+        },
+        {
+          "text": "Die Beschäftigten selbst",
+          "ist_korrekt": false,
+          "erklaerung": "Beschäftigte müssen die Ausrüstung benutzen, aber nicht beschaffen."
+        },
+        {
+          "text": "Der Arbeitgeber",
+          "ist_korrekt": true,
+          "erklaerung": "Der Arbeitgeber muss die erforderliche Schutzausrüstung kostenfrei bereitstellen; die Beschäftigten müssen sie benutzen."
+        },
+        {
+          "text": "Die Berufsgenossenschaft",
+          "ist_korrekt": false,
+          "erklaerung": "Sie berät und überwacht, beschafft aber nicht."
+        }
+      ]
+    },
+    {
+      "id": "IM-WISO-AR-102",
+      "typ": "mc",
+      "thema": "IM-WISO-AR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wozu dient eine Gefährdungsbeurteilung?",
+      "optionen": [
+        {
+          "text": "Sie dokumentiert bereits eingetretene Unfälle.",
+          "ist_korrekt": false,
+          "erklaerung": "Das leistet das Verbandbuch bzw. die Unfallanzeige."
+        },
+        {
+          "text": "Sie ermittelt systematisch die Gefährdungen an einem Arbeitsplatz und leitet Schutzmaßnahmen ab.",
+          "ist_korrekt": true,
+          "erklaerung": "Sie ist die Grundlage des betrieblichen Arbeitsschutzes und vom Arbeitgeber zu erstellen und zu dokumentieren."
+        },
+        {
+          "text": "Sie ersetzt die Unterweisung der Beschäftigten.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Unterweisung baut auf ihr auf, ersetzt wird sie nicht."
+        },
+        {
+          "text": "Sie legt die Höhe der Unfallversicherungsbeiträge fest.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Beiträge richten sich nach Gefahrtarif und Entgelt."
+        },
+        {
+          "text": "Sie bewertet die Leistung der Beschäftigten.",
+          "ist_korrekt": false,
+          "erklaerung": "Leistungsbewertung ist Personalführung."
+        }
+      ]
+    },
+    {
+      "id": "IM-WISO-BW-101",
+      "typ": "mc",
+      "thema": "IM-WISO-BW",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was versteht man unter Rüstzeit?",
+      "optionen": [
+        {
+          "text": "Die Zeit für die Materialanlieferung",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Beschaffungs- bzw. Transportzeit."
+        },
+        {
+          "text": "Die gesetzliche Pausenzeit",
+          "ist_korrekt": false,
+          "erklaerung": "Pausen sind Arbeitszeitregelungen."
+        },
+        {
+          "text": "Die Zeit bis zur Auslieferung an den Kunden",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Lieferzeit."
+        },
+        {
+          "text": "Die Zeit für das Vorbereiten der Maschine auf einen neuen Auftrag",
+          "ist_korrekt": true,
+          "erklaerung": "Rüsten umfasst Werkzeugwechsel, Spannmittel, Programmwahl und Einstellen – unabhängig von der Stückzahl."
+        },
+        {
+          "text": "Die Zeit für die Bearbeitung eines einzelnen Werkstücks",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Stückzeit."
+        }
+      ]
+    },
+    {
+      "id": "IM-FT-F01",
+      "typ": "freitext",
+      "thema": "IM-FT-SP",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Nennen Sie drei Aufgaben des Kühlschmierstoffs bei der spanenden Bearbeitung und erklären Sie, welche Folgen fehlende Kühlschmierung für Werkzeug und Werkstück hat.",
+      "musterloesung": "Aufgaben: 1. Kühlen – die Prozesswärme wird abgeführt, Werkzeug und Werkstück bleiben maßhaltig. 2. Schmieren – die Reibung zwischen Span, Spanfläche und Werkstück wird verringert. 3. Spülen und Reinigen – Späne werden aus der Wirkzone transportiert; zusätzlich schützt der Film vor Korrosion. Fehlt die Kühlschmierung, steigt die Temperatur an der Schneide stark an. Das Werkzeug verschleißt schneller, kann seine Härte verlieren und ausfallen. Am Werkstück entstehen schlechtere Oberflächen, Aufbauschneiden, Maßabweichungen durch Wärmedehnung und im Extremfall Gefügeveränderungen der Randschicht.",
+      "bewertungsraster": {
+        "max_punkte": 5,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Nennt das Kühlen als Aufgabe",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Nennt das Schmieren bzw. die Reibungsminderung",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Nennt den Spänetransport bzw. das Spülen",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Beschreibt die Folge für das Werkzeug (erhöhter Verschleiß, Härteverlust)",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Beschreibt die Folge für das Werkstück (Oberfläche, Maßhaltigkeit)",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Wärmeabfuhr",
+          "Reibung senken",
+          "Späne abtransportieren",
+          "Standzeit sinkt",
+          "Aufbauschneide"
+        ],
+        "haeufige_fehler": [
+          "Nennung nur einer Aufgabe",
+          "Verwechslung von Kühlschmierstoff und Hydrauliköl"
+        ]
+      }
+    },
+    {
+      "id": "IM-BT-F01",
+      "typ": "freitext",
+      "thema": "IM-BT-IH",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "An einer Produktionsanlage tritt an einer Hydraulikleitung Öl aus. Beschreiben Sie Ihr Vorgehen von der Feststellung bis zur Wiederinbetriebnahme.",
+      "musterloesung": "1. Anlage stillsetzen, drucklos machen und gegen Wiedereinschalten sichern; die Stelle gegen Rutschgefahr absperren. 2. Austretendes Öl mit Bindemittel aufnehmen und als gefährlichen Abfall entsorgen. 3. Störung melden und dokumentieren. 4. Ursache eingrenzen: Leitung, Verschraubung, Dichtung oder Schlauch prüfen; auf Scheuerstellen und Alterung achten. 5. Schadhaftes Teil durch ein zugelassenes Ersatzteil gleicher Druckstufe ersetzen. 6. System wieder befüllen, entlüften und den Ölstand prüfen. 7. Dichtheitsprüfung mit Probelauf bei geringem Druck, danach Freigabe und Eintrag in die Instandhaltungsdokumentation.",
+      "bewertungsraster": {
+        "max_punkte": 6,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Stillsetzen, drucklos machen, gegen Wiedereinschalten sichern",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Umweltgerechtes Aufnehmen und Entsorgen des Öls",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Meldung und Dokumentation der Störung",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Systematische Ursachensuche an Leitung/Verschraubung/Dichtung",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Instandsetzung mit geeignetem Ersatzteil, Befüllen und Entlüften",
+            "punkte": 1
+          },
+          {
+            "id": "k6",
+            "beschreibung": "Funktions- bzw. Dichtheitsprüfung vor der Freigabe",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "LOTO",
+          "Ölbindemittel",
+          "Sonderabfall",
+          "Probelauf",
+          "Instandhaltungsprotokoll"
+        ],
+        "haeufige_fehler": [
+          "Reparatur unter Druck",
+          "Entsorgung über den Restmüll",
+          "Wiederinbetriebnahme ohne Dichtheitsprüfung"
+        ]
+      }
+    },
+    {
+      "id": "IM-WISO-F01",
+      "typ": "freitext",
+      "thema": "IM-WISO-BW",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Erklären Sie, warum ein Betrieb Fertigungsaufträge in einem Arbeitsplan dokumentiert. Nennen Sie mindestens drei Angaben, die ein Arbeitsplan enthält.",
+      "musterloesung": "Der Arbeitsplan legt fest, wie ein Auftrag reproduzierbar gefertigt wird. Er sichert gleichbleibende Qualität, macht Kalkulation und Terminplanung möglich und ermöglicht es, dass verschiedene Mitarbeiter denselben Auftrag mit gleichem Ergebnis ausführen. Typische Angaben: Reihenfolge der Arbeitsgänge, eingesetzte Maschine oder Arbeitsplatz, Werkzeuge und Spannmittel, Vorgabezeiten je Arbeitsgang, Prüfmerkmale und Prüfmittel, Werkstoff und Rohteilmaße sowie der Bezug zur Zeichnungsnummer.",
+      "bewertungsraster": {
+        "max_punkte": 5,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Nennt Reproduzierbarkeit bzw. gleichbleibende Qualität als Zweck",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Nennt Kalkulation oder Terminplanung als Zweck",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Nennt eine zutreffende Angabe des Arbeitsplans",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Nennt eine zweite zutreffende Angabe",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Nennt eine dritte zutreffende Angabe",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Arbeitsgangfolge",
+          "Vorgabezeit",
+          "Betriebsmittel",
+          "Prüfplanbezug"
+        ],
+        "haeufige_fehler": [
+          "Verwechslung von Arbeitsplan und Stückliste"
+        ]
+      }
+    }
+  ]
+}

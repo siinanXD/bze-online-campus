@@ -1,0 +1,994 @@
+{
+  "meta": {
+    "beruf": "Fachlagerist/-in",
+    "beruf_slug": "fachlagerist",
+    "bezeichnung_lang": "Fachlagerist/-in",
+    "kammer": "IHK",
+    "dauer_monate_umschulung": null,
+    "charge": "Charge 1 – Grundlagen",
+    "erstellt": "2026-07-29",
+    "struktur_hinweis": "Gewichtung und Prüfungsdauer der Prüfungsbereiche sind leer gelassen und vom Ausbilder nach der geltenden Ausbildungsordnung und den Vorgaben der IHK Aachen einzutragen. Die Inhalte sind so gewählt, dass sie auch als Grundlage für die Fachkraft für Lagerlogistik tragen.",
+    "urheberrecht": "Eigenentwicklung des BZE. Keine Übernahme von Aufgaben der Kammern oder Prüfungsverlage.",
+    "status_hinweis": "Alle Fragen im Status 'entwurf'. Freigabe durch Ausbilder zwingend. Fragen mit enthaelt_zahlenwert=true brauchen vor der Freigabe eine Fundstelle und stehen deshalb auf kern=false.",
+    "anzahl_mc": 18,
+    "anzahl_freitext": 3
+  },
+  "pruefungsbereiche": [
+    {
+      "code": "FLA-LA",
+      "bezeichnung": "Lagerprozesse",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "FLA-LA-WE",
+          "bezeichnung": "Wareneingang und Warenkontrolle"
+        },
+        {
+          "code": "FLA-LA-LG",
+          "bezeichnung": "Lagerung und Bestandsführung"
+        },
+        {
+          "code": "FLA-LA-KO",
+          "bezeichnung": "Kommissionierung und Warenausgang"
+        }
+      ]
+    },
+    {
+      "code": "FLA-TR",
+      "bezeichnung": "Transport und Ladungssicherung",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "FLA-TR-FF",
+          "bezeichnung": "Flurförderzeuge und Fördermittel"
+        },
+        {
+          "code": "FLA-TR-LS",
+          "bezeichnung": "Verpackung und Ladungssicherung"
+        }
+      ]
+    },
+    {
+      "code": "FLA-WISO",
+      "bezeichnung": "Wirtschafts- und Sozialkunde",
+      "gewichtung_prozent": null,
+      "pruefungsdauer_minuten": null,
+      "themen": [
+        {
+          "code": "FLA-WISO-SU",
+          "bezeichnung": "Arbeitssicherheit und Umweltschutz"
+        },
+        {
+          "code": "FLA-WISO-BW",
+          "bezeichnung": "Betriebliche Zusammenhänge"
+        }
+      ]
+    }
+  ],
+  "uebungspruefungen": [
+    {
+      "code": "FLA-UE-01",
+      "titel": "Übungsprüfung Fachlagerist – Grundlagen",
+      "bearbeitungszeit_minuten": 60,
+      "hinweis": "18 Aufgaben mit je fünf Auswahlantworten, genau eine Antwort ist richtig.",
+      "aufgaben": [
+        "FLA-LA-WE-101",
+        "FLA-LA-WE-102",
+        "FLA-LA-WE-103",
+        "FLA-LA-LG-101",
+        "FLA-LA-LG-102",
+        "FLA-LA-LG-103",
+        "FLA-LA-LG-104",
+        "FLA-LA-KO-101",
+        "FLA-LA-KO-102",
+        "FLA-LA-KO-103",
+        "FLA-TR-FF-101",
+        "FLA-TR-FF-102",
+        "FLA-TR-FF-103",
+        "FLA-TR-LS-101",
+        "FLA-TR-LS-102",
+        "FLA-WISO-SU-101",
+        "FLA-WISO-SU-102",
+        "FLA-WISO-BW-101"
+      ]
+    }
+  ],
+  "fragen": [
+    {
+      "id": "FLA-LA-WE-101",
+      "typ": "mc",
+      "thema": "FLA-LA-WE",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Prüfung gehört zwingend zum Wareneingang?",
+      "optionen": [
+        {
+          "text": "Die Auswahl des Transportunternehmens",
+          "ist_korrekt": false,
+          "erklaerung": "Das geschieht vor dem Versand."
+        },
+        {
+          "text": "Die Ermittlung des Verkaufspreises",
+          "ist_korrekt": false,
+          "erklaerung": "Die Preisbildung ist Aufgabe des Vertriebs."
+        },
+        {
+          "text": "Die Inventur des gesamten Lagers",
+          "ist_korrekt": false,
+          "erklaerung": "Die Inventur ist ein eigener, periodischer Vorgang."
+        },
+        {
+          "text": "Die Erstellung der Rechnung an den Kunden",
+          "ist_korrekt": false,
+          "erklaerung": "Das gehört zum Warenausgang."
+        },
+        {
+          "text": "Der Abgleich von Lieferschein und Bestellung sowie die Kontrolle von Menge und äußerem Zustand",
+          "ist_korrekt": true,
+          "erklaerung": "Erst dieser Abgleich stellt fest, ob die richtige Ware in der richtigen Menge unbeschädigt angekommen ist."
+        }
+      ]
+    },
+    {
+      "id": "FLA-LA-WE-102",
+      "typ": "mc",
+      "thema": "FLA-LA-WE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Beim Abladen wird an einer Palette eine sichtbare Beschädigung festgestellt. Wie ist zu verfahren?",
+      "optionen": [
+        {
+          "text": "Den Fahrer entscheiden lassen, ob ein Schaden vorliegt",
+          "ist_korrekt": false,
+          "erklaerung": "Die Feststellung obliegt dem annehmenden Betrieb."
+        },
+        {
+          "text": "Die gesamte Lieferung grundsätzlich zurückweisen",
+          "ist_korrekt": false,
+          "erklaerung": "Eine pauschale Zurückweisung ist meist weder nötig noch zulässig."
+        },
+        {
+          "text": "Den Schaden auf dem Frachtbrief bzw. Lieferschein vermerken, dokumentieren und die zuständige Stelle informieren",
+          "ist_korrekt": true,
+          "erklaerung": "Der Vorbehalt bei der Annahme sichert Ansprüche gegenüber Lieferant oder Frachtführer."
+        },
+        {
+          "text": "Die Ware ohne Hinweis annehmen und später reklamieren",
+          "ist_korrekt": false,
+          "erklaerung": "Ohne Vermerk lässt sich später kaum nachweisen, wann der Schaden entstanden ist."
+        },
+        {
+          "text": "Die beschädigte Ware unbemerkt einlagern",
+          "ist_korrekt": false,
+          "erklaerung": "Das verlagert das Problem in den Bestand."
+        }
+      ]
+    },
+    {
+      "id": "FLA-LA-WE-103",
+      "typ": "mc",
+      "thema": "FLA-LA-WE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wozu dient der Barcode oder QR-Code auf einem Versandetikett?",
+      "optionen": [
+        {
+          "text": "Zur Angabe der zulässigen Stapelhöhe",
+          "ist_korrekt": false,
+          "erklaerung": "Dafür gibt es eigene Symbole auf der Verpackung."
+        },
+        {
+          "text": "Zur Kennzeichnung des Verkaufspreises für den Endkunden",
+          "ist_korrekt": false,
+          "erklaerung": "Preisauszeichnung ist eine andere Funktion."
+        },
+        {
+          "text": "Als Ersatz für die Ladungssicherung",
+          "ist_korrekt": false,
+          "erklaerung": "Ein Etikett sichert keine Ladung."
+        },
+        {
+          "text": "Zur Kennzeichnung von Gefahrgut",
+          "ist_korrekt": false,
+          "erklaerung": "Gefahrgut wird mit vorgeschriebenen Gefahrzetteln gekennzeichnet."
+        },
+        {
+          "text": "Zur maschinellen, fehlerarmen Erfassung von Artikel-, Mengen- und Auftragsdaten",
+          "ist_korrekt": true,
+          "erklaerung": "Das Scannen ersetzt die manuelle Eingabe und senkt Erfassungsfehler deutlich."
+        }
+      ]
+    },
+    {
+      "id": "FLA-LA-LG-101",
+      "typ": "mc",
+      "thema": "FLA-LA-LG",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was bedeutet das Lagerprinzip First in – First out (FIFO)?",
+      "optionen": [
+        {
+          "text": "Alle Artikel werden gleichzeitig entnommen.",
+          "ist_korrekt": false,
+          "erklaerung": "Das beschreibt keinen Ablauf."
+        },
+        {
+          "text": "Die zuletzt eingelagerte Ware wird zuerst entnommen.",
+          "ist_korrekt": false,
+          "erklaerung": "Das beschreibt LIFO."
+        },
+        {
+          "text": "Die teuerste Ware wird zuerst entnommen.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Preis steuert die Entnahmereihenfolge nicht."
+        },
+        {
+          "text": "Die zuerst eingelagerte Ware wird zuerst entnommen.",
+          "ist_korrekt": true,
+          "erklaerung": "FIFO verhindert Überalterung und ist bei begrenzt haltbaren Artikeln unverzichtbar."
+        },
+        {
+          "text": "Die Ware mit dem größten Volumen wird zuerst entnommen.",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist kein Lagerprinzip."
+        }
+      ]
+    },
+    {
+      "id": "FLA-LA-LG-102",
+      "typ": "mc",
+      "thema": "FLA-LA-LG",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wozu dient eine Inventur?",
+      "optionen": [
+        {
+          "text": "Sie bestimmt die Lagerplatzgröße.",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Teil der Lagerplanung."
+        },
+        {
+          "text": "Sie ersetzt die Wareneingangskontrolle.",
+          "ist_korrekt": false,
+          "erklaerung": "Beide Vorgänge haben unterschiedliche Zwecke."
+        },
+        {
+          "text": "Sie dient allein der Reinigung des Lagers.",
+          "ist_korrekt": false,
+          "erklaerung": "Ordnung ist ein Nebeneffekt, nicht der Zweck."
+        },
+        {
+          "text": "Sie legt die Bestellmenge für das nächste Jahr fest.",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Aufgabe der Disposition, auch wenn sie Inventurdaten nutzt."
+        },
+        {
+          "text": "Sie stellt durch körperliche Bestandsaufnahme fest, welche Bestände tatsächlich vorhanden sind.",
+          "ist_korrekt": true,
+          "erklaerung": "Der Ist-Bestand wird mit dem Buchbestand verglichen; Differenzen werden untersucht und korrigiert."
+        }
+      ]
+    },
+    {
+      "id": "FLA-LA-LG-103",
+      "typ": "mc",
+      "thema": "FLA-LA-LG",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Worin besteht der Unterschied zwischen Festplatz- und chaotischer Lagerung?",
+      "optionen": [
+        {
+          "text": "Chaotische Lagerung bedeutet, dass Artikel ohne Erfassung abgestellt werden.",
+          "ist_korrekt": false,
+          "erklaerung": "Ohne Erfassung wäre die Ware nicht wiederauffindbar; genau das ist nicht gemeint."
+        },
+        {
+          "text": "Chaotische Lagerung ist ohne EDV am besten umsetzbar.",
+          "ist_korrekt": false,
+          "erklaerung": "Sie ist ohne EDV praktisch nicht beherrschbar."
+        },
+        {
+          "text": "Beide Verfahren unterscheiden sich nur in der Regalhöhe.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Unterschied liegt in der Platzzuordnung."
+        },
+        {
+          "text": "Bei der Festplatzlagerung hat jeder Artikel einen festen Platz, bei der chaotischen Lagerung wird jeder freie Platz genutzt und im System erfasst.",
+          "ist_korrekt": true,
+          "erklaerung": "Die chaotische Lagerung nutzt den Raum besser, setzt aber eine lückenlose EDV-Verwaltung voraus."
+        },
+        {
+          "text": "Festplatzlagerung ist nur bei Gefahrstoffen zulässig.",
+          "ist_korrekt": false,
+          "erklaerung": "Sie ist allgemein verbreitet."
+        }
+      ]
+    },
+    {
+      "id": "FLA-LA-LG-104",
+      "typ": "mc",
+      "thema": "FLA-LA-LG",
+      "schwierigkeit": 3,
+      "kern": false,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": true,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Der Buchbestand eines Artikels beträgt 1 500 Stück, die Inventur ergibt 1 440 Stück. Wie hoch ist die Inventurdifferenz in Prozent des Buchbestands?",
+      "optionen": [
+        {
+          "text": "0,4 %",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde um den Faktor 10 zu klein gerechnet."
+        },
+        {
+          "text": "4,0 %",
+          "ist_korrekt": true,
+          "erklaerung": "Differenz = 60 Stück. 60 / 1 500 = 0,04 = 4,0 %."
+        },
+        {
+          "text": "6,0 %",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde die Stückzahl der Differenz als Prozentwert verwendet."
+        },
+        {
+          "text": "40 %",
+          "ist_korrekt": false,
+          "erklaerung": "Kommafehler um den Faktor 10."
+        },
+        {
+          "text": "9,6 %",
+          "ist_korrekt": false,
+          "erklaerung": "Hier wurde durch den Ist-Bestand mit falschem Zähler gerechnet."
+        }
+      ]
+    },
+    {
+      "id": "FLA-LA-KO-101",
+      "typ": "mc",
+      "thema": "FLA-LA-KO",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was versteht man unter Kommissionieren?",
+      "optionen": [
+        {
+          "text": "Das Einlagern angelieferter Ware",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Einlagerung."
+        },
+        {
+          "text": "Das Zusammenstellen von Artikeln aus dem Lagerbestand nach einem Auftrag",
+          "ist_korrekt": true,
+          "erklaerung": "Aus dem Gesamtsortiment wird die auftragsbezogene Teilmenge entnommen und bereitgestellt."
+        },
+        {
+          "text": "Das Zählen des gesamten Bestands",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Inventur."
+        },
+        {
+          "text": "Das Beladen des Lkw",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist die Verladung."
+        },
+        {
+          "text": "Das Entsorgen beschädigter Ware",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist Teil der Schadensabwicklung."
+        }
+      ]
+    },
+    {
+      "id": "FLA-LA-KO-102",
+      "typ": "mc",
+      "thema": "FLA-LA-KO",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum wird eine kommissionierte Sendung vor dem Versand kontrolliert?",
+      "optionen": [
+        {
+          "text": "Weil dadurch die Verpackung entfallen kann",
+          "ist_korrekt": false,
+          "erklaerung": "Die Verpackung bleibt erforderlich."
+        },
+        {
+          "text": "Weil die Ware dabei neu bewertet wird",
+          "ist_korrekt": false,
+          "erklaerung": "Die Bewertung ist Aufgabe der Buchhaltung."
+        },
+        {
+          "text": "Weil Fehlmengen und Falschlieferungen so erkannt werden, bevor sie beim Kunden Kosten verursachen",
+          "ist_korrekt": true,
+          "erklaerung": "Die Kontrolle im eigenen Haus ist deutlich günstiger als eine Reklamation mit Rücktransport."
+        },
+        {
+          "text": "Weil sie nur so in die Inventur einfließt",
+          "ist_korrekt": false,
+          "erklaerung": "Die Inventur erfasst den Lagerbestand."
+        },
+        {
+          "text": "Weil der Frachtführer das verlangt",
+          "ist_korrekt": false,
+          "erklaerung": "Der Grund liegt in der eigenen Qualitätssicherung."
+        }
+      ]
+    },
+    {
+      "id": "FLA-LA-KO-103",
+      "typ": "mc",
+      "thema": "FLA-LA-KO",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Angabe gehört zwingend auf den Lieferschein einer Sendung?",
+      "optionen": [
+        {
+          "text": "Artikelbezeichnung und gelieferte Menge",
+          "ist_korrekt": true,
+          "erklaerung": "Der Lieferschein weist aus, was tatsächlich geliefert wurde; er ist Grundlage der Wareneingangsprüfung beim Empfänger."
+        },
+        {
+          "text": "Der Einkaufspreis des Lieferanten",
+          "ist_korrekt": false,
+          "erklaerung": "Preise stehen auf der Rechnung."
+        },
+        {
+          "text": "Der Name des Lagerarbeiters, der eingelagert hat",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist keine Pflichtangabe des Lieferscheins."
+        },
+        {
+          "text": "Die Restlaufzeit des Mietvertrags für die Lagerhalle",
+          "ist_korrekt": false,
+          "erklaerung": "Das hat mit der Sendung nichts zu tun."
+        },
+        {
+          "text": "Der Kontostand des Kunden",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist eine Information der Buchhaltung."
+        }
+      ]
+    },
+    {
+      "id": "FLA-TR-FF-101",
+      "typ": "mc",
+      "thema": "FLA-TR-FF",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Voraussetzung muss erfüllt sein, damit jemand einen Gabelstapler im Betrieb führen darf?",
+      "optionen": [
+        {
+          "text": "Volljährigkeit allein",
+          "ist_korrekt": false,
+          "erklaerung": "Das Alter allein reicht nicht aus."
+        },
+        {
+          "text": "Die mündliche Erlaubnis eines Kollegen",
+          "ist_korrekt": false,
+          "erklaerung": "Eine Kollegenerlaubnis ist keine Beauftragung."
+        },
+        {
+          "text": "Ausreichende Eignung, eine Ausbildung mit Nachweis und eine schriftliche Beauftragung durch den Unternehmer",
+          "ist_korrekt": true,
+          "erklaerung": "Neben Eignung und Qualifikation ist die schriftliche Beauftragung für das jeweilige Fahrzeug erforderlich."
+        },
+        {
+          "text": "Ein gültiger Pkw-Führerschein genügt.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Pkw-Führerschein berechtigt nicht zum Führen von Flurförderzeugen im Betrieb."
+        },
+        {
+          "text": "Keine, solange nur im Hallenbereich gefahren wird",
+          "ist_korrekt": false,
+          "erklaerung": "Die Anforderungen gelten auch innerbetrieblich."
+        }
+      ]
+    },
+    {
+      "id": "FLA-TR-FF-102",
+      "typ": "mc",
+      "thema": "FLA-TR-FF",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was besagt das Lastdiagramm eines Gabelstaplers?",
+      "optionen": [
+        {
+          "text": "Wie schnell der Stapler fahren darf",
+          "ist_korrekt": false,
+          "erklaerung": "Die Geschwindigkeit regelt die Betriebsanweisung."
+        },
+        {
+          "text": "Welche Ladung gefährlich ist",
+          "ist_korrekt": false,
+          "erklaerung": "Gefahrgut wird gesondert gekennzeichnet."
+        },
+        {
+          "text": "Wie oft der Stapler gewartet werden muss",
+          "ist_korrekt": false,
+          "erklaerung": "Das steht im Wartungsplan."
+        },
+        {
+          "text": "Welche Last bei welchem Lastschwerpunktabstand und welcher Hubhöhe zulässig ist",
+          "ist_korrekt": true,
+          "erklaerung": "Die Tragfähigkeit sinkt mit wachsendem Lastschwerpunktabstand und steigender Hubhöhe; das Diagramm ist zwingend zu beachten."
+        },
+        {
+          "text": "Wie viele Paletten ins Regal passen",
+          "ist_korrekt": false,
+          "erklaerung": "Das ergibt sich aus der Regalplanung."
+        }
+      ]
+    },
+    {
+      "id": "FLA-TR-FF-103",
+      "typ": "mc",
+      "thema": "FLA-TR-FF",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie ist mit einem Gabelstapler eine Rampe mit angehobener Last zu befahren?",
+      "optionen": [
+        {
+          "text": "Rampen dürfen mit Staplern grundsätzlich nicht befahren werden.",
+          "ist_korrekt": false,
+          "erklaerung": "Sie dürfen befahren werden, aber nach festen Regeln."
+        },
+        {
+          "text": "Die Last wird für die Rampenfahrt maximal angehoben.",
+          "ist_korrekt": false,
+          "erklaerung": "Hohe Last verschlechtert die Standsicherheit erheblich."
+        },
+        {
+          "text": "Es ist gleichgültig, solange langsam gefahren wird.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Fahrtrichtung ist sicherheitsrelevant."
+        },
+        {
+          "text": "Die Last zeigt talseitig, damit die Sicht frei bleibt.",
+          "ist_korrekt": false,
+          "erklaerung": "Dabei kann die Last abrutschen und der Stapler nach vorn kippen."
+        },
+        {
+          "text": "Die Last zeigt bergseitig; bergauf wird vorwärts, bergab rückwärts gefahren.",
+          "ist_korrekt": true,
+          "erklaerung": "So bleibt die Last zum Berg gerichtet und der Stapler kippsicher; die Last wird dabei nur so hoch wie nötig getragen."
+        }
+      ]
+    },
+    {
+      "id": "FLA-TR-LS-101",
+      "typ": "mc",
+      "thema": "FLA-TR-LS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aussage zur Ladungssicherung im Straßengüterverkehr ist richtig?",
+      "optionen": [
+        {
+          "text": "Zurrgurte dürfen beliebig alt und beschädigt sein.",
+          "ist_korrekt": false,
+          "erklaerung": "Beschädigte Zurrmittel sind auszusondern."
+        },
+        {
+          "text": "Die Ladefläche allein genügt als Sicherung, wenn die Ladung eng steht.",
+          "ist_korrekt": false,
+          "erklaerung": "Formschluss muss tatsächlich lückenlos hergestellt sein und ist oft mit Hilfsmitteln zu ergänzen."
+        },
+        {
+          "text": "Für die Sicherung ist ausschließlich der Fahrer verantwortlich.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Verantwortung ist auf mehrere Beteiligte verteilt."
+        },
+        {
+          "text": "Eine Sicherung ist erst ab einer Ladung von mehreren Tonnen nötig.",
+          "ist_korrekt": false,
+          "erklaerung": "Auch leichte Ladung wird bei einer Bremsung zum Geschoss."
+        },
+        {
+          "text": "Die Ladung muss so gesichert sein, dass sie auch bei Vollbremsung und Ausweichmanöver nicht verrutschen kann.",
+          "ist_korrekt": true,
+          "erklaerung": "Die Sicherung muss den im Fahrbetrieb auftretenden Kräften standhalten; Verantwortung tragen Verlader, Fahrer und Halter gemeinsam."
+        }
+      ]
+    },
+    {
+      "id": "FLA-TR-LS-102",
+      "typ": "mc",
+      "thema": "FLA-TR-LS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Worin unterscheiden sich Niederzurren und Direktzurren?",
+      "optionen": [
+        {
+          "text": "Direktzurren benötigt keine Zurrpunkte.",
+          "ist_korrekt": false,
+          "erklaerung": "Gerade dafür sind geeignete Zurrpunkte Voraussetzung."
+        },
+        {
+          "text": "Niederzurren erhöht die Reibung durch Vorspannung von oben, Direktzurren verbindet die Ladung unmittelbar mit Zurrpunkten am Fahrzeug.",
+          "ist_korrekt": true,
+          "erklaerung": "Beim Niederzurren wirkt die Vorspannkraft, beim Direktzurren nimmt der Gurt die Kraft in Zugrichtung auf."
+        },
+        {
+          "text": "Beide Verfahren unterscheiden sich nur in der Gurtfarbe.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Unterschied liegt in der Wirkungsweise."
+        },
+        {
+          "text": "Niederzurren ist nur bei Schüttgut zulässig.",
+          "ist_korrekt": false,
+          "erklaerung": "Schüttgut wird anders gesichert."
+        },
+        {
+          "text": "Niederzurren ersetzt eine rutschhemmende Unterlage immer.",
+          "ist_korrekt": false,
+          "erklaerung": "Rutschhemmende Matten erhöhen die Wirkung gerade beim Niederzurren."
+        }
+      ]
+    },
+    {
+      "id": "FLA-WISO-SU-101",
+      "typ": "mc",
+      "thema": "FLA-WISO-SU",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Wie wird eine schwere Last vom Boden richtig angehoben?",
+      "optionen": [
+        {
+          "text": "Mit rundem Rücken und gestreckten Beinen",
+          "ist_korrekt": false,
+          "erklaerung": "Das belastet die Bandscheiben besonders stark."
+        },
+        {
+          "text": "Mit ausgestreckten Armen und weit vom Körper entfernter Last",
+          "ist_korrekt": false,
+          "erklaerung": "Der lange Hebel vervielfacht die Belastung."
+        },
+        {
+          "text": "In gedrehter Körperhaltung",
+          "ist_korrekt": false,
+          "erklaerung": "Heben unter Drehung ist besonders schädlich."
+        },
+        {
+          "text": "Mit geradem Rücken, aus den Beinen heraus und mit der Last nah am Körper",
+          "ist_korrekt": true,
+          "erklaerung": "So wird die Wirbelsäule entlastet; bei zu schwerer Last sind Hilfsmittel oder eine zweite Person einzusetzen."
+        },
+        {
+          "text": "Ruckartig, um den Schwung zu nutzen",
+          "ist_korrekt": false,
+          "erklaerung": "Ruckartiges Heben erhöht die Verletzungsgefahr."
+        }
+      ]
+    },
+    {
+      "id": "FLA-WISO-SU-102",
+      "typ": "mc",
+      "thema": "FLA-WISO-SU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum müssen Verkehrs- und Fluchtwege im Lager freigehalten werden?",
+      "optionen": [
+        {
+          "text": "Damit mehr Ware gelagert werden kann",
+          "ist_korrekt": false,
+          "erklaerung": "Verkehrswege dürfen gerade nicht als Lagerfläche genutzt werden."
+        },
+        {
+          "text": "Nur wegen der jährlichen Inventur",
+          "ist_korrekt": false,
+          "erklaerung": "Die Pflicht besteht dauerhaft."
+        },
+        {
+          "text": "Damit im Notfall eine schnelle Flucht und Rettung möglich ist und Flurförderzeuge sicher verkehren können",
+          "ist_korrekt": true,
+          "erklaerung": "Abgestellte Paletten auf Verkehrswegen sind eine der häufigsten Ursachen für Unfälle und behindern die Rettung."
+        },
+        {
+          "text": "Damit das Lager ordentlich aussieht",
+          "ist_korrekt": false,
+          "erklaerung": "Optik ist nicht der Grund."
+        },
+        {
+          "text": "Weil die Wege sonst schneller verschleißen",
+          "ist_korrekt": false,
+          "erklaerung": "Verschleiß ist nachrangig."
+        }
+      ]
+    },
+    {
+      "id": "FLA-WISO-BW-101",
+      "typ": "mc",
+      "thema": "FLA-WISO-BW",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Folge hat ein zu hoher Lagerbestand für den Betrieb?",
+      "optionen": [
+        {
+          "text": "Automatisch weniger Inventurdifferenzen",
+          "ist_korrekt": false,
+          "erklaerung": "Große Bestände erschweren die Bestandsgenauigkeit eher."
+        },
+        {
+          "text": "Grundsätzlich bessere Liefertreue ohne jeden Nachteil",
+          "ist_korrekt": false,
+          "erklaerung": "Lieferfähigkeit steigt zwar, aber nicht ohne Kosten und Risiken."
+        },
+        {
+          "text": "Eine geringere Kapitalbindung",
+          "ist_korrekt": false,
+          "erklaerung": "Die Kapitalbindung nimmt zu."
+        },
+        {
+          "text": "Gebundenes Kapital, höhere Lagerkosten und ein größeres Risiko von Überalterung",
+          "ist_korrekt": true,
+          "erklaerung": "Bestände kosten Fläche, Zinsen und Handling; verderbliche oder veraltende Ware verliert zusätzlich an Wert."
+        },
+        {
+          "text": "Sinkende Lagerkosten",
+          "ist_korrekt": false,
+          "erklaerung": "Die Kosten steigen mit dem Bestand."
+        }
+      ]
+    },
+    {
+      "id": "FLA-LA-F01",
+      "typ": "freitext",
+      "thema": "FLA-LA-WE",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Beschreiben Sie den Ablauf einer Wareneingangsprüfung von der Ankunft des Lkw bis zur Einlagerung.",
+      "musterloesung": "1. Sendung annehmen und die Begleitpapiere prüfen: Ist die Lieferung für den Betrieb bestimmt, liegt eine Bestellung vor. 2. Äußere Prüfung der Verpackung und Paletten auf Beschädigung, Feuchtigkeit oder Bruch; Auffälligkeiten sofort auf dem Frachtpapier vermerken. 3. Mengenprüfung: gelieferte Menge mit Lieferschein und Bestellung abgleichen. 4. Qualitäts- beziehungsweise Identitätsprüfung: Artikelnummer, Ausführung und, wo vorgesehen, Chargen- oder Haltbarkeitsangaben kontrollieren. 5. Abweichungen dokumentieren und der zuständigen Stelle melden. 6. Ware im System erfassen, buchen und mit Lagerplatz kennzeichnen. 7. Einlagern nach den betrieblichen Vorgaben, etwa unter Beachtung von FIFO, Gewicht und Zugriffshäufigkeit.",
+      "bewertungsraster": {
+        "max_punkte": 6,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Prüfung der Begleitpapiere und Zuordnung zur Bestellung",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Äußere Zustandsprüfung mit Vermerk bei Schäden",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Mengenprüfung gegen Lieferschein/Bestellung",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Identitäts- bzw. Qualitätsprüfung des Artikels",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Dokumentation und Meldung von Abweichungen",
+            "punkte": 1
+          },
+          {
+            "id": "k6",
+            "beschreibung": "Buchung im System und sachgerechte Einlagerung",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Vorbehalt auf dem Frachtbrief",
+          "Identitätskontrolle",
+          "Buchung im Warenwirtschaftssystem",
+          "FIFO beachten"
+        ],
+        "haeufige_fehler": [
+          "Einlagerung vor der Prüfung",
+          "Schadensvermerk erst nach Abfahrt des Fahrers"
+        ]
+      }
+    },
+    {
+      "id": "FLA-TR-F01",
+      "typ": "freitext",
+      "thema": "FLA-TR-LS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Erklären Sie, warum eine ungesicherte Ladung auch bei geringem Gewicht gefährlich ist, und nennen Sie drei Hilfsmittel der Ladungssicherung.",
+      "musterloesung": "Bei einer Vollbremsung oder einem Ausweichmanöver wirken auf die Ladung erhebliche Kräfte; ein Gegenstand von wenigen Kilogramm entwickelt dabei ein Vielfaches seines Gewichts als Wucht und kann Fahrzeuginsassen schwer verletzen oder das Fahrzeug destabilisieren. Deshalb ist jede Ladung unabhängig vom Gewicht zu sichern. Hilfsmittel: Zurrgurte mit passender Zurrkraft, rutschhemmende Matten zur Erhöhung der Reibung, Kantenschutz zum Schutz von Gurt und Ladung, Sperrbalken oder Ladungssicherungsnetze sowie formschlüssiges Verstauen bis an die Bordwände.",
+      "bewertungsraster": {
+        "max_punkte": 5,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Erklärt die Massenkräfte bei Bremsung bzw. Ausweichen",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Zieht daraus die Folgerung, dass auch leichte Ladung zu sichern ist",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Nennt ein zutreffendes Hilfsmittel",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Nennt ein zweites zutreffendes Hilfsmittel",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Nennt ein drittes zutreffendes Hilfsmittel",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Antirutschmatte",
+          "Zurrgurt",
+          "Sperrstange",
+          "formschlüssig verstauen",
+          "Kantenschutz"
+        ],
+        "haeufige_fehler": [
+          "Annahme, geringes Gewicht brauche keine Sicherung",
+          "Nennung von Verpackung als alleiniger Sicherung"
+        ]
+      }
+    },
+    {
+      "id": "FLA-WISO-F01",
+      "typ": "freitext",
+      "thema": "FLA-LA-LG",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Bei einer Inventur stellen Sie fest, dass von einem Artikel weniger Stück vorhanden sind als im System gebucht. Nennen Sie drei mögliche Ursachen und beschreiben Sie, wie Sie vorgehen.",
+      "musterloesung": "Mögliche Ursachen: Entnahme ohne Buchung, Fehlbuchung oder Buchung auf den falschen Artikel, Kommissionierfehler mit zu hoher Auslieferung, Verwechslung ähnlicher Artikel, Einlagerung auf einem anderen Lagerplatz, Schwund durch Beschädigung oder Diebstahl. Vorgehen: Zuerst nachzählen und den benachbarten Lagerplatz sowie ähnliche Artikelnummern prüfen, um Verwechslungen auszuschließen. Dann die Buchungshistorie des Artikels prüfen und mit Lieferscheinen und Kommissionieraufträgen abgleichen. Bleibt die Differenz bestehen, wird sie dokumentiert, der Vorgesetzten Stelle gemeldet und nach betrieblicher Regelung korrigiert. Anschließend sollte die Ursache abgestellt werden, etwa durch Schulung, klarere Kennzeichnung oder Scannen bei jeder Entnahme.",
+      "bewertungsraster": {
+        "max_punkte": 6,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Nennt eine plausible Ursache",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Nennt eine zweite plausible Ursache",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Nennt eine dritte plausible Ursache",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Nachzählen und Prüfen benachbarter Plätze/ähnlicher Artikel",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Prüfen der Buchungshistorie und Belege",
+            "punkte": 1
+          },
+          {
+            "id": "k6",
+            "beschreibung": "Dokumentation, Meldung und Maßnahme zur Ursachenbeseitigung",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Fehlbuchung",
+          "Schwund",
+          "Verwechslung",
+          "Buchungshistorie",
+          "Scannpflicht"
+        ],
+        "haeufige_fehler": [
+          "Sofortiges Anpassen des Systembestands ohne Ursachensuche",
+          "Unterstellen von Diebstahl ohne Prüfung"
+        ]
+      }
+    }
+  ]
+}
