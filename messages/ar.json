@@ -739,12 +739,17 @@
       "bestaetigt": "أكّدها المدرّب"
     },
     "prozentKurz": "{wert} %",
+    "fragenStand": "{fertig} من {gesamt} أسئلة أساسية",
+    "themaOeffnen": "اضغط للتدرّب",
     "lesezeitHinweis": "ملاحظة: وقت القراءة أقل من المطلوب — تذكير فقط، بلا حظر.",
     "abzeichen": "الشارات",
     "keineAbzeichen": "لا شارات في الكتالوج بعد.",
     "abzeichenFrei": "مفعّلة",
     "abzeichenGesperrt": "لم تُبلغ بعد",
+    "abzeichenStand": "التقدّم: {ist} من {ziel}",
     "keineDaten": "لم تُحمَّل مراحل بعد.",
+    "keineFachgebiete": "لا مجالات بأسئلة منشورة بعد.",
+    "keineThemen": "لا مواضيع بأسئلة أساسية منشورة بعد.",
     "pruefungsreife": {
       "titel": "جاهزية الامتحان",
       "untertitel": "المعايير وحالة توصية المدرّب.",

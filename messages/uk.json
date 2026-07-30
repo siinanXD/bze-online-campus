@@ -739,12 +739,17 @@
       "bestaetigt": "Інструктор підтвердив"
     },
     "prozentKurz": "{wert} %",
+    "fragenStand": "{fertig} з {gesamt} основних запитань",
+    "themaOeffnen": "Торкніться, щоб тренуватися",
     "lesezeitHinweis": "Примітка: час читання нижче норми — не блокування, лише нагадування.",
     "abzeichen": "Значки",
     "keineAbzeichen": "У каталозі ще немає значків.",
     "abzeichenFrei": "Розблоковано",
     "abzeichenGesperrt": "Ще не досягнуто",
+    "abzeichenStand": "Прогрес: {ist} з {ziel}",
     "keineDaten": "Фази ще не завантажено.",
+    "keineFachgebiete": "Немає галузей з опублікованими запитаннями.",
+    "keineThemen": "Немає тем з опублікованими основними запитаннями.",
     "pruefungsreife": {
       "titel": "Готовність до іспиту",
       "untertitel": "Критерії та статус рекомендації інструктора.",

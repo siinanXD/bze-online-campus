@@ -739,12 +739,17 @@
       "bestaetigt": "Ausbilder bestätigt"
     },
     "prozentKurz": "{wert} %",
+    "fragenStand": "{fertig} von {gesamt} Kernfragen",
+    "themaOeffnen": "Tippen zum Üben",
     "lesezeitHinweis": "Hinweis: Lesezeit unter Soll — kein Riegel, nur Erinnerung.",
     "abzeichen": "Abzeichen",
     "keineAbzeichen": "Noch keine Abzeichen im Katalog.",
     "abzeichenFrei": "Freigeschaltet",
     "abzeichenGesperrt": "Noch nicht erreicht",
+    "abzeichenStand": "Fortschritt: {ist} von {ziel}",
     "keineDaten": "Noch keine Phasen geladen.",
+    "keineFachgebiete": "Noch keine Fachgebiete mit freigegebenen Fragen.",
+    "keineThemen": "Noch keine Themen mit freigegebenen Kernfragen.",
     "pruefungsreife": {
       "titel": "Prüfungsreife",
       "untertitel": "Kriterien und Status der Ausbilderempfehlung.",

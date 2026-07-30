@@ -83,12 +83,26 @@ export default async function FortschrittPage({
 
       <section className="space-y-2">
         <h2 className="text-sm font-bold uppercase tracking-wide text-primary">{t('gates.fachgebiete')}</h2>
-        {bereichGates.map((g) => <GateZeile key={g.id} gate={g} />)}
+        {bereichGates.length === 0 ? (
+          <Card><p className="text-sm text-fg-muted">{t('keineFachgebiete')}</p></Card>
+        ) : (
+          bereichGates.map((g) => <GateZeile key={g.id} gate={g} />)
+        )}
       </section>
 
       <section className="space-y-2">
         <h2 className="text-sm font-bold uppercase tracking-wide text-primary">{t('gates.topics')}</h2>
-        {topicGates.map((g) => <GateZeile key={g.id} gate={g} />)}
+        {topicGates.length === 0 ? (
+          <Card><p className="text-sm text-fg-muted">{t('keineThemen')}</p></Card>
+        ) : (
+          topicGates.map((g) => (
+            <GateZeile
+              key={g.id}
+              gate={g}
+              href={`/${locale}/campus/lernen/thema/${g.id}`}
+            />
+          ))
+        )}
       </section>
 
       <section className="space-y-2">

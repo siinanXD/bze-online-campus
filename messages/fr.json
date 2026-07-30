@@ -739,12 +739,17 @@
       "bestaetigt": "Confirmé par le formateur"
     },
     "prozentKurz": "{wert} %",
+    "fragenStand": "{fertig} sur {gesamt} questions clés",
+    "themaOeffnen": "Appuyer pour s’entraîner",
     "lesezeitHinweis": "Remarque : temps de lecture inférieur à l’objectif — pas un blocage, juste un rappel.",
     "abzeichen": "Badges",
     "keineAbzeichen": "Aucun badge dans le catalogue pour l’instant.",
     "abzeichenFrei": "Débloqué",
     "abzeichenGesperrt": "Pas encore atteint",
+    "abzeichenStand": "Progression : {ist} sur {ziel}",
     "keineDaten": "Aucune phase chargée pour l’instant.",
+    "keineFachgebiete": "Aucun domaine avec des questions publiées.",
+    "keineThemen": "Aucun thème avec des questions clés publiées.",
     "pruefungsreife": {
       "titel": "Aptitude à l’examen",
       "untertitel": "Critères et statut de la recommandation du formateur.",

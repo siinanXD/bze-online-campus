@@ -56,6 +56,9 @@ export interface Gate {
   bezeichnung: string;
   status: GateStatus;
   anteil: number; // 0..1
+  /** Absolute Zähler für die Anzeige (Kernfragen bzw. aggregiert). */
+  fertig?: number;
+  gesamt?: number;
   hinweis?: 'lesezeit';
 }
 

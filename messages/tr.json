@@ -739,12 +739,17 @@
       "bestaetigt": "Eğitmen onayladı"
     },
     "prozentKurz": "%{wert}",
+    "fragenStand": "{fertig}/{gesamt} temel soru",
+    "themaOeffnen": "Çalışmak için dokun",
     "lesezeitHinweis": "Not: okuma süresi hedefin altında — engel değil, yalnızca hatırlatma.",
     "abzeichen": "Rozetler",
     "keineAbzeichen": "Katalogda henüz rozet yok.",
     "abzeichenFrei": "Açıldı",
     "abzeichenGesperrt": "Henüz ulaşılmadı",
+    "abzeichenStand": "İlerleme: {ist}/{ziel}",
     "keineDaten": "Henüz aşama yüklenmedi.",
+    "keineFachgebiete": "Yayımlanmış sorusu olan alan yok.",
+    "keineThemen": "Yayımlanmış temel sorusu olan konu yok.",
     "pruefungsreife": {
       "titel": "Sınava hazırlık",
       "untertitel": "Eğitmen önerisinin ölçütleri ve durumu.",

@@ -20,6 +20,9 @@ export interface AchievementAnzeige {
   beschreibungKey: string | null;
   punkte: number;
   freigeschaltetAm: string | null;
+  /** Aktueller Fortschritt Richtung Freischaltung (z. B. Kernfragen / Punkte). */
+  stand?: number;
+  ziel?: number;
 }
 
 export interface FortschrittSeite {
@@ -139,6 +142,10 @@ async function ladeLesefortschritt(
 
 export async function ladeFortschrittSeite(userId: string): Promise<FortschrittSeite> {
   const supabase = await createServerSupabase();
+
+  // Freischaltungen nachziehen (wird sonst nur nach Versuchen getriggert).
+  await supabase.rpc('pruefe_achievements', { p_user_id: userId });
+
   const { themen, bereiche, phasen } = await ladeStruktur(supabase);
   const [kernJeThema, lesJeThema, { data: pruefRows }, { data: reifeRows }, { data: punkteRows }, { data: achRows }, { data: nutzerAch }] =
     await Promise.all([
@@ -147,7 +154,7 @@ export async function ladeFortschrittSeite(userId: string): Promise<FortschrittS
       supabase.from('pruefung_ergebnisse').select('gesamtpunkte,bestanden').eq('user_id', userId),
       supabase.from('pruefungsreife').select('phase_id,kriterien_erfuellt_am,ausbilder_bestaetigt_am').eq('user_id', userId),
       supabase.from('lernpunkte').select('punkte').eq('user_id', userId),
-      supabase.from('achievements').select('id,code,titel_key,beschreibung_key,punkte'),
+      supabase.from('achievements').select('id,code,titel_key,beschreibung_key,punkte,bedingung'),
       supabase.from('nutzer_achievements').select('achievement_id,freigeschaltet_am').eq('user_id', userId),
     ]);
 
@@ -172,14 +179,29 @@ export async function ladeFortschrittSeite(userId: string): Promise<FortschrittS
     empfehlungThemaId: empfehlung?.themaId ?? null,
   });
   const lernpunkte = (punkteRows ?? []).reduce((s, r) => s + (r.punkte ?? 0), 0);
+  const kernFertig = [...kernJeThema.values()].reduce((s, k) => s + k.kernFertig, 0);
   const freiAm = new Map((nutzerAch ?? []).map((n) => [n.achievement_id, n.freigeschaltet_am]));
-  const achievements: AchievementAnzeige[] = (achRows ?? []).map((a) => ({
-    code: a.code,
-    titelKey: a.titel_key,
-    beschreibungKey: a.beschreibung_key,
-    punkte: a.punkte ?? 0,
-    freigeschaltetAm: freiAm.get(a.id) ?? null,
-  }));
+  const achievements: AchievementAnzeige[] = (achRows ?? []).map((a) => {
+    const bedingung = (a.bedingung ?? {}) as { typ?: string; anzahl?: number; min?: number };
+    let stand = 0;
+    let ziel = 0;
+    if (bedingung.typ === 'kern_abgeschlossen') {
+      stand = kernFertig;
+      ziel = Number(bedingung.anzahl ?? 1);
+    } else if (bedingung.typ === 'lernpunkte_summe') {
+      stand = lernpunkte;
+      ziel = Number(bedingung.min ?? 100);
+    }
+    return {
+      code: a.code,
+      titelKey: a.titel_key,
+      beschreibungKey: a.beschreibung_key,
+      punkte: a.punkte ?? 0,
+      freigeschaltetAm: freiAm.get(a.id) ?? null,
+      stand,
+      ziel,
+    };
+  });
 
   return {
     gates,

@@ -739,12 +739,17 @@
       "bestaetigt": "Instructor confirmed"
     },
     "prozentKurz": "{wert}%",
+    "fragenStand": "{fertig} of {gesamt} core questions",
+    "themaOeffnen": "Tap to practise",
     "lesezeitHinweis": "Note: reading time below target — not a barrier, just a reminder.",
     "abzeichen": "Badges",
     "keineAbzeichen": "No badges in the catalogue yet.",
     "abzeichenFrei": "Unlocked",
     "abzeichenGesperrt": "Not reached yet",
+    "abzeichenStand": "Progress: {ist} of {ziel}",
     "keineDaten": "No phases loaded yet.",
+    "keineFachgebiete": "No subject areas with released questions yet.",
+    "keineThemen": "No topics with released core questions yet.",
     "pruefungsreife": {
       "titel": "Exam readiness",
       "untertitel": "Criteria and status of the instructor recommendation.",

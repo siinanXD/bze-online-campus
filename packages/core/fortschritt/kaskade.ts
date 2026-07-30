@@ -104,12 +104,16 @@ export function baueGates(input: {
     const les = lesJeThema.get(t.id) ?? [];
     const fertig = topicFertig(kern, les);
     const leseHinweis = les.some((l) => l.lesezeitUnterschritten);
+    // Themen ohne freigegebene Kernfragen ausblenden — sonst leere 0 %-Zeilen.
+    if (kern.kernGesamt <= 0) continue;
     gates.push({
       ebene: 'topic',
       id: t.id,
       bezeichnung: t.bezeichnung,
       status: gateStatus(fertig, empfehlungThemaId === t.id),
       anteil: anteil(kern.kernFertig, kern.kernGesamt),
+      fertig: kern.kernFertig,
+      gesamt: kern.kernGesamt,
       hinweis: leseHinweis ? 'lesezeit' : undefined,
     });
   }
@@ -119,12 +123,15 @@ export function baueGates(input: {
     const fertig = bereichFertig(ts, kernJeThema, lesJeThema);
     const kernG = ts.reduce((s, t) => s + (kernJeThema.get(t.id)?.kernGesamt ?? 0), 0);
     const kernF = ts.reduce((s, t) => s + (kernJeThema.get(t.id)?.kernFertig ?? 0), 0);
+    if (kernG <= 0) continue;
     gates.push({
       ebene: 'fachgebiet',
       id: b.id,
       bezeichnung: b.bezeichnung,
       status: fertig ? 'erreicht' : 'offen',
       anteil: anteil(kernF, kernG),
+      fertig: kernF,
+      gesamt: kernG,
     });
   }
 
@@ -139,6 +146,7 @@ export function baueGates(input: {
       (s, b) => s + (themenJeBereich.get(b.id) ?? []).reduce((x, t) => x + (kernJeThema.get(t.id)?.kernFertig ?? 0), 0),
       0,
     );
+    if (kernG <= 0 && !pruefungsreifen.some((r) => r.phaseId === ph.id)) continue;
     const reife = pruefungsreifen.find((r) => r.phaseId === ph.id);
     let status: GateStatus = fertig ? 'erreicht' : 'offen';
     if (reife?.ausbilderBestaetigtAm) status = 'bestaetigt';
@@ -150,6 +158,8 @@ export function baueGates(input: {
       bezeichnung: ph.bezeichnung,
       status,
       anteil: anteil(kernF, kernG),
+      fertig: kernF,
+      gesamt: kernG,
     });
   }
 
