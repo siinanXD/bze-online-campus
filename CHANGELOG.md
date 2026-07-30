@@ -42,9 +42,12 @@ Format nach [Keep a Changelog](https://keepachangelog.com/de/1.0.0/).
   Selbstregistrierung).
 - Designsystem-Dokumentation [`docs/DESIGN.md`](docs/DESIGN.md): Tokens,
   Komponenteninventar und die verbindlichen Zugänglichkeitsregeln.
+- Screenshots der Entwurfsbildschirme im README (`docs/bilder/`).
 
 ### Entfernt
 
+- `.env.local.example` — enthielt eine konkrete Projekt-URL und stand neben
+  `.env.example` in Konkurrenz. Es gibt nur noch eine Vorlage.
 - `docs/DESIGN-MASTERPROMPT.md` — die enthaltenen Designentscheidungen stehen
   jetzt als Dokumentation in `docs/DESIGN.md`.
 
@@ -59,7 +62,10 @@ Format nach [Keep a Changelog](https://keepachangelog.com/de/1.0.0/).
 - Arbeitsregeln von `AGENTS.md` nach [`CONTRIBUTING.md`](CONTRIBUTING.md) mit
   Einstiegs-Kurzfassung; Verweise im Code nachgezogen.
 - README: Abschnitt „Lokal starten" korrigiert (Voraussetzungen, Verhalten ohne
-  Zugangsdaten) und um „Grenzen und offene Punkte" ergänzt.
+  Zugangsdaten) und um „Grenzen und offene Punkte" ergänzt; Arbeitspaketnummern
+  aus den Überschriften entfernt.
+- `design:shots` nimmt auf schmalen Viewports nur den Ausschnitt auf — die
+  `fixed` positionierte untere Navigation landete bei `fullPage` im Inhalt.
 
 ### Behoben
 

@@ -4,7 +4,17 @@ Lern- und Prüfungsplattform (installierbare PWA) für Bildungsträger. Teilnehm
 
 **Erstpilot:** Maschinen- und Anlagenführer/-in, Schwerpunkt Metall- und Kunststofftechnik · Kammer IHK Aachen · Kunde Berufsbildungszentrum Euskirchen.
 
-Die maßgebliche Spezifikation ist [`docs/SPEC.md`](docs/SPEC.md), die Arbeitsregeln stehen in [`CONTRIBUTING.md`](CONTRIBUTING.md).
+## Oberfläche
+
+| Lernen auf dem Handy | Wochenprüfung im Originalformat |
+|---|---|
+| <img src="docs/bilder/campus-lernen.png" alt="Startseite Teilnehmende mit Weitermachen-Karte, Lernfeldern und Prüfungsreife" width="330"> | <img src="docs/bilder/pruefung-lauf.png" alt="Laufende Wochenprüfung mit Fortschritt, Restzeit und Antwortoptionen" width="330"> |
+
+![Teilnehmendenliste im Ausbilder-Cockpit mit Prüfungsreife, offenen Reviews und Berichtsheftstatus](docs/bilder/ausbilder-teilnehmer.png)
+
+Aufnahmen der Entwurfsbildschirme unter `/de/showcase/screens` (mit
+Beispieldaten), erzeugt über `pnpm design:shots`. Jeder Status trägt Farbe,
+Symbol und Textlabel — Farbe ist nie der einzige Träger.
 
 ## Stack
 
@@ -20,7 +30,8 @@ Die maßgebliche Spezifikation ist [`docs/SPEC.md`](docs/SPEC.md), die Arbeitsre
 | Betrieb | Vercel EU + Supabase eu-central-1 |
 
 Die maßgebliche Spezifikation ist [`docs/SPEC.md`](docs/SPEC.md), die Architektur der
-Schichten steht in [`docs/ARCHITEKTUR.md`](docs/ARCHITEKTUR.md), die Arbeitsregeln in
+Schichten steht in [`docs/ARCHITEKTUR.md`](docs/ARCHITEKTUR.md), das Designsystem
+in [`docs/DESIGN.md`](docs/DESIGN.md), die Arbeitsregeln in
 [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Lokal starten
@@ -80,7 +91,7 @@ supabase db reset      # Migration 0001 + Seed 0001
 
 Der Seed lädt: Träger BZE, Kammer IHK Aachen, IHK-100-Bewertungsschlüssel, Beruf MAF mit 2 Phasen, 3 Prüfungsbereichen, 15 Themen und **70 Fragen (57 MC + 13 Freitext)** im Status `entwurf`. Aufnahme in den Kernpool erfordert Ausbilderfreigabe (Spec §2, Regel 7).
 
-## PWA & Offline (AP-15)
+## PWA & Offline
 
 Die App ist als installierbare PWA ausgelegt (Manifest, Standalone-Display, Icons). Ein handgeschriebener Service Worker (`public/sw.js`, siehe [`docs/adr/0003-pwa-serwist.md`](docs/adr/0003-pwa-serwist.md)) precached die App-Shell, cached statische Assets (Stale-While-Revalidate) und Navigationen (Network-First mit Offline-Fallback `public/offline.html`). Offline abgegebene Eingaben landen in einer IndexedDB-Outbox (`service-worker/offline-db.ts`) und werden per Background Sync übertragen, sobald wieder Verbindung besteht. Ein sichtbarer Offline-Indikator und ein Update-Hinweis (`service-worker/`) sind im Root-Layout eingebunden.
 
@@ -94,7 +105,7 @@ pnpm build && pnpm start          # Service Worker greift nur im Produktionsbuil
 - Offline-Fallback: DevTools → Network → „Offline", dann Navigation.
 - Offline-Indikator und Update-Hinweis: Netz trennen bzw. `VERSION` in `public/sw.js` erhöhen und neu laden.
 
-## Wochenbericht & Merkkarten (AP-13)
+## Wochenbericht & Merkkarten
 
 Die Edge Function [`erzeuge-wochenbericht`](supabase/functions/erzeuge-wochenbericht/README.md)
 erzeugt pro aktivem Teilnehmer einen wöchentlichen Lernbericht (Spec §5):
@@ -130,7 +141,7 @@ sind die Ränder, an denen es in der Praxis bricht: Zeitzonen und Sommerzeit
 Stufengrenzen des IHK-Schlüssels (Bewertung) und kaputte Werte aus der Datenbank.
 Details in [`tests/README.md`](tests/README.md).
 
-## Erinnerungen & Lernfokus (AP-17)
+## Erinnerungen & Lernfokus
 
 Web Push hält Teilnehmende am Ball, ohne zu nerven. Die Entscheidung, **ob** und
 **was** gesendet wird, liegt vollständig in der getesteten Domäne
