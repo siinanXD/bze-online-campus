@@ -9,8 +9,8 @@
  * Tagesbudget nur eine Nachricht zulässt.
  */
 
-import { istAbendfenster } from './stille-zeiten';
-import type { Anlass, Dringlichkeit, PlanungsEingabe } from './types';
+import { istAbendfenster } from './stille-zeiten.ts';
+import type { Anlass, Dringlichkeit, PlanungsEingabe } from './types.ts';
 
 /**
  * Rangfolge der Anlässe, wichtigster zuerst.

@@ -7,7 +7,7 @@
  * Auswertung liegt deshalb hier, unabhängig von der Reihenfolge im Lernmodus.
  */
 
-import type { FaelligkeitsEintrag, FaelligkeitsUebersicht } from './types';
+import type { FaelligkeitsEintrag, FaelligkeitsUebersicht } from './types.ts';
 
 const LEER: FaelligkeitsUebersicht = { falsch: 0, neu: 0, wiederholung: 0, gesamt: 0 };
 

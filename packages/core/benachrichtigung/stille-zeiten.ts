@@ -8,9 +8,9 @@
  * Wert mehr.
  */
 
-import { lokaleStunde } from '../engagement/kalender';
-import { ganzeZahlImBereich } from '../werte/zahl';
-import type { PushEinstellungen } from './types';
+import { lokaleStunde } from '../engagement/kalender.ts';
+import { ganzeZahlImBereich } from '../werte/zahl.ts';
+import type { PushEinstellungen } from './types.ts';
 
 /** Voreinstellung: 21 Uhr bis 7 Uhr ist still. */
 export const STANDARD_STILL_VON = 21;

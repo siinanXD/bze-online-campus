@@ -5,4 +5,4 @@
  * und was keine Fachlichkeit trägt. Alles mit Fachbezug lebt in seiner Domain.
  */
 
-export * from './zahl';
+export * from './zahl.ts';

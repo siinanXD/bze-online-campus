@@ -72,7 +72,7 @@ async function sha256Hex(text: string): Promise<string> {
 
 function mockBewertung(antwort: string, raster: Raster, musterloesung: string): BewertungJson {
   const kriterien = raster.kriterien ?? [];
-  const max = Number(raster.max_punkte ?? kriterien.reduce((s, k) => s + k.punkte, 0) || 4);
+  const max = Number((raster.max_punkte ?? kriterien.reduce((s, k) => s + k.punkte, 0)) || 4);
   const norm = normalisiereAntwort(antwort);
   const synonyme = (raster.akzeptierte_synonyme ?? []).map((s) => s.toLowerCase());
   const bewertete = kriterien.map((k) => {
