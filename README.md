@@ -27,7 +27,7 @@ Symbol und Textlabel — Farbe ist nie der einzige Träger.
 | PWA | handgeschriebener Service Worker, IndexedDB-Outbox mit Background Sync, Web Push (VAPID) |
 | Validierung | Zod an jeder Server-Action-Grenze |
 | Tests | node:test (Unit + Integration), Playwright (E2E), ruff für die Python-Skripte |
-| Betrieb | Vercel EU + Supabase eu-central-1 |
+| Betrieb | Supabase eu-central-1; Anwendung als Container (Railway o. ä.) oder auf Netlify — siehe [`docs/DEPLOY.md`](docs/DEPLOY.md) |
 
 Die maßgebliche Spezifikation ist [`docs/SPEC.md`](docs/SPEC.md), die Architektur der
 Schichten steht in [`docs/ARCHITEKTUR.md`](docs/ARCHITEKTUR.md), das Designsystem
@@ -56,7 +56,8 @@ supabase db reset                   # Migrationen + Seed einspielen
 
 Welche Variable woher kommt, wie der erste Anmeldezugang entsteht (es gibt keine
 Selbstregistrierung) und wie Edge Functions lokal laufen, steht in
-[`docs/LOKAL-EINRICHTEN.md`](docs/LOKAL-EINRICHTEN.md).
+[`docs/LOKAL-EINRICHTEN.md`](docs/LOKAL-EINRICHTEN.md). Für eine erreichbare
+Testumgebung: [`docs/DEPLOY.md`](docs/DEPLOY.md).
 
 Der Seed ist generiert, nicht handgeschrieben:
 
@@ -79,7 +80,7 @@ messages/            Übersetzungen de,en,fr,ar,uk,tr
 content/fachkunde/   MDX-Lerninhalte
 tests/               unit, integration, e2e, helpers
 docs/                SPEC.md, DATENMODELL.md, ARCHITEKTUR.md, DESIGN.md,
-                     LOKAL-EINRICHTEN.md, adr/
+                     LOKAL-EINRICHTEN.md, DEPLOY.md, adr/
 scripts/             generate_seed.py, generate_i18n.py
 ```
 

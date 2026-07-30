@@ -43,6 +43,11 @@ Format nach [Keep a Changelog](https://keepachangelog.com/de/1.0.0/).
 - Designsystem-Dokumentation [`docs/DESIGN.md`](docs/DESIGN.md): Tokens,
   Komponenteninventar und die verbindlichen Zugänglichkeitsregeln.
 - Screenshots der Entwurfsbildschirme im README (`docs/bilder/`).
+- Deployment für einen Testbetrieb: [`docs/DEPLOY.md`](docs/DEPLOY.md),
+  `Dockerfile` mit `output: 'standalone'` (Railway o. ä.), `railway.json`,
+  `netlify.toml` mit Sicherheitskopfzeilen und ungecachtem Service Worker.
+- `app/robots.ts`: `NEXT_PUBLIC_ROBOTS=noindex` sperrt eine Testumgebung
+  vollständig; ohne die Variable bleibt der angemeldete Bereich ausgeschlossen.
 
 ### Entfernt
 

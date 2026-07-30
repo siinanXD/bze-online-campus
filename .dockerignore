@@ -1,0 +1,14 @@
+node_modules
+.next
+.git
+.github
+.env
+.env.local
+.env*.local
+shots
+galerie.html
+coverage
+tests
+docs/bilder
+*.log
+*.local.sql
