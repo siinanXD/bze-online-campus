@@ -189,13 +189,14 @@ export function Avatar({ name, groesse = 40, className }: AvatarProps) {
     .map((teil) => teil[0]?.toUpperCase() ?? '')
     .join('');
 
-  const toene = ['bg-border', 'bg-border-strong', 'bg-bg-subtle'];
+  /* Nie bg-bg-subtle/surface — im Dark Mode identisch mit Kartenhintergrund. */
+  const toene = ['bg-border', 'bg-border-strong', 'bg-surface-raised'];
   const summe = Array.from(name).reduce((s, z) => s + z.charCodeAt(0), 0);
 
   return (
     <span
       className={cn(
-        'inline-flex shrink-0 items-center justify-center rounded-full font-semibold text-fg-muted',
+        'inline-flex shrink-0 items-center justify-center rounded-full font-semibold text-fg',
         avatarGroessen[groesse],
         toene[summe % toene.length],
         className,

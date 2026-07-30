@@ -123,11 +123,12 @@
     --bg-subtle:       28  25  23;  /* #1C1917 */
     --surface:         28  25  23;  /* #1C1917 */
     --surface-raised:  41  37  36;  /* #292524 */
-    --border:          41  37  36;  /* #292524 */
-    --border-strong:   68  64  60;  /* #44403C */
+    /* Border muss von surface unterscheidbar sein — sonst wirken Karten/Chips „unsichtbar“. */
+    --border:          68  64  60;  /* #44403C  vorher #292524 ≈ surface */
+    --border-strong:   87  83  78;  /* #57534E */
     --fg:             245 245 244;  /* #F5F5F4 */
     --fg-muted:       168 162 158;  /* #A8A29E  auf --bg 9.1:1 */
-    --fg-subtle:      120 113 108;  /* #78716C  auf --bg 4.6:1 */
+    --fg-subtle:      168 162 158;  /* #A8A29E  vorher #78716C zu schwach auf dark */
     --fg-on-primary:   43  20   5;  /* #2B1405 */
 
     --primary:        232 188 104;  /* #E8BC68  auf --bg 9.4:1 */
