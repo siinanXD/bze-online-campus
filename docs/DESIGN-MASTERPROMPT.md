@@ -151,6 +151,20 @@ Internationalisierung:
 3. DESIGN-TOKENS
 ════════════════════════════════════════════════════════════
 
+WICHTIG — die Tokens aus diesem Abschnitt sind bereits umgesetzt
+(app/globals.css und tailwind.config.ts). Zwei Dinge weichen bewusst von der
+ursprünglichen Fassung ab; nicht zurückbauen:
+
+ (a) Die CSS-Variablen enthalten RGB-Kanalwerte, nicht HEX. Grund: Tailwind
+     kann aus einem HEX in einer CSS-Variable keine Transparenzen wie
+     `bg-primary/10` erzeugen, und der Code nutzt die an mehreren Stellen.
+     Der HEX steht als Kommentar neben jedem Wert.
+ (b) cn() konfiguriert tailwind-merge mit unserer font-size-Skala. Ohne das
+     hält twMerge `text-body` für eine Farbe und wirft `text-fg-onPrimary`
+     aus derselben Gruppe — der Primärbutton bekam dadurch 3.48:1 statt
+     5.14:1 Kontrast. Die Skala in packages/ui/src/cn.ts muss mitwachsen,
+     wenn eine Schriftgröße dazukommt.
+
 Primärfarbe ist ein warmes Bernstein-Orange. Wichtig: Orange grenzt farblich
 an Warnung und Fehler. Deshalb gilt — Primär erscheint AUSSCHLIESSLICH als
 gefüllte Fläche (Buttons, aktive Navigation, Fokusring). Warnungen erscheinen
@@ -899,6 +913,9 @@ Barrierefreiheit — Ziel ist WCAG 2.1 Stufe AA, vollständig
 
 Mehrsprachigkeit
 13. Kein hartcodierter sichtbarer Text. Alles über next-intl.
+    Ausgenommen: /showcase und /showcase/screens. Das sind interne
+    Entwicklerwerkzeuge, die Teilnehmenden nie angezeigt werden; sie stehen
+    fest auf Deutsch, statt 150 Übersetzungsschlüssel ohne Nutzen zu binden.
 14. RTL vollständig: nur logische Eigenschaften verwenden — ms-/me-,
     ps-/pe-, start-/end-, text-start/text-end. ml-, mr-, pl-, pr-, left-,
     right- sind verboten. Richtungsabhängige Symbole (Pfeile) werden per
@@ -1067,6 +1084,17 @@ Fachliche Regeln
 [ ] Prüfungsinhalte sind immer Deutsch, Übersetzung immer zusätzlich darunter.
 [ ] Kein englisches Bedienelement in der deutschen Oberfläche.
 [ ] AGENTS.md Abschnitt 2 wurde Punkt für Punkt gegengeprüft.
+
+Werkzeuge im Repository
+  pnpm design:kontrast   misst die gerenderten Farben und rechnet den
+                         WCAG-Kontrast aus. Rechne Kontraste nie aus den
+                         Token nach — genau dort ist der Fehler oben
+                         durchgerutscht.
+  pnpm design:shots      nimmt jede Route in 390px und 1440px auf,
+                         hell und dunkel.
+  pnpm design:galerie    baut aus den Aufnahmen eine HTML-Übersicht.
+  /showcase              Designsystem mit allen Zuständen.
+  /showcase/screens      Entwürfe der auth-geschützten Screens.
 
 Wenn ein Kriterium nicht erfüllt ist, ist die Arbeit nicht fertig.
 Melde am Ende jeden Punkt einzeln als erfüllt oder mit Begründung als offen.
