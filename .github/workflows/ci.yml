@@ -1,7 +1,9 @@
 name: CI
 on: [push, pull_request]
+
 jobs:
   build:
+    name: Typecheck, Lint, Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -11,7 +13,55 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm typecheck
       - run: pnpm lint
+      # Tests liefen bisher nicht in der CI — der wichtigste Zugewinn hier.
+      # Deckt Unit (packages/core) und Integration (Domain↔Versender) ab.
+      # E2E hat einen eigenen, optionalen Job (braucht eine laufende App).
+      - run: pnpm test
+
+  python:
+    name: Python (ruff)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install ruff==0.7.0
+      - run: ruff check scripts
+      - run: ruff format --check scripts
+
+  dateigroesse:
+    name: Dateigröße (Lesbarkeit)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Neue Domain- und Bibliotheksdateien bleiben klein
+        # Bewusst NICHT projektweit: bestehende UI-Bildschirme (showcase,
+        # Runner) sind gewachsen und werden nicht ohne Not zerschlagen. Das
+        # Gate schützt die gut geschnittene Domain davor, wieder auszuufern.
+        # Grenze 240 Zeilen: großzügig genug für eine zusammenhängende
+        # Einheit (die größte bestehende Domaindatei, kaskade.ts, liegt knapp
+        # darunter), eng genug, dass Vermischung von Belangen auffällt.
+        run: |
+          GRENZE=240
+          FEHLER=0
+          while IFS= read -r datei; do
+            [ -z "$datei" ] && continue
+            ZEILEN=$(wc -l < "$datei")
+            if [ "$ZEILEN" -gt "$GRENZE" ]; then
+              echo "ZU LANG  $datei ($ZEILEN Zeilen, max $GRENZE)"
+              FEHLER=1
+            fi
+          done < <(find packages/core -name '*.ts' -not -name '*.test.ts')
+          if [ "$FEHLER" -eq 1 ]; then
+            echo "Domaindateien über $GRENZE Zeilen sollten aufgeteilt werden."
+            exit 1
+          fi
+          echo "OK — alle Domaindateien unter $GRENZE Zeilen."
+
   doku-gate:
+    name: Migration erfordert DATENMODELL.md
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
