@@ -22,7 +22,7 @@ export function AuditFilter() {
   return (
     <form action={absenden} className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
       <div>
-        <label htmlFor="audit-aktion" className="mb-1 block text-xs font-semibold text-muted">
+        <label htmlFor="audit-aktion" className="mb-1 block text-xs font-semibold text-fg-muted">
           {t('audit.feld.aktion')}
         </label>
         <input
@@ -33,7 +33,7 @@ export function AuditFilter() {
         />
       </div>
       <div>
-        <label htmlFor="audit-zieltyp" className="mb-1 block text-xs font-semibold text-muted">
+        <label htmlFor="audit-zieltyp" className="mb-1 block text-xs font-semibold text-fg-muted">
           {t('audit.feld.zielTyp')}
         </label>
         <input
@@ -44,7 +44,7 @@ export function AuditFilter() {
         />
       </div>
       <div>
-        <label htmlFor="audit-von" className="mb-1 block text-xs font-semibold text-muted">
+        <label htmlFor="audit-von" className="mb-1 block text-xs font-semibold text-fg-muted">
           {t('audit.feld.von')}
         </label>
         <input
@@ -56,7 +56,7 @@ export function AuditFilter() {
         />
       </div>
       <div>
-        <label htmlFor="audit-bis" className="mb-1 block text-xs font-semibold text-muted">
+        <label htmlFor="audit-bis" className="mb-1 block text-xs font-semibold text-fg-muted">
           {t('audit.feld.bis')}
         </label>
         <input
@@ -68,7 +68,7 @@ export function AuditFilter() {
         />
       </div>
       <div className="sm:col-span-2 lg:col-span-4">
-        <Button type="submit" variant="primary">
+        <Button type="submit" variante="primary">
           {t('audit.filtern')}
         </Button>
       </div>

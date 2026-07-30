@@ -10,7 +10,7 @@ export default async function SprachwahlSeite({ params }: { params: Promise<{ lo
     <>
       <header className="text-center">
         <h1 className="text-2xl font-extrabold">{t('titel')}</h1>
-        <p className="mt-1 text-muted">{t('hinweis')}</p>
+        <p className="mt-1 text-fg-muted">{t('hinweis')}</p>
       </header>
       <Card>
         <SprachwahlForm locale={locale} />

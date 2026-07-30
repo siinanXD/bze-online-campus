@@ -31,7 +31,7 @@ export default async function NeuerNachweisPage({
   if (!user) {
     return (
       <main className="mx-auto max-w-2xl p-4">
-        <p className="text-muted">{t('nichtAngemeldet')}</p>
+        <p className="text-fg-muted">{t('nichtAngemeldet')}</p>
       </main>
     );
   }
@@ -43,7 +43,7 @@ export default async function NeuerNachweisPage({
       <div className="pt-2">
         <Link
           href={`/${locale}/campus/berichtsheft`}
-          className="touchable inline-flex min-h-12 items-center text-sm text-accent hover:underline"
+          className="touchable inline-flex min-h-12 items-center text-sm text-primary hover:underline"
         >
           ← {t('zurueck')}
         </Link>

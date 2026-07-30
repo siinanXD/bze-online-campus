@@ -89,7 +89,7 @@ export default async function LerneinheitSeite({
       <main className="mx-auto max-w-2xl px-4 pb-32 pt-4">
         <header className="mb-4">
           <h1 className="mb-1 text-2xl font-extrabold text-fg">{frontmatter.titel}</h1>
-          <p className="text-xs text-muted">
+          <p className="text-xs text-fg-muted">
             {stunden > 0 ? t('zeit.stundenMinuten', { stunden, minuten }) : t('zeit.minuten', { minuten })}
           </p>
         </header>

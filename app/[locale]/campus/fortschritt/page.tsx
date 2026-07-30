@@ -19,7 +19,7 @@ export default async function FortschrittPage({
   if (!user) {
     return (
       <main className="mx-auto max-w-2xl p-4">
-        <p className="text-muted">{t('nichtAngemeldet')}</p>
+        <p className="text-fg-muted">{t('nichtAngemeldet')}</p>
       </main>
     );
   }
@@ -34,7 +34,7 @@ export default async function FortschrittPage({
       <header className="flex items-center justify-between gap-3 pt-2">
         <div>
           <h1 className="text-2xl font-extrabold">{t('titel')}</h1>
-          <p className="text-sm text-muted">{t('untertitel')}</p>
+          <p className="text-sm text-fg-muted">{t('untertitel')}</p>
         </div>
         <ProgressRing
           value={data.fortschrittBeruf}
@@ -45,12 +45,12 @@ export default async function FortschrittPage({
 
       <Card className="flex items-center justify-between gap-3">
         <div>
-          <p className="text-sm font-bold uppercase tracking-wide text-accent">{t('lernpunkte')}</p>
+          <p className="text-sm font-bold uppercase tracking-wide text-primary">{t('lernpunkte')}</p>
           <p className="text-2xl font-extrabold">{data.lernpunkte}</p>
         </div>
         <Link
           href={`/${locale}/campus/fortschritt/pruefungsreife`}
-          className="touchable text-sm font-semibold text-accent underline-offset-4 hover:underline"
+          className="touchable text-sm font-semibold text-primary underline-offset-4 hover:underline"
         >
           {t('pruefungsreifeLink')}
         </Link>
@@ -58,14 +58,14 @@ export default async function FortschrittPage({
 
       {data.empfehlung && (
         <Card>
-          <p className="mb-1 text-sm font-bold uppercase tracking-wide text-accent">{t('fortsetzen')}</p>
+          <p className="mb-1 text-sm font-bold uppercase tracking-wide text-primary">{t('fortsetzen')}</p>
           <p className="font-semibold">{data.empfehlung.bezeichnung}</p>
-          <p className="text-sm text-muted">
+          <p className="text-sm text-fg-muted">
             {t(`empfehlungGrund.${data.empfehlung.grund}`, { offen: data.empfehlung.kernOffen })}
           </p>
           <Link
             href={`/${locale}/campus/lernen/thema/${data.empfehlung.themaId}`}
-            className="touchable mt-3 inline-flex min-h-12 items-center rounded-lg bg-accent px-4 text-sm font-semibold text-white"
+            className="touchable mt-3 inline-flex min-h-12 items-center rounded-lg bg-primary px-4 text-sm font-semibold text-white"
           >
             {t('fortsetzenCta')}
           </Link>
@@ -73,26 +73,26 @@ export default async function FortschrittPage({
       )}
 
       <section className="space-y-2">
-        <h2 className="text-sm font-bold uppercase tracking-wide text-accent">{t('gates.phasen')}</h2>
+        <h2 className="text-sm font-bold uppercase tracking-wide text-primary">{t('gates.phasen')}</h2>
         {phaseGates.length === 0 ? (
-          <Card><p className="text-sm text-muted">{t('keineDaten')}</p></Card>
+          <Card><p className="text-sm text-fg-muted">{t('keineDaten')}</p></Card>
         ) : (
           phaseGates.map((g) => <GateZeile key={g.id} gate={g} />)
         )}
       </section>
 
       <section className="space-y-2">
-        <h2 className="text-sm font-bold uppercase tracking-wide text-accent">{t('gates.fachgebiete')}</h2>
+        <h2 className="text-sm font-bold uppercase tracking-wide text-primary">{t('gates.fachgebiete')}</h2>
         {bereichGates.map((g) => <GateZeile key={g.id} gate={g} />)}
       </section>
 
       <section className="space-y-2">
-        <h2 className="text-sm font-bold uppercase tracking-wide text-accent">{t('gates.topics')}</h2>
+        <h2 className="text-sm font-bold uppercase tracking-wide text-primary">{t('gates.topics')}</h2>
         {topicGates.map((g) => <GateZeile key={g.id} gate={g} />)}
       </section>
 
       <section className="space-y-2">
-        <h2 className="text-sm font-bold uppercase tracking-wide text-accent">{t('abzeichen')}</h2>
+        <h2 className="text-sm font-bold uppercase tracking-wide text-primary">{t('abzeichen')}</h2>
         <AbzeichenListe items={data.achievements} />
       </section>
     </main>

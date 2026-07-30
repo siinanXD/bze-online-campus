@@ -35,7 +35,7 @@ export default async function AusbilderLayout({
               <Link
                 key={href}
                 href={href}
-                className="touchable inline-flex min-h-12 items-center rounded-lg px-3 text-sm font-semibold text-fg hover:bg-accent/10 hover:text-accent"
+                className="touchable inline-flex min-h-12 items-center rounded-lg px-3 text-sm font-semibold text-fg hover:bg-primary/10 hover:text-primary"
               >
                 {label}
               </Link>

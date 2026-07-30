@@ -35,8 +35,8 @@ export function WochenberichtKarte({ bericht, className }: WochenberichtKartePro
   if (!bericht || !bericht.inhalt) {
     return (
       <Card className={className}>
-        <h2 className="mb-1 text-sm font-bold uppercase tracking-wide text-accent">{t('titel')}</h2>
-        <p className="text-sm text-muted">{t('keinBericht')}</p>
+        <h2 className="mb-1 text-sm font-bold uppercase tracking-wide text-primary">{t('titel')}</h2>
+        <p className="text-sm text-fg-muted">{t('keinBericht')}</p>
       </Card>
     );
   }
@@ -60,8 +60,8 @@ export function WochenberichtKarte({ bericht, className }: WochenberichtKartePro
   return (
     <Card className={className}>
       <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
-        <h2 className="text-sm font-bold uppercase tracking-wide text-accent">{t('titel')}</h2>
-        <span className="rounded-full border border-border bg-surface px-2.5 py-1 text-xs font-semibold text-muted">
+        <h2 className="text-sm font-bold uppercase tracking-wide text-primary">{t('titel')}</h2>
+        <span className="rounded-full border border-border bg-surface px-2.5 py-1 text-xs font-semibold text-fg-muted">
           {t('kw', { kw: bericht.kalenderwoche, jahr: bericht.jahr })}
         </span>
       </div>
@@ -72,7 +72,7 @@ export function WochenberichtKarte({ bericht, className }: WochenberichtKartePro
             {t('quote', { quote: statistik.richtig_quote, bearbeitet: statistik.bearbeitet })}
           </span>
           <span
-            className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-xs font-semibold text-muted"
+            className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-xs font-semibold text-fg-muted"
             role="status"
           >
             <span aria-hidden="true">{TREND_SYMBOL[trend]}</span>
@@ -99,7 +99,7 @@ export function WochenberichtKarte({ bericht, className }: WochenberichtKartePro
 
       {statistik?.schwaechste_themen?.length > 0 && (
         <div className="mt-3">
-          <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted">
+          <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-fg-muted">
             {t('schwaechsteThemen')}
           </p>
           <div className="flex flex-wrap gap-2">
@@ -110,7 +110,7 @@ export function WochenberichtKarte({ bericht, className }: WochenberichtKartePro
         </div>
       )}
 
-      <p className="mt-3 text-xs text-muted">{t('lernfeedbackHinweis')}</p>
+      <p className="mt-3 text-xs text-fg-muted">{t('lernfeedbackHinweis')}</p>
 
       {fehler && (
         <p className="mt-2 text-sm text-status-falsch" role="alert">

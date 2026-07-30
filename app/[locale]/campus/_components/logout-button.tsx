@@ -14,5 +14,5 @@ export function LogoutButton() {
     router.push(`/${locale}/login`);
     router.refresh();
   }
-  return <Button variant="soft" onClick={abmelden}>{t('abmelden')}</Button>;
+  return <Button variante="sekundaer" onClick={abmelden}>{t('abmelden')}</Button>;
 }

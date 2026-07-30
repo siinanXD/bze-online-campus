@@ -40,12 +40,12 @@ export function erzeugeFachkundeMdxComponents(kapitel: readonly Kapitel[]): MDXC
     strong: ({ children }) => <strong className="font-bold text-fg">{children}</strong>,
     em: ({ children }) => <em className="italic text-fg">{children}</em>,
     a: ({ href, children }) => (
-      <a href={href} className="font-semibold text-accent underline underline-offset-2">
+      <a href={href} className="font-semibold text-primary underline underline-offset-2">
         {children}
       </a>
     ),
     blockquote: ({ children }) => (
-      <blockquote className="mb-3 border-s-4 border-accent bg-surface p-4 text-muted">{children}</blockquote>
+      <blockquote className="mb-3 border-s-4 border-primary bg-surface p-4 text-fg-muted">{children}</blockquote>
     ),
     hr: () => <hr className="my-6 border-border" />,
     code: ({ children }) => (

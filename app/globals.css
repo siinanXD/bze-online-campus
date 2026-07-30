@@ -2,41 +2,226 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --bg: 220 20% 97%;
-  --surface: 0 0% 100%;
-  --border: 220 14% 88%;
-  --fg: 222 30% 12%;
-  --muted: 220 9% 42%;
-  --accent: 243 62% 52%;        /* eine ruhige Akzentfarbe (Indigo) */
-  --accent-fg: 0 0% 100%;
-  --status-neu: 220 9% 55%;     /* neu = neutral-grau  ○ */
-  --status-teil: 142 45% 42%;   /* einmal richtig = hellgrün ◐ */
-  --status-falsch: 0 66% 48%;   /* falsch = rot ✕ */
-  --status-fertig: 142 65% 32%; /* abgeschlossen = kräftiges Grün ✓ */
+/* ============================================================
+   Schriften — selbst gehostet, nach Unicode-Bereichen getrennt.
+   Ein deutschsprachiger Nutzer laedt nur inter-latin (48 KB).
+   Lizenzen: public/fonts/*-LICENSE.txt (SIL OFL 1.1)
+   ============================================================ */
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('/fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-.dark{
-  --bg: 222 30% 9%;
-  --surface: 222 24% 13%;
-  --border: 222 16% 22%;
-  --fg: 220 20% 94%;
-  --muted: 220 12% 66%;
-  --accent: 243 70% 66%;
-  --accent-fg: 222 40% 10%;
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('/fonts/inter-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+    U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
 }
-*{ box-sizing: border-box; }
-html,body{ margin:0; padding:0; }
-body{
-  background: hsl(var(--bg));
-  color: hsl(var(--fg));
-  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-  -webkit-text-size-adjust: 100%;
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('/fonts/inter-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-/* Sichtbarer Fokus für vollständige Tastaturbedienung (WCAG 2.1 AA) */
-:where(a,button,input,select,textarea,[tabindex]):focus-visible{
-  outline: 3px solid hsl(var(--accent));
-  outline-offset: 2px;
-  border-radius: 6px;
+
+@font-face {
+  font-family: 'Noto Sans Arabic';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('/fonts/noto-sans-arabic.woff2') format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891,
+    U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41,
+    U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
 }
-/* Mindest-Berührungsziel */
-.touchable{ min-height: 48px; min-width: 48px; }
+
+@layer base {
+  /* ==========================================================
+     Design-Tokens.
+     Werte sind RGB-Kanaele ohne Funktion, damit Tailwind
+     Transparenz-Varianten wie bg-primary/10 erzeugen kann.
+     Der HEX-Wert steht als Kommentar daneben.
+     ========================================================== */
+
+  :root {
+    --font-sans: 'Inter', 'Noto Sans Arabic', system-ui, 'Segoe UI', Roboto,
+      sans-serif;
+
+    /* Flaechen und Text */
+    --bg:             250 250 249;  /* #FAFAF9 */
+    --bg-subtle:      245 245 244;  /* #F5F5F4 */
+    --surface:        255 255 255;  /* #FFFFFF */
+    --surface-raised: 255 255 255;  /* #FFFFFF */
+    --border:         231 229 228;  /* #E7E5E4 */
+    --border-strong:  214 211 209;  /* #D6D3D1 */
+    --fg:              28  25  23;  /* #1C1917 */
+    --fg-muted:        87  83  78;  /* #57534E  auf --bg 7.6:1 */
+    --fg-subtle:      120 113 108;  /* #78716C  auf --bg 4.8:1 */
+    --fg-on-primary:  255 255 255;  /* #FFFFFF */
+
+    /* Primaer — Bernstein. Nur als gefuellte Flaeche verwenden. */
+    --primary:        180  83   9;  /* #B45309  auf Weiss 5.14:1 */
+    --primary-hover:  146  64  14;  /* #92400E */
+    --primary-active: 120  53  15;  /* #78350F */
+    --primary-subtle: 253 248 237;  /* #FDF8ED */
+    --primary-border: 242 216 162;  /* #F2D8A2 */
+    --ring:           180  83   9;  /* #B45309 */
+
+    /* Semantisch. Warnung erscheint nie als gefuellte Flaeche. */
+    --success:        21 128  61;  /* #15803D */
+    --success-bg:    240 253 244;  /* #F0FDF4 */
+    --success-border:187 247 208;  /* #BBF7D0 */
+    --warning:       161  98   7;  /* #A16207 */
+    --warning-bg:    254 252 232;  /* #FEFCE8 */
+    --warning-border:254 240 138;  /* #FEF08A */
+    --danger:        185  28  28;  /* #B91C1C */
+    --danger-bg:     254 242 242;  /* #FEF2F2 */
+    --danger-border: 254 202 202;  /* #FECACA */
+    --info:           29  78 216;  /* #1D4ED8 */
+    --info-bg:       239 246 255;  /* #EFF6FF */
+    --info-border:   191 219 254;  /* #BFDBFE */
+
+    /* Lernstatus. Farbe nie allein — immer Symbol und Textlabel. */
+    --status-neu:    120 113 108;  /* #78716C  Symbol ○ */
+    --status-teil:    59 155  94;  /* #3B9B5E  Symbol ◐ */
+    --status-falsch: 204  41  41;  /* #CC2929  Symbol ✕ */
+    --status-fertig:  29 135  69;  /* #1D8745  Symbol ✓ */
+
+    /* Radien */
+    --radius-sm: 0.375rem;   /*  6px  Badges, kleine Marker */
+    --radius-md: 0.625rem;   /* 10px  Buttons, Eingaben     */
+    --radius-lg: 0.875rem;   /* 14px  Karten                */
+    --radius-xl: 1.125rem;   /* 18px  Modale, grosse Panels */
+
+    /* Schatten */
+    --shadow-sm: 0 1px 2px 0 rgb(28 25 23 / 0.06),
+                 0 1px 3px 0 rgb(28 25 23 / 0.08);
+    --shadow-md: 0 2px 4px -1px rgb(28 25 23 / 0.06),
+                 0 6px 12px -2px rgb(28 25 23 / 0.10);
+    --shadow-lg: 0 8px 16px -4px rgb(28 25 23 / 0.08),
+                 0 20px 32px -8px rgb(28 25 23 / 0.14);
+  }
+
+  .dark {
+    --bg:              12  10   9;  /* #0C0A09 */
+    --bg-subtle:       28  25  23;  /* #1C1917 */
+    --surface:         28  25  23;  /* #1C1917 */
+    --surface-raised:  41  37  36;  /* #292524 */
+    --border:          41  37  36;  /* #292524 */
+    --border-strong:   68  64  60;  /* #44403C */
+    --fg:             245 245 244;  /* #F5F5F4 */
+    --fg-muted:       168 162 158;  /* #A8A29E  auf --bg 9.1:1 */
+    --fg-subtle:      120 113 108;  /* #78716C  auf --bg 4.6:1 */
+    --fg-on-primary:   43  20   5;  /* #2B1405 */
+
+    --primary:        232 188 104;  /* #E8BC68  auf --bg 9.4:1 */
+    --primary-hover:  242 216 162;  /* #F2D8A2 */
+    --primary-active: 249 237 210;  /* #F9EDD2 */
+    --primary-subtle:  43  27   8;  /* #2B1B08 */
+    --primary-border:  90  42  11;  /* #5A2A0B */
+    --ring:           232 188 104;  /* #E8BC68 */
+
+    --success:        74 222 128;  /* #4ADE80 */
+    --success-bg:     11  36  23;  /* #0B2417 */
+    --success-border: 20  83  45;  /* #14532D */
+    --warning:       250 204  21;  /* #FACC15 */
+    --warning-bg:     36  29   5;  /* #241D05 */
+    --warning-border:113  63  18;  /* #713F12 */
+    --danger:        248 113 113;  /* #F87171 */
+    --danger-bg:      42  16  16;  /* #2A1010 */
+    --danger-border: 127  29  29;  /* #7F1D1D */
+    --info:           96 165 250;  /* #60A5FA */
+    --info-bg:        13  26  51;  /* #0D1A33 */
+    --info-border:    30  58 138;  /* #1E3A8A */
+
+    --status-neu:    168 162 158;  /* #A8A29E */
+    --status-teil:    74 222 128;  /* #4ADE80 */
+    --status-falsch: 248 113 113;  /* #F87171 */
+    --status-fertig:  34 197  94;  /* #22C55E */
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.40);
+    --shadow-md: 0 4px 10px -2px rgb(0 0 0 / 0.50);
+    --shadow-lg: 0 16px 32px -8px rgb(0 0 0 / 0.60);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: rgb(var(--bg));
+    color: rgb(var(--fg));
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Sichtbarer Fokus fuer vollstaendige Tastaturbedienung (WCAG 2.1 AA).
+     Wird nirgends entfernt. */
+  :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+    outline: 3px solid rgb(var(--ring));
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* Mindest-Beruehrungsziel im Campus-Bereich */
+  .touchable {
+    min-height: 48px;
+    min-width: 48px;
+  }
+
+  /* Zahlen in Tabellen laufen sonst optisch auseinander */
+  .zahlen {
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Sprungmarke: erst sichtbar, wenn sie den Fokus hat */
+  .skip-link {
+    position: absolute;
+    inset-inline-start: 0.5rem;
+    top: -4rem;
+    z-index: 100;
+    transition: top 150ms;
+  }
+
+  .skip-link:focus-visible {
+    top: 0.5rem;
+  }
+}

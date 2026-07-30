@@ -88,29 +88,29 @@ export function NeuFormular({
   if (ergebnis) {
     return (
       <div className="space-y-4">
-        <div className="rounded-xl border-2 border-accent bg-surface p-4">
-          <p className="text-sm font-bold text-accent">{t('nutzer.zugangsdatenTitel')}</p>
-          <p className="mt-1 text-sm text-muted">{t('nutzer.zugangsdatenHinweis')}</p>
+        <div className="rounded-xl border-2 border-primary bg-surface p-4">
+          <p className="text-sm font-bold text-primary">{t('nutzer.zugangsdatenTitel')}</p>
+          <p className="mt-1 text-sm text-fg-muted">{t('nutzer.zugangsdatenHinweis')}</p>
           <dl className="mt-3 grid grid-cols-[auto,1fr] gap-x-3 gap-y-1 text-[15px]">
-            <dt className="text-muted">{t('nutzer.spalte.name')}</dt>
+            <dt className="text-fg-muted">{t('nutzer.spalte.name')}</dt>
             <dd className="font-semibold">{ergebnis.vorname} {ergebnis.nachname}</dd>
-            <dt className="text-muted">{t('nutzer.spalte.benutzername')}</dt>
+            <dt className="text-fg-muted">{t('nutzer.spalte.benutzername')}</dt>
             <dd className="font-mono font-semibold">{ergebnis.benutzername}</dd>
-            <dt className="text-muted">{t('nutzer.initialpasswort')}</dt>
+            <dt className="text-fg-muted">{t('nutzer.initialpasswort')}</dt>
             <dd className="font-mono text-lg font-bold tracking-wide">{ergebnis.initialPasswort}</dd>
           </dl>
         </div>
         <div className="flex flex-wrap gap-3">
-          <Button variant="primary" onClick={() => setErgebnis(null)}>
+          <Button variante="primary" onClick={() => setErgebnis(null)}>
             {t('nutzer.weiterenAnlegen')}
           </Button>
           {eingabe.kohorte_id && (
             <Link href={`/${locale}/admin/nutzer/kohorte/${eingabe.kohorte_id}/drucken`}>
-              <Button variant="soft">{t('nutzer.kohorteDrucken')}</Button>
+              <Button variante="sekundaer">{t('nutzer.kohorteDrucken')}</Button>
             </Link>
           )}
           <Link href={`/${locale}/admin/nutzer`}>
-            <Button variant="ghost">{t('nutzer.zurListe')}</Button>
+            <Button variante="leise">{t('nutzer.zurListe')}</Button>
           </Link>
         </div>
       </div>
@@ -161,7 +161,7 @@ export function NeuFormular({
           aria-invalid={!!fehler.benutzername}
           aria-describedby="benutzername-hinweis"
         />
-        <p id="benutzername-hinweis" className="mt-1 text-xs text-muted">{t('nutzer.feld.benutzernameHinweis')}</p>
+        <p id="benutzername-hinweis" className="mt-1 text-xs text-fg-muted">{t('nutzer.feld.benutzernameHinweis')}</p>
         {fehler.benutzername && <p className="mt-1 text-sm text-status-falsch">{t(`fehler.${fehler.benutzername}`)}</p>}
       </div>
 
@@ -213,11 +213,11 @@ export function NeuFormular({
       )}
 
       <div className="flex gap-3 pt-2">
-        <Button type="submit" variant="primary" disabled={istPending}>
+        <Button type="submit" variante="primary" disabled={istPending}>
           {istPending ? t('nutzer.wirdAngelegt') : t('nutzer.anlegen')}
         </Button>
         <Link href={`/${locale}/admin/nutzer`}>
-          <Button type="button" variant="ghost">
+          <Button type="button" variante="leise">
             {tc('abbrechen')}
           </Button>
         </Link>

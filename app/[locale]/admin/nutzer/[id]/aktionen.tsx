@@ -44,16 +44,16 @@ export function Aktionen({ nutzerId, aktiv }: { nutzerId: string; aktiv: boolean
 
   if (neueZugangsdaten) {
     return (
-      <div className="rounded-xl border-2 border-accent bg-surface p-4">
-        <p className="text-sm font-bold text-accent">{t('nutzer.zugangsdatenTitel')}</p>
-        <p className="mt-1 text-sm text-muted">{t('nutzer.zugangsdatenHinweis')}</p>
+      <div className="rounded-xl border-2 border-primary bg-surface p-4">
+        <p className="text-sm font-bold text-primary">{t('nutzer.zugangsdatenTitel')}</p>
+        <p className="mt-1 text-sm text-fg-muted">{t('nutzer.zugangsdatenHinweis')}</p>
         <dl className="mt-3 grid grid-cols-[auto,1fr] gap-x-3 gap-y-1 text-[15px]">
-          <dt className="text-muted">{t('nutzer.spalte.benutzername')}</dt>
+          <dt className="text-fg-muted">{t('nutzer.spalte.benutzername')}</dt>
           <dd className="font-mono font-semibold">{neueZugangsdaten.benutzername}</dd>
-          <dt className="text-muted">{t('nutzer.initialpasswort')}</dt>
+          <dt className="text-fg-muted">{t('nutzer.initialpasswort')}</dt>
           <dd className="font-mono text-lg font-bold tracking-wide">{neueZugangsdaten.initialPasswort}</dd>
         </dl>
-        <Button variant="soft" className="mt-3" onClick={() => setNeueZugangsdaten(null)}>
+        <Button variante="sekundaer" className="mt-3" onClick={() => setNeueZugangsdaten(null)}>
           {tc('weiter')}
         </Button>
       </div>
@@ -65,20 +65,20 @@ export function Aktionen({ nutzerId, aktiv }: { nutzerId: string; aktiv: boolean
       <div className="flex flex-wrap gap-3">
         {bestaetigungOffen ? (
           <>
-            <span className="self-center text-sm text-muted">{t('nutzer.passwortBestaetigung')}</span>
-            <Button variant="primary" disabled={istPending} onClick={passwortZuruecksetzen}>
+            <span className="self-center text-sm text-fg-muted">{t('nutzer.passwortBestaetigung')}</span>
+            <Button variante="primary" disabled={istPending} onClick={passwortZuruecksetzen}>
               {t('nutzer.bestaetigen')}
             </Button>
-            <Button variant="ghost" disabled={istPending} onClick={() => setBestaetigungOffen(false)}>
+            <Button variante="leise" disabled={istPending} onClick={() => setBestaetigungOffen(false)}>
               {t('common.abbrechen')}
             </Button>
           </>
         ) : (
-          <Button variant="soft" disabled={istPending} onClick={() => setBestaetigungOffen(true)}>
+          <Button variante="sekundaer" disabled={istPending} onClick={() => setBestaetigungOffen(true)}>
             {t('nutzer.passwortZuruecksetzen')}
           </Button>
         )}
-        <Button variant={aktiv ? 'ghost' : 'primary'} disabled={istPending} onClick={statusUmschalten}>
+        <Button variante={aktiv ? 'leise' : 'primary'} disabled={istPending} onClick={statusUmschalten}>
           {aktiv ? t('nutzer.deaktivieren') : t('nutzer.aktivieren')}
         </Button>
       </div>

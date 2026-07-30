@@ -18,3 +18,7 @@ coverage/
 *.local.sql
 
 package-lock.json
+
+# Ausgaben der Design-Screenshots
+/shots/
+galerie.html

@@ -7,7 +7,7 @@ export async function AbzeichenListe({ items }: { items: AchievementAnzeige[] })
   if (items.length === 0) {
     return (
       <Card>
-        <p className="text-sm text-muted">{t('fortschritt.keineAbzeichen')}</p>
+        <p className="text-sm text-fg-muted">{t('fortschritt.keineAbzeichen')}</p>
       </Card>
     );
   }
@@ -21,14 +21,14 @@ export async function AbzeichenListe({ items }: { items: AchievementAnzeige[] })
               <p className="flex items-center gap-2 font-semibold" role="status">
                 <span aria-hidden="true">{frei ? '◆' : '◇'}</span>
                 <span>{t(a.titelKey)}</span>
-                <span className="text-xs font-medium text-muted">
+                <span className="text-xs font-medium text-fg-muted">
                   {frei ? t('fortschritt.abzeichenFrei') : t('fortschritt.abzeichenGesperrt')}
                 </span>
               </p>
               {a.beschreibungKey && (
-                <p className="mt-1 text-sm text-muted">{t(a.beschreibungKey)}</p>
+                <p className="mt-1 text-sm text-fg-muted">{t(a.beschreibungKey)}</p>
               )}
-              <p className="mt-1 text-xs text-muted">+{a.punkte} {t('fortschritt.punkte')}</p>
+              <p className="mt-1 text-xs text-fg-muted">+{a.punkte} {t('fortschritt.punkte')}</p>
             </Card>
           </li>
         );

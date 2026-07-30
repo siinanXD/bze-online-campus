@@ -31,7 +31,7 @@ export function MonitoringFilter({
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
       <div>
-        <span id="mon-zeitraum-label" className="mb-1.5 block text-xs font-semibold text-muted">
+        <span id="mon-zeitraum-label" className="mb-1.5 block text-xs font-semibold text-fg-muted">
           {t('zeitraum.beschriftung')}
         </span>
         <div
@@ -49,7 +49,7 @@ export function MonitoringFilter({
                 aria-pressed={aktiv}
                 className={
                   aktiv
-                    ? 'touchable inline-flex items-center rounded-xl border border-accent bg-accent px-3.5 py-2 text-sm font-semibold text-accent-fg'
+                    ? 'touchable inline-flex items-center rounded-xl border border-primary bg-primary px-3.5 py-2 text-sm font-semibold text-fg-onPrimary'
                     : 'touchable inline-flex items-center rounded-xl border border-border bg-surface px-3.5 py-2 text-sm font-semibold text-fg hover:bg-bg'
                 }
               >
@@ -61,7 +61,7 @@ export function MonitoringFilter({
       </div>
 
       <div>
-        <label htmlFor="mon-funktion" className="mb-1.5 block text-xs font-semibold text-muted">
+        <label htmlFor="mon-funktion" className="mb-1.5 block text-xs font-semibold text-fg-muted">
           {t('funktion.beschriftung')}
         </label>
         <select

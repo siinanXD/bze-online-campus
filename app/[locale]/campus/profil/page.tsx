@@ -15,13 +15,13 @@ export default async function Profil() {
     <main className="mx-auto max-w-2xl space-y-4 p-4">
       <h1 className="pt-2 text-2xl font-extrabold">{t('profil')}</h1>
       <Card className="space-y-1.5">
-        <p><span className="text-muted">{t('benutzername')}:</span> <b>{profil?.benutzername ?? '—'}</b></p>
-        <p><span className="text-muted">{t('name')}:</span> {profil?.vorname} {profil?.nachname}</p>
-        <p><span className="text-muted">{t('rolle')}:</span> {profil?.rolle ?? '—'}</p>
-        <p><span className="text-muted">{t('sprache')}:</span> {profil?.sprache ?? 'de'}</p>
+        <p><span className="text-fg-muted">{t('benutzername')}:</span> <b>{profil?.benutzername ?? '—'}</b></p>
+        <p><span className="text-fg-muted">{t('name')}:</span> {profil?.vorname} {profil?.nachname}</p>
+        <p><span className="text-fg-muted">{t('rolle')}:</span> {profil?.rolle ?? '—'}</p>
+        <p><span className="text-fg-muted">{t('sprache')}:</span> {profil?.sprache ?? 'de'}</p>
       </Card>
       <Card>
-        <p className="mb-3 text-sm text-muted">{t('profilPlatzhalter')}</p>
+        <p className="mb-3 text-sm text-fg-muted">{t('profilPlatzhalter')}</p>
         <LogoutButton />
       </Card>
     </main>

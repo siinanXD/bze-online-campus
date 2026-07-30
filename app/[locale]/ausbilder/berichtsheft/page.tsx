@@ -31,14 +31,14 @@ export default async function AusbilderBerichtsheftPage({
     return (
       <li key={n.id}>
         <Link href={`/${locale}/ausbilder/berichtsheft/${n.id}`} className="block">
-          <Card className="flex items-start justify-between gap-3 transition hover:border-accent">
+          <Card className="flex items-start justify-between gap-3 transition hover:border-primary">
             <div>
               <p className="font-semibold">{n.teilnehmerName}</p>
-              <p className="text-sm text-muted">
+              <p className="text-sm text-fg-muted">
                 {t(`art.${n.art}`)} · {datumDe(n.zeitraumVon, locale)} – {datumDe(n.zeitraumBis, locale)}
                 {n.ausbildungsjahr ? ` · ${t('ausbildungsjahrKurz', { jahr: n.ausbildungsjahr })}` : ''}
               </p>
-              {n.kiFormuliert && <p className="text-xs text-muted">{t('kiFormuliertHinweis')}</p>}
+              {n.kiFormuliert && <p className="text-xs text-fg-muted">{t('kiFormuliertHinweis')}</p>}
             </div>
             <NachweisStatusBadge status={n.status} label={t(`status.${n.status}`)} />
           </Card>
@@ -51,14 +51,14 @@ export default async function AusbilderBerichtsheftPage({
     <main className="mx-auto max-w-4xl space-y-6 p-4">
       <div className="pt-2">
         <h1 className="text-2xl font-extrabold">{t('pruefung.seiteTitel')}</h1>
-        <p className="text-sm text-muted">{t('pruefung.seiteHinweis')}</p>
+        <p className="text-sm text-fg-muted">{t('pruefung.seiteHinweis')}</p>
       </div>
 
       <section className="space-y-3">
         <h2 className="text-lg font-bold">{t('pruefung.zuPruefen')}</h2>
         {zuPruefen.length === 0 ? (
           <Card>
-            <p className="text-sm text-muted">{t('pruefung.keineOffenen')}</p>
+            <p className="text-sm text-fg-muted">{t('pruefung.keineOffenen')}</p>
           </Card>
         ) : (
           <ul className="space-y-3">{zuPruefen.map(zeile)}</ul>
@@ -69,7 +69,7 @@ export default async function AusbilderBerichtsheftPage({
         <h2 className="text-lg font-bold">{t('pruefung.uebrige')}</h2>
         {uebrige.length === 0 ? (
           <Card>
-            <p className="text-sm text-muted">{t('pruefung.keineUebrigen')}</p>
+            <p className="text-sm text-fg-muted">{t('pruefung.keineUebrigen')}</p>
           </Card>
         ) : (
           <ul className="space-y-3">{uebrige.map(zeile)}</ul>

@@ -11,7 +11,7 @@ import { useLesesitzung } from './lesesitzung';
  * Button-`primary`-Variante (Akzentfarbe Indigo) — konsistent mit "kräftiges Grün = abgeschlossen"
  * aus SPEC §7. Die Button-Grundklassen werden hier direkt nachgebildet statt über die
  * `variant`-Prop von `@bze/ui`-`Button`, weil das Repo kein `tailwind-merge` einsetzt und ein
- * Überschreiben von `bg-accent` per zusätzlicher `className` sonst von der Klassenreihenfolge im
+ * Überschreiben von `bg-primary` per zusätzlicher `className` sonst von der Klassenreihenfolge im
  * kompilierten CSS abhinge (Datei-Hoheit erlaubt kein Ändern von `packages/ui/src/button.tsx`).
  */
 export function Fussleiste() {
@@ -32,12 +32,12 @@ export function Fussleiste() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-20 border-t border-border bg-surface">
       {zeigeLesezeitHinweis && (
-        <p role="status" className="border-b border-border bg-bg px-4 py-2 text-xs text-muted">
+        <p role="status" className="border-b border-border bg-bg px-4 py-2 text-xs text-fg-muted">
           {tTopic('lerneinheit.lesezeitHinweis')}
         </p>
       )}
       {demoModus && (
-        <p className="border-b border-border bg-bg px-4 py-2 text-xs text-muted">
+        <p className="border-b border-border bg-bg px-4 py-2 text-xs text-fg-muted">
           {tTopic('lerneinheit.demoHinweis')}
         </p>
       )}
@@ -45,7 +45,7 @@ export function Fussleiste() {
         <div className="flex gap-2">
           <Button
             type="button"
-            variant={bewertung === 1 ? 'primary' : 'soft'}
+            variante={bewertung === 1 ? 'primary' : 'sekundaer'}
             aria-pressed={bewertung === 1}
             aria-label={tTopic('lerneinheit.daumenHoch')}
             onClick={() => sendeBewertung(1)}
@@ -54,7 +54,7 @@ export function Fussleiste() {
           </Button>
           <Button
             type="button"
-            variant={bewertung === -1 ? 'primary' : 'soft'}
+            variante={bewertung === -1 ? 'primary' : 'sekundaer'}
             aria-pressed={bewertung === -1}
             aria-label={tTopic('lerneinheit.daumenRunter')}
             onClick={() => sendeBewertung(-1)}

@@ -39,7 +39,7 @@ export function KohorteWechseln({
   return (
     <div className="flex flex-wrap items-end gap-2">
       <div className="flex-1 min-w-[200px]">
-        <label htmlFor="kohorte-wechseln" className="mb-1 block text-xs font-semibold text-muted">
+        <label htmlFor="kohorte-wechseln" className="mb-1 block text-xs font-semibold text-fg-muted">
           {t('nutzer.feld.kohorte')}
         </label>
         <select
@@ -56,7 +56,7 @@ export function KohorteWechseln({
           ))}
         </select>
       </div>
-      <Button variant="primary" disabled={!ausgewaehlt || ausgewaehlt === aktuelleKohorteId || istPending} onClick={speichern}>
+      <Button variante="primary" disabled={!ausgewaehlt || ausgewaehlt === aktuelleKohorteId || istPending} onClick={speichern}>
         {tc('weiter')}
       </Button>
       {fehler && (

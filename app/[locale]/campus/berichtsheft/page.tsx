@@ -31,7 +31,7 @@ export default async function BerichtsheftPage({
   if (!user) {
     return (
       <main className="mx-auto max-w-2xl p-4">
-        <p className="text-muted">{t('nichtAngemeldet')}</p>
+        <p className="text-fg-muted">{t('nichtAngemeldet')}</p>
       </main>
     );
   }
@@ -43,13 +43,13 @@ export default async function BerichtsheftPage({
     <main className="mx-auto max-w-2xl space-y-4 p-4">
       <div className="pt-2">
         <h1 className="text-2xl font-extrabold">{t('titel')}</h1>
-        <p className="text-sm text-muted">{t('untertitel')}</p>
+        <p className="text-sm text-fg-muted">{t('untertitel')}</p>
       </div>
 
       <div className="flex flex-wrap gap-3">
         <Link
           href={`/${locale}/campus/berichtsheft/neu`}
-          className="touchable inline-flex min-h-12 items-center justify-center rounded-xl bg-accent px-4 py-3 text-[15px] font-semibold text-accent-fg transition hover:brightness-110"
+          className="touchable inline-flex min-h-12 items-center justify-center rounded-xl bg-primary px-4 py-3 text-[15px] font-semibold text-fg-onPrimary transition hover:brightness-110"
         >
           {t('neuerEintrag')}
         </Link>
@@ -68,7 +68,7 @@ export default async function BerichtsheftPage({
           <p className="text-sm text-status-fertig">{t('luecken.keine')}</p>
         ) : (
           <>
-            <p className="text-sm text-muted">{t('luecken.hinweis', { anzahl: luecken.length })}</p>
+            <p className="text-sm text-fg-muted">{t('luecken.hinweis', { anzahl: luecken.length })}</p>
             <ul className="space-y-2">
               {luecken.map((l) => {
                 const href = `/${locale}/campus/berichtsheft/neu?art=woche&von=${l.von}&bis=${l.bis}`;
@@ -80,11 +80,11 @@ export default async function BerichtsheftPage({
                     >
                       <span>
                         <span className="font-semibold">{t('luecken.kw', { kw: l.kalenderwoche, jahr: l.jahr })}</span>
-                        <span className="ms-2 text-muted">
+                        <span className="ms-2 text-fg-muted">
                           {datumDe(l.von, locale)} – {datumDe(l.bis, locale)}
                         </span>
                       </span>
-                      <span aria-hidden="true" className="text-accent">
+                      <span aria-hidden="true" className="text-primary">
                         +
                       </span>
                     </Link>
@@ -99,25 +99,25 @@ export default async function BerichtsheftPage({
       {/* Liste der Nachweise */}
       {nachweise.length === 0 ? (
         <Card>
-          <p className="text-sm text-muted">{t('leer')}</p>
+          <p className="text-sm text-fg-muted">{t('leer')}</p>
         </Card>
       ) : (
         <ul className="space-y-3">
           {nachweise.map((n) => (
             <li key={n.id}>
               <Link href={`/${locale}/campus/berichtsheft/${n.id}`} className="block">
-                <Card className="space-y-2 transition hover:border-accent">
+                <Card className="space-y-2 transition hover:border-primary">
                   <div className="flex items-start justify-between gap-2">
                     <div>
                       <p className="font-semibold">{t(`art.${n.art}`)}</p>
-                      <p className="text-sm text-muted">
+                      <p className="text-sm text-fg-muted">
                         {datumDe(n.zeitraumVon, locale)} – {datumDe(n.zeitraumBis, locale)}
                         {n.ausbildungsjahr ? ` · ${t('ausbildungsjahrKurz', { jahr: n.ausbildungsjahr })}` : ''}
                       </p>
                     </div>
                     <NachweisStatusBadge status={n.status} label={t(`status.${n.status}`)} />
                   </div>
-                  {n.kiFormuliert && <p className="text-xs text-muted">{t('kiFormuliertHinweis')}</p>}
+                  {n.kiFormuliert && <p className="text-xs text-fg-muted">{t('kiFormuliertHinweis')}</p>}
                 </Card>
               </Link>
             </li>

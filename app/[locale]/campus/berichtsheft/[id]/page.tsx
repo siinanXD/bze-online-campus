@@ -37,7 +37,7 @@ export default async function NachweisDetailPage({
   if (!user) {
     return (
       <main className="mx-auto max-w-2xl p-4">
-        <p className="text-muted">{t('nichtAngemeldet')}</p>
+        <p className="text-fg-muted">{t('nichtAngemeldet')}</p>
       </main>
     );
   }
@@ -46,10 +46,10 @@ export default async function NachweisDetailPage({
   if (!nachweis) {
     return (
       <main className="mx-auto max-w-2xl space-y-3 p-4">
-        <Link href={`/${locale}/campus/berichtsheft`} className="text-sm text-accent hover:underline">
+        <Link href={`/${locale}/campus/berichtsheft`} className="text-sm text-primary hover:underline">
           ← {t('zurueck')}
         </Link>
-        <p className="text-muted">{t('nichtGefunden')}</p>
+        <p className="text-fg-muted">{t('nichtGefunden')}</p>
       </main>
     );
   }
@@ -65,7 +65,7 @@ export default async function NachweisDetailPage({
       <div className="pt-2">
         <Link
           href={`/${locale}/campus/berichtsheft`}
-          className="touchable inline-flex min-h-12 items-center text-sm text-accent hover:underline"
+          className="touchable inline-flex min-h-12 items-center text-sm text-primary hover:underline"
         >
           ← {t('zurueck')}
         </Link>
@@ -73,7 +73,7 @@ export default async function NachweisDetailPage({
           <h1 className="text-2xl font-extrabold">{t(`art.${nachweis.art}`)}</h1>
           <NachweisStatusBadge status={nachweis.status} label={t(`status.${nachweis.status}`)} />
         </div>
-        <p className="text-sm text-muted">
+        <p className="text-sm text-fg-muted">
           {datumDe(nachweis.zeitraumVon, locale)} – {datumDe(nachweis.zeitraumBis, locale)}
           {nachweis.ausbildungsjahr ? ` · ${t('ausbildungsjahrKurz', { jahr: nachweis.ausbildungsjahr })}` : ''}
         </p>
@@ -111,7 +111,7 @@ export default async function NachweisDetailPage({
           <Feld titel={t('form.berufsschulthemen')} text={nachweis.inhalt.berufsschulthemen} leer={t('keinInhalt')} />
           {nachweis.rahmenplanPositionen.length > 0 && (
             <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wide text-muted">{t('form.rahmenplan')}</h3>
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-fg-muted">{t('form.rahmenplan')}</h3>
               <ul className="mt-1 flex flex-wrap gap-2">
                 {nachweis.rahmenplanPositionen.map((p) => (
                   <li key={p} className="rounded-full border border-border px-3 py-1 text-sm">
@@ -121,7 +121,7 @@ export default async function NachweisDetailPage({
               </ul>
             </div>
           )}
-          {nachweis.kiFormuliert && <p className="text-xs text-muted">{t('ki.hinweis')}</p>}
+          {nachweis.kiFormuliert && <p className="text-xs text-fg-muted">{t('ki.hinweis')}</p>}
         </Card>
       )}
 
@@ -139,11 +139,11 @@ export default async function NachweisDetailPage({
 function Feld({ titel, text, leer }: { titel: string; text?: string; leer: string }) {
   return (
     <div>
-      <h3 className="text-xs font-semibold uppercase tracking-wide text-muted">{titel}</h3>
+      <h3 className="text-xs font-semibold uppercase tracking-wide text-fg-muted">{titel}</h3>
       {text && text.trim() ? (
         <p className="mt-1 whitespace-pre-line text-sm leading-relaxed">{text}</p>
       ) : (
-        <p className="mt-1 text-sm text-muted">{leer}</p>
+        <p className="mt-1 text-sm text-fg-muted">{leer}</p>
       )}
     </div>
   );

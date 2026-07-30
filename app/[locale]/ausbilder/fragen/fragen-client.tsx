@@ -183,14 +183,14 @@ export function FragenClient({
       <Card key={f.id}>
         <div className="flex flex-wrap items-start justify-between gap-2">
           <div className="min-w-0">
-            <p className="text-xs text-muted">
+            <p className="text-xs text-fg-muted">
               {f.thema} · {t(`typ.${f.typ}`)} · {t('schwierigkeitKurz', { n: f.schwierigkeit ?? '–' })}
             </p>
             {!imEdit && <p className="mt-1 font-semibold">{f.aufgabenstellung}</p>}
           </div>
           <div className="flex flex-shrink-0 flex-wrap items-center gap-2">
             {f.kern && (
-              <span className="rounded-full border border-accent px-2 py-1 text-xs font-semibold text-accent">
+              <span className="rounded-full border border-primary px-2 py-1 text-xs font-semibold text-primary">
                 ★ {t('kern')}
               </span>
             )}
@@ -262,7 +262,7 @@ export function FragenClient({
               </Button>
               <Button
                 type="button"
-                variant="ghost"
+                variante="leise"
                 disabled={pending}
                 onClick={() => {
                   setEditId(null);
@@ -300,7 +300,7 @@ export function FragenClient({
               <ul className="mt-3 space-y-1 text-sm">
                 {f.optionen.map((o) => (
                   <li key={o.id} className="flex items-start gap-2">
-                    <span aria-hidden="true" className={o.ist_korrekt ? 'text-status-fertig' : 'text-muted'}>
+                    <span aria-hidden="true" className={o.ist_korrekt ? 'text-status-fertig' : 'text-fg-muted'}>
                       {o.ist_korrekt ? '✓' : '○'}
                     </span>
                     <span>{o.text}</span>
@@ -317,7 +317,7 @@ export function FragenClient({
                     ` · ${t('confidence', { n: Math.round(f.verifikation.confidence * 100) })}`}
                 </p>
                 {f.verifikation.einwaende.length > 0 && (
-                  <ul className="mt-1 list-disc ps-5 text-muted">
+                  <ul className="mt-1 list-disc ps-5 text-fg-muted">
                     {f.verifikation.einwaende.map((e, i) => (
                       <li key={i}>{e}</li>
                     ))}
@@ -358,13 +358,13 @@ export function FragenClient({
                   {t('freigeben')}
                 </Button>
               )}
-              <Button type="button" variant="ghost" disabled={pending} onClick={() => starteEdit(f)}>
+              <Button type="button" variante="leise" disabled={pending} onClick={() => starteEdit(f)}>
                 {t('bearbeiten')}
               </Button>
               {f.status !== 'gesperrt' && (
                 <Button
                   type="button"
-                  variant="ghost"
+                  variante="leise"
                   disabled={pending}
                   onClick={() => lauf(async () => {
                     await frageStatusSetzen({ frageId: f.id, status: 'gesperrt' });
@@ -382,7 +382,7 @@ export function FragenClient({
 
   return (
     <div className="space-y-6">
-      <p role="note" className="rounded-xl border border-border bg-surface px-3 py-2 text-sm text-muted">
+      <p role="note" className="rounded-xl border border-border bg-surface px-3 py-2 text-sm text-fg-muted">
         <span aria-hidden="true" className="me-2">ℹ</span>
         {t('entwurfHinweis')}
       </p>
@@ -463,7 +463,7 @@ export function FragenClient({
             </select>
           </label>
         </div>
-        <p className="mt-2 text-xs text-muted">{t('quellenhinweis')}</p>
+        <p className="mt-2 text-xs text-fg-muted">{t('quellenhinweis')}</p>
         <Button type="button" className="mt-3" disabled={pending || !themaId} onClick={generieren}>
           {t('generieren')}
         </Button>
@@ -471,7 +471,7 @@ export function FragenClient({
 
       {/* Werkzeugleiste */}
       <div className="flex flex-wrap gap-2">
-        <Button type="button" variant="ghost" disabled={pending || entwuerfe.length === 0} onClick={alleEntwuerfeVerifizieren}>
+        <Button type="button" variante="leise" disabled={pending || entwuerfe.length === 0} onClick={alleEntwuerfeVerifizieren}>
           {t('alleVerifizieren', { n: entwuerfe.length })}
         </Button>
         <Button type="button" disabled={pending || auswahl.size === 0} onClick={massenfreigabe}>
@@ -483,7 +483,7 @@ export function FragenClient({
       <section className="space-y-3">
         <h2 className="text-lg font-bold">{t('entwuerfeTitel', { n: entwuerfe.length })}</h2>
         {entwuerfe.length === 0 ? (
-          <p className="text-sm text-muted">{t('leer')}</p>
+          <p className="text-sm text-fg-muted">{t('leer')}</p>
         ) : (
           entwuerfe.map((f) => renderFrage(f, false))
         )}
@@ -493,7 +493,7 @@ export function FragenClient({
       <section className="space-y-3">
         <h2 className="text-lg font-bold">{t('verifizierteTitel', { n: verifizierte.length })}</h2>
         {verifizierte.length === 0 ? (
-          <p className="text-sm text-muted">{t('leer')}</p>
+          <p className="text-sm text-fg-muted">{t('leer')}</p>
         ) : (
           verifizierte.map((f) => renderFrage(f, true))
         )}

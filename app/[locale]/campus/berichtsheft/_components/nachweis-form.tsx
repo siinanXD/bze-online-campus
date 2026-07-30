@@ -185,7 +185,7 @@ export function NachweisForm({
             <span className="text-sm font-semibold">{t('ki.titel')}</span>
             <Button
               type="button"
-              variant="soft"
+              variante="sekundaer"
               className="min-h-12"
               disabled={kiPending}
               onClick={kiFormulieren}
@@ -198,7 +198,7 @@ export function NachweisForm({
             ref={kiHinweisRef}
             tabIndex={-1}
             className={cn(
-              'text-xs text-muted',
+              'text-xs text-fg-muted',
               kiHinweisSichtbar && 'font-semibold text-fg',
             )}
           >
@@ -210,7 +210,7 @@ export function NachweisForm({
       {rahmenplanKatalog.length > 0 && (
         <Card className="space-y-2">
           <span className="text-sm font-semibold">{t('form.rahmenplan')}</span>
-          <p className="text-xs text-muted">{t('form.rahmenplanHilfe')}</p>
+          <p className="text-xs text-fg-muted">{t('form.rahmenplanHilfe')}</p>
           <ul className="flex flex-wrap gap-2">
             {rahmenplanKatalog.map((pos) => {
               const aktiv = positionen.includes(pos);
@@ -223,7 +223,7 @@ export function NachweisForm({
                     className={cn(
                       'touchable min-h-12 rounded-full border px-3 py-1 text-sm',
                       aktiv
-                        ? 'border-accent bg-accent/10 font-semibold text-accent'
+                        ? 'border-primary bg-primary/10 font-semibold text-primary'
                         : 'border-border text-fg hover:bg-surface',
                     )}
                   >
@@ -250,7 +250,7 @@ export function NachweisForm({
         </Button>
         <Button
           type="button"
-          variant="ghost"
+          variante="leise"
           className="min-h-12"
           onClick={() => router.push(`/${locale}/campus/berichtsheft`)}
         >

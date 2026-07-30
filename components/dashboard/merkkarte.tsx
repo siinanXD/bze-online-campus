@@ -29,23 +29,23 @@ export function Merkkarte({ merksaetze, className }: MerkkarteProps) {
   return (
     <Card className={className}>
       <div className="mb-2 flex items-center justify-between gap-2">
-        <h2 className="inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wide text-accent">
+        <h2 className="inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wide text-primary">
           <span aria-hidden="true">✦</span>
           {t('titel')}
         </h2>
         {liste.length > 1 && (
-          <span className="text-xs font-semibold text-muted">
+          <span className="text-xs font-semibold text-fg-muted">
             {t('zaehler', { position: sicher + 1, gesamt: liste.length })}
           </span>
         )}
       </div>
 
       <p className="text-base">{aktuell.text}</p>
-      {aktuell.thema && <p className="mt-1 text-xs text-muted">{aktuell.thema}</p>}
+      {aktuell.thema && <p className="mt-1 text-xs text-fg-muted">{aktuell.thema}</p>}
 
       {liste.length > 1 && (
         <div className="mt-3">
-          <Button variant="soft" onClick={() => setIndex((i) => i + 1)}>
+          <Button variante="sekundaer" onClick={() => setIndex((i) => i + 1)}>
             {t('naechster')}
           </Button>
         </div>

@@ -86,21 +86,21 @@ export default async function TopicSeite({
   return (
     <main className="mx-auto max-w-2xl space-y-4 p-4 pb-8">
       <header className="pt-2">
-        <p className="text-xs text-muted">{t('uebersicht.kicker')}</p>
+        <p className="text-xs text-fg-muted">{t('uebersicht.kicker')}</p>
         <h1 className="text-2xl font-extrabold text-fg">{themaBezeichnung}</h1>
       </header>
 
       {/* Abschnitt 1: Fachkunde lesen */}
       <Card>
         <div className="mb-3 flex items-center justify-between gap-3">
-          <h2 className="text-sm font-bold uppercase tracking-wide text-accent">
+          <h2 className="text-sm font-bold uppercase tracking-wide text-primary">
             {t('abschnitte.fachkundeLesen')}
           </h2>
           {!demoModus && zeilen.length > 0 && <ProgressRing value={fachkundeProzent} size={48} />}
         </div>
 
         {zeilen.length === 0 ? (
-          <p className="text-sm text-muted">{t('fachkundeLesen.leer')}</p>
+          <p className="text-sm text-fg-muted">{t('fachkundeLesen.leer')}</p>
         ) : (
           <ul className="space-y-2">
             {zeilen.map((zeile) => {
@@ -109,10 +109,10 @@ export default async function TopicSeite({
                 <li key={zeile.href}>
                   <Link
                     href={zeile.href}
-                    className="touchable flex items-center justify-between gap-3 rounded-xl border border-border bg-bg px-4 py-3 transition hover:border-accent"
+                    className="touchable flex items-center justify-between gap-3 rounded-xl border border-border bg-bg px-4 py-3 transition hover:border-primary"
                   >
                     <span className="text-[15px] font-semibold text-fg">{zeile.titel}</span>
-                    <span className="whitespace-nowrap text-xs text-muted">
+                    <span className="whitespace-nowrap text-xs text-fg-muted">
                       {stunden > 0
                         ? t('zeit.stundenMinuten', { stunden, minuten })
                         : t('zeit.minuten', { minuten })}
@@ -129,18 +129,18 @@ export default async function TopicSeite({
             })}
           </ul>
         )}
-        {demoModus && <p className="mt-3 text-xs text-muted">{t('fachkundeLesen.demoHinweis')}</p>}
+        {demoModus && <p className="mt-3 text-xs text-fg-muted">{t('fachkundeLesen.demoHinweis')}</p>}
       </Card>
 
       {/* Abschnitt 2: Fragen üben (Bildschirm/Route gehört AP-06, hier nur Einstieg) */}
       <Card>
-        <h2 className="mb-2 text-sm font-bold uppercase tracking-wide text-accent">
+        <h2 className="mb-2 text-sm font-bold uppercase tracking-wide text-primary">
           {t('abschnitte.fragenUeben')}
         </h2>
-        <p className="mb-3 text-sm text-muted">{t('fragenUeben.hinweis')}</p>
+        <p className="mb-3 text-sm text-fg-muted">{t('fragenUeben.hinweis')}</p>
         <Link
           href={`/${locale}/campus/lernen/thema/${themaId}`}
-          className="touchable inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-4 py-3 text-[15px] font-semibold text-accent-fg transition hover:brightness-110"
+          className="touchable inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-[15px] font-semibold text-fg-onPrimary transition hover:brightness-110"
         >
           {t('fragenUeben.cta')}
         </Link>
@@ -149,10 +149,10 @@ export default async function TopicSeite({
       {/* Abschnitt 3: Unterricht — nur sichtbar, solange flag_video aktiv ist (SPEC §2 Regel 12) */}
       {flagVideo && (
         <Card>
-          <h2 className="mb-2 text-sm font-bold uppercase tracking-wide text-accent">
+          <h2 className="mb-2 text-sm font-bold uppercase tracking-wide text-primary">
             {t('abschnitte.unterricht')}
           </h2>
-          <p className="text-sm text-muted">{t('unterricht.hinweis')}</p>
+          <p className="text-sm text-fg-muted">{t('unterricht.hinweis')}</p>
         </Card>
       )}
     </main>

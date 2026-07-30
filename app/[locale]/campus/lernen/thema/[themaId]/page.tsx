@@ -42,17 +42,17 @@ export default async function ThemaLernen({ params }: { params: Promise<{ locale
   return (
     <main className="mx-auto max-w-2xl p-4 space-y-4">
       <header className="pt-2">
-        <p className="text-xs text-muted">{t('themaLabel')}</p>
+        <p className="text-xs text-fg-muted">{t('themaLabel')}</p>
         <h1 className="text-2xl font-extrabold">{thema?.bezeichnung ?? '—'}</h1>
       </header>
 
       {queue.length === 0 ? (
         <Card>
           <p className="font-semibold">{t('leer.titel')}</p>
-          <p className="mt-1 text-muted">
+          <p className="mt-1 text-fg-muted">
             {alleMc.length === 0 ? t('leer.keineFreigegeben') : t('leer.allesFertig')}
           </p>
-          {freitextAnzahl > 0 && <p className="mt-3 text-sm text-muted">{t('freitextHinweis', { n: freitextAnzahl })}</p>}
+          {freitextAnzahl > 0 && <p className="mt-3 text-sm text-fg-muted">{t('freitextHinweis', { n: freitextAnzahl })}</p>}
         </Card>
       ) : (
         <FragenRunner queue={queue} />
