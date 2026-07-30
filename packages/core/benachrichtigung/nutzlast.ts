@@ -7,8 +7,8 @@
  * ohne doppelte Textpflege auskommt.
  */
 
-import { ANLASS_DRINGLICHKEIT } from './anlaesse';
-import type { Anlass, GeplanteBenachrichtigung, PlanungsEingabe } from './types';
+import { ANLASS_DRINGLICHKEIT } from './anlaesse.ts';
+import type { Anlass, GeplanteBenachrichtigung, PlanungsEingabe } from './types.ts';
 
 /** Wohin die Benachrichtigung führt — Pfad ohne Sprachpräfix. */
 const ZIELPFAD: Readonly<Record<Anlass, string>> = {

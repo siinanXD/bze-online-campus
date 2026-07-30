@@ -45,6 +45,9 @@
       ],
       "@bze/core/werte": [
         "./packages/core/werte/index.ts"
+      ],
+      "@bze/core/content": [
+        "./packages/core/content/index.ts"
       ]
     },
     "lib": [
@@ -53,6 +56,7 @@
       "esnext"
     ],
     "allowJs": true,
+    "allowImportingTsExtensions": true,
     "noEmit": true,
     "incremental": true,
     "isolatedModules": true

@@ -14,10 +14,10 @@
  * auch stille Zeiten, Sommerzeit und Tagesgrenzen vollständig testbar.
  */
 
-export * from './types';
-export * from './stille-zeiten';
-export * from './deckel';
-export * from './anlaesse';
-export * from './nutzlast';
-export * from './planung';
-export * from './abo';
+export * from './types.ts';
+export * from './stille-zeiten.ts';
+export * from './deckel.ts';
+export * from './anlaesse.ts';
+export * from './nutzlast.ts';
+export * from './planung.ts';
+export * from './abo.ts';

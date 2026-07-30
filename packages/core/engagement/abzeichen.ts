@@ -7,7 +7,7 @@
  * gegen die eigene Vergangenheit.
  */
 
-import type { AbzeichenRegel, AbzeichenStand, Kennzahlen } from './types';
+import type { AbzeichenRegel, AbzeichenStand, Kennzahlen } from './types.ts';
 
 /**
  * Regelwerk des Erstpiloten.

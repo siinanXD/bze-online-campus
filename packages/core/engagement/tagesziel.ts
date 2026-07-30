@@ -6,8 +6,8 @@
  * Grund, die App gar nicht erst zu öffnen.
  */
 
-import { endlicheZahl } from '../werte/zahl';
-import type { TageszielStand } from './types';
+import { endlicheZahl } from '../werte/zahl.ts';
+import type { TageszielStand } from './types.ts';
 
 /** Voreinstellung, wenn niemand ein eigenes Ziel gesetzt hat. */
 export const STANDARD_TAGESZIEL = 10;
