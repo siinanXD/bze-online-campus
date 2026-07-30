@@ -16,7 +16,7 @@ export type FachkundeMdxErgebnis = {
  *
  * Wirft bei ungültiger Frontmatter (z. B. fehlende Quellenangabe) einen Fehler, damit die
  * aufrufende Route-`error.tsx` einen verständlichen Fehlerzustand zeigen kann, statt eine
- * Lerneinheit ohne Fundstelle stillschweigend anzuzeigen (AGENTS.md §2 "Keine Zahlenwerte ohne
+ * Lerneinheit ohne Fundstelle stillschweigend anzuzeigen (CONTRIBUTING.md §2 "Keine Zahlenwerte ohne
  * Fundstelle").
  */
 export async function renderFachkundeMdx(source: string): Promise<FachkundeMdxErgebnis> {

@@ -6,7 +6,7 @@
 // `entwurf`. MC mit genau vier Optionen (eine korrekt, plausible Distraktoren,
 // je Option eine kurze Erklärung); Freitext mit Musterlösung + Bewertungsraster.
 //
-// NICHT VERHANDELBAR (Spec Grundregel / AGENTS.md):
+// NICHT VERHANDELBAR (Spec Grundregel / CONTRIBUTING.md):
 //  * Keine Reproduktion geschützter Prüfungsaufgaben — nur eigenständig
 //    formulierte Aufgaben.
 //  * Quellenhierarchie hart durchsetzen: Enthält eine Frage einen Zahlenwert

@@ -7,7 +7,7 @@
 // Cache und schließt die Prüfung ab, wenn alle Freitext-Punkte gesetzt sind.
 //
 // KI-Bewertung ist Lernfeedback, keine Prüfungsleistung (Spec Grundregel /
-// AGENTS.md). Die Antwort enthält immer `hinweis_lernfeedback: true`.
+// CONTRIBUTING.md). Die Antwort enthält immer `hinweis_lernfeedback: true`.
 
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.45.0';
 

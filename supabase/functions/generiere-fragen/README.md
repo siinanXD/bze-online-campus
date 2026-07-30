@@ -3,7 +3,7 @@
 Erzeugt im Batchbetrieb eigenständig formulierte Fragenentwürfe zu einem Thema
 (Spec §5 `generiere_fragen`). Ausgabe **immer** Status `entwurf`.
 
-**Nicht verhandelbar (Spec Grundregeln / AGENTS.md):**
+**Nicht verhandelbar (Spec Grundregeln / CONTRIBUTING.md):**
 
 - Keine Reproduktion geschützter Prüfungsaufgaben von Kammern oder
   Prüfungsverlagen, auch nicht paraphrasiert.

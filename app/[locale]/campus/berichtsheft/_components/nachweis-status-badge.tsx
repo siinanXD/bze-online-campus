@@ -3,7 +3,7 @@ import type { NachweisStatus } from '@bze/core/nachweis';
 
 /**
  * Status eines Nachweises als Badge. Farbe ist NIE alleiniger Träger:
- * Symbol + Textlabel sind immer dabei (Spec §7 / AGENTS.md DoD).
+ * Symbol + Textlabel sind immer dabei (Spec §7 / CONTRIBUTING.md DoD).
  * Das Label kommt aus next-intl und wird als Prop übergeben.
  */
 const MAP: Record<NachweisStatus, { symbol: string; token: string }> = {

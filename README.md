@@ -4,7 +4,17 @@ Lern- und Prüfungsplattform (installierbare PWA) für Bildungsträger. Teilnehm
 
 **Erstpilot:** Maschinen- und Anlagenführer/-in, Schwerpunkt Metall- und Kunststofftechnik · Kammer IHK Aachen · Kunde Berufsbildungszentrum Euskirchen.
 
-Die maßgebliche Spezifikation ist [`docs/SPEC.md`](docs/SPEC.md), die Arbeitsregeln stehen in [`AGENTS.md`](AGENTS.md).
+## Oberfläche
+
+| Lernen auf dem Handy | Wochenprüfung im Originalformat |
+|---|---|
+| <img src="docs/bilder/campus-lernen.png" alt="Startseite Teilnehmende mit Weitermachen-Karte, Lernfeldern und Prüfungsreife" width="330"> | <img src="docs/bilder/pruefung-lauf.png" alt="Laufende Wochenprüfung mit Fortschritt, Restzeit und Antwortoptionen" width="330"> |
+
+![Teilnehmendenliste im Ausbilder-Cockpit mit Prüfungsreife, offenen Reviews und Berichtsheftstatus](docs/bilder/ausbilder-teilnehmer.png)
+
+Aufnahmen der Entwurfsbildschirme unter `/de/showcase/screens` (mit
+Beispieldaten), erzeugt über `pnpm design:shots`. Jeder Status trägt Farbe,
+Symbol und Textlabel — Farbe ist nie der einzige Träger.
 
 ## Stack
 
@@ -20,20 +30,35 @@ Die maßgebliche Spezifikation ist [`docs/SPEC.md`](docs/SPEC.md), die Arbeitsre
 | Betrieb | Vercel EU + Supabase eu-central-1 |
 
 Die maßgebliche Spezifikation ist [`docs/SPEC.md`](docs/SPEC.md), die Architektur der
-Schichten steht in [`docs/ARCHITEKTUR.md`](docs/ARCHITEKTUR.md), die Arbeitsregeln in
-[`AGENTS.md`](AGENTS.md).
+Schichten steht in [`docs/ARCHITEKTUR.md`](docs/ARCHITEKTUR.md), das Designsystem
+in [`docs/DESIGN.md`](docs/DESIGN.md), die Arbeitsregeln in
+[`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-## Setup in unter 10 Minuten
+## Lokal starten
+
+Voraussetzungen: Node ≥ 22, pnpm 9.7 (`corepack enable`), Docker (für Supabase),
+Supabase CLI ≥ 2, Python ≥ 3.12 für die Skripte.
 
 ```bash
 pnpm install
-cp .env.example .env.local          # Supabase-URL und Keys eintragen
-supabase start                      # lokale Supabase-Instanz
-supabase db reset                   # spielt Migrationen + Seed ein
 pnpm dev                            # http://localhost:3000/de
 ```
 
-Der Seed wird aus dem Fragenpool erzeugt:
+Ohne Supabase-Zugangsdaten sind nur die öffentlichen Seiten erreichbar
+(`/de`, `/de/login`, `/de/showcase`, Impressum, Datenschutz) — alles andere
+leitet die Middleware bewusst auf den Login um. Für den vollen Durchlauf:
+
+```bash
+cp .env.example .env.local          # Werte aus der Ausgabe von `supabase start`
+supabase start                      # Postgres, Auth, Storage, Studio, Mail-Catcher
+supabase db reset                   # Migrationen + Seed einspielen
+```
+
+Welche Variable woher kommt, wie der erste Anmeldezugang entsteht (es gibt keine
+Selbstregistrierung) und wie Edge Functions lokal laufen, steht in
+[`docs/LOKAL-EINRICHTEN.md`](docs/LOKAL-EINRICHTEN.md).
+
+Der Seed ist generiert, nicht handgeschrieben:
 
 ```bash
 pnpm seed:generate                  # supabase/seed/0001_maf_seed.sql aus JSON
@@ -53,7 +78,8 @@ service-worker/      PWA-Client: Offline-Outbox und Push-Client
 messages/            Übersetzungen de,en,fr,ar,uk,tr
 content/fachkunde/   MDX-Lerninhalte
 tests/               unit, integration, e2e, helpers
-docs/                SPEC.md, DATENMODELL.md, ARCHITEKTUR.md, adr/
+docs/                SPEC.md, DATENMODELL.md, ARCHITEKTUR.md, DESIGN.md,
+                     LOKAL-EINRICHTEN.md, adr/
 scripts/             generate_seed.py, generate_i18n.py
 ```
 
@@ -65,7 +91,7 @@ supabase db reset      # Migration 0001 + Seed 0001
 
 Der Seed lädt: Träger BZE, Kammer IHK Aachen, IHK-100-Bewertungsschlüssel, Beruf MAF mit 2 Phasen, 3 Prüfungsbereichen, 15 Themen und **70 Fragen (57 MC + 13 Freitext)** im Status `entwurf`. Aufnahme in den Kernpool erfordert Ausbilderfreigabe (Spec §2, Regel 7).
 
-## PWA & Offline (AP-15)
+## PWA & Offline
 
 Die App ist als installierbare PWA ausgelegt (Manifest, Standalone-Display, Icons). Ein handgeschriebener Service Worker (`public/sw.js`, siehe [`docs/adr/0003-pwa-serwist.md`](docs/adr/0003-pwa-serwist.md)) precached die App-Shell, cached statische Assets (Stale-While-Revalidate) und Navigationen (Network-First mit Offline-Fallback `public/offline.html`). Offline abgegebene Eingaben landen in einer IndexedDB-Outbox (`service-worker/offline-db.ts`) und werden per Background Sync übertragen, sobald wieder Verbindung besteht. Ein sichtbarer Offline-Indikator und ein Update-Hinweis (`service-worker/`) sind im Root-Layout eingebunden.
 
@@ -79,7 +105,7 @@ pnpm build && pnpm start          # Service Worker greift nur im Produktionsbuil
 - Offline-Fallback: DevTools → Network → „Offline", dann Navigation.
 - Offline-Indikator und Update-Hinweis: Netz trennen bzw. `VERSION` in `public/sw.js` erhöhen und neu laden.
 
-## Wochenbericht & Merkkarten (AP-13)
+## Wochenbericht & Merkkarten
 
 Die Edge Function [`erzeuge-wochenbericht`](supabase/functions/erzeuge-wochenbericht/README.md)
 erzeugt pro aktivem Teilnehmer einen wöchentlichen Lernbericht (Spec §5):
@@ -115,7 +141,7 @@ sind die Ränder, an denen es in der Praxis bricht: Zeitzonen und Sommerzeit
 Stufengrenzen des IHK-Schlüssels (Bewertung) und kaputte Werte aus der Datenbank.
 Details in [`tests/README.md`](tests/README.md).
 
-## Erinnerungen & Lernfokus (AP-17)
+## Erinnerungen & Lernfokus
 
 Web Push hält Teilnehmende am Ball, ohne zu nerven. Die Entscheidung, **ob** und
 **was** gesendet wird, liegt vollständig in der getesteten Domäne
@@ -141,10 +167,20 @@ Fehler; das Opt-in samt stiller Zeiten steht im Profil. Migration
 **Welle 4** — [x] AP-17 Erinnerungen & Lernfokus (Web Push, Lernserie, Tagesziel, Fehler-Wiedervorlage)
 **Später** — [ ] Erklärvideos (Remotion)
 
-## Validierung AP-01
+## Datenmodell: geprüfter Stand
 
-Migration und Seed wurden gegen PostgreSQL 16 + pgvector geprüft: Migration läuft fehlerfrei, Seed lädt 70 Fragen / 228 Antwortoptionen / 13 Musterlösungen, RLS ist auf allen Tabellen aktiv. RLS-Verhalten je Rolle getestet: Teilnehmer sieht nur `freigegeben`-Inhalte und eigene Daten, Ausbilder nur zugewiesene Teilnehmer, Admin alles.
+Migration und Seed laufen gegen PostgreSQL 16 mit pgvector fehlerfrei; der Seed lädt 70 Fragen, 228 Antwortoptionen und 13 Musterlösungen, RLS ist auf allen Tabellen aktiv. Das Zugriffsverhalten wurde mit je einem Testnutzer pro Rolle geprüft: Teilnehmer sehen nur freigegebene Inhalte und eigene Daten, Ausbilder nur zugewiesene Teilnehmer, Admin alles.
 
-## Nicht verhandelbar (Kurzform, Details in AGENTS.md)
+## Grenzen und offene Punkte
+
+Ehrlicher Stand, damit niemand falsche Erwartungen mitnimmt:
+
+- **Fachliche Verifikation der Fragen steht aus.** Der Pool ist maschinell erzeugt und liegt im Status `entwurf`; produktiv wird eine Frage erst nach Ausbilderfreigabe. Migration `0003` gibt für die Erprobung nur eine kleine, zahlenwertfreie Auswahl frei und ist vor echtem Einsatz zurückzunehmen.
+- **Kein Pilotbetrieb mit echten Teilnehmenden.** Alle Aussagen zu Verhalten und Leistung stammen aus lokalen Läufen und Tests, nicht aus dem Feld.
+- **E2E-Abdeckung ist ein Gerüst**, kein vollständiger Regressionsschutz — bislang Smoke-Tests der Hauptpfade.
+- **Der erste Admin wird per SQL angelegt** (siehe `docs/LOKAL-EINRICHTEN.md`); ein Bootstrap-Weg über die Oberfläche fehlt.
+- **Erklärvideos (Remotion)** sind spezifiziert, aber nicht gebaut.
+
+## Nicht verhandelbar (Kurzform, Details in CONTRIBUTING.md)
 
 Prüfungsinhalte immer Deutsch · keine Zahlenwerte ohne Fundstelle · keine Reproduktion geschützter Prüfungsaufgaben · die App vergibt keine Prüfungszulassung · KI-Bewertung ist Lernfeedback · keine Secrets im Client · RLS auf jeder Tabelle · Farbe nie alleiniger Informationsträger.

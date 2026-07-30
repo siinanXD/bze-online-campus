@@ -11,7 +11,7 @@ export interface AdminSitzung {
  * Server-seitige Rollenprüfung für den gesamten Admin-Bereich (Spec §6.4).
  * RLS auf profiles/audit_log ist die eigentliche Schranke — diese Prüfung
  * verhindert zusätzlich, dass nicht-berechtigte Rollen die Admin-Oberfläche
- * überhaupt zu sehen bekommen (Defense in Depth, siehe AGENTS.md §2).
+ * überhaupt zu sehen bekommen (Defense in Depth, siehe CONTRIBUTING.md §2).
  *
  * Gibt `null` zurück, wenn nicht angemeldet oder ohne ausreichende Rolle —
  * die aufrufende Seite zeigt dann einen Zugriffsverweigert-Zustand statt

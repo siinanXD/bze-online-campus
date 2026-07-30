@@ -34,7 +34,7 @@ export interface StatusBadgeProps {
 
 /**
  * Farbe ist NIE alleiniger Traeger: Symbol und Textlabel sind immer dabei.
- * Siehe AGENTS.md, Abschnitt 2.
+ * Siehe CONTRIBUTING.md, Abschnitt 2.
  */
 export function StatusBadge({
   status,

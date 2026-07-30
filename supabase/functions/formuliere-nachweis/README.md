@@ -4,7 +4,7 @@ Formuliert aus Stichworten oder einem Diktattranskript des Teilnehmers einen
 sauberen Berichtstext für den Ausbildungsnachweis und schlägt passende Positionen
 des Ausbildungsrahmenplans vor (Spec §5 `formuliere_nachweis`).
 
-**Nicht verhandelbar (Spec Grundregel 14 / AGENTS.md):** Das Modell formuliert
+**Nicht verhandelbar (Spec Grundregel 14 / CONTRIBUTING.md):** Das Modell formuliert
 **ausschließlich aus den Eingaben des Teilnehmers** und ergänzt oder erfindet
 nichts. Leere Felder bleiben leer. Rahmenplan-Vorschläge werden serverseitig hart
 auf den übergebenen Katalog begrenzt. Die Oberfläche zeigt den Hinweis

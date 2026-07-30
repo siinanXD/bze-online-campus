@@ -70,7 +70,7 @@ export function erzeugeFachkundeMdxComponents(kapitel: readonly Kapitel[]): MDXC
     td: ({ children }) => <td className="p-2 text-start text-fg">{children}</td>,
     img: ({ src, alt }) => (
       // Abbildungen unmittelbar unter dem zugehörigen Schritt (SPEC §6.2.6). Alt-Text ist im
-      // MDX-Quelltext Pflicht (WCAG 2.1 AA, AGENTS.md §7).
+      // MDX-Quelltext Pflicht (WCAG 2.1 AA, CONTRIBUTING.md §7).
       // eslint-disable-next-line @next/next/no-img-element
       <img src={typeof src === 'string' ? src : undefined} alt={alt ?? ''} className="mb-3 w-full rounded-xl border border-border" />
     ),

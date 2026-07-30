@@ -6,7 +6,7 @@
 // sauberen Berichtstext für den Ausbildungsnachweis und schlägt passende
 // Positionen des Ausbildungsrahmenplans vor.
 //
-// NICHT VERHANDELBAR (Spec Grundregel 14 / AGENTS.md): Das Modell formuliert
+// NICHT VERHANDELBAR (Spec Grundregel 14 / CONTRIBUTING.md): Das Modell formuliert
 // AUSSCHLIESSLICH aus den Eingaben des Teilnehmers. Es ergänzt oder erfindet
 // keine Tätigkeiten. Die Oberfläche zeigt den Hinweis
 // „KI-Formulierungshilfe — Inhalte stammen von dir."

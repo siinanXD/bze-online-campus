@@ -4,7 +4,7 @@ Erzeugt Zusatz-Übersetzungen zu Fachkunde-Lerneinheiten in die Zielsprachen und
 legt sie in `lerneinheiten_uebersetzungen` ab (Spec §5 `uebersetze_lerneinheit`,
 Tabelle aus Migration 0013).
 
-**Nicht verhandelbar (Spec §5 / AGENTS.md Regel 4):**
+**Nicht verhandelbar (Spec §5 / CONTRIBUTING.md Regel 4):**
 
 - Fachkunde bleibt Deutsch; die Übersetzung ist eine **Zusatz-Lernhilfe** unter dem
   Original, nie ein Ersatz.

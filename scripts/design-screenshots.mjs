@@ -82,9 +82,11 @@ for (const { name, width, height } of VIEWPORTS) {
         });
         await page.waitForTimeout(350);
         const status = resp?.status() ?? 0;
+        // Auf schmalen Viewports nur den Ausschnitt aufnehmen: die untere
+        // Navigation ist `fixed` und landet bei fullPage mitten im Inhalt.
         await page.screenshot({
           path: path.join(AUS, datei),
-          fullPage: true,
+          fullPage: name !== 'mobil',
         });
         ergebnis.push({ ...ziel, viewport: name, modus, datei, status });
         console.log(`${status}  ${name}/${modus}  ${ziel.slug}`);

@@ -351,7 +351,7 @@ Manifest, Standalone-Display, Icons. Service Worker: App-Shell precached, aktuel
 
 ## 11 — Arbeitspakete
 
-Jedes Paket nennt Branch, Dateihoheit und Abnahmekriterien. Pakete derselben Welle sind über Git-Worktrees parallelisierbar. **Details und Regeln je Paket stehen in `AGENTS.md` im Repository.**
+Jedes Paket nennt Branch, Dateihoheit und Abnahmekriterien. Pakete derselben Welle sind über Git-Worktrees parallelisierbar. **Details und Regeln je Paket stehen in `CONTRIBUTING.md` im Repository.**
 
 ### Welle 0 — streng seriell, muss vor jeder Parallelarbeit in `main` sein
 
@@ -401,7 +401,7 @@ Jedes Paket nennt Branch, Dateihoheit und Abnahmekriterien. Pakete derselben Wel
 
 ## 12 — Lieferumfang
 
-Vollständiges Repository mit: Supabase-Migrations inklusive aller RLS-Policies und Cron-Jobs, Seed mit dem Beruf Maschinen- und Anlagenführer (3 Prüfungsbereiche, alle Themen nach MaschFüAusbV, 70 Fragen aus `MAF_Fragenpool_Charge1.json`), allen Edge Functions, allen Bildschirmen, Übersetzungsdateien für sechs Sprachen, PWA-Konfiguration, `.env.example`, `README.md`, `AGENTS.md`, `docs/`.
+Vollständiges Repository mit: Supabase-Migrations inklusive aller RLS-Policies und Cron-Jobs, Seed mit dem Beruf Maschinen- und Anlagenführer (3 Prüfungsbereiche, alle Themen nach MaschFüAusbV, 70 Fragen aus `MAF_Fragenpool_Charge1.json`), allen Edge Functions, allen Bildschirmen, Übersetzungsdateien für sechs Sprachen, PWA-Konfiguration, `.env.example`, `README.md`, `CONTRIBUTING.md`, `docs/`.
 
 ---
 

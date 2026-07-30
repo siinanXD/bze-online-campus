@@ -5,7 +5,7 @@ import type { FachkundeQuelle } from '../../../../../packages/ui/mdx';
 /**
  * Quellenangaben am Ende der Lerneinheit (SPEC §6.2.6). Faktenbelegpflicht: jede Quelle trägt
  * mindestens einen Titel und eine Seitenangabe — notfalls ein Platzhalter wie
- * "S. [vom Ausbilder]" statt einer geratenen Zahl (AGENTS.md §2).
+ * "S. [vom Ausbilder]" statt einer geratenen Zahl (CONTRIBUTING.md §2).
  */
 export function Quellenliste({ quellen }: { quellen: FachkundeQuelle[] }) {
   const t = useTranslations('topic');

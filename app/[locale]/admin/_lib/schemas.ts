@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-/** Zod-Validierung an der Systemgrenze Formular → Server Action (AGENTS.md DoD). */
+/** Zod-Validierung an der Systemgrenze Formular → Server Action (CONTRIBUTING.md DoD). */
 
 export const ROLLEN = ['teilnehmer', 'ausbilder', 'verwaltung', 'admin'] as const;
 
