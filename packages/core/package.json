@@ -7,6 +7,9 @@
     "./mastery": "./mastery/index.ts",
     "./bewertung": "./bewertung/index.ts",
     "./fortschritt": "./fortschritt/index.ts",
-    "./nachweis": "./nachweis/index.ts"
+    "./nachweis": "./nachweis/index.ts",
+    "./engagement": "./engagement/index.ts",
+    "./benachrichtigung": "./benachrichtigung/index.ts",
+    "./werte": "./werte/index.ts"
   }
 }

@@ -6,8 +6,8 @@ import {
   fortsetzenEmpfehlung,
   phaseFertig,
   topicFertig,
-} from './kaskade';
-import type { BereichMeta, KernStand, LerneinheitStand, ThemaMeta } from './types';
+} from '@bze/core/fortschritt';
+import type { BereichMeta, KernStand, LerneinheitStand, ThemaMeta } from '@bze/core/fortschritt';
 
 function kern(themaId: string, gesamt: number, fertig: number): KernStand {
   return { themaId, kernGesamt: gesamt, kernFertig: fertig };
