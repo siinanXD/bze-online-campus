@@ -2,7 +2,8 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
-import { FragenClient, type FrageAnsicht, type ThemaOption } from './fragen-client';
+import { FragenClient } from './fragen-client';
+import type { FrageAnsicht, ThemaOption } from './_lib/typen';
 
 export default async function AusbilderFragenSeite({
   params,

@@ -3,9 +3,10 @@ import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
 import { Card, Button, Chip, ProgressRing } from '@bze/ui';
 import { Greeting } from '@/components/shell';
-import { WochenberichtKarte, Merkkarte } from '@/components/dashboard';
+import { WochenberichtKarte, Merkkarte, FokusKarte } from '@/components/dashboard';
 import type { Wochenbericht } from '@/components/dashboard';
 import { ladeFortsetzenEmpfehlung } from './fortschritt/_lib/queries';
+import { ladeFokusStand } from './_lib/push-queries';
 
 export default async function CampusStart({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -18,6 +19,7 @@ export default async function CampusStart({ params }: { params: Promise<{ locale
     : { data: null };
 
   const empfehlung = user ? await ladeFortsetzenEmpfehlung(user.id) : null;
+  const fokus = user ? await ladeFokusStand(user.id) : null;
 
   // Neuester Wochenbericht des Teilnehmers (RLS: nur eigener Bericht).
   const { data: berichtRow } = user
@@ -45,6 +47,8 @@ export default async function CampusStart({ params }: { params: Promise<{ locale
   return (
     <main className="mx-auto max-w-2xl space-y-4 p-4">
       <Greeting name={profil?.vorname ?? undefined} />
+
+      {fokus && <FokusKarte stand={fokus} locale={locale} />}
 
       {empfehlung && (
         <Card className="flex items-center gap-3">

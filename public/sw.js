@@ -12,6 +12,8 @@
  *  - Antworten offline: Client legt sie in IndexedDB ab, Background Sync
  *    (Tag "bze-sync-antworten") überträgt sie, sobald wieder Verbindung besteht
  *  - Update: neuer Worker wartet; Client fordert per SKIP_WAITING das Update an
+ *  - Web Push: der Versender schickt fertig übersetzten Titel und Text; dieser
+ *    Worker zeigt sie nur an und führt beim Antippen zum richtigen Ort
  */
 
 const VERSION = 'v1';
@@ -197,6 +199,112 @@ self.addEventListener('sync', function (event) {
   if (event.tag === SYNC_TAG) {
     event.waitUntil(replayOutbox());
   }
+});
+
+// =====================================================================
+// Web Push (AP-17)
+//
+// Der Worker übersetzt bewusst nicht und entscheidet nichts. Titel und Text
+// kommen fertig aus der Edge Function `sende-erinnerungen`, die die Sprache der
+// Person kennt. Ein Worker müsste sonst alle sechs Sprachdateien vorhalten und
+// bei jeder Textänderung neu ausgeliefert werden.
+// =====================================================================
+
+// Anzeige, wenn die Nutzlast fehlt oder unlesbar ist. Ohne diesen Rückfall
+// zeigen Chrome und Firefox von sich aus „Diese Website wurde im Hintergrund
+// aktualisiert" — eine Meldung, die niemandem hilft.
+const PUSH_RUECKFALL = {
+  titel: 'BZE Online Campus',
+  text: 'Es gibt etwas Neues für dich.',
+  pfad: '/',
+  tag: 'bze-allgemein',
+};
+
+function lesePushNutzlast(event) {
+  if (!event.data) return PUSH_RUECKFALL;
+  try {
+    const daten = event.data.json();
+    return {
+      titel: daten.titel || PUSH_RUECKFALL.titel,
+      text: daten.text || PUSH_RUECKFALL.text,
+      pfad: daten.pfad || PUSH_RUECKFALL.pfad,
+      tag: daten.tag || PUSH_RUECKFALL.tag,
+      // Rechtsläufige Sprachen (Arabisch) brauchen die Richtungsangabe, sonst
+      // stellt das Betriebssystem den Text falsch dar.
+      richtung: daten.richtung === 'rtl' ? 'rtl' : 'ltr',
+      sprache: daten.sprache || 'de',
+    };
+  } catch (err) {
+    return PUSH_RUECKFALL;
+  }
+}
+
+self.addEventListener('push', function (event) {
+  const inhalt = lesePushNutzlast(event);
+  event.waitUntil(
+    self.registration.showNotification(inhalt.titel, {
+      body: inhalt.text,
+      icon: '/icons/icon-192.svg',
+      badge: '/icons/icon-192.svg',
+      lang: inhalt.sprache,
+      dir: inhalt.richtung,
+      // Gleiches Tag ersetzt die vorherige Meldung statt zu stapeln — niemand
+      // soll fünf Serien-Hinweise nebeneinander vorfinden.
+      tag: inhalt.tag,
+      renotify: false,
+      // Lernerinnerungen dürfen nicht vibrieren oder klingeln; sie sind
+      // Angebote, keine Alarme.
+      silent: false,
+      requireInteraction: false,
+      data: { pfad: inhalt.pfad },
+    }),
+  );
+});
+
+/**
+ * Öffnet beim Antippen ein bereits offenes Fenster, statt ein zweites zu
+ * starten. Ein zweiter Tab derselben App verwirrt und verliert den Lernstand
+ * des ersten.
+ */
+async function oeffneZiel(pfad) {
+  const ziel = new URL(pfad || '/', self.location.origin);
+  const fenster = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
+
+  for (const fenstereintrag of fenster) {
+    const offen = new URL(fenstereintrag.url);
+    if (offen.origin !== ziel.origin) continue;
+    if ('focus' in fenstereintrag) {
+      await fenstereintrag.focus();
+      if ('navigate' in fenstereintrag && offen.pathname !== ziel.pathname) {
+        try {
+          await fenstereintrag.navigate(ziel.href);
+        } catch (err) {
+          // navigate ist nicht überall erlaubt — der Fokus allein genügt dann.
+        }
+      }
+      return;
+    }
+  }
+
+  if (self.clients.openWindow) await self.clients.openWindow(ziel.href);
+}
+
+self.addEventListener('notificationclick', function (event) {
+  event.notification.close();
+  const pfad = (event.notification.data && event.notification.data.pfad) || '/';
+  event.waitUntil(oeffneZiel(pfad));
+});
+
+/**
+ * Der Push-Dienst hat das Abo erneuert (Schlüsselwechsel, Ablauf).
+ *
+ * Ohne diesen Handler verstummt Push nach Wochen stillschweigend: der alte
+ * Endpunkt antwortet mit 410, der neue ist dem Server nie mitgeteilt worden.
+ * Die Clients werden benachrichtigt, damit sie das Abo neu anmelden, sobald die
+ * App das nächste Mal geöffnet wird.
+ */
+self.addEventListener('pushsubscriptionchange', function (event) {
+  event.waitUntil(notifyClients({ type: 'PUSH_ABO_ERNEUERN' }));
 });
 
 self.addEventListener('message', function (event) {

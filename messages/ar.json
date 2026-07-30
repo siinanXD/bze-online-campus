@@ -182,7 +182,7 @@
       "dunkel": "داكن"
     },
     "sprung": {
-      "label": "تخطَّ إلى المحتوى"
+      "label": "الانتقال إلى المحتوى"
     }
   },
   "topic": {
@@ -903,5 +903,86 @@
     "uebersetzungLabel": "الترجمة",
     "hinweis": "مساعدة تعليمية — يبقى محتوى الامتحان بالألمانية.",
     "nichtVerfuegbar": "لا توجد ترجمة معتمدة لهذا النص بعد."
+  },
+  "push": {
+    "einstellungen": {
+      "titel": "التذكيرات",
+      "nutzen": "تنبيه قصير عندما تحين مواعيد المراجعة أو تكون سلسلة تعلّمك على وشك الانتهاء. مرتان في اليوم كحد أقصى، وليس ليلاً أبداً.",
+      "aktivieren": "تشغيل التذكيرات",
+      "deaktivieren": "إيقاف على هذا الجهاز",
+      "speichern": "حفظ الإعدادات",
+      "gespeichert": "تم حفظ الإعدادات.",
+      "aktiviert": "التذكيرات مُفعّلة.",
+      "deaktiviert": "التذكيرات متوقفة.",
+      "abgelehnt": "بدون إذن المتصفح لا يمكن وصول أي تذكيرات.",
+      "fehlerSpeichern": "فشل الحفظ. يرجى المحاولة مرة أخرى.",
+      "nichtUnterstuetzt": "هذا المتصفح لا يستطيع عرض التذكيرات. ثبّت التطبيق على الشاشة الرئيسية لاستخدامها.",
+      "imBrowserGesperrt": "التذكيرات محظورة لهذا الموقع في إعدادات المتصفح. يمكنك السماح بها من هناك مرة أخرى.",
+      "anlaesse": "متى تريد أن يتم تذكيرك؟",
+      "anlaesseHinweis": "المناسبات التي تُلغى لا تُرسَل أبداً.",
+      "stillVon": "الهدوء من",
+      "stillBis": "الهدوء حتى",
+      "maxProTag": "كحد أقصى يومياً",
+      "tagesziel": "الهدف اليومي (أسئلة)",
+      "zeitzone": "تنطبق الأوقات على منطقتك الزمنية: {zone}",
+      "geraete": "الأجهزة المسجّلة",
+      "geraetEntfernen": "إزالة"
+    },
+    "anlass": {
+      "faellige_wiederholung": "مراجعات مستحقة",
+      "serie_gefaehrdet": "سلسلة التعلّم في خطر",
+      "tagesziel_offen": "الهدف اليومي شبه مكتمل",
+      "wochenpruefung_offen": "اختبار أسبوعي معلّق",
+      "nachweis_luecke": "سجل تدريب ناقص",
+      "nachweis_entschieden": "قرار المدرّب",
+      "wochenbericht_bereit": "تقرير أسبوعي جديد"
+    },
+    "faellige_wiederholung": {
+      "titel": "{anzahl} أسئلة مستحقة",
+      "text": "بضع دقائق تكفي لمراجعتها."
+    },
+    "faellige_wiederholung_fehler": {
+      "titel": "{fehler} أسئلة من المرة السابقة تنتظرك",
+      "text": "الأخطاء تترسّخ بسرعة عندما تراجعها فوراً."
+    },
+    "serie_gefaehrdet": {
+      "titel": "سلسلتك بلغت {tage} أيام",
+      "text": "سؤال واحد اليوم يكفي لاستمرارها."
+    },
+    "tagesziel_offen": {
+      "titel": "بقيت {offen} أسئلة حتى الهدف اليومي",
+      "text": "يمكنك إنجاز ذلك قبل نهاية اليوم."
+    },
+    "wochenpruefung_offen": {
+      "titel": "الاختبار الأسبوعي ما زال معلّقاً",
+      "text": "يجري بالصيغة الأصلية لاختبار الغرفة."
+    },
+    "nachweis_luecke": {
+      "titel": "{anzahl} أسابيع ناقصة في سجل التدريب",
+      "text": "استدراكها أسرع ما دمت تتذكّر."
+    },
+    "nachweis_entschieden": {
+      "titel": "اتخذ مدرّبك قراراً",
+      "text": "راجع دفتر التقارير لمعرفة ما يجب فعله."
+    },
+    "wochenbericht_bereit": {
+      "titel": "تقريرك الأسبوعي جاهز",
+      "text": "مع النقاط الأساسية لهذا الأسبوع."
+    }
+  },
+  "fokus": {
+    "titel": "تركيزك اليوم",
+    "serieAktiv": "{tage} أيام متتالية",
+    "serieGefaehrdet": "{tage} أيام متتالية — لم يُنجز اليوم بعد",
+    "serieGerissen": "لا توجد سلسلة بعد",
+    "serieBestmarke": "أفضل سلسلة: {tage} أيام",
+    "serieErsterTag": "اليوم هو يومك الأول",
+    "tagesziel": "{erledigt} من {ziel} أسئلة",
+    "tageszielErreicht": "تحقّق الهدف اليومي",
+    "fehlerWiederholen": "مراجعة {anzahl} أخطاء",
+    "fehlerWiederholenCta": "راجع الآن",
+    "faelligGesamt": "{anzahl} أسئلة مستحقة",
+    "nichtsFaellig": "لا شيء مستحق الآن — أحسنت.",
+    "neueAbzeichen": "شارة جديدة: {titel}"
   }
 }

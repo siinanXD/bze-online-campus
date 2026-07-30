@@ -8,7 +8,20 @@ Die maßgebliche Spezifikation ist [`docs/SPEC.md`](docs/SPEC.md), die Arbeitsre
 
 ## Stack
 
-Next.js 15 (App Router, RSC) · TypeScript strict · Tailwind + shadcn/ui · next-intl · Supabase (Postgres, pgvector, Auth, Storage, Edge Functions, pg_cron) · Serwist (PWA) · Zod · Deployment Vercel EU + Supabase eu-central-1.
+| Bereich | Technologie |
+|---|---|
+| Frontend | Next.js 15 (App Router, React Server Components), TypeScript strict |
+| Gestaltung | Tailwind mit eigenen Farb-Tokens, `@bze/ui`-Designsystem, next-intl (6 Sprachen inkl. RTL) |
+| Fachlogik | `@bze/core` — reine, datenbankfreie Domänen (mastery, bewertung, fortschritt, nachweis, engagement, benachrichtigung) |
+| Backend | Supabase — Postgres mit RLS auf jeder Tabelle, pgvector, Auth, Storage, Edge Functions (Deno), pg_cron |
+| PWA | handgeschriebener Service Worker, IndexedDB-Outbox mit Background Sync, Web Push (VAPID) |
+| Validierung | Zod an jeder Server-Action-Grenze |
+| Tests | node:test (Unit + Integration), Playwright (E2E), ruff für die Python-Skripte |
+| Betrieb | Vercel EU + Supabase eu-central-1 |
+
+Die maßgebliche Spezifikation ist [`docs/SPEC.md`](docs/SPEC.md), die Architektur der
+Schichten steht in [`docs/ARCHITEKTUR.md`](docs/ARCHITEKTUR.md), die Arbeitsregeln in
+[`AGENTS.md`](AGENTS.md).
 
 ## Setup in unter 10 Minuten
 
@@ -29,16 +42,19 @@ pnpm seed:generate                  # supabase/seed/0001_maf_seed.sql aus JSON
 ## Verzeichnisübersicht
 
 ```
-app/[locale]/        Next.js App Router (Oberfläche, ab AP-02/03)
-packages/            ui, core (mastery, bewertung, fortschritt, nachweis), db, config
+app/[locale]/        Next.js App Router; je Bereich _lib/ (queries + actions) und _components/
+packages/            ui, core (Domänen), db, config
+  core/              mastery, bewertung, fortschritt, nachweis, engagement, benachrichtigung, werte
 supabase/
   migrations/        additive SQL-Migrationen (nie ändern)
   seed/              MAF-Seed + Quell-JSON
-  functions/         Edge Functions (ab AP-03)
+  functions/         Edge Functions (Deno)
+service-worker/      PWA-Client: Offline-Outbox und Push-Client
 messages/            Übersetzungen de,en,fr,ar,uk,tr
-content/fachkunde/   MDX-Lerninhalte (ab AP-05)
-docs/                SPEC.md, DATENMODELL.md, adr/
-scripts/             generate_seed.py
+content/fachkunde/   MDX-Lerninhalte
+tests/               unit, integration, e2e, helpers
+docs/                SPEC.md, DATENMODELL.md, ARCHITEKTUR.md, adr/
+scripts/             generate_seed.py, generate_i18n.py
 ```
 
 ## Datenbank & Seed lokal fahren
@@ -82,6 +98,35 @@ gelesen markieren (RPC `wochenbericht_gelesen`), und die Merkkarte zeigt je eine
 Merksatz mit Symbol + Textlabel. Migration `0010_wochenbericht.sql` (RPC, View,
 pg_cron-Hinweis).
 
+## Tests
+
+```bash
+pnpm test              # Unit + Integration (node:test), läuft in der CI bei jedem Push
+pnpm test:unit         # nur packages/core — reine Fachlogik
+pnpm test:integration  # Zusammenspiel über Modulgrenzen (z. B. Domain → Push-Text)
+pnpm test:e2e          # Playwright-Smoke; braucht eine laufende App (E2E_BASE_URL)
+pnpm lint:py           # ruff check + format für die Python-Skripte
+```
+
+Die Fachlogik liegt bewusst in `@bze/core` und ist frei von Datenbank und
+Framework — dadurch ist jede Regel ohne Supabase testbar. Schwerpunkt der Tests
+sind die Ränder, an denen es in der Praxis bricht: Zeitzonen und Sommerzeit
+(Lernserie), ISO-Kalenderwochen am Jahreswechsel (Ausbildungsnachweis), die
+Stufengrenzen des IHK-Schlüssels (Bewertung) und kaputte Werte aus der Datenbank.
+Details in [`tests/README.md`](tests/README.md).
+
+## Erinnerungen & Lernfokus (AP-17)
+
+Web Push hält Teilnehmende am Ball, ohne zu nerven. Die Entscheidung, **ob** und
+**was** gesendet wird, liegt vollständig in der getesteten Domäne
+`packages/core/benachrichtigung` — stille Zeiten, Rangfolge der Anlässe,
+Tagesdeckel und Mindestpausen. Die Edge Function
+[`sende-erinnerungen`](supabase/functions/sende-erinnerungen/README.md) ruft diese
+Domäne nur auf und erledigt den VAPID-signierten Versand. Auf der Startseite
+bündelt die Fokus-Karte Lernserie, Tagesziel und die Wiedervorlage früherer
+Fehler; das Opt-in samt stiller Zeiten steht im Profil. Migration
+`0014_push.sql`; Opt-in erst nach ausdrücklicher Zustimmung (kein Default).
+
 ## Stand der Arbeitspakete
 
 **Welle 0 (seriell)**
@@ -93,7 +138,8 @@ pg_cron-Hinweis).
 **Welle 1** — [x] AP-03 Auth · [x] AP-04 Shell/Landing · [x] AP-05 Fachkunde · [x] AP-06 Lernmodus · [x] AP-07 Admin  _(Welle 1 komplett, Integrationsbuild grün)_
 **Welle 2** — [x] AP-08 Wochenprüfung · [x] AP-09 KI-Freitextbewertung · [x] AP-10 Fortschritt/Gates · [x] AP-11 Ausbilder-Cockpit
 **Welle 3** — [x] AP-12 Fragengenerator · [x] AP-13 Wochenbericht · [x] AP-14 i18n-Vollausbau · [x] AP-15 PWA/Offline · [x] AP-16 Monitoring · [x] AP-18 Ausbildungsnachweis
-**Später** — [ ] AP-17 Erklärvideos (Remotion)
+**Welle 4** — [x] AP-17 Erinnerungen & Lernfokus (Web Push, Lernserie, Tagesziel, Fehler-Wiedervorlage)
+**Später** — [ ] Erklärvideos (Remotion)
 
 ## Validierung AP-01
 

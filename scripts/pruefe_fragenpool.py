@@ -5,7 +5,11 @@ Aufruf:  python3 scripts/pruefe_fragenpool.py [datei ...]
 Ohne Argument werden alle supabase/seed/*_Fragenpool_*.json geprüft.
 Exit-Code 1, sobald ein Fehler gefunden wurde.
 """
-import json, pathlib, sys, collections
+
+import collections
+import json
+import pathlib
+import sys
 
 BASE = pathlib.Path(__file__).resolve().parent.parent
 THEMEN = set()
@@ -18,6 +22,7 @@ fehler, warnungen = [], []
 
 
 def pruefe(pfad: pathlib.Path) -> None:
+    """Prüft eine Pool-Datei und sammelt Fehler/Warnungen in den Modullisten."""
     pool = json.load(open(pfad, encoding="utf-8"))
     name = pfad.name
     ids = collections.Counter(f["id"] for f in pool["fragen"])
@@ -33,7 +38,8 @@ def pruefe(pfad: pathlib.Path) -> None:
             fehler.append(f"{name}/{fid}: leere Aufgabenstellung")
         if f.get("enthaelt_zahlenwert") and not f.get("tabellenbuch_fundstelle"):
             warnungen.append(
-                f"{name}/{fid}: Zahlenwert ohne Tabellenbuch-Fundstelle – vor Freigabe nachtragen")
+                f"{name}/{fid}: Zahlenwert ohne Tabellenbuch-Fundstelle – vor Freigabe nachtragen"
+            )
         if f.get("status") != "entwurf":
             fehler.append(f"{name}/{fid}: Status muss 'entwurf' sein (Ausbilderfreigabe)")
 
@@ -55,7 +61,8 @@ def pruefe(pfad: pathlib.Path) -> None:
             summe = sum(k["punkte"] for k in br.get("kriterien", []))
             if summe != br.get("max_punkte"):
                 fehler.append(
-                    f"{name}/{fid}: Kriterienpunkte {summe} != max_punkte {br.get('max_punkte')}")
+                    f"{name}/{fid}: Kriterienpunkte {summe} != max_punkte {br.get('max_punkte')}"
+                )
             if not f.get("musterloesung", "").strip():
                 fehler.append(f"{name}/{fid}: fehlende Musterlösung")
 
@@ -75,13 +82,18 @@ def pruefe(pfad: pathlib.Path) -> None:
     if meta.get("anzahl_mc") not in (None, ist_mc):
         fehler.append(f"{name}: meta.anzahl_mc={meta['anzahl_mc']}, tatsächlich {ist_mc}")
     if meta.get("anzahl_freitext") not in (None, ist_ft):
-        fehler.append(f"{name}: meta.anzahl_freitext={meta['anzahl_freitext']}, tatsächlich {ist_ft}")
-    print(f"{name}: {ist_mc} MC, {ist_ft} Freitext, "
-          f"{len(pool.get('uebungspruefungen', []))} Übungsprüfung(en)")
+        fehler.append(
+            f"{name}: meta.anzahl_freitext={meta['anzahl_freitext']}, tatsächlich {ist_ft}"
+        )
+    print(
+        f"{name}: {ist_mc} MC, {ist_ft} Freitext, "
+        f"{len(pool.get('uebungspruefungen', []))} Übungsprüfung(en)"
+    )
 
 
 dateien = [pathlib.Path(a) for a in sys.argv[1:]] or sorted(
-    (BASE / "supabase/seed").glob("*_Fragenpool_*.json"))
+    (BASE / "supabase/seed").glob("*_Fragenpool_*.json")
+)
 for d in dateien:
     pruefe(d)
 

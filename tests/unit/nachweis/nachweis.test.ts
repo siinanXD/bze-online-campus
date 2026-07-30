@@ -10,7 +10,7 @@ import {
   teilnehmerKannBearbeiten,
   verfuegbareAktionen,
   wochenBereich,
-} from './index';
+} from '@bze/core/nachweis';
 
 describe('pruefeTransition', () => {
   it('Teilnehmer reicht Entwurf und Beanstandung ein', () => {

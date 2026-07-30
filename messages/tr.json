@@ -903,5 +903,86 @@
     "uebersetzungLabel": "Çeviri",
     "hinweis": "Öğrenme yardımı — sınav içeriği Almanca kalır.",
     "nichtVerfuegbar": "Bu metin için henüz onaylanmış çeviri yok."
+  },
+  "push": {
+    "einstellungen": {
+      "titel": "Hatırlatmalar",
+      "nutzen": "Tekrarların zamanı geldiğinde veya öğrenme serin sona ereceğinde kısa bir hatırlatma. Günde en fazla iki kez, asla geceleyin.",
+      "aktivieren": "Hatırlatmaları aç",
+      "deaktivieren": "Bu cihazda kapat",
+      "speichern": "Ayarları kaydet",
+      "gespeichert": "Ayarlar kaydedildi.",
+      "aktiviert": "Hatırlatmalar açık.",
+      "deaktiviert": "Hatırlatmalar kapalı.",
+      "abgelehnt": "Tarayıcının izni olmadan hatırlatma gelemez.",
+      "fehlerSpeichern": "Kaydetme başarısız. Lütfen tekrar deneyin.",
+      "nichtUnterstuetzt": "Bu tarayıcı hatırlatma gösteremez. Kullanmak için uygulamayı ana ekrana yükle.",
+      "imBrowserGesperrt": "Hatırlatmalar bu site için tarayıcı ayarlarında engellendi. Oradan yeniden izin verebilirsin.",
+      "anlaesse": "Ne zaman hatırlatılmasını istersin?",
+      "anlaesseHinweis": "Seçimi kaldırılan durumlar hiç gönderilmez.",
+      "stillVon": "Sessizlik başlangıcı",
+      "stillBis": "Sessizlik bitişi",
+      "maxProTag": "Günde en fazla",
+      "tagesziel": "Günlük hedef (soru)",
+      "zeitzone": "Saatler senin saat diliminde geçerlidir: {zone}",
+      "geraete": "Kayıtlı cihazlar",
+      "geraetEntfernen": "Kaldır"
+    },
+    "anlass": {
+      "faellige_wiederholung": "Zamanı gelen tekrarlar",
+      "serie_gefaehrdet": "Öğrenme serisi risk altında",
+      "tagesziel_offen": "Günlük hedef neredeyse tamam",
+      "wochenpruefung_offen": "Bekleyen haftalık sınav",
+      "nachweis_luecke": "Eksik eğitim kaydı",
+      "nachweis_entschieden": "Eğitmenin kararı",
+      "wochenbericht_bereit": "Yeni haftalık rapor"
+    },
+    "faellige_wiederholung": {
+      "titel": "{anzahl} sorunun zamanı geldi",
+      "text": "Onları gözden geçirmek için birkaç dakika yeter."
+    },
+    "faellige_wiederholung_fehler": {
+      "titel": "Geçen seferden {fehler} soru bekliyor",
+      "text": "Hatalar hemen yeniden bakıldığında en hızlı yerleşir."
+    },
+    "serie_gefaehrdet": {
+      "titel": "Serin {tage} günde",
+      "text": "Bugün bir soru onu sürdürmeye yeter."
+    },
+    "tagesziel_offen": {
+      "titel": "Günlük hedefine {offen} soru kaldı",
+      "text": "Bunu gün bitmeden başarırsın."
+    },
+    "wochenpruefung_offen": {
+      "titel": "Haftalık sınav hâlâ bekliyor",
+      "text": "Oda sınavının özgün biçiminde yapılır."
+    },
+    "nachweis_luecke": {
+      "titel": "Eğitim kaydında {anzahl} hafta eksik",
+      "text": "Hatırladığın sürece tamamlamak daha hızlıdır."
+    },
+    "nachweis_entschieden": {
+      "titel": "Eğitmenin karar verdi",
+      "text": "Ne yapılacağını görmek için eğitim defterine bak."
+    },
+    "wochenbericht_bereit": {
+      "titel": "Haftalık raporun geldi",
+      "text": "Bu haftanın önemli notlarıyla."
+    }
+  },
+  "fokus": {
+    "titel": "Bugünkü odağın",
+    "serieAktiv": "{tage} gün üst üste",
+    "serieGefaehrdet": "{tage} gün üst üste — bugün hâlâ açık",
+    "serieGerissen": "Henüz seri yok",
+    "serieBestmarke": "En iyi seri: {tage} gün",
+    "serieErsterTag": "Bugün ilk günün",
+    "tagesziel": "{ziel} sorudan {erledigt} tanesi",
+    "tageszielErreicht": "Günlük hedefe ulaşıldı",
+    "fehlerWiederholen": "{anzahl} hatayı tekrarla",
+    "fehlerWiederholenCta": "Şimdi tekrarla",
+    "faelligGesamt": "{anzahl} sorunun zamanı geldi",
+    "nichtsFaellig": "Şu anda bir şey beklemiyor — iyi iş.",
+    "neueAbzeichen": "Yeni nişan: {titel}"
   }
 }

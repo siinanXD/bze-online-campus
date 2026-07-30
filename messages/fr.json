@@ -903,5 +903,86 @@
     "uebersetzungLabel": "Traduction",
     "hinweis": "Aide à l’apprentissage — le contenu d’examen reste en allemand.",
     "nichtVerfuegbar": "Aucune traduction validée n’est encore disponible pour ce texte."
+  },
+  "push": {
+    "einstellungen": {
+      "titel": "Rappels",
+      "nutzen": "Un rappel court lorsque des révisions arrivent à échéance ou que votre série d’apprentissage va s’interrompre. Deux fois par jour au maximum, jamais la nuit.",
+      "aktivieren": "Activer les rappels",
+      "deaktivieren": "Désactiver sur cet appareil",
+      "speichern": "Enregistrer les réglages",
+      "gespeichert": "Réglages enregistrés.",
+      "aktiviert": "Les rappels sont activés.",
+      "deaktiviert": "Les rappels sont désactivés.",
+      "abgelehnt": "Sans l’autorisation du navigateur, aucun rappel ne peut arriver.",
+      "fehlerSpeichern": "Échec de l’enregistrement. Veuillez réessayer.",
+      "nichtUnterstuetzt": "Ce navigateur ne peut pas afficher de rappels. Installez l’application sur l’écran d’accueil pour les utiliser.",
+      "imBrowserGesperrt": "Les rappels sont bloqués pour ce site dans les réglages du navigateur. Vous pouvez les réautoriser là-bas.",
+      "anlaesse": "Quand souhaitez-vous être rappelé ?",
+      "anlaesseHinweis": "Les motifs décochés ne sont jamais envoyés.",
+      "stillVon": "Silence à partir de",
+      "stillBis": "Silence jusqu’à",
+      "maxProTag": "Maximum par jour",
+      "tagesziel": "Objectif quotidien (questions)",
+      "zeitzone": "Les heures s’appliquent dans votre fuseau horaire : {zone}",
+      "geraete": "Appareils enregistrés",
+      "geraetEntfernen": "Retirer"
+    },
+    "anlass": {
+      "faellige_wiederholung": "Révisions à faire",
+      "serie_gefaehrdet": "Série d’apprentissage en danger",
+      "tagesziel_offen": "Objectif quotidien presque atteint",
+      "wochenpruefung_offen": "Examen hebdomadaire en attente",
+      "nachweis_luecke": "Justificatif de formation manquant",
+      "nachweis_entschieden": "Décision du formateur",
+      "wochenbericht_bereit": "Nouveau rapport hebdomadaire"
+    },
+    "faellige_wiederholung": {
+      "titel": "{anzahl} questions à réviser",
+      "text": "Quelques minutes suffisent pour les revoir."
+    },
+    "faellige_wiederholung_fehler": {
+      "titel": "{fehler} questions de la dernière fois vous attendent",
+      "text": "Les erreurs s’ancrent le plus vite lorsqu’on les revoit tout de suite."
+    },
+    "serie_gefaehrdet": {
+      "titel": "Votre série est à {tage} jours",
+      "text": "Une seule question aujourd’hui suffit à la maintenir."
+    },
+    "tagesziel_offen": {
+      "titel": "Encore {offen} questions avant votre objectif quotidien",
+      "text": "Vous y arriverez avant la fin de la journée."
+    },
+    "wochenpruefung_offen": {
+      "titel": "L’examen hebdomadaire reste à passer",
+      "text": "Il se déroule au format original de l’examen de la chambre."
+    },
+    "nachweis_luecke": {
+      "titel": "{anzahl} semaines manquent dans votre justificatif de formation",
+      "text": "Les compléter est plus rapide tant que vous vous en souvenez."
+    },
+    "nachweis_entschieden": {
+      "titel": "Votre formateur a tranché",
+      "text": "Consultez le carnet de formation pour savoir quoi faire."
+    },
+    "wochenbericht_bereit": {
+      "titel": "Votre rapport hebdomadaire est arrivé",
+      "text": "Avec les points clés de cette semaine."
+    }
+  },
+  "fokus": {
+    "titel": "Votre objectif du jour",
+    "serieAktiv": "{tage} jours d’affilée",
+    "serieGefaehrdet": "{tage} jours d’affilée — aujourd’hui encore à faire",
+    "serieGerissen": "Pas encore de série",
+    "serieBestmarke": "Meilleure série : {tage} jours",
+    "serieErsterTag": "Aujourd’hui est votre premier jour",
+    "tagesziel": "{erledigt} sur {ziel} questions",
+    "tageszielErreicht": "Objectif quotidien atteint",
+    "fehlerWiederholen": "Revoir {anzahl} erreurs",
+    "fehlerWiederholenCta": "Revoir maintenant",
+    "faelligGesamt": "{anzahl} questions à réviser",
+    "nichtsFaellig": "Rien à réviser pour l’instant — bravo.",
+    "neueAbzeichen": "Nouveau badge : {titel}"
   }
 }

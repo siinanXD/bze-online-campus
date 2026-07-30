@@ -903,5 +903,86 @@
     "uebersetzungLabel": "Translation",
     "hinweis": "Learning aid — exam content stays German.",
     "nichtVerfuegbar": "There is no approved translation for this text yet."
+  },
+  "push": {
+    "einstellungen": {
+      "titel": "Reminders",
+      "nutzen": "A short nudge when repetitions are due or your learning streak is about to end. At most twice a day, never at night.",
+      "aktivieren": "Turn on reminders",
+      "deaktivieren": "Turn off on this device",
+      "speichern": "Save settings",
+      "gespeichert": "Settings saved.",
+      "aktiviert": "Reminders are on.",
+      "deaktiviert": "Reminders are off.",
+      "abgelehnt": "Without the browser’s permission no reminders can arrive.",
+      "fehlerSpeichern": "Saving failed. Please try again.",
+      "nichtUnterstuetzt": "This browser cannot show reminders. Install the app on your home screen to use them.",
+      "imBrowserGesperrt": "Reminders are blocked for this site in your browser settings. You can allow them again there.",
+      "anlaesse": "When would you like to be reminded?",
+      "anlaesseHinweis": "Deselected occasions are never sent.",
+      "stillVon": "Quiet from",
+      "stillBis": "Quiet until",
+      "maxProTag": "At most per day",
+      "tagesziel": "Daily goal (questions)",
+      "zeitzone": "Times apply in your time zone: {zone}",
+      "geraete": "Registered devices",
+      "geraetEntfernen": "Remove"
+    },
+    "anlass": {
+      "faellige_wiederholung": "Due repetitions",
+      "serie_gefaehrdet": "Learning streak at risk",
+      "tagesziel_offen": "Daily goal almost done",
+      "wochenpruefung_offen": "Open weekly exam",
+      "nachweis_luecke": "Missing training record",
+      "nachweis_entschieden": "Instructor’s decision",
+      "wochenbericht_bereit": "New weekly report"
+    },
+    "faellige_wiederholung": {
+      "titel": "{anzahl} questions are due",
+      "text": "A few minutes are enough to go through them."
+    },
+    "faellige_wiederholung_fehler": {
+      "titel": "{fehler} questions from last time are waiting",
+      "text": "Mistakes stick fastest when you look at them again right away."
+    },
+    "serie_gefaehrdet": {
+      "titel": "Your streak stands at {tage} days",
+      "text": "One question today is enough to keep it going."
+    },
+    "tagesziel_offen": {
+      "titel": "{offen} questions left to your daily goal",
+      "text": "You can manage that before the day is done."
+    },
+    "wochenpruefung_offen": {
+      "titel": "The weekly exam is still open",
+      "text": "It runs in the original format of the chamber exam."
+    },
+    "nachweis_luecke": {
+      "titel": "{anzahl} weeks are missing in your training record",
+      "text": "Filling them in is quicker while you still remember."
+    },
+    "nachweis_entschieden": {
+      "titel": "Your instructor has decided",
+      "text": "Check the report book to see what to do."
+    },
+    "wochenbericht_bereit": {
+      "titel": "Your weekly report has arrived",
+      "text": "With this week’s key points."
+    }
+  },
+  "fokus": {
+    "titel": "Your focus today",
+    "serieAktiv": "{tage} days in a row",
+    "serieGefaehrdet": "{tage} days in a row — today still open",
+    "serieGerissen": "No streak yet",
+    "serieBestmarke": "Best streak: {tage} days",
+    "serieErsterTag": "Today is your first day",
+    "tagesziel": "{erledigt} of {ziel} questions",
+    "tageszielErreicht": "Daily goal reached",
+    "fehlerWiederholen": "Repeat {anzahl} mistakes",
+    "fehlerWiederholenCta": "Repeat now",
+    "faelligGesamt": "{anzahl} questions due",
+    "nichtsFaellig": "Nothing is due right now — well done.",
+    "neueAbzeichen": "New badge: {titel}"
   }
 }

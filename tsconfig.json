@@ -36,6 +36,15 @@
       ],
       "@bze/core/nachweis": [
         "./packages/core/nachweis/index.ts"
+      ],
+      "@bze/core/engagement": [
+        "./packages/core/engagement/index.ts"
+      ],
+      "@bze/core/benachrichtigung": [
+        "./packages/core/benachrichtigung/index.ts"
+      ],
+      "@bze/core/werte": [
+        "./packages/core/werte/index.ts"
       ]
     },
     "lib": [
