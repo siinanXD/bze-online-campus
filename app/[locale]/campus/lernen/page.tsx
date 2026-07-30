@@ -42,8 +42,7 @@ export default async function LernenIndex({
 
   const { data: fragenRoh } = await supabase
     .from('fragen')
-    .select('id, thema_id, themen!inner(id, bezeichnung)')
-    .eq('status', 'freigegeben');
+    .select('id, thema_id, themen!inner(id, bezeichnung)');
 
   const fragen = (fragenRoh ?? []) as {
     id: string;

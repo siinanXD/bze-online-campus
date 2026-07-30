@@ -28,13 +28,14 @@ export interface BottomNavProps {
 interface NavItem {
   key: 'start' | 'lernen' | 'pruefung' | 'bericht' | 'mehr';
   pfad: string;
+  aktivPfade?: string[];
   exakt?: boolean;
   Icon: (props: ShellIconProps) => React.ReactElement;
 }
 
 const NAV_ITEMS: NavItem[] = [
   { key: 'start', pfad: '/campus', exakt: true, Icon: StartIcon },
-  { key: 'lernen', pfad: '/campus/lernen', Icon: LernenIcon },
+  { key: 'lernen', pfad: '/campus/lernen', aktivPfade: ['/campus/topic'], Icon: LernenIcon },
   { key: 'pruefung', pfad: '/campus/pruefung', Icon: PruefungIcon },
   { key: 'bericht', pfad: '/campus/berichtsheft', Icon: BerichtIcon },
   { key: 'mehr', pfad: '/campus/mehr', Icon: MehrIcon },
@@ -67,9 +68,14 @@ export function BottomNav({ berichtsheftAktiv = true, aktivPfad, className }: Bo
         className="mx-auto grid max-w-2xl"
         style={{ gridTemplateColumns: `repeat(${items.length}, minmax(0, 1fr))` }}
       >
-        {items.map(({ key, pfad, exakt, Icon }) => {
+        {items.map(({ key, pfad, aktivPfade = [], exakt, Icon }) => {
           const href = `/${locale}${pfad}`;
-          const aktiv = exakt ? pathname === href : pathname === href || pathname.startsWith(`${href}/`);
+          const weiterePfade = aktivPfade.map((p) => `/${locale}${p}`);
+          const aktiv = exakt
+            ? pathname === href
+            : pathname === href ||
+              pathname.startsWith(`${href}/`) ||
+              weiterePfade.some((p) => pathname === p || pathname.startsWith(`${p}/`));
           return (
             <li key={key}>
               <Link

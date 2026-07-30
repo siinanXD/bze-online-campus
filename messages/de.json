@@ -210,6 +210,106 @@
     "unterricht": {
       "hinweis": "Videos folgen in Kürze."
     },
+    "content": {
+      "navigation": {
+        "fachkunde": "Fachkunde",
+        "zurFachkunde": "Zur Fachkunde",
+        "thema": "Thema",
+        "unterthema": "Unterthema",
+        "breadcrumb": "Einordnung",
+        "oeffnen": "Öffnen"
+      },
+      "index": {
+        "titel": "Fachkunde",
+        "beschreibung": "Wähle einen Fachbereich und arbeite dich über Themen und Unterthemen zum Lernmodul vor.",
+        "themenAnzahl": "{anzahl} Themen"
+      },
+      "modul": {
+        "titel": "Lernmodul",
+        "beschreibung": "Öffnet die neue Modulansicht mit Erklärungen, Lernkarten, Fällen, Rechenaufgaben und Quiz-Einstieg.",
+        "cta": "Lernmodul öffnen",
+        "badge": "Lernmodul"
+      },
+      "hinweise": {
+        "demoTitel": "KI-generierter Beispielinhalt",
+        "demoText": "Dieser Inhalt ist als Demo-Content gekennzeichnet und im Demo-Modus sichtbar.",
+        "verifikationText": "Der Inhalt ist nicht fachlich verifiziert und gilt im Produktionsmodus nicht automatisch als geprüft.",
+        "nichtVerifiziertKurz": "Nicht fachlich verifiziert"
+      },
+      "abschnitte": {
+        "unterthemen": "Unterthemen",
+        "fortschritt": "Lesefortschritt",
+        "lernziele": "Lernziele",
+        "einfuehrung": "Kurze Einführung",
+        "erklaerung": "Ausführliche Erklärung",
+        "praxisbeispiel": "Praxisbeispiel",
+        "merkpunkte": "Merkpunkte",
+        "lernkarten": "Lernkarten",
+        "uebungen": "Übungen",
+        "praxisfaelle": "Praxisfälle",
+        "rechenaufgaben": "Rechenaufgaben",
+        "quiz": "Quiz",
+        "zusammenfassung": "Zusammenfassung",
+        "naechsterSchritt": "Nächster Lernschritt"
+      },
+      "fortschritt": {
+        "leseeinheiten": "{gelesen} von {gesamt} verknüpften Fachkunde-Abschnitten begonnen."
+      },
+      "quiz": {
+        "hinweis": "Bewertung, Wiederholung und Mastery laufen weiter über den bestehenden Übungsmodus.",
+        "cta": "Im Übungsmodus starten"
+      },
+      "lernkarten": {
+        "vorderseite": "Vorderseite",
+        "rueckseite": "Rückseite"
+      },
+      "fragen": {
+        "singleChoice": "Single Choice",
+        "multipleChoice": "Multiple Choice",
+        "kernfrage": "Kernfrage",
+        "richtig": "Richtig"
+      },
+      "praxisfall": {
+        "situation": "Situation",
+        "aufgabe": "Aufgabe",
+        "erwartung": "Erwartung"
+      },
+      "rechenaufgabe": {
+        "gegebeneWerte": "Gegebene Werte",
+        "gesuchteGroesse": "Gesuchte Größe",
+        "formel": "Formel",
+        "loesungAnzeigen": "Lösung anzeigen",
+        "loesungsweg": "Lösungsweg",
+        "ergebnis": "Ergebnis",
+        "erklaerung": "Erklärung",
+        "werteInAufgabe": "In der Aufgabe genannt"
+      },
+      "leer": {
+        "fachbereicheTitel": "Noch keine Fachbereiche",
+        "fachbereicheText": "Sobald Fachbereiche sichtbar sind, erscheinen sie hier.",
+        "themenTitel": "Noch keine Themen",
+        "themenText": "Für diesen Fachbereich sind noch keine Themen sichtbar.",
+        "modulTitel": "Noch keine Modul-Inhalte",
+        "modulText": "Für dieses Unterthema sind noch keine sichtbaren Content-Elemente vorhanden.",
+        "lernziele": "Für dieses Lernmodul sind noch keine Lernziele sichtbar.",
+        "praxisfall": "Für dieses Lernmodul ist noch kein Praxisfall sichtbar.",
+        "merkpunkte": "Für dieses Lernmodul sind noch keine Merkpunkte sichtbar.",
+        "lernkarten": "Für dieses Lernmodul sind noch keine Lernkarten sichtbar.",
+        "uebungen": "Für dieses Lernmodul sind noch keine Übungen sichtbar.",
+        "rechenaufgaben": "Für dieses Lernmodul sind noch keine Rechenaufgaben sichtbar.",
+        "keineInhalte": "Keine Inhalte vorhanden.",
+        "keineAngabe": "Keine Angabe."
+      },
+      "fehler": {
+        "titel": "Fachkunde konnte nicht geladen werden",
+        "text": "Etwas ist schiefgelaufen. Versuche es erneut.",
+        "erneutVersuchen": "Erneut versuchen"
+      },
+      "nichtGefunden": {
+        "titel": "Lernmodul nicht gefunden",
+        "text": "Dieses Lernmodul gibt es nicht oder es ist für dich nicht sichtbar."
+      }
+    },
     "kapitel": {
       "fortschritt": "{prozent} % der Kapitel gelesen",
       "liste": "Kapitelübersicht"
@@ -238,7 +338,405 @@
       "beschriftung": "Admin-Bereich",
       "nutzerverwaltung": "Nutzerverwaltung",
       "auditLog": "Audit-Log",
-      "monitoring": "Monitoring"
+      "monitoring": "Monitoring",
+      "content": "Content"
+    },
+    "content": {
+      "nav": {
+        "label": "Content-Verwaltung",
+        "uebersicht": "Übersicht",
+        "themen": "Themen",
+        "lernziele": "Lernziele",
+        "inhalte": "Inhalte",
+        "fragen": "Fragen",
+        "lernkarten": "Lernkarten",
+        "praxisfaelle": "Praxisfälle",
+        "rechenaufgaben": "Rechenaufgaben",
+        "quizze": "Quizze",
+        "kiGenerator": "KI-Generator",
+        "qualitaetspruefung": "Qualitätsprüfung",
+        "wissensdatenbank": "Wissensdatenbank"
+      },
+      "dashboard": {
+        "titel": "Content-Dashboard",
+        "hinweis": "Kennzahlen zu sichtbaren Content-Elementen, Fragen, Lernzielen und Demo-Inhalten.",
+        "zurListe": "Content-Liste öffnen",
+        "naechsteSchritteTitel": "Bewusst noch nicht aktiv",
+        "naechsteSchritteText": "KI-Generator, Qualitätsprüfung und Wissensdatenbank sind in dieser Phase nur navigierbar, aber ohne Funktion."
+      },
+      "kennzahlen": {
+        "fachbereiche": "Fachbereiche",
+        "themen": "Themen",
+        "unterthemen": "Unterthemen",
+        "lernziele": "Lernziele",
+        "erklaerungen": "Erklärungen",
+        "fragen": "Fragen",
+        "lernkarten": "Lernkarten",
+        "praxisfaelle": "Praxisfälle",
+        "rechenaufgaben": "Rechenaufgaben",
+        "quizze": "Quizze",
+        "demoInhalte": "Demo-Inhalte",
+        "entwuerfe": "Entwürfe",
+        "freigegeben": "Freigegeben",
+        "kiGeneriert": "KI-generiert",
+        "manuell": "Manuell"
+      },
+      "liste": {
+        "titel": "Content-Liste",
+        "hinweis": "Verwalte Content-Elemente. Die bestehende Fragenverwaltung bleibt für Fragenfreigabe und Fragenbearbeitung zuständig.",
+        "tabelle": "Content-Elemente",
+        "auswahl": "Auswahl",
+        "auswaehlen": "{titel} auswählen",
+        "auswahlZaehler": "{anzahl} ausgewählt",
+        "gesamt": "{gesamt} Einträge sichtbar",
+        "bulkStatusLabel": "Status für ausgewählte Inhalte ändern",
+        "statusAendern": "Status ändern",
+        "archivieren": "Archivieren",
+        "bulkErfolg": "Bulk-Aktion gespeichert."
+      },
+      "filter": {
+        "alle": "Alle",
+        "suche": "Suche",
+        "suchePlaceholder": "Titel oder Beschreibung",
+        "typ": "Content-Typ",
+        "fachbereich": "Fachbereich",
+        "thema": "Thema",
+        "schwierigkeit": "Schwierigkeit",
+        "status": "Status",
+        "quelle": "Quelle",
+        "demo": "Demo",
+        "demoJa": "Demo",
+        "demoNein": "Produktion",
+        "qualitaet": "Qualitätsbereich",
+        "qualitaetNiedrig": "unter 50 %",
+        "qualitaetMittel": "50 bis 79 %",
+        "qualitaetHoch": "ab 80 %",
+        "qualitaetOhne": "ohne Wert",
+        "von": "Erstellt ab",
+        "bis": "Erstellt bis",
+        "zuruecksetzen": "Filter zurücksetzen"
+      },
+      "spalten": {
+        "titel": "Titel",
+        "typ": "Typ",
+        "status": "Status",
+        "demo": "Demo",
+        "quelle": "Quelle",
+        "schwierigkeit": "Schwierigkeit",
+        "lernziele": "Lernziele",
+        "qualitaet": "Qualität"
+      },
+      "typen": {
+        "erklaerung": "Erklärung",
+        "lernkarte": "Lernkarte",
+        "single_choice": "Single Choice",
+        "multiple_choice": "Multiple Choice",
+        "freitext": "Freitext",
+        "rechenaufgabe": "Rechenaufgabe",
+        "praxisfall": "Praxisfall",
+        "pruefungsnahe_uebungsfrage": "Prüfungsnahe Übungsfrage",
+        "zusammenfassung": "Zusammenfassung"
+      },
+      "status": {
+        "entwurf": "Entwurf",
+        "generiert": "Generiert",
+        "in_pruefung": "In Prüfung",
+        "freigegeben": "Freigegeben",
+        "abgelehnt": "Abgelehnt",
+        "archiviert": "Archiviert"
+      },
+      "schwierigkeit": {
+        "einfach": "Einfach",
+        "mittel": "Mittel",
+        "schwer": "Schwer"
+      },
+      "quellen": {
+        "tabellenbuch": "Tabellenbuch",
+        "rahmenlehrplan": "Rahmenlehrplan",
+        "traegerskript": "Trägerskript",
+        "web": "Web",
+        "ki": "KI",
+        "mock_ai": "Mock-KI",
+        "demo": "Demo",
+        "manuell": "Manuell",
+        "unbekannt": "Unbekannt"
+      },
+      "badges": {
+        "demo": "Demo",
+        "produktion": "Produktion"
+      },
+      "hinweise": {
+        "demoTitel": "Demo-Inhalt",
+        "demoText": "Dieser Inhalt ist als Demo gekennzeichnet und muss fachlich geprüft werden."
+      },
+      "detail": {
+        "kicker": "Content-Detail",
+        "zurListe": "Zur Liste",
+        "kiAnbieter": "KI-Anbieter",
+        "kiModell": "KI-Modell",
+        "lernziele": "Lernziele",
+        "keineLernziele": "Keine Lernziele verknüpft.",
+        "verknuepfteFrage": "Verknüpfte Frage",
+        "fragenHinweis": "Frageninhalt und Freigabe bleiben in der bestehenden Fragenverwaltung.",
+        "bearbeiten": "Content bearbeiten",
+        "gespeichert": "Content gespeichert.",
+        "statusGespeichert": "Status gespeichert.",
+        "archiviert": "Content archiviert.",
+        "geloescht": "Content gelöscht.",
+        "loeschenBestaetigung": "Content-Element wirklich löschen? Verknüpfte Fragen oder Lerneinheiten bleiben erhalten."
+      },
+      "felder": {
+        "titel": "Titel",
+        "beschreibung": "Beschreibung",
+        "istDemo": "Demo-Inhalt",
+        "demoSichtbar": "Im Demo-Modus sichtbar",
+        "fachlichVerifiziert": "Fachlich verifiziert",
+        "demoLabel": "Demo-Hinweis",
+        "inhaltJson": "Inhalt (JSON)"
+      },
+      "aktionen": {
+        "speichern": "Speichern",
+        "statusAendern": "Status speichern",
+        "archivieren": "Archivieren",
+        "loeschen": "Löschen"
+      },
+      "generator": {
+        "titel": "KI-Content-Generator",
+        "hinweis": "Erzeuge Demo-Inhalte per Mock-Provider oder serverseitigem LLM-Provider. RAG bleibt deaktiviert.",
+        "konfiguration": {
+          "titel": "Lokale Generator-Konfiguration",
+          "text": "Provider={provider}, Modell={modell}, AI_MOCK_MODE={aiMockMode}, LLM_API_KEY konfiguriert={llmConfigured}, CONTENT_SOURCE_MODE={sourceMode}, RAG_ENABLED={ragEnabled}"
+        },
+        "progress": {
+          "label": "Generator-Fortschritt"
+        },
+        "felder": {
+          "fachbereich": "Fachbereich",
+          "thema": "Thema",
+          "unterthema": "Unterthema",
+          "lernziele": "Lernziele",
+          "contentTypen": "Content-Typen",
+          "schwierigkeiten": "Schwierigkeitsgrade",
+          "anzahl": "Anzahl pro Content-Typ",
+          "fehlerSimulation": "Fehlerzustand simulieren"
+        },
+        "hinweise": {
+          "lernziele": "Wähle vorhandene Lernziele oder erzeuge neue Demo-Lernziele für das Unterthema.",
+          "contentTypen": "Die spätere echte KI nutzt dieselbe strukturierte Ausgabe.",
+          "schwierigkeiten": "Mehrere Grade erzeugen Varianten im gleichen Lauf.",
+          "anzahl": "Maximal fünf je Typ und maximal dreißig Inhalte pro Lauf."
+        },
+        "quelle": {
+          "titel": "Quelle",
+          "text": "Alle Inhalte werden als Mock-KI, Demo und nicht fachlich verifiziert markiert."
+        },
+        "fehlerSimulation": {
+          "keine": "Keine Simulation",
+          "provider": "Provider-Fehler",
+          "validierung": "Validierungsfehler"
+        },
+        "aktionen": {
+          "lernzieleGenerieren": "Lernziele automatisch generieren",
+          "generieren": "Generierung starten",
+          "speichern": "Auswahl speichern",
+          "verwerfen": "Verwerfen",
+          "neu": "Regenerieren",
+          "einfacher": "Einfacher",
+          "schwieriger": "Schwieriger",
+          "praxisnaeher": "Praxisnäher",
+          "kuerzer": "Kürzer",
+          "ausfuehrlicher": "Ausführlicher"
+        },
+        "preview": {
+          "titel": "Preview",
+          "hinweis": "Prüfe und bearbeite die Inhalte vor dem Speichern."
+        },
+        "meldungen": {
+          "lernziele": "Lernziele generiert und ausgewählt.",
+          "gespeichert": "{anzahl} Inhalte gespeichert.",
+          "verworfen": "Preview verworfen."
+        },
+        "leer": {
+          "lernziele": "Für dieses Unterthema sind noch keine Lernziele sichtbar."
+        },
+        "fehler": {
+          "taxonomie": "Bitte Fachbereich, Thema und Unterthema auswählen.",
+          "json": "Inhalt muss gültiges JSON sein."
+        },
+        "fertig": {
+          "titel": "Demo-Inhalte gespeichert",
+          "text": "{anzahl} Inhalte sind gespeichert und im Demo-Modus sichtbar.",
+          "lernendenansicht": "Lernendenansicht öffnen"
+        }
+      },
+      "pagination": {
+        "zurueck": "Zurück",
+        "weiter": "Weiter",
+        "stand": "Seite {seite} von {seiten}"
+      },
+      "leer": {
+        "titel": "Keine Inhalte gefunden",
+        "text": "Passe Suche oder Filter an."
+      },
+      "fehler": {
+        "titel": "Content-Verwaltung konnte nicht geladen werden",
+        "text": "Etwas ist schiefgelaufen. Versuche es erneut.",
+        "erneutVersuchen": "Erneut versuchen",
+        "aktion": "Aktion fehlgeschlagen: {fehler}"
+      },
+      "nichtGefunden": {
+        "titel": "Content nicht gefunden",
+        "text": "Dieser Inhalt existiert nicht oder ist für dich nicht sichtbar."
+      },
+      "qualitaet": {
+        "titel": "Qualitätsprüfung",
+        "hinweis": "Informative Prüfung generierter Inhalte. Der Score ist keine fachliche Freigabe und blockiert Demo-Inhalte nicht.",
+        "zurListe": "Zur Content-Liste",
+        "filter": {
+          "label": "Score filtern",
+          "alle": "Alle",
+          "problematisch": "0-59 problematisch",
+          "pruefen": "60-79 prüfen",
+          "gut": "80-100 gute Qualität",
+          "ohne": "Ohne Prüfung"
+        }
+      },
+      "wissensdatenbank": {
+        "titel": "Wissensdatenbank",
+        "beschreibung": "Optionale Quellenbasis für spätere Suche und RAG. Der Campus und die Content-Generierung funktionieren weiter ohne sie.",
+        "ragHinweisTitel": "RAG bleibt deaktiviert",
+        "ragHinweisText": "Standard ist RAG_ENABLED=false. Dokumente werden gespeichert, bereinigt und in Chunks zerlegt, aber noch nicht als Pflichtquelle für Generierung verwendet.",
+        "keinZugriffTitel": "Kein Zugriff",
+        "keinZugriffText": "Die Wissensdatenbank ist nur für berechtigte Admin- und Verwaltungsrollen sichtbar.",
+        "textForm": {
+          "titel": "Manuellen Fachtext hinzufügen"
+        },
+        "dateiForm": {
+          "titel": "Text- oder Markdown-Datei hochladen",
+          "hinweis": "Im ersten Stand werden .txt und .md direkt verarbeitet. PDF, DOCX und URL sind vorbereitet, aber noch kein Pflichtpfad."
+        },
+        "felder": {
+          "titel": "Titel",
+          "titelOptional": "Titel (optional)",
+          "beschreibung": "Beschreibung",
+          "text": "Fachtext",
+          "datei": "Datei"
+        },
+        "aktionen": {
+          "textSpeichern": "Text speichern",
+          "dateiHochladen": "Datei hochladen",
+          "deaktivieren": "Deaktivieren",
+          "loeschen": "Löschen"
+        },
+        "meldungen": {
+          "textGespeichert": "Textquelle gespeichert und verarbeitet.",
+          "dateiGespeichert": "Datei gespeichert und verarbeitet.",
+          "deaktiviert": "Dokument deaktiviert.",
+          "geloescht": "Dokument gelöscht.",
+          "fehler": "Aktion fehlgeschlagen: {fehler}"
+        },
+        "liste": {
+          "titel": "Dokumentliste",
+          "gesamt": "{gesamt} Dokumente",
+          "tabelle": "Wissensdokumente"
+        },
+        "filter": {
+          "alle": "Alle",
+          "aktiv": "Aktiv",
+          "fehler": "Fehler",
+          "deaktiviert": "Deaktiviert"
+        },
+        "spalten": {
+          "titel": "Titel",
+          "status": "Status",
+          "quelle": "Quelle",
+          "dateityp": "Dateityp",
+          "erstellt": "Erstellt",
+          "chunks": "Chunks",
+          "index": "Index",
+          "aktionen": "Aktionen"
+        },
+        "quellen": {
+          "pdf": "PDF",
+          "docx": "DOCX",
+          "markdown": "Markdown",
+          "text": "Text",
+          "url": "URL",
+          "manueller_fachtext": "Manueller Fachtext"
+        },
+        "status": {
+          "neu": "Neu",
+          "hochgeladen": "Hochgeladen",
+          "parsing": "Parsing",
+          "geparst": "Geparst",
+          "chunking": "Chunking",
+          "indexiert": "Indexiert",
+          "fehler": "Fehler",
+          "deaktiviert": "Deaktiviert",
+          "geloescht": "Gelöscht"
+        },
+        "index": {
+          "nicht_noetig": "Nicht nötig",
+          "ausstehend": "Ausstehend",
+          "mock_indexiert": "Mock-indexiert",
+          "indexiert": "Indexiert",
+          "fehler": "Fehler"
+        },
+        "badges": {
+          "mockEmbedding": "Mock-Embedding",
+          "aktiv": "Aktiv",
+          "inaktiv": "Inaktiv"
+        },
+        "leer": {
+          "titel": "Noch keine Wissensdokumente",
+          "text": "Füge manuellen Text hinzu oder lade eine Markdown-/Textdatei hoch."
+        },
+        "pagination": {
+          "zurueck": "Zurück",
+          "weiter": "Weiter",
+          "stand": "Seite {seite} von {seiten}"
+        },
+        "detail": {
+          "beschreibungFallback": "Wissensdokument",
+          "zurueck": "Zur Wissensdatenbank",
+          "ragHinweis": "Dieses Dokument ist optional. Es wird noch nicht automatisch als Quelle für Content-Generierung verwendet.",
+          "fehlerTitel": "Verarbeitungsfehler",
+          "chunksTitel": "Chunks",
+          "keineChunks": "Für dieses Dokument wurden noch keine Chunks gespeichert.",
+          "chunkNummer": "Chunk {nummer}",
+          "tokens": "geschätzte Tokens"
+        }
+      },
+      "platzhalter": {
+        "themen": {
+          "titel": "Themenverwaltung folgt",
+          "text": "Themen sind in dieser Phase über Filter und Detailansichten sichtbar, aber noch nicht eigenständig bearbeitbar."
+        },
+        "lernziele": {
+          "titel": "Lernzielverwaltung folgt",
+          "text": "Lernziele werden angezeigt; ein eigener Editor kommt in einer späteren Phase."
+        },
+        "quizze": {
+          "titel": "Quizverwaltung folgt",
+          "text": "Quiz-Zuordnungen sind vorbereitet, aber noch nicht als eigene Admin-Funktion aktiv."
+        },
+        "kigenerator": {
+          "titel": "KI-Generator deaktiviert",
+          "text": "In dieser Phase werden keine KI-Aufrufe oder Generator-Oberflächen umgesetzt."
+        },
+        "qualitaetspruefung": {
+          "titel": "Qualitätsprüfung folgt",
+          "text": "Qualitätswerte werden angezeigt; Prüf-Workflows kommen später."
+        },
+        "wissensdatenbank": {
+          "titel": "Wissensdatenbank deaktiviert",
+          "text": "Wissensdatenbank und RAG sind optional und in dieser Phase nicht aktiv."
+        },
+        "unbekannt": {
+          "titel": "Bereich nicht gefunden",
+          "text": "Dieser Content-Bereich ist nicht bekannt."
+        }
+      }
     },
     "rollen": {
       "teilnehmer": "Teilnehmer",

@@ -38,7 +38,6 @@ export async function holeLerneinheitenFuerThema(
     .from('lerneinheiten')
     .select('id, titel, lesedauer_minuten, reihenfolge, inhalt_mdx')
     .eq('thema_id', themaId)
-    .eq('status', 'freigegeben')
     .order('reihenfolge', { ascending: true });
   if (error || !data) return [];
   const geprueft = lerneinheitListeSchema.array().safeParse(data);
@@ -53,7 +52,6 @@ export async function holeLerneinheit(
     .from('lerneinheiten')
     .select('id, thema_id, titel, inhalt_mdx, lesedauer_minuten, quellenangaben, reihenfolge')
     .eq('id', lerneinheitId)
-    .eq('status', 'freigegeben')
     .maybeSingle();
   if (error || !data) return null;
   const geprueft = lerneinheitDetailSchema.safeParse(data);
