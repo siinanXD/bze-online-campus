@@ -20,6 +20,8 @@ export interface BottomNavProps {
    * Entspricht `flag_berichtsheft` aus SPEC §6.1. Default: aktiv.
    */
   berichtsheftAktiv?: boolean;
+  /** Ueberschreibt den aktiven Pfad. Nur fuer die Designvorschau. */
+  aktivPfad?: string;
   className?: string;
 }
 
@@ -44,8 +46,9 @@ const NAV_ITEMS: NavItem[] = [
  * Farbe ist nie alleiniger Träger: aktiver Tab erhält zusätzlich Fettschrift,
  * ein kräftigeres Icon und `aria-current="page"`.
  */
-export function BottomNav({ berichtsheftAktiv = true, className }: BottomNavProps) {
-  const pathname = usePathname() ?? '';
+export function BottomNav({ berichtsheftAktiv = true, aktivPfad, className }: BottomNavProps) {
+  const echterPfad = usePathname() ?? '';
+  const pathname = aktivPfad ?? echterPfad;
   const locale = useLocale();
   const t = useTranslations('shell.nav');
 

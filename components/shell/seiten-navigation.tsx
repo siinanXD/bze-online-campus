@@ -21,6 +21,8 @@ export interface SeitenNavigationProps {
   gruppen: NavGruppe[];
   nutzerName: string;
   nutzerRolle: string;
+  /** Ueberschreibt den aktiven Pfad. Nur fuer die Designvorschau. */
+  aktivPfad?: string;
   className?: string;
 }
 
@@ -33,9 +35,11 @@ export function SeitenNavigation({
   gruppen,
   nutzerName,
   nutzerRolle,
+  aktivPfad,
   className,
 }: SeitenNavigationProps) {
-  const pathname = usePathname() ?? '';
+  const echterPfad = usePathname() ?? '';
+  const pathname = aktivPfad ?? echterPfad;
   const locale = useLocale();
   const t = useTranslations('shell');
   const tApp = useTranslations('app');

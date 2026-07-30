@@ -1,11 +1,36 @@
 import { clsx, type ClassValue } from 'clsx';
-import { twMerge } from 'tailwind-merge';
+import { extendTailwindMerge } from 'tailwind-merge';
 
 /**
- * Fuehrt Klassen zusammen und laesst spaetere Tailwind-Klassen gewinnen.
- * Ohne twMerge wuerde ein durchgereichtes className die Basisklasse nicht
- * ueberschreiben, sondern nur danebenstehen.
+ * tailwind-merge muss unsere eigenen Skalen kennen. Sonst haelt es
+ * Schriftgroessen wie `text-body` faelschlich fuer Textfarben und entfernt
+ * die tatsaechliche Farbklasse aus derselben Gruppe — im Ergebnis stand auf
+ * dem Primaerbutton dunkler statt heller Text (Kontrast 3.48:1 statt 5.14:1).
  */
+const twMerge = extendTailwindMerge({
+  extend: {
+    classGroups: {
+      'font-size': [
+        {
+          text: [
+            'caption',
+            'overline',
+            'body-sm',
+            'label',
+            'body',
+            'body-lg',
+            'h4',
+            'h3',
+            'h2',
+            'h1',
+            'display',
+          ],
+        },
+      ],
+    },
+  },
+});
+
 export function cn(...parts: ClassValue[]): string {
   return twMerge(clsx(parts));
 }
