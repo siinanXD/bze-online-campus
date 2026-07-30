@@ -179,3 +179,35 @@ Neu in 0013:
   - `lerneinheit_uebersetzung_freigeben(p_lerneinheit_id uuid, p_sprache text default null)` — analog für `lerneinheiten_uebersetzungen`.
 
 Edge Functions: `uebersetze-frage` (nur Kernpool `fragen.kern = true`; schreibt `fragen_uebersetzungen`) und `uebersetze-lerneinheit` (nur freigegebene Lerneinheiten; schreibt `lerneinheiten_uebersetzungen`). Beide erzeugen in die fünf Zielsprachen (en, fr, ar, uk, tr — Quelle Deutsch ausgenommen), setzen `freigegeben = false`, überspringen bereits vorhandene Sprachen (dauerhafter Cache), unterstützen `LLM_MOCK=1`, protokollieren in `ki_aufrufe` und prüfen das Trägerbudget. Anzeige über die client-seitige Komponente `components/uebersetzungshilfe` (deutsches Original bleibt sichtbar, Übersetzung nur zusätzlich darunter).
+
+## AP-17 — Web Push und Lernserie
+
+Migration [`0014_push.sql`](../supabase/migrations/0014_push.sql): **additiv**. `profiles`, `app_is_admin`, `app_betreut` und `set_updated_at` stammen unverändert aus `0001_datenmodell.sql`.
+
+**Grundsatz:** Die Datenbank speichert nur. Ob und was gesendet wird, entscheidet ausschließlich `packages/core/benachrichtigung` — stille Zeiten, Rangfolge der Anlässe, Tagesdeckel und Mindestpausen liegen dort und sind ohne Datenbank getestet. Eine zweite Umsetzung in SQL würde unweigerlich auseinanderlaufen.
+
+Neu in 0014:
+
+- Aufzählungstyp `push_anlass_t` mit sieben Anlässen. Muss mit `Anlass` in [`packages/core/benachrichtigung/types.ts`](../packages/core/benachrichtigung/types.ts) übereinstimmen; neue Anlässe additiv per `alter type … add value`.
+- Tabelle `push_abos (id, user_id, endpoint unique, p256dh, auth_secret, geraet, zuletzt_gesendet_am, fehlversuche, created_at, updated_at)` — ein Eintrag je Gerät und Browser. `p256dh` und `auth_secret` sind die Browserschlüssel für die Nutzlastverschlüsselung nach RFC 8291. `unique (endpoint)` verhindert doppelte Benachrichtigungen auf einem Gerät, weil der Browser beim erneuten Abonnieren denselben Endpunkt liefert.
+- Tabelle `push_einstellungen (user_id pk, aktiv, zeitzone, still_von, still_bis, max_pro_tag, abgewaehlt push_anlass_t[], tagesziel, created_at, updated_at)`. `aktiv` steht auf **false**: Push kommt nur nach ausdrücklicher Zustimmung, nie durch Voreinstellung. Die Prüfbedingungen spiegeln die Grenzen der Domain (`max_pro_tag` ≤ 5 entspricht `ABSOLUTES_MAX_PRO_TAG`, `tagesziel` 3–100 entspricht `MIN_TAGESZIEL`/`MAX_TAGESZIEL`).
+- Tabelle `push_protokoll (id, user_id, anlass, gesendet_am, tag)` als Grundlage für Tagesdeckel und Mindestpause. Speichert bewusst **keinen Nachrichtentext** — für die Entscheidung genügen Anlass und Zeitpunkt.
+- Tabelle `lern_aktivitaet (user_id, tag, antworten)`, Primärschlüssel `(user_id, tag)` — ein Eintrag je Person und Kalendertag, Grundlage für Lernserie und Tagesziel.
+- `notiere_lernaktivitaet(p_tag text, p_antworten integer default 1)` — **SECURITY INVOKER**, zählt beantwortete Fragen für einen Kalendertag der aufrufenden Person hoch. Prüft das Tagesformat und lehnt Tage mehr als einen Tag in der Zukunft ab, damit eine falsch gestellte Geräteuhr keine Lernserie vortäuschen kann.
+
+**Kalendertage als `text`, nicht als `date`:** `push_protokoll.tag` und `lern_aktivitaet.tag` speichern `YYYY-MM-DD` in der Zeitzone der Person. Ein `date` würde in Postgres aus einem Zeitstempel in UTC gebildet — wer um 23:30 deutscher Zeit lernt, bekäme den Tag falsch zugeordnet und verlöre seine Serie. Beide Spalten haben eine Prüfbedingung auf das Format.
+
+**RLS — Abweichung vom Grundmuster:** Migration 0001 aktiviert RLS über eine Schleife für alle damals bestehenden Tabellen; die neuen Tabellen werden hier ausdrücklich geschützt.
+
+| Tabelle | Person selbst | Ausbilder/Admin | Schreiben |
+|---|---|---|---|
+| `push_abos` | alles | **kein Zugriff** | Person selbst |
+| `push_einstellungen` | alles | **kein Zugriff** | Person selbst |
+| `push_protokoll` | nur lesen | kein Zugriff | nur `service_role` |
+| `lern_aktivitaet` | lesen | lesen (`app_betreut`) | Person selbst |
+
+Abos und Einstellungen haben — anders als die übrigen Lerndaten — **keine `_betreuer`-Policy**. Ein Push-Endpunkt identifiziert Browser und Gerät dauerhaft und ist damit personenbezogen; ein Ausbilder hat daran kein berechtigtes Interesse. `push_protokoll` ist für Clients schreibgeschützt, weil eine Person sonst ihr eigenes Protokoll leeren und damit den Frequenzdeckel umgehen könnte. `lern_aktivitaet` folgt dagegen dem Muster von `fragen_mastery`: sie ist Teil der Betreuung.
+
+**Zeitplan:** wie bei 0010 auskommentiert, weil pg_cron und pg_net in lokalen Instanzen meist fehlen. Vorgesehen sind zwei Läufe täglich (11:00 und 17:00 UTC) statt stündlich — die Domain filtert ohnehin über stille Zeiten und Mindestpausen, und zwei Läufe decken Mittag und Abend über alle europäischen Zeitzonen ab.
+
+Edge Function: `sende-erinnerungen` (service_role, VAPID-signierte Zustellung, räumt abgelaufene Endpunkte auf). Oberfläche: Opt-in und Einstellungen unter `app/[locale]/campus/profil`, Service-Worker-Handler in `public/sw.js`.

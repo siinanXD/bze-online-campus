@@ -903,5 +903,86 @@
     "uebersetzungLabel": "Übersetzung",
     "hinweis": "Lernhilfe — Prüfungsinhalte bleiben Deutsch.",
     "nichtVerfuegbar": "Für diesen Abschnitt gibt es noch keine freigegebene Übersetzung."
+  },
+  "push": {
+    "einstellungen": {
+      "titel": "Erinnerungen",
+      "nutzen": "Ein kurzer Hinweis, wenn Wiederholungen fällig sind oder deine Lernserie zu Ende geht. Höchstens zweimal am Tag, nie nachts.",
+      "aktivieren": "Erinnerungen einschalten",
+      "deaktivieren": "Auf diesem Gerät ausschalten",
+      "speichern": "Einstellungen speichern",
+      "gespeichert": "Einstellungen gespeichert.",
+      "aktiviert": "Erinnerungen sind eingeschaltet.",
+      "deaktiviert": "Erinnerungen sind ausgeschaltet.",
+      "abgelehnt": "Ohne Erlaubnis des Browsers können keine Erinnerungen ankommen.",
+      "fehlerSpeichern": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
+      "nichtUnterstuetzt": "Dieser Browser kann keine Erinnerungen anzeigen. Installiere die App auf dem Startbildschirm, um sie zu nutzen.",
+      "imBrowserGesperrt": "Erinnerungen sind in den Browsereinstellungen für diese Seite gesperrt. Dort kannst du sie wieder freigeben.",
+      "anlaesse": "Wann möchtest du erinnert werden?",
+      "anlaesseHinweis": "Abgewählte Anlässe werden nie gesendet.",
+      "stillVon": "Ruhe ab",
+      "stillBis": "Ruhe bis",
+      "maxProTag": "Höchstens pro Tag",
+      "tagesziel": "Tagesziel (Fragen)",
+      "zeitzone": "Zeiten gelten in deiner Zeitzone: {zone}",
+      "geraete": "Angemeldete Geräte",
+      "geraetEntfernen": "Entfernen"
+    },
+    "anlass": {
+      "faellige_wiederholung": "Fällige Wiederholungen",
+      "serie_gefaehrdet": "Lernserie in Gefahr",
+      "tagesziel_offen": "Tagesziel fast geschafft",
+      "wochenpruefung_offen": "Offene Wochenprüfung",
+      "nachweis_luecke": "Fehlender Ausbildungsnachweis",
+      "nachweis_entschieden": "Entscheidung des Ausbilders",
+      "wochenbericht_bereit": "Neuer Wochenbericht"
+    },
+    "faellige_wiederholung": {
+      "titel": "{anzahl} Fragen sind fällig",
+      "text": "Ein paar Minuten reichen, um sie zu wiederholen."
+    },
+    "faellige_wiederholung_fehler": {
+      "titel": "{fehler} Fragen von letztem Mal warten",
+      "text": "Fehler sitzen am schnellsten, wenn du sie gleich noch einmal ansiehst."
+    },
+    "serie_gefaehrdet": {
+      "titel": "Deine Serie steht bei {tage} Tagen",
+      "text": "Eine Frage heute genügt, damit sie weiterläuft."
+    },
+    "tagesziel_offen": {
+      "titel": "Noch {offen} Fragen bis zum Tagesziel",
+      "text": "Das schaffst du vor dem Feierabend."
+    },
+    "wochenpruefung_offen": {
+      "titel": "Die Wochenprüfung steht noch aus",
+      "text": "Sie läuft im Originalformat der Kammerprüfung."
+    },
+    "nachweis_luecke": {
+      "titel": "{anzahl} Wochen im Ausbildungsnachweis fehlen",
+      "text": "Nachtragen geht schneller, solange du dich noch erinnerst."
+    },
+    "nachweis_entschieden": {
+      "titel": "Dein Ausbilder hat entschieden",
+      "text": "Sieh im Berichtsheft nach, was zu tun ist."
+    },
+    "wochenbericht_bereit": {
+      "titel": "Dein Wochenbericht ist da",
+      "text": "Mit den Merksätzen aus dieser Woche."
+    }
+  },
+  "fokus": {
+    "titel": "Dein Fokus heute",
+    "serieAktiv": "{tage} Tage in Folge",
+    "serieGefaehrdet": "{tage} Tage in Folge — heute noch offen",
+    "serieGerissen": "Noch keine Serie",
+    "serieBestmarke": "Beste Serie: {tage} Tage",
+    "serieErsterTag": "Heute ist dein erster Tag",
+    "tagesziel": "{erledigt} von {ziel} Fragen",
+    "tageszielErreicht": "Tagesziel geschafft",
+    "fehlerWiederholen": "{anzahl} Fehler wiederholen",
+    "fehlerWiederholenCta": "Jetzt wiederholen",
+    "faelligGesamt": "{anzahl} Fragen fällig",
+    "nichtsFaellig": "Gerade ist nichts fällig — gut gemacht.",
+    "neueAbzeichen": "Neues Abzeichen: {titel}"
   }
 }
