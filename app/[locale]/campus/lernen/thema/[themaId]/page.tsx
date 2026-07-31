@@ -14,8 +14,7 @@ export default async function ThemaLernen({ params }: { params: Promise<{ locale
   const { data: fragenRoh } = await supabase
     .from('fragen')
     .select('id,typ,aufgabenstellung,bild_url,schwierigkeit,kern,tabellenbuch_fundstelle, antwortoptionen(id,text,reihenfolge)')
-    .eq('thema_id', themaId)
-    .eq('status', 'freigegeben');
+    .eq('thema_id', themaId);
 
   const alleMc = (fragenRoh ?? []).filter((f) => f.typ === 'mc');
   const freitextAnzahl = (fragenRoh ?? []).filter((f) => f.typ === 'freitext').length;

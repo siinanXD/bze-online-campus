@@ -210,6 +210,106 @@
     "unterricht": {
       "hinweis": "Videolar yakında gelecek."
     },
+    "content": {
+      "navigation": {
+        "fachkunde": "Knowledge",
+        "zurFachkunde": "Back to knowledge",
+        "thema": "Topic",
+        "unterthema": "Subtopic",
+        "breadcrumb": "Context",
+        "oeffnen": "Open"
+      },
+      "index": {
+        "titel": "Knowledge",
+        "beschreibung": "Choose a subject area and move through topics and subtopics to the learning module.",
+        "themenAnzahl": "{anzahl} topics"
+      },
+      "modul": {
+        "titel": "Learning module",
+        "beschreibung": "Opens the module view with explanations, flashcards, cases, calculation tasks and quiz entry.",
+        "cta": "Open learning module",
+        "badge": "Learning module"
+      },
+      "hinweise": {
+        "demoTitel": "AI-generated sample content",
+        "demoText": "This content is marked as demo content and is visible in demo mode.",
+        "verifikationText": "This content is not professionally verified and is not automatically considered checked in production mode.",
+        "nichtVerifiziertKurz": "Not professionally verified"
+      },
+      "abschnitte": {
+        "unterthemen": "Subtopics",
+        "fortschritt": "Reading progress",
+        "lernziele": "Learning objectives",
+        "einfuehrung": "Short introduction",
+        "erklaerung": "Detailed explanation",
+        "praxisbeispiel": "Practice example",
+        "merkpunkte": "Key points",
+        "lernkarten": "Flashcards",
+        "uebungen": "Exercises",
+        "praxisfaelle": "Practice cases",
+        "rechenaufgaben": "Calculation tasks",
+        "quiz": "Quiz",
+        "zusammenfassung": "Summary",
+        "naechsterSchritt": "Next learning step"
+      },
+      "fortschritt": {
+        "leseeinheiten": "{gelesen} of {gesamt} linked reading sections started."
+      },
+      "quiz": {
+        "hinweis": "Assessment, repetition and mastery continue through the existing exercise mode.",
+        "cta": "Start exercise mode"
+      },
+      "lernkarten": {
+        "vorderseite": "Front",
+        "rueckseite": "Back"
+      },
+      "fragen": {
+        "singleChoice": "Single choice",
+        "multipleChoice": "Multiple choice",
+        "kernfrage": "Core question",
+        "richtig": "Correct"
+      },
+      "praxisfall": {
+        "situation": "Situation",
+        "aufgabe": "Task",
+        "erwartung": "Expected points"
+      },
+      "rechenaufgabe": {
+        "gegebeneWerte": "Given values",
+        "gesuchteGroesse": "Target value",
+        "formel": "Formula",
+        "loesungAnzeigen": "Show solution",
+        "loesungsweg": "Solution path",
+        "ergebnis": "Result",
+        "erklaerung": "Explanation",
+        "werteInAufgabe": "Given in the task"
+      },
+      "leer": {
+        "fachbereicheTitel": "No subject areas yet",
+        "fachbereicheText": "Visible subject areas will appear here.",
+        "themenTitel": "No topics yet",
+        "themenText": "No topics are visible for this subject area yet.",
+        "modulTitel": "No module content yet",
+        "modulText": "No visible content elements exist for this subtopic yet.",
+        "lernziele": "No learning objectives are visible for this module yet.",
+        "praxisfall": "No practice case is visible for this module yet.",
+        "merkpunkte": "No key points are visible for this module yet.",
+        "lernkarten": "No flashcards are visible for this module yet.",
+        "uebungen": "No exercises are visible for this module yet.",
+        "rechenaufgaben": "No calculation tasks are visible for this module yet.",
+        "keineInhalte": "No content available.",
+        "keineAngabe": "No information."
+      },
+      "fehler": {
+        "titel": "Knowledge could not be loaded",
+        "text": "Something went wrong. Try again.",
+        "erneutVersuchen": "Try again"
+      },
+      "nichtGefunden": {
+        "titel": "Learning module not found",
+        "text": "This learning module does not exist or is not visible to you."
+      }
+    },
     "kapitel": {
       "fortschritt": "Bölümlerin %{prozent} kadarı okundu",
       "liste": "Bölüm listesi"
@@ -238,7 +338,32 @@
       "beschriftung": "Yönetici alanı",
       "nutzerverwaltung": "Kullanıcı yönetimi",
       "auditLog": "Denetim günlüğü",
-      "monitoring": "İzleme"
+      "monitoring": "İzleme",
+      "content": "Content"
+    },
+    "content": {
+      "nav": { "label": "Content management", "uebersicht": "Overview", "themen": "Topics", "lernziele": "Learning objectives", "inhalte": "Content", "fragen": "Questions", "lernkarten": "Flashcards", "praxisfaelle": "Practice cases", "rechenaufgaben": "Calculation tasks", "quizze": "Quizzes", "kiGenerator": "AI generator", "qualitaetspruefung": "Quality review", "wissensdatenbank": "Knowledge base" },
+      "dashboard": { "titel": "Content dashboard", "hinweis": "Metrics for visible content elements, questions, learning objectives and demo content.", "zurListe": "Open content list", "naechsteSchritteTitel": "Not active yet", "naechsteSchritteText": "AI generator, quality review and knowledge base are not functional in this phase." },
+      "kennzahlen": { "fachbereiche": "Subject areas", "themen": "Topics", "unterthemen": "Subtopics", "lernziele": "Learning objectives", "erklaerungen": "Explanations", "fragen": "Questions", "lernkarten": "Flashcards", "praxisfaelle": "Practice cases", "rechenaufgaben": "Calculation tasks", "quizze": "Quizzes", "demoInhalte": "Demo content", "entwuerfe": "Drafts", "freigegeben": "Released", "kiGeneriert": "AI-generated", "manuell": "Manual" },
+      "liste": { "titel": "Content list", "hinweis": "Manage content elements. Existing question management remains responsible for question approval and editing.", "tabelle": "Content elements", "auswahl": "Selection", "auswaehlen": "Select {titel}", "auswahlZaehler": "{anzahl} selected", "gesamt": "{gesamt} entries visible", "bulkStatusLabel": "Change status for selected content", "statusAendern": "Change status", "archivieren": "Archive", "bulkErfolg": "Bulk action saved." },
+      "filter": { "alle": "All", "suche": "Search", "suchePlaceholder": "Title or description", "typ": "Content type", "fachbereich": "Subject area", "thema": "Topic", "schwierigkeit": "Difficulty", "status": "Status", "quelle": "Source", "demo": "Demo", "demoJa": "Demo", "demoNein": "Production", "qualitaet": "Quality range", "qualitaetNiedrig": "below 50%", "qualitaetMittel": "50 to 79%", "qualitaetHoch": "80% and above", "qualitaetOhne": "without value", "von": "Created from", "bis": "Created until", "zuruecksetzen": "Reset filters" },
+      "spalten": { "titel": "Title", "typ": "Type", "status": "Status", "demo": "Demo", "quelle": "Source", "schwierigkeit": "Difficulty", "lernziele": "Objectives", "qualitaet": "Quality" },
+      "typen": { "erklaerung": "Explanation", "lernkarte": "Flashcard", "single_choice": "Single choice", "multiple_choice": "Multiple choice", "freitext": "Free text", "rechenaufgabe": "Calculation task", "praxisfall": "Practice case", "pruefungsnahe_uebungsfrage": "Exam-like exercise", "zusammenfassung": "Summary" },
+      "status": { "entwurf": "Draft", "generiert": "Generated", "in_pruefung": "In review", "freigegeben": "Released", "abgelehnt": "Rejected", "archiviert": "Archived" },
+      "schwierigkeit": { "einfach": "Easy", "mittel": "Medium", "schwer": "Hard" },
+      "quellen": { "tabellenbuch": "Reference book", "rahmenlehrplan": "Framework curriculum", "traegerskript": "Provider script", "web": "Web", "ki": "AI", "mock_ai": "Mock AI", "demo": "Demo", "manuell": "Manual", "unbekannt": "Unknown" },
+      "badges": { "demo": "Demo", "produktion": "Production" },
+      "hinweise": { "demoTitel": "Demo content", "demoText": "This content is marked as demo and must be professionally reviewed." },
+      "detail": { "kicker": "Content detail", "zurListe": "Back to list", "kiAnbieter": "AI provider", "kiModell": "AI model", "lernziele": "Learning objectives", "keineLernziele": "No learning objectives linked.", "verknuepfteFrage": "Linked question", "fragenHinweis": "Question content and approval remain in existing question management.", "bearbeiten": "Edit content", "gespeichert": "Content saved.", "statusGespeichert": "Status saved.", "archiviert": "Content archived.", "geloescht": "Content deleted.", "loeschenBestaetigung": "Really delete this content element? Linked questions or learning units remain." },
+      "felder": { "titel": "Title", "beschreibung": "Description", "istDemo": "Demo content", "demoSichtbar": "Visible in demo mode", "fachlichVerifiziert": "Professionally verified", "demoLabel": "Demo notice", "inhaltJson": "Content (JSON)" },
+      "aktionen": { "speichern": "Save", "statusAendern": "Save status", "archivieren": "Archive", "loeschen": "Delete" },
+      "generator": { "titel": "AI content generator", "hinweis": "Generate demo content with the mock provider or a server-side LLM provider. RAG stays disabled.", "konfiguration": { "titel": "Local generator configuration", "text": "Provider={provider}, model={modell}, AI_MOCK_MODE={aiMockMode}, LLM_API_KEY configured={llmConfigured}, CONTENT_SOURCE_MODE={sourceMode}, RAG_ENABLED={ragEnabled}" }, "progress": { "label": "Generator progress" }, "felder": { "fachbereich": "Subject area", "thema": "Topic", "unterthema": "Subtopic", "lernziele": "Learning objectives", "contentTypen": "Content types", "schwierigkeiten": "Difficulty levels", "anzahl": "Count per content type", "fehlerSimulation": "Simulate error state" }, "hinweise": { "lernziele": "Select existing or generate new demo objectives.", "contentTypen": "The later real AI provider uses the same output.", "schwierigkeiten": "Multiple levels generate variants.", "anzahl": "Maximum five per type and thirty items per run." }, "quelle": { "titel": "Source", "text": "All content is marked as generated AI, demo, and not professionally verified." }, "fehlerSimulation": { "keine": "No simulation", "provider": "Provider error", "validierung": "Validation error" }, "aktionen": { "lernzieleGenerieren": "Generate learning objectives", "generieren": "Start generation", "speichern": "Save selection", "verwerfen": "Discard", "neu": "Regenerate", "einfacher": "Easier", "schwieriger": "Harder", "praxisnaeher": "More practical", "kuerzer": "Shorter", "ausfuehrlicher": "More detailed" }, "preview": { "titel": "Preview", "hinweis": "Review and edit content before saving." }, "meldungen": { "lernziele": "Learning objectives generated and selected.", "gespeichert": "{anzahl} content items saved.", "verworfen": "Preview discarded." }, "leer": { "lernziele": "No learning objectives are visible for this subtopic yet." }, "fehler": { "taxonomie": "Select subject area, topic, and subtopic.", "json": "Content must be valid JSON." }, "fertig": { "titel": "Demo content saved", "text": "{anzahl} items have been saved and are visible in demo mode.", "lernendenansicht": "Open learner view" } },
+      "pagination": { "zurueck": "Back", "weiter": "Next", "stand": "Page {seite} of {seiten}" },
+      "leer": { "titel": "No content found", "text": "Adjust search or filters." },
+      "fehler": { "titel": "Content management could not be loaded", "text": "Something went wrong. Try again.", "erneutVersuchen": "Try again", "aktion": "Action failed: {fehler}" },
+      "nichtGefunden": { "titel": "Content not found", "text": "This content does not exist or is not visible to you." },
+      "qualitaet": { "titel": "Quality review", "hinweis": "Informative review for generated content. The score is not a professional approval and does not block demo content.", "zurListe": "Back to content list", "filter": { "label": "Filter by score", "alle": "All", "problematisch": "0-59 problematic", "pruefen": "60-79 review", "gut": "80-100 good quality", "ohne": "No review" } },
+      "platzhalter": { "themen": { "titel": "Topic management follows", "text": "Topics are not independently editable yet." }, "lernziele": { "titel": "Learning objective management follows", "text": "A dedicated editor comes later." }, "quizze": { "titel": "Quiz management follows", "text": "Quiz admin is not active yet." }, "kigenerator": { "titel": "AI generator disabled", "text": "No AI calls are implemented in this phase." }, "qualitaetspruefung": { "titel": "Quality review follows", "text": "Review workflows come later." }, "wissensdatenbank": { "titel": "Knowledge base disabled", "text": "Knowledge base and RAG are inactive in this phase." }, "unbekannt": { "titel": "Area not found", "text": "This content area is unknown." } }
     },
     "rollen": {
       "teilnehmer": "Katılımcı",

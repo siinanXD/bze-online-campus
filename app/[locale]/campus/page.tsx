@@ -36,8 +36,7 @@ export default async function CampusStart({ params }: { params: Promise<{ locale
 
   const { data: fragen } = await supabase
     .from('fragen')
-    .select('thema_id, themen!inner(id,bezeichnung)')
-    .eq('status', 'freigegeben');
+    .select('thema_id, themen!inner(id,bezeichnung)');
   const themenMap = new Map<string, string>();
   for (const f of (fragen ?? []) as any[]) {
     if (f.themen) themenMap.set(f.themen.id, f.themen.bezeichnung);
@@ -105,9 +104,7 @@ export default async function CampusStart({ params }: { params: Promise<{ locale
           <p className="font-semibold">{t('topics')}</p>
           <p className="text-sm text-fg-muted">{t('topicsInfo')}</p>
         </div>
-        {themen[0] && (
-          <Link href={`/${locale}/campus/topic/${themen[0][0]}`}><Button variante="sekundaer">{t('oeffnen')}</Button></Link>
-        )}
+        <Link href={`/${locale}/campus/topic`}><Button variante="sekundaer">{t('oeffnen')}</Button></Link>
       </Card>
     </main>
   );

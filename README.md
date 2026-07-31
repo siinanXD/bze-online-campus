@@ -58,6 +58,17 @@ Welche Variable woher kommt, wie der erste Anmeldezugang entsteht (es gibt keine
 Selbstregistrierung) und wie Edge Functions lokal laufen, steht in
 [`docs/LOKAL-EINRICHTEN.md`](docs/LOKAL-EINRICHTEN.md).
 
+Der Admin-Content-Generator nutzt lokal standardmaessig `AI_MOCK_MODE=true`,
+`CONTENT_SOURCE_MODE=generated` und `RAG_ENABLED=false`. Der Generated-Modus
+ruft kein Retrieval auf. Optional sind `CONTENT_SOURCE_MODE=knowledge_base`
+oder `CONTENT_SOURCE_MODE=hybrid` moeglich; beide brauchen explizit
+`RAG_ENABLED=true` und nutzen RLS-sichtbare Wissensdatenbank-Chunks
+(`RAG_TOP_K`, `RAG_MIN_SIMILARITY`, lokal `RAG_MOCK_RETRIEVAL=true`). Fuer echte
+serverseitige LLM-Generierung `AI_MOCK_MODE=false` setzen und `LLM_API_KEY`,
+`LLM_BASE_URL` sowie `LLM_MODELL` konfigurieren. Ohne API-Key schaltet die App
+nicht still auf einen kostenpflichtigen Provider um, sondern zeigt einen
+Konfigurationshinweis.
+
 Der Seed ist generiert, nicht handgeschrieben:
 
 ```bash

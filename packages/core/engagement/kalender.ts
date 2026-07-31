@@ -7,7 +7,7 @@
  * 23 Stunden, ist aber trotzdem genau ein Kalendertag.
  */
 
-import type { Kalendertag } from './types';
+import type { Kalendertag } from './types.ts';
 
 /** Standardzeitzone der Plattform (Erstpilot Euskirchen). */
 export const STANDARD_ZEITZONE = 'Europe/Berlin';

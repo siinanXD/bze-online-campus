@@ -72,6 +72,12 @@ export default async function AdminLayout({
           >
             {t('nav.monitoring')}
           </Link>
+          <Link
+            href={`/${locale}/admin/content`}
+            className="touchable inline-flex items-center whitespace-nowrap rounded-xl px-3.5 py-2 text-sm font-semibold text-fg hover:bg-surface"
+          >
+            {t('nav.content')}
+          </Link>
         </nav>
 
         <div className="min-w-0 space-y-4">{children}</div>

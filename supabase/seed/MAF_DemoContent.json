@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "beruf_slug": "maf-metall",
+    "fachbereich_code": "KI-DEMO-MAF",
+    "fachbereich": "KI-Demo-Content Metall- und Kunststofftechnik",
+    "beschreibung": "Umfangreicher Demo-Lerncontent fuer Maschinen- und Anlagenfuehrer/-innen mit Schwerpunkt Metall- und Kunststofftechnik.",
+    "demo_label": "KI-generierter Beispielinhalt - nicht fachlich verifiziert",
+    "ki_anbieter": "mock",
+    "ki_modell": "seed-demo-content-v1",
+    "status": "generiert",
+    "erstellt": "2026-07-30"
+  },
+  "themen": [
+    {
+      "code": "DEMO-WK",
+      "bezeichnung": "Werkstoffkunde",
+      "unterthemen": [
+        "Metalle",
+        "Stahl",
+        "Edelstahl",
+        "Gusseisen",
+        "Aluminium",
+        "Kupfer",
+        "Messing",
+        "Kunststoffe",
+        "Thermoplaste",
+        "Duroplaste",
+        "Elastomere",
+        "Werkstoffkennwerte",
+        "Haerte",
+        "Festigkeit",
+        "Zaehigkeit",
+        "Dichte",
+        "Korrosion",
+        "Waermebehandlung"
+      ]
+    },
+    {
+      "code": "DEMO-FT",
+      "bezeichnung": "Fertigungstechnik",
+      "unterthemen": [
+        "Drehen",
+        "Fraesen",
+        "Bohren",
+        "Saegen",
+        "Schleifen",
+        "Trennen",
+        "Umformen",
+        "Stanzen",
+        "Biegen",
+        "Schweissen",
+        "Loeten",
+        "Spritzgiessen",
+        "Kunststoffverarbeitung"
+      ]
+    },
+    {
+      "code": "DEMO-TM",
+      "bezeichnung": "Technische Mathematik",
+      "unterthemen": [
+        "Einheiten",
+        "Laengen",
+        "Flaechen",
+        "Volumen",
+        "Masse",
+        "Dichte",
+        "Kraefte",
+        "Drehmoment",
+        "Leistung",
+        "Arbeit",
+        "Geschwindigkeit",
+        "Drehzahl",
+        "Schnittgeschwindigkeit",
+        "Vorschub",
+        "Prozentrechnung",
+        "Verhaeltnisrechnung"
+      ]
+    },
+    {
+      "code": "DEMO-TZ",
+      "bezeichnung": "Technisches Zeichnen",
+      "unterthemen": [
+        "Linienarten",
+        "Massstaebe",
+        "Bemassung",
+        "Ansichten",
+        "Schnitte",
+        "Toleranzen",
+        "Passungen",
+        "Oberflaechen",
+        "Form- und Lagetoleranzen"
+      ]
+    },
+    {
+      "code": "DEMO-MA",
+      "bezeichnung": "Maschinen und Anlagen",
+      "unterthemen": [
+        "Maschinenaufbau",
+        "Antriebe",
+        "Elektromotoren",
+        "Pneumatik",
+        "Hydraulik",
+        "Sensoren",
+        "Aktoren",
+        "Steuerungen",
+        "Foerdertechnik",
+        "Wartung"
+      ]
+    },
+    {
+      "code": "DEMO-AS",
+      "bezeichnung": "Arbeitssicherheit",
+      "unterthemen": [
+        "Persoenliche Schutzausruestung",
+        "Gefahrenstellen",
+        "Schutzvorrichtungen",
+        "Gefahrstoffe",
+        "Brandschutz",
+        "Verhalten bei Unfaellen",
+        "Lockout-Tagout-Grundlagen",
+        "Ergonomie"
+      ]
+    }
+  ]
+}

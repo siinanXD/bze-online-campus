@@ -7,11 +7,11 @@
  * ersten, der zufällig geprüft wurde.
  */
 
-import { anlassErlaubt, pauseAbgelaufen, verbleibendesBudget } from './deckel';
-import { begruendeteAnlaesse } from './anlaesse';
-import { baueNutzlast } from './nutzlast';
-import { istStilleZeit } from './stille-zeiten';
-import type { GeplanteBenachrichtigung, PlanungsEingabe } from './types';
+import { anlassErlaubt, pauseAbgelaufen, verbleibendesBudget } from './deckel.ts';
+import { begruendeteAnlaesse } from './anlaesse.ts';
+import { baueNutzlast } from './nutzlast.ts';
+import { istStilleZeit } from './stille-zeiten.ts';
+import type { GeplanteBenachrichtigung, PlanungsEingabe } from './types.ts';
 
 /**
  * Plant die jetzt zu sendenden Benachrichtigungen für eine Person.

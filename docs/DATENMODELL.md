@@ -211,3 +211,25 @@ Abos und Einstellungen haben — anders als die übrigen Lerndaten — **keine `
 **Zeitplan:** wie bei 0010 auskommentiert, weil pg_cron und pg_net in lokalen Instanzen meist fehlen. Vorgesehen sind zwei Läufe täglich (11:00 und 17:00 UTC) statt stündlich — die Domain filtert ohnehin über stille Zeiten und Mindestpausen, und zwei Läufe decken Mittag und Abend über alle europäischen Zeitzonen ab.
 
 Edge Function: `sende-erinnerungen` (service_role, VAPID-signierte Zustellung, räumt abgelaufene Endpunkte auf). Oberfläche: Opt-in und Einstellungen unter `app/[locale]/campus/profil`, Service-Worker-Handler in `public/sw.js`.
+
+## AP-19 — KI-Content-Grundmodell
+
+Migration [`20260730200551_content_grundmodell.sql`](../supabase/migrations/20260730200551_content_grundmodell.sql): **additiv**. Bestehende Fachkunde-, Themen-, Fragen-, Mastery- und Fortschrittstabellen werden nicht ersetzt.
+
+Neu als gemeinsame Content-Metadaten:
+
+- Enums `content_typ_t`, `content_status_t`, `schwierigkeitsgrad_t`, `content_quellenart_t`.
+- Erweiterungen an `pruefungsbereiche`/`themen` um `beschreibung` und an `pruefungsbereiche` um `code`.
+- Erweiterungen an `lerneinheiten` und `fragen`: `beschreibung`, `content_typ`, `schwierigkeitsgrad`, `content_status`, `ist_demo`, `demo_sichtbar`, `demo_label`, `fachlich_verifiziert`, `quellenart`, `ki_anbieter`, `ki_modell`, `ki_metadaten`, `qualitaetswert`, `qualitaetsmetadaten`.
+- `lernziele` — Lernziele mit Fachbereich-/Thema-/Unterthema-Bezug.
+- `content_elemente` — gemeinsame Registry für Content-Metadaten; kann bestehende `lerneinheiten` oder `fragen` referenzieren und trägt neue Content-Typen wie Lernkarte, Praxisfall, Rechenaufgabe und Zusammenfassung.
+- `content_element_lernziele` — Zuordnung Content ↔ Lernziel.
+- `lernkarten` — Vorderseite/Rückseite als spezialisierte Nutzdaten für Content-Typ `lernkarte`.
+- `content_quellen` und `content_element_quellen` — Quellenmetadaten und Fundstellen, optional mit Bezug auf bestehende `quelldokumente`; keine Wissensdatenbank und kein RAG.
+- `content_quizze` und `content_quiz_fragen` — Quiz-/Übungsset-Zuordnung zu bestehenden `fragen`, ohne neue Bewertungs- oder Mastery-Logik.
+
+Demo-Sichtbarkeit ist serverseitig: `traeger.einstellungen.flag_demo_content` wird durch `app_demo_content_aktiv()` geprüft. Teilnehmer sehen im Produktionsmodus weiterhin grundsätzlich freigegebenen Content; Demo-Inhalte werden nur sichtbar, wenn `ist_demo = true`, `demo_sichtbar = true` und das Tenant-Flag aktiv ist. Demo-Inhalte können mit `demo_label`, `ist_demo` und `fachlich_verifiziert = false` als „KI-generierter Beispielinhalt“ und „nicht fachlich verifiziert“ gekennzeichnet werden.
+
+RLS ist auf allen neuen Tabellen aktiv. Verwaltung/Ausbilder/Admin verwalten Content des eigenen Trägers, Teilnehmer lesen freigegebenen oder explizit im Demo-Modus sichtbaren Content. Bestehende Policies für `lerneinheiten`, `fragen` und `antwortoptionen` wurden additiv um die serverseitige Demo-Regel erweitert.
+
+Die TypeScript-/Zod-Seite liegt in `@bze/core/content` und enthält Content-Typen, Statusworkflow, Schwierigkeitsgrade, Demo-Sichtbarkeitsregel und Validierungsschemas. Diese Schicht enthält keine KI-Aufrufe, keine Generator-UI, keine Wissensdatenbank, kein RAG und keine neue Bewertungs-/Mastery-Logik.

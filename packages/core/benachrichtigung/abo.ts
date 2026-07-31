@@ -6,7 +6,7 @@
  * dauerhaft an toten Adressen und riskiert, vom Push-Dienst gebremst zu werden.
  */
 
-import type { PushAbo } from './types';
+import type { PushAbo } from './types.ts';
 
 /** Nach so vielen Fehlversuchen in Folge gilt ein Abo als tot. */
 export const MAX_FEHLVERSUCHE = 3;
