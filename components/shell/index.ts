@@ -11,5 +11,7 @@ export {
   BerichtIcon,
   MehrIcon,
   ProfilIcon,
+  KontrastIcon,
+  AbmeldenIcon,
 } from './icons';
 export type { ShellIconProps } from './icons';

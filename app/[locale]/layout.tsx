@@ -58,7 +58,7 @@ export default async function LocaleLayout({
         >
           {t('label')}
         </a>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
           <ServiceWorkerManager />
         </NextIntlClientProvider>

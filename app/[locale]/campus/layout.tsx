@@ -1,6 +1,6 @@
 import { createServerSupabase } from '@bze/db/server';
 import { Header, BottomNav } from '@/components/shell';
-import { ladeBerufFortschrittProzent } from './fortschritt/_lib/queries';
+import { ladeFragenFortschrittProzent } from './lernen/_lib/fragen';
 
 export default async function CampusLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createServerSupabase();
@@ -9,16 +9,19 @@ export default async function CampusLayout({ children }: { children: React.React
   let fortschritt = 0;
   if (user) {
     try {
-      fortschritt = await ladeBerufFortschrittProzent(user.id);
-    } catch {
+      fortschritt = await ladeFragenFortschrittProzent(user.id);
+    } catch (error) {
+      console.error('Header-Fortschritt konnte nicht geladen werden.', error);
       fortschritt = 0;
     }
   }
 
   return (
-    <div className="min-h-screen pb-20">
+    <div className="flex h-dvh min-h-dvh flex-col overflow-hidden bg-bg pb-20">
       <Header value={fortschritt} />
-      {children}
+      <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
+        {children}
+      </div>
       <BottomNav berichtsheftAktiv={true} />
     </div>
   );

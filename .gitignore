@@ -21,6 +21,7 @@ package-lock.json
 
 # Lokale Werkzeug- und Editorkonfiguration
 .claude/
+.cursor/
 CLAUDE.md
 .idea/
 .vscode/

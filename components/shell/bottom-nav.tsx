@@ -35,7 +35,7 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { key: 'start', pfad: '/campus', exakt: true, Icon: StartIcon },
-  { key: 'lernen', pfad: '/campus/lernen', aktivPfade: ['/campus/topic'], Icon: LernenIcon },
+  { key: 'lernen', pfad: '/campus/lernen', aktivPfade: ['/campus/topic', '/campus/lernen/fragen'], Icon: LernenIcon },
   { key: 'pruefung', pfad: '/campus/pruefung', Icon: PruefungIcon },
   { key: 'bericht', pfad: '/campus/berichtsheft', Icon: BerichtIcon },
   { key: 'mehr', pfad: '/campus/mehr', Icon: MehrIcon },
