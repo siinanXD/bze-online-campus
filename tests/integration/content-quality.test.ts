@@ -5,7 +5,12 @@ import { join } from 'node:path';
 
 const ROOT = process.cwd();
 const MIGRATION = read('supabase/migrations/20260730215542_content_quality_review.sql');
-const QUALITY = read('packages/core/content/quality.ts');
+const QUALITY = [
+  read('packages/core/content/quality.ts'),
+  read('packages/core/content/quality-types.ts'),
+  read('packages/core/content/quality-text.ts'),
+  read('packages/core/content/quality-criteria.ts'),
+].join('\n');
 const VERSIONING = read('packages/core/content/versioning.ts');
 const ACTIONS = read('app/[locale]/admin/content/qualitaetspruefung/actions.ts');
 const PAGE = read('app/[locale]/admin/content/qualitaetspruefung/page.tsx');
