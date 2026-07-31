@@ -10,7 +10,7 @@ import { endlicheZahl } from '../werte/zahl.ts';
 import type { TageszielStand } from './types.ts';
 
 /** Voreinstellung, wenn niemand ein eigenes Ziel gesetzt hat. */
-export const STANDARD_TAGESZIEL = 10;
+export const STANDARD_TAGESZIEL = 20;
 
 /** Unter- und Obergrenze für selbst gesetzte Ziele. */
 export const MIN_TAGESZIEL = 3;

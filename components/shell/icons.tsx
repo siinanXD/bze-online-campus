@@ -79,3 +79,30 @@ export function ProfilIcon(props: ShellIconProps) {
     </svg>
   );
 }
+
+export function ZurueckIcon(props: ShellIconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M15 6 9 12l6 6" />
+    </svg>
+  );
+}
+
+export function KontrastIcon(props: ShellIconProps) {
+  return (
+    <svg {...base(props)}>
+      <circle cx="12" cy="12" r="8" />
+      <path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function AbmeldenIcon(props: ShellIconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M10 6H6.5A1.5 1.5 0 0 0 5 7.5v9A1.5 1.5 0 0 0 6.5 18H10" />
+      <path d="M14 8l4 4-4 4" />
+      <path d="M18 12H9" />
+    </svg>
+  );
+}

@@ -6,7 +6,7 @@ import { cn } from '@bze/ui';
 
 export type Darstellung = 'system' | 'hell' | 'dunkel';
 
-const SPEICHER_SCHLUESSEL = 'bze-darstellung';
+export const SPEICHER_SCHLUESSEL = 'bze-darstellung';
 
 /**
  * Laeuft als Inline-Skript im <head>, bevor der Body gerendert wird.
@@ -19,12 +19,17 @@ export const darstellungSkript = `
     var w = localStorage.getItem('${SPEICHER_SCHLUESSEL}') || 'system';
     var dunkel = w === 'dunkel' ||
       (w === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    localStorage.removeItem('bze-kontrastmodus');
+    document.documentElement.classList.remove('contrast');
     document.documentElement.classList.toggle('dark', dunkel);
   } catch (e) {}
 })();
 `;
 
-function anwenden(wahl: Darstellung) {
+/**
+ * Wendet die gespeicherte Darstellung auf die Root-Klasse an.
+ */
+export function anwenden(wahl: Darstellung) {
   const dunkel =
     wahl === 'dunkel' ||
     (wahl === 'system' &&

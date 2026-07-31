@@ -45,6 +45,7 @@ export interface PushEinstellungenSeite {
 export interface FokusStand {
   serie: Serie;
   tagesziel: TageszielStand;
+  pruefungsziel: TageszielStand;
   faellig: { falsch: number; neu: number; wiederholung: number; gesamt: number };
 }
 
@@ -145,6 +146,25 @@ async function ladeAntwortenAmTag(userId: string, tag: string): Promise<number> 
 }
 
 /**
+ * Zaehlt abgegebene Pruefungen an einem Kalendertag.
+ */
+async function ladePruefungenAmTag(userId: string, tag: string): Promise<number> {
+  const supabase = await createServerSupabase();
+  const start = `${tag}T00:00:00`;
+  const endeDatum = new Date(`${tag}T00:00:00Z`);
+  endeDatum.setUTCDate(endeDatum.getUTCDate() + 1);
+  const ende = endeDatum.toISOString();
+  const { count } = await supabase
+    .from('pruefung_ergebnisse')
+    .select('id', { count: 'exact', head: true })
+    .eq('user_id', userId)
+    .not('abgegeben_am', 'is', null)
+    .gte('abgegeben_am', start)
+    .lt('abgegeben_am', ende);
+  return count ?? 0;
+}
+
+/**
  * Lädt die Mastery-Stände für die Fälligkeitsrechnung.
  *
  * Nur freigegebene Fragen: Entwürfe und zurückgewiesene Fragen dürfen nie in
@@ -185,15 +205,17 @@ export async function ladeFokusStand(
     einstellungen.zeitzone,
   );
 
-  const [tage, antwortenHeute, faelligkeiten] = await Promise.all([
+  const [tage, antwortenHeute, pruefungenHeute, faelligkeiten] = await Promise.all([
     ladeAktivitaetstage(userId, fensterStart),
     ladeAntwortenAmTag(userId, heute),
+    ladePruefungenAmTag(userId, heute),
     ladeFaelligkeiten(userId),
   ]);
 
   return {
     serie: bewerteSerie(tage, heute),
     tagesziel: tageszielStand(antwortenHeute, tagesziel),
+    pruefungsziel: tageszielStand(pruefungenHeute, 1),
     faellig: faelligkeitsUebersicht(faelligkeiten, jetzt),
   };
 }

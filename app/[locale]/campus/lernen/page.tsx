@@ -1,29 +1,9 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
-import { Button, Card, CardKopf, CardTitel, Progress, ProgressRing, StatusBadge, type FrageStatus } from '@bze/ui';
+import { Card } from '@bze/ui';
 import { ladeFortsetzenEmpfehlung } from '../fortschritt/_lib/queries';
-
-type ThemaZeile = {
-  id: string;
-  bezeichnung: string;
-  gesamt: number;
-  fertig: number;
-  status: FrageStatus;
-};
-
-function themaStatus(counts: {
-  gesamt: number;
-  fertig: number;
-  falsch: number;
-  teil: number;
-}): FrageStatus {
-  if (counts.gesamt === 0) return 'neu';
-  if (counts.fertig >= counts.gesamt) return 'abgeschlossen';
-  if (counts.falsch > 0) return 'falsch';
-  if (counts.teil > 0 || counts.fertig > 0) return 'einmal_richtig';
-  return 'neu';
-}
+import { baueCuatalBloecke, berechneFragenFortschrittProzent, ladeFragenUebersicht } from './_lib/fragen';
 
 export default async function LernenIndex({
   params,
@@ -33,161 +13,130 @@ export default async function LernenIndex({
   const { locale } = await params;
   const t = await getTranslations('lernen');
   const tCampus = await getTranslations('campus');
-  const tStatus = await getTranslations('status');
   const supabase = await createServerSupabase();
 
   const {
     data: { user },
   } = await supabase.auth.getUser();
 
-  const { data: fragenRoh } = await supabase
-    .from('fragen')
-    .select('id, thema_id, themen!inner(id, bezeichnung)');
-
-  const fragen = (fragenRoh ?? []) as {
-    id: string;
-    thema_id: string;
-    themen: { id: string; bezeichnung: string } | { id: string; bezeichnung: string }[];
-  }[];
-
-  const frageIds = fragen.map((f) => f.id);
-  const masteryMap = new Map<string, string>();
-  if (user && frageIds.length > 0) {
-    const { data: masteryRoh } = await supabase
-      .from('fragen_mastery')
-      .select('frage_id, status')
-      .eq('user_id', user.id)
-      .in('frage_id', frageIds);
-    for (const m of masteryRoh ?? []) {
-      masteryMap.set(m.frage_id, m.status);
-    }
-  }
-
-  const aggregat = new Map<
-    string,
-    { bezeichnung: string; gesamt: number; fertig: number; falsch: number; teil: number }
-  >();
-
-  for (const f of fragen) {
-    const thema = Array.isArray(f.themen) ? f.themen[0] : f.themen;
-    if (!thema) continue;
-    const cur = aggregat.get(thema.id) ?? {
-      bezeichnung: thema.bezeichnung,
-      gesamt: 0,
-      fertig: 0,
-      falsch: 0,
-      teil: 0,
-    };
-    cur.gesamt += 1;
-    const status = masteryMap.get(f.id);
-    if (status === 'abgeschlossen') cur.fertig += 1;
-    else if (status === 'falsch') cur.falsch += 1;
-    else if (status === 'einmal_richtig') cur.teil += 1;
-    aggregat.set(thema.id, cur);
-  }
-
-  const themen: ThemaZeile[] = [...aggregat.entries()]
-    .map(([id, a]) => ({
-      id,
-      bezeichnung: a.bezeichnung,
-      gesamt: a.gesamt,
-      fertig: a.fertig,
-      status: themaStatus(a),
-    }))
-    .sort((a, b) => a.bezeichnung.localeCompare(b.bezeichnung, locale));
-
+  const uebersicht = await ladeFragenUebersicht(user?.id ?? null);
+  const themen = uebersicht.themen;
+  const gruppen = uebersicht.gruppen;
   const empfehlung = user ? await ladeFortsetzenEmpfehlung(user.id) : null;
-  const gesamtFertig = themen.reduce((s, t) => s + t.fertig, 0);
-  const gesamtFragen = themen.reduce((s, t) => s + t.gesamt, 0);
-  const gesamtProzent = gesamtFragen === 0 ? 0 : Math.round((gesamtFertig / gesamtFragen) * 100);
-
-  const statusLabel: Record<FrageStatus, string> = {
-    neu: tStatus('neu'),
-    einmal_richtig: tStatus('einmalRichtig'),
-    falsch: tStatus('falsch'),
-    abgeschlossen: tStatus('abgeschlossen'),
-  };
+  const gesamtProzent = berechneFragenFortschrittProzent(themen);
+  const fehler = gruppen.find((gruppe) => gruppe.id === 'falsch')?.anzahl ?? 0;
+  const fastFertig = gruppen.find((gruppe) => gruppe.id === 'fast_fertig')?.anzahl ?? 0;
+  const alleOffen = gruppen.find((gruppe) => gruppe.id === 'alle')?.anzahl ?? 0;
+  const cuatals = baueCuatalBloecke(themen);
 
   return (
-    <main className="mx-auto max-w-2xl space-y-4 p-4">
-      <header className="space-y-1 pt-2">
-        <h1 className="text-2xl font-extrabold">{t('titel')}</h1>
-        <p className="text-fg-muted">{t('einstiegHinweis')}</p>
+    <main className="mx-auto flex min-h-full max-w-2xl flex-col gap-2 p-3">
+      <header className="shrink-0">
+        <h1 className="text-xl font-extrabold">{t('titel')}</h1>
+        <p className="text-sm text-fg-muted">Fragen üben oder Prüfung starten.</p>
       </header>
 
-      {empfehlung && (
-        <Card className="border-primary-border bg-primary-subtle">
-          <p className="text-sm font-bold uppercase tracking-wide text-primary">
-            {tCampus('fortsetzenTitel')}
-          </p>
-          <h2 className="mt-1 text-lg font-semibold">
-            {tCampus('fortsetzenAlsNaechstes', { thema: empfehlung.bezeichnung })}
-          </h2>
-          <p className="mt-1 text-sm text-fg-muted">
-            {tCampus('fortsetzenRest', {
-              offen: empfehlung.kernOffen,
-              prozent: Math.round(empfehlung.anteil * 100),
-            })}
-          </p>
-          <div className="mt-3">
-            <Progress
-              wert={Math.round(empfehlung.anteil * 100)}
-              label={empfehlung.bezeichnung}
-            />
-          </div>
-          <div className="mt-4">
-            <Link href={`/${locale}/campus/lernen/thema/${empfehlung.themaId}`}>
-              <Button volleBreite>{tCampus('fortsetzenCta')}</Button>
-            </Link>
-          </div>
-        </Card>
-      )}
+      <section className="grid shrink-0 grid-cols-2 gap-2">
+        <Link
+          href={`/${locale}/campus/lernen/fragen`}
+          className="touchable rounded-lg border border-primary bg-primary px-3 py-3 text-center text-sm font-bold text-fg-onPrimary shadow-sm"
+        >
+          <span className="block text-lg leading-none">?</span>
+          Fragen
+        </Link>
+        <Link
+          href={`/${locale}/campus/pruefung`}
+          className="touchable rounded-lg border border-border bg-surface px-3 py-3 text-center text-sm font-bold shadow-sm"
+        >
+          <span className="block text-lg leading-none">P</span>
+          Prüfung
+        </Link>
+      </section>
 
-      {themen.length > 0 && (
-        <Card className="flex items-center gap-4">
-          <ProgressRing
-            value={gesamtProzent}
-            size={72}
-            label={t('gesamtFortschritt', { prozent: gesamtProzent })}
-          />
-          <div>
-            <p className="font-semibold">{t('uebersicht')}</p>
-            <p className="text-sm text-fg-muted">
-              {t('fragenStand', { fertig: gesamtFertig, gesamt: gesamtFragen })}
-            </p>
-          </div>
-        </Card>
+      <section className="grid shrink-0 grid-cols-4 gap-1.5">
+        <Link href={`/${locale}/campus/lernen/fragen`} className="rounded-lg border border-border bg-surface p-2 text-center">
+          <p className="text-base font-extrabold">{alleOffen}</p>
+          <p className="text-[11px] font-semibold text-fg-muted">Offen</p>
+        </Link>
+        <Link
+          href={`/${locale}/campus/lernen/fragen?status=falsch&limit=5`}
+          className="rounded-lg border border-danger-border bg-danger-bg p-2 text-center"
+        >
+          <p className="text-base font-extrabold text-danger">{fehler}</p>
+          <p className="text-[11px] font-semibold text-fg-muted">Fehler</p>
+        </Link>
+        <Link
+          href={`/${locale}/campus/lernen/fragen?status=fast_fertig`}
+          className="rounded-lg border border-success-border bg-success-bg p-2 text-center"
+        >
+          <p className="text-base font-extrabold text-success">{fastFertig}</p>
+          <p className="text-[11px] font-semibold text-fg-muted">Fast</p>
+        </Link>
+        <div className="rounded-lg border border-border bg-surface p-2 text-center">
+          <p className="text-base font-extrabold">{gesamtProzent}%</p>
+          <p className="text-[11px] font-semibold text-fg-muted">Sicher</p>
+        </div>
+      </section>
+
+      {empfehlung && (
+        <Link
+          href={`/${locale}/campus/lernen/thema/${empfehlung.themaId}`}
+          className="shrink-0 rounded-lg border border-primary-border bg-primary-subtle px-3 py-2"
+        >
+          <p className="text-xs font-bold uppercase text-primary">{tCampus('fortsetzenTitel')}</p>
+          <p className="truncate text-sm font-bold">{empfehlung.bezeichnung}</p>
+        </Link>
       )}
 
       {themen.length === 0 ? (
-        <Card>
+        <Card className="shrink-0">
           <p className="text-fg-muted">{tCampus('keineThemen')}</p>
         </Card>
       ) : (
-        <ul className="space-y-3">
-          {themen.map((thema) => {
-            const prozent =
-              thema.gesamt === 0 ? 0 : Math.round((thema.fertig / thema.gesamt) * 100);
-            return (
-              <li key={thema.id}>
-                <Link href={`/${locale}/campus/lernen/thema/${thema.id}`} className="block">
-                  <Card variante="interaktiv" className="h-full">
-                    <CardKopf>
-                      <CardTitel className="text-base">{thema.bezeichnung}</CardTitel>
-                      <StatusBadge status={thema.status} label={statusLabel[thema.status]} />
-                    </CardKopf>
-                    <p className="text-sm text-fg-muted">
-                      {t('fragenStand', { fertig: thema.fertig, gesamt: thema.gesamt })}
+        <section className="min-h-0 flex-1 rounded-lg border border-border bg-surface">
+          <div className="flex items-center justify-between border-b border-border bg-surface px-3 py-2">
+            <h2 className="text-sm font-bold">Cuatals</h2>
+            <Link href={`/${locale}/campus/lernen/fragen`} className="text-xs font-bold text-primary">
+              Alle Fragen
+            </Link>
+          </div>
+          <div className="grid h-[calc(100%-41px)] grid-cols-2 grid-rows-2 gap-2 p-2">
+            {cuatals.map((block) => (
+              <Link
+                key={block.cuatal}
+                href={`/${locale}/campus/lernen/fragen?cuatal=${block.cuatal}`}
+                className={`touchable flex min-h-0 flex-col justify-between rounded-lg border p-3 ${
+                  block.gesamt > 0
+                    ? 'border-primary-border bg-primary-subtle'
+                    : 'border-border bg-bg-subtle text-fg-muted'
+                }`}
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <h3 className="text-sm font-extrabold">Cuatal {block.cuatal}</h3>
+                    <p className="text-[11px] font-semibold text-fg-muted">
+                      {block.themen.length} Kategorien
                     </p>
-                    <div className="mt-3">
-                      <Progress wert={prozent} label={thema.bezeichnung} />
-                    </div>
-                  </Card>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+                  </div>
+                  <span className="zahlen text-sm font-extrabold text-primary">{block.prozent}%</span>
+                </div>
+                <div className="grid grid-cols-2 gap-1.5 text-center">
+                  <div className="rounded-md bg-surface/80 p-1.5">
+                    <p className="zahlen text-base font-extrabold">{block.gesamt}</p>
+                    <p className="text-[10px] font-semibold text-fg-muted">Fragen</p>
+                  </div>
+                  <div className="rounded-md bg-surface/80 p-1.5">
+                    <p className="zahlen text-base font-extrabold text-danger">{block.falsch}</p>
+                    <p className="text-[10px] font-semibold text-fg-muted">Fehler</p>
+                  </div>
+                </div>
+                <div className="h-2 overflow-hidden rounded-full bg-surface" aria-hidden="true">
+                  <div className="h-full rounded-full bg-primary" style={{ width: `${block.prozent}%` }} />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
       )}
     </main>
   );

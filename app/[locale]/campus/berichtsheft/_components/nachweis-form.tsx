@@ -119,8 +119,15 @@ export function NachweisForm({
     'w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm min-h-12';
 
   return (
-    <div className="space-y-4">
-      <Card className="space-y-4">
+    <div className="flex min-h-full flex-col gap-4">
+      <Card className="space-y-4 border-primary-border bg-primary-subtle">
+        <div>
+          <p className="text-xs font-bold uppercase text-primary">Offizieller Ausbildungsnachweis</p>
+          <h2 className="mt-1 text-lg font-bold">Angaben fuer das Formular</h2>
+          <p className="mt-1 text-sm text-fg-muted">
+            Du fuellst die Felder hier aus; Export und Unterschriften laufen weiter ueber den Nachweis.
+          </p>
+        </div>
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="block text-sm">
             <span className="mb-1 block font-medium">{t('form.art')}</span>
@@ -160,6 +167,10 @@ export function NachweisForm({
       </Card>
 
       <Card className="space-y-4">
+        <div>
+          <p className="text-xs font-bold uppercase text-primary">Inhalte</p>
+          <h2 className="mt-1 text-lg font-bold">Was in den Nachweis eingetragen wird</h2>
+        </div>
         <DiktatFeld
           label={t('form.taetigkeiten')}
           hilfe={t('form.taetigkeitenHilfe')}
@@ -244,14 +255,14 @@ export function NachweisForm({
       )}
 
       {/* Primäraktion im unteren Drittel (Spec §7). */}
-      <div className="flex flex-wrap gap-3">
-        <Button type="button" className="min-h-12" disabled={pending} onClick={speichern}>
+      <div className="sticky bottom-0 z-10 -mx-4 flex flex-wrap gap-3 border-t border-border bg-bg/95 px-4 py-3 backdrop-blur sm:static sm:mx-0 sm:border-0 sm:bg-transparent sm:p-0">
+        <Button type="button" className="min-h-12 flex-1 sm:flex-none" disabled={pending} onClick={speichern}>
           {pending ? t('form.speichernLaeuft') : t('form.speichern')}
         </Button>
         <Button
           type="button"
           variante="leise"
-          className="min-h-12"
+          className="min-h-12 flex-1 sm:flex-none"
           onClick={() => router.push(`/${locale}/campus/berichtsheft`)}
         >
           {t('form.abbrechen')}
