@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Badge, Card } from '@bze/ui';
-import { ladeAdminSitzung } from '../../../_lib/auth';
-import { ContentNav } from '../../_components/content-nav';
+import { ladeAdminSitzung } from '../../_lib/auth';
+import { ContentNav } from '../_components/content-nav';
 import { ladeFachkundeFreigabeInventar } from './_lib/queries';
 
 export const dynamic = 'force-dynamic';
