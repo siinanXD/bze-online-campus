@@ -1,0 +1,57 @@
+# Quality Gates fuer bze-online-campus
+#
+# Die verbindliche Definition steht in
+# C:\Dev\AI-Workspace\AGENT-SYSTEM\config\quality-gates.yaml,
+# die projektspezifischen Befehle in config\projects.yaml.
+# Diese Datei ist die projektnahe Kopie zum Nachschlagen.
+#
+# Ein Gate ohne passendes Werkzeug ist `skipped`, nicht `failed`. Es wird
+# kein Werkzeug erzwungen, das dieses Projekt bisher nicht nutzt.
+
+version: 1
+
+always_active:
+  - no_secrets
+  - no_forbidden_paths
+  - no_disabled_tests
+  - no_unjustified_dependencies
+  - git_diff_check
+  - reuse_decision
+
+project_gates:
+  tests_pass:
+    cmd:
+    - pnpm
+    - test
+    requires: package.json
+    cwd: null
+  lint_pass:
+    cmd:
+    - pnpm
+    - lint
+    requires: package.json
+    cwd: null
+  typecheck_pass:
+    cmd:
+    - pnpm
+    - typecheck
+    requires: package.json
+    cwd: null
+  build_pass:
+    cmd:
+    - pnpm
+    - build
+    requires: package.json
+    cwd: null
+  lint_py_pass:
+    cmd:
+    - pnpm
+    - lint:py
+    requires: pyproject.toml
+    cwd: null
+
+erkannt_am: 2026-08-03
+erkannte_werkzeuge:
+  test_runner: ['node-test-runner']
+  lint: ['eslint', 'ruff']
+  typecheck: ['tsc']

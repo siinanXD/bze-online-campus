@@ -1,0 +1,56 @@
+_hinweis: Erzeugt von bootstrap_project.py aus dem tatsaechlich vorhandenen Bestand (Manifestdateien,
+  Lockfiles, Git). Nicht geraten. Was nicht ermittelbar war, steht unter 'offene_fragen'.
+_erzeugt_am: '2026-08-03'
+project:
+  name: bze-online-campus
+  path: C:\Dev\Repositories\bze-online-campus
+  status: active
+  branch: wip/2026-08-03-migration
+  head: 40377c6
+  remote: https://github.com/siinanXD/bze-online-campus.git
+technology:
+  frontend:
+  - next
+  - react
+  - tailwindcss
+  - typescript
+  backend:
+  - python
+  database:
+  - supabase
+  infrastructure:
+  - railpack
+  - railway
+  - supabase
+package_manager: pnpm
+tooling:
+  test_runner:
+  - node-test-runner
+  lint:
+  - eslint
+  - ruff
+  typecheck:
+  - tsc
+quality_gates:
+- build_pass
+- lint_pass
+- lint_py_pass
+- tests_pass
+- typecheck_pass
+agents:
+  global_agents_enabled: true
+  local_overrides_enabled: true
+policies:
+  reuse_before_build: required
+  research_before_code: required
+  security_review: required
+  license_review: required
+documentation:
+  source_of_truth:
+  - AGENTS.md
+  - .ai/context
+  - C:\Dev\Knowledge
+offene_fragen:
+- Mehrere Lockfiles vorhanden (pnpm und npm) — welcher Paketmanager gilt?
+_registry_hinweis: Zweiter Worktree C:\c\dev\wt-10-fortschritt (feat/10-fortschritt) haengt noch am alten
+  Quellpfad. Vor dem Loeschen der Quellordner abhaengen.
