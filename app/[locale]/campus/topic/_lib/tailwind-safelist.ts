@@ -18,4 +18,8 @@ export const MDX_TAILWIND_SAFELIST = [
   'list-disc', 'list-decimal', 'space-y-1', 'ps-6',
   'border-s-4', 'my-6', 'py-0.5', 'overflow-x-auto', 'border-collapse',
   'text-start', 'divide-y', 'divide-border', 'p-2', 'w-full',
+  // Formelkarte + Figma-Schemas in packages/ui/mdx (ausserhalb Tailwind content-Globs)
+  'border-info-border', 'bg-info-bg/35', 'text-info', 'font-mono', 'text-body-lg',
+  'fill-success/15', 'stroke-success', 'fill-primary/15', 'fill-[#7c3aed]/15', 'stroke-[#7c3aed]',
+  'fill-[#7c3aed]', 'bg-[#0891b2]', 'bg-[#7c3aed]', 'opacity-20', 'size-40', 'size-2.5', 'size-3', 'size-5', 'size-6',
 ].join(' ');

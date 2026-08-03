@@ -187,7 +187,9 @@
   },
   "topic": {
     "uebersicht": {
-      "kicker": "Тема"
+      "kicker": "Тема",
+      "lernpfad": "Навчальний шлях",
+      "fortschrittKurz": "{gelesen}/{gesamt}"
     },
     "abschnitte": {
       "fachkundeLesen": "Читати фаховий матеріал",
@@ -315,6 +317,14 @@
       "liste": "Огляд розділів"
     },
     "lerneinheit": {
+      "zurueckLernpfad": "← Навчальний шлях",
+      "pruefungsrelevanz": "Важливість для іспиту: {stufe}",
+      "pruefungsrelevanzStufen": {
+        "niedrig": "низька",
+        "mittel": "середня",
+        "hoch": "висока",
+        "sehr_hoch": "дуже висока"
+      },
       "quellenTitel": "Джерела",
       "lesezeitHinweis": "Це вийшло швидше за орієнтовний час читання. Якщо не впевнені, перегляньте ще раз — але продовжити все одно можна.",
       "demoHinweis": "Приклад вмісту: ваш прогрес читання тут не зберігається.",

@@ -1,0 +1,112 @@
+---
+titel: "Innen- und Tiefenmessung"
+thema_code: "PT-MES"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Messbeispiele und Messregeln muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Messpraxis"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Innen- und Tiefenmessung muessen vor Freigabe fachlich abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an Bohrung und Nut">
+Nicht jedes Mass liegt aussen am Bauteil. Manchmal misst du eine Bohrung innen, manchmal die Tiefe einer
+Nut. Dafuer brauchst du andere Teile des Messschiebers.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Innenmessung", "Tiefenmessung", "Tiefenstange", "Messschieber", "Messwert"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Innen und Tiefe in Alltagssprache">
+Innenmessung misst, wie gross etwas innen ist. Tiefenmessung misst, wie tief etwas ist. Beide Messarten
+brauchen sauberes, ruhiges Ansetzen.
+</EinfachErklaert>
+
+<InnenTiefenmessungSchema />
+
+<InnenTiefenmessungTrainer titel="Innen- und Tiefenmessung waehlen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Messart passend waehlen">
+Innenmasse werden mit den Innenmessschenkeln erfasst. Tiefenmasse werden mit der Tiefenstange gemessen.
+Bei der Tiefenmessung muss die Auflageflaeche plan sitzen, sonst wird der Wert unsicher.
+</FachlichErklaert>
+
+## Messarten
+
+| Messart | Beispiel | Grundsatz |
+|---|---|---|
+| Innenmessung | Bohrung, Nut innen | Innenmessschenkel sauber spreizen |
+| Tiefenmessung | Nuttiefe, Bohrungstiefe | Tiefenstange und plane Auflage |
+
+<Praxisbeispiel titel="Praxisbeispiel Nuttiefe">
+Du misst eine Nuttiefe. Wenn der Messschieber nicht plan aufliegt, zeigt er eine falsche Tiefe. Du setzt ihn
+neu auf und pruefst den Wert nach Vorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Geeignete Messmittel und Messregeln fuer Innen- und Tiefenmasse muessen nach Tabellenbuch oder Pruefplan
+gewaehlt werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Bohrung innen: Innenmessung. Nut tief: Tiefenmessung.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MES-004::check"
+  fragen={[
+    {
+      id: "bohrung",
+      masterySchluessel: "FK-1-MES-004::bohrung",
+      aufgabenstellung: "Welche Messart nutzt du fuer eine Bohrung innen?",
+      optionen: [
+        {
+          id: "innen",
+          text: "Innenmessung.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Die Innenmessschenkel erfassen das Innenmass.",
+        },
+        {
+          id: "aussen",
+          text: "Aussenmessung.",
+          istKorrekt: false,
+          erklaerung: "Aussenmessung ist fuer aeussere Masse gedacht.",
+        },
+      ],
+    },
+    {
+      id: "tiefe",
+      masterySchluessel: "FK-1-MES-004::tiefe",
+      aufgabenstellung: "Was ist bei der Tiefenmessung wichtig?",
+      optionen: [
+        {
+          id: "plan",
+          text: "Der Messschieber muss plan aufliegen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Sonst ist die Tiefe unsicher.",
+        },
+        {
+          id: "schraeg",
+          text: "Der Messschieber soll schraeg stehen.",
+          istKorrekt: false,
+          erklaerung: "Schraeger Ansatz kann den Wert verfaelschen.",
+        },
+      ],
+    },
+  ]}
+/>

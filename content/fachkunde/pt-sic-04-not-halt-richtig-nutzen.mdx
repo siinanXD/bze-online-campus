@@ -1,0 +1,125 @@
+---
+titel: "Not-Halt richtig nutzen"
+thema_code: "PT-SIC"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Konkrete Not-Halt-Vorgaben der Anlage muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Not-Halt und Wiederanlauf"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Anlagenspezifische Bedien- und Meldewege muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung Arbeitssicherheit"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit erklaert Grundlogik und ersetzt keine Unterweisung an der konkreten Maschine."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Linie">
+Du stehst an einer Anlage. Ein Werkstueck verklemmt sich und eine Person greift Richtung bewegter Teile.
+Jetzt geht es nicht um Tempo, sondern um Gefahr stoppen, melden und erst nach Freigabe weiterarbeiten.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Not-Halt", "Reset", "Stoerung", "Meldeweg", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Not-Halt in Alltagssprache">
+Not-Halt ist fuer echte Gefahr. Wenn Menschen gefaehrdet sind, stoppst du die Gefahr nach Vorgabe. Danach
+wird gemeldet. Reset bedeutet nicht automatisch, dass wieder produziert werden darf.
+</EinfachErklaert>
+
+<NotHaltSchema />
+
+<NotHaltSzenarioTrainer titel="Was ist sicher?" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Stoppen ist nur der erste Teil">
+Der Not-Halt dient dazu, gefaehrliche Bewegungen oder Zustaende schnell zu stoppen. Nach dem Ausloesen
+muss die Ursache geklaert werden. Ein Wiederanlauf darf nur erfolgen, wenn die Gefahr beseitigt ist und die
+betriebliche Freigabe vorliegt.
+</FachlichErklaert>
+
+## Sichere Grundfolge
+
+| Schritt | Bedeutung | Typischer Fehler |
+|---|---|---|
+| Gefahr erkennen | Personen und Gefahrbereich beachten | Erst weiter beobachten |
+| Not-Halt ausloesen | Gefahr stoppen | Nur rufen, obwohl unmittelbare Gefahr besteht |
+| Melden | Ausbilder, Schichtleitung oder Instandhaltung informieren | Allein probieren |
+| Reset/Freigabe | Ursache klaeren und Wiederanlauf freigeben lassen | Reset druecken und weiterproduzieren |
+
+<Praxisbeispiel titel="Praxisbeispiel Reset">
+Nach dem Not-Halt ist die Anlage still. Du drueckst nicht sofort Reset, nur weil die Linie steht. Du meldest
+die Situation und wartest die Klaerung und Freigabe ab.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Not-Halt, Wiederanlauf und Reset koennen je Anlage unterschiedlich geregelt sein. Verbindlich sind
+Betriebsanweisung, Unterweisung und Freigabe am Arbeitsplatz.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Not-Halt stoppt Gefahr. Reset startet nichts ohne Klaerung und Freigabe.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-SIC-004::check"
+  fragen={[
+    {
+      id: "not-halt-gefahr",
+      masterySchluessel: "FK-1-SIC-004::not-halt-gefahr",
+      aufgabenstellung: "Wann ist Not-Halt richtig?",
+      optionen: [
+        {
+          id: "unmittelbare-gefahr",
+          text: "Wenn eine unmittelbare Gefahr fuer Menschen oder Anlage besteht.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Not-Halt ist fuer echte Gefahrensituationen da.",
+        },
+        {
+          id: "qualitaet",
+          text: "Wenn ein Teil wahrscheinlich Ausschuss ist.",
+          istKorrekt: false,
+          erklaerung: "Qualitaetsabweichungen werden gemeldet, sind aber nicht automatisch Not-Halt.",
+        },
+        {
+          id: "pause",
+          text: "Wenn du die Anlage fuer eine Pause anhalten willst.",
+          istKorrekt: false,
+          erklaerung: "Dafuer gibt es normale Bedienvorgaben, nicht den Not-Halt.",
+        },
+      ],
+    },
+    {
+      id: "reset-freigabe",
+      masterySchluessel: "FK-1-SIC-004::reset-freigabe",
+      aufgabenstellung: "Was gilt nach einem ausgeloesten Not-Halt?",
+      optionen: [
+        {
+          id: "klaeren",
+          text: "Ursache klaeren, melden und Freigabe abwarten.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Reset und Wiederanlauf brauchen Klaerung und Vorgabe.",
+        },
+        {
+          id: "sofort-reset",
+          text: "Sofort Reset druecken, damit die Produktion weitergeht.",
+          istKorrekt: false,
+          erklaerung: "Das kann gefaehrlich sein, wenn die Ursache nicht beseitigt ist.",
+        },
+      ],
+    },
+  ]}
+/>

@@ -1,0 +1,128 @@
+---
+titel: "Messwert richtig ablesen"
+thema_code: "PT-MES"
+lesedauer_minuten: 10
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "uebungswerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Ableseregeln, Noniusbeispiele und Uebungswerte muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Messschieber ablesen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Nonius- und Skalenbeispiele muessen vor Freigabe abgeglichen werden."
+  - titel: "BZE-Uebungszeichnung Messbolzen"
+    seite: "Zeichnungswert [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Die Werte im interaktiven Trainer sind Uebungswerte."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden", "tabellenbuch_finden"]} />
+
+<StoryEinstieg titel="Situation beim Ablesen">
+Der Messschieber sitzt richtig am Teil. Jetzt entscheidet das Ablesen: Erst Hauptskala, dann Nonius, und
+nicht schaetzen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Messwert", "Hauptskala", "Nonius", "Skala", "Toleranz"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Ablesen in Alltagssprache">
+Du liest zuerst die ganze Millimeterzahl auf der Hauptskala. Danach suchst du am Nonius den passenden
+Feinwert. Schraeges Ablesen und Schaetzen machen den Wert unsicher.
+</EinfachErklaert>
+
+<MesswertAblesenSchema />
+
+<MesswertAblesenTrainer titel="Messwert richtig ablesen" />
+
+<InteraktiverMessschieber
+  titel="Messwert am Messschieber einstellen"
+  startwertMm={20}
+  nennmassMm={20}
+  oberesAbmassMm={0.1}
+  unteresAbmassMm={-0.05}
+  quellenHinweis="Uebungswerte aus der BZE-Uebungszeichnung Messbolzen. Reale Grenzwerte immer aus Zeichnung, Pruefplan oder Tabellenbuch uebernehmen."
+/>
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Hauptskala und Nonius zusammen lesen">
+Beim analogen Messschieber wird der Messwert aus Hauptskala und Nonius gebildet. Die Hauptskala liefert den
+ganzen Millimeterwert, der Nonius den Feinanteil. Der Blickwinkel und der Sitz des Messmittels beeinflussen
+die Sicherheit des Werts.
+</FachlichErklaert>
+
+## Ablesereihenfolge
+
+| Schritt | Bedeutung |
+|---|---|
+| 1 | Messschieber korrekt anlegen |
+| 2 | Hauptskala lesen |
+| 3 | Noniusstrich finden |
+| 4 | Wert mit Einheit notieren |
+
+<Praxisbeispiel titel="Praxisbeispiel auffaelliger Wert">
+Du liest einen Wert ab, der nicht zu den vorherigen Teilen passt. Du misst ruhig erneut, pruefst die
+Messflaechen und meldest die Abweichung nach Vorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Ableseregeln und Nonius-Teilungen koennen je nach Messschieber unterschiedlich sein und muessen aus
+Tabellenbuch oder Herstellerangabe gelesen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Hauptskala plus Nonius ergibt den Messwert.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MES-005::ablesen-check"
+  fragen={[
+    {
+      id: "hauptskala-zuerst",
+      masterySchluessel: "FK-1-MES-005::hauptskala-zuerst",
+      aufgabenstellung: "Was liest du beim analogen Messschieber zuerst?",
+      optionen: [
+        {
+          id: "hauptskala",
+          text: "Die Hauptskala.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Danach folgt der Nonius.",
+        },
+        {
+          id: "schaetzung",
+          text: "Einen geschaetzten Zwischenwert.",
+          istKorrekt: false,
+          erklaerung: "Schaetzen ersetzt keine Ableseregel.",
+        },
+      ],
+    },
+    {
+      id: "schraegblick",
+      masterySchluessel: "FK-1-MES-005::schraegblick",
+      aufgabenstellung: "Warum ist Schraegblick beim Ablesen problematisch?",
+      optionen: [
+        {
+          id: "parallaxe",
+          text: "Er kann den abgelesenen Wert verfaelschen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Ruhiges, gerades Ablesen ist wichtig.",
+        },
+        {
+          id: "egal",
+          text: "Er ist immer egal.",
+          istKorrekt: false,
+          erklaerung: "Nein. Der Blickwinkel kann eine Fehlerquelle sein.",
+        },
+      ],
+    },
+  ]}
+/>

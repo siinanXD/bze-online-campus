@@ -1,0 +1,57 @@
+---
+titel: "Prozessfaehigkeit Cp und Cpk"
+thema_code: "PT-QS"
+lesedauer_minuten: 10
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Cp/Cpk-Definitionen, Formeln, Grenzwerte und Datenvoraussetzungen muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Statistik und betriebliche Faehigkeitsvorgabe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Verbindliche Kennwertdefinitionen und Bewertungsgrenzen ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation mit stabiler Messreihe">
+Viele Messwerte liegen innerhalb der Toleranz. Jetzt fragt jemand, ob der Prozess auch faehig ist.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Cp", "Cpk", "Toleranz", "Streuung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Cp und Cpk in Alltagssprache">
+Cp schaut grob auf Toleranzbreite und Streuung. Cpk achtet zusaetzlich darauf, ob der Prozess in der Toleranz richtig liegt.
+</EinfachErklaert>
+
+<ProzessfaehigkeitSchema />
+
+<ProzessfaehigkeitTrainer titel="Prozessfaehigkeit Cp und Cpk" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Faehigkeit nur mit belastbaren Daten">
+Cp und Cpk sind statistische Kennwerte zur Prozessfaehigkeit. Sie duerfen nur mit passenden Messdaten, stabiler Prozesslage und freigegebenen Bewertungsregeln interpretiert werden.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel gute Teile, schlechter Prozess">
+Alle aktuell gemessenen Teile koennen gut sein, obwohl die Streuung zu gross ist. Dann ist der Prozess fuer die Zukunft riskant.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Cp und Cpk sind Kennwerte, keine Bauchgefuehle.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-QS-015::check"
+  fragen={[{ id: "cpk", masterySchluessel: "FK-3-QS-015::cpk", aufgabenstellung: "Was beruecksichtigt Cpk zusaetzlich zur Streuung?", optionen: [{ id: "richtig", text: "Die Lage des Prozesses zur Toleranzgrenze.", istKorrekt: true, erklaerung: "Richtig. Cpk betrachtet auch die Lage." }, { id: "falsch", text: "Nur die Farbe der Messpunkte.", istKorrekt: false, erklaerung: "Nein. Cpk ist ein statistischer Kennwert." }] }]}
+/>

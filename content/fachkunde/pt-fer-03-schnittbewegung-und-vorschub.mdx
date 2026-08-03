@@ -1,0 +1,61 @@
+---
+titel: "Schnittbewegung und Vorschub"
+thema_code: "PT-FER"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Bewegungsbegriffe und Verfahrenbezug muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Zerspanungsgrundlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Begriffe Schnittbewegung, Vorschub und Zustellung nach Quelle abgleichen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Zerspanprozess">
+Werkzeug und Werkstueck bewegen sich nicht zufaellig. Eine Bewegung schneidet, eine fuehrt weiter, eine legt
+die Tiefe fest.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schnittbewegung", "Vorschub", "Zustellung", "Span"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Bewegungen in Alltagssprache">
+Beim Zerspanen gibt es verschiedene Bewegungen. Nicht jede Bewegung macht dasselbe: Schneiden, Weiterfuehren
+und Tiefe einstellen sind unterschiedliche Aufgaben.
+</EinfachErklaert>
+
+<SchnittVorschubSchema />
+
+<SchnittVorschubTrainer titel="Schnittbewegung und Vorschub" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Bewegungsarten trennen">
+Die Schnittbewegung erzeugt die Schnittwirkung. Der Vorschub bewegt Werkzeug oder Werkstueck weiter. Die
+Zustellung legt den Eingriff fest. Diese Begriffe sind Grundlage fuer Schnittwerte und Bearbeitungszeit.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Einrichten">
+Wenn die Oberflaeche nicht passt, pruefst du nicht nur die Drehzahl. Auch Vorschub, Zustellung, Werkzeug und
+Werkstoff koennen eine Rolle spielen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Schnittbewegung, Vorschub und Zustellung nicht verwechseln.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-FER-003::check"
+  fragen={[{ id: "vorschub", masterySchluessel: "FK-2-FER-003::vorschub", aufgabenstellung: "Welche Bewegung fuehrt Werkzeug oder Werkstueck weiter?", optionen: [{ id: "vorschub", text: "Der Vorschub.", istKorrekt: true, erklaerung: "Richtig." }, { id: "farbe", text: "Die Werkzeugfarbe.", istKorrekt: false, erklaerung: "Nein. Farbe ist keine Bewegungsart." }] }]}
+/>

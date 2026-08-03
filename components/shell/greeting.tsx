@@ -30,7 +30,7 @@ export function Greeting({ name, stunde, className }: GreetingProps) {
   const text = name ? t(`${zeit}MitName`, { name }) : t(`${zeit}Allgemein`);
 
   return (
-    <p className={className ?? 'text-lg font-bold text-fg'}>
+    <p className={className ?? 'text-[22px] font-extrabold leading-7 text-fg'}>
       {text}
     </p>
   );

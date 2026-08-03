@@ -1,0 +1,57 @@
+---
+titel: "Profile, Rohre und Folien extrudieren"
+thema_code: "PT-KST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Produktbeispiele und Prozessmerkmale der Extrusion muessen freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Kunststofftechnik Extrusionsprodukte"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Profile, Rohre, Folien, Kalibrierung und Abzug nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Auslauf">
+Aus der Linie kommt ein Profil. Du beobachtest Querschnitt, Kuehlung, Abzug und Masskontrolle.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Extrusion", "Werkzeug", "Kalibrierung", "Abzug"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Extrusionsprodukte in Alltagssprache">
+Je nach Werkzeug entstehen fortlaufende Profile, Rohre oder Folien.
+</EinfachErklaert>
+
+<ExtrusionsprodukteSchema />
+
+<ExtrusionsprodukteTrainer titel="Profile, Rohre und Folien extrudieren" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Formgebung im Strang">
+Das Werkzeug gibt den Querschnitt vor. Kalibrierung, Kuehlung und Abzug beeinflussen Mass, Wanddicke, Oberflaeche und gleichmaessigen Lauf.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel schwankende Wanddicke">
+Bei einem Rohr schwankt die Wanddicke. Du dokumentierst die Abweichung und beachtest Werkzeug, Abzug und Kuehlung als moegliche Einflussstellen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Extrusionsprodukte entstehen als fortlaufender Strang.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-KST-020::check"
+  fragen={[{ id: "produkt", masterySchluessel: "FK-2-KST-020::produkt", aufgabenstellung: "Was bestimmt den Querschnitt eines Extrusionsprodukts?", optionen: [{ id: "richtig", text: "Das formgebende Werkzeug.", istKorrekt: true, erklaerung: "Richtig. Danach stabilisieren Kalibrierung und Kuehlung." }, { id: "falsch", text: "Die Pausenzeit des Bedieners.", istKorrekt: false, erklaerung: "Nein. Das hat keinen Formgebungsbezug." }] }]}
+/>

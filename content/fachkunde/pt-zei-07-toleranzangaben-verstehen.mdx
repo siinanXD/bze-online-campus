@@ -1,0 +1,119 @@
+---
+titel: "Toleranzangaben verstehen"
+thema_code: "PT-ZEI"
+lesedauer_minuten: 10
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "beispielwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Toleranzschreibweisen, Beispielwerte und Tabellenbuchbezug muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Technisches Zeichnen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Grenzmasse, Abmasse und Schreibweisen muessen mit der freigegebenen Quelle abgeglichen werden."
+  - titel: "BZE-Beispielzeichnung"
+    seite: "Zeichnung [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Die Darstellung nutzt Lernbeispiele und ersetzt keine Pruefvorgabe."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation beim Messen">
+Auf der Zeichnung steht nicht nur ein Nennmass. Daneben stehen Abmasse. Dein Istmass ist nur dann gut,
+wenn es innerhalb der erlaubten Grenzen liegt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Nennmass", "Toleranz", "Abmass", "Grenzmass", "Bemassung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Toleranz in Alltagssprache">
+Ein Teil muss nicht unendlich genau sein. Die Toleranz sagt, wie weit es vom Sollmass abweichen darf. Zu
+klein oder zu gross ist Ausschuss oder muss nach Vorgabe geklaert werden.
+</EinfachErklaert>
+
+<ToleranzangabenSchema />
+
+<ToleranzangabenTrainer titel="Toleranzangaben lesen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Nennmass, Abmass und Grenzmass">
+Das Nennmass ist der Ausgangswert aus der Zeichnung. Obere und untere Abmasse legen den zulaessigen Bereich
+fest. Daraus ergeben sich oberes und unteres Grenzmass. Das gemessene Istmass wird gegen diese Grenzen
+bewertet.
+</FachlichErklaert>
+
+## Grundbegriffe
+
+| Begriff | Bedeutung |
+|---|---|
+| Nennmass | Sollwert in der Zeichnung |
+| Oberes Abmass | Zulaessige Abweichung nach oben |
+| Unteres Abmass | Zulaessige Abweichung nach unten |
+| Grenzmass | Erlaubte obere oder untere Grenze |
+
+<Praxisbeispiel titel="Praxisbeispiel Istmass">
+Du misst ein Teil und der Wert liegt knapp ueber dem oberen Grenzmass. Du bewertest es nicht als "fast gut",
+sondern meldest es nach Pruefvorgabe als ausserhalb der Toleranz.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Toleranzwerte, Einheiten und Schreibweisen muessen aus der Zeichnung, dem Pruefplan oder dem Tabellenbuch
+entnommen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Gut ist ein Istmass nur innerhalb der zulaessigen Grenzmasse.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-ZEI-007::check"
+  fragen={[
+    {
+      id: "nennmass",
+      masterySchluessel: "FK-1-ZEI-007::nennmass",
+      aufgabenstellung: "Was ist das Nennmass?",
+      optionen: [
+        {
+          id: "sollwert",
+          text: "Der Sollwert, von dem Abmasse und Grenzmasse abgeleitet werden.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Das Nennmass ist der Ausgangswert.",
+        },
+        {
+          id: "istwert",
+          text: "Der zufaellig gemessene Istwert.",
+          istKorrekt: false,
+          erklaerung: "Nein. Der Istwert wird gemessen, das Nennmass steht in der Vorgabe.",
+        },
+      ],
+    },
+    {
+      id: "grenze",
+      masterySchluessel: "FK-1-ZEI-007::grenze",
+      aufgabenstellung: "Wie bewertest du ein Istmass ausserhalb der Grenzmasse?",
+      optionen: [
+        {
+          id: "melden",
+          text: "Nach Pruefvorgabe als ausserhalb der Toleranz behandeln und melden.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Grenzmasse sind verbindlich.",
+        },
+        {
+          id: "fast",
+          text: "Als gut bewerten, wenn es nur wenig daneben liegt.",
+          istKorrekt: false,
+          erklaerung: "Nein. Ausserhalb der Grenze ist nicht innerhalb der Toleranz.",
+        },
+      ],
+    },
+  ]}
+/>

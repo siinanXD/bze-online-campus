@@ -1,0 +1,57 @@
+---
+titel: "Schwindung und Verzug"
+thema_code: "PT-KST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Schwindung, Verzug und Ursachenbezug muessen fachlich geprueft werden."
+quellen:
+  - titel: "Tabellenbuch Kunststofftechnik Bauteilfehler"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Schwindung, Verzug und Einflussgroessen nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation in der Qualitaetskontrolle">
+Ein Teil passt nicht in die Lehre und wirkt verzogen. Du unterscheidest Massverlust durch Schwindung und Formabweichung durch Verzug.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schwindung", "Verzug", "Kuehlzeit", "Werkzeugtemperierung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schwindung und Verzug in Alltagssprache">
+Kunststoff kann beim Abkuehlen kleiner werden oder sich krumm ziehen.
+</EinfachErklaert>
+
+<SchwindungVerzugSchema />
+
+<SchwindungVerzugTrainer titel="Schwindung und Verzug" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Mass- und Formabweichung">
+Schwindung beschreibt eine Mass- oder Volumenaenderung beim Abkuehlen. Verzug beschreibt eine ungewollte Formabweichung, oft durch ungleichmaessige Abkuehlung oder Spannungen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel krummes Bauteil">
+Ein Bauteil liegt nicht plan. Du dokumentierst Lage, Hauefigkeit und Prozesszeitpunkt, damit Material, Werkzeug und Kuehlung geprueft werden koennen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Schwindung betrifft Mass, Verzug betrifft Form.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-KST-023::check"
+  fragen={[{ id: "unterschied", masterySchluessel: "FK-2-KST-023::unterschied", aufgabenstellung: "Was beschreibt Verzug?", optionen: [{ id: "richtig", text: "Eine ungewollte Formabweichung.", istKorrekt: true, erklaerung: "Richtig. Das Teil kann sich krumm ziehen." }, { id: "falsch", text: "Eine Materialcharge im Sack.", istKorrekt: false, erklaerung: "Nein. Das ist Rueckverfolgbarkeit, nicht Verzug." }] }]}
+/>

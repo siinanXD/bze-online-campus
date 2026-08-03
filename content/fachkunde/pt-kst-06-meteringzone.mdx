@@ -1,0 +1,57 @@
+---
+titel: "Meteringzone"
+thema_code: "PT-KST"
+lesedauer_minuten: 7
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Meteringzone und Dosierbezug muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Kunststofftechnik Plastifiziereinheit"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Homogenisierung, Dosierung und Schneckenbereiche nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation vor dem Schuss">
+Die Maschine bereitet den naechsten Schuss vor. Du erkennst, dass die Schmelze gleichmaessig und in passender Menge bereitstehen muss.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Meteringzone", "Dosieren", "Schmelze", "Schnecke"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Meteringzone in Alltagssprache">
+In der Meteringzone wird die Schmelze gleichmaessiger und als Menge fuer den naechsten Schuss vorbereitet.
+</EinfachErklaert>
+
+<MeteringzoneSchema />
+
+<MeteringzoneTrainer titel="Meteringzone" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Homogenisieren und bereitstellen">
+Die Meteringzone foerdert, mischt und stabilisiert die Schmelze. Sie traegt dazu bei, dass Dosiermenge und Schmelzezustand wiederholbar sind.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel schwankendes Teilegewicht">
+Wenn das Teilegewicht schwankt, kann die Dosierung ein Hinweis sein. Du dokumentierst die Beobachtung und arbeitest nach Vorgabe weiter.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Die Meteringzone soll gleichmaessige Schmelze fuer die Dosierung liefern.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-KST-006::check"
+  fragen={[{ id: "homogen", masterySchluessel: "FK-2-KST-006::homogen", aufgabenstellung: "Was ist ein Ziel der Meteringzone?", optionen: [{ id: "richtig", text: "Schmelze homogenisieren und dosieren.", istKorrekt: true, erklaerung: "Richtig. Gleichmaessigkeit ist hier zentral." }, { id: "falsch", text: "Luft aus der Kavitaet entweichen lassen.", istKorrekt: false, erklaerung: "Nein. Das gehoert zur Werkzeugentlueftung." }] }]}
+/>

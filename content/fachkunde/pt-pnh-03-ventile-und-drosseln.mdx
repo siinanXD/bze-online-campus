@@ -1,0 +1,57 @@
+---
+titel: "Ventile und Drosseln"
+thema_code: "PT-PNH"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Ventilsymbole, Drosselrichtung und zulaessige Einstellungen muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Metall/Mechatronik und Pneumatikplan der Anlage"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Symbolik, Anschlussbezeichnungen, Drossel-/Rueckschlagfunktion und Einstellwerte nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation am Pneumatikplan">
+Der Zylinder faehrt zu schnell aus. Im Plan findest du ein Wegeventil und eine Drossel. Jetzt musst du unterscheiden: Was schaltet den Luftweg und was beeinflusst den Volumenstrom?
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Ventil", "Drossel", "Druckluft", "Zylinder", "Verriegelung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schalten und Dosieren">
+Ein Ventil entscheidet, wohin die Luft geht. Eine Drossel macht den Luftstrom kleiner und beeinflusst dadurch die Geschwindigkeit.
+</EinfachErklaert>
+
+<VentileDrosselnSchema />
+
+<VentileDrosselnTrainer titel="Ventile und Drosseln" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Luftwege im Plan lesen">
+Wegeventile haben Anschluesse und Schaltstellungen. Sie geben Luftwege frei, sperren sie oder schalten sie um. Drosseln begrenzen den Volumenstrom. Einstellungen, Drosselrichtung und zulaessige Bewegungsgeschwindigkeiten werden aus Plan, Maschinenunterlage oder Freigabe abgeleitet.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Ausfahrbewegung">
+Ein Zylinder faehrt ruckartig aus. Du beschreibst zuerst Ventil, Luftweg, Drossel und Abluftweg. Erst danach wird nach Vorgabe entschieden, ob eine Einstellung geprueft oder angepasst werden darf.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ventil schaltet den Weg, Drossel beeinflusst den Strom.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-PNH-003::check"
+  fragen={[{ id: "ventil-drossel", masterySchluessel: "FK-3-PNH-003::ventil-drossel", aufgabenstellung: "Welche Zuordnung ist richtig?", optionen: [{ id: "richtig", text: "Wegeventil schaltet Luftwege, Drossel begrenzt den Volumenstrom.", istKorrekt: true, erklaerung: "Richtig. Beides hat unterschiedliche Aufgaben im Pneumatikplan." }, { id: "falsch", text: "Drosseln ersetzen Sicherheitsverriegelungen und Ventile messen den Druck.", istKorrekt: false, erklaerung: "Nein. Das verwechselt Steuer-, Mess- und Sicherheitsfunktionen." }] }]}
+/>

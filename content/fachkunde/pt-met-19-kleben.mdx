@@ -1,0 +1,59 @@
+---
+titel: "Kleben"
+thema_code: "PT-MET"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Oberflaechenvorbereitung, Klebstoffdaten und Aushartezeiten muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Klebstoff-Datenblatt"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Verarbeitungszeit, Aushartezeit, Schutz und Oberflaechenvorbereitung nach Datenblatt pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Klebeflaeche">
+Zwei Bauteile sollen geklebt werden. Du pruefst die Oberflaeche, liest das Datenblatt und beachtest die
+Aushartezeit.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Klebstoff", "Klebschicht", "Benetzung", "Datenblatt"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Kleben in Alltagssprache">
+Beim Kleben verbindet ein Klebstoff vorbereitete Oberflaechen.
+</EinfachErklaert>
+
+<KlebenSchema />
+
+<KlebenTrainer titel="Kleben" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Fuegen mit Klebschicht">
+Kleben ist ein Fuegeverfahren. Oberflaechenvorbereitung, Klebstoffmenge, Verarbeitungszeit, Druck und
+Aushartezeit richten sich nach Datenblatt.
+</FachlichErklaert>
+
+<TabellenbuchHinweis>
+Klebstoffangaben werden aus dem Datenblatt uebernommen. Haut-, Atem- und Umweltschutz beachten.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Kleben beginnt mit der Oberflaeche und endet erst nach dem Ausharten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-019::check"
+  fragen={[{ id: "oberflaeche", masterySchluessel: "FK-2-MET-019::oberflaeche", aufgabenstellung: "Was ist vor dem Kleben wichtig?", optionen: [{ id: "vorbereiten", text: "Oberflaeche vorbereiten.", istKorrekt: true, erklaerung: "Richtig." }, { id: "fetten", text: "Flaeche absichtlich fetten.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

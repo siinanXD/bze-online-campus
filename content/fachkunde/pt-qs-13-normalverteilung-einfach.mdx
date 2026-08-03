@@ -1,0 +1,57 @@
+---
+titel: "Normalverteilung einfach"
+thema_code: "PT-QS"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Statistische Vereinfachung und Beispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Statistik Grundlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Statistikdarstellung und Beispiele aus verbindlicher Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation mit vielen Messwerten">
+Viele Messwerte liegen nahe beieinander, wenige weit aussen. Dieses Bild wird oft als Glockenkurve erklaert.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Normalverteilung", "Mittelwert", "Streuung", "Istwert"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Glockenkurve in Alltagssprache">
+Bei einer einfachen Normalverteilung liegen viele Werte in der Mitte und wenige Werte weit links oder rechts.
+</EinfachErklaert>
+
+<NormalverteilungSchema />
+
+<NormalverteilungTrainer titel="Normalverteilung einfach" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Modell fuer Messwerte">
+Die Normalverteilung ist ein statistisches Modell. Sie hilft, Messwerte um eine Mitte und ihre Streuung zu verstehen. Fuer echte Entscheidungen braucht es passende Daten und Vorgaben.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel breite Glocke">
+Wenn die Werte sehr breit streuen, koennen mehr Teile nahe an Grenzen liegen. Dann reicht die Mitte allein nicht fuer eine Bewertung.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Die Glockenkurve erklaert Streuung, entscheidet aber nicht allein.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-QS-013::check"
+  fragen={[{ id: "mitte", masterySchluessel: "FK-3-QS-013::mitte", aufgabenstellung: "Wo liegen bei der einfachen Glockenkurve viele Werte?", optionen: [{ id: "richtig", text: "Nahe an der Mitte.", istKorrekt: true, erklaerung: "Richtig. Randwerte treten seltener auf." }, { id: "falsch", text: "Alle Werte liegen exakt auf einer Linie.", istKorrekt: false, erklaerung: "Nein. Werte streuen um eine Mitte." }] }]}
+/>

@@ -1,0 +1,57 @@
+---
+titel: "Unwucht und Fehlausrichtung"
+thema_code: "PT-IH"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Messverfahren, Grenzwerte und Korrekturwege muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Fachbuch, Maschinenhandbuch, Ausrichtprotokoll und Wartungsunterlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Schwingungswerte, Ausrichttoleranzen und freigegebene Korrekturwege nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am rotierenden Antrieb">
+Eine Welle vibriert staerker als sonst. Du unterscheidest: Liegt die Masseverteilung des rotierenden Teils falsch oder stehen Wellen und Kupplung nicht sauber zueinander?
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Unwucht", "Fehlausrichtung", "Schwingung", "Kupplung", "Lager"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Zwei Laufprobleme trennen">
+Unwucht bedeutet: Die Masse ist beim Drehen ungleich verteilt. Fehlausrichtung bedeutet: Teile stehen nicht richtig zueinander.
+</EinfachErklaert>
+
+<UnwuchtFehlausrichtungSchema />
+
+<UnwuchtFehlausrichtungTrainer titel="Unwucht und Fehlausrichtung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Laufproblem und Ursache">
+Unwucht und Fehlausrichtung koennen beide Schwingung, Lagerbelastung und Verschleiss ausloesen. Die Diagnose braucht Beobachtung, Messung, Betriebszustand und freigegebenen Pruefweg. Korrekturen werden nicht nach Augenmass durchgefuehrt.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Kupplungswechsel">
+Nach einem Kupplungswechsel steigt die Vibration. Du dokumentierst den Zusammenhang und meldest den Verdacht auf Ausrichtproblem, statt die Kupplung im Lauf zu verschieben.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Unwucht betrifft Masse beim Drehen, Fehlausrichtung betrifft Lage zueinander.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-IH-008::check"
+  fragen={[{ id: "laufproblem", masterySchluessel: "FK-3-IH-008::laufproblem", aufgabenstellung: "Welche Aussage trennt Unwucht und Fehlausrichtung richtig?", optionen: [{ id: "richtig", text: "Unwucht betrifft rotierende Masse, Fehlausrichtung die Lage von Wellen oder Baugruppen.", istKorrekt: true, erklaerung: "Richtig. Beide koennen Schwingungen verursachen, haben aber andere Ursachen." }, { id: "falsch", text: "Beides bedeutet immer, dass nur mehr Schmierstoff fehlt.", istKorrekt: false, erklaerung: "Nein. Schmierung kann wichtig sein, erklaert aber nicht jede Laufabweichung." }] }]}
+/>

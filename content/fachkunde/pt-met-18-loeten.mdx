@@ -1,0 +1,59 @@
+---
+titel: "Loeten"
+thema_code: "PT-MET"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Lot, Benetzung, Temperaturfenster und Abgrenzung zum Schweissen muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Loeten"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Lotarten, Temperaturen und Flussmittel-/Sicherheitsangaben nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Fuegespalt">
+Bauteile sollen verbunden werden, ohne den Grundwerkstoff wie beim Schweissen aufzuschmelzen. Du achtest auf
+Lot, Spalt und Benetzung.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Lot", "Benetzung", "Fuegen", "Oberflaeche"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Loeten in Alltagssprache">
+Beim Loeten fliesst Lot in einen Spalt und verbindet Bauteile.
+</EinfachErklaert>
+
+<LoetenSchema />
+
+<LoetenTrainer titel="Loeten" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Fuegen mit Lot">
+Loeten ist Fuegen mit einem Zusatzwerkstoff. Saubere Oberflaechen, passender Spalt, Benetzung und Temperatur
+sind wichtig.
+</FachlichErklaert>
+
+<TabellenbuchHinweis>
+Lot, Temperaturbereich, Flussmittel und Sicherheitsangaben sind quellenpflichtig.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Beim Loeten verbindet das Lot.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-018::check"
+  fragen={[{ id: "lot", masterySchluessel: "FK-2-MET-018::lot", aufgabenstellung: "Welcher Werkstoff verbindet beim Loeten?", optionen: [{ id: "lot", text: "Das Lot.", istKorrekt: true, erklaerung: "Richtig." }, { id: "sand", text: "Formsand.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

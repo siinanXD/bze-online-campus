@@ -1,0 +1,57 @@
+---
+titel: "Einfallstellen"
+thema_code: "PT-FEK"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Bewertung von Einfallstellen, Nachdruckbezug und Freigabeweg muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Fachbuch Spritzgiessen und betriebliche Pruefvorgabe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Zulaessige Oberflaechenbilder, Parameterbezug und Nacharbeitsweg nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an einer dicken Rippe">
+Auf einem Kunststoffteil ist neben einer Rippe eine eingesunkene Stelle sichtbar. Das Teil ist nicht einfach nur optisch anders, sondern braucht eine Ursachenpruefung.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Einfallstelle", "Schwindung", "Nachdruck", "Kuehlzeit"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Einfallstelle in Alltagssprache">
+Eine Einfallstelle ist eine Delle im Kunststoffteil. Sie entsteht oft dort, wo innen viel Material abkuehlt und sich zusammenzieht.
+</EinfachErklaert>
+
+<EinfallstellenSchema />
+
+<EinfallstellenTrainer titel="Einfallstellen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Einfallstellen deuten">
+Einfallstellen haengen haeufig mit Wanddicke, Schwindung, Nachdruck, Kuehlung und Angusslage zusammen. Prozesswerte werden nicht frei geraten, sondern mit Datenblatt, Einstellblatt oder Freigabe verglichen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Gehaeusedeckel">
+Ein Gehaeusedeckel hat ueber einem Schraubdom eine matte, eingesunkene Flaeche. Du trennst das Teil und meldest den Fund mit Lage und Charge.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Einfallstellen zeigen: Oberflaeche, Wanddicke und Nachdruck zusammen betrachten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEK-001::check"
+  fragen={[{ id: "einfallstelle", masterySchluessel: "FK-3-FEK-001::einfallstelle", aufgabenstellung: "Was ist bei einer sichtbaren Einfallstelle richtig?", optionen: [{ id: "richtig", text: "Lage erkennen, Teil trennen und Ursache mit Vorgabe klaeren.", istKorrekt: true, erklaerung: "Richtig. Einfallstellen brauchen Bewertung und Prozessbezug." }, { id: "falsch", text: "Delle warm glattdruecken und als Gutteil ablegen.", istKorrekt: false, erklaerung: "Nein. Das ist keine freigegebene Behandlung." }] }]}
+/>

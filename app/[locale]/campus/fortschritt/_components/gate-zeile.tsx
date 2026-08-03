@@ -29,8 +29,8 @@ export async function GateZeile({
     <Card
       className={
         href
-          ? 'flex items-center gap-3 transition-colors hover:border-primary-border hover:bg-primary-subtle/40'
-          : 'flex items-center gap-3'
+          ? 'flex items-center gap-3 rounded-[16px] transition-colors hover:border-primary-border hover:bg-primary-subtle/40'
+          : 'flex items-center gap-3 rounded-[16px]'
       }
     >
       <ProgressRing value={pct} size={44} label={`${pct} %`} />

@@ -1,0 +1,57 @@
+---
+titel: "Grat an Metallteilen"
+thema_code: "PT-FEM"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Gratbewertung, Schnittspaltbezug und Nacharbeitsweg muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch und betriebliche Entgratanweisung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Zulaessige Gratbilder, Nacharbeitsmethoden und Freigabeweg nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation nach dem Schneiden">
+An einer Metallkante steht ein scharfer Grat. Das Teil sieht fast fertig aus, kann aber beim Montieren stoeren oder verletzen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Grat", "Schnittspalt", "Nacharbeit", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Grat in Alltagssprache">
+Grat ist eine kleine, oft scharfe Kante, die nach dem Schneiden, Stanzen oder Bearbeiten stehen bleiben kann.
+</EinfachErklaert>
+
+<GratMetallSchema />
+
+<GratMetallTrainer titel="Grat an Metallteilen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Grat erkennen und Ursache pruefen">
+Grat kann durch Werkzeugzustand, Schnittspalt, Material, Verschleiss oder Prozessfuehrung entstehen. Bewertet wird nach Zeichnung, Pruefplan, Muster oder betrieblicher Entgratanweisung.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel scharfe Kante">
+Ein Stanzteil hat an der Schnittkante einen spuerbaren Grat. Du legst es nicht zu den Gutteilen, sondern klaerst Nacharbeit und Freigabe.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Grat ist ein Fehlerbild, kein Detail zum Wegdruecken.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEM-001::check"
+  fragen={[{ id: "grat", masterySchluessel: "FK-3-FEM-001::grat", aufgabenstellung: "Was ist bei auffaelligem Grat richtig?", optionen: [{ id: "richtig", text: "Kante bewerten, Teil trennen und Nacharbeitsweg klaeren.", istKorrekt: true, erklaerung: "Richtig. Grat braucht Bewertung und Vorgabe." }, { id: "falsch", text: "Grat abbrechen und ohne Dokumentation liefern.", istKorrekt: false, erklaerung: "Nein. Das ist keine freigegebene Behandlung." }] }]}
+/>

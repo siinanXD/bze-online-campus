@@ -1,0 +1,57 @@
+---
+titel: "Verfuegbarkeit berechnen"
+thema_code: "PT-OEE"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Zeitdefinitionen und Beispielrechnung muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch und Betriebsdatenerfassung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Zeitarten und Beispielwerte nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Linie">
+Geplant waren 480 Minuten. Davon stand die Anlage 60 Minuten. Du sollst die Verfuegbarkeit sauber berechnen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Verfuegbarkeit","OEE","Stillstandszeit","Kapazitaet","Dokumentation"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Laufzeit geteilt durch Planzeit">
+Verfuegbarkeit zeigt, welcher Anteil der geplanten Zeit wirklich gelaufen ist. Stillstand senkt den Wert.
+</EinfachErklaert>
+
+<VerfuegbarkeitBerechnenSchema />
+
+<VerfuegbarkeitBerechnenTrainer titel="Verfuegbarkeit berechnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Verfuegbarkeit als Laufzeitbezug">
+Verfuegbarkeit = Laufzeit / geplante Zeit. Welche Zeiten als Plan, Lauf oder Stillstand zaehlen, steht in der Betriebsvorgabe. Uebungswerte sind Lernbeispiele und keine verbindlichen Betriebswerte.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel ungeplanter Stopp">
+Wenn Material fehlt und die Maschine steht, sinkt die Verfuegbarkeit. Wird der Stopp nicht dokumentiert, wird die Kennzahl falsch.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Verfuegbarkeit braucht klare Plan- und Laufzeiten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-OEE-002::check"
+  fragen={[{ id: "002", masterySchluessel: "FK-4-OEE-002::kern", aufgabenstellung: "Was beschreibt Verfuegbarkeit?", optionen: [{ id: "richtig", text: "Den Anteil der geplanten Zeit, in dem die Anlage gelaufen ist.", istKorrekt: true, erklaerung: "Richtig. Laufzeit wird auf Planzeit bezogen." }, { id: "falsch", text: "Nur die Anzahl der Gutteile am Tag.", istKorrekt: false, erklaerung: "Nein. Das gehoert eher zur Qualitaetsrate oder Leistung." }] }]}
+/>

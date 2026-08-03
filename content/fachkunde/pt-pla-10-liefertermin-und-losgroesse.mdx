@@ -1,0 +1,57 @@
+---
+titel: "Liefertermin und Losgroesse"
+thema_code: "PT-PLA"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Terminlogik, Losgroessenregeln, Materialstatus und Eskalationsweg muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript, Produktionsplan, ERP-Auszug und betriebliche Terminplanung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Losgroessen, Terminrisiken, Puffer und Rueckmeldewege nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation vor der Zusage">
+Ein Kunde braucht Teile bis Freitag. Die Losgroesse ist hoch, Material ist noch nicht vollstaendig bereit und eine Maschine ist teilweise belegt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Liefertermin", "Losgroesse", "Kapazitaet", "Materialbedarf", "Terminrisiko"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Termin nur mit realistischer Menge">
+Der Liefertermin sagt, bis wann etwas fertig sein muss. Die Losgroesse sagt, wie viele Teile zusammen geplant werden. Beides muss zu Material, Maschine und Zeit passen.
+</EinfachErklaert>
+
+<LieferterminLosgroesseSchema />
+
+<LieferterminLosgroesseTrainer titel="Liefertermin und Losgroesse" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Termin- und Losgroessenplanung">
+Liefertermin und Losgroesse muessen gemeinsam bewertet werden. Eine groessere Losgroesse kann Ruestanteile guenstiger verteilen, bindet aber Material, Kapazitaet und Lagerflaeche. Ein Termin ist nur belastbar, wenn Materialstatus, Maschinenbelegung, Personal, Pruefung und moegliche Stillstaende beruecksichtigt sind.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Terminrisiko frueh melden">
+Die Maschine koennte die Menge schaffen, aber ein Rohmaterial fehlt. Der richtige Schritt ist fruehe Rueckmeldung, damit Materialbeschaffung, Termin oder Losgroesse angepasst werden koennen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Termin plus Losgroesse muss gegen Material, Kapazitaet und Risiko geprueft werden.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-PLA-010::check"
+  fragen={[{ id: "termin", masterySchluessel: "FK-4-PLA-010::termin", aufgabenstellung: "Wann ist ein Liefertermin belastbar planbar?", optionen: [{ id: "richtig", text: "Wenn Losgroesse, Material, Kapazitaet und Risiken zusammen geprueft sind.", istKorrekt: true, erklaerung: "Richtig. Terminplanung braucht den Gesamtblick." }, { id: "falsch", text: "Wenn der Termin einfach zugesagt wurde.", istKorrekt: false, erklaerung: "Nein. Eine Zusage ohne Planungsabgleich ist nicht belastbar." }] }]}
+/>

@@ -1,0 +1,57 @@
+---
+titel: "SPS-Grundlagen"
+thema_code: "PT-STR"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. SPS-Grundaufgabe, Programmbezug und Aenderungsbefugnis muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Fachbuch Steuerungstechnik und betriebliche SPS-Unterlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "SPS-Zyklus, Programmaenderungsweg und Anlagenbeispiele nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation im Schaltschrank">
+Im Schaltschrank arbeitet eine SPS. Sie bekommt Sensorsignale und schaltet Ausgaenge, ohne dass jemand jeden Schritt einzeln ausloest.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["SPS", "Programm", "Eingang", "Ausgang"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="SPS in Alltagssprache">
+Eine SPS ist ein Industrie-Computer fuer Maschinenablaeufe. Sie liest Signale, verarbeitet ein Programm und schaltet Ausgaenge.
+</EinfachErklaert>
+
+<SpsGrundlagenSchema />
+
+<SpsGrundlagenTrainer titel="SPS-Grundlagen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="SPS-Aufgabe verstehen">
+Eine SPS arbeitet zyklisch: Eingaenge lesen, Programm auswerten, Ausgaenge setzen. Programmaenderungen sind kein Bediener-Trick, sondern brauchen Befugnis, Version und Freigabe.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Stoerung">
+Ein Sensor meldet kein Signal. Du aenderst nicht das Programm, sondern pruefst Signalstatus, Meldeweg und Anlagenunterlage.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+SPS lesen, verarbeiten und schalten - Programme nicht spontan aendern.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-STR-004::check"
+  fragen={[{ id: "sps", masterySchluessel: "FK-3-STR-004::sps", aufgabenstellung: "Was beschreibt eine SPS-Grundaufgabe richtig?", optionen: [{ id: "richtig", text: "Eingaenge lesen, Programm auswerten, Ausgaenge setzen.", istKorrekt: true, erklaerung: "Richtig. Das ist der einfache SPS-Zyklus." }, { id: "falsch", text: "Programm bei jeder Stoerung spontan umschreiben.", istKorrekt: false, erklaerung: "Nein. Programmaenderungen brauchen Befugnis und Freigabe." }] }]}
+/>

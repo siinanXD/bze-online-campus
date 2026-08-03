@@ -1,0 +1,120 @@
+---
+titel: "Schriftfeld lesen"
+thema_code: "PT-ZEI"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Aufbau und Bezeichnungen des verwendeten Schriftfelds muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Technisches Zeichnen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkreter Norm- und Tabellenbuchbezug muss vor Freigabe ergaenzt werden."
+  - titel: "BZE-Beispielzeichnung"
+    seite: "Zeichnung [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Beispielwerte sind Platzhalter und muessen mit freigegebenem Material abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Auftrag">
+Du sollst ein Teil vorbereiten. Auf dem Blatt sind viele Linien und Zahlen. Dein erster Blick geht nach
+unten rechts: Dort steht im Schriftfeld, welche Zeichnung du ueberhaupt vor dir hast.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schriftfeld", "Zeichnungsnummer", "Werkstoff", "Massstab", "Bauteil"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schriftfeld in Alltagssprache">
+Das Schriftfeld ist der Infokasten der Zeichnung. Dort findest du Grunddaten wie Nummer, Name des Teils,
+Werkstoff, Massstab, Datum oder Aenderungsstand.
+</EinfachErklaert>
+
+<SchriftfeldSchema />
+
+<SchriftfeldTrainer titel="Schriftfeld-Information finden" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Stammdaten der Zeichnung">
+Das Schriftfeld dient zur eindeutigen Identifikation der Zeichnung. Es hilft, Zeichnungsnummer, Benennung,
+Werkstoff, Massstab und Aenderungsstand zu pruefen. Gerade vor Fertigung, Pruefung oder Rueckmeldung muss
+klar sein, dass der gueltige Zeichnungsstand verwendet wird.
+</FachlichErklaert>
+
+## Typische Angaben
+
+| Angabe | Wofuer sie wichtig ist |
+|---|---|
+| Zeichnungsnummer | Eindeutige Zuordnung zur richtigen Zeichnung |
+| Benennung | Name oder Beschreibung des Bauteils |
+| Werkstoff | Material, aus dem das Teil gefertigt wird |
+| Massstab | Verhaeltnis zwischen Darstellung und Wirklichkeit |
+| Aenderung | Hinweis auf den gueltigen Stand |
+
+<Praxisbeispiel titel="Praxisbeispiel Werkstoff">
+Im Materialwagen liegt Kunststoff A, im Schriftfeld steht aber Kunststoff B. Du wechselst nicht eigenmaechtig
+das Material, sondern meldest den Widerspruch vor dem Start.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Welche Felder genau vorkommen, haengt vom betrieblichen Zeichnungsformat ab. Der Ausbilder muss das
+verwendete Schriftfeld mit dem Lernbeispiel abgleichen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Erst das Schriftfeld pruefen, dann Ansichten und Bemassung lesen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-ZEI-002::check"
+  fragen={[
+    {
+      id: "nummer",
+      masterySchluessel: "FK-1-ZEI-002::nummer",
+      aufgabenstellung: "Welche Angabe identifiziert die Zeichnung eindeutig?",
+      optionen: [
+        {
+          id: "zeichnungsnummer",
+          text: "Die Zeichnungsnummer.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Sie verbindet Auftrag, Zeichnung und Dokumentenstand.",
+        },
+        {
+          id: "linien",
+          text: "Die Anzahl der sichtbaren Linien.",
+          istKorrekt: false,
+          erklaerung: "Nein. Linien beschreiben die Form, aber nicht die eindeutige Dokumentenkennung.",
+        },
+      ],
+    },
+    {
+      id: "werkstoff",
+      masterySchluessel: "FK-1-ZEI-002::werkstoff",
+      aufgabenstellung: "Was pruefst du, wenn Material und Schriftfeld nicht zusammenpassen?",
+      optionen: [
+        {
+          id: "klaeren",
+          text: "Den Widerspruch melden und klaeren lassen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Der Werkstoff darf nicht geraten werden.",
+        },
+        {
+          id: "egal",
+          text: "Irgendein aehnliches Material verwenden.",
+          istKorrekt: false,
+          erklaerung: "Das kann zu falschen Teilen und Sicherheitsproblemen fuehren.",
+        },
+      ],
+    },
+  ]}
+/>

@@ -1,0 +1,78 @@
+---
+titel: "Waermeausdehnung einfach"
+thema_code: "PT-WSE"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Ausdehnungswerte und Rechenbeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Waermeausdehnung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Ausdehnungskoeffizienten und Rechenwerte duerfen erst nach Quellenabgleich genutzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am warmen Werkstueck">
+Ein langes Teil wurde warm bearbeitet und soll gemessen werden. Du erkennst: Temperatur kann Laenge und
+Beurteilung beeinflussen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Ausdehnung", "Referenztemperatur", "Werkstoff", "Temperatur", "Tabellenbuch"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Waermeausdehnung in Alltagssprache">
+Wenn ein Werkstoff waermer wird, kann er sich ausdehnen. Beim Abkuehlen kann sich die Laenge wieder aendern.
+</EinfachErklaert>
+
+<WaermeausdehnungSchema />
+
+<WaermeausdehnungTrainer titel="Waermeausdehnung einfach" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Laengenaenderung durch Temperatur">
+Waermeausdehnung beschreibt die Groessenaenderung eines Werkstoffs durch Temperaturveraenderung.
+Wie stark das passiert, haengt vom Werkstoff und von freigegebenen Tabellenwerten ab.
+</FachlichErklaert>
+
+<Formelkarte titel="Grundidee Laengenaenderung" formel="Delta L">
+Die konkrete Formel und Werte werden erst mit Tabellenbuch oder freigegebener Aufgabe genutzt.
+</Formelkarte>
+
+<Praxisbeispiel titel="Praxisbeispiel Grenzfall">
+Ein grenznahes Mass wird direkt nach warmer Bearbeitung gemessen. Du beachtest die Messvorgabe, bevor du
+Gut oder Ausschuss entscheidest.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Ausdehnungskoeffizienten und Referenzbedingungen sind quellenpflichtig.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Temperatur kann Laenge beeinflussen; Grenzfaelle brauchen Vorgabe.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WSE-006::check"
+  fragen={[
+    {
+      id: "temperatur",
+      masterySchluessel: "FK-1-WSE-006::temperatur",
+      aufgabenstellung: "Warum ist Temperatur beim Messen wichtig?",
+      optionen: [
+        { id: "laenge", text: "Weil sich Laengen durch Waerme aendern koennen.", istKorrekt: true, erklaerung: "Richtig." },
+        { id: "farbe", text: "Weil nur warme Teile eine Farbe haben.", istKorrekt: false, erklaerung: "Nein. Es geht um Mass- und Werkstoffverhalten." },
+      ],
+    },
+  ]}
+/>

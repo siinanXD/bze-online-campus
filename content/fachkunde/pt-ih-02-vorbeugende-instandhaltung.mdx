@@ -1,0 +1,57 @@
+---
+titel: "Vorbeugende Instandhaltung"
+thema_code: "PT-IH"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Intervalle, Zustandsgrenzen und betriebliche Planungslogik muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Wartungsplan, Maschinenhandbuch und betriebliche Instandhaltungsunterlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Wartungsintervalle, Zustandswerte und Verantwortlichkeiten nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation vor dem Ausfall">
+Eine Anlage laeuft noch, aber der Wartungsplan zeigt einen faelligen Pruefpunkt. Vorbeugende Instandhaltung verhindert, dass aus einem kleinen Hinweis ein ungeplanter Stillstand wird.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Vorbeugende Instandhaltung", "Zustandsorientiert", "Wartung", "Inspektion", "Trend"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Nicht erst warten bis es kaputt ist">
+Vorbeugende Instandhaltung plant Arbeit, bevor die Maschine ausfaellt. Das kann nach Zeit, Nutzung oder beobachtetem Zustand passieren.
+</EinfachErklaert>
+
+<VorbeugendeInstandhaltungSchema />
+
+<VorbeugendeInstandhaltungTrainer titel="Vorbeugende Instandhaltung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Plan und Zustand verbinden">
+Vorbeugende Instandhaltung nutzt feste Intervalle, Laufzeiten, Stueckzahlen oder Zustandsmerkmale. Welche Methode gilt, steht im Wartungsplan oder in der betrieblichen Vorgabe. Werte und Grenzen werden nicht frei festgelegt.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Foerderband">
+Ein Lager klingt noch normal, aber der Plan fordert eine Inspektion nach einem festgelegten Zeitraum. Du meldest die Faelligkeit, damit die Pruefung geplant wird, bevor der Betrieb ungeplant stoppt.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Vorbeugend heisst: geplant handeln, bevor der Ausfall kommt.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-IH-002::check"
+  fragen={[{ id: "vorbeugend", masterySchluessel: "FK-3-IH-002::vorbeugend", aufgabenstellung: "Was passt zur vorbeugenden Instandhaltung?", optionen: [{ id: "richtig", text: "Faellige Wartungs- oder Zustandspruefpunkte vor dem Ausfall bearbeiten.", istKorrekt: true, erklaerung: "Richtig. Vorbeugung reduziert ungeplante Ausfaelle." }, { id: "falsch", text: "Immer warten, bis die Anlage steht, damit der Fehler sichtbar ist.", istKorrekt: false, erklaerung: "Nein. Das waere reaktive Stoerungsbearbeitung." }] }]}
+/>

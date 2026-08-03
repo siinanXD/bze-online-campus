@@ -1,0 +1,57 @@
+---
+titel: "Temperatur, Schwingung, Geraeusch"
+thema_code: "PT-IH"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Messstellen, Grenzwerte, Trendbewertung und Meldewege muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Maschinenhandbuch, Wartungsplan, Pruefplan und betriebliche Vorgaben"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Zulaessige Temperatur-, Schwingungs- und Geraeuschwerte nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation bei laufender Anlage">
+Die Maschine klingt anders als gestern und ein Gehaeuse wirkt ungewoehnlich warm. Du ordnest die Beobachtung als Symptom ein und meldest sie mit Ort, Zeit und Zustand.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Temperatur", "Schwingung", "Geraeusch", "Trend", "Stoerung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Maschinen geben Zeichen">
+Wenn eine Anlage waermer wird, staerker vibriert oder anders klingt, kann das ein Hinweis auf ein Problem sein. Du beobachtest und meldest sachlich.
+</EinfachErklaert>
+
+<TemperaturSchwingungGeraeuschSchema />
+
+<TemperaturSchwingungGeraeuschTrainer titel="Temperatur Schwingung Geraeusch" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Symptome im Verlauf bewerten">
+Ein einzelnes Symptom ist noch keine sichere Ursache. Temperatur, Schwingung und Geraeusch werden mit Messstelle, Normalzustand, Trend und Vorgabe verglichen. Auffaellige Veraenderungen werden dokumentiert und nach Meldeweg weitergegeben.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel neues Pfeifen">
+Ein Antrieb pfeift ploetzlich. Du uebertoenst das Geraeusch nicht, sondern notierst Zeitpunkt, Betriebszustand und betroffenen Bereich. So kann Instandhaltung gezielt pruefen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Temperatur, Schwingung und Geraeusch sind Symptome, keine fertige Ursache.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-IH-005::check"
+  fragen={[{ id: "symptome", masterySchluessel: "FK-3-IH-005::symptome", aufgabenstellung: "Wie gehst du mit einem neuen auffaelligen Geraeusch um?", optionen: [{ id: "richtig", text: "Ort, Zeit, Betriebszustand und Beobachtung dokumentieren und melden.", istKorrekt: true, erklaerung: "Richtig. So wird aus dem Symptom ein verwertbarer Hinweis." }, { id: "falsch", text: "Weiterlaufen lassen und das Geraeusch mit Musik uebertoenen.", istKorrekt: false, erklaerung: "Nein. Das kann einen beginnenden Schaden verdecken." }] }]}
+/>

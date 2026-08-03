@@ -1,0 +1,64 @@
+---
+titel: "Drehzahl berechnen"
+thema_code: "PT-FER"
+lesedauer_minuten: 10
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Formelumstellung, Einheiten und Beispielwerte muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Drehzahl und Schnittwerte"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Drehzahlformeln und Einheitenumrechnung vor Freigabe pruefen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation beim Einrichten">
+Du sollst eine passende Drehzahl einstellen. Dafuer brauchst du den Schnittwert, den Durchmesser und die
+richtige Einheit.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Drehzahl", "Schnittgeschwindigkeit", "Durchmesser", "Tabellenbuch"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Drehzahl in Alltagssprache">
+Drehzahl sagt, wie oft sich Werkzeug oder Werkstueck in einer bestimmten Zeit dreht.
+</EinfachErklaert>
+
+<DrehzahlBerechnenSchema />
+
+<DrehzahlBerechnenTrainer titel="Drehzahl berechnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Formel sicher umstellen">
+Die Drehzahl wird aus Schnittgeschwindigkeit und Durchmesser abgeleitet. Einheiten muessen vor dem Einsetzen
+angepasst werden. Fehlende oder widerspruechliche Werte werden geklaert.
+</FachlichErklaert>
+
+<Formelkarte titel="Grundformel Drehzahl" formel="n = vc / (pi x d)">
+Diese Formelkarte ist ein Lernzusammenhang. Reale Schnittwerte und Einheitenumrechnungen sind
+quellenpflichtig.
+</Formelkarte>
+
+<TabellenbuchHinweis>
+Keine Drehzahl nach Gefuehl einstellen. Erst Werkzeug, Werkstoff, Durchmesser, Einheit und Tabellenwert pruefen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Drehzahl braucht Schnittwert, Durchmesser und passende Einheiten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-FER-005::check"
+  fragen={[{ id: "einheiten", masterySchluessel: "FK-2-FER-005::einheiten", aufgabenstellung: "Was muss vor einer Drehzahlrechnung stimmen?", optionen: [{ id: "einheit", text: "Die Einheiten und Quellenwerte.", istKorrekt: true, erklaerung: "Richtig." }, { id: "schaetzung", text: "Eine grobe Schaetzung reicht immer.", istKorrekt: false, erklaerung: "Nein. Drehzahlwerte sind quellenpflichtig." }] }]}
+/>

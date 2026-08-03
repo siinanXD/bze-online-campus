@@ -1,0 +1,114 @@
+---
+titel: "Additive und Masterbatch"
+thema_code: "PT-WST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Additivarten, Masterbatch-Dosierung und Freigaberegeln muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Datenblatt Additive und Masterbatch"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Zusatzstoffe, Dosierungen, Freigaben und Sicherheitsregeln duerfen erst nach Datenblattabgleich genutzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Materialmischung">
+Ein Auftrag verlangt eine bestimmte Farbe. Neben dem Grundgranulat steht Masterbatch. Du weisst:
+Zusatzstoffe werden nicht nach Gefuehl beigemischt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Additiv", "Masterbatch", "Granulat", "Datenblatt", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Zusatzstoffe in Alltagssprache">
+Additive und Masterbatch sind Zusätze im Kunststoff. Sie koennen zum Beispiel Farbe oder Eigenschaften
+beeinflussen. Menge und Freigabe muessen genau vorgegeben sein.
+</EinfachErklaert>
+
+<AdditiveMasterbatchSchema />
+
+<AdditiveMasterbatchTrainer titel="Additive und Masterbatch einordnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Zusatzstoffe einordnen">
+Additive werden eingesetzt, um Eigenschaften zu beeinflussen. Masterbatch ist eine konzentrierte Mischung,
+oft fuer Farbe oder bestimmte Funktionen. Der Einsatz muss freigegeben, dosiert und dokumentiert werden.
+</FachlichErklaert>
+
+## Sichere Fragen
+
+| Frage | Warum wichtig |
+|---|---|
+| Welches Material? | Zusatz muss zum Grundmaterial passen |
+| Welche Menge? | Dosierung wirkt auf Qualitaet |
+| Welche Freigabe? | Nicht freigegebene Zusaetze vermeiden |
+| Welche Dokumentation? | Rueckverfolgbarkeit sichern |
+
+<Praxisbeispiel titel="Praxisbeispiel Farbabweichung">
+Ein Teil ist farblich auffaellig. Du gibst nicht einfach mehr Masterbatch dazu, sondern pruefst Auftrag,
+Dosierung, Material, Charge und Freigabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Additivarten, Masterbatch, Dosierung, Freigabe und Sicherheitsdaten muessen aus Datenblatt, Auftrag,
+Traegerskript oder Unterweisung stammen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Zusatzstoffe sind Vorgabe-Arbeit, keine Gefuehlsmischung.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WST-010::check"
+  fragen={[
+    {
+      id: "farbe",
+      masterySchluessel: "FK-1-WST-010::farbe",
+      aufgabenstellung: "Was machst du, wenn Granulat eine bestimmte Farbe bekommen soll?",
+      optionen: [
+        {
+          id: "masterbatch",
+          text: "Masterbatch nach Vorgabe verwenden.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Freigabe und Dosierung muessen stimmen.",
+        },
+        {
+          id: "handvoll",
+          text: "Eine Handvoll nach Gefuehl zugeben.",
+          istKorrekt: false,
+          erklaerung: "Nein. Das gefaehrdet Qualitaet und Rueckverfolgbarkeit.",
+        },
+      ],
+    },
+    {
+      id: "freigabe",
+      masterySchluessel: "FK-1-WST-010::freigabe",
+      aufgabenstellung: "Was tust du bei unklarer Zusatzstoff-Freigabe?",
+      optionen: [
+        {
+          id: "klaeren",
+          text: "Freigabe, Datenblatt oder Auftrag klaeren.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Zusatzstoffe werden nicht still eingesetzt.",
+        },
+        {
+          id: "testen",
+          text: "Einfach im Auftrag testen.",
+          istKorrekt: false,
+          erklaerung: "Nein. Das ist keine freigegebene Produktion.",
+        },
+      ],
+    },
+  ]}
+/>

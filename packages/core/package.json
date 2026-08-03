@@ -11,6 +11,7 @@
     "./engagement": "./engagement/index.ts",
     "./benachrichtigung": "./benachrichtigung/index.ts",
     "./werte": "./werte/index.ts",
-    "./content": "./content/index.ts"
+    "./content": "./content/index.ts",
+    "./fachkunde": "./fachkunde/index.ts"
   }
 }

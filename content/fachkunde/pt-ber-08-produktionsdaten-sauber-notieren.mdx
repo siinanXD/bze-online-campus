@@ -1,0 +1,57 @@
+---
+titel: "Produktionsdaten sauber notieren"
+thema_code: "PT-BER"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Pflichtfelder und Protokollformulare muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript Dokumentation und betriebliche Rueckmeldeformulare"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Pflichtfelder und Beispielwerte nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation am Schichtende">
+Du sollst Menge, Ausschuss und Charge eintragen. Unklare Zahlen machen spaetere Qualitaets- und Terminauswertung unmoeglich.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Protokoll","Charge","Menge","Ausschuss","Dokumentation"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Sauber aufschreiben">
+Produktionsdaten muessen vollstaendig, lesbar und wahr sein. Schaetzen oder Schoenschoen hilft niemandem.
+</EinfachErklaert>
+
+<ProduktionsdatenNotierenSchema />
+
+<ProduktionsdatenNotierenTrainer titel="Produktionsdaten sauber notieren" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Daten als Nachweis und Steuerungsgrundlage">
+Produktionsdaten verbinden Menge, Qualitaet, Charge und Zeit. Sie dienen Rueckverfolgung, Auswertung und Freigabe. Unvollstaendige oder geschoente Daten zerstoeren die Aussagekraft von OEE, QS und Planung.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel fehlende Charge">
+Ausschuss wurde notiert, die Charge fehlt. Bei einem Reklamationsfall ist die Rueckverfolgung blockiert.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Daten ehrlich, vollstaendig und lesbar.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-BER-008::check"
+  fragen={[{ id: "kern", masterySchluessel: "FK-1-BER-008::kern", aufgabenstellung: "Was ist bei Produktionsdaten zentral?", optionen: [{ id: "richtig", text: "Vollstaendig, lesbar und wahr dokumentieren.", istKorrekt: true, erklaerung: "Richtig. Nur dann sind Auswertung und Rueckverfolgung moeglich." }, { id: "falsch", text: "Ungefaehre Werte reichen, solange die Schicht fertig wird.", istKorrekt: false, erklaerung: "Nein. Ungenaue Daten sind spaeter wertlos oder gefaehrlich." }] }]}
+/>

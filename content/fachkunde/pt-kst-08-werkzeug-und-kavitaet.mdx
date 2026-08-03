@@ -1,0 +1,57 @@
+---
+titel: "Werkzeug und Kavitaet"
+thema_code: "PT-KST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Werkzeugbegriffe und Bauteilbezug muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Kunststofftechnik Werkzeug"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Kavitaet, Trennebene und Werkzeugfunktionen nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Werkzeug">
+Ein Bauteil hat eine sichtbare Kante. Du sollst erklaeren, warum Werkzeughaelften, Trennebene und Kavitaet fuer die Form wichtig sind.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Werkzeug", "Kavitaet", "Trennebene", "Werkzeugtemperierung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Werkzeug und Kavitaet in Alltagssprache">
+Das Werkzeug ist die Form. Die Kavitaet ist der Hohlraum, in dem das Kunststoffteil entsteht.
+</EinfachErklaert>
+
+<WerkzeugKavitaetSchema />
+
+<WerkzeugKavitaetTrainer titel="Werkzeug und Kavitaet" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Formgebender Hohlraum">
+Die Werkzeughaelften schliessen die Kavitaet. Trennebene, Anguss, Entlueftung, Temperierung und Auswerfer wirken zusammen auf Bauteilqualitaet und Entformung.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Werkzeugzustand">
+Du siehst eine Beschaedigung an einer Werkzeugkante. Du meldest sie sofort, weil sie sich am Bauteil wiederfinden kann.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Die Kavitaet gibt dem Kunststoffteil seine Form.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-KST-008::check"
+  fragen={[{ id: "kavitaet", masterySchluessel: "FK-2-KST-008::kavitaet", aufgabenstellung: "Was ist die Kavitaet?", optionen: [{ id: "richtig", text: "Der formgebende Hohlraum im Werkzeug.", istKorrekt: true, erklaerung: "Richtig. Dort entsteht die Bauteilgeometrie." }, { id: "falsch", text: "Der Materialtrichter ueber der Maschine.", istKorrekt: false, erklaerung: "Nein. Der Trichter gehoert zur Materialzufuhr." }] }]}
+/>

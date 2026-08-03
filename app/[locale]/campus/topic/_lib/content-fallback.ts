@@ -62,9 +62,47 @@ export async function listeDemoLerneinheiten(themaCode: string): Promise<DemoLer
 
 /** Grobe Anzeige-Bezeichnung für Demo-Themen, solange kein echter `themen`-Datensatz existiert. */
 const DEMO_THEMA_BEZEICHNUNG: Record<string, string> = {
+  'PT-BER': 'Berufsrolle und Sicherheit',
+  'PT-SIC': 'Sicherheit in der Werkhalle',
+  'PT-UMW': 'Umwelt und Betriebsstoffe',
+  'PT-ZEI': 'Technische Zeichnung',
+  'PT-EIN': 'Einheiten und Groessen',
   'PT-WS': 'Werkstoffe',
+  'PT-WST': 'Werkstoffe',
+  'PT-WSE': 'Werkstoffeigenschaften',
+  'PT-MEL': 'Maschinenelemente',
+  'PT-FER': 'Fertigungsgrundlagen',
+  'PT-MET': 'Metallbearbeitung',
+  'PT-KST': 'Kunststoffverfahren',
+  'PT-PRO': 'Produktionsvorbereitung',
+  'PT-QS': 'Qualitaet und Pruefung',
+  'PT-FEM': 'Metallfehler',
+  'PT-FEK': 'Kunststofffehler',
+  'PT-STR': 'Steuerung',
+  'PT-PNH': 'Pneumatik und Hydraulik',
+  'PT-IH': 'Instandhaltung',
+  'PT-PLA': 'Planung',
+  'PT-LAG': 'Lager',
+  'PT-LEAN': 'Lean',
+  'PT-OEE': 'OEE',
+  'PT-MAT': 'Technische Mathematik',
+  'PT-WISO': 'Wirtschafts- und Sozialkunde',
+  'PT-PRF': 'Pruefungsvorbereitung',
+  'PT-MES': 'Messen und Pruefen',
 };
 
 export function demoThemaBezeichnung(themaCode: string): string {
   return DEMO_THEMA_BEZEICHNUNG[themaCode] ?? themaCode;
+}
+
+/** Kurze Lernpfad-Beschreibung fuer Demo-Themen (Figma Header-Unterzeile). */
+const DEMO_THEMA_BESCHREIBUNG: Record<string, string> = {
+  'PT-MES': 'Von Pruefen/Messen/Lehren bis Messunsicherheit — in klaren Schritten.',
+  'PT-BER': 'Berufsbild, Aufgaben und sicheres Verhalten im Betrieb.',
+  'PT-QS': 'Qualitaet, Toleranzen und Pruefung im Fertigungsalltag.',
+  'PT-KST': 'Spritzgiessen und weitere Kunststoffverfahren Schritt fuer Schritt.',
+};
+
+export function demoThemaBeschreibung(themaCode: string): string | null {
+  return DEMO_THEMA_BESCHREIBUNG[themaCode] ?? null;
 }

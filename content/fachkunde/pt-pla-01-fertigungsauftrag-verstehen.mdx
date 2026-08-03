@@ -1,0 +1,57 @@
+---
+titel: "Fertigungsauftrag verstehen"
+thema_code: "PT-PLA"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Auftragsdaten, betriebliche Planungsfelder und Freigabeweg muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript, Fertigungsauftrag-Muster und betriebliche Planungsunterlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Auftragsfelder, Terminlogik und Rueckfrageweg nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation am Planungsboard">
+Ein neuer Auftrag liegt bereit. Auf dem Blatt stehen Teil, Menge und Termin. Bevor die Maschine vorbereitet wird, muss klar sein, ob Zeichnung, Material und Vorgaben wirklich zusammenpassen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Fertigungsauftrag", "Menge", "Liefertermin", "Zeichnungsabgleich", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Erst verstehen, dann planen">
+Der Fertigungsauftrag sagt, was gemacht werden soll. Wenn Teil, Menge, Termin oder Vorgabe unklar sind, wird nicht gestartet, sondern rueckgefragt.
+</EinfachErklaert>
+
+<FertigungsauftragSchema />
+
+<FertigungsauftragTrainer titel="Fertigungsauftrag verstehen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Auftrag als Planungsgrundlage">
+Ein Fertigungsauftrag verbindet Produkt, Menge, Termin, Material, Zeichnung, Arbeitsplan und Rueckmeldung. Fuer die Planung zaehlt nicht nur die einzelne Angabe, sondern der Abgleich: Passen Auftrag, Zeichnung, Stueckliste, Materialstatus und freigegebene Version zusammen?
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel falscher Zeichnungsstand">
+Ein Auftrag nennt eine alte Zeichnungsnummer, am Arbeitsplatz liegt aber eine neuere Version. Der sichere Weg ist Rueckfrage vor Start. Sonst koennte die richtige Menge mit falscher Ausfuehrung gefertigt werden.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ein Auftrag ist erst planbar, wenn Was, Wie viel, Bis wann und Nach welcher Vorgabe klar sind.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-PLA-001::check"
+  fragen={[{ id: "auftrag", masterySchluessel: "FK-4-PLA-001::auftrag", aufgabenstellung: "Was pruefst du vor der Planung eines Fertigungsauftrags?", optionen: [{ id: "richtig", text: "Teil, Menge, Termin und freigegebene Vorgaben abgleichen.", istKorrekt: true, erklaerung: "Richtig. Erst dadurch wird der Auftrag belastbar planbar." }, { id: "falsch", text: "Mit der erstbesten Maschine starten und spaeter klaeren.", istKorrekt: false, erklaerung: "Nein. Unklare Vorgaben muessen vor dem Start geklaert werden." }] }]}
+/>

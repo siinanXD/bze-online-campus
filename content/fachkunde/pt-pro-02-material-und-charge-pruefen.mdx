@@ -1,0 +1,57 @@
+---
+titel: "Material und Charge pruefen"
+thema_code: "PT-PRO"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Materialfreigabe, Etikettierung und Rueckverfolgung muessen fachlich geprueft werden."
+quellen:
+  - titel: "Betriebliche Material- und Chargenanweisung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Materialetikett, Chargenpflicht und Dokumentationsweg nach Vorgabe ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Materialregal">
+Mehrere Materialgebinde sehen aehnlich aus. Du pruefst Etikett, Materialbezeichnung und Charge, bevor du etwas an die Maschine bringst.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Material", "Charge", "Etikett", "Rueckverfolgung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Materialpruefung in Alltagssprache">
+Du nimmst nicht einfach irgendein Material. Du pruefst, ob genau dieses Material fuer genau diesen Auftrag freigegeben ist.
+</EinfachErklaert>
+
+<MaterialChargePruefenSchema />
+
+<MaterialChargePruefenTrainer titel="Material und Charge pruefen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Rueckverfolgbare Materialfreigabe">
+Material und Charge muessen mit Auftrag, Etikett und Freigabe zusammenpassen. Die Chargenangabe sorgt dafuer, dass spaeter nachvollziehbar bleibt, welches Material verarbeitet wurde.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel zwei aehnliche Saecke">
+Zwei Saecke haben dieselbe Farbe, aber unterschiedliche Chargen. Du pruefst die Kennzeichnung und dokumentierst die verwendete Charge nach Vorgabe.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Material wird nach Etikett und Freigabe gewaehlt, nicht nach Aussehen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-PRO-002::check"
+  fragen={[{ id: "charge", masterySchluessel: "FK-2-PRO-002::charge", aufgabenstellung: "Warum wird die Charge notiert?", optionen: [{ id: "richtig", text: "Damit Material rueckverfolgbar bleibt.", istKorrekt: true, erklaerung: "Richtig. Rueckverfolgung hilft bei Qualitaetsklaerung." }, { id: "falsch", text: "Damit der Arbeitsplatz voller wirkt.", istKorrekt: false, erklaerung: "Nein. Die Charge hat einen Qualitaetsbezug." }] }]}
+/>

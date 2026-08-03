@@ -1,0 +1,114 @@
+---
+titel: "Aluminium in der Produktion"
+thema_code: "PT-WST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Aluminiumlegierungen, Oberflaechen- und Bearbeitungshinweise muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Aluminium"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Legierungen, Eigenschaften und Bearbeitungsregeln muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Leichtbauteil">
+Ein Bauteil wirkt leicht und soll gefraest werden. Auf der Zeichnung steht Aluminium. Du pruefst Sorte,
+Oberflaeche und Bearbeitungsvorgabe.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Aluminium", "Nichteisenmetall", "Leichtmetall", "Oxidschicht", "Legierung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Aluminium in Alltagssprache">
+Aluminium ist ein leichtes Metall. Es kann gut fuer viele Bauteile sein, aber die genaue Legierung und
+Oberflaeche sind wichtig.
+</EinfachErklaert>
+
+<AluminiumSchema />
+
+<AluminiumTrainer titel="Aluminium in der Produktion" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Leichtmetall mit Vorgabe">
+Aluminium gehoert zu den Nichteisenmetallen und Leichtmetallen. Eigenschaften haengen von Legierung,
+Zustand und Oberflaeche ab. Eine Oxidschicht kann fuer Bearbeitung, Verbindung oder Funktion relevant sein.
+</FachlichErklaert>
+
+## Worauf du achtest
+
+| Punkt | Warum wichtig |
+|---|---|
+| Legierung | Eigenschaften koennen stark variieren |
+| Oberflaeche | Oxidschicht oder Beschichtung beachten |
+| Werkzeug/Kuehlung | Nach Bearbeitungsvorgabe arbeiten |
+| Kennzeichnung | Nicht nach Aussehen entscheiden |
+
+<Praxisbeispiel titel="Praxisbeispiel Oberflaeche">
+Ein Aluminiumteil soll geklebt oder beschichtet werden. Du beachtest die Oberflaeche und arbeitest nicht
+einfach mit einer Standardannahme.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Aluminiumlegierungen, Oberflaechenbehandlung, Bearbeitung und konkrete Eigenschaften muessen aus
+Tabellenbuch, Datenblatt, Zeichnung oder Unterweisung stammen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Aluminium ist leicht, aber nicht beliebig austauschbar.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WST-005::check"
+  fragen={[
+    {
+      id: "gruppe",
+      masterySchluessel: "FK-1-WST-005::gruppe",
+      aufgabenstellung: "Zu welcher Gruppe gehoert Aluminium?",
+      optionen: [
+        {
+          id: "ne",
+          text: "Zu den Nichteisenmetallen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Aluminium ist ein typisches NE-Metall.",
+        },
+        {
+          id: "stahl",
+          text: "Zu den Eisenwerkstoffen.",
+          istKorrekt: false,
+          erklaerung: "Nein. Aluminium ist kein Eisenwerkstoff.",
+        },
+      ],
+    },
+    {
+      id: "unbekannt",
+      masterySchluessel: "FK-1-WST-005::unbekannt",
+      aufgabenstellung: "Was machst du bei unbekannter Aluminiumlegierung?",
+      optionen: [
+        {
+          id: "datenblatt",
+          text: "Datenblatt, Zeichnung oder Vorgabe pruefen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Konkrete Eigenschaften werden nicht geraten.",
+        },
+        {
+          id: "gleich",
+          text: "Alle Aluminiumteile gleich behandeln.",
+          istKorrekt: false,
+          erklaerung: "Nein. Legierung und Zustand koennen wichtig sein.",
+        },
+      ],
+    },
+  ]}
+/>

@@ -1,0 +1,57 @@
+---
+titel: "Einzugszone"
+thema_code: "PT-KST"
+lesedauer_minuten: 7
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Einzugsverhalten und Stoerungsbeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Kunststofftechnik Schneckenzonen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Beschreibung der Einzugszone nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation bei stockendem Material">
+Der Trichter ist gefuellt, aber die Maschine nimmt Material ungleichmaessig auf. Du beobachtest den Einzug und meldest Stoerungen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Einzugszone", "Granulat", "Materialtrichter", "Schnecke"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Einzugszone in Alltagssprache">
+In der Einzugszone kommt Granulat aus dem Trichter in die Schnecke und wird weitertransportiert.
+</EinfachErklaert>
+
+<EinzugszoneSchema />
+
+<EinzugszoneTrainer titel="Einzugszone" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Materialaufnahme am Schneckenanfang">
+Die Einzugszone nimmt Granulat auf und foerdert es in Richtung Kompressionszone. Gleichmaessige Zufuhr, trockener Zustand und saubere Materialwege sind wichtig.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Brueckenbildung">
+Das Material rutscht nicht nach. Du stocherst nicht in laufende Bereiche, sondern stoppst nach Vorgabe und meldest die Stoerung.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Die Einzugszone entscheidet, ob Material gleichmaessig in den Prozess gelangt.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-KST-004::check"
+  fragen={[{ id: "einzug", masterySchluessel: "FK-2-KST-004::einzug", aufgabenstellung: "Was ist die Grundaufgabe der Einzugszone?", optionen: [{ id: "richtig", text: "Granulat aufnehmen und foerdern.", istKorrekt: true, erklaerung: "Richtig. Hier beginnt der Materialtransport in der Schnecke." }, { id: "falsch", text: "Das fertige Teil auswerfen.", istKorrekt: false, erklaerung: "Nein. Auswerfen passiert am Werkzeug." }] }]}
+/>

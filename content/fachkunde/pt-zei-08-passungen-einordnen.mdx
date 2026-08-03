@@ -1,0 +1,114 @@
+---
+titel: "Passungen einordnen"
+thema_code: "PT-ZEI"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Passungsbeispiele und Fachbegriffe muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Passungen und Toleranzen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Passungssysteme, Kurzzeichen und konkrete Werte muessen vor Freigabe ergaenzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation bei Welle und Bohrung">
+Zwei Teile sollen zusammengebaut werden. Manchmal soll sich die Welle leicht drehen, manchmal soll sie fest
+sitzen. Das entscheidet die Passung.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Passung", "Spiel", "Uebermass", "Toleranz", "Grenzmass"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Passung in Alltagssprache">
+Eine Passung beschreibt, wie zwei Teile zusammenpassen. Hat die Welle Platz in der Bohrung, gibt es Spiel.
+Ist sie zu gross fuer lockeren Sitz, spricht man von Uebermass.
+</EinfachErklaert>
+
+<PassungSchema />
+
+<PassungTrainer titel="Passung einordnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Zusammenwirken von Massen">
+Passungen entstehen aus den Toleranzfeldern der zusammenwirkenden Teile, zum Beispiel Welle und Bohrung.
+Je nach Lage der Toleranzfelder entsteht Spiel, ein Uebergangsbereich oder Uebermass. Fuer die konkrete
+Bewertung sind Zeichnung, Tabellenbuch und Pruefvorgabe verbindlich.
+</FachlichErklaert>
+
+## Grundarten
+
+| Passungsart | Grundidee |
+|---|---|
+| Spiel | Zwischen den Teilen bleibt Platz |
+| Uebergang | Je nach Istmass kann Spiel oder fester Sitz entstehen |
+| Uebermass | Das fuegende Teil sitzt fest oder muss gefuegt werden |
+
+<Praxisbeispiel titel="Praxisbeispiel Montage">
+Eine Welle soll leicht drehbar in einer Bohrung laufen. Wenn sie nur mit Gewalt passt, passt das nicht zur
+erwarteten Spielpassung. Du meldest die Abweichung statt sie einfach einzupressen.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Passungsangaben und Kurzzeichen muessen mit Tabellenbuch und Zeichnung gelesen werden. Diese Einheit nutzt
+nur die Grundlogik.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Passung heisst: Die Masse zweier Teile werden zusammen betrachtet.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-ZEI-008::check"
+  fragen={[
+    {
+      id: "spiel",
+      masterySchluessel: "FK-1-ZEI-008::spiel",
+      aufgabenstellung: "Was bedeutet Spiel bei einer Passung?",
+      optionen: [
+        {
+          id: "platz",
+          text: "Zwischen den zusammengefuegten Teilen bleibt Platz.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Spiel kann Beweglichkeit ermoeglichen.",
+        },
+        {
+          id: "rau",
+          text: "Die Oberflaeche ist rau.",
+          istKorrekt: false,
+          erklaerung: "Nein. Rauheit betrifft Oberflaechen, nicht die Passungsart.",
+        },
+      ],
+    },
+    {
+      id: "verbindlich",
+      masterySchluessel: "FK-1-ZEI-008::verbindlich",
+      aufgabenstellung: "Woher nimmst du konkrete Passungswerte?",
+      optionen: [
+        {
+          id: "quelle",
+          text: "Aus Zeichnung, Tabellenbuch oder freigegebener Pruefvorgabe.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Werte werden nicht geraten.",
+        },
+        {
+          id: "gefuehl",
+          text: "Aus dem Gefuehl beim Zusammenstecken.",
+          istKorrekt: false,
+          erklaerung: "Das kann Hinweise geben, ersetzt aber keine Vorgabe.",
+        },
+      ],
+    },
+  ]}
+/>

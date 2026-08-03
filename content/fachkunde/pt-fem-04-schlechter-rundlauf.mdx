@@ -1,0 +1,57 @@
+---
+titel: "Schlechter Rundlauf"
+thema_code: "PT-FEM"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Rundlaufgrenzen, Messaufbau und Ursachenbewertung muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Messtechnik Rundlauf"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Grenzwerte, Messpunkte und Messuhrvorgaben mit Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am drehenden Teil">
+Ein Teil laeuft beim Drehen sichtbar unruhig. Mit der Messuhr pruefst du, ob der Rundlauf innerhalb der Vorgabe liegt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Rundlauf", "Messuhr", "Unwucht", "Spannung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Rundlauf in Alltagssprache">
+Rundlauf zeigt, ob ein drehendes Teil gleichmaessig rund laeuft oder ob es eiert.
+</EinfachErklaert>
+
+<SchlechterRundlaufSchema />
+
+<SchlechterRundlaufTrainer titel="Schlechter Rundlauf" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Ausschlag messen und Ursache pruefen">
+Schlechter Rundlauf kann durch Aufspannung, Unwucht, fehlerhafte Geometrie, Lagerung oder Bearbeitungsfehler entstehen. Die Messuhr zeigt die Abweichung am festgelegten Messpunkt.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel falsch gespannt">
+Ein Drehteil zeigt schlechten Rundlauf. Nach erneuter korrekter Spannung ist der Ausschlag kleiner. Deshalb wird Spannung als Ursache mitgeprueft.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Rundlauf wird gemessen, nicht mit der Hand gefuehlt.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEM-004::check"
+  fragen={[{ id: "messuhr", masterySchluessel: "FK-3-FEM-004::messuhr", aufgabenstellung: "Womit pruefst du Rundlauf typischerweise?", optionen: [{ id: "richtig", text: "Mit einer Messuhr nach Vorgabe.", istKorrekt: true, erklaerung: "Richtig. Die Messuhr zeigt den Ausschlag." }, { id: "falsch", text: "Indem du das drehende Teil festhaeltst.", istKorrekt: false, erklaerung: "Nein. Das ist gefaehrlich und keine Messung." }] }]}
+/>

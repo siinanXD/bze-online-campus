@@ -1,0 +1,67 @@
+---
+titel: "Maschinenbelegung und Kapazitaet"
+thema_code: "PT-PLA"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Schichtzeiten, Nutzungsgrade, Ruestfenster und betriebliche Kapazitaetslogik muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript, Maschinenbelegungsplan, Schichtkalender und Kapazitaetsvorgaben"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Kapazitaetsformel, Kalenderlogik und Ruestzeitbezug nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation im Maschinenkalender">
+Zwei Auftraege sollen auf derselben Maschine laufen. Auf dem Kalender sieht ein Zeitfenster frei aus, aber darin liegt noch Ruesten und eine geplante Wartung.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Maschinenbelegung", "Kapazitaet", "Ruestzeit", "Stillstandszeit", "Arbeitsfolge"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Nicht jedes freie Feld ist nutzbar">
+Maschinenbelegung zeigt, was auf einer Maschine geplant ist. Kapazitaet zeigt, wie viel nutzbare Zeit wirklich uebrig bleibt.
+</EinfachErklaert>
+
+<MaschinenbelegungKapazitaetSchema />
+
+<Formelkarte
+  name="Vereinfachte nutzbare Kapazitaet"
+  formel="Kapazitaet = verfuegbare Zeit - geplante Sperrzeit"
+  einheiten="Minuten, Stunden oder Schichten nach Planungsquelle"
+  verwendung="Wenn grob geprueft wird, ob ein Auftrag in ein Zeitfenster passt."
+  beispiel="Von einer Schichtzeit werden geplante Wartung, Ruesten oder Sperrzeiten abgezogen."
+  typischerFehler="Ruestzeit und geplanten Stillstand vergessen."
+  tabellenbuchHinweis="Konkrete Schichtmodelle, Nutzungsgrade und Kapazitaetswerte aus betrieblicher Quelle uebernehmen."
+/>
+
+<MaschinenbelegungKapazitaetTrainer titel="Maschinenbelegung und Kapazitaet" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Kapazitaet als realistische Nutzbarkeit">
+Maschinenkapazitaet ist die nutzbare Zeit oder Leistung einer Maschine in einem Zeitraum. Maschinenbelegung zeigt, welche Auftraege, Ruestvorgaenge, Wartungen oder Sperrungen bereits eingeplant sind. Konflikte muessen sichtbar gemacht und nicht durch optimistische Annahmen verdeckt werden.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Doppelbelegung">
+Ein Eilauftrag passt rechnerisch in die Schicht, aber der Kalender enthaelt bereits einen Werkzeugwechsel und eine Erstteilpruefung. Die echte Kapazitaet reicht nicht, bis die Belegung angepasst ist.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Kapazitaet ist nutzbare Zeit, nicht nur Kalenderzeit.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-PLA-005::check"
+  fragen={[{ id: "kapazitaet", masterySchluessel: "FK-4-PLA-005::kapazitaet", aufgabenstellung: "Was muss in der Maschinenbelegung sichtbar sein?", optionen: [{ id: "richtig", text: "Auftraege, Ruestzeiten, Sperrzeiten und Konflikte.", istKorrekt: true, erklaerung: "Richtig. Nur so wird die nutzbare Kapazitaet realistisch." }, { id: "falsch", text: "Nur die reine Bearbeitungszeit des neuen Auftrags.", istKorrekt: false, erklaerung: "Nein. Ruesten, Sperrung und vorhandene Belegung beeinflussen die Planung." }] }]}
+/>

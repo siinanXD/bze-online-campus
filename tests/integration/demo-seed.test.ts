@@ -24,8 +24,21 @@ const DEMO_SEED = JSON.parse(
   readFileSync(join(process.cwd(), 'supabase', 'seed', 'MAF_DemoContent.json'), 'utf8'),
 ) as DemoSeed;
 
+const MAF_AP_SEED = JSON.parse(
+  readFileSync(join(process.cwd(), 'supabase', 'seed', 'MAF_Fragenpool_Charge3_AP.json'), 'utf8'),
+) as {
+  meta: { beruf_slug: string; anzahl_mc: number; anzahl_freitext: number };
+  uebungspruefungen: Array<{ code: string; aufgaben: string[] }>;
+  fragen: Array<{ id: string; typ: 'mc' | 'freitext'; status: string }>;
+};
+
 const GENERATED_SQL = readFileSync(
   join(process.cwd(), 'supabase', 'seed', '0001_maf_seed.sql'),
+  'utf8',
+);
+
+const WISSENS_SEED_SQL = readFileSync(
+  join(process.cwd(), 'supabase', 'seed', '0002_maf_wissensdatenbank_seed.sql'),
   'utf8',
 );
 
@@ -88,5 +101,24 @@ describe('MAF-Demo-Seed', () => {
       assert.match(GRANTS, new RegExp(tabelle), `${tabelle} fehlt in Grant-Migration`);
     }
     assert.match(GRANTS, /to authenticated;/);
+  });
+
+  it('seedet MAF-Abschlusspruefungsfragen und feste Uebungspruefungen', () => {
+    assert.equal(MAF_AP_SEED.meta.beruf_slug, 'maf-metall');
+    assert.equal(MAF_AP_SEED.fragen.filter((frage) => frage.typ === 'mc').length, 20);
+    assert.equal(MAF_AP_SEED.fragen.filter((frage) => frage.typ === 'freitext').length, 5);
+    assert.equal(MAF_AP_SEED.uebungspruefungen[0]?.code, 'AP-UE-01');
+    assert.equal(MAF_AP_SEED.uebungspruefungen[0]?.aufgaben.length, 25);
+    assert.match(GENERATED_SQL, /MAF_Fragenpool_Charge3_AP\.json/);
+    assert.match(GENERATED_SQL, /Uebungs-Abschlusspruefung 01 - Metall- und Kunststofftechnik/);
+    assert.match(GENERATED_SQL, /insert into pruefung_fragen/);
+  });
+
+  it('seedet belegte RAG-Grundlagen ohne Tabellenbuch- oder Originalaufgaben', () => {
+    assert.match(WISSENS_SEED_SQL, /MAF 4171 - offizielle Grundlagen und Pruefungsstruktur/);
+    assert.match(WISSENS_SEED_SQL, /BIBB\/Ausbildungsverordnung Maschinen- und Anlagenfuehrer\/-in/);
+    assert.match(WISSENS_SEED_SQL, /IHK Aachen und PAL IHK Region Stuttgart/);
+    assert.match(WISSENS_SEED_SQL, /on conflict \(quelldokument_id, chunk_index\)/);
+    assert.doesNotMatch(WISSENS_SEED_SQL, /Originalaufgabe|Loesungsangaben|Tabellenbuchseite/);
   });
 });

@@ -1,0 +1,57 @@
+---
+titel: "Verzug"
+thema_code: "PT-FEK"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Verzugsursachen, Messzeitpunkt und Freigabegrenzen muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Fachbuch Kunststofftechnik und Pruefplan"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Formtoleranzen, Messzeitpunkt und Prozessbezug nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation nach dem Entformen">
+Ein flaches Kunststoffteil liegt nicht plan auf. Eine Ecke hebt sich und das Teil passt nicht mehr sauber in die Vorrichtung.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Verzug", "Schwindung", "Kuehlzeit", "Orientierung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Verzug in Alltagssprache">
+Verzug bedeutet: Das Teil ist krumm, verdreht oder nicht mehr in der geforderten Form.
+</EinfachErklaert>
+
+<VerzugKunststoffSchema />
+
+<VerzugKunststoffTrainer titel="Verzug Kunststoff" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Verzug eingrenzen">
+Verzug kann durch ungleichmaessige Kuehlung, Schwindung, Wanddicken, Orientierung, Entformung oder Lagerung entstehen. Bewertung und Messzeitpunkt muessen aus Pruefplan oder Freigabe kommen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Abdeckung">
+Eine Abdeckung laesst sich nach kurzer Lagerzeit nicht mehr verschrauben. Du pruefst Formabweichung und Zeitpunkt, statt das Teil geradezubiegen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Verzug immer mit Messzeitpunkt, Formvorgabe und Prozess betrachten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEK-008::check"
+  fragen={[{ id: "verzug", masterySchluessel: "FK-3-FEK-008::verzug", aufgabenstellung: "Was ist bei Verzug richtig?", optionen: [{ id: "richtig", text: "Formabweichung messen und Ursache nach Vorgabe eingrenzen.", istKorrekt: true, erklaerung: "Richtig. Verzug braucht Messung und Prozessbezug." }, { id: "falsch", text: "Teil von Hand geradebiegen und weitergeben.", istKorrekt: false, erklaerung: "Nein. Das ist keine sichere Freigabe." }] }]}
+/>

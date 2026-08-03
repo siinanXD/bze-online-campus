@@ -1,0 +1,57 @@
+---
+titel: "Stoerung, Fehler, Ursache, Wirkung"
+thema_code: "PT-IH"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Begriffsabgrenzung und betriebliche Analysebeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript, betrieblicher Stoerungsprozess und Qualitaetsunterlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Begriffsdefinitionen und Beispiele aus dem Betrieb nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["auswendig"]} />
+
+<StoryEinstieg titel="Situation bei Stillstand">
+Die Anlage steht. Das ist die Stoerung. Jetzt musst du noch nicht sofort die Ursache kennen, sondern sauber trennen: Was ist beobachtet, was ist der Fehler, was ist Ursache und welche Wirkung hat es?
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Stoerung", "Fehler", "Ursache", "Wirkung", "Massnahme"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Nicht alles Ursache nennen">
+Eine Stoerung ist die Abweichung. Ein Fehler ist das konkrete Problem. Die Ursache erklaert warum es passiert. Die Wirkung beschreibt die Folge.
+</EinfachErklaert>
+
+<StoerungFehlerUrsacheWirkungSchema />
+
+<StoerungFehlerUrsacheWirkungTrainer titel="Stoerung Fehler Ursache Wirkung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Analyse statt Vermutung">
+In der Fehlersuche werden Beobachtung, Fehlerbild, Ursache, Wirkung und Massnahme getrennt dokumentiert. Dadurch werden falsche Sofortannahmen vermieden und spaetere Ursachenanalysen nutzbar.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Kurzschlussmeldung">
+Die Steuerung meldet eine Stoerung. Der Fehler kann ein defekter Sensor, ein Kabelproblem oder eine ausgeloste Sicherung sein. Die Ursache wird erst nach Pruefung festgelegt.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Symptom ist nicht automatisch Ursache.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-IH-009::check"
+  fragen={[{ id: "analysebegriffe", masterySchluessel: "FK-3-IH-009::analysebegriffe", aufgabenstellung: "Was ist fachlich sauber?", optionen: [{ id: "richtig", text: "Stoerung, Fehlerbild, Ursache und Wirkung getrennt beschreiben.", istKorrekt: true, erklaerung: "Richtig. Diese Trennung macht Fehlersuche nachvollziehbar." }, { id: "falsch", text: "Die erste Beobachtung sofort als Grundursache eintragen.", istKorrekt: false, erklaerung: "Nein. Beobachtung und Ursache muessen getrennt bleiben." }] }]}
+/>

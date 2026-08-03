@@ -1,0 +1,115 @@
+---
+titel: "Arbeitsplan lesen"
+thema_code: "PT-ZEI"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Betriebliche Arbeitsplanstruktur, Betriebsmittel und Pruefschritte muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "BZE-Traegerskript Arbeitsplanung"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Arbeitsgaenge, Betriebsmittel und Zeitangaben muessen mit dem freigegebenen Skript abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation vor der Fertigung">
+Die Zeichnung sagt, wie das Teil aussehen soll. Der Arbeitsplan sagt, in welcher Reihenfolge gearbeitet,
+welche Betriebsmittel genutzt und wann geprueft wird.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Arbeitsplan", "Arbeitsgang", "Betriebsmittel", "Pruefschritt", "Arbeitsfolge"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Arbeitsplan in Alltagssprache">
+Der Arbeitsplan ist die Schrittfolge fuer die Fertigung. Er hilft dir, nicht einfach irgendwo anzufangen,
+sondern Vorbereitung, Bearbeitung, Pruefung und Rueckmeldung geordnet abzuarbeiten.
+</EinfachErklaert>
+
+<ArbeitsplanSchema />
+
+<ArbeitsplanTrainer titel="Arbeitsplan richtig nutzen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Arbeitsfolge und Betriebsmittel">
+Ein Arbeitsplan beschreibt Arbeitsgaenge in einer geplanten Reihenfolge. Zu einem Arbeitsgang koennen
+Betriebsmittel, Werkzeuge, Vorrichtungen, Pruefmittel, Hinweise und Rueckmeldungen gehoeren. Zeichnung,
+Stueckliste und Arbeitsplan muessen zusammen gelesen werden.
+</FachlichErklaert>
+
+## Was du liest
+
+| Bereich | Frage |
+|---|---|
+| Arbeitsfolge | Was kommt zuerst, was danach? |
+| Arbeitsgang | Was wird konkret getan? |
+| Betriebsmittel | Welche Maschine, welches Werkzeug oder Pruefmittel wird genutzt? |
+| Pruefschritt | Wann und was wird kontrolliert? |
+
+<Praxisbeispiel titel="Praxisbeispiel falsche Reihenfolge">
+Du willst sofort bearbeiten, aber im Arbeitsplan steht zuerst Materialkontrolle und Einrichten. Du haeltst
+die Reihenfolge ein, weil sonst falsche Teile oder unsichere Situationen entstehen koennen.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Konkrete Arbeitsplaene, Betriebsmittel und Zeitwerte sind betriebs- oder traegerspezifisch und muessen
+vor Freigabe aus der freigegebenen Quelle uebernommen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Zeichnung sagt was, Arbeitsplan sagt wie und in welcher Reihenfolge.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-ZEI-012::check"
+  fragen={[
+    {
+      id: "arbeitsfolge",
+      masterySchluessel: "FK-1-ZEI-012::arbeitsfolge",
+      aufgabenstellung: "Warum liest du die Arbeitsfolge?",
+      optionen: [
+        {
+          id: "reihenfolge",
+          text: "Damit Vorbereitung, Bearbeitung, Pruefung und Rueckmeldung in sinnvoller Reihenfolge laufen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Die Reihenfolge ist Teil der Arbeitsplanung.",
+        },
+        {
+          id: "egal",
+          text: "Die Reihenfolge ist egal, solange am Ende ein Teil entsteht.",
+          istKorrekt: false,
+          erklaerung: "Nein. Falsche Reihenfolge kann Qualitaets- und Sicherheitsprobleme erzeugen.",
+        },
+      ],
+    },
+    {
+      id: "betriebsmittel",
+      masterySchluessel: "FK-1-ZEI-012::betriebsmittel",
+      aufgabenstellung: "Was sind Betriebsmittel im Arbeitsplan?",
+      optionen: [
+        {
+          id: "mittel",
+          text: "Maschinen, Werkzeuge, Vorrichtungen oder Pruefmittel fuer einen Arbeitsgang.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Betriebsmittel werden fuer die Ausfuehrung benoetigt.",
+        },
+        {
+          id: "zeichnungsnummer",
+          text: "Nur die Zeichnungsnummer.",
+          istKorrekt: false,
+          erklaerung: "Die Zeichnungsnummer identifiziert die Zeichnung, ist aber kein Betriebsmittel.",
+        },
+      ],
+    },
+  ]}
+/>

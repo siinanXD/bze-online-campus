@@ -1,0 +1,115 @@
+---
+titel: "Stuecklisten verwenden"
+thema_code: "PT-ZEI"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "beispielwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Betriebliche Stuecklistenstruktur und Beispielangaben muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "BZE-Traegerskript Technische Kommunikation"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Betriebliche Spaltennamen, Materialangaben und Positionslogik muessen ergaenzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation bei einer Baugruppe">
+In der Zeichnung sind mehrere Teile mit Positionsnummern markiert. Die Stueckliste sagt dir, wie diese
+Positionen heissen, wie oft sie gebraucht werden und welches Material gilt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Stueckliste", "Position", "Menge", "Werkstoff", "Benennung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Stueckliste in Alltagssprache">
+Die Stueckliste ist eine Teileliste. Sie hilft dir, Positionen aus der Zeichnung mit Namen, Anzahl und
+Materialangaben zu verbinden.
+</EinfachErklaert>
+
+<StuecklisteSchema />
+
+<StuecklisteTrainer titel="Stueckliste lesen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Verbindung zwischen Zeichnung und Material">
+Eine Stueckliste beschreibt die Teile einer Baugruppe strukturiert. Typische Angaben sind Position,
+Menge, Benennung, Werkstoff, Normteilhinweis oder weitere technische Informationen. Zeichnung und
+Stueckliste muessen zusammen gelesen werden.
+</FachlichErklaert>
+
+## Typische Spalten
+
+| Spalte | Bedeutung |
+|---|---|
+| Position | Nummer des Teils in Zeichnung und Liste |
+| Menge | Anzahl benoetigter Teile |
+| Benennung | Name des Teils |
+| Werkstoff | Materialangabe, wenn vorgesehen |
+
+<Praxisbeispiel titel="Praxisbeispiel Materialbereitstellung">
+Eine Baugruppe braucht vier gleiche Schrauben und zwei Fuehrungen. Du liest nicht nur die gezeichnete Form,
+sondern auch die Mengen aus der Stueckliste.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Die konkrete Stuecklistenstruktur ist betrieblich oder im Traegerskript festgelegt und muss vor Freigabe
+mit dem Unterrichtsmaterial abgeglichen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Position in der Zeichnung finden, Menge und Benennung in der Stueckliste lesen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-ZEI-011::check"
+  fragen={[
+    {
+      id: "position",
+      masterySchluessel: "FK-1-ZEI-011::position",
+      aufgabenstellung: "Wozu dient die Position in einer Stueckliste?",
+      optionen: [
+        {
+          id: "zuordnung",
+          text: "Sie verbindet ein Teil in der Zeichnung mit dem Eintrag in der Liste.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Positionsnummern schaffen die Zuordnung.",
+        },
+        {
+          id: "toleranz",
+          text: "Sie gibt automatisch die Toleranz an.",
+          istKorrekt: false,
+          erklaerung: "Nein. Toleranzen stehen in Zeichnung oder Pruefvorgabe.",
+        },
+      ],
+    },
+    {
+      id: "menge",
+      masterySchluessel: "FK-1-ZEI-011::menge",
+      aufgabenstellung: "Welche Angabe brauchst du fuer die Anzahl gleicher Teile?",
+      optionen: [
+        {
+          id: "menge",
+          text: "Die Menge.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Sie sagt, wie oft ein Teil benoetigt wird.",
+        },
+        {
+          id: "schraffur",
+          text: "Die Schraffur.",
+          istKorrekt: false,
+          erklaerung: "Schraffur gehoert zur Schnittdarstellung, nicht zur Anzahl.",
+        },
+      ],
+    },
+  ]}
+/>

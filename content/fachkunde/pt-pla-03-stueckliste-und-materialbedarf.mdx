@@ -1,0 +1,67 @@
+---
+titel: "Stueckliste und Materialbedarf"
+thema_code: "PT-PLA"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Stuecklistenfelder, Zuschlaege, Ausschussannahmen und Materialfreigabe muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch, Stuecklisten-Muster, ERP-Auszug und betriebliche Materialvorgaben"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Mengenlogik, Zuschlag und Materialbereitstellung nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden", "tabellenbuch_finden"]} />
+
+<StoryEinstieg titel="Situation am Materialregal">
+Fuer ein Los werden mehrere Teile und Betriebsstoffe gebraucht. Die Stueckliste nennt Mengen je Baugruppe, aber der Auftrag nennt die Gesamtmenge.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Stueckliste", "Position", "Menge", "Materialbedarf", "Losgroesse"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Aus Liste wird Bedarf">
+Die Stueckliste sagt, was in einem Teil steckt. Der Materialbedarf sagt, wie viel davon fuer den ganzen Auftrag gebraucht wird.
+</EinfachErklaert>
+
+<StuecklisteMaterialbedarfSchema />
+
+<Formelkarte
+  name="Grundbedarf"
+  formel="Materialbedarf = Menge je Teil * Auftragsmenge"
+  einheiten="Stueck, kg, m oder andere freigegebene Einheit"
+  verwendung="Wenn aus Stueckliste und Auftragsmenge der Grundbedarf berechnet wird."
+  beispiel="Wenn je Teil 2 Einsaetze benoetigt werden und 50 Teile geplant sind, ergibt sich ein Grundbedarf von 100 Einsaetzen."
+  typischerFehler="Zuschlaege, Ausschuss oder Reserve ohne Quelle frei addieren."
+  tabellenbuchHinweis="Konkrete Zuschlaege, Dichten, Laengen oder Materialkennwerte nur aus freigegebener Quelle uebernehmen."
+/>
+
+<StuecklisteMaterialbedarfTrainer titel="Stueckliste und Materialbedarf" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Materialbedarf als Planungswert">
+Materialbedarf entsteht aus Stueckliste, Auftragsmenge und freigegebenen Zusatzvorgaben. Wichtig ist die Einheit: Stueck, Meter, Kilogramm oder Liter duerfen nicht vermischt werden. Reserven, Ausschusszuschlaege und Rezyklatanteile bleiben quellenpflichtig.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel fehlende Position">
+In der Stueckliste ist eine Dichtung pro Teil angegeben. Wenn die Auftragsmenge erhoeht wird, muss der Dichtungsbedarf mitsteigen. Fehlt die Position im Materialwagen, wird der Auftrag nicht still weitergestartet.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Materialbedarf kommt aus Stueckliste mal Auftragsmenge plus freigegebener Vorgabe.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-PLA-003::check"
+  fragen={[{ id: "bedarf", masterySchluessel: "FK-4-PLA-003::bedarf", aufgabenstellung: "Was ist die sichere Grundlage fuer Materialbedarf?", optionen: [{ id: "richtig", text: "Stuecklistenmenge, Auftragsmenge und freigegebene Zuschlaege.", istKorrekt: true, erklaerung: "Richtig. So bleibt der Bedarf nachvollziehbar." }, { id: "falsch", text: "Ein grober Schaetzwert aus Erfahrung ohne Nachweis.", istKorrekt: false, erklaerung: "Nein. Schaetzungen ersetzen keine Stueckliste und keine freigegebene Vorgabe." }] }]}
+/>

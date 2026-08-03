@@ -35,17 +35,15 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { key: 'start', pfad: '/campus', exakt: true, Icon: StartIcon },
-  { key: 'lernen', pfad: '/campus/lernen', aktivPfade: ['/campus/topic', '/campus/lernen/fragen'], Icon: LernenIcon },
+  { key: 'lernen', pfad: '/campus/lernen', aktivPfade: ['/campus/topic'], Icon: LernenIcon },
   { key: 'pruefung', pfad: '/campus/pruefung', Icon: PruefungIcon },
   { key: 'bericht', pfad: '/campus/berichtsheft', Icon: BerichtIcon },
   { key: 'mehr', pfad: '/campus/mehr', Icon: MehrIcon },
 ];
 
 /**
- * Untere Tableiste mit fünf Zielen (SPEC §6.1): Start, Lernen, Prüfung, Bericht, Mehr.
- * Client-Component, fixiert unten, aktiver Tab über usePathname + aria-current.
- * Farbe ist nie alleiniger Träger: aktiver Tab erhält zusätzlich Fettschrift,
- * ein kräftigeres Icon und `aria-current="page"`.
+ * Untere Tableiste (Figma Foundations / SPEC §6.1).
+ * Aktiver Tab: Primary-Farbe + Fettschrift + aria-current (Farbe nie allein).
  */
 export function BottomNav({ berichtsheftAktiv = true, aktivPfad, className }: BottomNavProps) {
   const echterPfad = usePathname() ?? '';
@@ -59,13 +57,13 @@ export function BottomNav({ berichtsheftAktiv = true, aktivPfad, className }: Bo
     <nav
       aria-label={t('ariaLabel')}
       className={cn(
-        'fixed inset-x-0 bottom-0 z-50 border-t border-border bg-surface/95 backdrop-blur',
+        'fixed inset-x-0 bottom-0 z-50 border-t border-border bg-surface shadow-[0_-4px_16px_rgba(28,25,23,0.06)]',
         'pb-[max(env(safe-area-inset-bottom),0px)]',
         className,
       )}
     >
       <ul
-        className="mx-auto grid max-w-2xl"
+        className="mx-auto grid max-w-md"
         style={{ gridTemplateColumns: `repeat(${items.length}, minmax(0, 1fr))` }}
       >
         {items.map(({ key, pfad, aktivPfade = [], exakt, Icon }) => {
@@ -82,7 +80,7 @@ export function BottomNav({ berichtsheftAktiv = true, aktivPfad, className }: Bo
                 href={href}
                 aria-current={aktiv ? 'page' : undefined}
                 className={cn(
-                  'touchable flex min-h-[48px] flex-col items-center justify-center gap-0.5 px-1 py-2 text-[11px] leading-tight transition',
+                  'touchable flex min-h-[56px] flex-col items-center justify-center gap-0.5 px-1 py-2 text-[11px] leading-tight transition',
                   aktiv ? 'font-bold text-primary' : 'font-medium text-fg-muted hover:text-fg',
                 )}
               >

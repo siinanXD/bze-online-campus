@@ -1,0 +1,66 @@
+---
+titel: "Sechs Hauptgruppen der Fertigung"
+thema_code: "PT-FER"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Begriffe und Beispiele der Fertigungshauptgruppen muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Fertigungsverfahren"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Hauptgruppen und betriebliche Beispiele nach Tabellenbuch oder Traegerskript abgleichen."
+---
+
+<WissensstufenLeiste stufen={["auswendig", "verstehen"]} />
+
+<StoryEinstieg titel="Situation vor dem Arbeitsgang">
+Du liest im Arbeitsplan ein Fertigungsverfahren. Bevor du Details bewertest, ordnest du ein, welche
+Grundwirkung das Verfahren hat.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Fertigung", "Urformen", "Umformen", "Trennen", "Fuegen", "Beschichten"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Fertigungshauptgruppen in Alltagssprache">
+Fertigungsverfahren werden danach sortiert, was mit dem Werkstueck passiert: Es entsteht, wird umgeformt,
+getrennt, verbunden, beschichtet oder in seinen Eigenschaften geaendert.
+</EinfachErklaert>
+
+<FertigungHauptgruppenSchema />
+
+<FertigungHauptgruppenTrainer titel="Fertigungshauptgruppen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Hauptwirkung erkennen">
+Die sechs Hauptgruppen helfen, Arbeitsgaenge fachlich zu ordnen. Das ist wichtig, weil Werkzeuge,
+Betriebsmittel, Pruefmerkmale und Quellen je nach Verfahren unterschiedlich gelesen werden.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Arbeitsplan">
+Im Arbeitsplan steht ein Trennverfahren. Du erwartest Materialtrennung oder Spanabtrag und suchst danach
+passende Werkzeug- und Pruefangaben.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Die offizielle Einteilung und betriebliche Beispiele werden aus Tabellenbuch, Unterrichtsskript oder
+freigegebener Arbeitsunterlage uebernommen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Erst Hauptgruppe erkennen, dann Details bewerten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-FER-001::check"
+  fragen={[{ id: "trennen", masterySchluessel: "FK-2-FER-001::trennen", aufgabenstellung: "Welche Hauptgruppe passt zu spanendem Bearbeiten?", optionen: [{ id: "trennen", text: "Trennen.", istKorrekt: true, erklaerung: "Richtig. Spanen hebt Stoffzusammenhalt auf." }, { id: "beschichten", text: "Beschichten.", istKorrekt: false, erklaerung: "Nein. Beschichten bringt eine Schicht auf." }] }]}
+/>

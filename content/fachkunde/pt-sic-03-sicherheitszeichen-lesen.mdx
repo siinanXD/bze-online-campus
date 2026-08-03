@@ -1,0 +1,124 @@
+---
+titel: "Sicherheitszeichen lesen"
+thema_code: "PT-SIC"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Konkrete Zeichenbeispiele und betriebliche Beschilderung muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Sicherheitskennzeichnung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete betriebliche Zeichen und Fundstellen muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung Arbeitssicherheit"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit erklaert Grundarten und ersetzt keine lokale Unterweisung."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Hallentor">
+Am Eingang zur Werkhalle haengen mehrere Schilder. Einige sagen, was du tragen musst. Andere verbieten
+bestimmte Handlungen. Wieder andere warnen vor Gefahren. Du musst die Grundart schnell erkennen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Sicherheitszeichen", "Gebot", "Verbot", "Warnung", "PSA"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Zeichen in Alltagssprache">
+Sicherheitszeichen sind kurze Botschaften als Bild. Blaues Gebot heisst meist: Das musst du tun. Rotes
+Verbot heisst: Das darfst du nicht tun. Gelbe Warnung heisst: Hier musst du besonders aufpassen.
+</EinfachErklaert>
+
+<SicherheitszeichenSet />
+
+<SicherheitszeichenTrainer titel="Zeichenart trainieren" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Grundarten sicher unterscheiden">
+Sicherheitszeichen helfen, Gefaehrdungen und Verhaltensregeln schnell zu erkennen. Fuer die erste
+Orientierung sind drei Gruppen besonders wichtig: Gebotszeichen schreiben eine Handlung vor, Verbotszeichen
+untersagen eine Handlung und Warnzeichen machen auf eine Gefaehrdung aufmerksam.
+</FachlichErklaert>
+
+## Drei Grundarten
+
+| Zeichenart | Bedeutung | Beispielhafte Aussage |
+|---|---|---|
+| Gebot | Etwas muss getan werden | Augenschutz benutzen |
+| Verbot | Etwas darf nicht getan werden | Kein Zutritt |
+| Warnung | Vor einer Gefahr wird gewarnt | Warnung vor Quetschgefahr |
+
+<Praxisbeispiel titel="Praxisbeispiel Hallentor">
+Du siehst ein Gebotszeichen fuer Augenschutz. Du gehst nicht ohne Schutzbrille in den Bereich, nur weil du
+kurz etwas holen willst. Wenn du ein Zeichen nicht verstehst, fragst du vor dem Betreten nach.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Diese Lerneinheit bildet Zeichenarten vereinfacht ab. Verbindlich sind die konkreten Schilder am
+Arbeitsplatz und die freigegebene Unterweisung.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Gebot sagt: tun. Verbot sagt: lassen. Warnung sagt: aufpassen und Gefahr klaeren.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-SIC-003::check"
+  fragen={[
+    {
+      id: "zeichenart-gebot",
+      masterySchluessel: "FK-1-SIC-003::zeichenart-gebot",
+      aufgabenstellung: "Welche Zeichenart schreibt eine Handlung vor?",
+      optionen: [
+        {
+          id: "gebot",
+          text: "Gebot",
+          istKorrekt: true,
+          erklaerung: "Richtig. Ein Gebotszeichen verlangt eine bestimmte Handlung.",
+        },
+        {
+          id: "verbot",
+          text: "Verbot",
+          istKorrekt: false,
+          erklaerung: "Ein Verbot untersagt eine Handlung.",
+        },
+        {
+          id: "warnung",
+          text: "Warnung",
+          istKorrekt: false,
+          erklaerung: "Eine Warnung macht auf eine Gefahr aufmerksam.",
+        },
+      ],
+    },
+    {
+      id: "zeichen-unklar",
+      masterySchluessel: "FK-1-SIC-003::zeichen-unklar",
+      aufgabenstellung: "Was machst du, wenn du ein Sicherheitszeichen am Arbeitsplatz nicht verstehst?",
+      optionen: [
+        {
+          id: "fragen",
+          text: "Vor dem Arbeiten nachfragen und Unterweisung/Vorgabe klaeren.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Sicherheitszeichen duerfen nicht geraten werden.",
+        },
+        {
+          id: "ignorieren",
+          text: "Ignorieren, wenn andere auch weiterarbeiten.",
+          istKorrekt: false,
+          erklaerung: "Andere Personen ersetzen keine eigene Unterweisung und keine sichere Klaerung.",
+        },
+      ],
+    },
+  ]}
+/>

@@ -1,0 +1,57 @@
+---
+titel: "Induktive und kapazitive Sensoren"
+thema_code: "PT-STR"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Sensorprinzip, Schaltabstand und Materialbeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Sensor-Datenblatt, Fachbuch Steuerungstechnik und Anlagenunterlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Schaltabstaende, Einbauhinweise und Materialgrenzen nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation bei Materialerkennung">
+Ein Sensor erkennt Metallteile sicher. Ein anderer Sensor soll einen Fuellstand oder ein Kunststoffteil erfassen. Beide Sensoren arbeiten nicht gleich.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Induktiv", "Kapazitiv", "Sensor", "Schaltabstand"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Materialsensoren einfach">
+Induktive Sensoren reagieren typisch auf Metall. Kapazitive Sensoren koennen je nach Anwendung auch andere Materialien erkennen.
+</EinfachErklaert>
+
+<InduktivKapazitivSensorSchema />
+
+<InduktivKapazitivSensorTrainer titel="Induktive und kapazitive Sensoren" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Sensorprinzip und Einbau">
+Induktive Sensoren nutzen ein elektromagnetisches Feld und sind fuer metallische Objekte typisch. Kapazitive Sensoren reagieren auf Materialeinfluss im elektrischen Feld. Schaltabstand, Einbau und Umgebung sind datenblattpflichtig.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Sensorwechsel">
+Ein induktiver Sensor erkennt ein Kunststoffteil nicht. Du ersetzt ihn nicht nach Farbe, sondern pruefst Sensorprinzip, Datenblatt und Materialaufgabe.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Sensorprinzip, Material und Einbau gehoeren zusammen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-STR-008::check"
+  fragen={[{ id: "induktiv", masterySchluessel: "FK-3-STR-008::induktiv", aufgabenstellung: "Was erkennt ein induktiver Sensor typisch?", optionen: [{ id: "richtig", text: "Metallische Objekte.", istKorrekt: true, erklaerung: "Richtig. Induktive Sensoren sind typisch fuer Metall." }, { id: "falsch", text: "Jedes Material unabhaengig von Abstand und Einbau.", istKorrekt: false, erklaerung: "Nein. Sensoren haben Prinzipien und Grenzen." }] }]}
+/>

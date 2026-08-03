@@ -1,0 +1,57 @@
+---
+titel: "Schliesskraft"
+thema_code: "PT-KST"
+lesedauer_minuten: 7
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Schliesskraftwirkung und Gratbezug muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Kunststofftechnik Schliesseinheit"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Schliesskraft, Innendruck und Werkzeugbezug nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Trennebene">
+An einem Teil entsteht Grat. Du denkst an Werkzeugzustand, Prozessdruck und Schliesskraft, bevor eine Einstellung bewertet wird.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schliesskraft", "Werkzeug", "Trennebene", "Einspritzdruck"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schliesskraft in Alltagssprache">
+Schliesskraft haelt die Form zu, waehrend Schmelze unter Druck hineingespritzt wird.
+</EinfachErklaert>
+
+<SchliesskraftSchema />
+
+<SchliesskraftTrainer titel="Schliesskraft" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Gegenkraft zum Werkzeuginnendruck">
+Die Schliesseinheit wirkt gegen den Druck in der Kavitaet. Schliesskraft, Werkzeugzustand und Prozessdruck beeinflussen, ob die Trennebene dicht bleibt.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Gratbildung">
+Du findest Grat an der Trennebene. Du dokumentierst Lage und Haeufigkeit, statt die Schliesskraft ohne Freigabe zu veraendern.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Schliesskraft haelt das Werkzeug waehrend des Spritzens geschlossen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-KST-016::check"
+  fragen={[{ id: "kraft", masterySchluessel: "FK-2-KST-016::kraft", aufgabenstellung: "Wozu dient Schliesskraft?", optionen: [{ id: "richtig", text: "Sie haelt das Werkzeug gegen Innendruck geschlossen.", istKorrekt: true, erklaerung: "Richtig. So bleibt die Trennebene kontrolliert." }, { id: "falsch", text: "Sie trocknet das Granulat.", istKorrekt: false, erklaerung: "Nein. Trocknung ist Materialvorbereitung." }] }]}
+/>

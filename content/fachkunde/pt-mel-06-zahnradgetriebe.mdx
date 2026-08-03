@@ -1,0 +1,69 @@
+---
+titel: "Zahnradgetriebe"
+thema_code: "PT-MEL"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Uebersetzungswerte, Zaehnezahlen und Rechenbeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Zahnradgetriebe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Formeln, Zaehnezahlen und konkrete Uebersetzungen duerfen erst nach Quellenabgleich genutzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Getriebe">
+Zwei Zahnraeder greifen ineinander. Du erkennst: Das ist formschluessige Uebertragung und kann Drehzahl oder
+Drehmoment veraendern.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Zahnrad", "Getriebe", "Uebersetzung", "Drehmoment", "Tabellenbuch"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Zahnradgetriebe in Alltagssprache">
+Zahnraeder greifen mit ihren Zaehnen ineinander und geben Drehbewegung weiter.
+</EinfachErklaert>
+
+<ZahnradgetriebeSchema />
+
+<ZahnradgetriebeTrainer titel="Zahnradgetriebe" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Formschluss und Uebersetzung">
+Zahnradgetriebe uebertragen Bewegung formschluessig. Je nach Zahnradpaar koennen Drehzahl, Drehrichtung und
+Drehmoment beeinflusst werden. Konkrete Berechnungen brauchen freigegebene Werte.
+</FachlichErklaert>
+
+<Formelkarte titel="Grundidee Uebersetzung" formel="i = n1 / n2">
+Die Formel wird hier nur als Grundidee gezeigt. Konkrete Werte werden aus Aufgabe, Zeichnung oder Tabellenbuch
+uebernommen.
+</Formelkarte>
+
+<Praxisbeispiel titel="Praxisbeispiel Zaehnezahl">
+Du sollst eine Uebersetzung verstehen. Du schaetzt Zaehnezahlen nicht aus dem Bauch, sondern nutzt Zeichnung
+oder Tabellenbuch.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Uebersetzung, Zaehnezahlen und Rechenwerte sind quellenpflichtig.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Zahnraeder uebertragen formschluessig.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MEL-006::check"
+  fragen={[{ id: "formschluss", masterySchluessel: "FK-1-MEL-006::formschluss", aufgabenstellung: "Wie greifen Zahnraeder ineinander?", optionen: [{ id: "formschluss", text: "Formschluessig ueber Zaehne.", istKorrekt: true, erklaerung: "Richtig." }, { id: "farbe", text: "Ueber gleiche Farbe.", istKorrekt: false, erklaerung: "Nein. Die Zaehne greifen mechanisch." }] }]}
+/>

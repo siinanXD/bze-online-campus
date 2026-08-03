@@ -1,0 +1,75 @@
+---
+titel: "Korrosion erkennen"
+thema_code: "PT-WSE"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Korrosionsbeispiele, Schutzarten und betriebliche Vorgaben muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Korrosionsschutz"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Schutzmassnahmen muessen aus betrieblicher Vorgabe stammen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation im Lager">
+An einem Metallteil sind Roststellen sichtbar. Du erkennst: Korrosion ist nicht nur Optik, sondern kann
+Funktion und Qualitaet beeinflussen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Korrosion", "Rost", "Oxidation", "Werkstoff", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Korrosion in Alltagssprache">
+Korrosion heisst: Ein Werkstoff wird durch seine Umgebung angegriffen, zum Beispiel durch Feuchtigkeit.
+</EinfachErklaert>
+
+<KorrosionSchema />
+
+<KorrosionTrainer titel="Korrosion erkennen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Umgebung beeinflusst Werkstoff">
+Korrosion entsteht durch Reaktionen zwischen Werkstoff und Umgebung. Bei Eisenwerkstoffen ist Rost ein
+typisches Beispiel. Beurteilung und Schutz richten sich nach Werkstoff, Einsatz und betrieblicher Vorgabe.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel angerostetes Teil">
+Du findest eine angerostete Flaeche. Du verbaust das Teil nicht einfach weiter, sondern meldest den Befund
+und klaerst die Freigabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Schutzarten, Grenzfaelle und betriebliche Reaktionen muessen aus Betriebsanweisung, Zeichnung oder
+freigegebener Unterweisung stammen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Korrosion erkennen, melden und nach Vorgabe beurteilen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WSE-007::check"
+  fragen={[
+    {
+      id: "reaktion",
+      masterySchluessel: "FK-1-WSE-007::reaktion",
+      aufgabenstellung: "Was ist bei auffaelliger Korrosion sicher?",
+      optionen: [
+        { id: "melden", text: "Auffaelligkeit melden und Vorgabe beachten.", istKorrekt: true, erklaerung: "Richtig." },
+        { id: "ueberstreichen", text: "Einfach ueberstreichen und weiterverwenden.", istKorrekt: false, erklaerung: "Nein. Das waere nicht nachvollziehbar." },
+      ],
+    },
+  ]}
+/>

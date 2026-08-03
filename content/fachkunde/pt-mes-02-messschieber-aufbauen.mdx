@@ -1,0 +1,116 @@
+---
+titel: "Messschieber aufbauen"
+thema_code: "PT-MES"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+pruefungsrelevanz: "sehr_hoch"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Bezeichnungen und Pruefmittelbeispiele muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Messmittel"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Teile des Messschiebers und Fachbegriffe muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation vor der ersten Messung">
+Bevor du mit dem Messschieber misst, musst du wissen, welches Teil wofuer da ist. Sonst nutzt du schnell die
+falschen Messschenkel oder liest an der falschen Stelle ab.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Messschieber", "Messschenkel", "Hauptskala", "Nonius", "Tiefenstange"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Messschieber in Alltagssprache">
+Der Messschieber hat Schenkel zum Anlegen, eine Hauptskala fuer die ganzen Millimeter, einen Nonius fuer
+den Feinwert und eine Tiefenstange fuer Tiefen.
+</EinfachErklaert>
+
+<MessschieberSchema />
+
+<MessschieberTeileTrainer titel="Messschieberteile benennen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Aufbau und Funktion">
+Ein Messschieber besteht aus festen und beweglichen Messschenkeln, Hauptskala, Nonius oder Anzeige sowie
+weiteren Messflaechen. Je nach Bauart koennen Aussen-, Innen- und Tiefenmasse gemessen werden.
+</FachlichErklaert>
+
+## Wichtigste Teile
+
+| Teil | Funktion |
+|---|---|
+| Grosse Messschenkel | Aussenmasse |
+| Kleine Messschenkel | Innenmasse |
+| Hauptskala | Ganze Millimeter |
+| Nonius | Feinablesung |
+| Tiefenstange | Tiefenmasse |
+
+<Praxisbeispiel titel="Praxisbeispiel falscher Teil">
+Du willst eine Nut-Tiefe messen und greifst zu den grossen Messschenkeln. Das passt nicht. Fuer die Tiefe
+brauchst du die Tiefenstange und eine saubere Auflage.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Messmittelbezeichnungen, Bauarten und Ableseregeln muessen aus Tabellenbuch oder Herstellerangabe gelesen
+werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Erst Messmittelteil erkennen, dann messen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MES-002::check"
+  fragen={[
+    {
+      id: "hauptskala",
+      masterySchluessel: "FK-1-MES-002::hauptskala",
+      aufgabenstellung: "Welcher Teil liefert den ganzen Millimeterwert?",
+      optionen: [
+        {
+          id: "hauptskala",
+          text: "Die Hauptskala.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Danach folgt die Feinablesung.",
+        },
+        {
+          id: "ratsche",
+          text: "Die Ratsche.",
+          istKorrekt: false,
+          erklaerung: "Die Ratsche gehoert zur Buegelmessschraube.",
+        },
+      ],
+    },
+    {
+      id: "tiefenstange",
+      masterySchluessel: "FK-1-MES-002::tiefenstange",
+      aufgabenstellung: "Wofuer nutzt du die Tiefenstange?",
+      optionen: [
+        {
+          id: "tiefe",
+          text: "Zum Messen von Tiefen, zum Beispiel einer Nut.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Die Auflage muss plan sitzen.",
+        },
+        {
+          id: "aussen",
+          text: "Zum Umfassen eines Aussendurchmessers.",
+          istKorrekt: false,
+          erklaerung: "Dafuer nutzt du die grossen Messschenkel.",
+        },
+      ],
+    },
+  ]}
+/>

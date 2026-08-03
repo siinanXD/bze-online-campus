@@ -1,0 +1,57 @@
+---
+titel: "Werkzeugverschleiss"
+thema_code: "PT-FEM"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Verschleissbilder, Standzeit und Werkzeugwechselkriterien muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Werkzeugverschleiss"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Freiflaechenverschleiss, Standzeit und Grenzkriterien aus Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Werkzeug">
+Die Oberflaeche wird schlechter und Masse driften langsam. Am Werkzeug siehst du eine veraenderte Schneide.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Werkzeugverschleiss", "Freiflaeche", "Schneide", "Standzeit"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Werkzeugverschleiss in Alltagssprache">
+Ein Werkzeug wird beim Arbeiten stumpfer oder beschaedigt. Dadurch koennen Masse und Oberflaechen schlechter werden.
+</EinfachErklaert>
+
+<WerkzeugverschleissMetallSchema />
+
+<WerkzeugverschleissMetallTrainer titel="Werkzeugverschleiss" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Verschleissbild und Prozessfolge verbinden">
+Werkzeugverschleiss zeigt sich an Schneide, Freiflaeche, Spanbildung, Oberflaeche, Masshaltigkeit oder Geraeusch. Bewertet wird nach Werkzeugdaten, Standzeit und Pruefvorgabe.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Massdrift">
+Ein Durchmesser wandert langsam zur Grenze. Gleichzeitig ist die Schneide sichtbar verschlissen. Du meldest beides zusammen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Verschleiss ist oft ein Verlauf, nicht nur ein einzelner Schaden.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEM-006::check"
+  fragen={[{ id: "schneide", masterySchluessel: "FK-3-FEM-006::schneide", aufgabenstellung: "Was kann Werkzeugverschleiss beeinflussen?", optionen: [{ id: "richtig", text: "Masshaltigkeit, Oberflaeche und Prozessstabilitaet.", istKorrekt: true, erklaerung: "Richtig. Verschleiss wirkt auf mehrere Merkmale." }, { id: "falsch", text: "Nur die Farbe des Werkzeughalters.", istKorrekt: false, erklaerung: "Nein. Entscheidend ist der wirksame Werkzeugzustand." }] }]}
+/>

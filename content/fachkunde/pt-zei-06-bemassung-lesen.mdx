@@ -1,0 +1,119 @@
+---
+titel: "Bemassung lesen"
+thema_code: "PT-ZEI"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Bemassungsregeln und Beispielzeichnung muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Technisches Zeichnen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Bemassungsregeln, Einheiten und Schreibweisen muessen vor Freigabe ergaenzt werden."
+  - titel: "BZE-Beispielzeichnung"
+    seite: "Zeichnung [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Das Beispielbild dient nur zur Grundorientierung."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation beim Pruefen">
+Du sollst ein Mass pruefen. Auf der Zeichnung siehst du eine Zahl, eine Linie und Pfeile. Erst zusammen
+zeigen diese Elemente, welches Mass gemeint ist.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Bemassung", "Masslinie", "Masszahl", "Bauteil", "Zeichnung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Bemassung in Alltagssprache">
+Die Bemassung zeigt dir, welche Groesse ein Teil haben soll. Die Masszahl ist der Zahlenwert. Die Linie und
+die Pfeile zeigen, worauf sich diese Zahl bezieht.
+</EinfachErklaert>
+
+<BemassungSchema />
+
+<BemassungTrainer titel="Bemassungsteile zuordnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Massangaben eindeutig lesen">
+Bemassung besteht aus Masszahlen, Masslinien, Hilfslinien, Pfeilen oder Begrenzungen und dem Bezug zum
+Bauteil. Fuer Fertigung und Pruefung wird die eingetragene Masszahl gelesen. Der Bezug zeigt, welche
+Kanten, Bohrungen oder Flaechen gemeint sind.
+</FachlichErklaert>
+
+## Elemente der Bemassung
+
+| Element | Aufgabe |
+|---|---|
+| Masszahl | Zahlenwert des Masses |
+| Masslinie | Richtung und Bezug des Masses |
+| Masspfeile | Begrenzung der Masslinie |
+| Hilfslinie | Verbindung vom Bauteil zur Masslinie |
+
+<Praxisbeispiel titel="Praxisbeispiel falscher Bezug">
+Neben einem Bauteil stehen mehrere Masszahlen. Du pruefst nicht einfach die naechste Zahl, sondern liest,
+welche Masslinie und welche Bezugskanten zur Masszahl gehoeren.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Einheiten, Toleranzen, Bezugsregeln und Sonderzeichen muessen nach Tabellenbuch und freigegebener Zeichnung
+gelesen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Masszahl, Masslinie und Bezug gehoeren zusammen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-ZEI-006::check"
+  fragen={[
+    {
+      id: "masszahl",
+      masterySchluessel: "FK-1-ZEI-006::masszahl",
+      aufgabenstellung: "Was ist die Masszahl?",
+      optionen: [
+        {
+          id: "zahl",
+          text: "Der Zahlenwert eines eingetragenen Masses.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Sie wird zusammen mit Masslinie und Bezug gelesen.",
+        },
+        {
+          id: "linie",
+          text: "Die Linie, auf der das Bauteil gezeichnet ist.",
+          istKorrekt: false,
+          erklaerung: "Nein. Die Masszahl ist der Zahlenwert, nicht die Linie.",
+        },
+      ],
+    },
+    {
+      id: "bezug",
+      masterySchluessel: "FK-1-ZEI-006::bezug",
+      aufgabenstellung: "Warum liest du Masslinie und Pfeile mit?",
+      optionen: [
+        {
+          id: "zuordnung",
+          text: "Damit klar ist, auf welche Kanten oder Flaechen sich das Mass bezieht.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Ohne Bezug kann eine Masszahl falsch verstanden werden.",
+        },
+        {
+          id: "farbe",
+          text: "Damit die Zeichnung dekorativer wirkt.",
+          istKorrekt: false,
+          erklaerung: "Nein. Bemassungselemente haben eine technische Funktion.",
+        },
+      ],
+    },
+  ]}
+/>

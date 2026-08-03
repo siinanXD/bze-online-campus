@@ -1,0 +1,114 @@
+---
+titel: "Werkstoffgruppen ueberblicken"
+thema_code: "PT-WST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Werkstoffgruppen, betriebliche Beispiele und Begriffe muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Werkstoffgruppen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Einteilung und Beispiele muessen mit Tabellenbuch und Traegerskript abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["auswendig", "verstehen"]} />
+
+<StoryEinstieg titel="Situation am Materialwagen">
+Auf dem Wagen liegen Stahlteile, Kunststoffgranulat und ein Kanister Kuehlschmierstoff. Du sollst zuerst
+grob einordnen, mit welcher Werkstoffgruppe du es zu tun hast.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Werkstoff", "Metall", "Kunststoff", "Betriebsstoff", "Material"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Werkstoffgruppen in Alltagssprache">
+Werkstoffe sind Materialien fuer Bauteile oder Arbeit. Die grobe Gruppe hilft dir, Eigenschaften,
+Bearbeitung und Sicherheitsregeln richtig einzuordnen.
+</EinfachErklaert>
+
+<WerkstoffgruppenSchema />
+
+<WerkstoffgruppenTrainer titel="Werkstoffgruppen ueberblicken" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Grobe Ordnung vor Details">
+Werkstoffe werden zuerst in Gruppen eingeordnet, zum Beispiel Metalle und Kunststoffe. Danach zaehlen
+genaue Werkstoffangabe, Datenblatt, Zeichnung oder betriebliche Vorgabe. Farbe oder Gewicht allein reichen
+nicht fuer eine sichere Einordnung.
+</FachlichErklaert>
+
+## Grundordnung
+
+| Gruppe | Beispiele |
+|---|---|
+| Metalle | Stahl, Aluminium, Kupfer |
+| Kunststoffe | Thermoplaste, Duroplaste, Elastomere |
+| Betriebs- und Hilfsstoffe | Oel, Kuehlschmierstoff, Reiniger |
+
+<Praxisbeispiel titel="Praxisbeispiel unbekannte Kiste">
+Eine Kiste ist nicht eindeutig beschriftet. Du sortierst nicht nach Gefuehl weiter, sondern pruefst
+Materialkennzeichnung, Auftrag oder fragst nach Vorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Werkstoffgruppen, Kennzeichen und verbindliche Beispiele muessen aus Tabellenbuch, Datenblatt,
+Zeichnung oder Traegerskript kommen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Erst Materialangabe lesen, dann Eigenschaften beurteilen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WST-001::check"
+  fragen={[
+    {
+      id: "gruppe-metall",
+      masterySchluessel: "FK-1-WST-001::gruppe-metall",
+      aufgabenstellung: "Zu welcher Grundgruppe gehoeren Stahl, Aluminium und Kupfer?",
+      optionen: [
+        {
+          id: "metalle",
+          text: "Metalle.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Das sind typische metallische Werkstoffe.",
+        },
+        {
+          id: "kunststoffe",
+          text: "Kunststoffe.",
+          istKorrekt: false,
+          erklaerung: "Nein. Kunststoffe sind eine andere Werkstoffgruppe.",
+        },
+      ],
+    },
+    {
+      id: "unbekannt",
+      masterySchluessel: "FK-1-WST-001::unbekannt",
+      aufgabenstellung: "Was machst du bei unbekanntem Material zuerst?",
+      optionen: [
+        {
+          id: "lesen",
+          text: "Materialangabe, Auftrag oder Kennzeichnung lesen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Material wird nicht geraten.",
+        },
+        {
+          id: "farbe",
+          text: "Nach Farbe entscheiden.",
+          istKorrekt: false,
+          erklaerung: "Nein. Farbe ist keine sichere Werkstoffangabe.",
+        },
+      ],
+    },
+  ]}
+/>

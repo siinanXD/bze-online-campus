@@ -1,0 +1,114 @@
+---
+titel: "Pruefen, Messen und Lehren unterscheiden"
+thema_code: "PT-MES"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Begriffe und Beispiele muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Prueftechnik"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Definitionen fuer Pruefen, Messen und Lehren muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation in der Pruefecke">
+Ein Teil kommt aus der Maschine. Manchmal musst du nur pruefen, ob es passt. Manchmal brauchst du einen
+genauen Messwert. Manchmal reicht eine Lehre fuer Gut oder Ausschuss.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Pruefen", "Messen", "Lehren", "Messwert", "Vorgabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Drei Begriffe in Alltagssprache">
+Pruefen heisst: passt es zur Vorgabe? Messen heisst: du bekommst eine Zahl mit Einheit. Lehren heisst:
+eine Lehre entscheidet meist schnell, ob gut oder nicht gut.
+</EinfachErklaert>
+
+<PruefenMessenLehrenSchema />
+
+<PruefenMessenLehrenTrainer titel="Pruefen, Messen, Lehren unterscheiden" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Pruefen als Oberbegriff">
+Pruefen ist das Feststellen, ob eine Anforderung erfuellt wird. Messen ist ein Pruefen mit Zahlenwert.
+Lehren ist ein Pruefen mit einer festen Lehre, haeufig ohne Zahlenwert. Welche Methode gilt, steht in
+Zeichnung, Pruefplan oder Unterweisung.
+</FachlichErklaert>
+
+## Vergleich
+
+| Begriff | Ergebnis |
+|---|---|
+| Pruefen | Anforderung erfuellt oder nicht |
+| Messen | Zahlenwert mit Einheit |
+| Lehren | Gut/Ausschuss oder passt/passt nicht |
+
+<Praxisbeispiel titel="Praxisbeispiel Bohrung">
+Du kannst eine Bohrung messen und einen Durchmesserwert erhalten. Mit einem Grenzlehrdorn pruefst du
+dagegen schnell, ob die Bohrung innerhalb der Vorgabe liegt.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Begriffe und Pruefverfahren muessen aus Tabellenbuch, Pruefplan oder freigegebener Unterweisung gelesen
+werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Messen liefert Zahlen. Lehren liefert meist eine schnelle Gut/Ausschuss-Entscheidung.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MES-001::check"
+  fragen={[
+    {
+      id: "messen",
+      masterySchluessel: "FK-1-MES-001::messen",
+      aufgabenstellung: "Was ist typisch fuer Messen?",
+      optionen: [
+        {
+          id: "zahl",
+          text: "Du bestimmst einen Zahlenwert mit Einheit.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Messen liefert einen Messwert.",
+        },
+        {
+          id: "nur-farbe",
+          text: "Du betrachtest nur die Farbe des Teils.",
+          istKorrekt: false,
+          erklaerung: "Das ist keine technische Messung.",
+        },
+      ],
+    },
+    {
+      id: "lehren",
+      masterySchluessel: "FK-1-MES-001::lehren",
+      aufgabenstellung: "Was ist typisch fuer Lehren?",
+      optionen: [
+        {
+          id: "gut",
+          text: "Eine Lehre entscheidet haeufig Gut oder Ausschuss ohne Zahlenwert.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Lehren ist eine schnelle Pruefart.",
+        },
+        {
+          id: "formel",
+          text: "Du berechnest immer zuerst eine Flaeche.",
+          istKorrekt: false,
+          erklaerung: "Das gehoert nicht zum Grundprinzip des Lehrens.",
+        },
+      ],
+    },
+  ]}
+/>

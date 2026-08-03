@@ -1,0 +1,57 @@
+---
+titel: "Rueckstromsperre und Duese"
+thema_code: "PT-KST"
+lesedauer_minuten: 7
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Bauteilfunktion und Fehlerbilder muessen fachlich geprueft werden."
+quellen:
+  - titel: "Tabellenbuch Kunststofftechnik Spritzeinheit"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Rueckstromsperre, Duese und Dichtheit nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation beim Einspritzen">
+Beim Schuss soll Schmelze nach vorne ins Werkzeug und nicht zurueck in die Schnecke fliessen. Du ordnest die Bauteile an der Schneckenspitze ein.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Rueckstromsperre", "Duese", "Schmelze", "Anguss"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Rueckstromsperre und Duese in Alltagssprache">
+Die Rueckstromsperre bremst Rueckfluss. Die Duese fuehrt die Schmelze zum Werkzeug.
+</EinfachErklaert>
+
+<RueckstromsperreDueseSchema />
+
+<RueckstromsperreDueseTrainer titel="Rueckstromsperre und Duese" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Schmelzeuebergabe kontrollieren">
+Rueckstromsperre und Duese wirken an der Uebergabe zwischen Plastifiziereinheit und Werkzeug. Sie beeinflussen Druckaufbau, Dichtheit und Wiederholgenauigkeit.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel undichte Duese">
+An der Duese tritt Material aus. Du greifst nicht in den heissen Bereich, sondern meldest die Abweichung und beachtest die Sicherheitsvorgabe.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Rueckstromsperre und Duese sorgen fuer gerichteten Schmelzefluss.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-KST-007::check"
+  fragen={[{ id: "fluss", masterySchluessel: "FK-2-KST-007::fluss", aufgabenstellung: "Welche Aufgabe hat die Rueckstromsperre?", optionen: [{ id: "richtig", text: "Rueckfluss der Schmelze begrenzen.", istKorrekt: true, erklaerung: "Richtig. Beim Einspritzen soll Druck nach vorne wirken." }, { id: "falsch", text: "Das Teil aus der Kavitaet druecken.", istKorrekt: false, erklaerung: "Nein. Das macht der Auswerfer." }] }]}
+/>

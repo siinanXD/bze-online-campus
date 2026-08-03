@@ -1,0 +1,67 @@
+---
+titel: "Taktzeit und Zykluszeit"
+thema_code: "PT-PLA"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Berechnungswerte, Bedarf, Schichtzeit und Prozessmessung muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch, Traegerskript, Produktionsplan und Prozessdaten"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Taktzeitformel, verfuegbare Zeit und Zyklusmessung nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden", "tabellenbuch_finden"]} />
+
+<StoryEinstieg titel="Situation an der Spritzgiessmaschine">
+Der Kunde braucht eine bestimmte Menge bis Schichtende. Die Maschine laeuft aber mit einer festen Zykluszeit. Jetzt muss verglichen werden, ob Bedarf und Prozess zusammenpassen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Taktzeit", "Zykluszeit", "Kapazitaet", "Menge", "Liefertermin"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Bedarf gegen Prozess">
+Taktzeit kommt vom Bedarf: Wie schnell muss ein Teil fertig werden? Zykluszeit kommt vom Prozess: Wie lange braucht die Maschine wirklich?
+</EinfachErklaert>
+
+<TaktzeitZykluszeitSchema />
+
+<Formelkarte
+  name="Taktzeit"
+  formel="Taktzeit = verfuegbare Zeit / benoetigte Menge"
+  einheiten="Zeit pro Stueck, zum Beispiel min/Stueck oder s/Stueck"
+  verwendung="Wenn Bedarf und verfuegbare Zeit auf einen Zeitabstand pro Teil heruntergebrochen werden."
+  beispiel="Eine kurze Taktzeit bedeutet: Es muss schneller ein Teil fertig werden."
+  typischerFehler="Taktzeit und gemessene Zykluszeit gleichsetzen."
+  tabellenbuchHinweis="Verfuegbare Zeit, Pausen, Sperrzeiten und Mengen aus freigegebenem Plan uebernehmen."
+/>
+
+<TaktzeitZykluszeitTrainer titel="Taktzeit und Zykluszeit" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Takt und Zyklus">
+Taktzeit beschreibt den notwendigen Ausbringungsrhythmus aus Bedarf und verfuegbarer Zeit. Zykluszeit beschreibt die reale Dauer eines wiederholten Maschinen- oder Prozessablaufs. Wenn die Zykluszeit laenger als die Taktzeit ist, entsteht Termin- oder Kapazitaetsrisiko.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Zyklus zu lang">
+Der Plan verlangt alle 40 Sekunden ein Gutteil, der Prozess braucht aber 52 Sekunden je Zyklus. Ohne Anpassung von Menge, Termin, Kavitaet, Maschine oder Schicht reicht die Ausbringung nicht.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Takt ist Bedarf. Zyklus ist Prozess. Der Vergleich zeigt das Risiko.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-PLA-006::check"
+  fragen={[{ id: "takt", masterySchluessel: "FK-4-PLA-006::takt", aufgabenstellung: "Worin liegt der Unterschied zwischen Taktzeit und Zykluszeit?", optionen: [{ id: "richtig", text: "Taktzeit kommt aus Bedarf, Zykluszeit aus dem realen Prozess.", istKorrekt: true, erklaerung: "Richtig. Der Vergleich ist fuer Planung entscheidend." }, { id: "falsch", text: "Beide Begriffe bedeuten immer exakt dasselbe.", istKorrekt: false, erklaerung: "Nein. Sie koennen gleich sein, haben aber unterschiedliche Herkunft." }] }]}
+/>

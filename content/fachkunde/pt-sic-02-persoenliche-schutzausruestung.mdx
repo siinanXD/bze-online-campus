@@ -1,0 +1,119 @@
+---
+titel: "Persoenliche Schutzausruestung"
+thema_code: "PT-SIC"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. PSA-Pflichten muessen mit Betriebsanweisung, Gefaehrdungsbeurteilung und Unterweisung abgeglichen werden."
+quellen:
+  - titel: "Betriebsanweisung PSA"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete PSA-Pflichten je Arbeitsplatz muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung Arbeitssicherheit"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Die Beispiele sind allgemein und ersetzen keine betriebliche Unterweisung."
+---
+
+<WissensstufenLeiste stufen={["anwenden", "auswendig_wissen"]} />
+
+<StoryEinstieg titel="Situation am Arbeitsplatz">
+Vor der Maschine liegen Schutzbrille und Handschuhe bereit. Du traegst Sicherheitsschuhe. Jetzt musst du
+entscheiden: Was brauchst du fuer die aktuelle Aufgabe wirklich, und wann koennen Handschuhe sogar falsch
+sein?
+</StoryEinstieg>
+
+<BegriffListe begriffe={["PSA", "Schutzbrille", "Sicherheitsschuhe", "Gefahrstelle", "Betriebsanweisung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="PSA in Alltagssprache">
+PSA ist Schutz, den du direkt am Koerper traegst: zum Beispiel Brille, Schuhe oder Handschuhe. PSA wird
+nicht nach Gefuehl gewaehlt, sondern nach Aufgabe und Vorgabe.
+</EinfachErklaert>
+
+<PsaSet />
+
+<PsaZuordnung titel="Welche PSA passt zur Situation?" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="PSA passend zur Gefaehrdung">
+Persoenliche Schutzausruestung verringert bestimmte Risiken, beseitigt die Gefahr aber nicht. Sie wird
+entsprechend Gefaehrdung, Betriebsanweisung und Unterweisung eingesetzt. Besonders wichtig ist: PSA kann je
+nach Situation vorgeschrieben, unzureichend oder ungeeignet sein.
+</FachlichErklaert>
+
+## Beispiele fuer PSA
+
+| PSA | Schutzidee | Worauf achten? |
+|---|---|---|
+| Schutzbrille | Augen vor Spaenen, Partikeln oder Spritzern schuetzen | Sauber, passend, nicht zerkratzt |
+| Sicherheitsschuhe | Fuesse vor Stoss, Druck oder herunterfallenden Teilen schuetzen | Betrieblich vorgeschriebene Ausfuehrung tragen |
+| Handschuhe | Haende bei geeigneten Taetigkeiten schuetzen | Nicht pauschal an laufenden rotierenden Teilen verwenden |
+
+<Praxisbeispiel titel="Praxisbeispiel Spankontrolle">
+Beim Entfernen von Spaenen klaerst du zuerst, ob die Maschine sicher stillsteht und welches Hilfsmittel
+vorgeschrieben ist. Du verlaesst dich nicht nur auf Handschuhe, sondern nutzt die freigegebene Methode.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Diese Einheit legt keine verbindliche PSA-Pflicht fuer konkrete Arbeitsplaetze fest. Das darf nur aus
+Betriebsanweisung, Gefaehrdungsbeurteilung und Ausbilderfreigabe kommen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+PSA passt zur Gefaehrdung und zur Aufgabe; sie ersetzt keine sichere Arbeitsweise.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-SIC-002::check"
+  fragen={[
+    {
+      id: "psa-vorgabe",
+      masterySchluessel: "FK-1-SIC-002::psa-vorgabe",
+      aufgabenstellung: "Woraus ergibt sich, welche PSA du tragen musst?",
+      optionen: [
+        {
+          id: "vorgabe",
+          text: "Aus Gefaehrdung, Betriebsanweisung und Unterweisung.",
+          istKorrekt: true,
+          erklaerung: "Richtig. PSA wird nicht geraten, sondern aus der freigegebenen Vorgabe abgeleitet.",
+        },
+        {
+          id: "gefuehl",
+          text: "Aus meinem Gefuehl, was bequem ist.",
+          istKorrekt: false,
+          erklaerung: "Bequemlichkeit ist nicht die Grundlage fuer PSA-Pflichten.",
+        },
+      ],
+    },
+    {
+      id: "psa-reicht-nicht",
+      masterySchluessel: "FK-1-SIC-002::psa-reicht-nicht",
+      aufgabenstellung: "Warum ersetzt PSA keine sichere Arbeitsweise?",
+      optionen: [
+        {
+          id: "gefahr-bleibt",
+          text: "Weil die Gefahr oft bestehen bleibt und zusaetzliche Regeln gelten.",
+          istKorrekt: true,
+          erklaerung: "Richtig. PSA mindert Risiken, beseitigt sie aber nicht automatisch.",
+        },
+        {
+          id: "macht-alles-sicher",
+          text: "Weil PSA jede Arbeit automatisch sicher macht.",
+          istKorrekt: false,
+          erklaerung: "PSA macht nicht jede Handlung sicher, besonders nicht falsches Eingreifen in Maschinenbereiche.",
+        },
+      ],
+    },
+  ]}
+/>

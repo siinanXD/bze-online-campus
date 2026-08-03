@@ -1,0 +1,57 @@
+---
+titel: "Steuerung und Regelung"
+thema_code: "PT-STR"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Abgrenzung Steuerung/Regelung und Praxisbeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch und Fachbuch Steuerungstechnik"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Definitionen, Regelkreisbeispiele und betriebliche Anlagenbeispiele nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation bei einer Heizstrecke">
+Eine Anlage kann eine Heizung einfach einschalten oder die Temperatur messen und laufend nachregeln. Das sind nicht dieselben Funktionen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Steuerung", "Regelung", "Sollwert", "Istwert"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Unterschied in Alltagssprache">
+Eine Steuerung arbeitet nach Ablauf. Eine Regelung misst zurueck und korrigiert, wenn der Istwert vom Sollwert abweicht.
+</EinfachErklaert>
+
+<SteuerungRegelungSchema />
+
+<SteuerungRegelungTrainer titel="Steuerung und Regelung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Rueckmeldung als Kernunterschied">
+Bei einer Steuerung fehlt der laufende Soll-Ist-Vergleich im Prozess. Bei einer Regelung wird die Regelgroesse gemessen, mit dem Sollwert verglichen und ueber eine Stellgroesse beeinflusst.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Temperatur">
+Ein Timer schaltet eine Heizung fuer eine feste Zeit ein: Steuerung. Ein Temperatursensor meldet den Istwert und der Regler passt die Heizleistung an: Regelung.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Regelung bedeutet Rueckmeldung und Korrektur.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-STR-002::check"
+  fragen={[{ id: "regelung", masterySchluessel: "FK-3-STR-002::regelung", aufgabenstellung: "Was kennzeichnet eine Regelung?", optionen: [{ id: "richtig", text: "Istwert wird rueckgemeldet und mit dem Sollwert verglichen.", istKorrekt: true, erklaerung: "Richtig. Rueckmeldung und Vergleich sind zentral." }, { id: "falsch", text: "Rueckmeldung wird abgeklemmt, damit der Ablauf schneller ist.", istKorrekt: false, erklaerung: "Nein. Ohne Rueckmeldung fehlt der Regelungscharakter." }] }]}
+/>

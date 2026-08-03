@@ -1,0 +1,64 @@
+---
+titel: "Standzeit und Werkzeugverschleiss"
+thema_code: "PT-FER"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Standzeitwerte, Verschleissmerkmale und Meldewege muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Werkzeugdatenblatt oder Tabellenbuch Standzeit"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Standzeiten und Werkzeugwechselkriterien nach freigegebener Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Schneide">
+Die Maschine klingt anders und die Oberflaeche wird schlechter. Du denkst an Werkzeugverschleiss und meldest
+die Auffaelligkeit nach Vorgabe.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Standzeit", "Werkzeugverschleiss", "Werkzeugdaten", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Verschleiss in Alltagssprache">
+Ein Werkzeug bleibt nicht fuer immer gleich gut. Es kann stumpf werden und dann schlechtere Ergebnisse liefern.
+</EinfachErklaert>
+
+<WerkzeugverschleissSchema />
+
+<WerkzeugverschleissTrainer titel="Standzeit und Werkzeugverschleiss" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Standzeit als Vorgabe">
+Standzeit beschreibt die brauchbare Einsatzdauer eines Werkzeugs unter definierten Bedingungen. Verschleiss
+kann Masshaltigkeit, Oberflaeche, Waerme, Geraeusch und Prozesssicherheit beeinflussen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Meldung">
+Wenn Schneide, Geraeusch oder Spanbild auffaellig werden, arbeitest du nicht einfach weiter, sondern pruefst
+und meldest nach betrieblichem Ablauf.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Standzeitwerte und Wechselkriterien sind quellenpflichtig.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Werkzeugverschleiss frueh erkennen schuetzt Qualitaet und Prozess.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-FER-007::check"
+  fragen={[{ id: "meldung", masterySchluessel: "FK-2-FER-007::meldung", aufgabenstellung: "Was tust du bei auffaelligem Werkzeugverschleiss?", optionen: [{ id: "melden", text: "Prozess pruefen und melden.", istKorrekt: true, erklaerung: "Richtig." }, { id: "weiter", text: "Mit mehr Druck weiterarbeiten.", istKorrekt: false, erklaerung: "Nein. Das kann Schaden und Fehler vergroessern." }] }]}
+/>

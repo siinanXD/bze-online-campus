@@ -1,0 +1,57 @@
+---
+titel: "5-Why"
+thema_code: "PT-IH"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Methode, Grenzen und betriebliche Beispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript, QS-Unterlagen und betriebliche Problemloesungsstandards"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Freigegebene 5-Why-Beispiele und Dokumentationsstandard nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation nach wiederholter Stoerung">
+Der gleiche Fehler tritt wieder auf. Statt nur die Maschine neu zu starten, fragt das Team mehrfach Warum, bis eine belegbare Grundursache sichtbar wird.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Ursache", "Grundursache", "Massnahme", "Dokumentation", "Stoerung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Mehrfach Warum fragen">
+5-Why bedeutet: Du fragst nicht nur einmal Warum. Du fragst weiter, bis du nicht nur ein Symptom, sondern eine tiefere Ursache verstehst.
+</EinfachErklaert>
+
+<FiveWhySchema />
+
+<FiveWhyTrainer titel="5-Why" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Warum-Kette mit Belegen">
+5-Why ist eine einfache Methode zur Ursachenanalyse. Jede Antwort muss zum Prozess passen und moeglichst belegbar sein. Die Methode sucht keine Schuldigen, sondern eine Ursache, gegen die eine wirksame Massnahme geplant werden kann.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel fehlendes Material">
+Die Anlage steht, weil kein Material nachkommt. Warum? Trichter leer. Warum? Nachfuellung nicht erfolgt. Warum? Schichtuebergabe unvollstaendig. Daraus kann eine Massnahme fuer die Uebergabe entstehen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+5-Why fragt nach Ursachen, nicht nach Schuld.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-IH-010::check"
+  fragen={[{ id: "fivewhy", masterySchluessel: "FK-3-IH-010::fivewhy", aufgabenstellung: "Was ist bei 5-Why wichtig?", optionen: [{ id: "richtig", text: "Warum-Antworten belegen und daraus eine wirksame Massnahme ableiten.", istKorrekt: true, erklaerung: "Richtig. Ohne Beleg wird aus 5-Why nur Raten." }, { id: "falsch", text: "Schnell eine Person als Schuldigen festlegen.", istKorrekt: false, erklaerung: "Nein. Die Methode sucht Ursachen im Prozess." }] }]}
+/>

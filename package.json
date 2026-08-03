@@ -24,7 +24,9 @@
     "seed:generate": "python3 scripts/generate_seed.py",
     "design:shots": "node scripts/design-screenshots.mjs ./shots",
     "design:galerie": "node scripts/design-galerie.mjs ./shots ./galerie.html",
-    "design:kontrast": "node scripts/kontrast-pruefung.mjs"
+    "design:kontrast": "node scripts/kontrast-pruefung.mjs",
+    "fachkunde:inventar": "node --import tsx scripts/fachkunde-freigabe-inventar.mjs",
+    "fachkunde:audit": "node --import tsx scripts/fachkunde-struktur-audit.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.1",

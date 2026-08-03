@@ -1,0 +1,57 @@
+---
+titel: "Unterfuellung"
+thema_code: "PT-FEK"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Fuellursachen, Fliesswegbezug und Prozessgrenzen muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Fachbuch Spritzgiessen und Einstellblatt"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Fuellparameter, Materialdaten und Freigabekriterien nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Fliessende">
+Ein Kunststoffteil ist an einer Ecke nicht vollstaendig ausgeformt. Die Kontur endet zu frueh und das Teil ist ein Kurzschuss.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Unterfuellung", "Fliessweg", "Schmelze", "Entlueftung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Unterfuellung in Alltagssprache">
+Unterfuellung bedeutet: Die Form wurde nicht ganz mit Kunststoff gefuellt.
+</EinfachErklaert>
+
+<UnterfuellungSchema />
+
+<UnterfuellungTrainer titel="Unterfuellung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Unterfuellung eingrenzen">
+Unterfuellung kann mit Fliessweg, Anschnitt, Schmelzetemperatur, Einspritzdruck, Entlueftung, Materialzustand oder Werkzeugtemperierung zusammenhaengen. Aenderungen erfolgen nur nach Vorgabe.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel unvollstaendige Ecke">
+Bei jeder dritten Kavitaet fehlt an einer Ecke Material. Du dokumentierst Lage und Haeufigkeit, trennst die Teile und meldest das Fuellproblem.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ein kurzes Teil ist kein Gutteil mit kleiner Schoenheitsstelle.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEK-004::check"
+  fragen={[{ id: "unterfuellung", masterySchluessel: "FK-3-FEK-004::unterfuellung", aufgabenstellung: "Was zeigt eine Unterfuellung?", optionen: [{ id: "richtig", text: "Die Kavitaet wurde nicht vollstaendig gefuellt.", istKorrekt: true, erklaerung: "Richtig. Das Teil ist unvollstaendig ausgeformt." }, { id: "falsch", text: "Das Teil ist nur zu stark abgekuehlt, aber sicher verwendbar.", istKorrekt: false, erklaerung: "Nein. Verwendbarkeit braucht Bewertung und Freigabe." }] }]}
+/>

@@ -1,0 +1,57 @@
+---
+titel: "Eingang und Ausgang"
+thema_code: "PT-STR"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Signalrichtung und betriebliche I/O-Beispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Fachbuch Steuerungstechnik und Schaltplan/Anlagenunterlage"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Beispiele fuer Sensoren, Aktoren, I/O-Adressen und Diagnoseweg nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation bei der Diagnose">
+Ein Sensor leuchtet, aber der Aktor bewegt sich nicht. Du musst unterscheiden, ob das Signal in die Steuerung hineingeht oder ein Befehl herausgehen soll.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Eingang", "Ausgang", "Sensor", "Aktor"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="I/O in Alltagssprache">
+Eingang bedeutet: Signal kommt in die Steuerung hinein. Ausgang bedeutet: Befehl geht aus der Steuerung heraus.
+</EinfachErklaert>
+
+<EingangAusgangSchema />
+
+<EingangAusgangTrainer titel="Eingang und Ausgang" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Signalrichtung lesen">
+Sensoren, Taster und Schalter liegen typischerweise auf Eingaengen. Ventile, Anzeigen, Relais oder Motoransteuerungen werden ueber Ausgaenge geschaltet. Bei Stoerungen wird erst Signalrichtung und Status geprueft.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Zylinder">
+Der Endschalter meldet die Endlage am Eingang. Die SPS setzt danach einen Ausgang fuer ein Ventil. Du beschreibst beide Signale getrennt.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Eingang rein, Ausgang raus.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-STR-005::check"
+  fragen={[{ id: "io", masterySchluessel: "FK-3-STR-005::io", aufgabenstellung: "Was ist ein typischer Eingang?", optionen: [{ id: "richtig", text: "Ein Sensorsignal, das in die Steuerung geht.", istKorrekt: true, erklaerung: "Richtig. Sensoren liefern Eingangssignale." }, { id: "falsch", text: "Ein Aktor, der ohne Steuerung geschaltet wird.", istKorrekt: false, erklaerung: "Nein. Aktoren werden typischerweise ueber Ausgaenge angesteuert." }] }]}
+/>

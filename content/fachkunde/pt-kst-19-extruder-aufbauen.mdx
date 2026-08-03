@@ -1,0 +1,57 @@
+---
+titel: "Extruder aufbauen"
+thema_code: "PT-KST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Extruderaufbau und Abgrenzung zum Spritzgiessen muessen fachlich geprueft werden."
+quellen:
+  - titel: "Tabellenbuch Kunststofftechnik Extrusion"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Extruderbestandteile und Prozessfolge nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Extrusionslinie">
+An der Linie entsteht ein endloses Profil. Du erkennst, dass der Extruder kontinuierlich arbeitet und kein einzelnes Spritzgussteil auswirft.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Extruder", "Extrusion", "Schnecke", "Werkzeug"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Extruder in Alltagssprache">
+Ein Extruder schmilzt Kunststoff und drueckt ihn fortlaufend durch eine Form.
+</EinfachErklaert>
+
+<ExtruderAufbauSchema />
+
+<ExtruderAufbauTrainer titel="Extruder aufbauen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Kontinuierliche Plastifizierung">
+Beim Extruder wird Granulat kontinuierlich ueber Trichter, Schnecke und Zylinder plastifiziert und durch ein formgebendes Werkzeug gedrueckt.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Profilstart">
+Das Profil laeuft aus dem Werkzeug an. Du beachtest Abzug, Kuehlung und Formstabilitaet, statt den Strang mit der Hand zu ziehen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Extrusion ist kontinuierlich, Spritzgiessen ist schussweise.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-KST-019::check"
+  fragen={[{ id: "kontinuierlich", masterySchluessel: "FK-2-KST-019::kontinuierlich", aufgabenstellung: "Wie arbeitet ein Extruder im Grundprinzip?", optionen: [{ id: "richtig", text: "Er foerdert Kunststoff kontinuierlich durch ein Werkzeug.", istKorrekt: true, erklaerung: "Richtig. Das ist der Kern der Extrusion." }, { id: "falsch", text: "Er wirft nach jedem Schuss ein Einzelteil aus.", istKorrekt: false, erklaerung: "Nein. Das passt eher zum Spritzgiessen." }] }]}
+/>

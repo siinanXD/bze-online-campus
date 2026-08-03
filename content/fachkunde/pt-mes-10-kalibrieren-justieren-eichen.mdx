@@ -1,0 +1,115 @@
+---
+titel: "Kalibrieren, Justieren, Eichen"
+thema_code: "PT-MES"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Begriffsfassung und betriebliche Zustaendigkeiten muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Pruefmittelueberwachung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Definitionen und betriebliche Zustaendigkeiten muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Pruefmittelschrank">
+Auf einem Pruefmittel klebt ein Kalibrieretikett. Ein Kollege sagt: Das ist doch dasselbe wie eichen.
+Du sollst die Begriffe sauber auseinanderhalten.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Kalibrieren", "Justieren", "Eichen", "Pruefmittel", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Drei Begriffe in Alltagssprache">
+Kalibrieren heisst: Abweichung feststellen. Justieren heisst: einstellen. Eichen ist eine amtliche
+Bestaetigung fuer bestimmte Messgeraete und Anwendungen.
+</EinfachErklaert>
+
+<KalibrierenJustierenEichenSchema />
+
+<KalibrierenJustierenEichenTrainer titel="Kalibrieren, Justieren, Eichen unterscheiden" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Nicht verwechseln">
+Beim Kalibrieren wird ein Messmittel mit einer Referenz verglichen und die Abweichung dokumentiert.
+Beim Justieren wird ein Messmittel eingestellt oder abgeglichen. Eichen ist eine amtliche Pruefung
+und Bestaetigung in geregelten Anwendungsfaellen. Wer was tun darf, regelt der Betrieb.
+</FachlichErklaert>
+
+## Vergleich
+
+| Begriff | Kerngedanke |
+|---|---|
+| Kalibrieren | Feststellen und dokumentieren |
+| Justieren | Einstellen oder abgleichen |
+| Eichen | Amtlich pruefen und bestaetigen |
+| Freigeben | Betrieblich erlauben, dass weiter genutzt wird |
+
+<Praxisbeispiel titel="Praxisbeispiel abgelaufenes Etikett">
+Das Kalibrieretikett ist abgelaufen oder unklar. Du nutzt das Pruefmittel nicht einfach weiter, sondern
+klaerst die Freigabe nach Vorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Begriffe, Intervalle, Kennzeichnung und Zustaendigkeiten muessen aus Tabellenbuch, Pruefmittelplan,
+Herstellerangabe oder betrieblicher Unterweisung kommen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Kalibrieren stellt fest, Justieren veraendert, Eichen bestaetigt amtlich.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MES-010::check"
+  fragen={[
+    {
+      id: "kalibrieren",
+      masterySchluessel: "FK-1-MES-010::kalibrieren",
+      aufgabenstellung: "Was bedeutet Kalibrieren vereinfacht?",
+      optionen: [
+        {
+          id: "abweichung",
+          text: "Abweichung gegen eine Referenz feststellen und dokumentieren.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Kalibrieren ist nicht automatisch Einstellen.",
+        },
+        {
+          id: "reinigen",
+          text: "Das Messmittel reinigen.",
+          istKorrekt: false,
+          erklaerung: "Nein. Reinigung ist Pflege, nicht Kalibrieren.",
+        },
+      ],
+    },
+    {
+      id: "justieren",
+      masterySchluessel: "FK-1-MES-010::justieren",
+      aufgabenstellung: "Was bedeutet Justieren?",
+      optionen: [
+        {
+          id: "einstellen",
+          text: "Ein Messmittel einstellen oder abgleichen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Das darf nur nach Vorgabe passieren.",
+        },
+        {
+          id: "amtlich",
+          text: "Eine amtliche Bestaetigung ausstellen.",
+          istKorrekt: false,
+          erklaerung: "Nein. Das beschreibt Eichen.",
+        },
+      ],
+    },
+  ]}
+/>

@@ -1,0 +1,75 @@
+---
+titel: "Haerte verstehen"
+thema_code: "PT-WSE"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Haertepruefverfahren, Werte und Beispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Haerte"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Haertewerte und Pruefverfahren duerfen erst nach Quellenabgleich genutzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Pruefstelle">
+Ein Bauteil soll verschleissfest sein. Du erkennst: Haerte beschreibt nicht einfach "stark", sondern
+den Widerstand gegen Eindringen oder Ritzen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Haerte", "Eindringen", "Pruefen", "Werkstoff", "Tabellenbuch"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Haerte in Alltagssprache">
+Haerte heisst: Ein Werkstoff laesst sich nicht so leicht eindruecken oder verkratzen.
+</EinfachErklaert>
+
+<HaerteSchema />
+
+<HaerteTrainer titel="Haerte verstehen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Widerstand gegen Eindringen">
+Haerte ist eine Werkstoffeigenschaft. In der Praxis wird sie mit festgelegten Verfahren beurteilt.
+Welche Skala, welcher Pruefkoerper und welcher Wert gelten, steht in Vorgabe, Pruefanweisung oder Tabellenbuch.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Haerteangabe">
+Auf einer Zeichnung steht eine Haerteforderung. Du interpretierst sie nicht frei, sondern pruefst die
+zugehoerige Vorgabe und meldest Unsicherheit.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Haertewerte, Pruefverfahren und Grenzwerte sind quellenpflichtig. In diesem Entwurf werden keine Normwerte
+erfunden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Haerte ist Widerstand gegen Eindringen, konkrete Werte kommen aus der Vorgabe.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WSE-001::check"
+  fragen={[
+    {
+      id: "grundidee",
+      masterySchluessel: "FK-1-WSE-001::grundidee",
+      aufgabenstellung: "Was beschreibt Haerte vereinfacht?",
+      optionen: [
+        { id: "eindringen", text: "Widerstand gegen Eindringen.", istKorrekt: true, erklaerung: "Richtig. Das ist die Grundidee." },
+        { id: "farbe", text: "Die Farbe des Werkstoffs.", istKorrekt: false, erklaerung: "Nein. Farbe ersetzt keine Haerteangabe." },
+      ],
+    },
+  ]}
+/>

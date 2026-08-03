@@ -1,0 +1,115 @@
+---
+titel: "Lehren benutzen"
+thema_code: "PT-MES"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Lehrenarten, Gut-/Ausschuss-Seiten und betriebliche Pruefanweisungen muessen freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Lehren und Pruefen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Lehrenarten, Handhabung und Bewertungsregeln muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Bohrung">
+Du sollst schnell pruefen, ob eine Bohrung passt. Statt einen Zahlenwert zu messen, bekommst du einen
+Grenzlehrdorn und eine klare Gut-/Ausschuss-Aufgabe.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Lehren", "Grenzlehrdorn", "Rachenlehre", "Pruefen", "Pruefmittel"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Lehren in Alltagssprache">
+Eine Lehre sagt dir meist: passt oder passt nicht. Du liest keine genaue Zahl ab, sondern nutzt die Lehre
+vorsichtig nach Vorgabe.
+</EinfachErklaert>
+
+<LehrenSchema />
+
+<LehrenTrainer titel="Lehren benutzen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Gut/Ausschuss statt Messzahl">
+Beim Lehren wird ein Werkstueck mit einem festen Pruefmittel verglichen. Typisch sind Grenzlehrdorn
+fuer Innenmasse und Rachenlehre fuer Aussenmasse. Die Lehre wird sauber angesetzt, nicht verkantet
+und nicht mit Gewalt auf das Teil gedrueckt.
+</FachlichErklaert>
+
+## Lehren richtig einordnen
+
+| Lehre | Typische Aufgabe |
+|---|---|
+| Grenzlehrdorn | Bohrung oder Innenmass pruefen |
+| Rachenlehre | Aussenmass pruefen |
+| Gut-Seite | Muss nach Vorgabe passen |
+| Ausschuss-Seite | Darf nach Vorgabe nicht passen |
+
+<Praxisbeispiel titel="Praxisbeispiel Widerstand">
+Die Lehre laesst sich nicht sauber ansetzen. Du drueckst nicht staerker, sondern pruefst Schmutz, Grat,
+Verkanten und die betriebliche Vorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Welche Seite passen muss, welche Seite nicht passen darf und wie die Lehre anzusetzen ist, muss aus
+Pruefanweisung, Tabellenbuch oder Unterweisung stammen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Lehren heisst entscheiden, nicht erzwingen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MES-008::check"
+  fragen={[
+    {
+      id: "entscheidung",
+      masterySchluessel: "FK-1-MES-008::entscheidung",
+      aufgabenstellung: "Was liefert eine Lehre meistens?",
+      optionen: [
+        {
+          id: "gut-ausschuss",
+          text: "Eine Gut-/Ausschuss-Entscheidung.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Lehren ersetzt nicht automatisch eine Messzahl.",
+        },
+        {
+          id: "exakte-zahl",
+          text: "Immer einen genauen Zahlenwert.",
+          istKorrekt: false,
+          erklaerung: "Nein. Viele Lehren liefern keine Zahl, sondern eine Entscheidung.",
+        },
+      ],
+    },
+    {
+      id: "gewalt",
+      masterySchluessel: "FK-1-MES-008::gewalt",
+      aufgabenstellung: "Was machst du, wenn eine Lehre klemmt?",
+      optionen: [
+        {
+          id: "pruefen",
+          text: "Nicht erzwingen, sondern Pruefstelle und Vorgabe pruefen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Gewalt kann Werkstueck und Lehre beschaedigen.",
+        },
+        {
+          id: "pressen",
+          text: "Mit mehr Kraft durchdruecken.",
+          istKorrekt: false,
+          erklaerung: "Nein. Das ist keine sichere Pruefung.",
+        },
+      ],
+    },
+  ]}
+/>

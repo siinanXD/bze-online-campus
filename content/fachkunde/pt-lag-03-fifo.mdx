@@ -1,0 +1,57 @@
+---
+titel: "FIFO"
+thema_code: "PT-LAG"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. FIFO-Regeln, Chargenlogik und Materialfreigabe muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript, Lagerstandard, Chargenregel und betriebliche Materialfreigabe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "FIFO-Ausnahmen, Sperrware und Chargenkennzeichnung nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation im Regal">
+Neue Ware steht vorne, aeltere freigegebene Ware steht dahinter. Wenn einfach die neue Ware zuerst genommen wird, bleibt die alte Charge liegen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["FIFO", "Charge", "Rueckverfolgung", "Freigabe", "Material"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Zuerst rein, zuerst raus">
+FIFO bedeutet: Das Material, das zuerst eingelagert wurde, wird zuerst entnommen, wenn es freigegeben ist. So bleibt die Reihenfolge nachvollziehbar.
+</EinfachErklaert>
+
+<FifoSchema />
+
+<FifoTrainer titel="FIFO" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="FIFO mit Freigabe und Charge">
+FIFO steht fuer First in first out. Es gilt nicht blind fuer gesperrte oder nicht freigegebene Ware. Entscheidend sind Eingangsdatum, Charge, Lagerplatz, Freigabestatus und Dokumentation. So bleiben Haltbarkeit, Materialwechsel und Rueckverfolgung beherrschbar.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Granulatchargen">
+Zwei Chargen desselben Materials stehen im Lager. Die aeltere Charge ist freigegeben und wird zuerst entnommen. Die neue Charge bleibt stehen, bis sie in der Reihenfolge dran ist oder eine freigegebene Ausnahme gilt.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+FIFO heisst: aelteste freigegebene Ware zuerst, Charge dokumentieren.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-LAG-003::check"
+  fragen={[{ id: "fifo", masterySchluessel: "FK-4-LAG-003::fifo", aufgabenstellung: "Welche Ware wird nach FIFO zuerst entnommen?", optionen: [{ id: "richtig", text: "Die aelteste freigegebene Ware in der richtigen Reihenfolge.", istKorrekt: true, erklaerung: "Richtig. Freigabe und Reihenfolge gehoeren zusammen." }, { id: "falsch", text: "Immer die neue Ware, weil sie vorne steht.", istKorrekt: false, erklaerung: "Nein. Das wuerde FIFO verletzen und alte Ware liegen lassen." }] }]}
+/>

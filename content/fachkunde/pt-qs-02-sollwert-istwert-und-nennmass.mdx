@@ -1,0 +1,57 @@
+---
+titel: "Sollwert, Istwert und Nennmass"
+thema_code: "PT-QS"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Beispielwerte, Zeichnungsbezug und Abweichungslogik muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Metall/Kunststoff und Zeichnungsgrundlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Verbindliche Begriffe und Beispielwerte aus Tabellenbuch oder BZE-Skript ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Messstation">
+Auf dem Pruefplan steht ein Sollwert. Du misst ein Teil und erhaeltst einen Istwert. Jetzt musst du beides sauber unterscheiden.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Nennmass", "Soll", "Istwert", "Merkmal"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Soll und Ist in Alltagssprache">
+Soll ist die Vorgabe. Ist ist das, was wirklich gemessen wurde. Nennmass ist das Grundmass aus der Zeichnung.
+</EinfachErklaert>
+
+<SollIstNennmassSchema />
+
+<SollIstNennmassTrainer titel="Sollwert Istwert und Nennmass" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Vorgabe und Messergebnis trennen">
+Das Nennmass steht als Bezugswert in der Zeichnung. Sollwerte und Grenzwerte ergeben sich aus Zeichnung, Pruefplan oder freigegebener Vorgabe. Der Istwert ist das gemessene Ergebnis am konkreten Teil.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel falscher Vergleich">
+Du misst 20,08 mm. Bevor du entscheidest, pruefst du, ob 20,00 mm nur das Nennmass ist oder ob Grenzwerte angegeben sind.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Erst Vorgabe lesen, dann Messwert bewerten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-QS-002::check"
+  fragen={[{ id: "istwert", masterySchluessel: "FK-3-QS-002::istwert", aufgabenstellung: "Was ist der Istwert?", optionen: [{ id: "richtig", text: "Der tatsaechlich gemessene Wert.", istKorrekt: true, erklaerung: "Richtig. Der Istwert entsteht durch die Messung." }, { id: "falsch", text: "Der Wert, den du erwartest.", istKorrekt: false, erklaerung: "Nein. Erwartung ist keine Messung." }] }]}
+/>

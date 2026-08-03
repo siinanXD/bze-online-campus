@@ -1,0 +1,118 @@
+---
+titel: "Einzugsstellen und Quetschstellen"
+thema_code: "PT-SIC"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Konkrete Gefahrbereiche und Maschinenbeispiele muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung mechanische Gefahrstellen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Maschinenstellen, Schutzmassnahmen und Eingriffsverbote muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung Arbeitssicherheit"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit erklaert Grundgefahren und ersetzt keine lokale Unterweisung."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an den Walzen">
+Ein Streifen Material laeuft schief zwischen zwei Walzen. Es sieht so aus, als koennte man ihn schnell mit
+der Hand richten. Genau hier entsteht eine typische Einzugsgefahr.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Einzugsstelle", "Quetschstelle", "Gefahrbereich", "Restenergie", "Schutzeinrichtung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Gefahrstellen in Alltagssprache">
+Einzugsstellen ziehen etwas hinein. Quetschstellen klemmen etwas ein. Beides ist gefaehrlich, besonders wenn
+Teile laufen, nachlaufen oder noch Energie gespeichert ist.
+</EinfachErklaert>
+
+<EinzugQuetschstellenSchema />
+
+<GefahrbereichTrainer titel="Sichere Reaktion waehlen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Mechanische Gefahrbereiche erkennen">
+Einzugsstellen entstehen zum Beispiel an Walzen, Rollen, Riemen oder drehenden Wellen. Quetschstellen
+entstehen zwischen bewegten und festen Teilen oder zwischen zwei bewegten Teilen. Ein scheinbarer Stillstand
+reicht nicht aus, wenn Restenergie oder ein unerwarteter Wiederanlauf moeglich ist.
+</FachlichErklaert>
+
+## Sicheres Verhalten
+
+| Gefahr | Typischer Ort | Sicheres Verhalten |
+|---|---|---|
+| Einzug | Walzen, Rollen, drehende Wellen | Abstand halten, lose Kleidung vermeiden, melden |
+| Quetschen | Schieber, Backen, Werkzeuge, Tore | Nicht hineingreifen, Stillstand und Freigabe abwarten |
+| Restenergie | Druck, Spannung, gespeicherte Bewegung | Nie nur nach Aussehen entscheiden |
+
+<Praxisbeispiel titel="Praxisbeispiel verklemmtes Teil">
+Ein Teil steckt im Bereich einer bewegten Vorrichtung. Du ziehst es nicht schnell heraus. Du stoppst und
+sicherst nach Vorgabe, meldest die Stoerung und wartest Freigabe ab.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Diese Lerneinheit nennt typische mechanische Gefahrstellen. Verbindlich sind die Gefahrbereichskennzeichnung,
+die Betriebsanweisung und die Unterweisung an der konkreten Maschine.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Niemals in laufende, nachlaufende oder unfreigegebene Gefahrbereiche greifen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-SIC-006::check"
+  fragen={[
+    {
+      id: "einzug-walzen",
+      masterySchluessel: "FK-1-SIC-006::einzug-walzen",
+      aufgabenstellung: "Warum greifst du nicht in laufende Walzen?",
+      optionen: [
+        {
+          id: "einzug",
+          text: "Koerperteile, Kleidung oder Material koennen eingezogen werden.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Walzen koennen eine Einzugsstelle bilden.",
+        },
+        {
+          id: "nur-schmutz",
+          text: "Weil die Walzen nur schmutzig werden koennten.",
+          istKorrekt: false,
+          erklaerung: "Das Hauptproblem ist die Gefahr fuer Menschen.",
+        },
+      ],
+    },
+    {
+      id: "quetschstelle",
+      masterySchluessel: "FK-1-SIC-006::quetschstelle",
+      aufgabenstellung: "Was ist an einer Quetschstelle richtig?",
+      optionen: [
+        {
+          id: "stillstand-freigabe",
+          text: "Nicht hineingreifen, sondern Stillstand und Freigabe abwarten.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Quetschstellen duerfen nicht mit der Hand geprueft werden.",
+        },
+        {
+          id: "schnell",
+          text: "Schnell hineingreifen, wenn niemand hinsieht.",
+          istKorrekt: false,
+          erklaerung: "Das ist gefaehrlich und widerspricht sicherem Arbeiten.",
+        },
+      ],
+    },
+  ]}
+/>

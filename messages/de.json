@@ -187,7 +187,9 @@
   },
   "topic": {
     "uebersicht": {
-      "kicker": "Thema"
+      "kicker": "Thema",
+      "lernpfad": "Lernpfad",
+      "fortschrittKurz": "{gelesen}/{gesamt}"
     },
     "abschnitte": {
       "fachkundeLesen": "Fachkunde lesen",
@@ -315,6 +317,14 @@
       "liste": "Kapitelübersicht"
     },
     "lerneinheit": {
+      "zurueckLernpfad": "← Lernpfad",
+      "pruefungsrelevanz": "Prüfungsrelevanz: {stufe}",
+      "pruefungsrelevanzStufen": {
+        "niedrig": "niedrig",
+        "mittel": "mittel",
+        "hoch": "hoch",
+        "sehr_hoch": "sehr hoch"
+      },
       "quellenTitel": "Quellen",
       "lesezeitHinweis": "Das ging schneller als die geschätzte Lesezeit. Wirf bei Unsicherheit noch einen Blick zurück — weiter geht's trotzdem.",
       "demoHinweis": "Beispiel-Inhalt: Dein Lesefortschritt wird hier nicht gespeichert.",
@@ -355,7 +365,42 @@
         "quizze": "Quizze",
         "kiGenerator": "KI-Generator",
         "qualitaetspruefung": "Qualitätsprüfung",
+        "fachkundeFreigabe": "Fachkunde-Freigabe",
         "wissensdatenbank": "Wissensdatenbank"
+      },
+      "fachkundeFreigabe": {
+        "titel": "Fachkunde-Freigabe",
+        "hinweis": "Übersicht der MDX-Entwürfe. Mini-Wissenscheck-Fragen können freigegeben sein, während Einheit und Quellen noch Entwurf bleiben. Diese Seite speichert nichts.",
+        "kennzahlen": {
+          "gesamt": "Einheiten gesamt",
+          "entwurf": "Entwurf",
+          "fragenFreigegeben": "Fragen freigegeben",
+          "quellenOffen": "Quellen offen",
+          "bereit": "Bereit für Fachprüfung"
+        },
+        "unvollstaendigTitel": "Unvollständige Pflichtbausteine",
+        "tabelleCaption": "Fachkunde-Lerneinheiten mit Review- und Quellenstatus",
+        "spalten": {
+          "thema": "Thema",
+          "titel": "Titel",
+          "status": "Status",
+          "fragen": "Fragen",
+          "quellen": "Quellen",
+          "bausteine": "Bausteine"
+        },
+        "quellen": {
+          "offen": "offen",
+          "ok": "ok"
+        },
+        "fragen": {
+          "offen": "offen",
+          "ok": "freigegeben"
+        },
+        "bausteine": {
+          "ok": "vollständig",
+          "luecke": "Lücke"
+        },
+        "mehr": "… und {rest} weitere Einheiten"
       },
       "dashboard": {
         "titel": "Content-Dashboard",

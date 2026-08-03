@@ -1,0 +1,115 @@
+---
+titel: "Eisenwerkstoffe und Stahl"
+thema_code: "PT-WST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Stahlbegriffe, Beispiele und Werkstoffsorten muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Eisenwerkstoffe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Definitionen, Stahlsorten und Beispiele muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Zeichnung">
+Auf der Zeichnung steht eine Werkstoffangabe fuer Stahl. Du erkennst: Stahl ist nicht einfach irgendein
+Metall, sondern ein Eisenwerkstoff mit genauer Sorte.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Eisen", "Stahl", "Eisenwerkstoff", "Legierung", "Werkstoff"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Stahl in Alltagssprache">
+Stahl gehoert zu den Eisenwerkstoffen. Seine Eigenschaften haengen von Zusammensetzung, Behandlung und
+genauer Sorte ab.
+</EinfachErklaert>
+
+<EisenStahlSchema />
+
+<EisenStahlTrainer titel="Eisenwerkstoffe und Stahl" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Stahl einordnen">
+Stahl ist ein Eisenwerkstoff. Legierungselemente und Behandlung koennen Eigenschaften wie Festigkeit,
+Bearbeitbarkeit oder Korrosionsverhalten beeinflussen. Welche Sorte gemeint ist, steht in Zeichnung,
+Datenblatt, Auftrag oder Tabellenbuch.
+</FachlichErklaert>
+
+## Einordnung
+
+| Begriff | Bedeutung |
+|---|---|
+| Eisen | Grundstoff vieler Eisenwerkstoffe |
+| Stahl | Eisenwerkstoff mit definierter Zusammensetzung |
+| Legierung | Mischung, die Eigenschaften beeinflusst |
+| Werkstoffangabe | Verbindliche Information fuer Fertigung und Pruefung |
+
+<Praxisbeispiel titel="Praxisbeispiel falsche Annahme">
+Zwei Stahlteile sehen aehnlich aus. Du behandelst sie nicht automatisch gleich, sondern beachtest
+Werkstoffangabe, Zeichnung und betriebliche Vorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Stahlsorten, Kurzzeichen, Eigenschaften und Bearbeitungshinweise duerfen nur aus Tabellenbuch,
+Datenblatt oder freigegebener Unterweisung uebernommen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Stahl ist nicht gleich Stahl; die Werkstoffangabe entscheidet.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WST-002::check"
+  fragen={[
+    {
+      id: "familie",
+      masterySchluessel: "FK-1-WST-002::familie",
+      aufgabenstellung: "Zu welcher Familie gehoert Stahl?",
+      optionen: [
+        {
+          id: "eisenwerkstoff",
+          text: "Zu den Eisenwerkstoffen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Stahl ist ein Eisenwerkstoff.",
+        },
+        {
+          id: "kunststoff",
+          text: "Zu den Kunststoffen.",
+          istKorrekt: false,
+          erklaerung: "Nein. Kunststoff ist eine andere Werkstoffgruppe.",
+        },
+      ],
+    },
+    {
+      id: "quelle",
+      masterySchluessel: "FK-1-WST-002::quelle",
+      aufgabenstellung: "Woher kommt die konkrete Information zur Stahlsorte?",
+      optionen: [
+        {
+          id: "datenblatt",
+          text: "Aus Zeichnung, Datenblatt, Auftrag oder Tabellenbuch.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Konkrete Sorten werden nicht geraten.",
+        },
+        {
+          id: "aussehen",
+          text: "Aus dem Aussehen allein.",
+          istKorrekt: false,
+          erklaerung: "Nein. Aehnliches Aussehen reicht nicht.",
+        },
+      ],
+    },
+  ]}
+/>

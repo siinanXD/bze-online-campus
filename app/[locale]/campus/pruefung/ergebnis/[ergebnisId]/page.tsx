@@ -12,7 +12,15 @@ export default async function Ergebnis({ params }: { params: Promise<{ locale: s
     .from('pruefung_ergebnisse')
     .select('id,pruefung_id,mc_punkte,freitext_punkte,gesamtpunkte,note,bestanden,abgegeben_am')
     .eq('id', ergebnisId).maybeSingle();
-  if (!erg) return <main className="p-4"><Card><p>{t('ergebnisFehlt')}</p></Card></main>;
+  if (!erg) {
+    return (
+      <main className="mx-auto max-w-md px-5 py-6">
+        <div className="rounded-[16px] border border-border bg-surface p-4">
+          <p>{t('ergebnisFehlt')}</p>
+        </div>
+      </main>
+    );
+  }
 
   // Notenschlüssel (für Bezeichnung)
   const { data: schluessel } = await supabase
@@ -46,8 +54,8 @@ export default async function Ergebnis({ params }: { params: Promise<{ locale: s
   const bez = gesamt != null ? noteBezeichnung(stufen, Number(gesamt)) : null;
 
   return (
-    <main className="mx-auto max-w-2xl space-y-4 p-4">
-      <h1 className="pt-2 text-2xl font-extrabold">{t('ergebnisTitel')}</h1>
+    <main className="mx-auto flex min-h-full max-w-md flex-col gap-4 px-5 pb-6 pt-3">
+      <h1 className="text-[22px] font-extrabold text-fg">{t('ergebnisTitel')}</h1>
 
       {gesamt == null ? (
         <Card>

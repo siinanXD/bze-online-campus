@@ -1,0 +1,57 @@
+---
+titel: "Farbabweichungen"
+thema_code: "PT-FEK"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Mustervergleich, Farbgrenzen, Masterbatchbezug und Freigabe muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Materialdatenblatt, Farbmuster und betriebliche Freigabe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Farbgrenzen, Musterstatus, Dosier- und Chargenbezug nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Musterbrett">
+Neue Teile wirken heller als das freigegebene Muster. Die Form passt, aber der Farbeindruck ist sichtbar anders.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Farbabweichung", "Masterbatch", "Charge", "Musterfreigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Farbabweichung in Alltagssprache">
+Die Farbe des Teils passt nicht zum Muster oder zur Vorgabe.
+</EinfachErklaert>
+
+<FarbabweichungSchema />
+
+<FarbabweichungTrainer titel="Farbabweichungen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Farbe fachlich bewerten">
+Farbabweichungen werden gegen Muster, Kundenvorgabe oder Freigabe bewertet. Ursachen koennen Masterbatch-Dosierung, Materialcharge, Farbwechsel, Restmaterial, Temperatur oder Vermischung sein.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Sichtblende">
+Eine Sichtblende ist leicht grauer als das Muster. Du gibst sie nicht nach Gefuehl frei, sondern vergleichst Musterstatus, Charge und Freigabeweg.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Farbe wird gegen Muster bewertet, nicht nach Stimmung.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEK-011::check"
+  fragen={[{ id: "farbe", masterySchluessel: "FK-3-FEK-011::farbe", aufgabenstellung: "Was ist bei Farbabweichung richtig?", optionen: [{ id: "richtig", text: "Mit Muster vergleichen und Material-/Masterbatchbezug klaeren.", istKorrekt: true, erklaerung: "Richtig. Farbe braucht eine freigegebene Referenz." }, { id: "falsch", text: "Farbton nach Gefuehl freigeben.", istKorrekt: false, erklaerung: "Nein. Freigabe erfolgt nach Vorgabe." }] }]}
+/>

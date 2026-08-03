@@ -1,0 +1,57 @@
+---
+titel: "Korrosion am Bauteil"
+thema_code: "PT-FEM"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Korrosionsarten, Lagerbedingungen und Freigabeweg muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Korrosion und betriebliche Lageranweisung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Korrosionsbilder, Schutzmassnahmen und Sperrlogik nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation im Lager">
+An einem Metallbauteil siehst du rostige Stellen. Jetzt pruefst du Ursache, Lagerung und ob das Teil gesperrt werden muss.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Korrosion", "Medium", "Oberflaeche", "Sperrung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Korrosion in Alltagssprache">
+Korrosion ist eine Schaedigung von Metall durch Umgebungseinfluesse, zum Beispiel Feuchtigkeit oder ungeeignete Medien.
+</EinfachErklaert>
+
+<KorrosionBauteilSchema />
+
+<KorrosionBauteilTrainer titel="Korrosion am Bauteil" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Oberflaeche und Ursache pruefen">
+Korrosion kann durch Feuchte, Medien, fehlenden Schutz, falsche Lagerung oder beschaedigte Oberflaechen entstehen. Betroffene Teile werden nach Vorgabe bewertet, gesperrt oder freigegeben.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel feuchte Verpackung">
+Mehrere Teile aus einer feuchten Verpackung zeigen Roststellen. Du pruefst nicht nur ein Teil, sondern meldest Charge, Lagerzustand und betroffene Menge.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Korrosion ist ein Befund mit Ursache, nicht nur Schmutz.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEM-010::check"
+  fragen={[{ id: "korrosion", masterySchluessel: "FK-3-FEM-010::korrosion", aufgabenstellung: "Was ist bei Korrosionsfund richtig?", optionen: [{ id: "richtig", text: "Fundstelle, Ursache und Freigabeweg klaeren.", istKorrekt: true, erklaerung: "Richtig. Korrosion braucht Bewertung." }, { id: "falsch", text: "Rost abwischen und sofort als Gutteil buchen.", istKorrekt: false, erklaerung: "Nein. Das verdeckt moeglicherweise einen Schaden." }] }]}
+/>

@@ -1,0 +1,64 @@
+---
+titel: "Kettenantrieb"
+thema_code: "PT-MEL"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Kettenarten, Spannungswerte und Schmierhinweise muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Kettenantriebe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Kettenarten, Spannung und Schmierung duerfen erst nach Quellenabgleich konkretisiert werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Kette">
+Eine Kette greift in ein Kettenrad. Du erkennst: Hier wird Bewegung formschluessig ueber Glieder und Rad
+uebertragen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Kette", "Kettenrad", "Schmierung", "Formschluss", "Gefahrbereich"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Kettenantrieb in Alltagssprache">
+Eine Kette greift mit ihren Gliedern in ein Kettenrad und gibt Bewegung weiter.
+</EinfachErklaert>
+
+<KettenantriebSchema />
+
+<KettenantriebTrainer titel="Kettenantrieb" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Formschluss mit Kettengliedern">
+Kettenantriebe uebertragen Bewegung formschluessig. Schmierung, Spannung, Verschleiss und Schutz werden nach
+Betriebsanweisung oder Wartungsplan beurteilt.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel laufende Kette">
+Eine Kette laeuft unruhig. Du richtest sie nicht im Lauf, sondern meldest den Zustand und wartest die sichere
+Freigabe ab.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Kettenspannung, Schmierung und konkrete Bauarten sind quellenpflichtig.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Kettenantrieb heisst Formschluss: Glieder greifen in das Kettenrad.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MEL-008::check"
+  fragen={[{ id: "formschluss", masterySchluessel: "FK-1-MEL-008::formschluss", aufgabenstellung: "Welches Grundprinzip passt zum Kettenantrieb?", optionen: [{ id: "formschluss", text: "Formschluss.", istKorrekt: true, erklaerung: "Richtig." }, { id: "raten", text: "Reines Raten nach Geraeusch.", istKorrekt: false, erklaerung: "Nein. Die Kette greift mechanisch in das Kettenrad." }] }]}
+/>

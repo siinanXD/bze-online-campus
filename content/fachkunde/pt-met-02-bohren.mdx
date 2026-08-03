@@ -1,0 +1,63 @@
+---
+titel: "Bohren"
+thema_code: "PT-MET"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Bohrergeometrie, Schnittwerte und Rechenbeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Bohren"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Drehzahl, Vorschub und Werkzeugdaten nur aus freigegebener Quelle uebernehmen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Bohrmaschine">
+Du sollst eine Bohrung herstellen. Dafuer reichen Augenmass und Gefuehl nicht: Bohrer, Werkstoff, Drehzahl,
+Vorschub und Kuehlung muessen zusammenpassen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Bohrer", "Spanwinkel", "Drehzahl", "Vorschub", "KSS"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Bohren in Alltagssprache">
+Ein Bohrer dreht sich und wird in das Werkstueck gefuehrt. So entsteht eine Bohrung.
+</EinfachErklaert>
+
+<BohrenSchema />
+
+<BohrenTrainer titel="Bohren" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Drehung und Vorschub">
+Bohren ist ein spanendes Verfahren. Die Schnittbewegung kommt durch die Drehung, der Vorschub fuehrt den
+Bohrer in die Tiefe. Konkrete Werte kommen aus Tabellenbuch oder Werkzeugdatenblatt.
+</FachlichErklaert>
+
+<Formelkarte titel="Schnittwertbezug beim Bohren" formel="vc, n, f">
+Die Formelzeichen sind Orientierung. Zahlenwerte bleiben quellenpflichtig.
+</Formelkarte>
+
+<TabellenbuchHinweis>
+Bohrerdurchmesser, Werkstoff, Schnittwert und Vorschub muessen vor der Einstellung abgeglichen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Bohren braucht Drehung, Vorschub und passende Werkzeugdaten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-002::check"
+  fragen={[{ id: "bewegung", masterySchluessel: "FK-2-MET-002::bewegung", aufgabenstellung: "Welche Bewegungen gehoeren zum Bohren?", optionen: [{ id: "dv", text: "Drehung und Vorschub.", istKorrekt: true, erklaerung: "Richtig." }, { id: "farbe", text: "Farbe und Gewicht.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

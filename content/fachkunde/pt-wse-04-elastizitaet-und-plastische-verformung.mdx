@@ -1,0 +1,70 @@
+---
+titel: "Elastizitaet und plastische Verformung"
+thema_code: "PT-WSE"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Beispiele und Einsatzgrenzen muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Verformung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Begriffe und Werkstoffbeispiele muessen fachlich abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation nach einer Belastung">
+Ein Blech federt zurueck, ein anderes bleibt verbogen. Du erkennst: Elastische und plastische Verformung
+sind nicht dasselbe.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Elastizitaet", "plastische Verformung", "Rueckstellung", "Freigabe", "Werkstoff"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Verformung in Alltagssprache">
+Elastisch heisst: Es geht wieder zurueck. Plastisch heisst: Es bleibt veraendert.
+</EinfachErklaert>
+
+<ElastischPlastischSchema />
+
+<ElastischPlastischTrainer titel="Elastizitaet und plastische Verformung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Rueckfederung und bleibende Veraenderung">
+Elastische Verformung ist nach Entlastung weitgehend rueckgaengig. Plastische Verformung bleibt bestehen
+und kann Funktion, Masshaltigkeit oder Sicherheit beeinflussen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel verbogenes Teil">
+Ein Teil ist sichtbar verbogen. Du drueckst es nicht einfach zurueck und gibst es weiter, sondern klaerst
+Pruefung, Sperrung oder Freigabe.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Elastisch geht zurueck, plastisch bleibt.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WSE-004::check"
+  fragen={[
+    {
+      id: "plastisch",
+      masterySchluessel: "FK-1-WSE-004::plastisch",
+      aufgabenstellung: "Was bedeutet plastische Verformung?",
+      optionen: [
+        { id: "bleibt", text: "Die Form bleibt veraendert.", istKorrekt: true, erklaerung: "Richtig." },
+        { id: "verschwindet", text: "Die Veraenderung verschwindet immer sofort.", istKorrekt: false, erklaerung: "Nein. Das waere elastische Rueckstellung." },
+      ],
+    },
+  ]}
+/>

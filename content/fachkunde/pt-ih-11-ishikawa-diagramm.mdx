@@ -1,0 +1,57 @@
+---
+titel: "Ishikawa-Diagramm"
+thema_code: "PT-IH"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Ursachenfelder, 5M-Bezug und betriebliche Analysebeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript, QS-Unterlagen und betrieblicher Problemloesungsstandard"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Freigegebene 5M-/Ishikawa-Beispiele und Analyseprozess nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation im Teammeeting">
+Ein Fehlerbild tritt mehrfach auf. Das Team sammelt moegliche Ursachen nicht durcheinander, sondern ordnet sie in Ursachenfelder wie Material, Maschine, Methode, Mensch und Mitwelt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Ishikawa", "5M", "Ursache", "Wirkung", "Pruefung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Fischgraete fuer Ursachen">
+Ein Ishikawa-Diagramm hilft, moegliche Ursachen zu sortieren. Es zeigt Ideen, aber es beweist sie noch nicht.
+</EinfachErklaert>
+
+<IshikawaDiagrammSchema />
+
+<IshikawaDiagrammTrainer titel="Ishikawa-Diagramm" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Ursachen strukturieren">
+Beim Ishikawa-Diagramm steht das Problem am Kopf. Die Aeste sammeln moegliche Ursachen nach Kategorien. Danach werden die wichtigsten Vermutungen geprueft und priorisiert, damit echte Massnahmen entstehen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Massabweichung">
+Bei Massabweichungen sammelt das Team Ursachen zu Maschine, Werkzeug, Material, Methode, Messung und Mensch. Erst danach wird entschieden, welche Ursache durch Pruefung belegt werden kann.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ishikawa ordnet moegliche Ursachen; Pruefung macht sie belastbar.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-IH-011::check"
+  fragen={[{ id: "ishikawa", masterySchluessel: "FK-3-IH-011::ishikawa", aufgabenstellung: "Was leistet ein Ishikawa-Diagramm?", optionen: [{ id: "richtig", text: "Es strukturiert moegliche Ursachen in Ursachenfelder.", istKorrekt: true, erklaerung: "Richtig. Danach muessen Ursachen geprueft werden." }, { id: "falsch", text: "Es beweist automatisch die richtige Ursache.", istKorrekt: false, erklaerung: "Nein. Es ist ein Strukturwerkzeug, kein Beweis." }] }]}
+/>

@@ -41,7 +41,7 @@ export function Fussleiste() {
           {tTopic('lerneinheit.demoHinweis')}
         </p>
       )}
-      <div className="mx-auto flex max-w-2xl items-center justify-between gap-3 p-4">
+      <div className="mx-auto flex max-w-md items-center justify-between gap-3 p-4">
         <div className="flex gap-2">
           <Button
             type="button"

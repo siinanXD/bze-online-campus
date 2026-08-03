@@ -1,0 +1,114 @@
+---
+titel: "Volumen berechnen"
+thema_code: "PT-EIN"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "beispielwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Volumenformeln und Beispielwerte muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Volumenformeln"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Formelzeichen, Einheiten und Koerperformen muessen vor Freigabe geprueft werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Materialblock">
+Ein Materialblock hat Laenge, Breite und Hoehe. Wenn du wissen willst, wie viel Raum er einnimmt, berechnest
+du sein Volumen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Volumen", "Kubik", "Laenge", "Einheit", "Umrechnung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Volumen in Alltagssprache">
+Volumen ist der Rauminhalt. Beim Quader brauchst du drei Richtungen: Laenge, Breite und Hoehe. Deshalb
+entsteht eine kubische Einheit.
+</EinfachErklaert>
+
+<VolumenSchema />
+
+<VolumenTrainer titel="Volumen einordnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Drei Laengenrichtungen">
+Volumen beschreibt den Rauminhalt eines Koerpers. Beim Quader gilt im Lernbeispiel: Volumen gleich Laenge
+mal Breite mal Hoehe. Alle drei Laengen muessen in passenden Einheiten vorliegen.
+</FachlichErklaert>
+
+## Grundformel
+
+| Groesse | Bedeutung |
+|---|---|
+| V | Volumen |
+| Laenge | erste Richtung |
+| Breite | zweite Richtung |
+| Hoehe | dritte Richtung |
+
+<Praxisbeispiel titel="Praxisbeispiel Materialbedarf">
+Du willst abschaetzen, wie viel Material ein einfacher Quader braucht. Dafuer reicht eine Flaeche nicht:
+Du brauchst auch die Hoehe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Volumenformeln fuer Quader, Zylinder und andere Koerper muessen aus Tabellenbuch oder freigegebenem Skript
+uebernommen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Volumen braucht drei Richtungen: Laenge, Breite und Hoehe.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-EIN-004::check"
+  fragen={[
+    {
+      id: "quader",
+      masterySchluessel: "FK-1-EIN-004::quader",
+      aufgabenstellung: "Welche Formel passt im Lernbeispiel zum Quader?",
+      optionen: [
+        {
+          id: "v",
+          text: "V = Laenge x Breite x Hoehe.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Volumen nutzt drei Laengenrichtungen.",
+        },
+        {
+          id: "a",
+          text: "A = Laenge x Breite.",
+          istKorrekt: false,
+          erklaerung: "Das ist eine Flaechenformel.",
+        },
+      ],
+    },
+    {
+      id: "kubik",
+      masterySchluessel: "FK-1-EIN-004::kubik",
+      aufgabenstellung: "Welche Einheit passt zu Volumen?",
+      optionen: [
+        {
+          id: "kubik",
+          text: "Kubikmillimeter.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Volumen hat kubische Einheiten.",
+        },
+        {
+          id: "qmm",
+          text: "Quadratmillimeter.",
+          istKorrekt: false,
+          erklaerung: "Quadratmillimeter gehoert zu Flaechen.",
+        },
+      ],
+    },
+  ]}
+/>

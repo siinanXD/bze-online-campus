@@ -1,0 +1,59 @@
+---
+titel: "Tiefziehen"
+thema_code: "PT-MET"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Tiefziehfolge, Niederhalter und typische Fehler muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Tiefziehen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Ziehparameter und Werkzeugbegriffe nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Ziehwerkzeug">
+Aus einem Blechzuschnitt soll ein Hohlkoerper entstehen. Du achtest auf Niederhalter, Ziehring, Falten und
+Risse.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Niederhalter", "Ziehring", "Blech", "Umformen"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Tiefziehen in Alltagssprache">
+Beim Tiefziehen wird ein flaches Blech in eine tiefe Form gezogen.
+</EinfachErklaert>
+
+<TiefziehenSchema />
+
+<TiefziehenTrainer titel="Tiefziehen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Blech zum Hohlkoerper formen">
+Tiefziehen ist ein Umformverfahren. Niederhalter, Ziehring, Werkstoff, Schmierung und Werkzeugzustand
+beeinflussen Falten, Risse und Bauteilqualitaet.
+</FachlichErklaert>
+
+<TabellenbuchHinweis>
+Ziehverhaeltnisse, Schmierung und Werkzeugparameter sind quellenpflichtig.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Tiefziehen formt Blech zu Hohlkoerpern.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-013::check"
+  fragen={[{ id: "hohl", masterySchluessel: "FK-2-MET-013::hohl", aufgabenstellung: "Was entsteht beim Tiefziehen haeufig?", optionen: [{ id: "hohl", text: "Ein Hohlkoerper.", istKorrekt: true, erklaerung: "Richtig." }, { id: "span", text: "Ein Saegeblatt.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

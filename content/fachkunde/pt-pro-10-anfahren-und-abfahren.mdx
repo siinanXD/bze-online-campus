@@ -1,0 +1,57 @@
+---
+titel: "Anfahren und Abfahren"
+thema_code: "PT-PRO"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Anfahrteile, Ausschussquote und Stoppfolge muessen fachlich geprueft werden."
+quellen:
+  - titel: "Betriebliche Anfahr- und Abfahranweisung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Ausschussbehandlung, Kennzeichnung und Prozessfreigabe nach Betriebsvorgabe ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation bei Start und Stopp">
+Beim Start und beim Abfahren entstehen besondere Teile. Du trennst sie und beobachtest, ob der Prozess stabil wird.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Anfahren", "Anfahrteil", "Ausschuss", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Anfahren und Abfahren in Alltagssprache">
+Start und Stopp sind besondere Phasen. Teile daraus sind nicht automatisch Gutteile.
+</EinfachErklaert>
+
+<AnfahrenAbfahrenSchema />
+
+<AnfahrenAbfahrenTrainer titel="Anfahren und Abfahren" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Prozess stabil starten und stoppen">
+Anfahren fuehrt vom vorbereiteten Zustand in einen stabilen Serienlauf. Abfahren bringt den Prozess kontrolliert in den Stopp. Anfahrteile, Ausschuss und Gutteile werden getrennt behandelt.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Startteile">
+Die ersten Teile haben noch sichtbare Abweichungen. Du legst sie nicht in den Gutteilbehaelter, sondern behandelst sie nach Anfahrvorgabe.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Start- und Stoppteile brauchen klare Trennung und Dokumentation.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-PRO-010::check"
+  fragen={[{ id: "ausschuss", masterySchluessel: "FK-2-PRO-010::ausschuss", aufgabenstellung: "Was gilt fuer Anfahrteile?", optionen: [{ id: "richtig", text: "Sie werden nach Vorgabe getrennt und bewertet.", istKorrekt: true, erklaerung: "Richtig. Sie sind nicht automatisch Gutteile." }, { id: "falsch", text: "Sie zaehlen immer zur Gutmenge.", istKorrekt: false, erklaerung: "Nein. Erst Freigabe und Bewertung entscheiden." }] }]}
+/>

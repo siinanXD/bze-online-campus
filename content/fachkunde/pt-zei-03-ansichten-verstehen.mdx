@@ -1,0 +1,118 @@
+---
+titel: "Ansichten verstehen"
+thema_code: "PT-ZEI"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Darstellungsregeln und verwendete Blickrichtungen muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Technisches Zeichnen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Ansichten und Projektionsregeln muessen mit der freigegebenen Quelle abgeglichen werden."
+  - titel: "BZE-Traegerskript Technische Kommunikation"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Das Bauteilbeispiel ist eine Lernskizze."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation beim Bauteilbild">
+Von vorne sieht das Teil einfach aus. Von oben erkennst du aber eine Nut, und von der Seite erkennst du die
+Tiefe. Erst alle Ansichten zusammen zeigen die Form.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Vorderansicht", "Draufsicht", "Seitenansicht", "Bauteil", "Zeichnung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Ansichten in Alltagssprache">
+Eine Ansicht zeigt ein Teil aus einer Richtung. Wenn du nur von vorne schaust, fehlt oft etwas. Deshalb
+werden mehrere Ansichten verglichen.
+</EinfachErklaert>
+
+<AnsichtenSchema />
+
+<AnsichtenTrainer titel="Ansicht richtig zuordnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Form aus mehreren Blickrichtungen">
+Technische Ansichten stellen dasselbe Bauteil aus festgelegten Blickrichtungen dar. Vorderansicht,
+Draufsicht und Seitenansicht ergaenzen sich. Sichtbare und verdeckte Kanten, Bohrungen, Stufen oder Nuten
+werden erst durch den Vergleich der Ansichten eindeutig.
+</FachlichErklaert>
+
+## Grundzuordnung
+
+| Ansicht | Typische Frage |
+|---|---|
+| Vorderansicht | Wie sieht das Teil von vorne aus? |
+| Draufsicht | Was erkenne ich von oben? |
+| Seitenansicht | Welche Tiefe oder Seitenform ist vorhanden? |
+
+<Praxisbeispiel titel="Praxisbeispiel Nut">
+In der Vorderansicht sieht das Teil wie ein Rechteck aus. In der Draufsicht erkennst du eine Nut. Wenn du nur
+die Vorderansicht nutzt, wuerdest du ein wichtiges Formmerkmal uebersehen.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Projektionsmethode und Anordnung der Ansichten muessen aus der freigegebenen Zeichnungsregel oder dem
+Tabellenbuch entnommen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Eine Ansicht zeigt eine Richtung. Die Form verstehst du durch den Vergleich.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-ZEI-003::check"
+  fragen={[
+    {
+      id: "mehrere-ansichten",
+      masterySchluessel: "FK-1-ZEI-003::mehrere-ansichten",
+      aufgabenstellung: "Warum werden mehrere Ansichten genutzt?",
+      optionen: [
+        {
+          id: "form",
+          text: "Weil sie zusammen die Form des Bauteils genauer beschreiben.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Einzelne Blickrichtungen koennen Merkmale verbergen.",
+        },
+        {
+          id: "platz",
+          text: "Damit die Zeichnung moeglichst voll aussieht.",
+          istKorrekt: false,
+          erklaerung: "Nein. Ansichten haben eine technische Funktion.",
+        },
+      ],
+    },
+    {
+      id: "draufsicht",
+      masterySchluessel: "FK-1-ZEI-003::draufsicht",
+      aufgabenstellung: "Welche Ansicht zeigt das Bauteil von oben?",
+      optionen: [
+        {
+          id: "draufsicht",
+          text: "Die Draufsicht.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Sie zeigt die Form aus der Blickrichtung von oben.",
+        },
+        {
+          id: "schriftfeld",
+          text: "Das Schriftfeld.",
+          istKorrekt: false,
+          erklaerung: "Das Schriftfeld enthaelt Stammdaten, keine Bauteilansicht.",
+        },
+      ],
+    },
+  ]}
+/>

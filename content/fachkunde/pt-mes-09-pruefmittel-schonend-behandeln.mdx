@@ -1,0 +1,115 @@
+---
+titel: "Pruefmittel schonend behandeln"
+thema_code: "PT-MES"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Betriebliche Pflege-, Lager- und Meldewege muessen durch den Traeger freigegeben werden."
+quellen:
+  - titel: "BZE-/Traegerskript Pruefmittelpflege"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Pflege- und Meldevorgaben muessen mit dem Betrieb abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation nach der Messung">
+Du bist mit der Pruefung fertig. Auf dem Messschieber liegen noch Spaene und Kuehlschmierstoff. Neben dir
+wartet schon der naechste Auftrag.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Pruefmittel", "Messschieber", "Buegelmessschraube", "Sperrung", "Meldeweg"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Pruefmittelpflege in Alltagssprache">
+Pruefmittel sollen genau bleiben. Deshalb werden sie sauber gehalten, vorsichtig benutzt, sicher gelagert
+und bei Auffaelligkeiten gemeldet.
+</EinfachErklaert>
+
+<PruefmittelpflegeSchema />
+
+<PruefmittelpflegeTrainer titel="Pruefmittel schonend behandeln" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Verlaesslichkeit schuetzen">
+Mess- und Pruefmittel sind Teil der Qualitaetssicherung. Schmutz, Sturz, Rost, Gewalt oder falsche Lagerung
+koennen Messergebnisse unsicher machen. Auffaellige Pruefmittel werden nicht weiterverwendet, sondern nach
+Meldeweg geklaert.
+</FachlichErklaert>
+
+## Pflegegrundsaetze
+
+| Grundsatz | Warum wichtig |
+|---|---|
+| Reinigen | Messflaechen bleiben verlaesslich |
+| Schuetzen | Sturz und Schlag vermeiden |
+| Lagern | Feuchte, Schmutz und Verwechslung vermeiden |
+| Melden | Auffaellige Pruefmittel werden nicht still weiterbenutzt |
+
+<Praxisbeispiel titel="Praxisbeispiel heruntergefallen">
+Eine Buegelmessschraube faellt vom Tisch. Auch wenn sie noch normal aussieht, nutzt du sie nicht einfach
+weiter, sondern meldest den Vorfall nach betrieblicher Vorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Reinigung, Lagerung, Kennzeichnung und Sperrung von Pruefmitteln richten sich nach Betriebsanweisung,
+Pruefmittelplan, Herstellerangabe oder Unterweisung.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Ein beschaedigtes Pruefmittel macht aus genauer Arbeit unsichere Arbeit.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MES-009::check"
+  fragen={[
+    {
+      id: "spaene",
+      masterySchluessel: "FK-1-MES-009::spaene",
+      aufgabenstellung: "Warum entfernst du Spaene von Messflaechen?",
+      optionen: [
+        {
+          id: "verfaelschen",
+          text: "Weil sie Messwerte verfaelschen und Flaechen beschaedigen koennen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Saubere Messflaechen sind Grundvoraussetzung.",
+        },
+        {
+          id: "sieht-besser-aus",
+          text: "Nur damit das Pruefmittel besser aussieht.",
+          istKorrekt: false,
+          erklaerung: "Nein. Es geht um Funktion und Verlaesslichkeit.",
+        },
+      ],
+    },
+    {
+      id: "sturz",
+      masterySchluessel: "FK-1-MES-009::sturz",
+      aufgabenstellung: "Was machst du nach einem Sturz eines Pruefmittels?",
+      optionen: [
+        {
+          id: "melden",
+          text: "Nach Vorgabe melden und nicht still weiterverwenden.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Der Schaden ist nicht immer sichtbar.",
+        },
+        {
+          id: "weiter",
+          text: "Weiter nutzen, wenn es aussen gut aussieht.",
+          istKorrekt: false,
+          erklaerung: "Nein. Das kann falsche Entscheidungen verursachen.",
+        },
+      ],
+    },
+  ]}
+/>

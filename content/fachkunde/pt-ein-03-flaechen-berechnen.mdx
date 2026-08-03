@@ -1,0 +1,114 @@
+---
+titel: "Flaechen berechnen"
+thema_code: "PT-EIN"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "beispielwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Formeln, Beispielwerte und Einheiten muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Flaechenformeln"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Formelzeichen, Einheiten und Beispielaufgaben muessen vor Freigabe geprueft werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Rechteck">
+Du sollst bestimmen, wie gross eine rechteckige Flaeche ist. Du brauchst nicht nur eine Laenge, sondern zwei
+Richtungen: Laenge und Breite.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Flaeche", "Laenge", "Quadrat", "Einheit", "Umrechnung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Flaeche in Alltagssprache">
+Eine Flaeche ist eine ebene Groesse. Bei einem Rechteck rechnest du Laenge mal Breite. Wenn beide Werte in
+Millimeter stehen, kommt Quadratmillimeter heraus.
+</EinfachErklaert>
+
+<FlaechenSchema />
+
+<FlaechenTrainer titel="Flaeche berechnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Zwei Laengenrichtungen">
+Flaechen entstehen aus zwei Laengenrichtungen. Beim Rechteck gilt im Lernbeispiel: Flaeche gleich Laenge
+mal Breite. Vor der Berechnung muessen beide Laengen in passenden Einheiten vorliegen.
+</FachlichErklaert>
+
+## Grundformel
+
+| Groesse | Bedeutung |
+|---|---|
+| A | Flaeche |
+| Laenge | erste Richtung |
+| Breite | zweite Richtung |
+| Quadratmillimeter | typische Flaecheneinheit im kleinen technischen Beispiel |
+
+<Praxisbeispiel titel="Praxisbeispiel Dichtflaeche">
+Eine rechteckige Dichtflaeche soll abgeschaetzt werden. Du rechnest nicht nur mit der Laenge, sondern mit
+Laenge und Breite zusammen.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Flaechenformeln fuer Rechteck, Kreis und andere Formen muessen aus Tabellenbuch oder freigegebenem Skript
+uebernommen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Flaeche braucht zwei Richtungen: Laenge mal Breite.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-EIN-003::check"
+  fragen={[
+    {
+      id: "rechteck",
+      masterySchluessel: "FK-1-EIN-003::rechteck",
+      aufgabenstellung: "Welche Formel passt im Lernbeispiel zur Rechteckflaeche?",
+      optionen: [
+        {
+          id: "a",
+          text: "A = Laenge x Breite.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Beim Rechteck werden zwei Richtungen multipliziert.",
+        },
+        {
+          id: "v",
+          text: "V = Laenge x Breite x Hoehe.",
+          istKorrekt: false,
+          erklaerung: "Das ist die Quader-Volumenformel, nicht die Flaeche.",
+        },
+      ],
+    },
+    {
+      id: "einheit",
+      masterySchluessel: "FK-1-EIN-003::einheit",
+      aufgabenstellung: "Welche Einheit passt zu einer Flaeche?",
+      optionen: [
+        {
+          id: "qmm",
+          text: "Quadratmillimeter.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Flaechen haben quadratische Einheiten.",
+        },
+        {
+          id: "sekunde",
+          text: "Sekunde.",
+          istKorrekt: false,
+          erklaerung: "Sekunde gehoert zur Zeit.",
+        },
+      ],
+    },
+  ]}
+/>

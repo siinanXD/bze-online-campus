@@ -1,0 +1,57 @@
+---
+titel: "Schmieden"
+thema_code: "PT-MET"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Waerme, Gefuegebezug und Prozessbeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Schmieden"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Temperaturen, Werkstoffe und Sicherheitsvorgaben nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Rohling">
+Ein Rohling wird mit hoher Kraft in Form gebracht. Du beachtest Waerme, Werkzeug, Abstand und Vorgabe.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schmieden", "Rohling", "Umformen", "Waermeausdehnung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schmieden in Alltagssprache">
+Beim Schmieden wird Metall mit Kraft in eine neue Form gebracht.
+</EinfachErklaert>
+
+<SchmiedenSchema />
+
+<SchmiedenTrainer titel="Schmieden" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Umformen mit hoher Kraft">
+Schmieden ist Umformen. Haefig spielen Waerme, Werkstoffverhalten, Werkzeugform und Gefuege eine Rolle.
+</FachlichErklaert>
+
+<TabellenbuchHinweis>
+Temperaturen, Werkstoffe und Prozessgrenzen sind quellenpflichtig.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Schmieden formt Rohlinge mit Kraft.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-015::check"
+  fragen={[{ id: "umformen", masterySchluessel: "FK-2-MET-015::umformen", aufgabenstellung: "Welche Hauptgruppe passt zum Schmieden?", optionen: [{ id: "umformen", text: "Umformen.", istKorrekt: true, erklaerung: "Richtig." }, { id: "messen", text: "Messen.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

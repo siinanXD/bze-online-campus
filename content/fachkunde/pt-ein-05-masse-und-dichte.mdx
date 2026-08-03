@@ -1,0 +1,114 @@
+---
+titel: "Masse und Dichte"
+thema_code: "PT-EIN"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "beispielwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Dichteformel, Einheiten und Werkstoffbeispiele muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Werkstoffkennwerte"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Dichtewerte und Einheiten muessen vor Freigabe mit freigegebener Quelle abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Werkstoffvergleich">
+Zwei gleich grosse Teile koennen unterschiedlich schwer sein. Dann ist nicht das Volumen anders, sondern die
+Masse pro Volumen: die Dichte.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Masse", "Dichte", "Volumen", "Werkstoff", "Einheit"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Dichte in Alltagssprache">
+Dichte sagt, wie schwer ein Material bei gleicher Groesse ist. Ein kleiner Metallklotz kann schwerer sein
+als ein gleich grosser Kunststoffklotz.
+</EinfachErklaert>
+
+<DichteSchema />
+
+<DichteTrainer titel="Masse und Dichte verstehen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Masse pro Volumen">
+Dichte beschreibt das Verhaeltnis von Masse zu Volumen. Sie hilft, Werkstoffe zu vergleichen und
+Materialangaben zu plausibilisieren. Fuer konkrete Werte sind Tabellenbuch, Datenblatt oder freigegebene
+Werkstoffangabe verbindlich.
+</FachlichErklaert>
+
+## Grundzusammenhang
+
+| Groesse | Bedeutung |
+|---|---|
+| Masse | Wie schwer ein Koerper ist |
+| Volumen | Wie viel Raum ein Koerper einnimmt |
+| Dichte | Masse bezogen auf Volumen |
+
+<Praxisbeispiel titel="Praxisbeispiel falsches Material">
+Ein Teil hat dieselbe Form wie sonst, fuehlt sich aber deutlich schwerer an. Das kann ein Hinweis sein, die
+Werkstoffangabe zu pruefen und nicht einfach weiterzuarbeiten.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Dichtewerte sind werkstoffabhaengig und muessen aus Tabellenbuch, Datenblatt oder freigegebener
+Werkstoffvorgabe gelesen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Dichte verbindet Masse und Volumen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-EIN-005::check"
+  fragen={[
+    {
+      id: "dichte",
+      masterySchluessel: "FK-1-EIN-005::dichte",
+      aufgabenstellung: "Was beschreibt Dichte grundsaetzlich?",
+      optionen: [
+        {
+          id: "verhaeltnis",
+          text: "Masse bezogen auf Volumen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Dichte verbindet beide Groessen.",
+        },
+        {
+          id: "zeit",
+          text: "Zeit bezogen auf Temperatur.",
+          istKorrekt: false,
+          erklaerung: "Das beschreibt nicht die Dichte.",
+        },
+      ],
+    },
+    {
+      id: "quelle",
+      masterySchluessel: "FK-1-EIN-005::quelle",
+      aufgabenstellung: "Woher nimmst du konkrete Dichtewerte?",
+      optionen: [
+        {
+          id: "quelle",
+          text: "Aus Tabellenbuch, Datenblatt oder freigegebener Werkstoffvorgabe.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Werkstoffwerte werden nicht geraten.",
+        },
+        {
+          id: "gefuehl",
+          text: "Nur aus dem Bauchgefuehl.",
+          istKorrekt: false,
+          erklaerung: "Gefuehl kann auffallen, ersetzt aber keine Quelle.",
+        },
+      ],
+    },
+  ]}
+/>

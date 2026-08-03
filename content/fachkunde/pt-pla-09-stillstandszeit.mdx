@@ -1,0 +1,57 @@
+---
+titel: "Stillstandszeit"
+thema_code: "PT-PLA"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Stillstandsarten, Meldewege, OEE-Bezug und Zeitdatenerfassung muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript, OEE-Unterlagen, Stoerungsdokumentation und Betriebsdatenerfassung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Stillstandsgruende, geplante und ungeplante Stopps sowie Rueckmeldefelder nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Linienmonitor">
+Die Maschine steht. Im System muss ausgewaehlt werden, ob es Ruesten, Wartung, Stoerung, Materialmangel oder eine andere Ursache war.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Stillstandszeit", "Stoerung", "Ursache", "Dokumentation", "Kapazitaet"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Stillstand sichtbar machen">
+Stillstandszeit ist Zeit ohne Produktion. Wichtig ist, warum die Maschine steht und ob der Stopp geplant oder ungeplant war.
+</EinfachErklaert>
+
+<StillstandszeitSchema />
+
+<StillstandszeitTrainer titel="Stillstandszeit" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Stillstand als Planungs- und Verlustzeit">
+Stillstandszeit beeinflusst Kapazitaet, Liefertermin und Auswertung. Geplante Stopps wie Ruesten oder Wartung werden anders bewertet als ungeplante Stoerungen. Ohne saubere Ursache und Dauer kann der Betrieb nicht erkennen, wo Planung oder Prozess verbessert werden muessen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Material fehlt">
+Eine Maschine steht nicht wegen technischer Stoerung, sondern weil Material nicht bereitsteht. Wird das falsch als Maschinenfehler gebucht, sucht das Team an der falschen Stelle.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Stillstand ohne Ursache ist fuer Planung und Verbesserung kaum verwertbar.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-PLA-009::check"
+  fragen={[{ id: "stillstand", masterySchluessel: "FK-4-PLA-009::stillstand", aufgabenstellung: "Warum muss Stillstandszeit dokumentiert werden?", optionen: [{ id: "richtig", text: "Damit Dauer, Ursache und Planungswirkung auswertbar bleiben.", istKorrekt: true, erklaerung: "Richtig. Stillstand beeinflusst Kapazitaet und Verbesserung." }, { id: "falsch", text: "Damit der Stillstand im Plan unsichtbar bleibt.", istKorrekt: false, erklaerung: "Nein. Unsichtbarer Stillstand macht Planung schlechter." }] }]}
+/>

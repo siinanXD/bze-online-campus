@@ -1,0 +1,57 @@
+---
+titel: "Produktionsauftrag lesen"
+thema_code: "PT-BER"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Auftragsformulare und Pflichtfelder muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript Produktionsauftrag und betriebliche Formulare"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Pflichtfelder und Beispiele nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation am Schichtstart">
+Am Arbeitsplatz liegt ein neuer Auftrag. Bevor du rustest, musst du Teil, Menge, Termin und Vorgaben sicher finden.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Auftrag","Los","Termin","Zeichnung","Material"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Auftrag zuerst lesen">
+Der Auftrag sagt, was hergestellt werden soll. Ohne diese Angaben startest du nicht.
+</EinfachErklaert>
+
+<ProduktionsauftragLesenSchema />
+
+<ProduktionsauftragLesenTrainer titel="Produktionsauftrag lesen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Auftrag als verbindliche Vorgabe">
+Ein Produktionsauftrag buendelt Produkt, Menge, Termin, Material und Qualitaetsvorgaben. Fehlende oder unklare Daten werden vor dem Start geklaert. So vermeidest du Fehlfertigung und Terminrisiko.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel fehlende Zeichnungsnummer">
+Die Menge steht im Auftrag, die Zeichnungsnummer fehlt. Du klaerst nach, statt mit einer vermuteten Unterlage zu starten.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Erst Auftrag klaeren, dann starten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-BER-004::check"
+  fragen={[{ id: "kern", masterySchluessel: "FK-1-BER-004::kern", aufgabenstellung: "Was machst du bei unklaren Auftragsdaten?", optionen: [{ id: "richtig", text: "Vor dem Start klaeren und nachfragen.", istKorrekt: true, erklaerung: "Richtig. Unklare Daten duerfen nicht weggeraten werden." }, { id: "falsch", text: "Einfach mit dem naechsten aehnlichen Auftrag weiterarbeiten.", istKorrekt: false, erklaerung: "Nein. Falsche Vorgaben fuehren zu Ausschuss." }] }]}
+/>

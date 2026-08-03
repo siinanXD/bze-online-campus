@@ -1,0 +1,67 @@
+---
+titel: "Ruestzeit und Bearbeitungszeit"
+thema_code: "PT-PLA"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Zeitdaten, Mengenbezug und betriebliche Gesamtzeitrechnung muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch, Traegerskript, Arbeitsplan, Ruestvorgabe und Zeitdatenerfassung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Ruestzeit, Bearbeitungszeit je Teil und Zuschlaege nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden", "tabellenbuch_finden"]} />
+
+<StoryEinstieg titel="Situation beim Werkzeugwechsel">
+Fuer ein Los muss zuerst umgeruestet werden. Danach laufen viele gleiche Teile. Die Planung muss unterscheiden, welche Zeit einmalig anfaellt und welche mit jedem Teil wiederkommt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Ruestzeit", "Bearbeitungszeit", "Menge", "Arbeitsgang", "Kapazitaet"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Einmal und je Teil trennen">
+Ruestzeit ist die Vorbereitungszeit fuer den Auftrag. Bearbeitungszeit ist die Zeit fuer das Herstellen. Bei vielen Teilen wird die Bearbeitungszeit oft mit der Menge multipliziert.
+</EinfachErklaert>
+
+<RuestzeitBearbeitungszeitSchema />
+
+<Formelkarte
+  name="Vereinfachte Gesamtzeit"
+  formel="Gesamtzeit = Ruestzeit + Bearbeitungszeit je Teil * Menge"
+  einheiten="Minuten oder Stunden, je nach Zeitdatenquelle"
+  verwendung="Wenn ein Auftrag mit einmaligem Ruestanteil und mengenabhaengigem Bearbeitungsanteil geplant wird."
+  beispiel="Ruesten faellt einmal an, Bearbeiten fuer jedes Teil des Loses."
+  typischerFehler="Ruestzeit pro Teil rechnen oder Bearbeitungszeit ohne Menge betrachten."
+  tabellenbuchHinweis="Zeitwerte, Zuschlaege und Nebenzeiten nur aus freigegebenem Arbeitsplan oder Zeitdatenquelle uebernehmen."
+/>
+
+<RuestzeitBearbeitungszeitTrainer titel="Ruestzeit und Bearbeitungszeit" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Zeitanteile sauber trennen">
+Ruestzeit beschreibt das Vorbereiten, Einrichten oder Umstellen einer Ressource fuer einen Auftrag. Bearbeitungszeit beschreibt den eigentlichen Herstellanteil. Fuer Planungsrechnungen muss klar sein, ob ein Zeitwert einmal je Auftrag, je Los, je Teil oder je Arbeitsgang gilt.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel kleines Los">
+Bei einem kleinen Los faellt die Ruestzeit stark ins Gewicht. Bei einem grossen Los verteilt sich die Ruestzeit auf mehr Teile, waehrend die Bearbeitungszeit je Teil weiter mit der Menge steigt.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ruestzeit einmal planen, Bearbeitungszeit mengenbezogen planen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-PLA-008::check"
+  fragen={[{ id: "gesamtzeit", masterySchluessel: "FK-4-PLA-008::gesamtzeit", aufgabenstellung: "Was ist ein typischer Fehler bei Gesamtzeitplanung?", optionen: [{ id: "richtig", text: "Ruestzeit und Bearbeitungszeit nicht nach ihrem Mengenbezug trennen.", istKorrekt: true, erklaerung: "Richtig. Genau diese Trennung ist fuer die Planung wichtig." }, { id: "falsch", text: "Ruestzeit als einmaligen Anteil erkennen.", istKorrekt: false, erklaerung: "Nein. Das ist gerade die richtige Grundidee." }] }]}
+/>

@@ -1,0 +1,74 @@
+---
+titel: "Festigkeit verstehen"
+thema_code: "PT-WSE"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Festigkeitswerte, Werkstoffbeispiele und Belastungsgrenzen muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Festigkeit"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Zugfestigkeiten und Belastungswerte duerfen erst nach Quellenabgleich genutzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Bauteil">
+Ein Halter wird staerker belastet als vorgesehen. Du erkennst: Festigkeit beschreibt, ob ein Werkstoff
+Belastung aufnehmen kann, ohne unzulaessig zu versagen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Festigkeit", "Zugfestigkeit", "Bruch", "Beanspruchung", "Datenblatt"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Festigkeit in Alltagssprache">
+Festigkeit sagt vereinfacht, wie viel Belastung ein Werkstoff aushaelt.
+</EinfachErklaert>
+
+<FestigkeitSchema />
+
+<FestigkeitTrainer titel="Festigkeit verstehen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Belastbarkeit beurteilen">
+Festigkeit ist eine mechanische Werkstoffeigenschaft. Sie haengt von Werkstoff, Zustand, Verarbeitung und
+Belastungsart ab. Konkrete Werte werden aus Zeichnung, Datenblatt, Tabellenbuch oder Pruefvorgabe entnommen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Belastung">
+Ein Teil soll eine hoehere Last tragen. Du tauschst den Werkstoff nicht eigenmaechtig aus, sondern pruefst
+Anforderung, Werkstoffdaten und Freigabeweg.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Festigkeitskennwerte sind Zahlenwerte mit Quellenpflicht. Der Entwurf nutzt nur Grundbegriffe.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Festigkeit heisst: Belastung aufnehmen, Werte aus sicheren Quellen lesen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WSE-002::check"
+  fragen={[
+    {
+      id: "belastung",
+      masterySchluessel: "FK-1-WSE-002::belastung",
+      aufgabenstellung: "Was beschreibt Festigkeit im Grundgedanken?",
+      optionen: [
+        { id: "belastung", text: "Wie ein Werkstoff Belastung aufnehmen kann.", istKorrekt: true, erklaerung: "Richtig." },
+        { id: "etikett", text: "Ob ein Materialsack richtig etikettiert ist.", istKorrekt: false, erklaerung: "Nein. Das gehoert zur Rueckverfolgbarkeit." },
+      ],
+    },
+  ]}
+/>

@@ -1,0 +1,57 @@
+---
+titel: "Rattermarken"
+thema_code: "PT-FEM"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Schnittwerte, Spannungsursachen und Bewertungsregeln muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Zerspanung und Oberflaechenfehler"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Schnittwertbezug, Werkzeug- und Spannungsregeln mit Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Oberflaeche">
+Auf der bearbeiteten Flaeche siehst du regelmaessige Wellen. Beim Bearbeiten war ein vibrierendes Geraeusch zu hoeren.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Rattern", "Schwingung", "Rauheit", "Werkzeug"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Rattermarken in Alltagssprache">
+Rattermarken sind Spuren, die entstehen koennen, wenn Werkzeug, Werkstueck oder Maschine beim Schneiden schwingen.
+</EinfachErklaert>
+
+<RattermarkenSchema />
+
+<RattermarkenTrainer titel="Rattermarken" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Schwingung als Fehlerursache">
+Rattermarken koennen durch instabile Spannung, ungeeignete Schnittwerte, Werkzeugverschleiss, lange Auskragung oder Maschinenzustand entstehen. Die Ursache wird nach Vorgabe eingegrenzt.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Fraesoberflaeche">
+Nach dem Fraesen sind gleichmaessige Ratterspuren sichtbar. Du meldest die Oberflaeche und pruefst Spannung, Werkzeug und Werte nicht auf eigene Faust.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ratterspuren sind ein Signal fuer instabile Bearbeitung.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEM-003::check"
+  fragen={[{ id: "schwingung", masterySchluessel: "FK-3-FEM-003::schwingung", aufgabenstellung: "Worauf koennen Rattermarken hinweisen?", optionen: [{ id: "richtig", text: "Auf Schwingung oder instabile Bearbeitung.", istKorrekt: true, erklaerung: "Richtig. Rattern zeigt oft Prozessinstabilitaet." }, { id: "falsch", text: "Auf eine immer bessere Oberflaeche.", istKorrekt: false, erklaerung: "Nein. Rattermarken sind ein Fehlerbild." }] }]}
+/>

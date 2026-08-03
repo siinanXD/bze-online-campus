@@ -1,0 +1,55 @@
+---
+titel: "Umfangs- und Stirnfraesen"
+thema_code: "PT-MET"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Fraesarten und Flaechenbezug muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Fraesverfahren"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Begriffe und Beispiele fuer Umfangs- und Stirnfraesen nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Flaeche">
+Du musst erkennen, welche Seite des Fraesers die Flaeche erzeugt. Danach unterscheidest du Umfangs- und
+Stirnfraesen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Umfangsfraesen", "Stirnfraesen", "Fraeser", "Vorschub"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Fraesarten in Alltagssprache">
+Beim Umfangsfraesen arbeitet der Rand des Fraesers. Beim Stirnfraesen arbeitet die Vorderseite.
+</EinfachErklaert>
+
+<UmfangStirnFraesenSchema />
+
+<UmfangStirnFraesenTrainer titel="Umfangs- und Stirnfraesen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Werkzeugzone und Flaechenziel">
+Die Unterscheidung hilft, Werkzeugeinsatz, Vorschubrichtung und Flaechenziel zu verstehen. Der Arbeitsplan
+und die Zeichnung geben die Bearbeitung vor.
+</FachlichErklaert>
+
+<Merksatz titel="Merksatz">
+Umfang arbeitet am Rand, Stirn arbeitet an der Vorderseite.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-008::check"
+  fragen={[{ id: "umfang", masterySchluessel: "FK-2-MET-008::umfang", aufgabenstellung: "Welche Zone arbeitet beim Umfangsfraesen?", optionen: [{ id: "umfang", text: "Der Umfang des Werkzeugs.", istKorrekt: true, erklaerung: "Richtig." }, { id: "griff", text: "Der Bediengriff.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

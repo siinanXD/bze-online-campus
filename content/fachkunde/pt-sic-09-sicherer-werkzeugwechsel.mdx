@@ -1,0 +1,119 @@
+---
+titel: "Sicherer Werkzeugwechsel"
+thema_code: "PT-SIC"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Konkrete Maschinen-, Werkzeug- und Ruestvorgaben muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Werkzeugwechsel/Ruesten"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Maschinenspezifische Sicherung, PSA, Hilfsmittel und Probeteilvorgaben muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung Arbeitssicherheit"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit beschreibt eine Lernlogik und ersetzt keine Ruestfreigabe."
+---
+
+<WissensstufenLeiste stufen={["anwenden", "verstehen"]} />
+
+<StoryEinstieg titel="Situation beim Ruesten">
+Ein Werkzeug soll gewechselt werden. Die Anlage steht, der Auftrag drueckt, und jemand sagt: "Mach schnell,
+das passt schon." Genau hier passieren Fehler: Restenergie, falscher Sitz oder fehlende Pruefung.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Werkzeugwechsel", "Ruesten", "Restenergie", "Freigabe", "Pruefen"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Wechseln ohne Hektik">
+Beim Werkzeugwechsel zaehlt nicht nur, dass das neue Werkzeug hineinpasst. Wichtig sind sicherer Zustand,
+richtige Vorgabe, passendes Hilfsmittel, Pruefung und Freigabe vor dem normalen Lauf.
+</EinfachErklaert>
+
+<WerkzeugwechselSchema />
+
+<WerkzeugwechselTrainer titel="Sichere Wechselentscheidung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Werkzeugwechsel ist ein sicherheitskritischer Eingriff">
+Beim Werkzeugwechsel koennen mechanische, elektrische, pneumatische, hydraulische oder thermische Gefahren
+auftreten. Deshalb wird nach Arbeitsanweisung geruestet. Ein Probeteil oder eine erste Pruefung kann Teil der
+Freigabe sein, bevor die Produktion weiterlaeuft.
+</FachlichErklaert>
+
+## Sichere Leitfragen
+
+| Frage | Warum wichtig? |
+|---|---|
+| Ist die Maschine nach Vorgabe gesichert? | Gefaehrliche Bewegung verhindern |
+| Ist Restenergie ausgeschlossen oder gemeldet? | Nachlauf, Druck oder Spannung nicht unterschaetzen |
+| Passt Werkzeug, Halterung und Hilfsmittel? | Falscher Sitz kann Schaden und Gefahr verursachen |
+| Ist nach dem Wechsel geprueft? | Fehler vor Serienlauf erkennen |
+
+<Praxisbeispiel titel="Praxisbeispiel Probeteil">
+Nach dem Werkzeugwechsel wird nicht sofort mit voller Geschwindigkeit produziert. Du wartest die vorgesehene
+Pruefung, ein Probeteil oder die Freigabe ab.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Konkrete Werkzeugwechsel-Schritte sind maschinenabhaengig. Verbindlich sind Arbeitsplan, Betriebsanweisung,
+Ruestvorgabe und Unterweisung.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Werkzeugwechsel: erst sichern, dann wechseln, dann pruefen, erst danach freigeben.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-SIC-009::check"
+  fragen={[
+    {
+      id: "restenergie",
+      masterySchluessel: "FK-1-SIC-009::restenergie",
+      aufgabenstellung: "Was machst du, wenn beim Werkzeugwechsel noch Druck, Spannung oder Bewegung moeglich wirkt?",
+      optionen: [
+        {
+          id: "melden",
+          text: "Nicht eingreifen, sichern und Restenergie melden.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Restenergie darf nicht ignoriert werden.",
+        },
+        {
+          id: "weiter",
+          text: "Schnell wechseln, solange die Maschine steht.",
+          istKorrekt: false,
+          erklaerung: "Stillstand allein beweist keinen sicheren Zustand.",
+        },
+      ],
+    },
+    {
+      id: "nach-wechsel",
+      masterySchluessel: "FK-1-SIC-009::nach-wechsel",
+      aufgabenstellung: "Was gehoert nach dem Werkzeugwechsel vor den normalen Serienlauf?",
+      optionen: [
+        {
+          id: "pruefen",
+          text: "Pruefung, Probeteil oder Freigabe nach Vorgabe.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Der Wechsel muss vor Serienlauf abgesichert werden.",
+        },
+        {
+          id: "vollgas",
+          text: "Sofort mit voller Leistung starten.",
+          istKorrekt: false,
+          erklaerung: "Das kann zu Ausschuss, Schaden oder Gefahr fuehren.",
+        },
+      ],
+    },
+  ]}
+/>

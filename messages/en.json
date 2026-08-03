@@ -187,7 +187,9 @@
   },
   "topic": {
     "uebersicht": {
-      "kicker": "Topic"
+      "kicker": "Topic",
+      "lernpfad": "Learning path",
+      "fortschrittKurz": "{gelesen}/{gesamt}"
     },
     "abschnitte": {
       "fachkundeLesen": "Read theory",
@@ -315,6 +317,14 @@
       "liste": "Chapter overview"
     },
     "lerneinheit": {
+      "zurueckLernpfad": "← Learning path",
+      "pruefungsrelevanz": "Exam relevance: {stufe}",
+      "pruefungsrelevanzStufen": {
+        "niedrig": "low",
+        "mittel": "medium",
+        "hoch": "high",
+        "sehr_hoch": "very high"
+      },
       "quellenTitel": "Sources",
       "lesezeitHinweis": "That was quicker than the estimated reading time. If unsure, take another look back — but you can still continue.",
       "demoHinweis": "Example content: your reading progress is not saved here.",
@@ -355,7 +365,42 @@
         "quizze": "Quizzes",
         "kiGenerator": "AI generator",
         "qualitaetspruefung": "Quality review",
+        "fachkundeFreigabe": "Fachkunde approval",
         "wissensdatenbank": "Knowledge base"
+      },
+      "fachkundeFreigabe": {
+        "titel": "Fachkunde approval",
+        "hinweis": "Overview of MDX drafts. Mini knowledge-check questions may be approved while the unit and sources remain drafts. This page does not save anything.",
+        "kennzahlen": {
+          "gesamt": "Units total",
+          "entwurf": "Draft",
+          "fragenFreigegeben": "Questions approved",
+          "quellenOffen": "Sources open",
+          "bereit": "Ready for subject review"
+        },
+        "unvollstaendigTitel": "Incomplete required building blocks",
+        "tabelleCaption": "Fachkunde learning units with review and source status",
+        "spalten": {
+          "thema": "Topic",
+          "titel": "Title",
+          "status": "Status",
+          "fragen": "Questions",
+          "quellen": "Sources",
+          "bausteine": "Blocks"
+        },
+        "quellen": {
+          "offen": "open",
+          "ok": "ok"
+        },
+        "fragen": {
+          "offen": "open",
+          "ok": "approved"
+        },
+        "bausteine": {
+          "ok": "complete",
+          "luecke": "gap"
+        },
+        "mehr": "… and {rest} more units"
       },
       "dashboard": {
         "titel": "Content dashboard",

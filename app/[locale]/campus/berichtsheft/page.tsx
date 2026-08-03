@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
-import { Card } from '@bze/ui';
 import { berechneLuecken, ladeNachweise } from './_lib/queries';
 import { NachweisStatusBadge } from './_components/nachweis-status-badge';
 import { PdfExportButton } from './_components/pdf-export-button';
@@ -16,6 +15,9 @@ function datumDe(iso: string | null, locale: string): string {
   });
 }
 
+/**
+ * Berichtsheft-Übersicht im Figma-Mobile-Look.
+ */
 export default async function BerichtsheftPage({
   params,
 }: {
@@ -30,8 +32,8 @@ export default async function BerichtsheftPage({
 
   if (!user) {
     return (
-      <main className="mx-auto max-w-2xl p-4">
-        <p className="text-fg-muted">{t('nichtAngemeldet')}</p>
+      <main className="mx-auto max-w-md px-5 py-6">
+        <p className="text-[14px] text-fg-muted">{t('nichtAngemeldet')}</p>
       </main>
     );
   }
@@ -40,51 +42,54 @@ export default async function BerichtsheftPage({
   const luecken = berechneLuecken(nachweise);
 
   return (
-    <main className="mx-auto max-w-2xl space-y-4 p-4">
-      <div className="pt-2">
-        <h1 className="text-2xl font-extrabold">{t('titel')}</h1>
-        <p className="text-sm text-fg-muted">{t('untertitel')}</p>
-      </div>
+    <main className="mx-auto flex min-h-full max-w-md flex-col gap-4 px-5 pb-6 pt-3">
+      <header>
+        <h1 className="text-[22px] font-extrabold leading-7 text-fg">{t('titel')}</h1>
+        <p className="mt-1 text-[14px] text-fg-muted">{t('untertitel')}</p>
+      </header>
 
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-2">
         <Link
           href={`/${locale}/campus/berichtsheft/neu`}
-          className="touchable inline-flex min-h-12 items-center justify-center rounded-xl bg-primary px-4 py-3 text-[15px] font-semibold text-fg-onPrimary transition hover:brightness-110"
+          className="touchable inline-flex min-h-11 items-center justify-center rounded-full bg-primary px-4 text-[14px] font-bold text-fg-onPrimary"
         >
           {t('neuerEintrag')}
         </Link>
-        {nachweise.length > 0 && <PdfExportButton />}
+        {nachweise.length > 0 ? <PdfExportButton /> : null}
       </div>
 
-      {/* Lückenanzeige (Spec §6.2.14) */}
-      <Card className="space-y-3">
+      <section className="rounded-[16px] border border-border bg-surface p-4">
         <div className="flex items-center gap-2">
-          <span aria-hidden="true" className="text-lg">
-            {luecken.length === 0 ? '✓' : '⚠'}
+          <span aria-hidden="true" className="text-[16px] font-bold text-primary">
+            {luecken.length === 0 ? '✓' : '!'}
           </span>
-          <h2 className="text-lg font-bold">{t('luecken.titel')}</h2>
+          <h2 className="text-[16px] font-bold text-fg">{t('luecken.titel')}</h2>
         </div>
         {luecken.length === 0 ? (
-          <p className="text-sm text-status-fertig">{t('luecken.keine')}</p>
+          <p className="mt-2 text-[13px] text-status-fertig">{t('luecken.keine')}</p>
         ) : (
           <>
-            <p className="text-sm text-fg-muted">{t('luecken.hinweis', { anzahl: luecken.length })}</p>
-            <ul className="space-y-2">
+            <p className="mt-2 text-[13px] text-fg-muted">
+              {t('luecken.hinweis', { anzahl: luecken.length })}
+            </p>
+            <ul className="mt-3 space-y-2">
               {luecken.map((l) => {
                 const href = `/${locale}/campus/berichtsheft/neu?art=woche&von=${l.von}&bis=${l.bis}`;
                 return (
                   <li key={`${l.jahr}-${l.kalenderwoche}`}>
                     <Link
                       href={href}
-                      className="touchable flex min-h-12 items-center justify-between gap-2 rounded-lg border border-status-falsch/40 bg-status-falsch/5 px-3 py-2 text-sm hover:bg-status-falsch/10"
+                      className="touchable flex min-h-12 items-center justify-between gap-2 rounded-[14px] border border-danger-border bg-danger-bg px-3 py-2.5 text-[13px]"
                     >
                       <span>
-                        <span className="font-semibold">{t('luecken.kw', { kw: l.kalenderwoche, jahr: l.jahr })}</span>
+                        <span className="font-semibold">
+                          {t('luecken.kw', { kw: l.kalenderwoche, jahr: l.jahr })}
+                        </span>
                         <span className="ms-2 text-fg-muted">
                           {datumDe(l.von, locale)} – {datumDe(l.bis, locale)}
                         </span>
                       </span>
-                      <span aria-hidden="true" className="text-primary">
+                      <span aria-hidden="true" className="font-bold text-primary">
                         +
                       </span>
                     </Link>
@@ -94,31 +99,35 @@ export default async function BerichtsheftPage({
             </ul>
           </>
         )}
-      </Card>
+      </section>
 
-      {/* Liste der Nachweise */}
       {nachweise.length === 0 ? (
-        <Card>
-          <p className="text-sm text-fg-muted">{t('leer')}</p>
-        </Card>
+        <div className="rounded-[16px] border border-border bg-surface p-4">
+          <p className="text-[14px] text-fg-muted">{t('leer')}</p>
+        </div>
       ) : (
-        <ul className="space-y-3">
+        <ul className="flex flex-col gap-3">
           {nachweise.map((n) => (
             <li key={n.id}>
-              <Link href={`/${locale}/campus/berichtsheft/${n.id}`} className="block">
-                <Card className="space-y-2 transition hover:border-primary">
-                  <div className="flex items-start justify-between gap-2">
-                    <div>
-                      <p className="font-semibold">{t(`art.${n.art}`)}</p>
-                      <p className="text-sm text-fg-muted">
-                        {datumDe(n.zeitraumVon, locale)} – {datumDe(n.zeitraumBis, locale)}
-                        {n.ausbildungsjahr ? ` · ${t('ausbildungsjahrKurz', { jahr: n.ausbildungsjahr })}` : ''}
-                      </p>
-                    </div>
-                    <NachweisStatusBadge status={n.status} label={t(`status.${n.status}`)} />
+              <Link
+                href={`/${locale}/campus/berichtsheft/${n.id}`}
+                className="touchable block rounded-[16px] border border-border bg-surface p-4"
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <div className="min-w-0">
+                    <p className="text-[15px] font-bold text-fg">{t(`art.${n.art}`)}</p>
+                    <p className="text-[13px] text-fg-muted">
+                      {datumDe(n.zeitraumVon, locale)} – {datumDe(n.zeitraumBis, locale)}
+                      {n.ausbildungsjahr
+                        ? ` · ${t('ausbildungsjahrKurz', { jahr: n.ausbildungsjahr })}`
+                        : ''}
+                    </p>
                   </div>
-                  {n.kiFormuliert && <p className="text-xs text-fg-muted">{t('kiFormuliertHinweis')}</p>}
-                </Card>
+                  <NachweisStatusBadge status={n.status} label={t(`status.${n.status}`)} />
+                </div>
+                {n.kiFormuliert ? (
+                  <p className="mt-2 text-[12px] text-fg-muted">{t('kiFormuliertHinweis')}</p>
+                ) : null}
               </Link>
             </li>
           ))}

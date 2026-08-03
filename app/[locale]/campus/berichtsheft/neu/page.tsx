@@ -30,8 +30,8 @@ export default async function NeuerNachweisPage({
   } = await supabase.auth.getUser();
   if (!user) {
     return (
-      <main className="mx-auto max-w-2xl p-4">
-        <p className="text-fg-muted">{t('nichtAngemeldet')}</p>
+      <main className="mx-auto max-w-md px-5 py-6">
+        <p className="text-[14px] text-fg-muted">{t('nichtAngemeldet')}</p>
       </main>
     );
   }
@@ -39,15 +39,15 @@ export default async function NeuerNachweisPage({
   const katalog = await ladeRahmenplanKatalog();
 
   return (
-    <main className="mx-auto max-w-2xl space-y-4 p-4">
-      <div className="pt-2">
+    <main className="mx-auto flex min-h-full max-w-md flex-col gap-4 px-5 pb-6 pt-3">
+      <div>
         <Link
           href={`/${locale}/campus/berichtsheft`}
-          className="touchable inline-flex min-h-12 items-center text-sm text-primary hover:underline"
+          className="touchable inline-flex min-h-10 items-center text-[14px] font-semibold text-primary"
         >
           ← {t('zurueck')}
         </Link>
-        <h1 className="text-2xl font-extrabold">{t('neuTitel')}</h1>
+        <h1 className="mt-1 text-[22px] font-extrabold text-fg">{t('neuTitel')}</h1>
       </div>
 
       <NachweisForm

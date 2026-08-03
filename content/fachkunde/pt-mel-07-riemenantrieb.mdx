@@ -1,0 +1,64 @@
+---
+titel: "Riemenantrieb"
+thema_code: "PT-MEL"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Riemenarten, Spannungswerte und Schutzvorgaben muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Riemenantriebe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Riemenspannung, Bauarten und konkrete Werte duerfen erst nach Quellenabgleich genutzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Antrieb">
+Ein Riemen laeuft ueber zwei Scheiben. Du erkennst: Die Bewegung wird ueber Kraftschluss und Reibung
+uebertragen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Riemen", "Riemenscheibe", "Reibung", "Uebersetzung", "Gefahrbereich"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Riemenantrieb in Alltagssprache">
+Ein Riemen uebertraegt Bewegung, indem er an Riemenscheiben anliegt.
+</EinfachErklaert>
+
+<RiemenantriebSchema />
+
+<RiemenantriebTrainer titel="Riemenantrieb" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Kraftschluss verstehen">
+Riemenantriebe uebertragen Bewegung kraftschluessig. Riemenspannung, Verschleiss, Ausrichtung und Schutz sind
+wichtig und werden nach Vorgabe kontrolliert.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel beschaedigter Riemen">
+Du erkennst Risse oder Ausfransungen am Riemen. Du fasst den laufenden Riemen nicht an, sondern meldest und
+sicherst nach Vorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Riemenspannung und Uebersetzungswerte sind quellenpflichtig.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Riemenantrieb heisst Kraftschluss: Spannung und Zustand beachten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MEL-007::check"
+  fragen={[{ id: "kraftschluss", masterySchluessel: "FK-1-MEL-007::kraftschluss", aufgabenstellung: "Welches Grundprinzip passt zum Riemenantrieb?", optionen: [{ id: "kraftschluss", text: "Kraftschluss.", istKorrekt: true, erklaerung: "Richtig." }, { id: "freier-flug", text: "Freier Flug ohne Kontakt.", istKorrekt: false, erklaerung: "Nein. Der Riemen liegt an den Scheiben an." }] }]}
+/>

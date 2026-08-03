@@ -1,0 +1,57 @@
+---
+titel: "Leistungsgrad berechnen"
+thema_code: "PT-OEE"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Sollleistung, Taktwerte und Beispielrechnung muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch, Taktvorgaben und Betriebsdaten"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Sollleistung und Uebungswerte nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation am Monitor">
+Die Maschine laeuft ohne Stoerung, aber die Stueckzahl liegt unter dem Soll. Der Leistungsgrad erklaert diesen Verlust.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Leistungsgrad","OEE","Sollleistung","Produktionsleistung","Taktzeit"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Ist gegen Soll">
+Leistungsgrad vergleicht, was wirklich produziert wurde, mit dem, was in der Laufzeit moeglich gewesen waere.
+</EinfachErklaert>
+
+<LeistungsgradBerechnenSchema />
+
+<LeistungsgradBerechnenTrainer titel="Leistungsgrad berechnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Leistungsgrad als Ausbringungsvergleich">
+Leistungsgrad = Istleistung / Sollleistung. Die Sollleistung kommt aus freigegebenen Takt-, Zyklus- oder Leistungsvorgaben. Ohne klare Sollbasis wird der Wert unvergleichbar.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel langsame Takte">
+Eine Presse laeuft, aber mit laengerer Zykluszeit als freigegeben. Die Verfuegbarkeit kann gut sein, der Leistungsgrad sinkt trotzdem.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Leistungsgrad braucht eine freigegebene Sollbasis.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-OEE-003::check"
+  fragen={[{ id: "003", masterySchluessel: "FK-4-OEE-003::kern", aufgabenstellung: "Was vergleicht der Leistungsgrad?", optionen: [{ id: "richtig", text: "Istleistung mit der freigegebenen Sollleistung.", istKorrekt: true, erklaerung: "Richtig. Ohne Sollbasis ist der Grad nicht belastbar." }, { id: "falsch", text: "Nur Gutteile mit Ausschuss.", istKorrekt: false, erklaerung: "Nein. Das ist eher Qualitaetsrate." }] }]}
+/>

@@ -1,0 +1,59 @@
+---
+titel: "Fehlerquote berechnen"
+thema_code: "PT-QS"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Formel, Rundung und betriebliche Bewertungsgrenzen muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch und betriebliche Kennzahlenvorgabe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Formel, Rechenbeispiele und Grenzwerte mit Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation mit Fehlerliste">
+Am Ende der Schicht kennst du Gesamtmenge und fehlerhafte Teile. Daraus soll eine Fehlerquote entstehen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Fehlerquote", "Ausschuss", "Menge", "Gutteil"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Fehlerquote in Alltagssprache">
+Du vergleichst, wie viele Teile fehlerhaft waren, mit allen hergestellten oder geprueften Teilen.
+</EinfachErklaert>
+
+<FehlerquoteBerechnenSchema />
+
+<FehlerquoteBerechnenTrainer titel="Fehlerquote berechnen" />
+
+<Formelkarte titel="Fehlerquote Grundidee" formel="Fehlerquote = Fehleranzahl / Gesamtmenge" erklaerung="Die genaue Darstellung, Prozentrechnung und Rundung werden aus der freigegebenen Quelle uebernommen." />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Anteil fehlerhafter Teile bestimmen">
+Die Fehlerquote ist der Anteil fehlerhafter Teile an einer definierten Gesamtmenge. Wichtig sind klare Zaehllogik, gleiche Bezugsmenge und dokumentierte Rundung.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel falsche Bezugsmenge">
+Wenn du nur gepruefte Teile als Gesamtmenge nimmst, darfst du nicht ploetzlich die gesamte Produktionsmenge als Vergleich verwenden.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Eine Quote braucht Zaehler, Nenner und gleiche Bezugslogik.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-QS-010::check"
+  fragen={[{ id: "formel", masterySchluessel: "FK-3-QS-010::formel", aufgabenstellung: "Was gehoert zur Fehlerquote?", optionen: [{ id: "richtig", text: "Fehleranzahl bezogen auf eine Gesamtmenge.", istKorrekt: true, erklaerung: "Richtig. Eine Quote ist ein Anteil." }, { id: "falsch", text: "Nur die Zahl der Gutteile ohne Gesamtmenge.", istKorrekt: false, erklaerung: "Nein. Ohne Bezugsmenge entsteht keine Quote." }] }]}
+/>

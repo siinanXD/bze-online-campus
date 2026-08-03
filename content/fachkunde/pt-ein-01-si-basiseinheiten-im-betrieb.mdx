@@ -1,0 +1,115 @@
+---
+titel: "SI-Basiseinheiten im Betrieb"
+thema_code: "PT-EIN"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "beispielwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Einheitenumfang und Tabellenbuchbezug muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Einheiten und Groessen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Basiseinheiten, abgeleitete Einheiten und Schreibweisen muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Messwert">
+Auf einem Auftrag steht nicht einfach nur eine Zahl. Dort steht zum Beispiel 25 mm, 3 s oder 2 kg. Erst die
+Einheit sagt, was die Zahl bedeutet.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Einheit", "Meter", "Sekunde", "Kilogramm", "Temperatur"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Einheiten in Alltagssprache">
+Eine Einheit ist das Wort oder Zeichen hinter einer Zahl. Ohne Einheit ist ein Messwert unklar. 10 kann
+10 Millimeter, 10 Sekunden oder 10 Kilogramm bedeuten.
+</EinfachErklaert>
+
+<SiEinheitenSchema />
+
+<SiEinheitenTrainer titel="SI-Einheiten zuordnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Groesse, Zahlenwert und Einheit">
+Ein Messwert besteht aus Zahlenwert und Einheit. Die Einheit macht klar, welche physikalische Groesse
+gemeint ist. Im Betrieb sind Einheiten wichtig fuer Zeichnung, Pruefplan, Maschinenparameter, Materialdaten
+und Rueckmeldungen.
+</FachlichErklaert>
+
+## Erste Orientierung
+
+| Groesse | Einheit im Lernbeispiel |
+|---|---|
+| Laenge | Meter oder Millimeter |
+| Zeit | Sekunde |
+| Masse | Kilogramm |
+| Temperatur | Grad Celsius im Betriebskontext |
+
+<Praxisbeispiel titel="Praxisbeispiel fehlende Einheit">
+Jemand schreibt "25" in ein Pruefprotokoll. Du kannst nicht sicher wissen, ob 25 mm, 25 cm oder 25 s gemeint
+sind. Deshalb wird die Einheit immer mitgeschrieben.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+SI-Basiseinheiten, abgeleitete Einheiten und betriebliche Schreibweisen muessen aus Tabellenbuch und
+freigegebener Vorgabe uebernommen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Keine Zahl ohne Einheit: Erst beides zusammen ist ein Messwert.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-EIN-001::check"
+  fragen={[
+    {
+      id: "einheit",
+      masterySchluessel: "FK-1-EIN-001::einheit",
+      aufgabenstellung: "Warum muss die Einheit zu einer Zahl dazugeschrieben werden?",
+      optionen: [
+        {
+          id: "eindeutig",
+          text: "Damit klar ist, welche Groesse gemeint ist.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Ohne Einheit ist der Messwert unvollstaendig.",
+        },
+        {
+          id: "deko",
+          text: "Nur damit der Text laenger aussieht.",
+          istKorrekt: false,
+          erklaerung: "Nein. Die Einheit ist fachlich notwendig.",
+        },
+      ],
+    },
+    {
+      id: "laenge",
+      masterySchluessel: "FK-1-EIN-001::laenge",
+      aufgabenstellung: "Welche Einheit gehoert im Lernbeispiel zur Laenge?",
+      optionen: [
+        {
+          id: "meter",
+          text: "Meter.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Meter ist eine Laengeneinheit.",
+        },
+        {
+          id: "sekunde",
+          text: "Sekunde.",
+          istKorrekt: false,
+          erklaerung: "Sekunde gehoert zur Zeit.",
+        },
+      ],
+    },
+  ]}
+/>

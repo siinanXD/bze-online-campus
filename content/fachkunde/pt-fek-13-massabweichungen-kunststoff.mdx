@@ -1,0 +1,57 @@
+---
+titel: "Massabweichungen Kunststoff"
+thema_code: "PT-FEK"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Schwindungsbezug, Messzeitpunkt, Toleranz und Prozessfreigabe muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Zeichnung, Pruefplan und Fachbuch Kunststofftechnik"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Toleranzen, Messzeitpunkt, Lagerbedingungen und Prozessbezug nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Messplatz">
+Ein Kunststoffteil passt kurz nach dem Entformen noch knapp, spaeter aber nicht mehr. Du musst Mass, Zeitpunkt und Prozess zusammen betrachten.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Massabweichung", "Schwindung", "Messunsicherheit", "Pruefplan"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Massabweichung in Alltagssprache">
+Das gemessene Mass passt nicht zur Vorgabe. Bei Kunststoff kann sich das Mass nach dem Abkuehlen noch veraendern.
+</EinfachErklaert>
+
+<MassabweichungKunststoffSchema />
+
+<MassabweichungKunststoffTrainer titel="Massabweichungen Kunststoff" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Kunststoffmasse bewerten">
+Massabweichungen an Kunststoffteilen haengen mit Schwindung, Kuehlung, Nachdruck, Material, Orientierung, Werkzeug und Messzeitpunkt zusammen. Bewertet wird gegen Zeichnung, Toleranz und Pruefplan.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Schnapphaken">
+Ein Schnapphaken liegt ausserhalb der Toleranz. Du pruefst Soll-Ist, Messmittel, Messzeitpunkt und Prozessbezug, bevor du eine Ursache festlegst.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Bei Kunststoff gehoeren Mass und Zeit zusammen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEK-013::check"
+  fragen={[{ id: "mass", masterySchluessel: "FK-3-FEK-013::mass", aufgabenstellung: "Was ist bei Kunststoff-Massabweichungen besonders wichtig?", optionen: [{ id: "richtig", text: "Messzeitpunkt, Schwindung und Pruefplan beachten.", istKorrekt: true, erklaerung: "Richtig. Kunststoffteile koennen sich nach dem Entformen veraendern." }, { id: "falsch", text: "Mass mechanisch passend druecken.", istKorrekt: false, erklaerung: "Nein. Das ist keine freigegebene Masskorrektur." }] }]}
+/>

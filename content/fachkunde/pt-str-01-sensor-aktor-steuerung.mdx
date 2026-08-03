@@ -1,0 +1,57 @@
+---
+titel: "Sensor, Aktor, Steuerung"
+thema_code: "PT-STR"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Signalweg, Begriffsabgrenzung und Beispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Mechatronik/Metall und betriebliche Anlagenunterlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Betriebliche Signalbeispiele und zulaessige Diagnosewege nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Foerderband">
+Ein Teil erreicht eine Position. Ein Sensor meldet die Lage, die Steuerung verarbeitet das Signal und ein Aktor stoppt oder startet die Bewegung.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Sensor", "Aktor", "Steuerung", "Signal"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Signalweg in Alltagssprache">
+Der Sensor merkt etwas. Die Steuerung entscheidet nach Logik. Der Aktor macht die Aktion.
+</EinfachErklaert>
+
+<SensorAktorSteuerungSchema />
+
+<SensorAktorSteuerungTrainer titel="Sensor Aktor Steuerung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Grundprinzip einer Steuerung">
+In einer einfachen Steuerkette wird ein Zustand erfasst, als Signal verarbeitet und als Ausgangsaktion umgesetzt. Wichtig ist die Signalrichtung: vom Sensor zur Steuerung und von der Steuerung zum Aktor.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Teileanschlag">
+Eine Lichtschranke erkennt ein Teil am Anschlag. Die Steuerung stoppt das Band und schaltet einen Zylinder frei. Du beschreibst Sensor, Steuerung und Aktor getrennt.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Sensor meldet, Steuerung verarbeitet, Aktor handelt.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-STR-001::check"
+  fragen={[{ id: "signalweg", masterySchluessel: "FK-3-STR-001::signalweg", aufgabenstellung: "Welche Reihenfolge beschreibt den einfachen Signalweg?", optionen: [{ id: "richtig", text: "Sensor erkennt, Steuerung verarbeitet, Aktor handelt.", istKorrekt: true, erklaerung: "Richtig. So wird der Grundsignalweg beschrieben." }, { id: "falsch", text: "Aktor misst, Sensor schaltet Leistung und Steuerung wird umgangen.", istKorrekt: false, erklaerung: "Nein. Das vertauscht die Aufgaben." }] }]}
+/>

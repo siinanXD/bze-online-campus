@@ -1,0 +1,64 @@
+---
+titel: "Schnittgeschwindigkeit"
+thema_code: "PT-FER"
+lesedauer_minuten: 10
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Formelzeichen, Einheiten und Schnittwertbeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Schnittwerte"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Schnittgeschwindigkeiten duerfen erst nach Quellenabgleich genutzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation beim Drehen">
+Ein Werkstueck dreht sich. Entscheidend ist nicht nur, dass es sich dreht, sondern wie schnell die Schneide
+am Umfang arbeitet.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schnittgeschwindigkeit", "Drehzahl", "Durchmesser", "Tabellenbuch"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schnittgeschwindigkeit in Alltagssprache">
+Schnittgeschwindigkeit sagt, wie schnell an der Schneidstelle Material getrennt wird.
+</EinfachErklaert>
+
+<SchnittgeschwindigkeitSchema />
+
+<SchnittgeschwindigkeitTrainer titel="Schnittgeschwindigkeit" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="vc als Umfangsgeschwindigkeit">
+Bei rotierenden Werkstuecken haengen Schnittgeschwindigkeit, Durchmesser und Drehzahl zusammen. Vor jeder
+Rechnung muessen Einheiten und Tabellenwerte stimmen.
+</FachlichErklaert>
+
+<Formelkarte titel="Grundformel Schnittgeschwindigkeit" formel="vc = pi x d x n">
+Die Formelkarte zeigt nur den Zusammenhang. Konkrete Zahlenwerte und Einheitenumrechnungen sind
+quellenpflichtig.
+</Formelkarte>
+
+<TabellenbuchHinweis>
+Schnittgeschwindigkeiten werden nicht geraten. Werkstoff, Werkzeug, Verfahren und Quelle muessen zusammenpassen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+vc beschreibt die Geschwindigkeit an der Schnittstelle.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-FER-004::check"
+  fragen={[{ id: "vc", masterySchluessel: "FK-2-FER-004::vc", aufgabenstellung: "Was beschreibt die Schnittgeschwindigkeit?", optionen: [{ id: "umfang", text: "Die Geschwindigkeit an der Schnittstelle.", istKorrekt: true, erklaerung: "Richtig." }, { id: "farbe", text: "Die Farbe des Werkzeugs.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

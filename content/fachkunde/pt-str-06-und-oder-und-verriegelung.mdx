@@ -1,0 +1,57 @@
+---
+titel: "UND, ODER und Verriegelung"
+thema_code: "PT-STR"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Logikbeispiele, Sicherheitsbezug und Verriegelungsregeln muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Fachbuch Steuerungstechnik und betriebliche Sicherheits-/Schaltunterlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Freigabebedingungen, Verriegelungsbeispiele und sichere Reaktionswege nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an einer Schutzhaube">
+Eine Maschine startet nur, wenn die Schutzhaube geschlossen ist und der Starttaster gedrueckt wird. Eine andere Meldung reicht nicht aus.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["UND", "ODER", "Verriegelung", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Logik in Alltagssprache">
+UND heisst: alles muss stimmen. ODER heisst: eine passende Bedingung reicht. Verriegelung heisst: eine Aktion wird gesperrt, wenn es nicht sicher oder nicht erlaubt ist.
+</EinfachErklaert>
+
+<UndOderVerriegelungSchema />
+
+<UndOderVerriegelungTrainer titel="UND ODER Verriegelung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Logik sicher lesen">
+Steuerungen nutzen logische Bedingungen, um Ausgaenge freizugeben oder zu sperren. Verriegelungen sind Schutz- und Prozessbedingungen und werden nicht ueberbrueckt.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Startfreigabe">
+Die Maschine darf nur starten, wenn Not-Halt frei ist, Schutzhaube geschlossen ist und Material bereitliegt. Du erkennst eine UND-Verknuepfung mit Verriegelung.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Verriegelung ist kein Hindernis, sondern Schutzlogik.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-STR-006::check"
+  fragen={[{ id: "logik", masterySchluessel: "FK-3-STR-006::logik", aufgabenstellung: "Was gilt bei einer UND-Bedingung?", optionen: [{ id: "richtig", text: "Alle geforderten Bedingungen muessen erfuellt sein.", istKorrekt: true, erklaerung: "Richtig. UND braucht alle Bedingungen." }, { id: "falsch", text: "Eine Bedingung reicht immer und Verriegelungen darf man ueberbruecken.", istKorrekt: false, erklaerung: "Nein. Das waere gefaehrlich und fachlich falsch." }] }]}
+/>

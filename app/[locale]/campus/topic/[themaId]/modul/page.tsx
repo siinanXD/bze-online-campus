@@ -73,9 +73,9 @@ export default async function LernmodulSeite({
   const naechsterSchritt = ermittleNaechstenLernschritt(locale, daten.unterthema.id, daten.geschwister);
 
   return (
-    <main className="mx-auto max-w-2xl space-y-4 p-4 pb-8">
-      <header className="space-y-2 pt-2">
-        <nav className="flex flex-wrap gap-1 text-xs font-semibold uppercase tracking-wide text-primary" aria-label={t('navigation.breadcrumb')}>
+    <main className="mx-auto max-w-md space-y-4 px-5 pb-8 pt-3">
+      <header className="space-y-2">
+        <nav className="flex flex-wrap gap-1 text-[12px] font-semibold uppercase tracking-wide text-primary" aria-label={t('navigation.breadcrumb')}>
           {daten.fachbereich && (
             <Link href={`/${locale}/campus/topic/fachbereich/${daten.fachbereich.id}`}>{daten.fachbereich.bezeichnung}</Link>
           )}

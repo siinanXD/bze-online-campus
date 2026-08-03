@@ -1,0 +1,64 @@
+---
+titel: "Schrauben und Nieten"
+thema_code: "PT-MET"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Drehmoment, Nietprozess und Verbindungsvorgaben muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Schrauben und Nieten"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Drehmomente, Schraubensicherung, Nietdaten und Pruefvorgaben nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Verbindung">
+Zwei Bauteile sollen verbunden werden. Du unterscheidest, ob eine loesbare Schraubverbindung oder eine meist
+dauerhafte Nietverbindung gefordert ist.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schraube", "Mutter", "Niet", "Drehmoment"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schrauben und Nieten in Alltagssprache">
+Schrauben kann man meist wieder loesen. Nieten sind meistens dauerhaft verformte Verbindungen.
+</EinfachErklaert>
+
+<SchraubenNietenSchema />
+
+<SchraubenNietenTrainer titel="Schrauben und Nieten" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Loesbar oder dauerhaft">
+Schrauben und Nieten sind Fuegeverfahren. Schrauben werden nach Gewinde, Laenge, Sicherung und Drehmoment
+montiert. Nieten werden plastisch verformt und meist dauerhaft eingesetzt.
+</FachlichErklaert>
+
+<Formelkarte titel="Montagebezug" formel="Drehmoment nach Vorgabe">
+Das Drehmoment ist hier nur als Pflichtbegriff genannt. Konkrete Werte sind quellenpflichtig.
+</Formelkarte>
+
+<TabellenbuchHinweis>
+Drehmomente, Sicherungen, Nietdurchmesser und Pruefvorgaben muessen aus Zeichnung, Arbeitsplan oder
+Tabellenbuch kommen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Schrauben meist loesbar, Nieten meist dauerhaft.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-020::check"
+  fragen={[{ id: "niet", masterySchluessel: "FK-2-MET-020::niet", aufgabenstellung: "Welche Verbindung ist meist dauerhaft?", optionen: [{ id: "niet", text: "Die Nietverbindung.", istKorrekt: true, erklaerung: "Richtig." }, { id: "lose", text: "Eine lose Mutter ohne Sicherung.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

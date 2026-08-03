@@ -1,0 +1,74 @@
+---
+titel: "Werkstoffauswahl nach Aufgabe"
+thema_code: "PT-WSE"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Auswahlbeispiele, Materialdaten und betriebliche Entscheidungswege muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript Werkstoffauswahl"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Auswahlregeln und Werkstoffdaten muessen aus freigegebener Quelle stammen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation bei einer Materialfrage">
+Ein Teil soll leichter, fester oder korrosionsbestaendiger werden. Du erkennst: Werkstoffauswahl ist ein
+Abgleich aus Aufgabe, Vorgabe und Freigabe.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Werkstoff", "Beanspruchung", "Dichte", "Festigkeit", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Werkstoffauswahl in Alltagssprache">
+Du waehlst Material nicht nach Gefuehl. Du vergleichst, was das Bauteil leisten muss und was freigegeben ist.
+</EinfachErklaert>
+
+<WerkstoffauswahlSchema />
+
+<WerkstoffauswahlTrainer titel="Werkstoffauswahl nach Aufgabe" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Anforderungen abgleichen">
+Werkstoffauswahl beruecksichtigt Belastung, Umgebung, Gewicht, Verarbeitung, Kosten und Qualitaetsvorgaben.
+In der Produktion ist die Zeichnung oder Freigabe verbindlich.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel anderer Werkstoff">
+Ein Material laesst sich schwer bearbeiten. Du ersetzt es nicht eigenmaechtig, sondern meldest den Punkt und
+klaerst, ob eine freigegebene Alternative existiert.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Werkstoffdaten und Auswahlregeln sind quellenpflichtig. Der Entwurf trainiert nur die Entscheidungslogik.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Erst Aufgabe und Vorgabe klaeren, dann Werkstoff beurteilen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WSE-008::check"
+  fragen={[
+    {
+      id: "auswahl",
+      masterySchluessel: "FK-1-WSE-008::auswahl",
+      aufgabenstellung: "Was ist bei Werkstoffauswahl im Betrieb entscheidend?",
+      optionen: [
+        { id: "anforderung", text: "Anforderung, Daten und Freigabe abgleichen.", istKorrekt: true, erklaerung: "Richtig." },
+        { id: "frei", text: "Das Material frei tauschen.", istKorrekt: false, erklaerung: "Nein. Werkstoffwechsel brauchen Freigabe." },
+      ],
+    },
+  ]}
+/>

@@ -1,0 +1,57 @@
+---
+titel: "Personal- und Maschinenbedarf"
+thema_code: "PT-PLA"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Befugnisse, Qualifikationen, Maschinenzuordnung und Schichtlogik muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript, Qualifikationsmatrix, Maschinenliste und Schichtplanung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Ressourcenlogik und Befugnisregeln nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation vor Schichtstart">
+Der Auftrag ist im Plan. Jetzt ist offen, welche Maschine frei ist und wer sie bedienen darf. Eine freie Maschine reicht nicht, wenn niemand befugt ist.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Maschinenbedarf", "Betriebsmittel", "Personal", "Befugnis", "Schicht"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Ressourcen muessen passen">
+Fuer einen Auftrag brauchst du passende Maschine, passende Person und passende Zeit. Wenn eines fehlt, ist der Plan noch nicht machbar.
+</EinfachErklaert>
+
+<PersonalMaschinenbedarfSchema />
+
+<PersonalMaschinenbedarfTrainer titel="Personal- und Maschinenbedarf" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Ressourcenplanung">
+Personal- und Maschinenbedarf ordnet Arbeitsgaengen die passenden Ressourcen zu. Dabei zaehlen technische Eignung, Verfuegbarkeit, Qualifikation, Unterweisung, Befugnis und Sicherheitsanforderung. Eine Planung darf keine Person fuer Taetigkeiten vorsehen, fuer die Freigabe oder Unterweisung fehlt.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel freie Maschine ohne Bedienfreigabe">
+Eine Anlage ist am Nachmittag frei, aber die eingeteilte Person hat keine Freigabe fuer Werkzeugwechsel. Der Plan muss angepasst oder eine befugte Person eingeplant werden.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ressource heisst: technisch passend, zeitlich frei und fachlich befugt.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-PLA-004::check"
+  fragen={[{ id: "ressource", masterySchluessel: "FK-4-PLA-004::ressource", aufgabenstellung: "Was gehoert zur sicheren Ressourcenplanung?", optionen: [{ id: "richtig", text: "Passende Maschine, befugtes Personal und verfuegbare Zeit pruefen.", istKorrekt: true, erklaerung: "Richtig. Erst zusammen ergibt das einen realistischen Plan." }, { id: "falsch", text: "Irgendeine freie Person auf die Maschine setzen.", istKorrekt: false, erklaerung: "Nein. Befugnis, Unterweisung und Eignung muessen passen." }] }]}
+/>

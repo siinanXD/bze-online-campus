@@ -1,0 +1,65 @@
+---
+titel: "Wellen und Achsen unterscheiden"
+thema_code: "PT-MEL"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Beispiele, Zeichnungsbezug und Begriffstiefe muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Maschinenelemente"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Beispiele und technische Definitionen muessen aus Tabellenbuch oder freigegebener Unterweisung stammen."
+---
+
+<WissensstufenLeiste stufen={["auswendig"]} />
+
+<StoryEinstieg titel="Situation an einer Baugruppe">
+Du siehst ein rundes Bauteil mit Rad oder Rolle. Jetzt zaehlt nicht nur die Form, sondern die Funktion:
+Uebertraegt es Drehung oder traegt es nur?
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Welle", "Achse", "Drehmoment", "Zeichnung", "Maschinenelement"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Welle und Achse in Alltagssprache">
+Eine Welle gibt Drehbewegung weiter. Eine Achse traegt drehende Teile.
+</EinfachErklaert>
+
+<WelleAchseSchema />
+
+<WelleAchseTrainer titel="Wellen und Achsen unterscheiden" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Funktion entscheidet">
+Wellen und Achsen koennen aehnlich aussehen. Fachlich unterscheidest du sie nach Aufgabe in der Baugruppe:
+Uebertragung von Drehmoment oder tragende/fuehrende Funktion.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Zeichnung lesen">
+Du erkennst ein rundes Bauteil. Statt nach Augenmass zu raten, pruefst du Zeichnung, Benennung und Funktion
+in der Baugruppe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Begriffe und Beispiele zu Wellen und Achsen werden mit Tabellenbuch oder freigegebener Unterweisung
+abgeglichen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Nicht die Form allein entscheidet, sondern die Funktion.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MEL-001::check"
+  fragen={[{ id: "funktion", masterySchluessel: "FK-1-MEL-001::funktion", aufgabenstellung: "Was ist die Grundfunktion einer Welle?", optionen: [{ id: "drehmoment", text: "Drehmoment oder Drehbewegung uebertragen.", istKorrekt: true, erklaerung: "Richtig." }, { id: "farbe", text: "Die Farbe der Baugruppe festlegen.", istKorrekt: false, erklaerung: "Nein. Farbe ist kein Funktionsmerkmal." }] }]}
+/>

@@ -36,8 +36,8 @@ export default async function NachweisDetailPage({
   } = await supabase.auth.getUser();
   if (!user) {
     return (
-      <main className="mx-auto max-w-2xl p-4">
-        <p className="text-fg-muted">{t('nichtAngemeldet')}</p>
+      <main className="mx-auto max-w-md px-5 py-6">
+        <p className="text-[14px] text-fg-muted">{t('nichtAngemeldet')}</p>
       </main>
     );
   }
@@ -45,11 +45,11 @@ export default async function NachweisDetailPage({
   const nachweis = await ladeNachweis(id);
   if (!nachweis) {
     return (
-      <main className="mx-auto max-w-2xl space-y-3 p-4">
-        <Link href={`/${locale}/campus/berichtsheft`} className="text-sm text-primary hover:underline">
+      <main className="mx-auto flex max-w-md flex-col gap-3 px-5 py-6">
+        <Link href={`/${locale}/campus/berichtsheft`} className="text-[14px] font-semibold text-primary">
           ← {t('zurueck')}
         </Link>
-        <p className="text-fg-muted">{t('nichtGefunden')}</p>
+        <p className="text-[14px] text-fg-muted">{t('nichtGefunden')}</p>
       </main>
     );
   }
@@ -61,19 +61,19 @@ export default async function NachweisDetailPage({
   const katalog = bearbeitbar ? await ladeRahmenplanKatalog() : [];
 
   return (
-    <main className="mx-auto max-w-2xl space-y-4 p-4">
-      <div className="pt-2">
+    <main className="mx-auto flex min-h-full max-w-md flex-col gap-4 px-5 pb-6 pt-3">
+      <div>
         <Link
           href={`/${locale}/campus/berichtsheft`}
-          className="touchable inline-flex min-h-12 items-center text-sm text-primary hover:underline"
+          className="touchable inline-flex min-h-10 items-center text-[14px] font-semibold text-primary"
         >
           ← {t('zurueck')}
         </Link>
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <h1 className="text-2xl font-extrabold">{t(`art.${nachweis.art}`)}</h1>
+        <div className="mt-1 flex flex-wrap items-center justify-between gap-2">
+          <h1 className="text-[22px] font-extrabold text-fg">{t(`art.${nachweis.art}`)}</h1>
           <NachweisStatusBadge status={nachweis.status} label={t(`status.${nachweis.status}`)} />
         </div>
-        <p className="text-sm text-fg-muted">
+        <p className="text-[13px] text-fg-muted">
           {datumDe(nachweis.zeitraumVon, locale)} – {datumDe(nachweis.zeitraumBis, locale)}
           {nachweis.ausbildungsjahr ? ` · ${t('ausbildungsjahrKurz', { jahr: nachweis.ausbildungsjahr })}` : ''}
         </p>

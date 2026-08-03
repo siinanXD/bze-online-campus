@@ -128,7 +128,10 @@ def load_pools() -> collections.OrderedDict[str, dict[str, Any]]:
         slug = meta.get("beruf_slug")
         if not slug:
             raise SystemExit(f"{path.name}: meta.beruf_slug fehlt")
-        eintrag = berufe.setdefault(slug, {"meta": meta, "pruefungsbereiche": [], "fragen": []})
+        eintrag = berufe.setdefault(
+            slug,
+            {"meta": meta, "pruefungsbereiche": [], "fragen": [], "uebungspruefungen": []},
+        )
         if pool.get("pruefungsbereiche"):
             if eintrag["pruefungsbereiche"]:
                 raise SystemExit(f"{path.name}: Pruefungsbereiche fuer {slug} bereits definiert")
@@ -139,6 +142,7 @@ def load_pools() -> collections.OrderedDict[str, dict[str, Any]]:
                 raise SystemExit(f"Frage-ID {frage['id']} kommt mehrfach vor ({path.name})")
             gesehen.add(frage["id"])
             eintrag["fragen"].append(frage)
+        eintrag["uebungspruefungen"].extend(pool.get("uebungspruefungen", []))
     return berufe
 
 
@@ -850,6 +854,49 @@ def insert_demo_content(
     return dict(stats)
 
 
+def insert_demo_kohorte(out: list[str], slug: str, beruf_id: str) -> str:
+    """Schreibt eine Demo-Kohorte fuer Seed-Pruefungen und gibt deren ID zurueck."""
+    kohorte_id = uid("kohorte", slug, "demo")
+    beitrittscode = f"{code(slug)}-DEMO"
+    out.append(
+        "insert into kohorten (id,traeger_id,beruf_id,bezeichnung,start_datum,end_datum,"
+        "beitrittscode,zwischenpruefung_am,abschlusspruefung_am) values ("
+        f"{q(kohorte_id)},{q(TRAEGER)},{q(beruf_id)},"
+        f"{q(f'Demo-Kohorte {slug}')},"
+        f"'2026-08-01','2027-11-30',{q(beitrittscode)},'2027-08-15','2027-11-15') "
+        "on conflict (id) do nothing;"
+    )
+    return kohorte_id
+
+
+def insert_uebungspruefungen(
+    out: list[str],
+    slug: str,
+    kohorte_id: str,
+    uebungspruefungen: list[dict[str, Any]],
+) -> int:
+    """Schreibt feste Uebungspruefungen aus Fragenpool-Dateien in den Seed."""
+    jahr = 2026
+    basis_kw = 36
+    for pruefungs_index, pruefung in enumerate(uebungspruefungen, start=1):
+        pruefung_id = uid("pruefung", slug, pruefung["code"])
+        kalenderwoche = basis_kw + pruefungs_index
+        out.append(
+            "insert into pruefungen (id,kohorte_id,jahr,kalenderwoche,titel,dauer_minuten,status) "
+            "values ("
+            f"{q(pruefung_id)},{q(kohorte_id)},{jahr},{kalenderwoche},"
+            f"{q(pruefung['titel'])},{q(pruefung.get('bearbeitungszeit_minuten', 120))},"
+            "'geplant') on conflict (id) do nothing;"
+        )
+        for position, frage_ref in enumerate(pruefung["aufgaben"], start=1):
+            frage_id = uid("frage", frage_ref)
+            out.append(
+                "insert into pruefung_fragen (pruefung_id,frage_id,position,punkte) values "
+                f"({q(pruefung_id)},{q(frage_id)},{position},1) on conflict do nothing;"
+            )
+    return len(uebungspruefungen)
+
+
 TRAEGER = uid("traeger", "bze")
 SCHLUESSEL = uid("schluessel", "ihk100")
 berufe = load_pools()
@@ -907,6 +954,7 @@ for slug, eintrag in berufe.items():
     kammer_id = KAMMERN[meta.get("kammer", "IHK")][0]
     phase1 = uid("phase", beruf_id, 1)
     phase2 = uid("phase", beruf_id, 2)
+    kohorte_id = uid("kohorte", slug, "demo")
 
     out.append(f"-- Beruf: {meta['beruf']}")
     out.append(
@@ -924,6 +972,7 @@ for slug, eintrag in berufe.items():
         f"({q(phase2)},{q(beruf_id)},{q('Phase 2 - bis zur Abschlusspruefung')},"
         "2,'abschlusspruefung',4) on conflict (id) do nothing;"
     )
+    insert_demo_kohorte(out, slug, beruf_id)
 
     themen_uuid = {}
     for pb_index, pb in enumerate(eintrag["pruefungsbereiche"], start=1):
@@ -1004,13 +1053,26 @@ for slug, eintrag in berufe.items():
         )
         demo_statistik.update(demo_stats)
 
+    pruefungen = insert_uebungspruefungen(
+        out,
+        slug,
+        kohorte_id,
+        eintrag.get("uebungspruefungen", []),
+    )
+
     out.append("")
-    statistik.append((meta["beruf"], len(eintrag["pruefungsbereiche"]), len(themen_uuid), mc, ft))
+    statistik.append(
+        (meta["beruf"], len(eintrag["pruefungsbereiche"]), len(themen_uuid), mc, ft, pruefungen)
+    )
 
 out.append("commit;")
 gesamt_mc = sum(s[3] for s in statistik)
 gesamt_ft = sum(s[4] for s in statistik)
-out.append(f"-- {len(statistik)} Berufe, {gesamt_mc} MC-Fragen, {gesamt_ft} Freitext-Fragen.")
+gesamt_pruefungen = sum(s[5] for s in statistik)
+out.append(
+    f"-- {len(statistik)} Berufe, {gesamt_mc} MC-Fragen, {gesamt_ft} Freitext-Fragen, "
+    f"{gesamt_pruefungen} Uebungspruefungen."
+)
 if demo_statistik:
     out.append(
         "-- Demo-Content: " + json.dumps(dict(demo_statistik), ensure_ascii=False, sort_keys=True)
@@ -1019,9 +1081,10 @@ if demo_statistik:
 target = SEED_DIR / "0001_maf_seed.sql"
 target.write_text("\n".join(out), encoding="utf-8")
 print(f"OK: {target.name} geschrieben.")
-for name, pruefungsbereiche, themen, mc, ft in statistik:
+for name, pruefungsbereiche, themen, mc, ft, pruefungen in statistik:
     print(
-        f"  {name}: {pruefungsbereiche} Pruefungsbereiche, {themen} Themen, {mc} MC, {ft} Freitext"
+        f"  {name}: {pruefungsbereiche} Pruefungsbereiche, {themen} Themen, "
+        f"{mc} MC, {ft} Freitext, {pruefungen} Uebungspruefungen"
     )
 print(f"  Gesamt: {gesamt_mc} MC, {gesamt_ft} Freitext, {gesamt_mc + gesamt_ft} Fragen")
 if demo_statistik:

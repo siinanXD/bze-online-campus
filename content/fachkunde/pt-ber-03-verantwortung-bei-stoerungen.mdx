@@ -1,0 +1,127 @@
+---
+titel: "Verantwortung bei Stoerungen"
+thema_code: "PT-BER"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Meldewege und Sperrregeln muessen mit den BZE-/Betriebsvorgaben abgeglichen werden."
+quellen:
+  - titel: "BZE-Traegerskript Stoerungsmeldung"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Konkrete Meldekette, Rollenbezeichnungen und Formulare muessen vor Freigabe eingetragen werden."
+  - titel: "Betriebsanweisung Verhalten bei Stoerungen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Betriebliche Sperr- und Freigaberegeln duerfen nicht geraten werden."
+---
+
+<WissensstufenLeiste stufen={["anwenden", "auswendig_wissen"]} />
+
+<StoryEinstieg titel="Situation: Die Anlage klingt anders">
+Beim laufenden Auftrag hoerst du ein ungewoehnliches Geraeusch. Gleichzeitig liegt ein Teil schief in der
+Entnahme. Du bist unsicher: weiterlaufen lassen, selbst einstellen oder sofort melden?
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Stoerung", "Meldeweg", "Sperrung", "Freigabe", "Pruefen"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Stoerung in Alltagssprache">
+Eine Stoerung bedeutet: Etwas ist nicht normal. Dann geht es zuerst um Sicherheit. Du schuetzt Menschen,
+stoppst oder sicherst nach Vorgabe, meldest die Stoerung und dokumentierst, was passiert ist. Du reparierst
+nicht einfach auf eigene Faust.
+</EinfachErklaert>
+
+<MeldewegAblauf />
+
+<MeldewegTrainer titel="Meldeweg in Reihenfolge bringen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Verantwortung statt Blindflug">
+Bei Stoerungen muss die Situation kontrolliert werden, bevor weiter produziert wird. Entscheidend sind
+Gefaehrdung, Maschinenzustand, Produktqualitaet und die betriebliche Meldekette. Eine Stoerung kann eine
+Sperrung von Teilen, Werkzeugen, Bereichen oder der Anlage ausloesen. Eine Freigabe erfolgt erst durch die
+dafuer zustaendige Person oder nach der geregelten Pruefung.
+</FachlichErklaert>
+
+## Sichere Grundreihenfolge
+
+1. Gefahr erkennen und Abstand halten.
+2. Nach Vorgabe stoppen oder sichern, wenn Gefahr besteht.
+3. Zustaendige Person ueber den Meldeweg informieren.
+4. Auffaellige Teile oder Bereiche nicht weitergeben.
+5. Beobachtung und Massnahme dokumentieren.
+
+<Praxisbeispiel titel="Praxisbeispiel schiefes Teil">
+Ein Teil liegt schief, die Anlage macht ein ungewoehnliches Geraeusch. Du greifst nicht in den laufenden
+Bereich. Du nutzt den vorgesehenen sicheren Weg, informierst die zustaendige Person und wartest die
+Anweisung oder Freigabe ab.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Diese Einheit nennt keine konkreten Not-Halt-, LOTO- oder Reparaturregeln. Solche Regeln kommen aus
+Betriebsanweisung, Gefaehrdungsbeurteilung und Ausbilderfreigabe.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Bei Stoerung gilt: sichern, melden, sperren, dokumentieren und Freigabe abwarten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-BER-003::check"
+  fragen={[
+    {
+      id: "stoerung-erste-reaktion",
+      masterySchluessel: "FK-1-BER-003::stoerung-erste-reaktion",
+      aufgabenstellung: "Was ist die richtige erste Grundentscheidung bei einer auffaelligen Stoerung?",
+      optionen: [
+        {
+          id: "sicherheit",
+          text: "Sicherheit klaeren, nach Vorgabe sichern und den Meldeweg nutzen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Menschen, Anlage und Teile duerfen nicht durch unkontrolliertes Weiterarbeiten gefaehrdet werden.",
+        },
+        {
+          id: "hineingreifen",
+          text: "Schnell in den laufenden Bereich greifen, bevor mehr Ausschuss entsteht.",
+          istKorrekt: false,
+          erklaerung: "In laufende Gefahrstellen zu greifen ist gefaehrlich und nicht der sichere Weg.",
+        },
+        {
+          id: "weiterlaufen",
+          text: "Weiterlaufen lassen, weil Stoerungen meistens von selbst verschwinden.",
+          istKorrekt: false,
+          erklaerung: "Ungewoehnliche Geraeusche oder schiefe Teile muessen ernst genommen werden.",
+        },
+      ],
+    },
+    {
+      id: "freigabe-abwarten",
+      masterySchluessel: "FK-1-BER-003::freigabe-abwarten",
+      aufgabenstellung: "Warum darf eine gesperrte Anlage oder ein gesperrtes Teil nicht einfach weiter genutzt werden?",
+      optionen: [
+        {
+          id: "freigabe",
+          text: "Weil erst eine zustaendige Freigabe oder Pruefung klaeren muss, ob es sicher und qualitaetsgerecht weitergeht.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Sperrung verhindert, dass unsichere oder fehlerhafte Zustaende weiterlaufen.",
+        },
+        {
+          id: "ordnung",
+          text: "Nur weil es ordentlicher aussieht.",
+          istKorrekt: false,
+          erklaerung: "Sperrung ist keine Ordnungsmassnahme, sondern schuetzt Sicherheit und Qualitaet.",
+        },
+      ],
+    },
+  ]}
+/>

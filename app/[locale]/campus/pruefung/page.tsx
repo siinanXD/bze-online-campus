@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
-import { Card, Button } from '@bze/ui';
 
+/**
+ * Prüfungsliste im Figma-Mobile-Look.
+ */
 export default async function PruefungIndex({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations('pruefung');
@@ -14,24 +16,40 @@ export default async function PruefungIndex({ params }: { params: Promise<{ loca
     .order('kalenderwoche', { ascending: false });
 
   return (
-    <main className="mx-auto max-w-2xl space-y-4 p-4">
-      <h1 className="pt-2 text-2xl font-extrabold">{t('titel')}</h1>
+    <main className="mx-auto flex min-h-full max-w-md flex-col gap-4 px-5 pb-6 pt-3">
+      <header>
+        <h1 className="text-[22px] font-extrabold leading-7 text-fg">{t('titel')}</h1>
+      </header>
+
       {!pruefungen || pruefungen.length === 0 ? (
-        <Card><p className="text-fg-muted">{t('keine')}</p></Card>
+        <div className="rounded-[16px] border border-border bg-surface p-4">
+          <p className="text-[14px] text-fg-muted">{t('keine')}</p>
+        </div>
       ) : (
-        pruefungen.map((p) => (
-          <Card key={p.id} className="flex items-center justify-between gap-3">
-            <div>
-              <p className="font-semibold">{p.titel ?? `KW ${p.kalenderwoche}/${p.jahr}`}</p>
-              <p className="text-sm text-fg-muted">{t('dauer', { min: p.dauer_minuten })}</p>
-            </div>
-            <Link href={`/${locale}/campus/pruefung/${p.id}`}>
-              <Button>{t('starten')}</Button>
-            </Link>
-          </Card>
-        ))
+        <ul className="flex flex-col gap-3">
+          {pruefungen.map((p) => (
+            <li
+              key={p.id}
+              className="flex items-center justify-between gap-3 rounded-[16px] border border-border bg-surface p-4"
+            >
+              <div className="min-w-0">
+                <p className="truncate text-[15px] font-bold text-fg">
+                  {p.titel ?? `KW ${p.kalenderwoche}/${p.jahr}`}
+                </p>
+                <p className="text-[13px] text-fg-muted">{t('dauer', { min: p.dauer_minuten })}</p>
+              </div>
+              <Link
+                href={`/${locale}/campus/pruefung/${p.id}`}
+                className="touchable shrink-0 rounded-full bg-primary px-4 py-2.5 text-[13px] font-bold text-fg-onPrimary"
+              >
+                {t('starten')}
+              </Link>
+            </li>
+          ))}
+        </ul>
       )}
-      <p className="text-xs text-fg-muted">{t('hinweisFreitext')}</p>
+
+      <p className="text-[12px] text-fg-muted">{t('hinweisFreitext')}</p>
     </main>
   );
 }

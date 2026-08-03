@@ -1,0 +1,57 @@
+---
+titel: "Haertefehler"
+thema_code: "PT-FEM"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Haertewerte, Pruefverfahren und Waermebehandlungsbezug muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Werkstoffpruefung und Waermebehandlung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Haertepruefverfahren, Sollwerte und Bewertungsgrenzen mit Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation mit Verdacht">
+Ein Bauteil wirkt nach der Bearbeitung auffaellig. Ob die Haerte stimmt, erkennst du nicht sicher mit blossem Auge.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Haerte", "Haertefehler", "Waerme", "Pruefen"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Haertefehler in Alltagssprache">
+Ein Teil kann zu hart, zu weich oder ungleich hart sein. Das muss mit einem passenden Verfahren geprueft werden.
+</EinfachErklaert>
+
+<HaertefehlerSchema />
+
+<HaertefehlerTrainer titel="Haertefehler" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Pruefbedarf erkennen">
+Haertefehler koennen durch falsche Waermebehandlung, Materialverwechslung, lokale Ueberhitzung oder Prozessfehler entstehen. Bewertung braucht Pruefverfahren, Sollvorgabe und Freigabe.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Schleifbrandverdacht">
+Nach dem Schleifen ist eine Stelle verfaerbt. Du bewertest die Haerte nicht mit einem Hammer, sondern meldest den Pruefbedarf.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Haertefehler brauchen Pruefung, nicht Schaetzung.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEM-009::check"
+  fragen={[{ id: "pruefung", masterySchluessel: "FK-3-FEM-009::pruefung", aufgabenstellung: "Was ist bei Haerteverdacht richtig?", optionen: [{ id: "richtig", text: "Pruefverfahren und Sollvorgabe klaeren.", istKorrekt: true, erklaerung: "Richtig. Haerte braucht eine geeignete Pruefung." }, { id: "falsch", text: "Mit einem Hammer testen.", istKorrekt: false, erklaerung: "Nein. Das ist kein freigegebenes Haertepruefverfahren." }] }]}
+/>

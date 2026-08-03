@@ -1,0 +1,57 @@
+---
+titel: "Kompressionszone"
+thema_code: "PT-KST"
+lesedauer_minuten: 7
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Druck-, Scher- und Waermebegriffe muessen fachlich geprueft werden."
+quellen:
+  - titel: "Tabellenbuch Kunststofftechnik Schneckengeometrie"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Kompressionszone und typische Prozesswirkung nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation beim Plastifizieren">
+Im mittleren Schneckenbereich steigt die Belastung des Materials. Du sollst erklaeren, warum dort Druck und Waerme wichtig sind.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Kompressionszone", "Schmelze", "Zylinder", "Plastifizieren"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Kompressionszone in Alltagssprache">
+Das Material wird zusammengedrueckt, bewegt und immer weiter aufgeschmolzen.
+</EinfachErklaert>
+
+<KompressionszoneSchema />
+
+<KompressionszoneTrainer titel="Kompressionszone" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Verdichten und Aufschmelzen">
+In der Kompressionszone nimmt der freie Raum im Schneckengang ab. Dadurch werden Druck, Scherung und Waermeeintrag fuer das Aufschmelzen wirksam.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Materialschonung">
+Bei Verfaerbungen oder Geruch meldest du den Zustand. Prozesswerte werden nicht frei verstellt, sondern nach Vorgabe geprueft.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Kompression bedeutet Druckaufbau und zunehmendes Aufschmelzen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-KST-005::check"
+  fragen={[{ id: "druck", masterySchluessel: "FK-2-KST-005::druck", aufgabenstellung: "Was passiert in der Kompressionszone?", optionen: [{ id: "richtig", text: "Material wird verdichtet und schmilzt zunehmend.", istKorrekt: true, erklaerung: "Richtig. Die Zone baut Druck und Waerme auf." }, { id: "falsch", text: "Das Werkzeug oeffnet zum Entformen.", istKorrekt: false, erklaerung: "Nein. Das gehoert zum Werkzeugzyklus." }] }]}
+/>

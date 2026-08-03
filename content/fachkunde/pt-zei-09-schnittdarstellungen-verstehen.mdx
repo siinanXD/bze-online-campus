@@ -1,0 +1,115 @@
+---
+titel: "Schnittdarstellungen verstehen"
+thema_code: "PT-ZEI"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Schnittregeln, Schraffur und Beispiele muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Technisches Zeichnen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Schnittarten und Schraffurregeln muessen vor Freigabe ergaenzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation bei einer Innenform">
+Von aussen erkennst du eine Bohrung oder einen Hohlraum nicht immer klar. Eine Schnittdarstellung zeigt,
+wie das Teil innen aufgebaut ist.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schnitt", "Schraffur", "Bauteil", "Ansichten", "Hohlraum"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schnitt in Alltagssprache">
+Bei einem Schnitt stellst du dir vor, das Teil waere aufgeschnitten. So siehst du Innenformen. Die Schraffur
+zeigt im Lernbeispiel, welche Flaechen geschnitten wurden.
+</EinfachErklaert>
+
+<SchnittdarstellungSchema />
+
+<SchnittdarstellungTrainer titel="Schnittdarstellung deuten" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Innenkonturen sichtbar machen">
+Schnittdarstellungen sind technische Darstellungen, die Innenkonturen, Bohrungen oder Hohlraeume sichtbar
+machen. Geschnittene Flaechen werden nach Zeichnungsregel gekennzeichnet, haeufig mit Schraffur. Die
+Darstellung muss mit den anderen Ansichten zusammen gelesen werden.
+</FachlichErklaert>
+
+## Was du unterscheidest
+
+| Element | Bedeutung |
+|---|---|
+| Schnittdarstellung | Gedanklich aufgeschnittenes Bauteil |
+| Schraffur | Kennzeichnung geschnittener Flaechen |
+| Hohlraum | Nicht als Material verwechseln |
+| Ansicht | Ergaenzt die Forminformation |
+
+<Praxisbeispiel titel="Praxisbeispiel Bohrung">
+In der Schnittdarstellung erkennst du, dass eine Bohrung nicht durch das ganze Teil geht. Ohne Schnitt
+wuerdest du diese Innenform leichter falsch deuten.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Schnittarten, Schraffurrichtung und Sonderregeln muessen nach Tabellenbuch oder freigegebener Zeichnung
+gelesen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Ein Schnitt zeigt Innenform. Schraffur zeigt geschnittene Flaeche.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-ZEI-009::check"
+  fragen={[
+    {
+      id: "innenform",
+      masterySchluessel: "FK-1-ZEI-009::innenform",
+      aufgabenstellung: "Wozu dient eine Schnittdarstellung?",
+      optionen: [
+        {
+          id: "innen",
+          text: "Sie macht Innenkonturen und Hohlraeume sichtbar.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Schnitte helfen beim Lesen innerer Formen.",
+        },
+        {
+          id: "farbe",
+          text: "Sie zeigt die Farbe des Bauteils.",
+          istKorrekt: false,
+          erklaerung: "Nein. Es geht um technische Forminformationen.",
+        },
+      ],
+    },
+    {
+      id: "schraffur",
+      masterySchluessel: "FK-1-ZEI-009::schraffur",
+      aufgabenstellung: "Was zeigt Schraffur im Lernbeispiel?",
+      optionen: [
+        {
+          id: "flaeche",
+          text: "Geschnittene Flaechen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Schraffur kennzeichnet geschnittenes Material.",
+        },
+        {
+          id: "masszahl",
+          text: "Den Zahlenwert eines Masses.",
+          istKorrekt: false,
+          erklaerung: "Das ist die Masszahl, nicht die Schraffur.",
+        },
+      ],
+    },
+  ]}
+/>

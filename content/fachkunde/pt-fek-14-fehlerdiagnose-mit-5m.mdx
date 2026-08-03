@@ -1,0 +1,57 @@
+---
+titel: "Fehlerdiagnose mit 5M"
+thema_code: "PT-FEK"
+lesedauer_minuten: 10
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. 5M-Abgrenzung, Eskalationsweg und Dokumentation muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript Qualitaets-/Fehlerdiagnose und betriebliche Meldevorgabe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "5M-Begriffe, Beispiele und betriebliche Reaktionswege nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation bei wiederholtem Fehler">
+Mehrere Kunststoffteile zeigen denselben Fehler. Eine schnelle Vermutung reicht nicht, weil Material, Maschine, Methode, Mensch und Umfeld beteiligt sein koennen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Material", "Maschine", "Methode", "Dokumentation"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="5M in Alltagssprache">
+5M ist eine Sortierhilfe fuer Ursachen. Du schaust nicht nur auf eine Sache, sondern pruefst mehrere Ursachenfelder.
+</EinfachErklaert>
+
+<Fehlerdiagnose5MSchema />
+
+<Fehlerdiagnose5MTrainer titel="Fehlerdiagnose mit 5M" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Ursachen strukturiert pruefen">
+Die 5M-Methode ordnet Ursachen nach Material, Maschine, Methode, Mensch und Mitwelt. Erst werden Beobachtung, Lage, Haeufigkeit, Charge und Prozesszustand dokumentiert, dann werden Massnahmen nach Freigabe festgelegt.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Schichtwechsel">
+Nach einem Schichtwechsel treten Schlieren auf. Du pruefst Materialcharge, Trocknung, Maschinenzustand, Ablauf und Umgebung, statt sofort einen Parameter frei zu veraendern.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+5M verhindert Schnellschuesse bei der Fehlersuche.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEK-014::check"
+  fragen={[{ id: "5m", masterySchluessel: "FK-3-FEK-014::5m", aufgabenstellung: "Was ist der Zweck der 5M-Methode?", optionen: [{ id: "richtig", text: "Ursachenfelder strukturiert pruefen, bevor Massnahmen festgelegt werden.", istKorrekt: true, erklaerung: "Richtig. 5M ordnet die Fehlersuche." }, { id: "falsch", text: "Die erste Vermutung sofort als Ursache festlegen.", istKorrekt: false, erklaerung: "Nein. Genau das soll 5M vermeiden." }] }]}
+/>

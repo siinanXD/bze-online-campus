@@ -1,0 +1,57 @@
+---
+titel: "Verformung und Riss"
+thema_code: "PT-FEM"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Fehlerbilder, Sperrweg und Pruefbedarf fuer Risse muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Werkstofffehler und betriebliche QS-Anweisung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Rissbewertung, Sichtpruefung und Sperrlogik mit Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation bei der Sichtpruefung">
+Ein Teil ist verbogen, ein anderes zeigt eine feine Linie im Material. Du musst Verformung und Riss unterscheiden.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Verformung", "Riss", "Zaehigkeit", "Sperrung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Verformung und Riss in Alltagssprache">
+Verformung heisst: Die Form stimmt nicht mehr. Riss heisst: Das Material ist angerissen oder getrennt.
+</EinfachErklaert>
+
+<VerformungRissSchema />
+
+<VerformungRissTrainer titel="Verformung und Riss" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Formfehler und Materialtrennung unterscheiden">
+Verformung kann durch Kraft, Spannung, Waerme oder falsche Handhabung entstehen. Risse sind kritische Materialtrennungen und muessen sicher gesperrt, geprueft und bewertet werden.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Anriss">
+Eine Biegekante zeigt einen feinen Anriss. Auch wenn das Mass noch passt, wird das Teil nicht als Gutteil weitergegeben.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ein Riss ist kein Schoenheitsfehler.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEM-007::check"
+  fragen={[{ id: "riss", masterySchluessel: "FK-3-FEM-007::riss", aufgabenstellung: "Was ist bei Rissverdacht richtig?", optionen: [{ id: "richtig", text: "Teil sperren, markieren und melden.", istKorrekt: true, erklaerung: "Richtig. Risse brauchen sichere Bewertung." }, { id: "falsch", text: "Riss ueberlackieren und weitergeben.", istKorrekt: false, erklaerung: "Nein. Das verdeckt den Fehler." }] }]}
+/>

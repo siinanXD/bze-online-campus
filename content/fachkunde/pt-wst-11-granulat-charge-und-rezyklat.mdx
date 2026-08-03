@@ -1,0 +1,114 @@
+---
+titel: "Granulat, Charge und Rezyklat"
+thema_code: "PT-WST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Rezyklatanteile, Chargenregeln und Dokumentationspflichten muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript Materialverfolgung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Chargenfuehrung, Rezyklatfreigabe und Dokumentationsregeln muessen mit Betrieb und Traeger abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Materialsack">
+Du bereitest Material fuer einen Auftrag vor. Auf dem Sack stehen Materialname, Charge und weitere Angaben.
+Du sollst sicherstellen, dass das Material zum Auftrag passt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Granulat", "Charge", "Rezyklat", "Rueckverfolgbarkeit", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Materialverfolgung in Alltagssprache">
+Granulat ist das Material in Koernerform. Die Charge sagt, zu welcher Materialmenge es gehoert. Rezyklat
+darf nur nach Vorgabe eingesetzt werden.
+</EinfachErklaert>
+
+<GranulatChargeRezyklatSchema />
+
+<GranulatChargeRezyklatTrainer titel="Granulat, Charge und Rezyklat verfolgen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Rueckverfolgbarkeit sichern">
+Granulat, Charge und Rezyklat sind wichtig fuer Qualitaet und Rueckverfolgbarkeit. Material muss eindeutig
+dem Auftrag zugeordnet werden. Rezyklatanteile oder Materialwechsel duerfen nur nach Freigabe erfolgen.
+</FachlichErklaert>
+
+## Was du pruefst
+
+| Punkt | Sichere Handlung |
+|---|---|
+| Materialname | Mit Auftrag vergleichen |
+| Charge | Notieren oder scannen nach Vorgabe |
+| Rezyklat | Freigabe und Anteil nach Vorgabe pruefen |
+| Mehrere Saecke | Verwechslung vermeiden |
+
+<Praxisbeispiel titel="Praxisbeispiel zwei Chargen">
+Am Arbeitsplatz stehen zwei Chargen desselben Materials. Du mischst sie nicht still, sondern klaerst
+Auftrag, Freigabe und Dokumentation.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Chargenfuehrung, Rezyklatanteile, Materialfreigaben und Dokumentationsregeln muessen aus Auftrag,
+Traegerskript, Datenblatt oder Unterweisung stammen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Ohne Etikett und Charge ist Material nicht sicher rueckverfolgbar.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WST-011::check"
+  fragen={[
+    {
+      id: "charge",
+      masterySchluessel: "FK-1-WST-011::charge",
+      aufgabenstellung: "Was pruefst du beim Oeffnen eines neuen Materialsacks?",
+      optionen: [
+        {
+          id: "etikett",
+          text: "Etikett, Material und Charge.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Das sichert Auftragspassung und Rueckverfolgbarkeit.",
+        },
+        {
+          id: "wegwerfen",
+          text: "Etikett sofort wegwerfen.",
+          istKorrekt: false,
+          erklaerung: "Nein. Das Etikett enthaelt wichtige Informationen.",
+        },
+      ],
+    },
+    {
+      id: "rezyklat",
+      masterySchluessel: "FK-1-WST-011::rezyklat",
+      aufgabenstellung: "Was gilt, wenn Rezyklat eingesetzt werden soll?",
+      optionen: [
+        {
+          id: "freigabe",
+          text: "Freigabe und Vorgabe pruefen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Rezyklat wird nicht nach Gefuehl beigemischt.",
+        },
+        {
+          id: "immer",
+          text: "Rezyklat darf immer beliebig beigemischt werden.",
+          istKorrekt: false,
+          erklaerung: "Nein. Anteil und Einsatz brauchen Vorgabe.",
+        },
+      ],
+    },
+  ]}
+/>

@@ -1,0 +1,55 @@
+---
+titel: "Laengs- und Plandrehen"
+thema_code: "PT-MET"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Arbeitsgangabgrenzung und Zeichnungsbezug muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Dreharbeitsgaenge"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Begriffe und Beispiele fuer Drehoperationen nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Zeichnung">
+Die Zeichnung verlangt eine Mantelflaeche und eine Stirnflaeche. Du ordnest zu, ob Laengsdrehen oder
+Plandrehen passt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Laengsdrehen", "Plandrehen", "Zeichnung", "Masszahl"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Dreharten in Alltagssprache">
+Laengsdrehen bearbeitet entlang des Werkstuecks. Plandrehen bearbeitet die vordere Flaeche.
+</EinfachErklaert>
+
+<LaengsPlanDrehenSchema />
+
+<LaengsPlanDrehenTrainer titel="Laengs- und Plandrehen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Bearbeitungsrichtung und Flaeche">
+Laengsdrehen und Plandrehen unterscheiden sich durch Richtung, Flaechenziel und Zeichnungsbezug. Die passende
+Operation ergibt sich aus Arbeitsplan und Zeichnung.
+</FachlichErklaert>
+
+<Merksatz titel="Merksatz">
+Laengsdrehen: Mantel. Plandrehen: Stirn.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-006::check"
+  fragen={[{ id: "plan", masterySchluessel: "FK-2-MET-006::plan", aufgabenstellung: "Welche Flaeche bearbeitet Plandrehen?", optionen: [{ id: "stirn", text: "Die Stirnflaeche.", istKorrekt: true, erklaerung: "Richtig." }, { id: "kette", text: "Ein Kettenglied.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

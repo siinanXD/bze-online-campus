@@ -1,0 +1,115 @@
+---
+titel: "Thermoplaste"
+thema_code: "PT-WST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Verarbeitungstemperaturen, Materialbeispiele und Begriffstiefe muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Thermoplaste"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Temperaturen, Werkstoffe und Verarbeitungsfenster duerfen erst nach Quellenabgleich genutzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Spritzgiessprozess">
+Granulat wird erwaermt und soll als Schmelze verarbeitet werden. Du erkennst: Das Waermeverhalten ist
+ein Grund, warum Thermoplaste fuer viele Prozesse wichtig sind.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Thermoplast", "Kunststoff", "Schmelze", "Granulat", "Datenblatt"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Thermoplast in Alltagssprache">
+Ein Thermoplast kann bei geeigneter Waerme weich oder schmelzfaehig werden. Beim Abkuehlen wird er wieder
+fester.
+</EinfachErklaert>
+
+<ThermoplastSchema />
+
+<ThermoplastTrainer titel="Thermoplaste verstehen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Verhalten bei Waerme">
+Thermoplaste gehoeren zu den Kunststoffen. Ihr Verhalten bei Waerme macht sie fuer Verfahren wie
+Spritzgiessen geeignet. Welche Temperatur, Trocknung oder Verarbeitung gilt, steht im Datenblatt,
+Auftrag oder in der Unterweisung.
+</FachlichErklaert>
+
+## Grundgedanken
+
+| Zustand | Bedeutung |
+|---|---|
+| Granulat | Lieferform vor der Verarbeitung |
+| Weichwerden | Waerme beeinflusst Formbarkeit |
+| Schmelze | Fliessfaehiger Zustand fuer Verarbeitung |
+| Abkuehlen | Bauteil wird wieder fester |
+
+<Praxisbeispiel titel="Praxisbeispiel falsche Temperatur">
+Die Maschine meldet eine unklare Temperaturvorgabe. Du stellst keine Werte nach Gefuehl ein, sondern
+pruefst Datenblatt, Materialfreigabe und Einrichtvorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Konkrete Materialbeispiele, Temperaturen, Trocknung und Verarbeitungsfenster muessen aus Tabellenbuch,
+Datenblatt oder freigegebener Unterweisung stammen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Thermoplast heisst: Waermeverhalten beachten, Werte aus Vorgabe lesen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WST-007::check"
+  fragen={[
+    {
+      id: "waerme",
+      masterySchluessel: "FK-1-WST-007::waerme",
+      aufgabenstellung: "Was passiert mit vielen Thermoplasten bei geeigneter Waerme?",
+      optionen: [
+        {
+          id: "weich",
+          text: "Sie werden weich oder schmelzfaehig.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Das ist ein wichtiges Thermoplast-Merkmal.",
+        },
+        {
+          id: "immer-hart",
+          text: "Sie bleiben immer unveraendert hart.",
+          istKorrekt: false,
+          erklaerung: "Nein. Gerade das Waermeverhalten ist wichtig.",
+        },
+      ],
+    },
+    {
+      id: "werte",
+      masterySchluessel: "FK-1-WST-007::werte",
+      aufgabenstellung: "Woher kommen konkrete Verarbeitungstemperaturen?",
+      optionen: [
+        {
+          id: "datenblatt",
+          text: "Aus Datenblatt, Auftrag oder freigegebener Vorgabe.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Werte werden nicht erfunden.",
+        },
+        {
+          id: "raten",
+          text: "Aus Erfahrung geraten.",
+          istKorrekt: false,
+          erklaerung: "Nein. Das ist fachlich unsicher.",
+        },
+      ],
+    },
+  ]}
+/>

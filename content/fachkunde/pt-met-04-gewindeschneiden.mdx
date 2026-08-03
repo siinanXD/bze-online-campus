@@ -1,0 +1,59 @@
+---
+titel: "Gewindeschneiden"
+thema_code: "PT-MET"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Kernlochwerte, Gewindearten und Werkzeugfuehrung muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Gewinde"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Kernloch, Gewindeprofil und Schneidbedingungen sind quellenpflichtig."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation vor dem Innengewinde">
+Vor dem Gewinde brauchst du ein passendes Kernloch. Wenn das Kernloch nicht stimmt, kann das Gewinde falsch
+werden oder das Werkzeug brechen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Gewinde", "Kernloch", "Span", "Schmierung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Gewindeschneiden in Alltagssprache">
+Ein Gewinde wird in ein vorbereitetes Loch geschnitten. Das Werkzeug erzeugt die schraubenfoermige Form.
+</EinfachErklaert>
+
+<GewindeschneidenSchema />
+
+<GewindeschneidenTrainer titel="Gewindeschneiden" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Kernloch und Profil">
+Gewindeschneiden braucht ein passendes Kernloch, ein geeignetes Schneidwerkzeug und eine gefuehrte Bewegung.
+Spanbruch und Schmierung koennen entscheidend sein.
+</FachlichErklaert>
+
+<TabellenbuchHinweis>
+Kernlochdurchmesser und Gewindetabellen werden nicht auswendig geraten.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Ohne passendes Kernloch kein gutes Innengewinde.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-004::check"
+  fragen={[{ id: "kernloch", masterySchluessel: "FK-2-MET-004::kernloch", aufgabenstellung: "Was braucht ein Innengewinde vor dem Schneiden?", optionen: [{ id: "kernloch", text: "Ein passendes Kernloch.", istKorrekt: true, erklaerung: "Richtig." }, { id: "farbe", text: "Eine zufaellige Markierung.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

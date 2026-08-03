@@ -1,0 +1,115 @@
+---
+titel: "Kupfer und Leitfaehigkeit"
+thema_code: "PT-WST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Leitfaehigkeitswerte, Kupfersorten und Einsatzbeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Kupfer und Leitfaehigkeit"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Leitfaehigkeitswerte, Kupfersorten und Einsatzregeln duerfen erst nach Quellenabgleich genutzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an einer Leitung">
+Ein Bauteil soll Strom oder Waerme gut weiterleiten. Auf der Zeichnung steht Kupfer. Du ordnest Kupfer
+als Nichteisenmetall ein und beachtest die genaue Werkstoffangabe.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Kupfer", "Leitfaehigkeit", "Nichteisenmetall", "Werkstoffangabe", "Datenblatt"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Kupfer in Alltagssprache">
+Kupfer ist ein Metall, das Strom und Waerme gut leiten kann. Deshalb wird es oft fuer Leitungen oder
+Kontakte genutzt.
+</EinfachErklaert>
+
+<KupferSchema />
+
+<KupferTrainer titel="Kupfer und Leitfaehigkeit" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Leitfaehiges NE-Metall">
+Kupfer gehoert zu den Nichteisenmetallen. Es ist fuer gute elektrische und thermische Leitfaehigkeit
+bekannt. Die genaue Sorte, Oberflaeche und Verarbeitung ergeben sich aus Zeichnung, Datenblatt oder
+Unterweisung.
+</FachlichErklaert>
+
+## Typische Einordnung
+
+| Punkt | Bedeutung |
+|---|---|
+| Werkstoffgruppe | Nichteisenmetall |
+| Eigenschaft | Gute elektrische und thermische Leitfaehigkeit |
+| Einsatz | Leitung, Kontakt, Waermeuebertragung nach Vorgabe |
+| Quelle | Zeichnung, Datenblatt, Tabellenbuch |
+
+<Praxisbeispiel titel="Praxisbeispiel Kontaktteil">
+Ein Kontaktteil soll aus Kupfer gefertigt werden. Du beachtest nicht nur die Leitfaehigkeit, sondern auch
+Sorte, Oberflaeche, Verschmutzung und Bearbeitungsvorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Konkrete Leitfaehigkeitswerte, Kupfersorten, Legierungen und Einsatzgrenzen muessen aus Tabellenbuch,
+Datenblatt oder freigegebener Unterweisung stammen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Kupfer leitet gut, aber die konkrete Werkstoffangabe bleibt verbindlich.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WST-006::check"
+  fragen={[
+    {
+      id: "gruppe",
+      masterySchluessel: "FK-1-WST-006::gruppe",
+      aufgabenstellung: "Wie ordnest du Kupfer grundlegend ein?",
+      optionen: [
+        {
+          id: "ne",
+          text: "Als Nichteisenmetall.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Kupfer ist ein typisches NE-Metall.",
+        },
+        {
+          id: "kunststoff",
+          text: "Als Kunststoff.",
+          istKorrekt: false,
+          erklaerung: "Nein. Kupfer ist ein Metall.",
+        },
+      ],
+    },
+    {
+      id: "leitfaehigkeit",
+      masterySchluessel: "FK-1-WST-006::leitfaehigkeit",
+      aufgabenstellung: "Warum wird Kupfer oft fuer Leitungen oder Kontakte genutzt?",
+      optionen: [
+        {
+          id: "leitet",
+          text: "Wegen seiner guten Leitfaehigkeit.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Kupfer kann Strom und Waerme gut leiten.",
+        },
+        {
+          id: "isolation",
+          text: "Weil es immer gut isoliert.",
+          istKorrekt: false,
+          erklaerung: "Nein. Kupfer ist gerade fuer Leitfaehigkeit bekannt.",
+        },
+      ],
+    },
+  ]}
+/>

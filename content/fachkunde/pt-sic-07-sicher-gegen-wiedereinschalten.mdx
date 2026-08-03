@@ -1,0 +1,120 @@
+---
+titel: "Sicher gegen Wiedereinschalten"
+thema_code: "PT-SIC"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Konkrete LOTO-, Freischalt- und Sperrvorgaben muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Freischalten und Sichern"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Anlagenspezifische Schritte, Berechtigungen und Kennzeichnungen muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung Arbeitssicherheit"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit erklaert die Grundidee und ersetzt keine Freischaltberechtigung."
+---
+
+<WissensstufenLeiste stufen={["anwenden", "verstehen"]} />
+
+<StoryEinstieg titel="Situation vor dem Eingriff">
+Eine Stoerung ist behoben, aber eine Person arbeitet noch im Maschinenbereich. Wenn jetzt jemand einschaltet,
+kann aus Stillstand sofort Gefahr werden. Deshalb muss Wiedereinschalten sichtbar und wirksam verhindert werden.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Freischalten", "Wiedereinschalten sichern", "Kennzeichnen", "Freigabe", "Restenergie"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Nicht aus Versehen einschalten">
+Sicher gegen Wiedereinschalten heisst: Die Maschine darf nicht loslaufen, waehrend jemand daran arbeitet.
+Dazu wird nach Vorgabe abgestellt, gesichert, gekennzeichnet und vor dem Eingriff geprueft.
+</EinfachErklaert>
+
+<WiedereinschaltenSchema />
+
+<WiedereinschaltenTrainer titel="Sicherungsfolge trainieren" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Sichern ist mehr als Stoppen">
+Ein normaler Halt reicht fuer Arbeiten im Gefahrbereich nicht aus. Energiequellen, Restenergie,
+Sperrungen, Kennzeichnung und Freigabe muessen nach betrieblicher Vorgabe geklaert sein. Wer nicht
+berechtigt oder unterwiesen ist, fuehrt solche Schritte nicht eigenmaechtig aus.
+</FachlichErklaert>
+
+## Grundfolge im Kopf
+
+| Schritt | Ziel | Fehler, der vermieden wird |
+|---|---|---|
+| Abstellen | Anlage kontrolliert stoppen | In laufende Bewegung eingreifen |
+| Sichern | Wiedereinschalten verhindern | Jemand startet aus Versehen |
+| Kennzeichnen | Zustand sichtbar machen | Andere kennen die Sperrung nicht |
+| Pruefen | Sicherer Zustand wird bestaetigt | Nur nach Anzeige oder Gefuehl handeln |
+| Freigabe | Weiterarbeit ist erlaubt | Ohne Klaerung neu starten |
+
+<Praxisbeispiel titel="Praxisbeispiel Schaltstelle">
+Du siehst eine Kennzeichnung an einer Schaltstelle. Du entfernst sie nicht und startest nicht neu, nur weil
+niemand danebensteht. Du klaerst den Status ueber den Meldeweg.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Diese Lerneinheit ist bewusst allgemein. Verbindlich sind die betriebliche Freischaltanweisung,
+Unterweisung, Berechtigung und Freigabe.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Stillstand ist nicht automatisch sicher. Wiedereinschalten muss nach Vorgabe verhindert sein.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-SIC-007::check"
+  fragen={[
+    {
+      id: "normaler-halt",
+      masterySchluessel: "FK-1-SIC-007::normaler-halt",
+      aufgabenstellung: "Warum reicht ein normaler Halt vor Arbeiten im Gefahrbereich nicht automatisch aus?",
+      optionen: [
+        {
+          id: "wiederein",
+          text: "Weil die Anlage unerwartet wieder anlaufen oder Restenergie vorhanden sein kann.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Stillstand muss nach Vorgabe gesichert und geprueft werden.",
+        },
+        {
+          id: "zeit",
+          text: "Weil ein normaler Halt immer zu lange dauert.",
+          istKorrekt: false,
+          erklaerung: "Es geht nicht um Zeit, sondern um sichere Energie- und Freigabelogik.",
+        },
+      ],
+    },
+    {
+      id: "kennzeichnung",
+      masterySchluessel: "FK-1-SIC-007::kennzeichnung",
+      aufgabenstellung: "Was bedeutet eine Kennzeichnung an einer gesicherten Schaltstelle fuer dich?",
+      optionen: [
+        {
+          id: "nicht-entfernen",
+          text: "Nicht entfernen, nicht einschalten und Status klaeren.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Kennzeichnung macht eine Sperrung oder Sicherung sichtbar.",
+        },
+        {
+          id: "entfernen",
+          text: "Entfernen, wenn die Maschine gebraucht wird.",
+          istKorrekt: false,
+          erklaerung: "Das kann Personen im Gefahrbereich gefaehrden.",
+        },
+      ],
+    },
+  ]}
+/>

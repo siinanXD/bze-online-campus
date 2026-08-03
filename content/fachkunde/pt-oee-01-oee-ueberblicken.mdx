@@ -1,0 +1,57 @@
+---
+titel: "OEE ueberblicken"
+thema_code: "PT-OEE"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. OEE-Definition, Zielwerte und Betriebsdatenfelder muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch, OEE-Unterlagen und Betriebsdatenerfassung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Formelvarianten und Betriebsdatenfelder nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Schichtende">
+Die Linie hat den ganzen Tag gelaufen. Trotzdem fragt der Ausbilder: Warum liegt die Gesamtanlageneffektivitaet unter dem Ziel? Du brauchst zuerst den Ueberblick.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["OEE","Verfuegbarkeit","Leistungsgrad","Qualitaetsrate","Stillstandszeit"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Drei Bausteine">
+OEE setzt sich aus Verfuegbarkeit, Leistungsgrad und Qualitaetsrate zusammen. Fehlt ein Baustein, sinkt der Gesamtwert.
+</EinfachErklaert>
+
+<OeeUeberblickenSchema />
+
+<OeeUeberblickenTrainer titel="OEE ueberblicken" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="OEE als Produkt der drei Faktoren">
+OEE zeigt, wie wirksam eine Anlage produziert. Verfuegbarkeit bewertet Laufzeit gegen geplante Zeit, Leistungsgrad die Ausbringung gegen Sollleistung und Qualitaetsrate den Gutanteil. Zahlenwerte kommen immer aus freigegebenen Betriebsdaten.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Spritzgiesszelle">
+Eine Zelle laeuft lange, aber mit vielen kurzen Stopps und Nacharbeit. OEE hilft, die Verluste sichtbar zu trennen statt nur "zu langsam" zu sagen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+OEE = Verfuegbarkeit mal Leistungsgrad mal Qualitaetsrate.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-OEE-001::check"
+  fragen={[{ id: "001", masterySchluessel: "FK-4-OEE-001::kern", aufgabenstellung: "Woraus setzt sich OEE zusammen?", optionen: [{ id: "richtig", text: "Aus Verfuegbarkeit, Leistungsgrad und Qualitaetsrate.", istKorrekt: true, erklaerung: "Richtig. Alle drei Faktoren gehoeren dazu." }, { id: "falsch", text: "Nur aus der reinen Laufzeit der Maschine.", istKorrekt: false, erklaerung: "Nein. Leistung und Qualitaet fehlen dann." }] }]}
+/>

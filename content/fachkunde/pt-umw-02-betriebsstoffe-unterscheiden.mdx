@@ -1,0 +1,116 @@
+---
+titel: "Betriebsstoffe unterscheiden"
+thema_code: "PT-UMW"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Konkrete Betriebsstoffe und Gebindebezeichnungen muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Betriebsstoffe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Freigegebene Oele, Fette, KSS und Reiniger muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung Betriebsstoffe"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit nutzt Lernbeispiele statt realer Gebindefreigaben."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Gebinderegal">
+Im Regal stehen Oel, Fett, Kuehlschmierstoff und Reiniger. Die Behaelter sehen aehnlich aus. Ein falscher
+Betriebsstoff kann Maschine, Produkt, Umwelt oder Haut gefaehrden.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Betriebsstoff", "Oel", "Fett", "KSS", "Gefahrstoff"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Nicht nach Farbe entscheiden">
+Betriebsstoffe sind Hilfsstoffe fuer Maschine und Prozess. Du waehlst sie nicht nach Aussehen oder Geruch,
+sondern nach Kennzeichnung, Arbeitsanweisung und Unterweisung.
+</EinfachErklaert>
+
+<BetriebsstoffeSchema />
+
+<BetriebsstoffZuordnungTrainer titel="Betriebsstoff zur Situation waehlen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Betriebsstoffe brauchen Vorgaben">
+Oele, Fette, Kuehlschmierstoffe und Reiniger haben unterschiedliche Aufgaben und Risiken. Falsche Auswahl
+kann Schmierung verschlechtern, Dichtungen angreifen, Haut belasten oder Entsorgung erschweren.
+</FachlichErklaert>
+
+## Unterschied merken
+
+| Stoff | Typische Aufgabe | Worauf achten? |
+|---|---|---|
+| Oel | Schmieren oder Hydraulik | Gebinde und Freigabe |
+| Fett | Schmierstelle mit Haftung | Wartungsplan |
+| KSS | Kuehlen und schmieren | Hautschutz und Zustand |
+| Reiniger | Reinigen | Kennzeichnung und Schutzmassnahme |
+
+<Praxisbeispiel titel="Praxisbeispiel falsches Gebinde">
+Du findest ein unbeschriftetes Gebinde. Du nutzt es nicht und fuellst nichts um, sondern meldest den Fund.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Konkrete Produktnamen, Mischungen und Einsatzstellen duerfen nur aus freigegebenen Betriebsunterlagen kommen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Betriebsstoff nie raten: Kennzeichnung lesen, Vorgabe pruefen, Unsicherheit melden.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-UMW-002::check"
+  fragen={[
+    {
+      id: "gebinde",
+      masterySchluessel: "FK-1-UMW-002::gebinde",
+      aufgabenstellung: "Woran orientierst du dich bei Betriebsstoffen zuerst?",
+      optionen: [
+        {
+          id: "kennzeichnung",
+          text: "An Kennzeichnung, Gebinde und betrieblicher Vorgabe.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Aussehen und Geruch reichen nicht.",
+        },
+        {
+          id: "farbe",
+          text: "An Farbe und Geruch.",
+          istKorrekt: false,
+          erklaerung: "Das ist unsicher und kann zu falscher Auswahl fuehren.",
+        },
+      ],
+    },
+    {
+      id: "unbeschriftet",
+      masterySchluessel: "FK-1-UMW-002::unbeschriftet",
+      aufgabenstellung: "Was machst du mit einem unbeschrifteten Gebinde?",
+      optionen: [
+        {
+          id: "melden",
+          text: "Nicht verwenden und melden.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Unklare Stoffe werden nicht eingesetzt.",
+        },
+        {
+          id: "testen",
+          text: "Kurz testen, ob es passt.",
+          istKorrekt: false,
+          erklaerung: "Das kann gefaehrlich sein und Maschinen schaden.",
+        },
+      ],
+    },
+  ]}
+/>

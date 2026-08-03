@@ -1,0 +1,57 @@
+---
+titel: "Kanban-Grundprinzip"
+thema_code: "PT-LAG"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Kanban-Regeln, Behaeltermengen, Kartenfluss und Nachfuellprozess muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript, Lean-Unterlagen, Kanban-Standard und betriebliche Materialflussregeln"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Kartenregeln, feste Mengen und Nachfuellzeiten nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Montageplatz">
+Ein Behaelter mit Kleinteilen ist leer. Anstatt direkt grosse Mengen zu bestellen, wird die Kanban-Karte weitergegeben. Sie sagt, was in welcher Menge nachgefuellt wird.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Kanban", "Bestand", "Meldebestand", "Materialfluss", "Nachschub"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Verbrauch gibt das Signal">
+Kanban funktioniert wie ein Signal-Kreis. Wenn Material verbraucht ist, loest Karte oder Behaelter Nachschub in fester Menge aus.
+</EinfachErklaert>
+
+<KanbanGrundprinzipSchema />
+
+<KanbanGrundprinzipTrainer titel="Kanban-Grundprinzip" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Pull-Prinzip">
+Kanban ist ein einfaches Pull-System: Nachschub wird durch Verbrauch ausgeloest, nicht durch freie Schaetzung. Karte, Behaelter, Menge, Lagerplatz und Nachfuellregel muessen eindeutig sein. Wenn Karten liegen bleiben oder Mengen veraendert werden, wird der Regelkreis instabil.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Zwei-Behaelter-System">
+Ein Arbeitsplatz hat zwei Behaelter Schrauben. Wenn ein Behaelter leer ist, geht seine Karte an das Lager. Der zweite Behaelter reicht als Puffer, bis der erste wieder gefuellt zurueckkommt.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Kanban: Verbrauch sendet Signal, feste Menge kommt nach.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-LAG-004::check"
+  fragen={[{ id: "kanban", masterySchluessel: "FK-4-LAG-004::kanban", aufgabenstellung: "Was ist beim Kanban-Grundprinzip wichtig?", optionen: [{ id: "richtig", text: "Verbrauchssignal, Karte und feste Nachfuellmenge einhalten.", istKorrekt: true, erklaerung: "Richtig. So bleibt der Materialfluss geregelt." }, { id: "falsch", text: "Kanban-Karten sammeln und spaeter gesammelt klaeren.", istKorrekt: false, erklaerung: "Nein. Liegen gebliebene Karten unterbrechen den Nachschub." }] }]}
+/>

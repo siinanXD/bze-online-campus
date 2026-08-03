@@ -1,0 +1,115 @@
+---
+titel: "Buegelmessschraube verwenden"
+thema_code: "PT-MES"
+lesedauer_minuten: 10
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Bauarten, Ablesung und Einsatzgrenzen muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Buegelmessschraube"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Ablesung, Messbereich, Genauigkeit und Bedienregeln muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation beim Feinmessen">
+Ein Aussenmass muss genauer geprueft werden. Der Messschieber reicht fuer die Aufgabe nicht aus. Dein
+Ausbilder zeigt dir die Buegelmessschraube.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Buegelmessschraube", "Spindel", "Ratsche", "Aussenmessung", "Messwert"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Buegelmessschraube in Alltagssprache">
+Die Buegelmessschraube ist ein feines Messmittel fuer Aussenmasse. Du schliesst sie nicht mit Gewalt,
+sondern nutzt die vorgesehenen Bedienelemente und liest nach Vorgabe ab.
+</EinfachErklaert>
+
+<BuegelmessschraubeSchema />
+
+<BuegelmessschraubeTrainer titel="Buegelmessschraube verwenden" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Feinmessmittel fuer Aussenmasse">
+Die Buegelmessschraube misst Aussenmasse mit Spindel, Amboss, Skala, Trommel und haeufig einer Ratsche.
+Sie wird im passenden Messbereich eingesetzt. Der Messdruck muss kontrolliert sein, sonst kann der Messwert
+unsicher werden.
+</FachlichErklaert>
+
+## Grundteile
+
+| Teil | Funktion |
+|---|---|
+| Buegel | Traegt die Messmechanik |
+| Amboss | Feste Messflaeche |
+| Spindel | Bewegliche Messflaeche |
+| Ratsche | Hilft bei gleichmaessigem Messdruck |
+
+<Praxisbeispiel titel="Praxisbeispiel schwergangig">
+Die Buegelmessschraube laesst sich schwer bewegen. Du erzwingst nichts, sondern meldest das Pruefmittel
+nach Vorgabe. Ein beschaedigtes Messmittel kann falsche Werte liefern.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Ablesung, Aufloesung, Messbereich und Bedienregeln der Buegelmessschraube muessen aus Tabellenbuch,
+Herstellerangabe oder Unterweisung gelesen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Fein messen heisst kontrolliert messen, nicht fester druecken.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MES-006::check"
+  fragen={[
+    {
+      id: "ratsche",
+      masterySchluessel: "FK-1-MES-006::ratsche",
+      aufgabenstellung: "Wozu dient die Ratsche an der Buegelmessschraube?",
+      optionen: [
+        {
+          id: "druck",
+          text: "Sie hilft beim gleichmaessigen Messdruck.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Zu viel Kraft kann Messwerte verfaelschen.",
+        },
+        {
+          id: "farbe",
+          text: "Sie zeigt die Farbe des Werkstoffs.",
+          istKorrekt: false,
+          erklaerung: "Nein. Die Ratsche ist ein Bedienelement.",
+        },
+      ],
+    },
+    {
+      id: "beschaedigt",
+      masterySchluessel: "FK-1-MES-006::beschaedigt",
+      aufgabenstellung: "Was machst du bei einem auffaelligen oder beschaedigten Messmittel?",
+      optionen: [
+        {
+          id: "melden",
+          text: "Nicht erzwingen, sondern nach Vorgabe melden.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Pruefmittel muessen verlaesslich sein.",
+        },
+        {
+          id: "gewalt",
+          text: "Mit Gewalt schliessen.",
+          istKorrekt: false,
+          erklaerung: "Das kann Messmittel und Werkstueck beschaedigen.",
+        },
+      ],
+    },
+  ]}
+/>

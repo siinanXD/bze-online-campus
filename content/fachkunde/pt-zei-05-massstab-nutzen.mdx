@@ -1,0 +1,113 @@
+---
+titel: "Massstab nutzen"
+thema_code: "PT-ZEI"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "beispielwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Beispielmassstaebe muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Technisches Zeichnen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Massstabsregeln und Beispielwerte muessen mit der freigegebenen Quelle abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation bei einem kleinen Detail">
+Ein kleines Detail ist auf der Zeichnung gross dargestellt. Du sollst aber nicht mit dem Lineal vom Papier
+abmessen, sondern die eingetragenen Masszahlen lesen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Massstab", "Verkleinerung", "Vergroesserung", "Bemassung", "Masszahl"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Massstab in Alltagssprache">
+Der Massstab sagt, ob das Teil auf dem Papier groesser, kleiner oder gleich gross dargestellt ist. Die echten
+Masse liest du aus der Bemassung.
+</EinfachErklaert>
+
+<MassstabSchema />
+
+<MassstabTrainer titel="Massstab einordnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Darstellungsverhaeltnis statt Bauteilmass">
+Der Massstab beschreibt das Verhaeltnis zwischen Darstellung und wirklichem Bauteil. Bei 1:1 ist die
+Darstellung in Originalgroesse. Bei 2:1 ist sie vergroessert, bei 1:2 verkleinert. Fuer die Fertigung sind
+die eingetragenen Masszahlen verbindlich.
+</FachlichErklaert>
+
+## Erste Beispiele
+
+| Massstab | Bedeutung |
+|---|---|
+| 1:1 | Darstellung in Originalgroesse |
+| 2:1 | Darstellung vergroessert |
+| 1:2 | Darstellung verkleinert |
+
+<Praxisbeispiel titel="Praxisbeispiel Detailansicht">
+Eine kleine Ecke ist im Massstab 2:1 dargestellt, damit sie besser lesbar ist. Du uebernimmst trotzdem nicht
+die Papiergroesse, sondern die eingetragene Masszahl.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Massstabangaben und ihre Schreibweise muessen nach Tabellenbuch und freigegebener Zeichnung geprueft werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Der Massstab aendert die Darstellung, nicht die verbindliche Masszahl.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-ZEI-005::check"
+  fragen={[
+    {
+      id: "eins-zu-eins",
+      masterySchluessel: "FK-1-ZEI-005::eins-zu-eins",
+      aufgabenstellung: "Was bedeutet der Massstab 1:1?",
+      optionen: [
+        {
+          id: "original",
+          text: "Die Darstellung ist in Originalgroesse.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Trotzdem bleibt die Bemassung verbindlich.",
+        },
+        {
+          id: "doppelt",
+          text: "Das echte Bauteil muss doppelt so gross gefertigt werden.",
+          istKorrekt: false,
+          erklaerung: "Nein. Der Massstab beschreibt die Darstellung, nicht eine Aenderung der Fertigung.",
+        },
+      ],
+    },
+    {
+      id: "masszahl",
+      masterySchluessel: "FK-1-ZEI-005::masszahl",
+      aufgabenstellung: "Welche Angabe ist fuer die Fertigung entscheidend?",
+      optionen: [
+        {
+          id: "bemassung",
+          text: "Die eingetragene Masszahl in der Bemassung.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Papiergroessen werden nicht als Fertigungsmass abgemessen.",
+        },
+        {
+          id: "lineal",
+          text: "Die mit dem Lineal gemessene Papierlaenge.",
+          istKorrekt: false,
+          erklaerung: "Das ist unsicher und bei vergroesserten oder verkleinerten Darstellungen falsch.",
+        },
+      ],
+    },
+  ]}
+/>

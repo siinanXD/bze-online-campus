@@ -1,0 +1,57 @@
+---
+titel: "Sichere Fehlersuche"
+thema_code: "PT-IH"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Sicherheitsregeln, Restenergie, Befugnisse und betriebliche Freigabewege muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung, Sicherheitsregeln, LOTO-Vorgabe und Maschinenhandbuch"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Freischaltregeln, Restenergiequellen, pruefberechtigte Rollen und Meldewege nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation vor dem Oeffnen einer Schutzhaube">
+Eine Stoerung liegt hinter einer Schutzhaube. Bevor jemand sucht, wird geklaert: Welche Energie ist vorhanden, wer darf was pruefen und wie wird die Anlage sicher gemacht?
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Freischalten", "Restenergie", "Befugnis", "Verriegelung", "Meldung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Erst sichern, dann suchen">
+Fehlersuche darf niemanden gefaehrden. Vor dem Eingriff werden Energie, Bewegung, Druck, Temperatur und Befugnis geklaert.
+</EinfachErklaert>
+
+<SichereFehlersucheSchema />
+
+<SichereFehlersucheTrainer titel="Sichere Fehlersuche" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Restenergie und Freigabe">
+Maschinen koennen auch nach dem Stoppen noch gefaehrlich sein: Restdruck, gespeicherte Federkraft, heisse Flaechen, elektrische Energie oder nachlaufende Teile. Sichere Fehlersuche folgt Betriebsanweisung und Freigabeweg.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Pneumatikzylinder klemmt">
+Ein Zylinder klemmt. Du greifst nicht in den Bewegungsraum, sondern stoppst und meldest die Stoerung. Druck, Restenergie und Befugnis werden vor jeder weiteren Pruefung geklaert.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Fehlersuche beginnt mit Sicherheit, nicht mit dem Werkzeug.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-IH-013::check"
+  fragen={[{ id: "sichere-suche", masterySchluessel: "FK-3-IH-013::sichere-suche", aufgabenstellung: "Was ist vor technischer Fehlersuche wichtig?", optionen: [{ id: "richtig", text: "Gefahren, Restenergie, Freischalten und Befugnis klaeren.", istKorrekt: true, erklaerung: "Richtig. Fehlersuche muss sicher geplant werden." }, { id: "falsch", text: "Schutzeinrichtung kurz ueberbruecken, damit man schneller sieht, was passiert.", istKorrekt: false, erklaerung: "Nein. Schutzfunktionen werden nicht ueberbrueckt." }] }]}
+/>

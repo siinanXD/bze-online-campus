@@ -1,0 +1,57 @@
+---
+titel: "Messunsicherheit in der QS"
+thema_code: "PT-QS"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Messunsicherheitsregeln, Messmittelstatus und Grenzfallentscheidung muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Messtechnik und betriebliche Pruefmittelvorgabe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Messunsicherheitsdefinition, Kalibrierstatus und Grenzfallweg ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Grenzwert">
+Ein Messwert liegt sehr nah an der Grenze. Jetzt reicht es nicht, nur die Zahl vorzulesen: Du musst Messmittel und Unsicherheit beachten.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Messunsicherheit", "Pruefmittel", "Kalibrieren", "Grenzmass"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Messunsicherheit in Alltagssprache">
+Jede Messung hat eine gewisse Unsicherheit. Besonders nahe an Grenzen muss deshalb nach Vorgabe geklaert werden.
+</EinfachErklaert>
+
+<MessunsicherheitQsSchema />
+
+<MessunsicherheitQsTrainer titel="Messunsicherheit in der QS" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Messergebnis absichern">
+Messunsicherheit haengt von Messmittel, Umgebung, Bedienung, Werkstueckzustand und Kalibrierung ab. Bei grenznahen Ergebnissen ist der freigegebene Entscheidungsweg wichtig.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel warmes Teil">
+Ein frisch gefertigtes Teil ist noch warm. Du pruefst, ob Temperatur und Messbedingung zur Vorgabe passen, bevor du endgueltig entscheidest.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Nahe an der Grenze zaehlt auch die Messsicherheit.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-QS-016::check"
+  fragen={[{ id: "grenznah", masterySchluessel: "FK-3-QS-016::grenznah", aufgabenstellung: "Was ist bei grenznahen Messwerten wichtig?", optionen: [{ id: "richtig", text: "Messunsicherheit und Freigabeweg beachten.", istKorrekt: true, erklaerung: "Richtig. Grenzfaelle brauchen saubere Bewertung." }, { id: "falsch", text: "Den Wert immer abrunden.", istKorrekt: false, erklaerung: "Nein. Runden nach Gefuehl ist keine QS-Entscheidung." }] }]}
+/>

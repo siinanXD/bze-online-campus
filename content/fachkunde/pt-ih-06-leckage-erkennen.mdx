@@ -1,0 +1,57 @@
+---
+titel: "Leckage erkennen"
+thema_code: "PT-IH"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Medienarten, Gefahrbeurteilung, Umweltwege und Meldewege muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung, Maschinenhandbuch, Sicherheitsdatenblatt und Umweltvorgaben"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Meldeweg, Bindemittel, Entsorgung und sichere Erstreaktion nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation am Hallenboden">
+Unter einer Maschine ist eine fluessige Spur sichtbar. Du pruefst nicht mit der Hand, sondern sicherst die Stelle, erkennst das moegliche Medium und meldest die Leckage.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Leckage", "Dichtung", "Hydraulikoel", "Kuehlschmierstoff", "Meldung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Austritt ernst nehmen">
+Leckage bedeutet: Ein Medium tritt aus, wo es nicht austreten darf. Das kann rutschig, umweltschaedlich oder ein Hinweis auf Anlagenprobleme sein.
+</EinfachErklaert>
+
+<LeckageErkennenSchema />
+
+<LeckageErkennenTrainer titel="Leckage erkennen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Medium und Austrittsstelle">
+Leckagen koennen an Schlaeuchen, Dichtungen, Verschraubungen, Behaeltern oder Pumpen auftreten. Wichtig sind Medium, Austrittsstelle, Menge, Druckbezug, Gefahrbereich und der freigegebene Meldeweg.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Oel an Hydraulikleitung">
+Bei Oel an einer Hydraulikleitung wird der Bereich nach Vorgabe gesichert. Du meldest Anlage, Stelle und Beobachtung. Wegwischen und weiterfahren waere unsicher.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Leckage sichern, Medium klaeren, Fund melden.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-IH-006::check"
+  fragen={[{ id: "leckage", masterySchluessel: "FK-3-IH-006::leckage", aufgabenstellung: "Was ist bei einer sichtbaren Oelspur richtig?", optionen: [{ id: "richtig", text: "Bereich nach Vorgabe sichern und die Leckage melden.", istKorrekt: true, erklaerung: "Richtig. Oel kann Sicherheits- und Umweltgefahr sein." }, { id: "falsch", text: "Oelspur wegwischen, damit niemand den Fehler sieht.", istKorrekt: false, erklaerung: "Nein. Dadurch geht Information verloren und die Gefahr bleibt." }] }]}
+/>

@@ -1,0 +1,115 @@
+---
+titel: "Elastomere"
+thema_code: "PT-WST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Elastomer-Beispiele, Einsatzgrenzen und Begriffstiefe muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Elastomere"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Beispiele, Eigenschaften und Einsatzgrenzen muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an einer Dichtung">
+Eine Dichtung wird gedrueckt und soll danach wieder dicht anliegen. Du erkennst: Elastische Rueckstellung
+ist bei Elastomeren besonders wichtig.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Elastomer", "Rueckstellung", "Kunststoff", "Datenblatt", "Werkstoff"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Elastomer in Alltagssprache">
+Ein Elastomer ist ein gummiartiger Kunststoff. Er kann sich verformen und danach wieder in Richtung
+Ausgangsform zurueckgehen.
+</EinfachErklaert>
+
+<ElastomerSchema />
+
+<ElastomerTrainer titel="Elastomere verstehen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Elastische Rueckstellung">
+Elastomere werden ueber elastisches Verhalten eingeordnet. Rueckstellung funktioniert nur innerhalb
+geeigneter Einsatzgrenzen. Ueberlastung, falsche Temperatur, falsches Medium oder falsche Montage koennen
+das Bauteil schaedigen.
+</FachlichErklaert>
+
+## Typische Einordnung
+
+| Punkt | Bedeutung |
+|---|---|
+| Verformung | Elastomer kann gedehnt oder gedrueckt werden |
+| Rueckstellung | Material kehrt in Richtung Ausgangsform zurueck |
+| Einsatzgrenze | Wird aus Datenblatt oder Vorgabe gelesen |
+| Ueberlastung | Kann bleibende Schaeden verursachen |
+
+<Praxisbeispiel titel="Praxisbeispiel Dichtung">
+Eine Dichtung ist gequetscht und stellt sich nicht mehr sauber zurueck. Du setzt sie nicht einfach wieder
+ein, sondern meldest den Zustand nach Vorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Elastomerarten, Medienbestaendigkeit, Temperaturgrenzen und Einsatzregeln muessen aus Tabellenbuch,
+Datenblatt oder Unterweisung stammen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Elastomer heisst elastisch, aber nicht unbegrenzt belastbar.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WST-009::check"
+  fragen={[
+    {
+      id: "rueckstellung",
+      masterySchluessel: "FK-1-WST-009::rueckstellung",
+      aufgabenstellung: "Welche Eigenschaft steht bei Elastomeren im Vordergrund?",
+      optionen: [
+        {
+          id: "elastisch",
+          text: "Elastische Rueckstellung.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Das ist ein Kernmerkmal.",
+        },
+        {
+          id: "starr",
+          text: "Immer starre Form ohne Verformung.",
+          istKorrekt: false,
+          erklaerung: "Nein. Elastomere sind gerade verformbar.",
+        },
+      ],
+    },
+    {
+      id: "grenzen",
+      masterySchluessel: "FK-1-WST-009::grenzen",
+      aufgabenstellung: "Woher kommen Einsatzgrenzen fuer ein Elastomer?",
+      optionen: [
+        {
+          id: "datenblatt",
+          text: "Aus Datenblatt, Tabellenbuch oder Vorgabe.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Einsatzgrenzen werden nicht geraten.",
+        },
+        {
+          id: "ziehen",
+          text: "Durch Ziehen bis es reisst.",
+          istKorrekt: false,
+          erklaerung: "Nein. Das ist keine sichere Pruefung.",
+        },
+      ],
+    },
+  ]}
+/>

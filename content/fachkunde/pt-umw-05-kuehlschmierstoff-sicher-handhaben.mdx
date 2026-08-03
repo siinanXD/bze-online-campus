@@ -1,0 +1,117 @@
+---
+titel: "Kuehlschmierstoff sicher handhaben"
+thema_code: "PT-UMW"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Konkrete KSS-Werte, Hautschutzplan und Pruefvorgaben muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Kuehlschmierstoff"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Konzentrationen, Messmittel, Pflegeintervalle und Hautschutzplan muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung KSS"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit enthaelt keine Zahlenwerte ohne freigegebene Quelle."
+---
+
+<WissensstufenLeiste stufen={["anwenden", "verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Maschine">
+Beim Bearbeiten spritzt Kuehlschmierstoff. Am Boden ist eine kleine Pfuetze, und deine Haende sind feucht.
+KSS gehoert zum Prozess, muss aber sauber und sicher gehandhabt werden.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["KSS", "Hautschutz", "Betriebsstoff", "Gefahrstoff", "Meldeweg"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="KSS in Alltagssprache">
+Kuehlschmierstoff kuehlt und schmiert. Er gehoert nicht auf den Boden, nicht dauerhaft auf die Haut und nicht
+unkontrolliert in den Abfluss.
+</EinfachErklaert>
+
+<KuehlschmierstoffSchema />
+
+<KuehlschmierstoffTrainer titel="KSS-Situation sicher entscheiden" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="KSS braucht Pflege und Schutz">
+Kuehlschmierstoff kann Werkzeug und Prozess schuetzen, aber bei falschem Umgang Haut, Atemwege, Umwelt oder
+Anlage belasten. Zustand, Konzentration, Reinigung und Hautschutz richten sich nach Betriebsanweisung.
+</FachlichErklaert>
+
+## Typische Punkte
+
+| Situation | Sichere Grundreaktion |
+|---|---|
+| KSS auf Boden | Sichern, kennzeichnen, melden |
+| Hautkontakt | Reinigen und Hautschutz beachten |
+| Auffaelliger Geruch | Zustand melden |
+| Falsche Entsorgung | Nicht in falschen Abfluss oder Behaelter geben |
+
+<Praxisbeispiel titel="Praxisbeispiel Rutschgefahr">
+KSS ist ausgelaufen. Du laeufst nicht weiter durch die Stelle, sondern sicherst und meldest sie nach Vorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Konzentrationen, Pruefwerte und Pflegeintervalle werden nicht geraten. Sie muessen aus freigegebenen
+Betriebsunterlagen kommen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+KSS ist Prozesshilfe und Risiko zugleich: sauber halten, Haut schuetzen, Auffaelliges melden.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-UMW-005::check"
+  fragen={[
+    {
+      id: "kss-boden",
+      masterySchluessel: "FK-1-UMW-005::kss-boden",
+      aufgabenstellung: "Was machst du bei KSS auf dem Boden?",
+      optionen: [
+        {
+          id: "sichern",
+          text: "Bereich sichern und nach Vorgabe melden/beseitigen lassen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. KSS kann Rutsch- und Umweltgefahr bedeuten.",
+        },
+        {
+          id: "ignorieren",
+          text: "Ignorieren, wenn die Pfuetze klein ist.",
+          istKorrekt: false,
+          erklaerung: "Auch kleine Mengen koennen gefaehrlich sein.",
+        },
+      ],
+    },
+    {
+      id: "hautschutz",
+      masterySchluessel: "FK-1-UMW-005::hautschutz",
+      aufgabenstellung: "Warum ist Hautschutz bei KSS wichtig?",
+      optionen: [
+        {
+          id: "haut",
+          text: "Weil laengerer Kontakt die Haut belasten kann.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Hautschutz und Reinigung gehoeren zur Unterweisung.",
+        },
+        {
+          id: "farbe",
+          text: "Nur damit die Haende sauber aussehen.",
+          istKorrekt: false,
+          erklaerung: "Es geht um Gesundheitsschutz, nicht nur Optik.",
+        },
+      ],
+    },
+  ]}
+/>

@@ -1,0 +1,119 @@
+---
+titel: "Gefahrstoffe erkennen"
+thema_code: "PT-UMW"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Konkrete Gefahrstoffe, Piktogramme und Schutzmassnahmen muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Gefahrstoffe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Betriebliche Gefahrstoffliste und freigegebene Etiketten muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung Gefahrstoffe"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit erklaert Etikettbereiche und ersetzt keine Gefahrstoffunterweisung."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Reinigungsmittel">
+Ein Behaelter traegt ein Warnsymbol und mehrere kurze Hinweise. Du willst nur schnell reinigen. Bevor du
+arbeitest, musst du erkennen, ob und wie der Stoff gefaehrlich ist.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Gefahrstoff", "GHS", "H-Satz", "P-Satz", "PSA"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Etikett lesen">
+Gefahrstoffe erkennst du nicht sicher am Geruch. Du liest Etikett, Piktogramm, Signalwort und Hinweise. Wenn
+etwas unklar ist, wird vor dem Arbeiten gefragt.
+</EinfachErklaert>
+
+<GefahrstoffEtikettSchema />
+
+<GefahrstoffEtikettTrainer titel="Etikettbereich finden" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Kennzeichnung gibt Schutzinformationen">
+Gefahrstoffkennzeichnung zeigt Produkt, Gefahrensymbole, Hinweise zu Gefahren und Schutzmassnahmen. Diese
+Informationen helfen, Lagerung, PSA, Verhalten bei Kontakt und Entsorgung richtig einzuordnen.
+</FachlichErklaert>
+
+## Etikettbereiche
+
+| Bereich | Zweck |
+|---|---|
+| Produktname | Stoff eindeutig erkennen |
+| Piktogramm | Gefahrenart schnell erfassen |
+| H-Satz | Gefahr beschreiben |
+| P-Satz | Schutzmassnahme nennen |
+| Signalwort | Dringlichkeit einordnen |
+
+<Praxisbeispiel titel="Praxisbeispiel unbekannter Reiniger">
+Ein Reiniger wurde umgefuellt, aber nicht beschriftet. Du nutzt ihn nicht. Unklare Stoffe werden gesichert
+und gemeldet.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Konkrete Piktogramme, H-/P-Saetze und Schutzmassnahmen muessen vom echten Etikett und der Betriebsanweisung
+uebernommen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Gefahrstoff? Erst Kennzeichnung verstehen, dann nach Vorgabe handeln.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-UMW-003::check"
+  fragen={[
+    {
+      id: "piktogramm",
+      masterySchluessel: "FK-1-UMW-003::piktogramm",
+      aufgabenstellung: "Was zeigt ein Gefahrstoff-Piktogramm?",
+      optionen: [
+        {
+          id: "gefahr",
+          text: "Eine Gefahrenart als Symbol.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Es hilft beim schnellen Erkennen von Gefahrarten.",
+        },
+        {
+          id: "preis",
+          text: "Den Preis des Stoffs.",
+          istKorrekt: false,
+          erklaerung: "Piktogramme gehoeren zur Sicherheitskennzeichnung.",
+        },
+      ],
+    },
+    {
+      id: "h-p",
+      masterySchluessel: "FK-1-UMW-003::h-p",
+      aufgabenstellung: "Wofuer stehen H- und P-Saetze im Lernzusammenhang?",
+      optionen: [
+        {
+          id: "gefahr-schutz",
+          text: "Gefahrenhinweise und Sicherheitshinweise.",
+          istKorrekt: true,
+          erklaerung: "Richtig. H beschreibt Gefahr, P nennt Schutzmassnahmen.",
+        },
+        {
+          id: "masse",
+          text: "Masse und Toleranzen.",
+          istKorrekt: false,
+          erklaerung: "Das gehoert nicht zur Gefahrstoffkennzeichnung.",
+        },
+      ],
+    },
+  ]}
+/>

@@ -1,0 +1,57 @@
+---
+titel: "Werkzeugwechsel"
+thema_code: "PT-PRO"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Werkzeugwechsel, Sicherheit und Ruestzeit muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Werkzeugwechsel"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Ruestzeit, Hilfsmittel und sichere Reihenfolge nach Maschinentyp ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation beim Auftragswechsel">
+Ein neues Produkt braucht ein anderes Werkzeug. Du planst Stillsetzen, Sichern, Ausbau, Einbau und erneute Freigabe.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Werkzeugwechsel", "Ruestzeit", "Freischalten", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Werkzeugwechsel in Alltagssprache">
+Ein Werkzeug wird sicher herausgenommen und ein anderes eingebaut. Das braucht Zeit, Hilfsmittel und Freigabe.
+</EinfachErklaert>
+
+<WerkzeugwechselVorbereitungSchema />
+
+<WerkzeugwechselVorbereitungTrainer titel="Werkzeugwechsel" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Sicherer Wechsel mit Zeitbezug">
+Werkzeugwechsel umfasst Stillsetzen, Sichern, geeignetes Hebe- oder Ruestmittel, Ausbau, Einbau, Bezugskontrolle und erneutes Anfahren. Ruestzeit wird geplant und dokumentiert.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Zeitdruck">
+Der Folgeauftrag wartet. Trotzdem greifst du nicht in bewegte Bereiche und laesst keine Sicherung aus, nur um Ruestzeit zu sparen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Werkzeugwechsel ist nur gut, wenn er sicher und freigegeben ist.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-PRO-009::check"
+  fragen={[{ id: "wechsel", masterySchluessel: "FK-2-PRO-009::wechsel", aufgabenstellung: "Was kommt vor dem Werkzeugwechsel?", optionen: [{ id: "richtig", text: "Anlage stillsetzen und sichern.", istKorrekt: true, erklaerung: "Richtig. Sicherheit geht vor Zeit." }, { id: "falsch", text: "In Bewegung schneller wechseln.", istKorrekt: false, erklaerung: "Nein. Das ist gefaehrlich." }] }]}
+/>

@@ -1,0 +1,57 @@
+---
+titel: "Lagerfehler"
+thema_code: "PT-IH"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Lagerarten, Schadensbilder, Messwerte und Pruefwege muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch, Lagerherstellerunterlagen, Maschinenhandbuch und Wartungsplan"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Lagerluft, Temperaturgrenzen, Pitting-Bewertung und Diagnosewege nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Antriebslager">
+Ein Antrieb laeuft rauer als sonst. Du vermutest keinen fertigen Schaden, sondern sammelst Hinweise: Geraeusch, Waerme, Schwingung, Spiel und Schmierung.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Lager", "Lagerluft", "Pitting", "Schmierung", "Geraeusch"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Lager zeigen Fehler oft frueh">
+Ein Lager kann durch rauen Lauf, Waerme, Spiel oder Geraeusch auffallen. Das wird gemeldet und nach Vorgabe geprueft.
+</EinfachErklaert>
+
+<LagerfehlerSchema />
+
+<LagerfehlerTrainer titel="Lagerfehler" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Symptome und Schadensbilder">
+Lagerfehler koennen durch Schmiermangel, Verschmutzung, Ueberlast, Fehlausrichtung oder normalen Verschleiss entstehen. Sichtbare Schaeden wie Pitting werden fachlich bewertet; im laufenden Betrieb wird nicht improvisiert zerlegt oder nachgestellt.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel warmes Lager">
+Ein Lagergehaeuse ist auffaellig warm. Du dokumentierst Ort, Zeitpunkt und Betriebszustand und meldest die Abweichung. Messwerte und Grenzwerte kommen aus freigegebener Quelle.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Lagerfehler zeigen sich oft durch Lauf, Waerme, Spiel oder Geraeusch.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-IH-007::check"
+  fragen={[{ id: "lager", masterySchluessel: "FK-3-IH-007::lager", aufgabenstellung: "Was kann ein Hinweis auf Lagerfehler sein?", optionen: [{ id: "richtig", text: "Rauer Lauf, ungewoehnliche Waerme oder veraendertes Geraeusch.", istKorrekt: true, erklaerung: "Richtig. Diese Symptome werden gemeldet und geprueft." }, { id: "falsch", text: "Ein Lagerfehler ist nur sichtbar, wenn das Lager komplett zerbrochen ist.", istKorrekt: false, erklaerung: "Nein. Viele Hinweise treten frueher auf." }] }]}
+/>

@@ -1,0 +1,63 @@
+---
+titel: "Drehen Grundlagen"
+thema_code: "PT-MET"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Drehmaschinenbezug, Drehmeissel und Schnittwerte muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Drehen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Drehzahl, Vorschub und Werkzeugdaten nur aus freigegebener Quelle uebernehmen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Drehmaschine">
+Ein rundes Teil soll bearbeitet werden. Du erkennst: Das Werkstueck rotiert, der Drehmeissel schneidet, und
+die Werte kommen aus Vorgaben.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Drehmaschine", "Drehmeissel", "Drehzahl", "Vorschub", "Schnittgeschwindigkeit"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Drehen in Alltagssprache">
+Beim Drehen dreht sich meist das Werkstueck. Ein Werkzeug nimmt Material ab.
+</EinfachErklaert>
+
+<DrehenGrundlagenSchema />
+
+<DrehenGrundlagenTrainer titel="Drehen Grundlagen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Rotierendes Werkstueck">
+Drehen ist ein spanendes Verfahren fuer rotationssymmetrische Werkstuecke. Einspannung, Werkzeug, Schnittwert,
+Vorschub und Pruefung muessen zur Aufgabe passen.
+</FachlichErklaert>
+
+<Formelkarte titel="Schnittwertbezug beim Drehen" formel="vc, n, f">
+Die Formelzeichen sind Orientierung. Zahlenwerte bleiben quellenpflichtig.
+</Formelkarte>
+
+<TabellenbuchHinweis>
+Drehwerte werden nach Werkstoff, Werkzeug, Durchmesser und Vorgabe gelesen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Beim Drehen rotiert das Werkstueck, der Drehmeissel schneidet.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-005::check"
+  fragen={[{ id: "rotation", masterySchluessel: "FK-2-MET-005::rotation", aufgabenstellung: "Was rotiert beim klassischen Drehen meist?", optionen: [{ id: "werkstueck", text: "Das Werkstueck.", istKorrekt: true, erklaerung: "Richtig." }, { id: "tisch", text: "Der Fraestisch.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

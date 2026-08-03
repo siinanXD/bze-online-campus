@@ -1,0 +1,57 @@
+---
+titel: "Sollwert, Istwert, Stellgroesse"
+thema_code: "PT-STR"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Regelkreisbegriffe und Beispielwerte muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch und Anlagen-Rezept-/Parameterunterlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Sollwerte, Grenzwerte und Stellgroessen nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["auswendig", "verstehen"]} />
+
+<StoryEinstieg titel="Situation am Bedienpanel">
+Auf dem Display steht eine Temperaturvorgabe, daneben der gemessene Wert. Die Anlage veraendert die Heizleistung, um naeher an die Vorgabe zu kommen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Sollwert", "Istwert", "Stellgroesse", "Regelung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Drei Begriffe einfach">
+Sollwert ist das Ziel. Istwert ist der gemessene Zustand. Stellgroesse ist der Eingriff, mit dem die Anlage korrigiert.
+</EinfachErklaert>
+
+<SollIstStellgroesseSchema />
+
+<SollIstStellgroesseTrainer titel="Sollwert Istwert Stellgroesse" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Regelkreisbegriffe nutzen">
+Im Regelkreis wird die Abweichung zwischen Sollwert und Istwert bewertet. Die Stellgroesse wirkt auf den Prozess ein, damit die Regelgroesse in Richtung Sollwert geht. Reale Werte bleiben quellenpflichtig.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Temperierung">
+Die Werkzeugtemperierung hat einen Sollwert aus dem Rezept. Der Istwert kommt vom Sensor. Die Stellgroesse beeinflusst Ventil, Heizleistung oder Kuehlleistung nach Anlage.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Soll ist Ziel, Ist ist Messung, Stellgroesse ist Eingriff.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-STR-003::check"
+  fragen={[{ id: "stellgroesse", masterySchluessel: "FK-3-STR-003::stellgroesse", aufgabenstellung: "Was ist die Stellgroesse?", optionen: [{ id: "richtig", text: "Der Eingriff, mit dem der Prozess beeinflusst wird.", istKorrekt: true, erklaerung: "Richtig. Die Stellgroesse wirkt auf den Prozess." }, { id: "falsch", text: "Ein schoengerechneter Istwert.", istKorrekt: false, erklaerung: "Nein. Istwerte werden nicht angepasst, sondern gemessen." }] }]}
+/>

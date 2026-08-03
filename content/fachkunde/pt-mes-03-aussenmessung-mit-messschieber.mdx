@@ -1,0 +1,115 @@
+---
+titel: "Aussenmessung mit Messschieber"
+thema_code: "PT-MES"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Messablauf und Beispielteile muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Messpraxis"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Messregeln, Genauigkeit und Pruefvorgaben muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Bolzen">
+Du sollst den Aussendurchmesser eines Bolzens messen. Dafuer legst du den Messschieber nicht irgendwo an,
+sondern nutzt die grossen Messschenkel sauber und gerade.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Aussenmessung", "Messschenkel", "Messwert", "Messschieber", "Vorgabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Aussenmessung in Alltagssprache">
+Bei der Aussenmessung umfasst du das Werkstueck von aussen. Die Messflaechen muessen sauber sein und der
+Messschieber darf nicht schraeg sitzen.
+</EinfachErklaert>
+
+<AussenmessungSchema />
+
+<AussenmessungTrainer titel="Aussenmessung sicher ausfuehren" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Messkontakt und Messrichtung">
+Bei der Aussenmessung liegen die grossen Messschenkel an den aeusseren Messflaechen an. Der Messschieber
+wird ohne Verkanten angesetzt. Schmutz, Spaene, zu hoher Druck oder schraeger Ansatz koennen den Messwert
+verfaelschen.
+</FachlichErklaert>
+
+## Grundablauf
+
+| Schritt | Bedeutung |
+|---|---|
+| Reinigen | Messflaechen frei von Schmutz und Spaenen |
+| Anlegen | Grosse Messschenkel am Aussenmass |
+| Ausrichten | Nicht verkanten |
+| Ablesen | Ruhig und nach Skala |
+
+<Praxisbeispiel titel="Praxisbeispiel Aussendurchmesser">
+Du misst einen Bolzen nach dem Bearbeiten. Wenn der Messschieber schraeg sitzt, bekommst du keinen sicheren
+Wert. Du setzt neu an und liest erst dann ab.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Messgenauigkeit, Messbereich und geeignete Messmittel muessen nach Tabellenbuch, Pruefplan oder
+Unterweisung beurteilt werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Aussenmessung: sauber, gerade, ohne Gewalt.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MES-003::check"
+  fragen={[
+    {
+      id: "schenkel",
+      masterySchluessel: "FK-1-MES-003::schenkel",
+      aufgabenstellung: "Welche Messschenkel nutzt du fuer ein Aussenmass?",
+      optionen: [
+        {
+          id: "gross",
+          text: "Die grossen Messschenkel.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Sie umfassen das Werkstueck von aussen.",
+        },
+        {
+          id: "tiefenstange",
+          text: "Die Tiefenstange.",
+          istKorrekt: false,
+          erklaerung: "Die Tiefenstange ist fuer Tiefenmessungen gedacht.",
+        },
+      ],
+    },
+    {
+      id: "schraeg",
+      masterySchluessel: "FK-1-MES-003::schraeg",
+      aufgabenstellung: "Was machst du, wenn der Messschieber schraeg sitzt?",
+      optionen: [
+        {
+          id: "neu",
+          text: "Neu und gerade ansetzen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Verkanten macht den Messwert unsicher.",
+        },
+        {
+          id: "ignorieren",
+          text: "Trotzdem schnell ablesen.",
+          istKorrekt: false,
+          erklaerung: "Das kann zu einem falschen Messwert fuehren.",
+        },
+      ],
+    },
+  ]}
+/>

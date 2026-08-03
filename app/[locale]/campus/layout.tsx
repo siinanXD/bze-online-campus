@@ -1,5 +1,5 @@
 import { createServerSupabase } from '@bze/db/server';
-import { Header, BottomNav } from '@/components/shell';
+import { CampusRahmen } from '@/components/shell/campus-rahmen';
 import { ladeFragenFortschrittProzent } from './lernen/_lib/fragen';
 
 export default async function CampusLayout({ children }: { children: React.ReactNode }) {
@@ -17,12 +17,8 @@ export default async function CampusLayout({ children }: { children: React.React
   }
 
   return (
-    <div className="flex h-dvh min-h-dvh flex-col overflow-hidden bg-bg pb-20">
-      <Header value={fortschritt} />
-      <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
-        {children}
-      </div>
-      <BottomNav berichtsheftAktiv={true} />
-    </div>
+    <CampusRahmen fortschritt={fortschritt} berichtsheftAktiv={true}>
+      {children}
+    </CampusRahmen>
   );
 }

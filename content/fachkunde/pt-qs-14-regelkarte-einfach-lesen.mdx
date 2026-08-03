@@ -1,0 +1,57 @@
+---
+titel: "Regelkarte einfach lesen"
+thema_code: "PT-QS"
+lesedauer_minuten: 10
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Regelkartenlinien, Warnsignale und Eingriffsregeln muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch und betriebliche SPC-Vorgaben"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Regelkartenart, Grenzen und Reaktionsplan aus Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation mit Prozesskarte">
+Du traegst Messwerte in eine Regelkarte ein. Ein Punkt liegt auffaellig nahe an einer Grenze.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Regelkarte", "Eingriffsgrenze", "Trend", "Streuung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Regelkarte in Alltagssprache">
+Eine Regelkarte zeigt Messwerte ueber die Zeit. Linien helfen zu erkennen, wann der Prozess auffaellig wird.
+</EinfachErklaert>
+
+<RegelkarteLesenSchema />
+
+<RegelkarteLesenTrainer titel="Regelkarte einfach lesen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Signale im Prozess erkennen">
+Regelkarten dienen der Prozessueberwachung. Messpunkte, Mittellinie, Warn- und Eingriffsgrenzen zeigen, ob ein Prozess stabil wirkt oder nach Vorgabe reagiert werden muss.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Eingriffsgrenze">
+Ein Messpunkt liegt ausserhalb der Eingriffsgrenze. Du produzierst nicht einfach weiter, sondern meldest und folgst dem Reaktionsplan.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ein Regelkartensignal wird gemeldet, nicht schoengeredet.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-QS-014::check"
+  fragen={[{ id: "signal", masterySchluessel: "FK-3-QS-014::signal", aufgabenstellung: "Was tust du bei einem auffaelligen Regelkartensignal?", optionen: [{ id: "richtig", text: "Nach Vorgabe melden und reagieren.", istKorrekt: true, erklaerung: "Richtig. Signale duerfen nicht ignoriert werden." }, { id: "falsch", text: "Den Punkt weglassen, damit die Karte ruhiger aussieht.", istKorrekt: false, erklaerung: "Nein. Messdaten muessen nachvollziehbar bleiben." }] }]}
+/>

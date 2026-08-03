@@ -1,24 +1,21 @@
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
-// Relativer Import statt Alias: packages/ui/mdx ist kein eigenes pnpm-Workspace-Paket.
 import { renderFachkundeMdx } from '../../../../../../../packages/ui/mdx';
 import { holeLerneinheit, holeLerneinheitenFuerThema, holeFortschritt, holeAktuellenNutzerId } from '../../../_lib/queries';
 import { leseDemoQuelltext, listeDemoLerneinheiten } from '../../../_lib/content-fallback';
 import { teileMinuten } from '../../../_lib/format';
 import { Lesesitzung } from '../../../_components/lesesitzung';
-import { Kapitelleiste } from '../../../_components/kapitelleiste';
 import { Fussleiste } from '../../../_components/fussleiste';
 import { Quellenliste } from '../../../_components/quellenliste';
+import { LerneinheitKopfzeile } from '../../../_components/lerneinheit-kopfzeile';
+import { FreigabeHinweis } from '../../../_components/freigabe-hinweis';
+import { PruefungsrelevanzBadge } from '../../../_components/pruefungsrelevanz-badge';
 
 const UUID_MUSTER = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 /**
- * Lerneinheit-Lesen-Bildschirm (SPEC §6.2.6): Kapitel-Fortschrittsleiste unter der Kopfzeile,
- * MDX-Inhalt über die volle Breite, Quellenangaben am Ende, feste Fußleiste mit
- * Daumen hoch/runter und grünem "Weiter". Auf DB-Ebene entspricht ein Kapitel/Abschnitt einer
- * H2-Überschrift im MDX (`extractKapitel`, siehe packages/ui/mdx/headings.ts) und damit einem
- * `abschnitt_index` in `lerneinheit_fortschritt`.
+ * Lerneinheit-Lesen (Figma Mobile / Lerneinheit): Zurueck, Dauer, Pruefungsrelevanz, MDX.
  */
 export default async function LerneinheitSeite({
   params,
@@ -56,8 +53,6 @@ export default async function LerneinheitSeite({
     const naechste = eigenerIndex >= 0 ? geschwister[eigenerIndex + 1] : undefined;
     naechsteHref = naechste ? `/${locale}/campus/topic/${themaId}/lerneinheit/${naechste.id}` : naechsteHref;
   } else {
-    // Demo-/Vorschau-Modus: lerneinheitId ist der Dateiname unter content/fachkunde/ (siehe
-    // _lib/content-fallback.ts). Es wird kein Fortschritt gespeichert.
     quelltext = await leseDemoQuelltext(lerneinheitId);
     if (!quelltext) notFound();
   }
@@ -74,6 +69,11 @@ export default async function LerneinheitSeite({
   }
 
   const { stunden, minuten } = teileMinuten(frontmatter.lesedauer_minuten);
+  const lesedauerLabel =
+    stunden > 0 ? t('zeit.stundenMinuten', { stunden, minuten }) : t('zeit.minuten', { minuten });
+  const pruefungsLabel = t('lerneinheit.pruefungsrelevanz', {
+    stufe: t(`lerneinheit.pruefungsrelevanzStufen.${frontmatter.pruefungsrelevanz}`),
+  });
 
   return (
     <Lesesitzung
@@ -85,17 +85,21 @@ export default async function LerneinheitSeite({
       demoModus={demoModus}
       naechsteHref={naechsteHref}
     >
-      <Kapitelleiste />
-      <main className="mx-auto max-w-2xl px-4 pb-32 pt-4">
-        <header className="mb-4">
-          <h1 className="mb-1 text-2xl font-extrabold text-fg">{frontmatter.titel}</h1>
-          <p className="text-xs text-fg-muted">
-            {stunden > 0 ? t('zeit.stundenMinuten', { stunden, minuten }) : t('zeit.minuten', { minuten })}
-          </p>
+      <main className="mx-auto max-w-md bg-bg px-4 pb-32">
+        <LerneinheitKopfzeile
+          zurueckHref={`/${locale}/campus/topic/${themaId}`}
+          zurueckLabel={t('lerneinheit.zurueckLernpfad')}
+          lesedauerLabel={lesedauerLabel}
+        />
+
+        <header className="mb-3 flex flex-col gap-2">
+          <PruefungsrelevanzBadge label={pruefungsLabel} />
+          <h1 className="text-[20px] font-semibold leading-7 text-fg">{frontmatter.titel}</h1>
         </header>
 
-        {/* MDX-Inhalt über die volle Breite (SPEC §6.2.6) */}
-        <article>{inhalt}</article>
+        <FreigabeHinweis frontmatter={frontmatter} />
+
+        <article className="flex flex-col gap-3">{inhalt}</article>
 
         <Quellenliste quellen={frontmatter.quellen} />
       </main>

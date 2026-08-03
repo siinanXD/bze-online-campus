@@ -1,0 +1,59 @@
+---
+titel: "Schweissen"
+thema_code: "PT-MET"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Schweissverfahren, Schutz, Nahtbeurteilung und Qualifikation muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Schweissen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Verfahren, Schutzmassnahmen und Nahtanforderungen nach freigegebener Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Naht">
+Zwei Bauteile sollen verbunden werden. Beim Schweissen denkst du an Fuegen, Waerme, Schutz und
+Nahtbeurteilung.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schweissnaht", "Fuegen", "Waermeausdehnung", "PSA"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schweissen in Alltagssprache">
+Beim Schweissen werden Bauteile durch Waerme und eine Naht verbunden.
+</EinfachErklaert>
+
+<SchweissenSchema />
+
+<SchweissenTrainer titel="Schweissen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Fuegen mit Waerme">
+Schweissen ist ein Fuegeverfahren. Verfahren, Zusatzwerkstoff, Waermeeinfluss, Schutz und Qualifikation
+muessen zur Aufgabe passen.
+</FachlichErklaert>
+
+<TabellenbuchHinweis>
+Schweissparameter und Norm-/Qualifikationsfragen sind quellen- und freigabepflichtig.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Schweissen verbindet und braucht besonderen Schutz.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-017::check"
+  fragen={[{ id: "fuegen", masterySchluessel: "FK-2-MET-017::fuegen", aufgabenstellung: "Welche Hauptgruppe passt zum Schweissen?", optionen: [{ id: "fuegen", text: "Fuegen.", istKorrekt: true, erklaerung: "Richtig." }, { id: "walzen", text: "Walzen.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

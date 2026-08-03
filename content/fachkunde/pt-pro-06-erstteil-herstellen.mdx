@@ -1,0 +1,57 @@
+---
+titel: "Erstteil herstellen"
+thema_code: "PT-PRO"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Erstteilprozess und Trennung von Anfahrteilen muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Betriebliche Anfahr- und Erstteilanweisung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Anfahrteile, Kennzeichnung und Zuständigkeiten nach Traegervorgabe ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation beim ersten Lauf">
+Nach dem Ruesten faehrt die Maschine an. Du nimmst das erste Teil bewusst heraus und trennst Anfahrteile von Gutteilen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Erstteil", "Anfahren", "Anfahrteil", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Erstteil in Alltagssprache">
+Das erste Teil zeigt, ob Vorbereitung, Material, Werkzeug und Einstellungen grob zusammenpassen.
+</EinfachErklaert>
+
+<ErstteilHerstellenSchema />
+
+<ErstteilHerstellenTrainer titel="Erstteil herstellen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Anfahren bis zur Pruefung">
+Beim Herstellen des Erstteils wird der Prozess nach dem Ruesten beobachtet. Erstteil und Anfahrteile werden gekennzeichnet oder getrennt, damit keine ungeprueften Teile in die Serie laufen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel erstes Teil mit Fehler">
+Das erste Teil hat eine sichtbare Abweichung. Du legst es nicht zu Gutteilen, sondern trennst es und bereitest die Pruefung oder Meldung vor.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Das Erstteil ist Pruefgrundlage, nicht automatisch Gutteil.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-PRO-006::check"
+  fragen={[{ id: "trennen", masterySchluessel: "FK-2-PRO-006::trennen", aufgabenstellung: "Was passiert mit Anfahrteilen?", optionen: [{ id: "richtig", text: "Sie werden nach Vorgabe getrennt und bewertet.", istKorrekt: true, erklaerung: "Richtig. Sie sind nicht automatisch Gutteile." }, { id: "falsch", text: "Sie werden immer direkt als Gutteile gebucht.", istKorrekt: false, erklaerung: "Nein. Erst muss die Vorgabe erfuellt sein." }] }]}
+/>

@@ -1,0 +1,57 @@
+---
+titel: "Rueckverfolgbarkeit und Charge"
+thema_code: "PT-QS"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Trace-Kette, Chargenregeln und Dokumentationspflichten muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Betriebliche Rueckverfolgbarkeitsanweisung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Chargen-, Auftrags- und Pruefnachweispflichten nach Traegervorgabe ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation mit Reklamation">
+Spaeter faellt ein Teil auf. Jetzt muss nachvollziehbar sein, welche Charge, Maschine, Schicht und Pruefung dazugehoerten.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Rueckverfolgung", "Charge", "Auftrag", "Protokoll"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Rueckverfolgbarkeit in Alltagssprache">
+Du kannst spaeter herausfinden, welches Material, welcher Auftrag und welche Pruefung zu einem Teil gehoerten.
+</EinfachErklaert>
+
+<RueckverfolgbarkeitChargeSchema />
+
+<RueckverfolgbarkeitChargeTrainer titel="Rueckverfolgbarkeit und Charge" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Trace-Kette sichern">
+Rueckverfolgbarkeit verbindet Charge, Auftrag, Prozessdaten, Pruefergebnisse und Freigaben. Diese Daten muessen zeitnah und eindeutig dokumentiert werden.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel falsches Etikett">
+Wenn ein Etikett fehlt oder eine Charge unlesbar ist, ist die Trace-Kette unterbrochen. Du klaerst das, bevor Teile weiterlaufen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ohne Charge keine sichere Rueckverfolgung.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-QS-017::check"
+  fragen={[{ id: "charge", masterySchluessel: "FK-3-QS-017::charge", aufgabenstellung: "Warum wird die Charge dokumentiert?", optionen: [{ id: "richtig", text: "Damit Material und Produkt spaeter zugeordnet werden koennen.", istKorrekt: true, erklaerung: "Richtig. Das ist zentral fuer Rueckverfolgbarkeit." }, { id: "falsch", text: "Damit der Arbeitsplatz voller Etiketten ist.", istKorrekt: false, erklaerung: "Nein. Dokumentation hat einen Nachweiszweck." }] }]}
+/>

@@ -1,0 +1,57 @@
+---
+titel: "Einfachwirkender Zylinder"
+thema_code: "PT-PNH"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Bauformen, Rueckstellarten und betriebliche Beispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Metall/Mechatronik und Pneumatikunterlagen der Anlage"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Zylinderbauform, Rueckstellprinzip und zulaessige Diagnosepunkte nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an einem Teileanschlag">
+Ein kleiner Anschlag faehrt aus und geht von selbst wieder zurueck. Du erkennst: Hier kann ein einfachwirkender Zylinder mit Rueckstellfeder arbeiten.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Pneumatikzylinder", "Einfachwirkend", "Druckluft", "Feder", "Aktor"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Eine Richtung mit Luft">
+Beim einfachwirkenden Zylinder drueckt Luft meist nur in eine Richtung. Zurueck kommt er durch eine Feder oder eine andere Rueckstellkraft.
+</EinfachErklaert>
+
+<EinfachwirkenderZylinderSchema />
+
+<EinfachwirkenderZylinderTrainer titel="Einfachwirkender Zylinder" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Arbeitsbewegung und Rueckhub">
+Ein einfachwirkender Zylinder hat nur eine aktiv mit Druckluft beaufschlagte Arbeitsrichtung. Die Rueckbewegung erfolgt nicht durch einen zweiten Druckluftanschluss, sondern zum Beispiel durch Federkraft. Anwendung, Last und Endlage muessen zur Bauform passen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Anschlag bleibt ausgefahren">
+Wenn ein einfachwirkender Zylinder nicht zurueckgeht, beschreibst du Luftanschluss, mechanische Leichtgaengigkeit, Feder-/Rueckstellprinzip und Endlage. Du baust keine Feder aus und ueberbrueckst keine Schutzfunktion.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Einfachwirkend: Luft fuer eine Richtung, Rueckstellung durch Feder oder Last.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-PNH-004::check"
+  fragen={[{ id: "einfachwirkend", masterySchluessel: "FK-3-PNH-004::einfachwirkend", aufgabenstellung: "Was beschreibt einen einfachwirkenden Zylinder richtig?", optionen: [{ id: "richtig", text: "Druckluft bewegt ihn in eine Richtung, die Rueckstellung erfolgt anders.", istKorrekt: true, erklaerung: "Richtig. Typisch ist eine Rueckstellfeder oder eine andere Rueckstellkraft." }, { id: "falsch", text: "Er braucht immer zwei gleichwertige Druckluftanschluesse fuer beide Richtungen.", istKorrekt: false, erklaerung: "Nein. Das beschreibt eher einen doppeltwirkenden Zylinder." }] }]}
+/>

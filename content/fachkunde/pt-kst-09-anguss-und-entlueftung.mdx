@@ -1,0 +1,57 @@
+---
+titel: "Anguss und Entlueftung"
+thema_code: "PT-KST"
+lesedauer_minuten: 7
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Fuellweg, Entlueftung und Fehlerbilder muessen fachlich geprueft werden."
+quellen:
+  - titel: "Tabellenbuch Kunststofftechnik Werkzeugfuellung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Angussarten, Entlueftung und Fehlerbilder nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation beim Fuellen">
+Ein Teil zeigt Brandstellen. Du pruefst nicht nur Material und Temperatur, sondern denkst auch an Fuellweg und Entlueftung.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Anguss", "Entlueftung", "Kavitaet", "Schmelze"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Anguss und Entlueftung in Alltagssprache">
+Durch den Anguss kommt Schmelze in die Form. Durch Entlueftung kann Luft aus der Form heraus.
+</EinfachErklaert>
+
+<AngussEntlueftungSchema />
+
+<AngussEntlueftungTrainer titel="Anguss und Entlueftung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Schmelze hinein, Luft heraus">
+Der Anguss fuehrt Schmelze in die Kavitaet. Entlueftungen helfen, Luft und Gase kontrolliert entweichen zu lassen, damit die Fuellung stabiler wird.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Fuellfehler">
+Du erkennst kurze Schuesse oder Brandstellen und dokumentierst die Stelle am Teil. Danach wird nach Vorgabe geprueft, nicht frei am Werkzeug manipuliert.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Beim Fuellen muss Schmelze hinein und Luft heraus.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-KST-009::check"
+  fragen={[{ id: "luft", masterySchluessel: "FK-2-KST-009::luft", aufgabenstellung: "Warum ist Entlueftung wichtig?", optionen: [{ id: "richtig", text: "Luft kann beim Fuellen entweichen.", istKorrekt: true, erklaerung: "Richtig. Eingeschlossene Luft kann Fehler verursachen." }, { id: "falsch", text: "Sie ersetzt die Materialtrocknung.", istKorrekt: false, erklaerung: "Nein. Trocknung und Entlueftung sind unterschiedliche Themen." }] }]}
+/>

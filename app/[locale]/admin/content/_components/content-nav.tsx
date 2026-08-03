@@ -13,6 +13,7 @@ const LINKS = [
   ['quizze', 'quizze'],
   ['kiGenerator', 'ki-generator'],
   ['qualitaetspruefung', 'qualitaetspruefung'],
+  ['fachkundeFreigabe', 'fachkunde-freigabe'],
   ['wissensdatenbank', 'wissensdatenbank'],
 ] as const;
 

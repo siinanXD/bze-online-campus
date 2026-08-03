@@ -1,0 +1,523 @@
+{
+  "themen": {
+    "PT-OEE": "OEE",
+    "PT-MAT": "Technische Mathematik",
+    "PT-WISO": "Wirtschafts- und Sozialkunde",
+    "PT-PRF": "Pruefungsvorbereitung"
+  },
+  "einheiten": [
+    {
+      "id": "FK-4-OEE-001",
+      "slug": "pt-oee-01-oee-ueberblicken",
+      "thema": "PT-OEE",
+      "prefix": "OeeUeberblicken",
+      "titel": "OEE ueberblicken",
+      "distractor": "Nur Ausschuss zaehlen",
+      "schemaTitle": "OEE als Kreis aus drei Faktoren ueberblicken"
+    },
+    {
+      "id": "FK-4-OEE-002",
+      "slug": "pt-oee-02-verfuegbarkeit-berechnen",
+      "thema": "PT-OEE",
+      "prefix": "VerfuegbarkeitBerechnen",
+      "titel": "Verfuegbarkeit berechnen",
+      "distractor": "Zeiten frei schaetzen",
+      "schemaTitle": "Verfuegbarkeit aus Laufzeit und Planzeit berechnen"
+    },
+    {
+      "id": "FK-4-OEE-003",
+      "slug": "pt-oee-03-leistungsgrad-berechnen",
+      "thema": "PT-OEE",
+      "prefix": "LeistungsgradBerechnen",
+      "titel": "Leistungsgrad berechnen",
+      "distractor": "Soll frei erhoehen",
+      "schemaTitle": "Leistungsgrad aus Istleistung und Sollleistung berechnen"
+    },
+    {
+      "id": "FK-4-OEE-004",
+      "slug": "pt-oee-04-qualitaetsrate-berechnen",
+      "thema": "PT-OEE",
+      "prefix": "QualitaetsrateBerechnen",
+      "titel": "Qualitaetsrate berechnen",
+      "distractor": "Ausschuss als Gut zaehlen",
+      "schemaTitle": "Qualitaetsrate aus Gutmenge und Gesamtmenge berechnen"
+    },
+    {
+      "id": "FK-4-OEE-005",
+      "slug": "pt-oee-05-oee-verbessern",
+      "thema": "PT-OEE",
+      "prefix": "OeeVerbessern",
+      "titel": "OEE verbessern",
+      "distractor": "Blind Parameter drehen",
+      "schemaTitle": "OEE ueber Verlustursache und Massnahme verbessern"
+    },
+    {
+      "id": "FK-4-MAT-01",
+      "slug": "pt-mat-01-rechenweg-in-pruefungen",
+      "thema": "PT-MAT",
+      "prefix": "RechenwegInPruefungen",
+      "titel": "Rechenweg in Pruefungen",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Rechenweg in Pruefungen als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-02",
+      "slug": "pt-mat-02-grundrechenarten-sicher",
+      "thema": "PT-MAT",
+      "prefix": "GrundrechenartenSicher",
+      "titel": "Grundrechenarten sicher",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Grundrechenarten sicher als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-03",
+      "slug": "pt-mat-03-dreisatz",
+      "thema": "PT-MAT",
+      "prefix": "Dreisatz",
+      "titel": "Dreisatz",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Dreisatz als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-04",
+      "slug": "pt-mat-04-prozentrechnung",
+      "thema": "PT-MAT",
+      "prefix": "Prozentrechnung",
+      "titel": "Prozentrechnung",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Prozentrechnung als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-05",
+      "slug": "pt-mat-05-einheiten-in-aufgaben-umrechnen",
+      "thema": "PT-MAT",
+      "prefix": "EinheitenInAufgaben",
+      "titel": "Einheiten in Aufgaben umrechnen",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Einheiten in Aufgaben umrechnen als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-06",
+      "slug": "pt-mat-06-umfang-und-flaeche-rechteck",
+      "thema": "PT-MAT",
+      "prefix": "UmfangFlaecheRechteck",
+      "titel": "Umfang und Flaeche Rechteck",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Umfang und Flaeche Rechteck als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-07",
+      "slug": "pt-mat-07-kreisumfang-und-kreisflaeche",
+      "thema": "PT-MAT",
+      "prefix": "KreisumfangKreisflaeche",
+      "titel": "Kreisumfang und Kreisflaeche",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Kreisumfang und Kreisflaeche als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-08",
+      "slug": "pt-mat-08-volumen-quader-und-zylinder",
+      "thema": "PT-MAT",
+      "prefix": "VolumenQuaderZylinder",
+      "titel": "Volumen Quader und Zylinder",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Volumen Quader und Zylinder als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-09",
+      "slug": "pt-mat-09-masse-aus-dichte",
+      "thema": "PT-MAT",
+      "prefix": "MasseAusDichte",
+      "titel": "Masse aus Dichte",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Masse aus Dichte als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-10",
+      "slug": "pt-mat-10-geschwindigkeit-und-zeit",
+      "thema": "PT-MAT",
+      "prefix": "GeschwindigkeitUndZeit",
+      "titel": "Geschwindigkeit und Zeit",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Geschwindigkeit und Zeit als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-11",
+      "slug": "pt-mat-11-drehzahl-und-schnittgeschwindigkeit",
+      "thema": "PT-MAT",
+      "prefix": "DrehzahlSchnittgeschwindigkeit",
+      "titel": "Drehzahl und Schnittgeschwindigkeit",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Drehzahl und Schnittgeschwindigkeit als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-12",
+      "slug": "pt-mat-12-vorschub-berechnen",
+      "thema": "PT-MAT",
+      "prefix": "VorschubBerechnen",
+      "titel": "Vorschub berechnen",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Vorschub berechnen als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-13",
+      "slug": "pt-mat-13-kraft-und-druck",
+      "thema": "PT-MAT",
+      "prefix": "KraftUndDruck",
+      "titel": "Kraft und Druck",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Kraft und Druck als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-14",
+      "slug": "pt-mat-14-hydraulischer-druck",
+      "thema": "PT-MAT",
+      "prefix": "HydraulischerDruck",
+      "titel": "Hydraulischer Druck",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Hydraulischer Druck als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-15",
+      "slug": "pt-mat-15-leistung-arbeit-wirkungsgrad",
+      "thema": "PT-MAT",
+      "prefix": "LeistungArbeitWirkungsgrad",
+      "titel": "Leistung, Arbeit, Wirkungsgrad",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Leistung, Arbeit, Wirkungsgrad als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-16",
+      "slug": "pt-mat-16-uebersetzungsverhaeltnis",
+      "thema": "PT-MAT",
+      "prefix": "Uebersetzungsverhaeltnis",
+      "titel": "Uebersetzungsverhaeltnis",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Uebersetzungsverhaeltnis als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-17",
+      "slug": "pt-mat-17-drehmoment",
+      "thema": "PT-MAT",
+      "prefix": "Drehmoment",
+      "titel": "Drehmoment",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Drehmoment als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-18",
+      "slug": "pt-mat-18-gutmenge-und-ausschussquote",
+      "thema": "PT-MAT",
+      "prefix": "GutmengeAusschussquote",
+      "titel": "Gutmenge und Ausschussquote",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Gutmenge und Ausschussquote als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-19",
+      "slug": "pt-mat-19-produktionsleistung",
+      "thema": "PT-MAT",
+      "prefix": "Produktionsleistung",
+      "titel": "Produktionsleistung",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Produktionsleistung als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-20",
+      "slug": "pt-mat-20-prozentuale-abweichung",
+      "thema": "PT-MAT",
+      "prefix": "ProzentualeAbweichung",
+      "titel": "Prozentuale Abweichung",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Prozentuale Abweichung als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-21",
+      "slug": "pt-mat-21-waermeausdehnung-pruefungsnah",
+      "thema": "PT-MAT",
+      "prefix": "WaermeausdehnungPruefungsnah",
+      "titel": "Waermeausdehnung pruefungsnah",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Waermeausdehnung pruefungsnah als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-22",
+      "slug": "pt-mat-22-toleranzberechnung",
+      "thema": "PT-MAT",
+      "prefix": "Toleranzberechnung",
+      "titel": "Toleranzberechnung",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Toleranzberechnung als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-23",
+      "slug": "pt-mat-23-formel-umstellen",
+      "thema": "PT-MAT",
+      "prefix": "FormelUmstellen",
+      "titel": "Formel umstellen",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Formel umstellen als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-MAT-24",
+      "slug": "pt-mat-24-plausibilitaet-von-ergebnissen",
+      "thema": "PT-MAT",
+      "prefix": "PlausibilitaetVonErgebnissen",
+      "titel": "Plausibilitaet von Ergebnissen",
+      "distractor": "Blind rechnen",
+      "schemaTitle": "Plausibilitaet von Ergebnissen als Rechenweg strukturieren"
+    },
+    {
+      "id": "FK-4-WISO-01",
+      "slug": "pt-wiso-01-ausbildungsvertrag",
+      "thema": "PT-WISO",
+      "prefix": "Ausbildungsvertrag",
+      "titel": "Ausbildungsvertrag",
+      "distractor": "Fristen frei erfinden",
+      "schemaTitle": "Ausbildungsvertrag als WiSo-Lernbild einordnen"
+    },
+    {
+      "id": "FK-4-WISO-02",
+      "slug": "pt-wiso-02-rechte-und-pflichten",
+      "thema": "PT-WISO",
+      "prefix": "RechteUndPflichten",
+      "titel": "Rechte und Pflichten",
+      "distractor": "Fristen frei erfinden",
+      "schemaTitle": "Rechte und Pflichten als WiSo-Lernbild einordnen"
+    },
+    {
+      "id": "FK-4-WISO-03",
+      "slug": "pt-wiso-03-probezeit-und-kuendigung",
+      "thema": "PT-WISO",
+      "prefix": "ProbezeitUndKuendigung",
+      "titel": "Probezeit und Kuendigung",
+      "distractor": "Fristen frei erfinden",
+      "schemaTitle": "Probezeit und Kuendigung als WiSo-Lernbild einordnen"
+    },
+    {
+      "id": "FK-4-WISO-04",
+      "slug": "pt-wiso-04-arbeitsvertrag-und-tarifvertrag",
+      "thema": "PT-WISO",
+      "prefix": "ArbeitsvertragTarifvertrag",
+      "titel": "Arbeitsvertrag und Tarifvertrag",
+      "distractor": "Fristen frei erfinden",
+      "schemaTitle": "Arbeitsvertrag und Tarifvertrag als WiSo-Lernbild einordnen"
+    },
+    {
+      "id": "FK-4-WISO-05",
+      "slug": "pt-wiso-05-tarifautonomie-und-betriebsrat",
+      "thema": "PT-WISO",
+      "prefix": "TarifautonomieBetriebsrat",
+      "titel": "Tarifautonomie und Betriebsrat",
+      "distractor": "Fristen frei erfinden",
+      "schemaTitle": "Tarifautonomie und Betriebsrat als WiSo-Lernbild einordnen"
+    },
+    {
+      "id": "FK-4-WISO-06",
+      "slug": "pt-wiso-06-jugend-und-auszubildendenvertretung",
+      "thema": "PT-WISO",
+      "prefix": "JugendAuszubildendenvertretung",
+      "titel": "Jugend- und Auszubildendenvertretung",
+      "distractor": "Fristen frei erfinden",
+      "schemaTitle": "Jugend- und Auszubildendenvertretung als WiSo-Lernbild einordnen"
+    },
+    {
+      "id": "FK-4-WISO-07",
+      "slug": "pt-wiso-07-sozialversicherung",
+      "thema": "PT-WISO",
+      "prefix": "Sozialversicherung",
+      "titel": "Sozialversicherung",
+      "distractor": "Fristen frei erfinden",
+      "schemaTitle": "Sozialversicherung als WiSo-Lernbild einordnen"
+    },
+    {
+      "id": "FK-4-WISO-08",
+      "slug": "pt-wiso-08-arbeitszeit-und-urlaub",
+      "thema": "PT-WISO",
+      "prefix": "ArbeitszeitUndUrlaub",
+      "titel": "Arbeitszeit und Urlaub",
+      "distractor": "Fristen frei erfinden",
+      "schemaTitle": "Arbeitszeit und Urlaub als WiSo-Lernbild einordnen"
+    },
+    {
+      "id": "FK-4-WISO-09",
+      "slug": "pt-wiso-09-entgeltabrechnung",
+      "thema": "PT-WISO",
+      "prefix": "Entgeltabrechnung",
+      "titel": "Entgeltabrechnung",
+      "distractor": "Fristen frei erfinden",
+      "schemaTitle": "Entgeltabrechnung als WiSo-Lernbild einordnen"
+    },
+    {
+      "id": "FK-4-WISO-10",
+      "slug": "pt-wiso-10-nachhaltigkeit-und-umweltschutz",
+      "thema": "PT-WISO",
+      "prefix": "NachhaltigkeitUmweltschutz",
+      "titel": "Nachhaltigkeit und Umweltschutz",
+      "distractor": "Fristen frei erfinden",
+      "schemaTitle": "Nachhaltigkeit und Umweltschutz als WiSo-Lernbild einordnen"
+    },
+    {
+      "id": "FK-4-WISO-11",
+      "slug": "pt-wiso-11-wirtschaftlichkeit-und-produktivitaet",
+      "thema": "PT-WISO",
+      "prefix": "WirtschaftlichkeitProduktivitaet",
+      "titel": "Wirtschaftlichkeit und Produktivitaet",
+      "distractor": "Fristen frei erfinden",
+      "schemaTitle": "Wirtschaftlichkeit und Produktivitaet als WiSo-Lernbild einordnen"
+    },
+    {
+      "id": "FK-4-WISO-12",
+      "slug": "pt-wiso-12-oekonomisches-prinzip",
+      "thema": "PT-WISO",
+      "prefix": "OekonomischesPrinzip",
+      "titel": "Oekonomisches Prinzip",
+      "distractor": "Fristen frei erfinden",
+      "schemaTitle": "Oekonomisches Prinzip als WiSo-Lernbild einordnen"
+    },
+    {
+      "id": "FK-4-PRF-01",
+      "slug": "pt-prf-01-aufgabenstellung-richtig-lesen",
+      "thema": "PT-PRF",
+      "prefix": "AufgabenstellungRichtigLesen",
+      "titel": "Aufgabenstellung richtig lesen",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Aufgabenstellung richtig lesen als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-02",
+      "slug": "pt-prf-02-gegeben-und-gesucht-finden",
+      "thema": "PT-PRF",
+      "prefix": "GegebenUndGesucht",
+      "titel": "Gegeben und gesucht finden",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Gegeben und gesucht finden als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-03",
+      "slug": "pt-prf-03-passende-formel-finden",
+      "thema": "PT-PRF",
+      "prefix": "PassendeFormelFinden",
+      "titel": "Passende Formel finden",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Passende Formel finden als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-04",
+      "slug": "pt-prf-04-einheiten-kontrollieren",
+      "thema": "PT-PRF",
+      "prefix": "EinheitenKontrollieren",
+      "titel": "Einheiten kontrollieren",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Einheiten kontrollieren als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-05",
+      "slug": "pt-prf-05-tabellenbuch-nutzen",
+      "thema": "PT-PRF",
+      "prefix": "TabellenbuchNutzen",
+      "titel": "Tabellenbuch nutzen",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Tabellenbuch nutzen als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-06",
+      "slug": "pt-prf-06-multiple-choice-ausschlussverfahren",
+      "thema": "PT-PRF",
+      "prefix": "MultipleChoiceAusschluss",
+      "titel": "Multiple-Choice-Ausschlussverfahren",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Multiple-Choice-Ausschlussverfahren als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-07",
+      "slug": "pt-prf-07-unbekannte-begriffe-bearbeiten",
+      "thema": "PT-PRF",
+      "prefix": "UnbekannteBegriffe",
+      "titel": "Unbekannte Begriffe bearbeiten",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Unbekannte Begriffe bearbeiten als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-08",
+      "slug": "pt-prf-08-zeitmanagement",
+      "thema": "PT-PRF",
+      "prefix": "Zeitmanagement",
+      "titel": "Zeitmanagement",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Zeitmanagement als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-09",
+      "slug": "pt-prf-09-pruefungsangst-reduzieren",
+      "thema": "PT-PRF",
+      "prefix": "PruefungsangstReduzieren",
+      "titel": "Pruefungsangst reduzieren",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Pruefungsangst reduzieren als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-10",
+      "slug": "pt-prf-10-typische-pruefungsfallen",
+      "thema": "PT-PRF",
+      "prefix": "TypischePruefungsfallen",
+      "titel": "Typische Pruefungsfallen",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Typische Pruefungsfallen als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-11",
+      "slug": "pt-prf-11-mini-pruefung-produktionstechnik",
+      "thema": "PT-PRF",
+      "prefix": "MiniPruefungProduktionstechnik",
+      "titel": "Mini-Pruefung Produktionstechnik",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Mini-Pruefung Produktionstechnik als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-12",
+      "slug": "pt-prf-12-mini-pruefung-produktionsplanung",
+      "thema": "PT-PRF",
+      "prefix": "MiniPruefungProduktionsplanung",
+      "titel": "Mini-Pruefung Produktionsplanung",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Mini-Pruefung Produktionsplanung als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-13",
+      "slug": "pt-prf-13-mini-pruefung-wiso",
+      "thema": "PT-PRF",
+      "prefix": "MiniPruefungWiso",
+      "titel": "Mini-Pruefung WiSo",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Mini-Pruefung WiSo als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-14",
+      "slug": "pt-prf-14-wiederholungsmodus-nach-fehlern",
+      "thema": "PT-PRF",
+      "prefix": "Wiederholungsmodus",
+      "titel": "Wiederholungsmodus nach Fehlern",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Wiederholungsmodus nach Fehlern als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-15",
+      "slug": "pt-prf-15-persoenliche-schwachstellen-erkennen",
+      "thema": "PT-PRF",
+      "prefix": "PersoenlicheSchwachstellen",
+      "titel": "Persoenliche Schwachstellen erkennen",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Persoenliche Schwachstellen erkennen als Pruefungsstrategie trainieren"
+    },
+    {
+      "id": "FK-4-PRF-16",
+      "slug": "pt-prf-16-pruefungssimulation-abschluss",
+      "thema": "PT-PRF",
+      "prefix": "PruefungssimulationAbschluss",
+      "titel": "Pruefungssimulation Abschluss",
+      "distractor": "Antworten nur raten",
+      "schemaTitle": "Pruefungssimulation Abschluss als Pruefungsstrategie trainieren"
+    }
+  ]
+}

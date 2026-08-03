@@ -1,0 +1,118 @@
+---
+titel: "Schutzeinrichtungen verstehen"
+thema_code: "PT-SIC"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Konkrete Schutzkonzepte der betrieblichen Maschinen muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Schutzeinrichtungen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Maschinenspezifische Schutzfunktionen und Freigaben muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung Arbeitssicherheit"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit erklaert Beispiele und ersetzt keine lokale Maschinenunterweisung."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Schutztuer">
+Eine Schutztuer ist offen. Jemand sagt: "Halte den Schalter kurz, dann laeuft sie weiter." Das klingt nach
+Zeitgewinn, ist aber ein massiver Sicherheitsverstoss.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schutzeinrichtung", "Schutzgitter", "Lichtschranke", "Gefahrbereich", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schutz in Alltagssprache">
+Schutzeinrichtungen halten dich vom Gefahrbereich weg oder stoppen die Anlage, wenn du in den Bereich
+kommst. Sie sind kein Hindernis, sondern Teil der sicheren Maschine.
+</EinfachErklaert>
+
+<SchutzeinrichtungSchema />
+
+<SchutzeinrichtungTrainer titel="Schutzlogik trainieren" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Schutzeinrichtungen sind Teil des Schutzkonzepts">
+Schutzeinrichtungen koennen trennend wirken, zum Beispiel Schutzgitter, oder beruehrungslos, zum Beispiel
+Lichtschranken. Sie sollen verhindern, dass Personen gefaehrlichen Bewegungen ausgesetzt werden. Manipulation,
+Ueberbrueckung oder Arbeiten mit beschaedigter Schutzeinrichtung ist nicht zulaessig.
+</FachlichErklaert>
+
+## Typische Beispiele
+
+| Einrichtung | Aufgabe | Sicheres Verhalten |
+|---|---|---|
+| Schutzgitter | Zugang begrenzen | Nicht oeffnen oder ueberbruecken |
+| Verriegelung | Betrieb bei offenem Schutz verhindern | Defekte melden |
+| Lichtschranke | Eingriff erkennen | Nicht absichtlich umgehen |
+
+<Praxisbeispiel titel="Praxisbeispiel Schutzgitter">
+Das Schutzgitter schliesst nicht richtig. Du startest nicht trotzdem. Du sicherst die Situation nach Vorgabe
+und meldest den Zustand, bevor jemand weiterarbeitet.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Welche Schutzeinrichtung welche Funktion hat, ergibt sich aus Maschine, Betriebsanweisung und Unterweisung.
+Namen und Beispiele hier sind Lernbeispiele.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Schutz wird nicht ausgetrickst. Wenn Schutz fehlt oder defekt wirkt, wird gesichert und gemeldet.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-SIC-005::check"
+  fragen={[
+    {
+      id: "schutzgitter-offen",
+      masterySchluessel: "FK-1-SIC-005::schutzgitter-offen",
+      aufgabenstellung: "Was machst du, wenn ein Schutzgitter offen oder defekt wirkt?",
+      optionen: [
+        {
+          id: "sichern-melden",
+          text: "Nicht weiterarbeiten, Situation sichern und melden.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Ein unsicherer Schutz wird nicht ignoriert.",
+        },
+        {
+          id: "ueberbruecken",
+          text: "Kurz ueberbruecken, damit der Auftrag fertig wird.",
+          istKorrekt: false,
+          erklaerung: "Schutzeinrichtungen duerfen nicht manipuliert oder ueberbrueckt werden.",
+        },
+      ],
+    },
+    {
+      id: "lichtschranke",
+      masterySchluessel: "FK-1-SIC-005::lichtschranke",
+      aufgabenstellung: "Welche Aufgabe kann eine Lichtschranke haben?",
+      optionen: [
+        {
+          id: "eingriff-erkennen",
+          text: "Einen Eingriff in den Gefahrbereich erkennen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Sie kann Teil einer beruehrungslos wirkenden Schutzeinrichtung sein.",
+        },
+        {
+          id: "teil-messen",
+          text: "Immer die Werkstueckmasse messen.",
+          istKorrekt: false,
+          erklaerung: "Das ist nicht die Grundaufgabe einer Schutzeinrichtung.",
+        },
+      ],
+    },
+  ]}
+/>

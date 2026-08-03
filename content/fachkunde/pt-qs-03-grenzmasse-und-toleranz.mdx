@@ -1,0 +1,57 @@
+---
+titel: "Grenzmasse und Toleranz"
+thema_code: "PT-QS"
+lesedauer_minuten: 10
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Grenzmasse, Toleranzbeispiele und Tabellenbuchbezug muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch und Pruefplan Toleranzen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Grenzwerte und Toleranzbeispiele mit Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation mit Grenzwert">
+Ein gemessenes Teil liegt nicht genau beim Nennmass. Du musst entscheiden, ob es trotzdem innerhalb der erlaubten Grenzen liegt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Grenzmass", "Toleranz", "Istwert", "Gutteil"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Toleranz in Alltagssprache">
+Ein Teil darf ein bisschen abweichen, solange es zwischen unterem und oberem Grenzmass bleibt.
+</EinfachErklaert>
+
+<GrenzmasseToleranzSchema />
+
+<GrenzmasseToleranzTrainer titel="Grenzmasse und Toleranz" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Gutteilbereich bestimmen">
+Grenzmasse begrenzen das Toleranzfeld. Ein Istwert innerhalb dieses Bereichs ist zulaessig, ein Wert ausserhalb muss nach Pruefplan gesperrt, geklaert oder bewertet werden.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel oberes Grenzmass">
+Ein Durchmesser ist groesser als das obere Grenzmass. Du kennzeichnest das Teil nicht als Gutteil, sondern folgst dem Sperr- und Meldeweg.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Grenzen werden gelesen, nicht passend gemacht.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-QS-003::check"
+  fragen={[{ id: "toleranzfeld", masterySchluessel: "FK-3-QS-003::toleranzfeld", aufgabenstellung: "Wann liegt ein Gutteil im einfachen Toleranzfall vor?", optionen: [{ id: "richtig", text: "Wenn der Istwert innerhalb der erlaubten Grenzmasse liegt.", istKorrekt: true, erklaerung: "Richtig. Der erlaubte Bereich wird durch die Grenzmasse bestimmt." }, { id: "falsch", text: "Wenn der Istwert nahe am Wunschwert liegt.", istKorrekt: false, erklaerung: "Nein. Entscheidend sind die angegebenen Grenzen." }] }]}
+/>

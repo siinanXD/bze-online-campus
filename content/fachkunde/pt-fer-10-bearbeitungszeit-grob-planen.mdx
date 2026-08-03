@@ -1,0 +1,70 @@
+---
+titel: "Bearbeitungszeit grob planen"
+thema_code: "PT-FER"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Formel, Beispielwerte und Abgrenzung zu Ruest-/Nebenzeiten muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Bearbeitungszeit"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Bearbeitungszeitformeln und Beispielwerte nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation in der Planung">
+Du willst grob abschaetzen, wie lange ein Bearbeitungsschritt dauert. Dafuer betrachtest du Weg,
+Geschwindigkeit und zusaetzliche Zeitanteile getrennt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Bearbeitungszeit", "Vorschub", "Drehzahl", "Arbeitsgang"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Bearbeitungszeit in Alltagssprache">
+Wenn du weisst, welcher Weg bearbeitet wird und wie schnell die Bewegung ist, kannst du eine Zeit grob
+abschaetzen.
+</EinfachErklaert>
+
+<BearbeitungszeitSchema />
+
+<BearbeitungszeitTrainer titel="Bearbeitungszeit grob planen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Reine Bearbeitung und Nebenzeiten trennen">
+Die reine Bearbeitungszeit wird aus Bearbeitungsweg und Geschwindigkeit abgeleitet. Ruestzeit, Pruefen,
+Werkzeugwechsel und Stoerungen gehoeren nicht automatisch in dieselbe Formel.
+</FachlichErklaert>
+
+<Formelkarte titel="Grundformel Bearbeitungszeit" formel="t = s / v">
+Die Formelkarte zeigt nur den Grundzusammenhang. Konkrete Wege, Vorschuebe und Einheiten sind
+quellenpflichtig.
+</Formelkarte>
+
+<Praxisbeispiel titel="Praxisbeispiel Ablauf">
+Fuer eine grobe Planung unterscheidest du Bearbeiten, Ruesten, Pruefen und Rueckmelden. So wird die
+Abschaetzung nachvollziehbar.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Bearbeitungszeitrechnungen brauchen freigegebene Formeln, Einheiten und Prozesswerte.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Zeitplanung trennt Bearbeitungsweg, Geschwindigkeit und Nebenzeiten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-FER-010::check"
+  fragen={[{ id: "zeit", masterySchluessel: "FK-2-FER-010::zeit", aufgabenstellung: "Welche Grundidee beschreibt t = s / v?", optionen: [{ id: "weg", text: "Zeit ist Weg durch Geschwindigkeit.", istKorrekt: true, erklaerung: "Richtig." }, { id: "farbe", text: "Zeit ist Farbe durch Werkzeug.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

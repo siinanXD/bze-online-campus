@@ -1,0 +1,57 @@
+---
+titel: "Schlieren und Feuchtigkeitsschlieren"
+thema_code: "PT-FEK"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Feuchteursachen, Trocknungsvorgaben und Materialfreigabe muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Materialdatenblatt und betriebliche Trocknungsvorgabe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Trocknungsbedingungen, Materialgrenzen und Freigabeweg nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation auf Sichtteil">
+Auf einem Sichtteil laufen helle Streifen ueber die Oberflaeche. Die Farbe ist nicht gleichmaessig und das Teil wirkt wolkig.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schlieren", "Feuchte", "Trocknung", "Charge"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schlieren in Alltagssprache">
+Schlieren sind Streifen oder Wolken im Kunststoffteil. Sie koennen zeigen, dass Material, Farbe oder Feuchte nicht passt.
+</EinfachErklaert>
+
+<SchlierenFeuchtigkeitSchema />
+
+<SchlierenFeuchtigkeitTrainer titel="Schlieren und Feuchtigkeitsschlieren" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Schlieren pruefen">
+Schlieren koennen durch Feuchte, unzureichende Trocknung, Materialvermischung, Farbwechsel, Temperatur oder Scherung entstehen. Trocknung und Materialfreigabe kommen aus Datenblatt oder Auftrag.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel transparentes Teil">
+Ein transparentes Teil zeigt silbrige Streifen. Du pruefst Charge, Trocknungshinweis und Meldung statt mehr Farbe zuzugeben.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Schlieren sind ein Hinweis, keine Dekoration.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEK-006::check"
+  fragen={[{ id: "schlieren", masterySchluessel: "FK-3-FEK-006::schlieren", aufgabenstellung: "Welche Quelle ist bei Feuchteverdacht wichtig?", optionen: [{ id: "richtig", text: "Materialdatenblatt oder betriebliche Trocknungsvorgabe.", istKorrekt: true, erklaerung: "Richtig. Trocknung ist materialabhaengig." }, { id: "falsch", text: "Eine frei geschaetzte Trocknungszeit.", istKorrekt: false, erklaerung: "Nein. Trocknungsbedingungen sind quellenpflichtig." }] }]}
+/>

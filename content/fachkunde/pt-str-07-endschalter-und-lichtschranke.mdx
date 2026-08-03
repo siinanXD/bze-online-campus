@@ -1,0 +1,57 @@
+---
+titel: "Endschalter und Lichtschranke"
+thema_code: "PT-STR"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Sensorabgrenzung, Einbau- und Diagnosebeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Fachbuch Steuerungstechnik und Sensor-/Anlagenunterlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Sensorbeispiele, Diagnoseschritte und Anlagenbezug nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Hubtisch">
+Ein Hubtisch muss seine Endlage melden. An einer anderen Station wird geprueft, ob ein Teil den Lichtweg unterbricht.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Endschalter", "Lichtschranke", "Sensor", "Signal"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Zwei Sensorarten einfach">
+Ein Endschalter erkennt oft eine mechanische Endlage. Eine Lichtschranke erkennt, ob ein Lichtstrahl frei oder unterbrochen ist.
+</EinfachErklaert>
+
+<EndschalterLichtschrankeSchema />
+
+<EndschalterLichtschrankeTrainer titel="Endschalter und Lichtschranke" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Sensoren unterscheiden">
+Endschalter arbeiten haeufig mechanisch oder positionsbezogen. Lichtschranken erfassen Objekte beruehrungslos ueber Sender und Empfaenger. Bei Stoerung werden Einbau, Ausrichtung, Verschmutzung und Signalstatus geprueft.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel verschmutzte Lichtschranke">
+Eine Lichtschranke meldet dauerhaft belegt. Du blockierst sie nicht mit Werkzeug, sondern pruefst Verschmutzung, Ausrichtung und Meldeweg.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Endschalter meldet Position, Lichtschranke meldet Lichtweg.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-STR-007::check"
+  fragen={[{ id: "lichtschranke", masterySchluessel: "FK-3-STR-007::lichtschranke", aufgabenstellung: "Was passt zur Lichtschranke?", optionen: [{ id: "richtig", text: "Sie ueberwacht, ob ein Lichtweg frei oder unterbrochen ist.", istKorrekt: true, erklaerung: "Richtig. Das ist das Grundprinzip." }, { id: "falsch", text: "Sie wird bei Stoerung mit Werkzeug dauerhaft blockiert.", istKorrekt: false, erklaerung: "Nein. Sensoren werden nicht manipuliert." }] }]}
+/>

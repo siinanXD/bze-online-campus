@@ -114,7 +114,7 @@ export function PruefungRunner({
   const knapp = rest <= 300;
 
   return (
-    <main className="mx-auto max-w-2xl p-4 pb-28">
+    <main className="mx-auto max-w-md px-5 pb-28 pt-3">
       {/* Kopf: Timer + Fortschritt */}
       <div className="sticky top-0 z-10 -mx-4 mb-3 flex items-center justify-between border-b border-border bg-bg px-4 py-2">
         <span className="text-sm text-fg-muted">{t('frageXvonN', { pos: idx + 1, n: fragen.length })}</span>

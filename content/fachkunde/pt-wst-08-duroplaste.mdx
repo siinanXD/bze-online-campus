@@ -1,0 +1,114 @@
+---
+titel: "Duroplaste"
+thema_code: "PT-WST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Duroplast-Beispiele, Vernetzungsbegriff und Abgrenzung muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Duroplaste"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Beispiele, Begriffe und Verarbeitungsregeln muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Bauteil">
+Ein Kunststoffteil bleibt auch bei Waerme formstabiler als erwartet. Dein Ausbilder nutzt das Beispiel,
+um Duroplaste von Thermoplasten abzugrenzen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Duroplast", "Kunststoff", "Vernetzung", "Thermoplast", "Werkstoffangabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Duroplast in Alltagssprache">
+Ein Duroplast ist ein Kunststoff mit vernetzter Struktur. Nach dem Aushaerten wird er nicht einfach wieder
+wie ein Thermoplast schmelzfaehig.
+</EinfachErklaert>
+
+<DuroplastSchema />
+
+<DuroplastTrainer titel="Duroplaste abgrenzen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Vernetzung verstehen">
+Duroplaste werden ueber ihre vernetzte Struktur verstanden. Diese Vernetzung unterscheidet ihr Verhalten
+von Thermoplasten. Die konkrete Bearbeitung und Belastbarkeit haengen von Werkstoffangabe und Datenblatt ab.
+</FachlichErklaert>
+
+## Abgrenzung
+
+| Begriff | Einfache Bedeutung |
+|---|---|
+| Thermoplast | Kann bei geeigneter Waerme weich oder schmelzfaehig werden |
+| Duroplast | Vernetzte Struktur, nicht erneut wie Thermoplast schmelzfaehig |
+| Vernetzung | Struktur ist netzartig verbunden |
+| Werkstoffangabe | Entscheidet ueber konkretes Vorgehen |
+
+<Praxisbeispiel titel="Praxisbeispiel Reparaturidee">
+Ein Duroplastteil soll mit Waerme nachgeformt werden. Du behandelst es nicht wie einen Thermoplast,
+sondern pruefst die Werkstoffangabe und die freigegebene Arbeitsanweisung.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Duroplast-Beispiele, Vernetzung, Verarbeitung und Einsatzgrenzen muessen aus Tabellenbuch, Datenblatt
+oder Unterweisung stammen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Duroplast: vernetzt denken, nicht wie Thermoplast schmelzen denken.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WST-008::check"
+  fragen={[
+    {
+      id: "vernetzung",
+      masterySchluessel: "FK-1-WST-008::vernetzung",
+      aufgabenstellung: "Welcher Begriff passt besonders zu Duroplasten?",
+      optionen: [
+        {
+          id: "vernetzung",
+          text: "Vernetzung.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Vernetzung ist ein Kernbegriff.",
+        },
+        {
+          id: "nonius",
+          text: "Nonius.",
+          istKorrekt: false,
+          erklaerung: "Nein. Nonius gehoert zum Messschieber.",
+        },
+      ],
+    },
+    {
+      id: "abgrenzung",
+      masterySchluessel: "FK-1-WST-008::abgrenzung",
+      aufgabenstellung: "Was unterscheidet Duroplaste grob von Thermoplasten?",
+      optionen: [
+        {
+          id: "nicht-erneut",
+          text: "Sie werden nicht erneut wie Thermoplaste schmelzfaehig.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Das ist die einfache Abgrenzung.",
+        },
+        {
+          id: "metall",
+          text: "Sie sind Metalle.",
+          istKorrekt: false,
+          erklaerung: "Nein. Duroplaste sind Kunststoffe.",
+        },
+      ],
+    },
+  ]}
+/>

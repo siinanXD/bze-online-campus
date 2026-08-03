@@ -1,0 +1,57 @@
+---
+titel: "Lunker"
+thema_code: "PT-FEK"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Lunkerpruefung, Schnittbildbezug und Freigabeweg muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Fachbuch Kunststoffverarbeitung und betriebliche Pruefanweisung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Pruefmethoden, typische Ursachen und Bewertungsregeln nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation im Schnittbild">
+Ein scheinbar gutes Kunststoffteil wird aufgeschnitten. Im Inneren ist ein Hohlraum sichtbar, obwohl die Oberflaeche vorher fast unauffaellig war.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Lunker", "Schwindung", "Nachdruck", "Schnittdarstellung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Lunker in Alltagssprache">
+Ein Lunker ist ein Hohlraum im Inneren des Teils. Von aussen sieht man ihn nicht immer sicher.
+</EinfachErklaert>
+
+<LunkerSchema />
+
+<LunkerTrainer titel="Lunker" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Lunker erklaeren">
+Lunker koennen durch Schwindung, dicke Wandbereiche, fehlende Nachspeisung oder unpassende Prozessfuehrung entstehen. Die sichere Bewertung folgt Pruefplan, Schnittbild, Bruchbild oder spezieller Pruefung.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Rastnase">
+Eine Rastnase bricht beim Funktionstest. Im Bruchbild erkennst du eine Hohlstelle. Du meldest den Verdacht und sperrst betroffene Teile.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Lunker koennen innen liegen; Sichtpruefung allein reicht nicht immer.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEK-002::check"
+  fragen={[{ id: "lunker", masterySchluessel: "FK-3-FEK-002::lunker", aufgabenstellung: "Was ist bei Lunkerverdacht richtig?", optionen: [{ id: "richtig", text: "Pruefweg klaeren und betroffene Teile trennen.", istKorrekt: true, erklaerung: "Richtig. Lunker muessen nach Vorgabe bewertet werden." }, { id: "falsch", text: "Nur die Aussenflaeche polieren.", istKorrekt: false, erklaerung: "Nein. Ein innerer Hohlraum wird dadurch nicht geloest." }] }]}
+/>

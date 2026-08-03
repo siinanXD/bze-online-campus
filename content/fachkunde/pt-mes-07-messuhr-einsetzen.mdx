@@ -1,0 +1,115 @@
+---
+titel: "Messuhr einsetzen"
+thema_code: "PT-MES"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Aufbau, Messrichtung, zulässige Abweichungen und Rundlaufbewertung muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Messuhr und Rundlauf"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Messuhrarten, Tastpunkte, Messrichtung und Bewertungsregeln muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Pruefplatz">
+Ein rundes Teil soll auf Abweichungen geprueft werden. Dein Ausbilder spannt es ein und zeigt dir,
+wie die Messuhr ruhig am Werkstueck anliegt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Messuhr", "Rundlauf", "Pruefen", "Messwert", "Pruefmittel"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Messuhr in Alltagssprache">
+Die Messuhr zeigt kleine Bewegungen oder Abweichungen mit einem Zeiger. Du liest nicht einfach irgendeinen
+Wert ab, sondern pruefst nach Aufbau, Richtung und Vorgabe.
+</EinfachErklaert>
+
+<MessuhrSchema />
+
+<MessuhrTrainer titel="Messuhr einsetzen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Abweichungen sichtbar machen">
+Eine Messuhr wird zum Erfassen kleiner Weg-, Lage- oder Rundlaufabweichungen eingesetzt. Der Tastkontakt
+muss sauber sitzen. Das Werkstueck, die Aufnahme und der Messuhrenhalter duerfen nicht wackeln.
+Die Anzeige wird immer mit Pruefplan, Zeichnung oder Unterweisung verglichen.
+</FachlichErklaert>
+
+## Wichtige Punkte
+
+| Punkt | Bedeutung |
+|---|---|
+| Aufbau | Messuhr, Halter und Werkstueck muessen stabil sein |
+| Tastkontakt | Der Taster beruehrt die richtige Stelle in der richtigen Richtung |
+| Beobachten | Zeigerausschlag ruhig verfolgen |
+| Bewerten | Anzeige nur nach Vorgabe beurteilen |
+
+<Praxisbeispiel titel="Praxisbeispiel springender Zeiger">
+Der Zeiger springt unruhig. Du liest nicht schnell irgendeinen Wert ab, sondern pruefst zuerst, ob Aufbau,
+Tastpunkt, Schmutz oder lose Spannung die Ursache sind.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Messrichtung, Messbereich, Ablesung und Bewertung von Rundlauf oder Lageabweichung muessen aus Tabellenbuch,
+Pruefplan, Herstellerangabe oder Unterweisung stammen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Eine Messuhr ist nur so verlaesslich wie ihr Aufbau.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MES-007::check"
+  fragen={[
+    {
+      id: "aufbau",
+      masterySchluessel: "FK-1-MES-007::aufbau",
+      aufgabenstellung: "Was pruefst du, wenn der Messuhrzeiger unruhig springt?",
+      optionen: [
+        {
+          id: "aufbau-pruefen",
+          text: "Aufbau, Tastkontakt und Schmutz pruefen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Ein unsicherer Aufbau macht die Anzeige unsicher.",
+        },
+        {
+          id: "zeiger-druecken",
+          text: "Den Zeiger mit der Hand beruhigen.",
+          istKorrekt: false,
+          erklaerung: "Nein. Am Zeiger wird nicht manipuliert.",
+        },
+      ],
+    },
+    {
+      id: "bewerten",
+      masterySchluessel: "FK-1-MES-007::bewerten",
+      aufgabenstellung: "Womit vergleichst du die Anzeige der Messuhr?",
+      optionen: [
+        {
+          id: "vorgabe",
+          text: "Mit Pruefplan, Zeichnung oder Unterweisung.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Die Anzeige allein entscheidet noch nicht.",
+        },
+        {
+          id: "gefuehl",
+          text: "Mit deinem Gefuehl.",
+          istKorrekt: false,
+          erklaerung: "Nein. Bewertet wird nach Vorgabe.",
+        },
+      ],
+    },
+  ]}
+/>

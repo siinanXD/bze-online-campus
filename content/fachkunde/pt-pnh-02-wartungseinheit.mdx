@@ -1,0 +1,57 @@
+---
+titel: "Wartungseinheit"
+thema_code: "PT-PNH"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Arbeitsdruck, Filter-/Kondensatvorgaben und Oeler-Regeln muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Metall/Mechatronik, Maschinenhandbuch und Betriebsanweisung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Zulaessige Druckwerte, Wartungsintervalle und oelfreie/oelhaltige Vorgaben nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation vor dem Schichtstart">
+An einer Wartungseinheit ist Wasser im Schauglas sichtbar. Du sollst nicht einfach weiterproduzieren, sondern erkennen, welche Aufgabe Filter, Druckregler und Kondensatkontrolle haben.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Wartungseinheit", "Filter", "Druckregler", "Kondensat", "Druck"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Luft sauber und passend machen">
+Die Wartungseinheit hilft, die Druckluft fuer die Maschine passend zu machen. Sie filtert, zeigt oder regelt Druck und macht Kondensat sichtbar.
+</EinfachErklaert>
+
+<WartungseinheitSchema />
+
+<WartungseinheitTrainer titel="Wartungseinheit" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Filter, Regler und Kondensat">
+Eine Wartungseinheit sitzt haeufig vor pneumatischen Verbrauchern. Sie kann Schmutz und Wasser abscheiden, den Arbeitsdruck einstellen oder anzeigen und je nach Anlage weitere Funktionen enthalten. Ob ein Oeler vorhanden oder zulaessig ist, richtet sich nach Maschine und Vorgabe.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel auffaellige Anzeige">
+Wenn der angezeigte Druck nicht zur Vorgabe passt oder Kondensat auffaellt, dokumentierst du den Fund und meldest ihn nach betrieblichem Weg. Werte und Einstellgrenzen werden nicht geraten.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Wartungseinheit pruefen: Filter, Druck, Kondensat und Vorgabe.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-PNH-002::check"
+  fragen={[{ id: "wartungseinheit", masterySchluessel: "FK-3-PNH-002::wartungseinheit", aufgabenstellung: "Was ist eine sichere Aussage zur Wartungseinheit?", optionen: [{ id: "richtig", text: "Sie bereitet Druckluft vor und wird nach Vorgabe kontrolliert.", istKorrekt: true, erklaerung: "Richtig. Filter, Druck und Kondensat folgen der Anlagenvorgabe." }, { id: "falsch", text: "Sie darf immer beliebig hoeher eingestellt werden, wenn ein Zylinder langsam ist.", istKorrekt: false, erklaerung: "Nein. Druckeinstellungen sind quellen- und freigabepflichtig." }] }]}
+/>

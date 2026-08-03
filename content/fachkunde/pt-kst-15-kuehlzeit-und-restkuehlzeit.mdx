@@ -1,0 +1,57 @@
+---
+titel: "Kuehlzeit und Restkuehlzeit"
+thema_code: "PT-KST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Kuehlzeit, Entformbarkeit und Qualitaetsrisiken muessen fachlich geprueft werden."
+quellen:
+  - titel: "Tabellenbuch Kunststofftechnik Kuehlung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Kuehlzeitanteile und Restkuehlzeit nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation vor dem Auswerfen">
+Die Maschine wartet, obwohl die Kavitaet schon gefuellt ist. Du erkennst, dass das Teil erst stabil genug werden muss.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Kuehlzeit", "Restkuehlzeit", "Entformen", "Verzug"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Kuehlzeit in Alltagssprache">
+Das Teil muss in der Form abkuehlen, sonst kann es beim Auswerfen verformt oder beschaedigt werden.
+</EinfachErklaert>
+
+<KuehlzeitRestkuehlzeitSchema />
+
+<KuehlzeitRestkuehlzeitTrainer titel="Kuehlzeit und Restkuehlzeit" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Erstarren bis zur Entformbarkeit">
+Kuehlzeit beschreibt den Zeitanteil, in dem das Teil im Werkzeug erstarrt und stabiler wird. Restkuehlzeit ist der verbleibende Kuehlanteil nach der Druckphase bis zum Oeffnen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel verzogenes Teil">
+Nach einer zu fruehen Entnahme ist ein Teil weich und verzogen. Du meldest den Befund, weil Kuehlung und Entformung fachlich geprueft werden muessen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Kuehlzeit macht das Teil entformbar.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-KST-015::check"
+  fragen={[{ id: "entformbar", masterySchluessel: "FK-2-KST-015::entformbar", aufgabenstellung: "Warum ist Kuehlzeit wichtig?", optionen: [{ id: "richtig", text: "Das Teil wird stabil genug zum Entformen.", istKorrekt: true, erklaerung: "Richtig. Zu fruehes Auswerfen kann schaden." }, { id: "falsch", text: "Sie ersetzt den Auswerfer.", istKorrekt: false, erklaerung: "Nein. Auswerfer bleiben fuer das Entformen wichtig." }] }]}
+/>

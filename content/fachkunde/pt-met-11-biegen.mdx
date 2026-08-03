@@ -1,0 +1,59 @@
+---
+titel: "Biegen"
+thema_code: "PT-MET"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Biegeradius, Rueckfederung und Werkstoffbezug muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Biegen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Biegeradien, Mindestwerte und Werkstoffbezug nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Abkantung">
+Ein Blech soll gebogen werden. Du liest den Winkel, beachtest den Biegeradius und rechnest mit Rueckfederung
+nach Vorgabe.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Biegen", "Biegeradius", "Rueckfederung", "Umformen"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Biegen in Alltagssprache">
+Beim Biegen wird ein Werkstueck in eine neue Form gebracht, ohne dass Spaene entstehen.
+</EinfachErklaert>
+
+<BiegenSchema />
+
+<BiegenTrainer titel="Biegen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Spanlos umformen">
+Biegen gehoert zum Umformen. Werkstoff, Blechdicke, Biegeradius, Werkzeug und Rueckfederung beeinflussen das
+Ergebnis.
+</FachlichErklaert>
+
+<TabellenbuchHinweis>
+Biegeradien und zulassige Werte sind quellenpflichtig.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Biegen formt ohne Span, aber mit Radius und Rueckfederung.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-011::check"
+  fragen={[{ id: "hauptgruppe", masterySchluessel: "FK-2-MET-011::hauptgruppe", aufgabenstellung: "Welche Hauptgruppe passt zum Biegen?", optionen: [{ id: "umformen", text: "Umformen.", istKorrekt: true, erklaerung: "Richtig." }, { id: "beschichten", text: "Beschichten.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

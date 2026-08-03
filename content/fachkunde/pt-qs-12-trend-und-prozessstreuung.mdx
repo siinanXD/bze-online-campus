@@ -1,0 +1,57 @@
+---
+titel: "Trend und Prozessstreuung"
+thema_code: "PT-QS"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Bewertungsregeln fuer Trend, Streuung und Eskalation muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch und betriebliche Prozessueberwachung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Warnmuster, Eingriffsregeln und Beispielwerte mit Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation mit laufenden Messwerten">
+Die einzelnen Messwerte sind noch gut, aber sie bewegen sich langsam in Richtung Grenze. Das ist ein Signal.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Trend", "Streuung", "Istwert", "Pruefplan"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Trend in Alltagssprache">
+Ein Trend zeigt, dass Werte in eine Richtung laufen. Streuung zeigt, wie stark die Werte schwanken.
+</EinfachErklaert>
+
+<TrendProzessstreuungSchema />
+
+<TrendProzessstreuungTrainer titel="Trend und Prozessstreuung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Verlauf statt Einzelwert betrachten">
+Trend und Prozessstreuung werden aus mehreren Messwerten erkannt. Ein stabiler Prozess zeigt wiederholbare Werte ohne auffaellige Drift oder uebermaessige Streuung.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Werkzeugverschleiss">
+Ein Mass wandert langsam nach oben. Obwohl jedes einzelne Teil noch gut ist, meldest du den Trend nach Vorgabe, bevor Ausschuss entsteht.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ein guter Einzelwert kann einen schlechten Trend verdecken.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-QS-012::check"
+  fragen={[{ id: "trend", masterySchluessel: "FK-3-QS-012::trend", aufgabenstellung: "Was zeigt ein Trend in einer Messreihe?", optionen: [{ id: "richtig", text: "Eine erkennbare Richtung der Werte ueber die Zeit.", istKorrekt: true, erklaerung: "Richtig. Trends zeigen Veraenderungen im Verlauf." }, { id: "falsch", text: "Dass alle Werte automatisch falsch sind.", istKorrekt: false, erklaerung: "Nein. Ein Trend ist ein Signal, nicht automatisch Ausschuss." }] }]}
+/>

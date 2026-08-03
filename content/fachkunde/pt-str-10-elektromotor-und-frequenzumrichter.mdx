@@ -1,0 +1,57 @@
+---
+titel: "Elektromotor und Frequenzumrichter"
+thema_code: "PT-STR"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. FU-Parameter, Drehzahlbezug und Sicherheits-/Freigabeweg muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Fachbuch Antriebstechnik, Motordatenblatt und betriebliche Parameterfreigabe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Drehzahlbereiche, Parameter, Motordaten und Freigaberegeln nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Antrieb">
+Ein Foerderband laeuft mit einstellbarer Geschwindigkeit. Der Motor bewegt die Last, der Frequenzumrichter beeinflusst die Motordrehzahl.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Elektromotor", "Frequenzumrichter", "Drehzahl", "Parameter"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Antriebskette einfach">
+Der Elektromotor dreht und treibt etwas an. Der Frequenzumrichter kann die Drehzahl des Motors beeinflussen.
+</EinfachErklaert>
+
+<ElektromotorFrequenzumrichterSchema />
+
+<ElektromotorFrequenzumrichterTrainer titel="Elektromotor und Frequenzumrichter" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="FU und Motor einordnen">
+Ein Elektromotor wandelt elektrische Energie in Bewegung. Ein Frequenzumrichter versorgt und beeinflusst den Motor. Parameter, Drehrichtung, Rampen und Grenzwerte haben Sicherheits- und Prozesswirkung und brauchen Freigabe.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Foerderband">
+Das Band laeuft zu schnell. Du drehst nicht beliebig am FU, sondern pruefst Rezept, Parameterfreigabe und Meldeweg.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Antriebsparameter sind keine Versuchswerte.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-STR-010::check"
+  fragen={[{ id: "fu", masterySchluessel: "FK-3-STR-010::fu", aufgabenstellung: "Was ist beim Frequenzumrichter richtig?", optionen: [{ id: "richtig", text: "Parameter nur nach Vorgabe und Freigabe aendern.", istKorrekt: true, erklaerung: "Richtig. FU-Parameter beeinflussen Maschine, Sicherheit und Prozess." }, { id: "falsch", text: "Drehzahl beliebig hochdrehen, wenn es schneller gehen soll.", istKorrekt: false, erklaerung: "Nein. Das ist unsicher und nicht freigegeben." }] }]}
+/>

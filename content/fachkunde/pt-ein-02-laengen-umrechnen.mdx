@@ -1,0 +1,114 @@
+---
+titel: "Laengen umrechnen"
+thema_code: "PT-EIN"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "beispielwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Umrechnungsbeispiele und Schreibweisen muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Einheitenumrechnung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Faktoren, Schreibweisen und Beispiele muessen vor Freigabe geprueft werden."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation vor einer Rechnung">
+In der Zeichnung steht ein Mass in Millimeter. In einer Aufgabe steht ein Wert in Zentimeter. Bevor du
+rechnest, musst du die Laengen in passende Einheiten bringen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Laenge", "Meter", "Faktor", "Umrechnung", "Einheit"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Laengen in Alltagssprache">
+Meter, Zentimeter und Millimeter beschreiben alle Laenge. Du kannst denselben Wert in einer anderen Einheit
+schreiben. Wichtig ist, den richtigen Faktor zu verwenden.
+</EinfachErklaert>
+
+<LaengenUmrechnungSchema />
+
+<LaengenUmrechnungTrainer titel="Laengen umrechnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Einheit vor Formel">
+Laengenwerte muessen vor einer Rechnung auf passende Einheiten gebracht werden. Bei technischen Zeichnungen
+ist Millimeter haeufig die praktische Arbeitseinheit. Bei Aufgaben koennen aber Meter, Zentimeter und
+Millimeter gemischt auftreten.
+</FachlichErklaert>
+
+## Grundumrechnungen
+
+| Umrechnung | Lernwert |
+|---|---|
+| 1 cm | 10 mm |
+| 1 m | 100 cm |
+| 1 m | 1000 mm |
+
+<Praxisbeispiel titel="Praxisbeispiel falscher Faktor">
+Du rechnest 2 cm versehentlich als 2 mm weiter. Das Ergebnis ist um den Faktor 10 falsch. Deshalb pruefst du
+vor der Formel zuerst die Einheit.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Umrechnungsfaktoren muessen sicher beherrscht und bei Unsicherheit im Tabellenbuch oder Unterrichtsmaterial
+nachgeschlagen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Erst Einheit passend machen, dann rechnen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-EIN-002::check"
+  fragen={[
+    {
+      id: "cm-mm",
+      masterySchluessel: "FK-1-EIN-002::cm-mm",
+      aufgabenstellung: "Wie viele Millimeter sind 1 Zentimeter?",
+      optionen: [
+        {
+          id: "zehn",
+          text: "10 mm.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Ein Zentimeter hat zehn Millimeter.",
+        },
+        {
+          id: "eins",
+          text: "1 mm.",
+          istKorrekt: false,
+          erklaerung: "Nein. Das waere derselbe Zahlenwert, aber nicht dieselbe Laenge.",
+        },
+      ],
+    },
+    {
+      id: "vor-formel",
+      masterySchluessel: "FK-1-EIN-002::vor-formel",
+      aufgabenstellung: "Was pruefst du vor einer Formelrechnung?",
+      optionen: [
+        {
+          id: "einheit",
+          text: "Ob die Einheiten zueinander passen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Falsche Einheiten fuehren zu falschen Ergebnissen.",
+        },
+        {
+          id: "farbe",
+          text: "Welche Farbe der Taschenrechner hat.",
+          istKorrekt: false,
+          erklaerung: "Das ist fuer die Rechnung unwichtig.",
+        },
+      ],
+    },
+  ]}
+/>

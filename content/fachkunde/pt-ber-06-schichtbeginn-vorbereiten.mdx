@@ -1,0 +1,57 @@
+---
+titel: "Schichtbeginn vorbereiten"
+thema_code: "PT-BER"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Schichtchecklisten und Uebergabeformulare muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript Schichtuebergabe und betriebliche Checklisten"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Checkpunkte nach Betrieb ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation zum Schichtwechsel">
+Du uebernimmst die Linie. Bevor du startest, brauchst du Uebergabe, Auftragsstand und einen kurzen Sicherheitscheck.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schicht","Uebergabe","Checkliste","Auftrag","Sicherheit"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Check vor dem Start">
+Am Schichtbeginn pruefst du, was offen ist, was sicher ist und womit du starten darfst.
+</EinfachErklaert>
+
+<SchichtbeginnVorbereitenSchema />
+
+<SchichtbeginnVorbereitenTrainer titel="Schichtbeginn vorbereiten" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Schichtbeginn als geregelter Uebergang">
+Schichtbeginn verbindet Uebergabe, Auftragsstatus, Material, Sicherheit und offene Stoerungen. Ein kurzer Check verhindert, dass unklare Zustaende in die naechste Schicht weiterlaufen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel offene Stoerung">
+In der Uebergabe steht "Temperatur schwankt". Du startest nicht blind, sondern klaerst Status und Freigabe.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Schichtstart ohne Check ist Blindflug.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-BER-006::check"
+  fragen={[{ id: "kern", masterySchluessel: "FK-1-BER-006::kern", aufgabenstellung: "Was gehoert zum Schichtbeginn?", optionen: [{ id: "richtig", text: "Uebergabe, Sicherheitscheck und Auftragsstand pruefen.", istKorrekt: true, erklaerung: "Richtig. Der Start braucht Klarheit." }, { id: "falsch", text: "Sofort produzieren und Spaeteres spaeter klaeren.", istKorrekt: false, erklaerung: "Nein. Offene Risiken duerfen nicht mitlaufen." }] }]}
+/>

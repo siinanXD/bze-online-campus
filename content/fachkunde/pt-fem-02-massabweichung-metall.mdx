@@ -1,0 +1,57 @@
+---
+titel: "Massabweichung Metall"
+thema_code: "PT-FEM"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Messstrategie, Ursachenfelder und Grenzwerte muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Pruefplan Massabweichung Metall"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Sollwerte, Grenzmasse, Messmittel und Eskalationsweg nach Pruefplan ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Messplatz">
+Ein Metallteil liegt ausserhalb des erlaubten Massbereichs. Jetzt musst du klaeren, ob die Messung stimmt und welche Ursache wahrscheinlich ist.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Massabweichung", "Istwert", "Grenzmass", "Werkzeug"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Massabweichung in Alltagssprache">
+Das Teil ist groesser oder kleiner als erlaubt. Du pruefst erst sauber, bevor du an der Maschine etwas veraenderst.
+</EinfachErklaert>
+
+<MassabweichungMetallSchema />
+
+<MassabweichungMetallTrainer titel="Massabweichung Metall" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Messung und Ursache trennen">
+Bei Massabweichung werden Sollwert, Istwert, Messmittel, Aufspannung, Werkzeugzustand, Maschine und Temperatur betrachtet. Eine einzelne Messung ohne Ursachenpruefung reicht nicht fuer stabile Korrektur.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel warmes Werkstueck">
+Ein frisch bearbeitetes Teil ist noch warm und misst zu gross. Du beachtest Messbedingungen und Vorgabe, bevor du Ausschuss oder Korrektur entscheidest.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Massabweichung wird gemessen, bestaetigt und dann verursacht.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEM-002::check"
+  fragen={[{ id: "ursache", masterySchluessel: "FK-3-FEM-002::ursache", aufgabenstellung: "Was pruefst du bei Massabweichung zuerst mit?", optionen: [{ id: "richtig", text: "Messmittel, Sollvorgabe und Messbedingungen.", istKorrekt: true, erklaerung: "Richtig. Erst muss die Bewertung belastbar sein." }, { id: "falsch", text: "Den Messwert passend runden.", istKorrekt: false, erklaerung: "Nein. Runden nach Ziel ist unzulaessig." }] }]}
+/>

@@ -1,0 +1,63 @@
+---
+titel: "Vorschub und Zustellung"
+thema_code: "PT-FER"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Vorschubwerte, Formelzeichen und Prozessbeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Vorschub und Zustellung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Vorschub- und Zustellwerte nach Quelle abgleichen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Oberflaeche">
+Die Oberflaeche sieht anders aus als erwartet. Du pruefst nicht nur die Drehzahl, sondern auch Vorschub,
+Zustellung, Werkzeugzustand und Werkstoff.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Vorschub", "Zustellung", "Span", "Werkzeugdaten"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Vorschub und Zustellung in Alltagssprache">
+Vorschub beschreibt das Weiterbewegen. Zustellung beschreibt, wie tief das Werkzeug ins Material geht.
+</EinfachErklaert>
+
+<VorschubZustellungSchema />
+
+<VorschubZustellungTrainer titel="Vorschub und Zustellung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Einfluss auf Span und Oberflaeche">
+Vorschub und Zustellung beeinflussen Spanbildung, Werkzeugbelastung, Oberflaeche und Bearbeitungszeit. Werte
+werden aus Vorgaben und Werkzeugdaten uebernommen.
+</FachlichErklaert>
+
+<Formelkarte titel="Grundzusammenhang Vorschubgeschwindigkeit" formel="vf = f x n">
+Der Zusammenhang ist eine Lernhilfe. Konkrete Vorschubwerte bleiben quellenpflichtig.
+</Formelkarte>
+
+<TabellenbuchHinweis>
+Vorschub und Zustellung werden nicht nach Gefuehl erhoeht. Quelle, Werkzeug, Werkstoff und Maschine beachten.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Vorschub bewegt weiter, Zustellung legt die Tiefe fest.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-FER-006::check"
+  fragen={[{ id: "zustellung", masterySchluessel: "FK-2-FER-006::zustellung", aufgabenstellung: "Was beschreibt die Zustellung?", optionen: [{ id: "tiefe", text: "Die Eingriffstiefe des Werkzeugs.", istKorrekt: true, erklaerung: "Richtig." }, { id: "farbe", text: "Die Werkzeugfarbe.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

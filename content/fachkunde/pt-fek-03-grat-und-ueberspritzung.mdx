@@ -1,0 +1,57 @@
+---
+titel: "Grat und Ueberspritzung"
+thema_code: "PT-FEK"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Grenzbild, Werkzeugbezug, Schliesskraftbezug und Nacharbeitsweg muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Fachbuch Spritzgiessen und betriebliche Sichtpruefvorgabe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Zulaessige Gratgrenzen, Werkzeugursachen und Freigabeweg nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Trennebene">
+Am Rand eines Kunststoffteils steht ein duennes, scharfes Materialhaeutchen. Es liegt genau dort, wo das Werkzeug trennt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Grat", "Ueberspritzung", "Schliesskraft", "Einspritzdruck"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Ueberspritzung in Alltagssprache">
+Kunststoff ist aus der Form herausgelaufen und bildet einen unerwuenschten Rand oder eine duenne Fahne.
+</EinfachErklaert>
+
+<GratUeberspritzungSchema />
+
+<GratUeberspritzungTrainer titel="Grat und Ueberspritzung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Grat und Ueberspritzung pruefen">
+Grat und Ueberspritzung koennen durch Werkzeugspalt, Trennebene, Verschleiss, Schliesskraft, Einspritzdruck oder Materialzustand beguenstigt werden. Prozesswerte bleiben quellenpflichtig.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Clipkante">
+Ein Clipteil hat an der Trennebene eine duenne Fahne. Du reisst sie nicht einfach ab, sondern pruefst Musterfreigabe und Sperrweg.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Grat an Kunststoffteilen ist ein Signal an Trennebene, Werkzeug und Prozess.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEK-003::check"
+  fragen={[{ id: "ueberspritzung", masterySchluessel: "FK-3-FEK-003::ueberspritzung", aufgabenstellung: "Was ist bei Ueberspritzung richtig?", optionen: [{ id: "richtig", text: "Trennebene pruefen, Teil bewerten und Ursache melden.", istKorrekt: true, erklaerung: "Richtig. Ueberspritzung braucht Werkzeug- und Prozessbezug." }, { id: "falsch", text: "Grat abreissen und Teil ohne Freigabe liefern.", istKorrekt: false, erklaerung: "Nein. Das kann Funktion und Nachweis gefaehrden." }] }]}
+/>

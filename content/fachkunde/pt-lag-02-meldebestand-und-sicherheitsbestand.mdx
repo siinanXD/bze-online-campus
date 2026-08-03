@@ -1,0 +1,67 @@
+---
+titel: "Meldebestand und Sicherheitsbestand"
+thema_code: "PT-LAG"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Meldebestand, Lieferzeit, Sicherheitsbestand und Nachbestellweg muessen fachlich freigegeben werden."
+quellen:
+  - titel: "WiSo-Skript, Traegerskript, ERP-Disposition und betriebliche Lagerregeln"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Meldebestandformel, Lieferzeit und Sicherheitsbestand nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden", "tabellenbuch_finden"]} />
+
+<StoryEinstieg titel="Situation vor der Nachbestellung">
+Der Bestand sinkt jeden Tag. Material kommt aber nicht sofort nach, weil Bestellung und Lieferung Zeit brauchen. Darum gibt es einen Meldebestand.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Meldebestand", "Sicherheitsbestand", "Bestand", "Liefertermin", "Materialbedarf"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Melden bevor es leer ist">
+Meldebestand ist der Punkt, an dem Nachschub gestartet wird. Sicherheitsbestand ist ein Puffer, falls mehr verbraucht wird oder die Lieferung spaeter kommt.
+</EinfachErklaert>
+
+<MeldebestandSicherheitsbestandSchema />
+
+<Formelkarte
+  name="Vereinfachter Meldebestand"
+  formel="Meldebestand = Verbrauch waehrend Lieferzeit + Sicherheitsbestand"
+  einheiten="Stueck, kg, m oder andere freigegebene Lagereinheit"
+  verwendung="Wenn ein Nachbestellpunkt aus Verbrauch, Lieferzeit und Puffer erklaert wird."
+  beispiel="Wenn bis zur Lieferung weiter Material verbraucht wird, muss frueh genug nachbestellt werden."
+  typischerFehler="Sicherheitsbestand frei verbrauchen und erst bei leerem Lager melden."
+  tabellenbuchHinweis="Konkrete Verbrauchswerte, Lieferzeiten und Sicherheitsbestaende aus ERP, Lagerregel oder freigegebener Quelle uebernehmen."
+/>
+
+<MeldebestandSicherheitsbestandTrainer titel="Meldebestand und Sicherheitsbestand" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Nachbestellpunkt mit Puffer">
+Der Meldebestand verbindet erwarteten Verbrauch waehrend der Lieferzeit mit einem Sicherheitsbestand. Der Sicherheitsbestand soll Unsicherheiten abfangen und wird nicht beliebig verbraucht. Welche Werte gelten, muss aus ERP, Lagerstandard oder Ausbildungsunterlage kommen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel lange Lieferzeit">
+Ein seltenes Ersatzteil hat mehrere Tage Lieferzeit. Wenn erst bestellt wird, wenn der Bestand null ist, steht die Anlage moeglicherweise still. Der Meldebestand loest Nachschub vorher aus.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Meldebestand startet Nachschub, Sicherheitsbestand puffert Unsicherheit.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-LAG-002::check"
+  fragen={[{ id: "meldebestand", masterySchluessel: "FK-4-LAG-002::meldebestand", aufgabenstellung: "Warum wird nicht erst bei Bestand null bestellt?", optionen: [{ id: "richtig", text: "Weil Verbrauch und Lieferzeit bis zum Nachschub ueberbrueckt werden muessen.", istKorrekt: true, erklaerung: "Richtig. Der Meldebestand verhindert zu spaeten Nachschub." }, { id: "falsch", text: "Weil der Sicherheitsbestand immer frei verbraucht werden soll.", istKorrekt: false, erklaerung: "Nein. Sicherheitsbestand ist ein Puffer nach Vorgabe." }] }]}
+/>

@@ -1,0 +1,67 @@
+---
+titel: "Durchlaufzeit"
+thema_code: "PT-PLA"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Zeitarten, betriebliche Definitionen und Berechnungsweg muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch, Traegerskript, Arbeitsplan und betriebliche Zeitdatenerfassung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Zeitarten, Wartezeit und Rueckmeldewerte nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation in der Auftragsmappe">
+Ein Auftrag wurde morgens gestartet und erst am naechsten Tag fertiggemeldet. Die reine Bearbeitung dauerte nur kurz. Die Frage ist: Wo blieb die restliche Zeit?
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Durchlaufzeit", "Wartezeit", "Ruestzeit", "Bearbeitungszeit", "Pruefschritt"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Der ganze Weg zaehlt">
+Durchlaufzeit ist die gesamte Zeit, die ein Auftrag durch den Betrieb braucht. Warten, Ruesten, Bearbeiten, Pruefen und Transport koennen dazugehoeren.
+</EinfachErklaert>
+
+<DurchlaufzeitSchema />
+
+<Formelkarte
+  name="Vereinfachte Durchlaufzeit"
+  formel="Durchlaufzeit = Wartezeit + Ruestzeit + Bearbeitungszeit + Pruefzeit + Transportzeit"
+  einheiten="Minuten, Stunden oder Tage nach Planungsquelle"
+  verwendung="Wenn der gesamte Auftragsweg grob erklaert oder verglichen wird."
+  beispiel="Ein Auftrag kann wenig Bearbeitungszeit, aber viel Wartezeit haben."
+  typischerFehler="Nur die reine Maschinenlaufzeit als Durchlaufzeit melden."
+  tabellenbuchHinweis="Welche Zeitarten im Betrieb gezaehlt werden, muss aus Arbeitsplan oder Zeitdatenerfassung kommen."
+/>
+
+<DurchlaufzeitTrainer titel="Durchlaufzeit" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Durchlaufzeit als Gesamtzeit">
+Durchlaufzeit umfasst den Zeitraum vom definierten Start bis zur definierten Fertigmeldung eines Auftrags. Sie enthaelt haeufig Wartezeiten, Liegezeiten, Ruesten, Bearbeitung, Pruefung, Transport und Rueckmeldung. Die genaue Definition muss betrieblich festgelegt sein.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel langes Warten">
+Ein Teil ist nach der Bearbeitung fertig, wartet aber mehrere Stunden auf die Pruefung. Fuer die Durchlaufzeit ist diese Wartezeit relevant, auch wenn die Maschine in dieser Zeit nicht am Teil arbeitet.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Durchlaufzeit ist der ganze Auftragsweg, nicht nur die Maschinenzeit.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-PLA-007::check"
+  fragen={[{ id: "dlz", masterySchluessel: "FK-4-PLA-007::dlz", aufgabenstellung: "Was gehoert typischerweise zur Durchlaufzeit?", optionen: [{ id: "richtig", text: "Auch Warte-, Ruest-, Pruef- und Transportzeiten.", istKorrekt: true, erklaerung: "Richtig. Durchlaufzeit beschreibt den gesamten Auftragsweg." }, { id: "falsch", text: "Nur die Zeit, in der das Werkzeug schneidet.", istKorrekt: false, erklaerung: "Nein. Das waere nur ein sehr enger Bearbeitungsanteil." }] }]}
+/>

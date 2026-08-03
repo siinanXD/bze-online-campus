@@ -2,11 +2,12 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
-import { Badge, Card, LeerZustand } from '@bze/ui';
+import { LeerZustand } from '@bze/ui';
 import { ladeFachbereich, ladeThemenFuerFachbereich } from '../../_lib/content-queries';
+import { ZurueckIcon } from '@/components/shell/icons';
 
 /**
- * Zeigt die Themen eines Fachbereichs.
+ * Themen eines Fachbereichs im Figma-Mobile-Look.
  */
 export default async function FachbereichSeite({
   params,
@@ -23,33 +24,40 @@ export default async function FachbereichSeite({
   if (!fachbereich) notFound();
 
   return (
-    <main className="mx-auto max-w-2xl space-y-4 p-4 pb-8">
-      <header className="space-y-1 pt-2">
-        <Link href={`/${locale}/campus/topic`} className="text-xs font-semibold uppercase tracking-wide text-primary">
-          {t('navigation.zurFachkunde')}
+    <main className="mx-auto flex min-h-full max-w-md flex-col gap-4 px-5 pb-6 pt-3">
+      <header>
+        <Link
+          href={`/${locale}/campus/topic`}
+          className="touchable inline-flex min-h-10 items-center gap-1 text-[16px] font-semibold text-primary"
+        >
+          <ZurueckIcon className="h-5 w-5" />
+          <span>{t('navigation.zurFachkunde')}</span>
         </Link>
-        <h1 className="text-2xl font-extrabold text-fg">{fachbereich.bezeichnung}</h1>
-        {fachbereich.beschreibung && <p className="text-sm text-fg-muted">{fachbereich.beschreibung}</p>}
+        <h1 className="mt-2 text-[22px] font-extrabold text-fg">{fachbereich.bezeichnung}</h1>
+        {fachbereich.beschreibung ? (
+          <p className="mt-1 text-[14px] text-fg-muted">{fachbereich.beschreibung}</p>
+        ) : null}
       </header>
 
       {themen.length === 0 ? (
         <LeerZustand titel={t('leer.themenTitel')} text={t('leer.themenText')} />
       ) : (
-        <ul className="space-y-3">
+        <ul className="flex flex-col gap-3">
           {themen.map((thema) => (
             <li key={thema.id}>
-              <Link href={`/${locale}/campus/topic/${thema.id}`} className="block">
-                <Card variante="interaktiv" className="space-y-2">
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="min-w-0">
-                      <h2 className="text-lg font-bold text-fg">{thema.bezeichnung}</h2>
-                      {thema.beschreibung && <p className="mt-1 text-sm text-fg-muted">{thema.beschreibung}</p>}
-                    </div>
-                    <Badge variante="neutral" symbol=">">
-                      {t('navigation.thema')}
-                    </Badge>
-                  </div>
-                </Card>
+              <Link
+                href={`/${locale}/campus/topic/${thema.id}`}
+                className="touchable flex items-center gap-3 rounded-[16px] border border-border bg-surface p-4"
+              >
+                <div className="min-w-0 flex-1">
+                  <h2 className="text-[15px] font-bold text-fg">{thema.bezeichnung}</h2>
+                  {thema.beschreibung ? (
+                    <p className="mt-1 text-[13px] text-fg-muted">{thema.beschreibung}</p>
+                  ) : null}
+                </div>
+                <span className="text-fg-subtle" aria-hidden>
+                  ›
+                </span>
               </Link>
             </li>
           ))}

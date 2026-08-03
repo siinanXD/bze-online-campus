@@ -1,0 +1,59 @@
+---
+titel: "Mittelwert und Spannweite"
+thema_code: "PT-QS"
+lesedauer_minuten: 10
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Formelnotation, Rundung und Beispielwerte muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Statistik Grundlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Formelnotation, x quer, R und Beispielwerte mit Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation mit Messreihe">
+Du misst mehrere Teile. Ein einzelner Wert sagt wenig ueber die ganze Reihe, deshalb betrachtest du Durchschnitt und Streuung.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Mittelwert", "Spannweite", "Istwert", "Streuung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Messreihe in Alltagssprache">
+Der Mittelwert ist der Durchschnitt. Die Spannweite zeigt, wie weit kleinster und groesster Wert auseinanderliegen.
+</EinfachErklaert>
+
+<MittelwertSpannweiteSchema />
+
+<MittelwertSpannweiteTrainer titel="Mittelwert und Spannweite" />
+
+<Formelkarte titel="Spannweite Grundidee" formel="Spannweite = groesster Wert - kleinster Wert" erklaerung="Formelschreibweise und Rundung muessen aus Tabellenbuch oder Unterrichtsvorgabe freigegeben werden." />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Lage und Streuung einfach beschreiben">
+Der Mittelwert beschreibt die Lage einer Messreihe. Die Spannweite beschreibt die Differenz zwischen Maximum und Minimum. Beide Werte helfen beim Prozessverstaendnis, ersetzen aber keine Grenzwertentscheidung.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel gleiche Mitte">
+Zwei Messreihen koennen denselben Mittelwert haben, aber unterschiedlich stark streuen. Deshalb brauchst du mehr als nur den Durchschnitt.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Mittelwert zeigt Lage, Spannweite zeigt Breite.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-QS-011::check"
+  fragen={[{ id: "spannweite", masterySchluessel: "FK-3-QS-011::spannweite", aufgabenstellung: "Wie entsteht die Spannweite?", optionen: [{ id: "richtig", text: "Groesster Wert minus kleinster Wert.", istKorrekt: true, erklaerung: "Richtig. Die Spannweite beschreibt die Breite der Messreihe." }, { id: "falsch", text: "Kleinster Wert plus Anzahl der Messwerte.", istKorrekt: false, erklaerung: "Nein. Die Anzahl allein ist nicht die Spannweite." }] }]}
+/>

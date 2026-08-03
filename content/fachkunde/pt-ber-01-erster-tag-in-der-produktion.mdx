@@ -1,0 +1,130 @@
+---
+titel: "Erster Tag in der Produktion"
+thema_code: "PT-BER"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Ein Ausbilder muss betriebliche Begriffe, Meldewege und Beispiele vor produktiver Nutzung freigeben."
+quellen:
+  - titel: "Rahmenlehrplan Maschinen- und Anlagenfuehrer/-in"
+    seite: "Lernfeldbezug [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkreter Lernfeld-/Abschnittsbezug muss vor Freigabe eingetragen werden."
+  - titel: "BZE-Traegerskript Produktionsbetrieb"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Betriebliche Beispiele und Bezeichnungen sind Platzhalter bis zur Ausbilderfreigabe."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am ersten Einsatztag">
+Du kommst in die Werkhalle. Maschinen laufen, Material steht bereit, ein Auftrag liegt am Arbeitsplatz.
+Bevor du etwas anfasst, musst du verstehen, wo du bist: Welcher Betriebsteil stellt was her, welche
+Station kommt vor dir, welche Station kommt nach dir und wer ist fuer Freigaben zustaendig?
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Betrieb", "Linie", "Auftrag", "Pruefen", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Produktion in Alltagssprache">
+Produktion ist wie eine gut geplante Kette. Ein Auftrag startet die Arbeit. Material wird vorbereitet.
+Die Maschine bearbeitet das Teil. Danach wird geprueft, ob das Ergebnis passt. Am Ende wird rueckgemeldet,
+was fertig ist und ob etwas auffaellig war.
+</EinfachErklaert>
+
+<Produktionskarte />
+
+<ProduktionsStartcheck titel="Trainiere den Startcheck" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Dein Arbeitsplatz im Produktionssystem">
+Ein Produktionsbetrieb verbindet Auftrag, Material, Maschine, Mensch, Pruefung und Dokumentation zu einem
+geregelten Ablauf. Als angehender Maschinen- und Anlagenfuehrer arbeitest du nicht isoliert an einer
+Maschine. Deine Arbeit beeinflusst vorherige und nachfolgende Stationen, die Qualitaet des Produkts und
+die Sicherheit im Arbeitsbereich.
+</FachlichErklaert>
+
+## Worauf du am Anfang achtest
+
+| Punkt | Frage am Arbeitsplatz | Warum wichtig? |
+|---|---|---|
+| Auftrag | Was soll hergestellt werden? | Ohne Auftrag keine sichere Arbeitsgrundlage |
+| Material | Liegt das richtige Material bereit? | Falsches Material fuehrt zu Ausschuss oder Gefahr |
+| Maschine | Ist die Anlage betriebsbereit und sicher? | Stoerungen und Schutzmangel duerfen nicht ignoriert werden |
+| Pruefung | Was muss kontrolliert werden? | Qualitaet entsteht nicht erst am Ende |
+| Rueckmeldung | Was wird dokumentiert? | Naechste Schicht und Ausbilder brauchen verlaessliche Informationen |
+
+<Praxisbeispiel titel="Praxisbeispiel Schichtstart">
+Du siehst einen Auftrag fuer Kunststoffteile, aber am Arbeitsplatz steht ein Metallbehaelter mit anderem
+Material. Du startest nicht einfach. Du vergleichst Auftrag, Materialkennzeichnung und Arbeitsplatzvorgabe
+und fragst nach, wenn etwas nicht zusammenpasst.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Diese Lerneinheit enthaelt keine technischen Zahlenwerte. Betriebsbegriffe, konkrete Rollenbezeichnungen
+und zustaendige Personen muessen aus BZE-Unterlagen oder betrieblicher Anweisung freigegeben werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Erst einordnen, dann handeln: Auftrag, Material, Maschine, Pruefung und Rueckmeldung gehoeren zusammen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-BER-001::check"
+  fragen={[
+    {
+      id: "arbeitsplatz-einordnen",
+      masterySchluessel: "FK-1-BER-001::arbeitsplatz-einordnen",
+      aufgabenstellung: "Welche Frage stellst du dir zuerst, wenn Auftrag und Material nicht zusammenpassen?",
+      optionen: [
+        {
+          id: "nachfragen",
+          text: "Ich klaere Auftrag, Materialkennzeichnung und Vorgabe, bevor ich starte.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Unsichere oder widerspruechliche Informationen muessen vor dem Start geklaert werden.",
+        },
+        {
+          id: "einfach-starten",
+          text: "Ich starte trotzdem, damit die Maschine nicht stillsteht.",
+          istKorrekt: false,
+          erklaerung: "Stillstand ist unangenehm, aber falsches Material oder falscher Auftrag kann Ausschuss und Gefahren erzeugen.",
+        },
+        {
+          id: "spaeter-notieren",
+          text: "Ich produziere zuerst und notiere die Abweichung spaeter.",
+          istKorrekt: false,
+          erklaerung: "Eine Abweichung muss vor dem Start geklaert werden, nicht erst nach moeglichem Ausschuss.",
+        },
+      ],
+    },
+    {
+      id: "produktionskette",
+      masterySchluessel: "FK-1-BER-001::produktionskette",
+      aufgabenstellung: "Warum ist deine Station Teil einer Produktionskette?",
+      optionen: [
+        {
+          id: "wirkt-weiter",
+          text: "Weil meine Arbeit Material, Qualitaet und die naechste Station beeinflusst.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Produktionsarbeit ist vernetzt und braucht verlaessliche Uebergaben.",
+        },
+        {
+          id: "nur-maschine",
+          text: "Weil nur die Maschine zaehlt und andere Stationen egal sind.",
+          istKorrekt: false,
+          erklaerung: "Die Maschine ist wichtig, aber Auftrag, Material, Pruefung und Rueckmeldung gehoeren dazu.",
+        },
+      ],
+    },
+  ]}
+/>

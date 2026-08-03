@@ -1,0 +1,57 @@
+---
+titel: "Pruefprotokoll schreiben"
+thema_code: "PT-QS"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Pflichtfelder, Signatur/Kennung und Abweichungsdokumentation muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Betriebliches Pruefprotokoll"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Formularfelder, digitale Nachweise und Rollen nach Traegervorgabe ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation mit Abweichung">
+Du misst ein Merkmal und stellst eine Abweichung fest. Jetzt muss das Ergebnis so dokumentiert werden, dass andere es nachvollziehen koennen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Protokoll", "Merkmal", "Soll", "Istwert"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Pruefprotokoll in Alltagssprache">
+Du schreibst auf, was geprueft wurde, welcher Wert herauskam, wie bewertet wurde und wer es gemacht hat.
+</EinfachErklaert>
+
+<PruefprotokollSchreibenSchema />
+
+<PruefprotokollSchreibenTrainer titel="Pruefprotokoll schreiben" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Nachvollziehbar dokumentieren">
+Ein Pruefprotokoll enthaelt Pruefmerkmal, Sollvorgabe, Istwert, Bewertung, Zeitpunkt und verantwortliche Kennung. Bei Abweichungen muss der weitere Weg erkennbar sein.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel fehlender Istwert">
+Im Protokoll steht nur 'nicht gut'. Ohne Istwert, Merkmal und Bewertung kann spaeter niemand sicher nachvollziehen, was passiert ist.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Was nicht nachvollziehbar dokumentiert ist, ist fuer QS schwach.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-QS-018::check"
+  fragen={[{ id: "inhalt", masterySchluessel: "FK-3-QS-018::inhalt", aufgabenstellung: "Was gehoert in ein Pruefprotokoll?", optionen: [{ id: "richtig", text: "Merkmal, Soll, Ist, Bewertung und Kennung.", istKorrekt: true, erklaerung: "Richtig. So bleibt die Pruefung nachvollziehbar." }, { id: "falsch", text: "Nur ein Smiley fuer gut oder schlecht.", istKorrekt: false, erklaerung: "Nein. Das ist kein belastbarer Nachweis." }] }]}
+/>

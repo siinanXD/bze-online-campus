@@ -1,6 +1,5 @@
 import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
-import { Card } from '@bze/ui';
 import type { PruefFrage } from '@bze/core/bewertung';
 import { PruefungRunner } from './pruefung-runner';
 
@@ -11,12 +10,28 @@ export default async function PruefungLauf({ params }: { params: Promise<{ local
 
   const { data: pruefung } = await supabase
     .from('pruefungen').select('id,titel,dauer_minuten').eq('id', pruefungId).maybeSingle();
-  if (!pruefung) return <main className="p-4"><Card><p>{t('keine')}</p></Card></main>;
+  if (!pruefung) {
+    return (
+      <main className="mx-auto max-w-md px-5 py-6">
+        <div className="rounded-[16px] border border-border bg-surface p-4">
+          <p>{t('keine')}</p>
+        </div>
+      </main>
+    );
+  }
 
   // Ergebnis anlegen/fortsetzen
   const { data: ergId, error: startErr } = await supabase.rpc('pruefung_starten', { p_pruefung_id: pruefungId });
   if (startErr || !ergId) {
-    return <main className="p-4"><Card><p role="alert" className="text-status-falsch">{t('startFehler')}</p></Card></main>;
+    return (
+      <main className="mx-auto max-w-md px-5 py-6">
+        <div className="rounded-[16px] border border-border bg-surface p-4">
+          <p role="alert" className="text-status-falsch">
+            {t('startFehler')}
+          </p>
+        </div>
+      </main>
+    );
   }
   const { data: erg } = await supabase
     .from('pruefung_ergebnisse').select('id,gestartet_am').eq('id', ergId).maybeSingle();
@@ -39,7 +54,13 @@ export default async function PruefungLauf({ params }: { params: Promise<{ local
   }));
 
   if (fragen.length === 0) {
-    return <main className="p-4"><Card><p>{t('leer')}</p></Card></main>;
+    return (
+      <main className="mx-auto max-w-md px-5 py-6">
+        <div className="rounded-[16px] border border-border bg-surface p-4">
+          <p>{t('leer')}</p>
+        </div>
+      </main>
+    );
   }
 
   return (

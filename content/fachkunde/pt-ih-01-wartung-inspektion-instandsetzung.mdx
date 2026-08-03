@@ -1,0 +1,57 @@
+---
+titel: "Wartung, Inspektion, Instandsetzung"
+thema_code: "PT-IH"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Begriffe, betriebliche Zustaendigkeiten und Freigabewege muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Rahmenlehrplan, Tabellenbuch und betriebliche Instandhaltungsunterlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Begriffsabgrenzung und Beispiele fuer den Betrieb nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["auswendig"]} />
+
+<StoryEinstieg titel="Situation am Schichtbeginn">
+Im Schichtbuch steht: Wartung erledigt, Inspektion offen, Instandsetzung geplant. Du musst die Begriffe trennen, damit klar ist, was gemacht wurde und was noch fehlt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Wartung", "Inspektion", "Instandsetzung", "Dokumentation", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Drei Aufgaben unterscheiden">
+Wartung erhaelt den Zustand. Inspektion stellt fest, wie der Zustand ist. Instandsetzung repariert oder stellt die Funktion wieder her.
+</EinfachErklaert>
+
+<WartungInspektionInstandsetzungSchema />
+
+<WartungInspektionInstandsetzungTrainer titel="Wartung Inspektion Instandsetzung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Grundbegriffe der Instandhaltung">
+Instandhaltung umfasst Massnahmen, damit Maschinen funktionsfaehig und sicher bleiben. Wartung, Inspektion und Instandsetzung beschreiben unterschiedliche Aufgaben und duerfen in Dokumentation und Kommunikation nicht beliebig vermischt werden.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Wartungsauftrag">
+Du bekommst den Auftrag, eine Fuehrung zu reinigen und zu schmieren. Das ist Wartung. Wenn du dabei Spiel feststellst, ist das eine Inspektionsfeststellung. Eine Reparatur erfolgt erst nach Freigabe.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Wartung erhaelt, Inspektion stellt fest, Instandsetzung stellt wieder her.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-IH-001::check"
+  fragen={[{ id: "begriffe", masterySchluessel: "FK-3-IH-001::begriffe", aufgabenstellung: "Welche Zuordnung ist richtig?", optionen: [{ id: "richtig", text: "Wartung erhaelt, Inspektion stellt fest, Instandsetzung repariert.", istKorrekt: true, erklaerung: "Richtig. So sind die Grundbegriffe sauber getrennt." }, { id: "falsch", text: "Inspektion repariert immer sofort und Wartung ist nur Dokumentation.", istKorrekt: false, erklaerung: "Nein. Das vertauscht die Aufgaben." }] }]}
+/>

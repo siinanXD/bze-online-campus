@@ -1,0 +1,57 @@
+---
+titel: "Parameter uebernehmen"
+thema_code: "PT-PRO"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Parameterquellen und Freigabeprozess muessen fachlich geprueft werden."
+quellen:
+  - titel: "Betriebsanweisung Parameter und Rezeptverwaltung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Parameterwerte, Rezeptstaende und Freigabewege nach Betriebsvorgabe ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Bedienpanel">
+Du sollst ein Rezept laden. Vor dem Start pruefst du, ob Rezeptstand, Maschine, Material und Auftrag zusammenpassen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Parameter", "Rezept", "Maschine", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Parameter in Alltagssprache">
+Parameter sind Einstellungen fuer die Maschine. Sie werden aus einer freigegebenen Quelle uebernommen und nicht geraten.
+</EinfachErklaert>
+
+<ParameterUebernehmenSchema />
+
+<ParameterUebernehmenTrainer titel="Parameter uebernehmen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Quelle, Stand und Plausibilitaet">
+Parameteruebernahme bedeutet, ein freigegebenes Rezept oder eine Vorgabe passend zu Auftrag, Maschine, Werkzeug und Material zu nutzen. Unplausible Werte werden geklaert.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel altes Rezept">
+Am Panel ist ein aelterer Rezeptstand gespeichert. Du uebernimmst ihn nicht blind, sondern vergleichst Version und Freigabe mit dem Auftrag.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Parameter ohne Quelle sind keine sichere Produktionsgrundlage.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-PRO-005::check"
+  fragen={[{ id: "quelle", masterySchluessel: "FK-2-PRO-005::quelle", aufgabenstellung: "Woher kommen sichere Parameter?", optionen: [{ id: "richtig", text: "Aus Rezept, Datenblatt oder freigegebener Vorgabe.", istKorrekt: true, erklaerung: "Richtig. Werte sind quellenpflichtig." }, { id: "falsch", text: "Aus Erinnerung oder Gefuehl.", istKorrekt: false, erklaerung: "Nein. Parameter werden nicht geraten." }] }]}
+/>

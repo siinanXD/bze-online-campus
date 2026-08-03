@@ -1,0 +1,120 @@
+---
+titel: "Gefahren in der Werkhalle erkennen"
+thema_code: "PT-SIC"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Konkrete Gefahrstellen, Maschinenbeispiele und Betriebsanweisungen muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Werkhalle"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Betriebsanweisung und Unterweisungsbezug muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung Arbeitssicherheit"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Die Beispiele sind Lernskizzen und ersetzen keine Arbeitsplatzunterweisung."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation vor dem ersten Rundgang">
+Du gehst mit deinem Ausbilder durch die Werkhalle. Mehrere Maschinen laufen, Material steht bereit und
+Transportwege werden genutzt. Dein Ausbilder fragt: "Welche Stellen koennen gefaehrlich werden, bevor du
+ueberhaupt arbeitest?"
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Gefahrstelle", "Quetschen", "Schneiden", "Einzug", "Meldeweg"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Gefahren in Alltagssprache">
+Eine Gefahrstelle ist ein Ort, an dem etwas passieren kann: etwas kann ziehen, druecken, schneiden oder
+dich zum Stolpern bringen. Du suchst solche Stellen, bevor du handelst.
+</EinfachErklaert>
+
+<GefahrenstellenBild />
+
+<GefahrstellenTrainer titel="Gefahrstellen im Kopf markieren" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Gefaehrdung erkennen">
+Gefahren entstehen durch bewegte Maschinenteile, Werkzeuge, Werkstuecke, Spaene, Energie, Materialfluss
+oder die Arbeitsumgebung. Als Lernender beurteilst du keine Maschine eigenmaechtig. Du erkennst typische
+Gefahrarten, haeltst Abstand, beachtest Schutzeinrichtungen und nutzt den Meldeweg, wenn etwas unklar ist.
+</FachlichErklaert>
+
+## Typische Gefahrarten
+
+| Gefahrart | Beispiel | Sicherer Grundsatz |
+|---|---|---|
+| Einzug | Rollen, Baender, rotierende Teile | Abstand halten, keine lose Kleidung, Schutz beachten |
+| Quetschen | Schliessende Vorrichtung, Hubbewegung | Nicht in Bewegungsbereich greifen |
+| Schneiden | Werkzeuge, scharfe Kanten, Spaene | Nach Vorgabe handhaben und passende PSA beachten |
+| Stolpern | Material, Leitungen, Unordnung | Wege frei halten und Stoerungen melden |
+
+<Praxisbeispiel titel="Praxisbeispiel laufendes Band">
+Du siehst ein laufendes Foerderband und daneben Material im Laufweg. Du greifst nicht schnell zwischen Band
+und Rolle. Du haeltst Abstand, meldest die Unordnung und klaerst, wer sie sicher beseitigt.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Diese Einheit nennt keine maschinenspezifischen Grenzwerte. Konkrete Schutzabstaende, Verriegelungen und
+Verhaltensregeln kommen aus Betriebsanweisung, Unterweisung und Ausbilderfreigabe.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Erst Gefahrstelle erkennen, Abstand halten, Vorgabe pruefen und bei Unsicherheit melden.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-SIC-001::check"
+  fragen={[
+    {
+      id: "einzug-erkennen",
+      masterySchluessel: "FK-1-SIC-001::einzug-erkennen",
+      aufgabenstellung: "Was ist bei einer moeglichen Einzugsstelle richtig?",
+      optionen: [
+        {
+          id: "abstand",
+          text: "Abstand halten, Schutz beachten und nicht in laufende Teile greifen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Einzugsstellen koennen Koerperteile oder Kleidung erfassen.",
+        },
+        {
+          id: "kurz-greifen",
+          text: "Kurz hineingreifen, wenn es schnell gehen muss.",
+          istKorrekt: false,
+          erklaerung: "Das ist gefaehrlich. Geschwindigkeit rechtfertigt kein Eingreifen in laufende Gefahrstellen.",
+        },
+      ],
+    },
+    {
+      id: "stolpern",
+      masterySchluessel: "FK-1-SIC-001::stolpern",
+      aufgabenstellung: "Warum ist Material im Laufweg eine Gefahrstelle?",
+      optionen: [
+        {
+          id: "sturz",
+          text: "Weil Personen stolpern, fallen oder in Maschinenbereiche geraten koennen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Ordnung im Laufweg ist auch Arbeitssicherheit.",
+        },
+        {
+          id: "nur-optik",
+          text: "Nur weil es unordentlich aussieht.",
+          istKorrekt: false,
+          erklaerung: "Es geht nicht nur um Optik, sondern um konkrete Stolper- und Sturzgefahr.",
+        },
+      ],
+    },
+  ]}
+/>

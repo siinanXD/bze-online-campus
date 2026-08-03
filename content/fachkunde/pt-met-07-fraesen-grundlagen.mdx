@@ -1,0 +1,63 @@
+---
+titel: "Fraesen Grundlagen"
+thema_code: "PT-MET"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Fraesprinzip, Werkzeuge und Schnittwerte muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Fraesen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Fraeswerte, Vorschub und Werkzeugdaten nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Fraesmaschine">
+Ein Fraeser rotiert und das Werkstueck wird weitergefuehrt. Du erkennst ein spanendes Verfahren mit meist
+mehreren Schneiden.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Fraeser", "Tischvorschub", "Schnittgeschwindigkeit", "Span"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Fraesen in Alltagssprache">
+Beim Fraesen dreht sich das Werkzeug. Es hat Schneiden und nimmt Material vom Werkstueck ab.
+</EinfachErklaert>
+
+<FraesenGrundlagenSchema />
+
+<FraesenGrundlagenTrainer titel="Fraesen Grundlagen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Rotierendes Werkzeug">
+Fraesen nutzt ein rotierendes, meist mehrschneidiges Werkzeug. Vorschub, Eingriff, Werkzeug, Werkstoff und
+Schutz bestimmen die Bearbeitung.
+</FachlichErklaert>
+
+<Formelkarte titel="Schnittwertbezug beim Fraesen" formel="vc, n, f">
+Die Formelzeichen sind Orientierung. Konkrete Werte bleiben quellenpflichtig.
+</Formelkarte>
+
+<TabellenbuchHinweis>
+Fraeswerte werden aus Werkzeugdaten und Tabellenbuch uebernommen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Beim Fraesen rotiert der Fraeser.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-007::check"
+  fragen={[{ id: "fraeser", masterySchluessel: "FK-2-MET-007::fraeser", aufgabenstellung: "Was rotiert beim Fraesen?", optionen: [{ id: "fraeser", text: "Der Fraeser.", istKorrekt: true, erklaerung: "Richtig." }, { id: "blech", text: "Ein Blechhalter.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

@@ -1,0 +1,57 @@
+---
+titel: "Druckluftanlage ueberblicken"
+thema_code: "PT-PNH"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Druckluftweg, Anlagenbeispiele und sichere Diagnose muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Metall/Mechatronik und betriebliche Pneumatikunterlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Betriebliche Druckluftanlage, erlaubte Pruefpunkte und Reaktionswege nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Verpackungsstation">
+Ein Pneumatikzylinder schiebt Teile weiter. Bevor du an einen Fehler denkst, verfolgst du den Luftweg: Wo wird die Druckluft erzeugt, aufbereitet, verteilt und verbraucht?
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Druckluft", "Kompressor", "Wartungseinheit", "Ventil", "Pneumatikzylinder"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Druckluft als Energieweg">
+Ein Kompressor macht Luft unter Druck. Die Luft wird vorbereitet und durch Leitungen zur Maschine gefuehrt. Dort bewegt sie zum Beispiel einen Zylinder.
+</EinfachErklaert>
+
+<DruckluftanlageSchema />
+
+<DruckluftanlageTrainer titel="Druckluftanlage" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Grundaufbau einer Pneumatikanlage">
+Eine Druckluftanlage besteht vereinfacht aus Erzeugung, Speicherung, Aufbereitung, Verteilung und Verbrauchern. Fuer die Fehlersuche wird der Luftweg systematisch betrachtet, ohne Schlaeuche, Regler oder Ventile nach Gefuehl zu veraendern.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Zylinder bewegt nicht">
+Wenn ein Zylinder nicht ausfaehrt, pruefst du zuerst, ob Druckluft vorhanden ist, ob die Wartungseinheit auffaellig ist und ob der Luftweg zum Ventil und Verbraucher plausibel ist. Einstellungen bleiben Sache der Vorgabe oder befugten Person.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Druckluftweg zuerst verstehen: erzeugen, aufbereiten, verteilen, verbrauchen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-PNH-001::check"
+  fragen={[{ id: "luftweg", masterySchluessel: "FK-3-PNH-001::luftweg", aufgabenstellung: "Welche Reihenfolge beschreibt eine Druckluftanlage am besten?", optionen: [{ id: "richtig", text: "Kompressor erzeugt Druckluft, Aufbereitung bereitet sie vor, Verbraucher nutzt sie.", istKorrekt: true, erklaerung: "Richtig. So wird der Luftweg grob verfolgt." }, { id: "falsch", text: "Zylinder erzeugt Druckluft, Kompressor verbraucht sie und Leitungen reinigen sie.", istKorrekt: false, erklaerung: "Nein. Das vertauscht Erzeuger, Verbraucher und Aufbereitung." }] }]}
+/>

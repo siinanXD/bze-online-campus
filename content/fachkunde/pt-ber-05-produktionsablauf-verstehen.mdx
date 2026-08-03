@@ -1,0 +1,57 @@
+---
+titel: "Produktionsablauf verstehen"
+thema_code: "PT-BER"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Betriebliche Ablaufbeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Rahmenlehrplan und Traegerskript Produktionsablauf"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Stationsbezeichnungen nach Betrieb ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation in der Halle">
+Material kommt von links, die Presse steht in der Mitte, Pruefung und Verpackung folgen. Du sollst den Ablauf in der richtigen Reihenfolge erklaeren.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Materialfluss","Arbeitsplatz","Auftrag","Pruefen","Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Von Station zu Station">
+Produktion laeuft in Schritten. Jede Station braucht Material, Information und oft eine Pruefung.
+</EinfachErklaert>
+
+<ProduktionsablaufVerstehenSchema />
+
+<ProduktionsablaufVerstehenTrainer titel="Produktionsablauf verstehen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Ablauf als verbundenes System">
+Ein Produktionsablauf verbindet Auftrag, Materialbereitstellung, Bearbeitung, Pruefung und Weitergabe. Stoerungen an einer Station wirken auf die naechsten. Deshalb denkst du in Ablaeufen, nicht nur in Einzelgriffen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Engpass Pruefung">
+Wenn die Pruefung stockt, stauen sich Teile vor der Station. Der Ablauf zeigt, warum engpassnahe Stoerungen schnell gemeldet werden muessen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ablauf denken: vorher, hier, nachher.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-BER-005::check"
+  fragen={[{ id: "kern", masterySchluessel: "FK-1-BER-005::kern", aufgabenstellung: "Warum ist der Produktionsablauf wichtig?", optionen: [{ id: "richtig", text: "Weil Stationen verbunden sind und Stoerungen weiterwirken.", istKorrekt: true, erklaerung: "Richtig. Ablaufdenken verhindert isolierte Fehler." }, { id: "falsch", text: "Weil nur die eigene Maschine zaehlt und der Rest egal ist.", istKorrekt: false, erklaerung: "Nein. Vorherige und folgende Stationen gehoeren dazu." }] }]}
+/>

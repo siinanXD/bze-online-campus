@@ -1,0 +1,115 @@
+---
+titel: "Temperatur beim Messen beachten"
+thema_code: "PT-MES"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Referenztemperatur, Ausdehnungsbeispiele und betriebliche Bewertungsregeln muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Temperatur und Laengenaenderung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Referenztemperatur, Ausdehnungskoeffizienten und konkrete Rechenwerte duerfen erst nach Quellenabgleich genutzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation direkt aus dem Prozess">
+Ein Teil kommt warm aus der Maschine. Es soll sofort gemessen werden und liegt sehr nah an der Grenze.
+Du erinnerst dich: Temperatur kann beim Messen eine Rolle spielen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Ausdehnung", "Referenztemperatur", "Messunsicherheit", "Toleranz", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Temperatur in Alltagssprache">
+Material kann sich bei Waerme ausdehnen und bei Kaelte zusammenziehen. Bei knappen Messungen darfst du
+Temperatur deshalb nicht ignorieren.
+</EinfachErklaert>
+
+<TemperaturMessenSchema />
+
+<TemperaturBeimMessenTrainer titel="Temperatur beim Messen beachten" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Waermeeinfluss auf Messergebnisse">
+Viele Werkstoffe aendern ihre Abmessungen mit der Temperatur. Deshalb beziehen sich genaue Messungen auf
+vorgegebene Bedingungen. Welche Referenztemperatur, Wartezeit oder Bewertungsregel gilt, muss aus
+Tabellenbuch, Pruefplan oder Unterweisung kommen.
+</FachlichErklaert>
+
+## Worauf du achtest
+
+| Situation | Sichere Reaktion |
+|---|---|
+| Teil ist warm | Temperatur und Vorgabe beachten |
+| Wert liegt knapp an Grenze | Freigabe oder erneute Pruefung klaeren |
+| Messmittel und Teil waren unterschiedlich gelagert | Anpasszeit nach Vorgabe beachten |
+| Keine klare Regel vorhanden | Nicht raten, sondern Meldeweg nutzen |
+
+<Praxisbeispiel titel="Praxisbeispiel warmes Teil">
+Ein Kunststoffteil wird direkt nach dem Prozess gemessen. Der Wert ist grenznah. Du dokumentierst nicht
+einfach Gut oder Ausschuss, sondern pruefst, welche Messbedingung und Wartezeit vorgegeben ist.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Konkrete Rechenwerte, Ausdehnungskoeffizienten, Referenztemperaturen und Freigaberegeln duerfen erst nach
+Tabellenbuch-, Pruefplan- oder Ausbilderfreigabe eingetragen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Bei knappen Messungen ist Temperatur kein Nebenthema.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MES-012::check"
+  fragen={[
+    {
+      id: "warm",
+      masterySchluessel: "FK-1-MES-012::warm",
+      aufgabenstellung: "Was machst du, wenn ein warmes Teil grenznah gemessen wird?",
+      optionen: [
+        {
+          id: "vorgabe",
+          text: "Temperatur und Pruefvorgabe beachten.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Temperatur kann das Messergebnis beeinflussen.",
+        },
+        {
+          id: "schnell",
+          text: "Schnell messen, bevor es sich aendert.",
+          istKorrekt: false,
+          erklaerung: "Nein. Kritische Messungen brauchen geeignete Bedingungen.",
+        },
+      ],
+    },
+    {
+      id: "unklar",
+      masterySchluessel: "FK-1-MES-012::unklar",
+      aufgabenstellung: "Was tust du, wenn keine klare Temperaturregel bekannt ist?",
+      optionen: [
+        {
+          id: "klaeren",
+          text: "Freigabe oder Vorgabe klaeren.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Bei Unsicherheit wird nicht geraten.",
+        },
+        {
+          id: "ignorieren",
+          text: "Temperatur ignorieren.",
+          istKorrekt: false,
+          erklaerung: "Nein. Gerade Grenzfaelle koennen dadurch falsch bewertet werden.",
+        },
+      ],
+    },
+  ]}
+/>

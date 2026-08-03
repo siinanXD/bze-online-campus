@@ -1,0 +1,64 @@
+---
+titel: "Schrauben und Muttern"
+thema_code: "PT-MEL"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Gewindeangaben, Anzugswerte und Sicherungen muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Schraubverbindungen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Gewinde, Anzugsmomente und Sicherungselemente duerfen erst nach Quellenabgleich genutzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an einer Verbindung">
+Zwei Bauteile sind mit Schraube und Mutter verbunden. Du erkennst: Schraubverbindungen sind loesbar, aber
+nicht beliebig anzuziehen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schraube", "Mutter", "Gewinde", "Drehmoment", "Zeichnung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schraubenverbindung in Alltagssprache">
+Schraube und Mutter halten Bauteile zusammen und koennen wieder geloest werden.
+</EinfachErklaert>
+
+<SchraubenMutternSchema />
+
+<SchraubenMutternTrainer titel="Schrauben und Muttern" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Loesbare Verbindung">
+Schrauben und Muttern bilden loesbare Verbindungen. Gewinde, Laenge, Werkstoff, Sicherung und Anzug richten
+sich nach Zeichnung, Stueckliste oder Arbeitsanweisung.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Anziehen">
+Eine Schraube soll angezogen werden. Du ziehst nicht nach Gefuehl fest, wenn ein Wert oder Verfahren
+vorgegeben ist.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Gewindeangaben, Anzugsmomente und Sicherungen sind quellenpflichtig.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Schrauben verbinden loesbar, aber immer nach Vorgabe.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MEL-009::check"
+  fragen={[{ id: "verbindung", masterySchluessel: "FK-1-MEL-009::verbindung", aufgabenstellung: "Welche Verbindung bilden Schrauben und Muttern meist?", optionen: [{ id: "loesbar", text: "Eine loesbare Verbindung.", istKorrekt: true, erklaerung: "Richtig." }, { id: "verguss", text: "Immer eine unloesbare Vergussverbindung.", istKorrekt: false, erklaerung: "Nein. Schraubverbindungen sind grundsaetzlich loesbar." }] }]}
+/>

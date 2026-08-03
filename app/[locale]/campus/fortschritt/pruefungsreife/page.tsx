@@ -1,9 +1,12 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
-import { Card } from '@bze/ui';
 import { ladeFortschrittSeite } from '../_lib/queries';
+import { ZurueckIcon } from '@/components/shell/icons';
 
+/**
+ * Prüfungsreife im Figma-Mobile-Look.
+ */
 export default async function PruefungsreifePage({
   params,
 }: {
@@ -12,12 +15,14 @@ export default async function PruefungsreifePage({
   const { locale } = await params;
   const t = await getTranslations('fortschritt.pruefungsreife');
   const supabase = await createServerSupabase();
-  const { data: { user } } = await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
 
   if (!user) {
     return (
-      <main className="mx-auto max-w-2xl p-4">
-        <p className="text-fg-muted">{t('nichtAngemeldet')}</p>
+      <main className="mx-auto max-w-md px-5 py-6">
+        <p className="text-[14px] text-fg-muted">{t('nichtAngemeldet')}</p>
       </main>
     );
   }
@@ -25,22 +30,22 @@ export default async function PruefungsreifePage({
   const data = await ladeFortschrittSeite(user.id);
 
   return (
-    <main className="mx-auto max-w-2xl space-y-4 p-4">
+    <main className="mx-auto flex min-h-full max-w-md flex-col gap-4 px-5 pb-6 pt-3">
       <Link
         href={`/${locale}/campus/fortschritt`}
-        className="touchable inline-flex min-h-12 items-center text-sm font-semibold text-primary underline-offset-4 hover:underline"
+        className="touchable inline-flex min-h-10 items-center gap-1 text-[16px] font-semibold text-primary"
       >
-        {t('zurueck')}
+        <ZurueckIcon className="h-5 w-5" />
+        <span>{t('zurueck')}</span>
       </Link>
-      <h1 className="text-2xl font-extrabold">{t('titel')}</h1>
-      <p className="text-sm text-fg-muted">{t('untertitel')}</p>
+      <header>
+        <h1 className="text-[22px] font-extrabold text-fg">{t('titel')}</h1>
+        <p className="mt-1 text-[14px] text-fg-muted">{t('untertitel')}</p>
+      </header>
 
-      <Card className="border-primary/40 bg-primary/5" role="note">
-        <p className="flex gap-2 text-sm font-medium">
-          <span aria-hidden="true">ℹ</span>
-          <span>{t('kammerhinweis')}</span>
-        </p>
-      </Card>
+      <div className="rounded-[16px] border border-primary-border bg-primary-subtle p-4" role="note">
+        <p className="text-[13px] font-medium text-fg">{t('kammerhinweis')}</p>
+      </div>
 
       {data.phasen.map((ph) => {
         const reife = data.pruefungsreifen.find((r) => r.phaseId === ph.id);
@@ -51,9 +56,9 @@ export default async function PruefungsreifePage({
         const bestaetigt = Boolean(reife?.ausbilderBestaetigtAm);
 
         return (
-          <Card key={ph.id} className="space-y-3">
-            <h2 className="font-bold">{ph.bezeichnung}</h2>
-            <ul className="space-y-2 text-sm">
+          <section key={ph.id} className="space-y-3 rounded-[16px] border border-border bg-surface p-4">
+            <h2 className="text-[16px] font-bold text-fg">{ph.bezeichnung}</h2>
+            <ul className="space-y-2 text-[13px]">
               <Kriterium ok={kernOk} label={t('kriteriumKern')} />
               <Kriterium
                 ok={pruefOk}
@@ -65,7 +70,7 @@ export default async function PruefungsreifePage({
               <Kriterium ok={kriterien} label={t('kriteriumErfuellt')} />
               <Kriterium ok={bestaetigt} label={t('kriteriumAusbilder')} />
             </ul>
-            <p className="flex items-center gap-1.5 text-sm" role="status">
+            <p className="flex items-center gap-1.5 text-[13px]" role="status">
               <span aria-hidden="true">{bestaetigt ? '✓' : kriterien ? '★' : '○'}</span>
               <span>
                 {bestaetigt
@@ -75,7 +80,7 @@ export default async function PruefungsreifePage({
                     : t('statusOffen')}
               </span>
             </p>
-          </Card>
+          </section>
         );
       })}
     </main>

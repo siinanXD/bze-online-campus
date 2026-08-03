@@ -1,0 +1,119 @@
+---
+titel: "Warum technische Zeichnungen wichtig sind"
+thema_code: "PT-ZEI"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Begriffe, Zeichnungsbeispiele und betriebliche Dokumentenwege muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Metall/Kunststofftechnik"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Normbezug und konkrete Zeichnungsregeln muessen vor Freigabe ergaenzt werden."
+  - titel: "BZE-Traegerskript Technische Kommunikation"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit erklaert Grundlogik und ersetzt keine freigegebene Zeichnung."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation vor dem ersten Auftrag">
+Du bekommst ein Bauteil, Material und eine technische Zeichnung. Dein Ausbilder fragt dich nicht zuerst,
+ob das Teil ungefaehr richtig aussieht. Er fragt: "Was steht in der Zeichnung?"
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Zeichnung", "Bauteil", "Schriftfeld", "Ansichten", "Bemassung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Zeichnung in Alltagssprache">
+Eine technische Zeichnung ist wie eine genaue Bauanleitung fuer ein Teil. Sie sagt, wie das Teil aussehen
+soll, welche Masse gelten und welche Angaben du vor Fertigung oder Pruefung brauchst.
+</EinfachErklaert>
+
+<ZeichnungGrundlagenSchema />
+
+<ZeichnungZweckTrainer titel="Zeichnung sicher nutzen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Zeichnung als verbindliche Grundlage">
+Die technische Zeichnung beschreibt ein Bauteil eindeutig. Dazu gehoeren Darstellung, Ansichten, Bemassung,
+Werkstoffangaben, Zeichnungsnummer, Aenderungsstand und weitere technische Angaben. In der Fertigung wird
+nicht nach Augenmass entschieden, sondern nach gueltiger Zeichnung und Pruefvorgabe.
+</FachlichErklaert>
+
+## Worauf du zuerst achtest
+
+| Bereich | Frage |
+|---|---|
+| Schriftfeld | Welche Zeichnung und welcher Stand gelten? |
+| Ansichten | Welche Form hat das Bauteil wirklich? |
+| Bemassung | Welche Masse muessen gefertigt oder geprueft werden? |
+| Hinweise | Gibt es besondere Angaben zu Werkstoff, Oberflaeche oder Pruefung? |
+
+<Praxisbeispiel titel="Praxisbeispiel falscher Stand">
+Auf dem Tisch liegt eine alte Zeichnung. Im Auftrag steht aber eine andere Zeichnungsnummer oder ein neuerer
+Aenderungsstand. Du startest nicht, sondern meldest den Widerspruch und laesst klaeren, welcher Stand gilt.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Zeichnungsregeln, Linienarten, Massangaben und Darstellungsarten muessen mit Tabellenbuch, Normen und
+freigegebenem Unterrichtsmaterial abgeglichen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Die Zeichnung ist kein Bild zum Anschauen, sondern die Grundlage fuer Fertigung und Pruefung.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-ZEI-001::check"
+  fragen={[
+    {
+      id: "grundlage",
+      masterySchluessel: "FK-1-ZEI-001::grundlage",
+      aufgabenstellung: "Warum ist die technische Zeichnung wichtig?",
+      optionen: [
+        {
+          id: "verbindlich",
+          text: "Sie legt fest, wie ein Bauteil gefertigt und geprueft werden soll.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Zeichnung und Pruefvorgabe sind die Grundlage.",
+        },
+        {
+          id: "deko",
+          text: "Sie ist nur ein Bild, damit das Teil schoener aussieht.",
+          istKorrekt: false,
+          erklaerung: "Nein. Die Zeichnung enthaelt verbindliche technische Angaben.",
+        },
+      ],
+    },
+    {
+      id: "unsicher",
+      masterySchluessel: "FK-1-ZEI-001::unsicher",
+      aufgabenstellung: "Was machst du bei widerspruechlichen Zeichnungsangaben?",
+      optionen: [
+        {
+          id: "melden",
+          text: "Nicht raten, sondern den Widerspruch melden und klaeren lassen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Widersprueche werden vor dem Start geklaert.",
+        },
+        {
+          id: "schaetzen",
+          text: "Nach Augenmass entscheiden, damit die Fertigung weitergeht.",
+          istKorrekt: false,
+          erklaerung: "Das ist riskant. Zeichnungsangaben duerfen nicht geraten werden.",
+        },
+      ],
+    },
+  ]}
+/>

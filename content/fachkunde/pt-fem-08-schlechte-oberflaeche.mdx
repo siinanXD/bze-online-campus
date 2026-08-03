@@ -1,0 +1,57 @@
+---
+titel: "Schlechte Oberflaeche"
+thema_code: "PT-FEM"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Oberflaechenanforderungen, Rauheitswerte und Musterfreigaben muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Zeichnung, Pruefplan und Tabellenbuch Oberflaeche"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Rauheitsangaben, Musterteile und zulaessige Kratzer nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation mit sichtbarer Spur">
+Ein Bauteil hat Kratzer und wirkt rauer als sonst. Du vergleichst nicht nach Laune, sondern nach Zeichnung, Pruefplan oder Muster.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Rauheit", "Kratzer", "Oberflaeche", "Pruefplan"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Oberflaeche in Alltagssprache">
+Die Oberflaeche kann zu rau, zerkratzt oder ungleichmaessig sein. Ob das erlaubt ist, steht in der Vorgabe.
+</EinfachErklaert>
+
+<SchlechteOberflaecheSchema />
+
+<SchlechteOberflaecheTrainer titel="Schlechte Oberflaeche" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Oberflaechenfehler nach Vorgabe bewerten">
+Schlechte Oberflaechen koennen durch Werkzeugverschleiss, Spane, Kuehlschmierstoff, Schnittwerte, Transport oder falsche Handhabung entstehen. Bewertet wird nach Oberflaechenangabe, Muster und Pruefplan.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Funktionsflaeche">
+Ein Kratzer auf einer Sichtflaeche kann anders bewertet werden als ein Kratzer auf einer Funktionsflaeche. Die Vorgabe entscheidet.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Oberflaeche wird nach Vorgabe bewertet, nicht nach Gewohnheit.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEM-008::check"
+  fragen={[{ id: "vorgabe", masterySchluessel: "FK-3-FEM-008::vorgabe", aufgabenstellung: "Woraus kommt die Bewertung einer Oberflaeche?", optionen: [{ id: "richtig", text: "Aus Zeichnung, Pruefplan oder freigegebenem Muster.", istKorrekt: true, erklaerung: "Richtig. Oberflaechen brauchen eine Vorgabe." }, { id: "falsch", text: "Nur daraus, ob sie dir gefaellt.", istKorrekt: false, erklaerung: "Nein. Geschmack ist keine QS-Vorgabe." }] }]}
+/>

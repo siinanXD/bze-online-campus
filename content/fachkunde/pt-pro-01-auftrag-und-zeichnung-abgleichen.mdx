@@ -1,0 +1,57 @@
+---
+titel: "Auftrag und Zeichnung abgleichen"
+thema_code: "PT-PRO"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Abgleichlogik, Eskalationsweg und betriebliche Rollen muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Betriebliche Arbeitsanweisung Produktionsstart"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Auftragsdaten, Zeichnungsstand und Rueckfrageweg nach Traegervorgabe ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation vor dem Start">
+Du bekommst einen Fertigungsauftrag und eine Zeichnung. Bevor du Material oder Werkzeug bereitstellst, pruefst du, ob beide Unterlagen zusammenpassen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Auftrag", "Zeichnung", "Zeichnungsabgleich", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Abgleich in Alltagssprache">
+Du vergleichst: Was soll hergestellt werden, wie soll es aussehen, welches Material ist vorgesehen und ob etwas unklar ist.
+</EinfachErklaert>
+
+<AuftragZeichnungAbgleichSchema />
+
+<AuftragZeichnungAbgleichTrainer titel="Auftrag und Zeichnung abgleichen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Widersprueche vor dem Start klaeren">
+Auftrag, Zeichnung, Arbeitsplan und Materialvorgabe muessen zueinander passen. Abweichende Zeichnungsstaende, unklare Mengen oder widerspruechliche Materialangaben werden vor Produktionsstart geklaert.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel falscher Zeichnungsstand">
+Auf dem Auftrag steht Revision B, die Zeichnung am Arbeitsplatz zeigt Revision A. Du startest nicht, sondern fragst nach der gueltigen Vorgabe.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Unklare Unterlagen werden geklaert, nicht durch Erfahrung ersetzt.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-PRO-001::check"
+  fragen={[{ id: "widerspruch", masterySchluessel: "FK-2-PRO-001::widerspruch", aufgabenstellung: "Was tust du bei widerspruechlichen Unterlagen?", optionen: [{ id: "richtig", text: "Rueckfrage stellen und Freigabe klaeren.", istKorrekt: true, erklaerung: "Richtig. Widersprueche duerfen nicht uebergangen werden." }, { id: "falsch", text: "Nach Gefuehl mit der aelteren Zeichnung starten.", istKorrekt: false, erklaerung: "Nein. Der gueltige Stand muss geklaert sein." }] }]}
+/>

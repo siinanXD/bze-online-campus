@@ -1,0 +1,57 @@
+---
+titel: "Produktionsdaten fuer Qualitaet sichern"
+thema_code: "PT-PRO"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Produktionsdaten, Rueckverfolgung und Qualitaetsbezug muessen fachlich geprueft werden."
+quellen:
+  - titel: "Betriebliche Dokumentations- und Rueckverfolgungsanweisung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Pflichtdaten, Systemfelder und Aufbewahrung nach Betriebsvorgabe ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation nach der Freigabe">
+Die Produktion laeuft. Damit Qualitaet spaeter nachvollziehbar bleibt, werden Auftrag, Charge, Maschine, Pruefung und Freigabe sauber dokumentiert.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Produktionsdaten", "Rueckverfolgung", "Charge", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Produktionsdaten in Alltagssprache">
+Du notierst wichtige Daten so, dass man spaeter versteht, was wann womit produziert wurde.
+</EinfachErklaert>
+
+<ProduktionsdatenQualitaetSchema />
+
+<ProduktionsdatenQualitaetTrainer titel="Produktionsdaten fuer Qualitaet sichern" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Rueckverfolgbarkeit fuer Qualitaet">
+Produktionsdaten verbinden Auftrag, Materialcharge, Maschine, Prozessstatus, Pruefergebnisse und Freigaben. Sie helfen, Abweichungen spaeter einzugrenzen und Entscheidungen zu belegen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel fehlende Charge">
+Bei einer Reklamation fehlt die Chargenangabe. Die Klaerung wird schwerer. Deshalb sicherst du Daten direkt im Prozess statt nachtraeglich zu raten.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Was nicht dokumentiert ist, ist spaeter schwer nachweisbar.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-PRO-012::check"
+  fragen={[{ id: "daten", masterySchluessel: "FK-2-PRO-012::daten", aufgabenstellung: "Warum sind Produktionsdaten wichtig?", optionen: [{ id: "richtig", text: "Sie sichern Rueckverfolgung und Qualitaetsklaerung.", istKorrekt: true, erklaerung: "Richtig. Daten verbinden Auftrag, Material und Pruefung." }, { id: "falsch", text: "Sie werden spaeter frei erfunden.", istKorrekt: false, erklaerung: "Nein. Daten muessen im Prozess stimmen." }] }]}
+/>

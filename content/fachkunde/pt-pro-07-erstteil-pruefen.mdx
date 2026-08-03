@@ -1,0 +1,57 @@
+---
+titel: "Erstteil pruefen"
+thema_code: "PT-PRO"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Pruefmerkmale, Messmittel und Freigabegrenzen muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Pruefplan Erstteilpruefung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Sollwerte, Grenzwerte und Pruefhaeufigkeiten nach Pruefplan ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Pruefstation">
+Das Erstteil liegt bereit. Du liest Pruefplan und Zeichnung, suchst die Merkmale und dokumentierst das Ergebnis.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Erstteilpruefung", "Pruefplan", "Soll", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Erstteilpruefung in Alltagssprache">
+Du pruefst das erste Teil gegen die Vorgaben. Nur wenn es passt und freigegeben ist, darf die Serie starten.
+</EinfachErklaert>
+
+<ErstteilPruefenSchema />
+
+<ErstteilPruefenTrainer titel="Erstteil pruefen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Ist gegen Soll vergleichen">
+Erstteilpruefung vergleicht Pruefmerkmale mit Zeichnung, Pruefplan und Freigabegrenzen. Ergebnisse werden nachvollziehbar dokumentiert.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel grenznahes Mass">
+Ein Mass liegt nahe an der Grenze. Du bewertest es nicht nach Bauchgefuehl, sondern nach Pruefplan, Messmittel und Freigabeweg.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Erstteilpruefung entscheidet anhand von Sollvorgaben, nicht anhand von Eindruck.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-PRO-007::check"
+  fragen={[{ id: "pruefplan", masterySchluessel: "FK-2-PRO-007::pruefplan", aufgabenstellung: "Woher kommen Pruefmerkmale und Grenzen?", optionen: [{ id: "richtig", text: "Aus Zeichnung, Pruefplan oder freigegebener Vorgabe.", istKorrekt: true, erklaerung: "Richtig. Pruefung braucht eine Quelle." }, { id: "falsch", text: "Aus der Farbe des Bauteils.", istKorrekt: false, erklaerung: "Nein. Farbe ersetzt keine Pruefvorgabe." }] }]}
+/>

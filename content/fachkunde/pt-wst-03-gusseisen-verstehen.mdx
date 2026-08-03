@@ -1,0 +1,114 @@
+---
+titel: "Gusseisen verstehen"
+thema_code: "PT-WST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Gusseisensorten, Graphitformen und Beispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Gusseisen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Sorte, Graphitform, Eigenschaften und Einsatzbeispiele muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am gebrochenen Teil">
+Ein Bauteil hat eine graue Bruchflaeche. Dein Ausbilder erklaert: Das koennte ein Hinweis auf Gusseisen
+sein, aber entschieden wird nach Kennzeichnung und Vorgabe.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Gusseisen", "Eisenwerkstoff", "Graphit", "Werkstoffkennzeichnung", "Pruefen"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Gusseisen in Alltagssprache">
+Gusseisen ist ein Eisenwerkstoff, der durch Giessen in Form gebracht wird. Es gibt verschiedene Sorten
+mit unterschiedlichen Eigenschaften.
+</EinfachErklaert>
+
+<GusseisenSchema />
+
+<GusseisenTrainer titel="Gusseisen verstehen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Gusswerkstoff erkennen">
+Gusseisen gehoert zu den Eisenwerkstoffen. Je nach Sorte und Graphitform kann es sich unterschiedlich
+verhalten. Bruchbild oder Aussehen koennen Hinweise geben, ersetzen aber keine Werkstoffkennzeichnung.
+</FachlichErklaert>
+
+## Merkmale vorsichtig einordnen
+
+| Hinweis | Was du daraus machst |
+|---|---|
+| Gegossene Form | Hinweis auf Gussverfahren |
+| Graphitbegriff | Wichtig fuer Gusseisenverstaendnis |
+| Bruchbild | Nur Hinweis, keine sichere Sortenbestimmung |
+| Kennzeichnung | Grundlage fuer Bearbeitung und Bewertung |
+
+<Praxisbeispiel titel="Praxisbeispiel falsche Bearbeitung">
+Ein gegossenes Teil soll nachbearbeitet werden. Du uebernimmst keine Stahlwerte, sondern pruefst die
+Werkstoffangabe und die freigegebene Bearbeitungsvorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Gusseisensorten, Kurzzeichen, Graphitformen, Eigenschaften und Bearbeitungsregeln muessen aus Tabellenbuch,
+Datenblatt oder Unterweisung stammen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Gusseisen erkennst du fachlich ueber Kennzeichnung, nicht nur ueber Aussehen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WST-003::check"
+  fragen={[
+    {
+      id: "herstellung",
+      masterySchluessel: "FK-1-WST-003::herstellung",
+      aufgabenstellung: "Wie wird Gusseisen typischerweise in Form gebracht?",
+      optionen: [
+        {
+          id: "giessen",
+          text: "Durch Giessen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Das steckt schon im Namen.",
+        },
+        {
+          id: "weben",
+          text: "Durch Weben.",
+          istKorrekt: false,
+          erklaerung: "Nein. Weben ist kein Metall-Gussverfahren.",
+        },
+      ],
+    },
+    {
+      id: "kennzeichnung",
+      masterySchluessel: "FK-1-WST-003::kennzeichnung",
+      aufgabenstellung: "Was klaert die genaue Gusseisensorte?",
+      optionen: [
+        {
+          id: "werkstoff",
+          text: "Werkstoffkennzeichnung, Datenblatt oder Vorgabe.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Aussehen allein reicht nicht.",
+        },
+        {
+          id: "farbe",
+          text: "Nur die Farbe der Bruchflaeche.",
+          istKorrekt: false,
+          erklaerung: "Nein. Die Farbe kann hoechstens ein Hinweis sein.",
+        },
+      ],
+    },
+  ]}
+/>

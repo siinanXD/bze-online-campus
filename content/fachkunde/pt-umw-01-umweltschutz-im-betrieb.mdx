@@ -1,0 +1,118 @@
+---
+titel: "Umweltschutz im Betrieb"
+thema_code: "PT-UMW"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Betriebliche Abfallwege und Sammelstellen muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Abfall und Umwelt"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Sammelstellen, Farben und Entsorgungswege muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung Umweltschutz"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit erklaert Grundlogik und ersetzt keine betriebliche Unterweisung."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Linie">
+Nach dem Auftrag liegen Verpackung, Ausschussteile und verschmutzte Tuecher am Arbeitsplatz. Wenn alles in
+einer Kiste landet, gehen Wertstoffe verloren und Gefahrstoffe koennen falsch entsorgt werden.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Abfall", "Recycling", "Kennzeichnen", "Betriebsstoff", "Sortenreinheit"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Umwelt in Alltagssprache">
+Umweltschutz heisst im Betrieb: weniger verschwenden, sauber trennen, nichts verschuetten und nur nach
+Vorgabe entsorgen. Je sauberer getrennt wird, desto besser kann Material wiederverwendet werden.
+</EinfachErklaert>
+
+<UmweltStoffstromSchema />
+
+<AbfallwegTrainer titel="Abfallweg in Reihenfolge bringen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Umweltschutz ist Prozessdisziplin">
+Material, Betriebsstoffe und Abfaelle haben feste Wege. Wer Abfaelle vermischt, Gebinde falsch kennzeichnet
+oder Stoffe in falsche Behaelter gibt, erzeugt Sicherheits-, Umwelt- und Kostenrisiken.
+</FachlichErklaert>
+
+## Grundlogik
+
+| Schritt | Bedeutung |
+|---|---|
+| Vermeiden | Material sparsam nutzen |
+| Trennen | Stoffe nicht vermischen |
+| Kennzeichnen | Inhalt und Status sichtbar machen |
+| Sammeln | Richtige Sammelstelle nutzen |
+| Entsorgen | Betriebliche Vorgabe einhalten |
+
+<Praxisbeispiel titel="Praxisbeispiel Sammelstelle">
+Du bist unsicher, ob ein verschmutztes Tuch in Restmuell oder Sonderabfall gehoert. Du wirfst es nicht
+irgendwo hinein, sondern fragst und nutzt die betriebliche Vorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Konkrete Farben, Behaelter und Entsorgungswege sind betrieblich festgelegt und muessen nachgetragen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Nicht mischen, nicht raten, nicht verschuetten: trennen und nach Vorgabe entsorgen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-UMW-001::check"
+  fragen={[
+    {
+      id: "abfall-trennen",
+      masterySchluessel: "FK-1-UMW-001::abfall-trennen",
+      aufgabenstellung: "Warum werden Abfaelle im Betrieb getrennt?",
+      optionen: [
+        {
+          id: "verwertung",
+          text: "Damit Wertstoffe verwertet und Gefahrstoffe richtig behandelt werden koennen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Trennung schuetzt Umwelt, Sicherheit und Materialwert.",
+        },
+        {
+          id: "egal",
+          text: "Nur damit der Arbeitsplatz leer aussieht.",
+          istKorrekt: false,
+          erklaerung: "Ordnung hilft, aber entscheidend sind sichere und richtige Stoffwege.",
+        },
+      ],
+    },
+    {
+      id: "unsicher",
+      masterySchluessel: "FK-1-UMW-001::unsicher",
+      aufgabenstellung: "Was machst du, wenn du den richtigen Abfallweg nicht kennst?",
+      optionen: [
+        {
+          id: "fragen",
+          text: "Nachfragen und die betriebliche Vorgabe nutzen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Entsorgungswege werden nicht geraten.",
+        },
+        {
+          id: "irgendwo",
+          text: "In den naechsten Behaelter werfen.",
+          istKorrekt: false,
+          erklaerung: "Das kann Stoffe vermischen und falsche Entsorgung verursachen.",
+        },
+      ],
+    },
+  ]}
+/>

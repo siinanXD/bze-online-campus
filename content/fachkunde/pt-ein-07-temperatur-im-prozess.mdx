@@ -1,0 +1,115 @@
+---
+titel: "Temperatur im Prozess"
+thema_code: "PT-EIN"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Prozessbeispiele und Temperaturvorgaben muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Temperatur und Prozesswerte"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Einheiten, Grenzwerte und Prozessbezug muessen vor Freigabe ergaenzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Maschine">
+Ein Prozesswert zeigt eine Temperatur. Wenn die Temperatur ausserhalb der Vorgabe liegt, kann das Material,
+das Mass oder der Ablauf beeinflusst werden.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Temperatur", "Grad Celsius", "Delta T", "Einheit", "Vorgabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Temperatur in Alltagssprache">
+Temperatur sagt, wie warm oder kalt etwas ist. Delta T bedeutet der Unterschied zwischen zwei Temperaturen,
+zum Beispiel vorher und nachher.
+</EinfachErklaert>
+
+<TemperaturSchema />
+
+<TemperaturTrainer titel="Temperatur im Prozess" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Prozesswert und Differenz">
+Temperaturwerte beschreiben Prozess-, Werkstoff- oder Umgebungszustaende. Temperaturdifferenzen zeigen eine
+Aenderung zwischen zwei Werten. Fuer reale Prozesse gelten Maschinenparameter, Datenblatt, Betriebsanweisung
+oder freigegebene Vorgabe.
+</FachlichErklaert>
+
+## Grundlogik
+
+| Begriff | Bedeutung |
+|---|---|
+| Temperatur | Warm-kalt-Zustand |
+| Grad Celsius | Im Betrieb haeufige Temperatureinheit |
+| Delta T | Temperaturunterschied |
+| Vorgabe | Verbindlicher Bereich oder Zielwert |
+
+<Praxisbeispiel titel="Praxisbeispiel Prozesswert">
+Die Maschine zeigt eine Temperatur ausserhalb der Vorgabe. Du aenderst nicht blind Parameter, sondern
+meldest die Abweichung und folgst der Unterweisung.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Temperaturwerte, Grenzbereiche und konkrete Prozessparameter muessen aus freigegebener Quelle oder
+Betriebsanweisung gelesen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Temperatur ist ein Prozesswert; Delta T ist ein Temperaturunterschied.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-EIN-007::check"
+  fragen={[
+    {
+      id: "delta-t",
+      masterySchluessel: "FK-1-EIN-007::delta-t",
+      aufgabenstellung: "Was bedeutet Delta T im Lernbeispiel?",
+      optionen: [
+        {
+          id: "unterschied",
+          text: "Ein Temperaturunterschied.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Delta T vergleicht zwei Temperaturwerte.",
+        },
+        {
+          id: "menge",
+          text: "Die Menge einer Stueckliste.",
+          istKorrekt: false,
+          erklaerung: "Menge gehoert zur Stueckliste, nicht zur Temperatur.",
+        },
+      ],
+    },
+    {
+      id: "unklar",
+      masterySchluessel: "FK-1-EIN-007::unklar",
+      aufgabenstellung: "Was machst du bei unklarer Temperaturvorgabe?",
+      optionen: [
+        {
+          id: "pruefen",
+          text: "Vorgabe, Unterweisung oder Ausbilder klaeren.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Prozesswerte werden nicht geraten.",
+        },
+        {
+          id: "blind",
+          text: "Blind weiterarbeiten.",
+          istKorrekt: false,
+          erklaerung: "Das kann Qualitaet und Sicherheit gefaehrden.",
+        },
+      ],
+    },
+  ]}
+/>

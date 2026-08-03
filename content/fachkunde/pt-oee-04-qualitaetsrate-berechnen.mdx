@@ -1,0 +1,57 @@
+---
+titel: "Qualitaetsrate berechnen"
+thema_code: "PT-OEE"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Gut-/Ausschussregeln und Beispielrechnung muessen fachlich freigegeben werden."
+quellen:
+  - titel: "QS-Unterlagen, OEE-Standard und Betriebsdaten"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Statusregeln und Uebungswerte nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Pruefung">
+100 Teile wurden gefertigt, 8 sind Ausschuss, 4 gehen in Nacharbeit. Du brauchst die Qualitaetsrate nach Vorgabe.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Qualitaetsrate","Gutteil","Ausschuss","OEE","Nacharbeit"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Gutanteil an der Menge">
+Qualitaetsrate zeigt, wie gross der Anteil guter Teile an der produzierten Menge ist.
+</EinfachErklaert>
+
+<QualitaetsrateBerechnenSchema />
+
+<QualitaetsrateBerechnenTrainer titel="Qualitaetsrate berechnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Qualitaetsrate als Gutmengenanteil">
+Qualitaetsrate = Gutmenge / Gesamtmenge. Ob Nacharbeit als Gut, Ausschuss oder eigener Status zaehlt, steht in der Betriebsregel. Zahlen ohne Vorgabe nicht erfinden.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Nacharbeit">
+Wenn Nacharbeit faelschlich als Gutteil zaehlt, steigt die Qualitaetsrate kuenstlich. Die Regel muss vorher klar sein.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Qualitaetsrate braucht klare Gut-/Ausschussregeln.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-OEE-004::check"
+  fragen={[{ id: "004", masterySchluessel: "FK-4-OEE-004::kern", aufgabenstellung: "Was beschreibt die Qualitaetsrate?", optionen: [{ id: "richtig", text: "Den Anteil der Gutmenge an der Gesamtmenge nach Vorgabe.", istKorrekt: true, erklaerung: "Richtig. Gutmenge und Gesamtmenge muessen definiert sein." }, { id: "falsch", text: "Nur die Maschinenlaufzeit ohne Qualitaetsbezug.", istKorrekt: false, erklaerung: "Nein. Das ist Verfuegbarkeit." }] }]}
+/>

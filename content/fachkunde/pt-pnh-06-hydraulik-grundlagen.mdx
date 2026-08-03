@@ -1,0 +1,64 @@
+---
+titel: "Hydraulik-Grundlagen"
+thema_code: "PT-PNH"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Druck-/Flaechenwerte, Oelvorgaben, Leckagewege und Sicherheitsregeln muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Metall/Mechatronik, Hydraulikplan, Maschinenhandbuch und Betriebsanweisung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "p=F/A-Umrechnung, Betriebsdruck, Oelsorte, Filter- und Leckagevorgaben nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation an der Presse">
+Eine Vorrichtung braucht viel Kraft auf kurzem Weg. Du erkennst Hydraulik: Oel wird unter Druck gesetzt, der Druck wirkt auf eine Kolbenflaeche und daraus entsteht Kraft.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Hydraulik", "Hydraulikoel", "Pumpe", "Druck", "Flaeche"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Kraft mit Oel uebertragen">
+Hydraulik nutzt Oel unter Druck. Je groesser Druck und wirksame Flaeche sind, desto groesser kann die Kraft werden.
+</EinfachErklaert>
+
+<HydraulikGrundlagenSchema />
+
+<Formelkarte
+  titel="Druck, Kraft und Flaeche"
+  formel="F = p * A"
+  erklaerung="Kraft entsteht aus Druck mal wirksamer Flaeche. Beispielwerte sind nur Uebungswerte; reale Werte kommen aus Tabellenbuch, Plan oder Datenblatt."
+  einheiten={["F in N", "p in N/mm2 oder bar-Umrechnung nach Quelle", "A in mm2"]}
+/>
+
+<HydraulikGrundlagenTrainer titel="Hydraulik-Grundlagen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Druckkraft und sichere Medienkontrolle">
+In der Hydraulik foerdert eine Pumpe Hydraulikoel. Der entstehende Druck wirkt auf Flaechen in Zylindern oder Motoren. Weil Hydraulik hohe Kraefte erzeugen kann, sind Leckage, Oelzustand, Druckgrenzen und Freigaben sicherheitsrelevant.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Oelspur an der Leitung">
+Wenn an einer Hydraulikleitung Oel austritt, wird nicht weiterproduziert und nicht einfach weggewischt. Du sicherst den Bereich nach Vorgabe, meldest die Leckage und nutzt freigegebene Unterlagen fuer die naechsten Schritte.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Hydraulik: Oel uebertraegt Druck, Druck auf Flaeche erzeugt Kraft.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-PNH-006::check"
+  fragen={[{ id: "hydraulik", masterySchluessel: "FK-3-PNH-006::hydraulik", aufgabenstellung: "Welche Aussage zu Hydraulik ist richtig?", optionen: [{ id: "richtig", text: "Druck wirkt auf eine Flaeche und erzeugt dadurch Kraft.", istKorrekt: true, erklaerung: "Richtig. Das ist die Grundidee hinter F = p * A." }, { id: "falsch", text: "Oelleckagen sind nur optische Stoerungen und koennen bis Schichtende warten.", istKorrekt: false, erklaerung: "Nein. Oelleckagen sind Sicherheits-, Umwelt- und Anlagenrisiko." }] }]}
+/>

@@ -9,7 +9,7 @@ import { Button, FehlerZustand } from '@bze/ui';
 export default function FachkundeIndexFehler({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
   const t = useTranslations('topic.content');
   return (
-    <main className="mx-auto max-w-2xl p-4">
+    <main className="mx-auto max-w-md p-4">
       <FehlerZustand
         titel={t('fehler.titel')}
         text={t('fehler.text')}

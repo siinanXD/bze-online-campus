@@ -1,0 +1,57 @@
+---
+titel: "Stoerung dokumentieren"
+thema_code: "PT-IH"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Stoerformular, Pflichtfelder und betriebliche Meldewege muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Betriebliches Stoerformular, Schichtbuch, QS- und Instandhaltungsprozess"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Pflichtfelder, Kennzeichnungen, Verantwortliche und Freigabeangaben nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation nach einer Unterbrechung">
+Die Anlage lief wieder, aber niemand weiss spaeter genau, was passiert ist. Eine gute Stoerungsdokumentation macht Zeit, Ort, Symptom, Massnahme und Freigabe nachvollziehbar.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Stoerung", "Dokumentation", "Massnahme", "Freigabe", "Schichtuebergabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="So schreiben, dass andere es nutzen koennen">
+Bei einer Stoerung reicht nicht: geht nicht. Du dokumentierst, was, wo, wann, unter welchen Bedingungen und was danach passiert ist.
+</EinfachErklaert>
+
+<StoerungDokumentierenSchema />
+
+<StoerungDokumentierenTrainer titel="Stoerung dokumentieren" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Verwertbare Stoerungsdaten">
+Dokumentation hilft Schichtuebergabe, Instandhaltung, Qualitaet und Ursachenanalyse. Sie enthaelt keine wilden Vermutungen als Tatsache, sondern trennt Beobachtung, Pruefung, Massnahme und Freigabe.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Sensorstoerung">
+Statt nur Sensor spinnt zu schreiben, notierst du: Anlage, Uhrzeit, Sensorbereich, Anzeige, Betriebszustand, betroffene Teile, wer informiert wurde und ob die Anlage freigegeben wurde.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Gute Dokumentation macht Stoerungen spaeter auswertbar.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-IH-012::check"
+  fragen={[{ id: "dokumentation", masterySchluessel: "FK-3-IH-012::dokumentation", aufgabenstellung: "Welche Stoerungsnotiz ist besser?", optionen: [{ id: "richtig", text: "Anlage, Uhrzeit, Symptom, Betriebszustand, Massnahme und Freigabe notieren.", istKorrekt: true, erklaerung: "Richtig. So bleibt die Stoerung nachvollziehbar." }, { id: "falsch", text: "Nur schreiben: Maschine war schlecht.", istKorrekt: false, erklaerung: "Nein. Das ist nicht verwertbar." }] }]}
+/>

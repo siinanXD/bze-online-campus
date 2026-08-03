@@ -1,0 +1,114 @@
+---
+titel: "Nichteisenmetalle"
+thema_code: "PT-WST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Beispiele, Abgrenzung und betriebliche Einsatzfaelle muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Nichteisenmetalle"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "NE-Metall-Beispiele, Sorten und Eigenschaften muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["auswendig", "verstehen"]} />
+
+<StoryEinstieg titel="Situation in der Materialausgabe">
+Du bekommst Aluminium- und Kupferteile. Beide sind Metalle, aber keine Eisenwerkstoffe. Dein erster Schritt
+ist die richtige Grundgruppe.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Nichteisenmetall", "Aluminium", "Kupfer", "Legierung", "Werkstoff"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="NE-Metalle in Alltagssprache">
+Nichteisenmetalle sind Metalle, bei denen Eisen nicht der Hauptbestandteil ist. Aluminium und Kupfer sind
+typische Beispiele.
+</EinfachErklaert>
+
+<NichteisenmetalleSchema />
+
+<NichteisenmetalleTrainer titel="Nichteisenmetalle einordnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="NE-Metalle sicher einordnen">
+Nichteisenmetalle werden von Eisenwerkstoffen unterschieden. Sie koennen sehr verschiedene Eigenschaften
+haben. Deshalb reicht die Gruppe allein nicht fuer Bearbeitung, Pruefung oder Freigabe aus.
+</FachlichErklaert>
+
+## Beispiele
+
+| Werkstoff | Einordnung |
+|---|---|
+| Aluminium | Nichteisenmetall, Leichtmetall |
+| Kupfer | Nichteisenmetall, gut leitfaehig |
+| Messing | Kupferlegierung |
+| Stahl | Kein NE-Metall, sondern Eisenwerkstoff |
+
+<Praxisbeispiel titel="Praxisbeispiel falsches Werkzeug">
+Ein NE-Metallteil soll bearbeitet werden. Du uebernimmst nicht automatisch Stahl-Vorgaben, sondern pruefst
+Sorte, Werkzeug, Kuehlung und Bearbeitungsvorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Konkrete NE-Metallsorten, Kurzzeichen, Eigenschaften und Bearbeitungsregeln muessen aus Tabellenbuch,
+Datenblatt, Zeichnung oder Unterweisung kommen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+NE-Metall heisst nicht automatisch weich, leicht oder gleich bearbeitbar.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WST-004::check"
+  fragen={[
+    {
+      id: "bedeutung",
+      masterySchluessel: "FK-1-WST-004::bedeutung",
+      aufgabenstellung: "Was bedeutet Nichteisenmetall vereinfacht?",
+      optionen: [
+        {
+          id: "nicht-haupt",
+          text: "Eisen ist nicht der Hauptbestandteil.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Es geht um die Grundzusammensetzung.",
+        },
+        {
+          id: "kein-metall",
+          text: "Es ist gar kein Metall.",
+          istKorrekt: false,
+          erklaerung: "Nein. Es ist weiterhin ein Metall.",
+        },
+      ],
+    },
+    {
+      id: "beispiel",
+      masterySchluessel: "FK-1-WST-004::beispiel",
+      aufgabenstellung: "Welches Material ist ein typisches NE-Metall?",
+      optionen: [
+        {
+          id: "alu",
+          text: "Aluminium.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Aluminium ist ein typisches Nichteisenmetall.",
+        },
+        {
+          id: "stahl",
+          text: "Stahl.",
+          istKorrekt: false,
+          erklaerung: "Nein. Stahl ist ein Eisenwerkstoff.",
+        },
+      ],
+    },
+  ]}
+/>

@@ -1,0 +1,57 @@
+---
+titel: "Werkzeug vorbereiten"
+thema_code: "PT-PRO"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Werkzeugidentifikation, Zustand und Ruestplatzbezug muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Betriebliche Ruest- und Werkzeuganweisung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Werkzeugnummer, Hilfsmittel, Pruefpunkte und Transportfreigabe nach Betriebsvorgabe ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Ruestplatz">
+Das naechste Werkzeug wird bereitgestellt. Du pruefst Nummer, Zustand, Hilfsmittel und Transportweg, bevor es zur Maschine geht.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Werkzeug", "Ruestplatz", "Freigabe", "Werkzeugwechsel"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Werkzeugvorbereitung in Alltagssprache">
+Du schaust, ob das richtige Werkzeug bereitliegt, ob es sichtbar in Ordnung ist und ob alle Hilfsmittel da sind.
+</EinfachErklaert>
+
+<WerkzeugVorbereitenSchema />
+
+<WerkzeugVorbereitenTrainer titel="Werkzeug vorbereiten" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Werkzeug vor dem Ruesten sichern">
+Werkzeugvorbereitung umfasst Identifikation, Sichtzustand, Sauberkeit, Hilfsmittel, Transport und Freigabestatus. Sichtbare Schaeden werden vor dem Einbau gemeldet.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel fehlender Einsatz">
+Am Werkzeug fehlt ein Einsatz oder eine Kennzeichnung. Du meldest den Zustand und wartest auf Klaerung statt das Werkzeug trotzdem einzubauen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ein vorbereitetes Werkzeug ist richtig, intakt, freigegeben und sicher transportierbar.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-PRO-003::check"
+  fragen={[{ id: "zustand", masterySchluessel: "FK-2-PRO-003::zustand", aufgabenstellung: "Was tust du bei sichtbarem Werkzeugschaden?", optionen: [{ id: "richtig", text: "Zustand melden und Freigabe klaeren.", istKorrekt: true, erklaerung: "Richtig. Schaeden koennen Qualitaet und Sicherheit betreffen." }, { id: "falsch", text: "Schaden uebersehen und schneller ruesten.", istKorrekt: false, erklaerung: "Nein. Das waere riskant." }] }]}
+/>

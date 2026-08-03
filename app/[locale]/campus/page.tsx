@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
-import { Card, ProgressRing } from '@bze/ui';
+import { ProgressRing } from '@bze/ui';
 import { Greeting } from '@/components/shell';
 import { Merkkarte, WochenberichtKarte } from '@/components/dashboard';
 import type { Wochenbericht } from '@/components/dashboard';
@@ -9,6 +9,9 @@ import { ladeFortsetzenEmpfehlung } from './fortschritt/_lib/queries';
 import { ladeFokusStand } from './_lib/push-queries';
 import { ladeFragenUebersicht } from './lernen/_lib/fragen';
 
+/**
+ * Start-Dashboard im Figma-Mobile-Look (Foundations + Lernen-Hub-Muster).
+ */
 export default async function CampusStart({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations('campus');
@@ -41,12 +44,6 @@ export default async function CampusStart({ params }: { params: Promise<{ locale
   const fehler = fragenUebersicht.gruppen.find((gruppe) => gruppe.id === 'falsch')?.anzahl ?? 0;
   const offen = fragenUebersicht.gruppen.find((gruppe) => gruppe.id === 'alle')?.anzahl ?? 0;
   const streak = fokus?.serie.laenge ?? 0;
-  const streakText =
-    !fokus || fokus.serie.status === 'gerissen'
-      ? 'Heute starten'
-      : fokus.serie.status === 'gefaehrdet'
-        ? `${streak} Tage - heute noch offen`
-        : `${Math.max(1, streak)} Tage in Folge`;
   const fragenZiel = 20;
   const pruefungsZiel = 1;
   const fragenErledigt = fokus?.tagesziel.erledigt ?? 0;
@@ -63,112 +60,149 @@ export default async function CampusStart({ params }: { params: Promise<{ locale
   const zielText = fragenAnteil < 1 ? (fehler > 0 ? '5 Fehler verbessern' : '20 Fragen lernen') : 'Prüfung starten';
 
   return (
-    <main className="mx-auto flex min-h-full max-w-2xl flex-col gap-3 p-3 sm:p-4">
-      <section className="campus-pop shrink-0 rounded-xl border border-primary-border bg-primary-subtle p-4 shadow-sm">
-        <div className="flex items-start justify-between gap-3">
-          <div className="min-w-0">
-            <Greeting name={profil?.vorname ?? undefined} />
-            <p className="mt-1 text-sm text-fg-muted">Ein kurzer Lauf reicht, damit dein Fortschritt weiterzaehlt.</p>
-          </div>
-          <div className="streak-flame grid h-14 w-14 shrink-0 place-items-center rounded-full bg-primary text-xl font-black text-fg-onPrimary">
-            {Math.max(1, streak)}
-          </div>
+    <main className="mx-auto flex min-h-full max-w-md flex-col gap-4 px-5 pb-6 pt-3">
+      <header className="flex items-start justify-between gap-3">
+        <div className="min-w-0">
+          <Greeting name={profil?.vorname ?? undefined} />
+          <p className="mt-1 text-[14px] text-fg-muted">
+            Ein kurzer Lauf reicht, damit dein Fortschritt weiterzählt.
+          </p>
         </div>
-        <div className="mt-3 grid grid-cols-3 gap-2 text-center">
-          <div className="rounded-lg bg-surface/80 p-2">
-            <p className="text-lg font-extrabold text-primary">{streak > 0 ? streak : 0}</p>
-            <p className="text-[11px] font-semibold text-fg-muted">Streak</p>
-          </div>
-          <div className="rounded-lg bg-surface/80 p-2">
-            <p className="text-lg font-extrabold text-primary">{offen}</p>
-            <p className="text-[11px] font-semibold text-fg-muted">Offen</p>
-          </div>
-          <div className="rounded-lg bg-surface/80 p-2">
-            <p className="text-lg font-extrabold text-danger">{fehler}</p>
-            <p className="text-[11px] font-semibold text-fg-muted">Fehler</p>
-          </div>
+        <div
+          className="streak-flame flex size-12 shrink-0 items-center justify-center rounded-full bg-primary text-[18px] font-black text-fg-onPrimary"
+          aria-label={`Streak ${Math.max(0, streak)} Tage`}
+        >
+          {Math.max(0, streak)}
+        </div>
+      </header>
+
+      <section className="grid grid-cols-3 gap-2">
+        <div className="rounded-[14px] border border-border bg-surface p-3 text-center">
+          <p className="text-[18px] font-extrabold text-primary">{streak > 0 ? streak : 0}</p>
+          <p className="text-[11px] font-semibold text-fg-muted">Streak</p>
+        </div>
+        <div className="rounded-[14px] border border-border bg-surface p-3 text-center">
+          <p className="text-[18px] font-extrabold text-primary">{offen}</p>
+          <p className="text-[11px] font-semibold text-fg-muted">Offen</p>
+        </div>
+        <div className="rounded-[14px] border border-border bg-surface p-3 text-center">
+          <p className="text-[18px] font-extrabold text-danger">{fehler}</p>
+          <p className="text-[11px] font-semibold text-fg-muted">Fehler</p>
         </div>
       </section>
 
-      <section className="shrink-0 rounded-lg border border-border bg-surface p-3 shadow-sm">
-        <div className="grid grid-cols-[auto_1fr] items-center gap-3">
+      <section className="rounded-[16px] border border-border bg-surface p-4 shadow-sm">
+        <div className="flex items-center gap-3">
           <ProgressRing
             value={tageszielProzent}
-            size={68}
+            size={64}
             label={`Tagesziel ${tageszielProzent} Prozent`}
           />
-          <div className="min-w-0">
-            <p className="text-sm font-bold">Tagesziel</p>
-            <p className="text-xs text-fg-muted">
+          <div className="min-w-0 flex-1">
+            <h2 className="text-[16px] font-bold text-fg">Tagesziel</h2>
+            <p className="text-[12px] text-fg-muted">
               Heute: {fragenZiel} Fragen und {pruefungsZiel} Prüfung
             </p>
-            <Link
-              href={zielHref}
-              className="touchable mt-2 inline-flex min-h-10 items-center rounded-md bg-primary px-4 text-sm font-bold text-fg-onPrimary"
-            >
-              {zielText}
-            </Link>
           </div>
         </div>
         <div className="mt-3 grid grid-cols-2 gap-2">
-          <div className="rounded-lg border border-border bg-bg-subtle p-2">
-            <div className="flex items-center justify-between gap-2 text-xs font-bold">
+          <div className="rounded-[12px] bg-bg-subtle p-2.5">
+            <div className="flex items-center justify-between text-[12px] font-bold">
               <span>Fragen</span>
-              <span>{Math.min(fragenErledigt, fragenZiel)}/{fragenZiel}</span>
+              <span>
+                {Math.min(fragenErledigt, fragenZiel)}/{fragenZiel}
+              </span>
             </div>
-            <div className="mt-2 h-2 overflow-hidden rounded-full bg-surface" aria-hidden="true">
-              <div className="h-full rounded-full bg-primary" style={{ width: `${Math.round(fragenAnteil * 100)}%` }} />
+            <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-border" aria-hidden>
+              <div
+                className="h-full rounded-full bg-primary"
+                style={{ width: `${Math.round(fragenAnteil * 100)}%` }}
+              />
             </div>
           </div>
-          <div className="rounded-lg border border-border bg-bg-subtle p-2">
-            <div className="flex items-center justify-between gap-2 text-xs font-bold">
+          <div className="rounded-[12px] bg-bg-subtle p-2.5">
+            <div className="flex items-center justify-between text-[12px] font-bold">
               <span>Prüfung</span>
-              <span>{Math.min(pruefungenErledigt, pruefungsZiel)}/{pruefungsZiel}</span>
+              <span>
+                {Math.min(pruefungenErledigt, pruefungsZiel)}/{pruefungsZiel}
+              </span>
             </div>
-            <div className="mt-2 h-2 overflow-hidden rounded-full bg-surface" aria-hidden="true">
-              <div className="h-full rounded-full bg-info" style={{ width: `${Math.round(pruefungAnteil * 100)}%` }} />
+            <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-border" aria-hidden>
+              <div
+                className="h-full rounded-full bg-info"
+                style={{ width: `${Math.round(pruefungAnteil * 100)}%` }}
+              />
             </div>
           </div>
         </div>
-      </section>
-
-      {empfehlung && (
-        <Link href={`/${locale}/campus/lernen/thema/${empfehlung.themaId}`} className="block shrink-0">
-          <Card variante="interaktiv" className="p-4">
-            <p className="text-xs font-bold uppercase text-primary">{t('fortsetzenTitel')}</p>
-            <p className="mt-1 font-bold">{t('fortsetzenAlsNaechstes', { thema: empfehlung.bezeichnung })}</p>
-            <p className="text-sm text-fg-muted">
-              {t('fortsetzenRest', {
-                offen: empfehlung.kernOffen,
-                prozent: Math.round(empfehlung.anteil * 100),
-              })}
-            </p>
-          </Card>
-        </Link>
-      )}
-
-      <section className="grid shrink-0 grid-cols-3 gap-2">
-        <Link href={`/${locale}/campus/lernen`} className="block">
-          <Card variante="interaktiv" className="h-full p-3 text-center">
-            <p className="text-xl font-black">?</p>
-            <p className="text-xs font-bold">{t('lernen')}</p>
-          </Card>
-        </Link>
-        <Link href={`/${locale}/campus/pruefung`} className="block">
-          <Card variante="interaktiv" className="h-full p-3 text-center">
-            <p className="text-xl font-black">P</p>
-            <p className="text-xs font-bold">{t('pruefung')}</p>
-          </Card>
-        </Link>
-        <Link href={`/${locale}/campus/berichtsheft`} className="block">
-          <Card variante="interaktiv" className="h-full p-3 text-center">
-            <p className="text-xl font-black">B</p>
-            <p className="text-xs font-bold">Bericht</p>
-          </Card>
+        <Link
+          href={zielHref}
+          className="touchable mt-3 flex min-h-11 items-center justify-center rounded-full bg-primary px-4 text-[14px] font-bold text-fg-onPrimary"
+        >
+          {zielText} →
         </Link>
       </section>
 
-      <section className="min-h-0 flex-1 overflow-y-auto rounded-lg border border-border bg-surface p-3">
+      <Link
+        href={`/${locale}/campus/topic/PT-MES`}
+        className="touchable rounded-[16px] border border-primary-border bg-primary-subtle p-4"
+      >
+        <p className="text-[11px] font-bold uppercase tracking-wide text-primary">{t('topics')}</p>
+        <p className="mt-1 text-[15px] font-bold text-fg">Messen und Prüfen</p>
+        <p className="mt-1 text-[13px] text-fg-muted">{t('topicsInfo')} — Lernpfad mit Statuskarten</p>
+      </Link>
+
+      {empfehlung ? (
+        <Link
+          href={`/${locale}/campus/lernen/thema/${empfehlung.themaId}`}
+          className="touchable rounded-[16px] border border-border bg-surface p-4"
+        >
+          <p className="text-[11px] font-bold uppercase tracking-wide text-primary">
+            {t('fortsetzenTitel')}
+          </p>
+          <p className="mt-1 text-[15px] font-bold text-fg">
+            {t('fortsetzenAlsNaechstes', { thema: empfehlung.bezeichnung })}
+          </p>
+          <p className="mt-1 text-[13px] text-fg-muted">
+            {t('fortsetzenRest', {
+              offen: empfehlung.kernOffen,
+              prozent: Math.round(empfehlung.anteil * 100),
+            })}
+          </p>
+        </Link>
+      ) : null}
+
+      <section className="grid grid-cols-3 gap-2">
+        <Link
+          href={`/${locale}/campus/topic`}
+          className="touchable flex flex-col items-center gap-1 rounded-[14px] border border-border bg-surface p-3"
+        >
+          <span className="flex size-10 items-center justify-center rounded-[10px] bg-[#f0fdfa] text-[16px] font-bold text-[#0d9488]">
+            F
+          </span>
+          <span className="text-[12px] font-bold text-fg">{t('topics')}</span>
+        </Link>
+        <Link
+          href={`/${locale}/campus/lernen`}
+          className="touchable flex flex-col items-center gap-1 rounded-[14px] border border-border bg-surface p-3"
+        >
+          <span className="flex size-10 items-center justify-center rounded-[10px] bg-primary text-[16px] font-bold text-fg-onPrimary">
+            ?
+          </span>
+          <span className="text-[12px] font-bold text-fg">{t('lernen')}</span>
+        </Link>
+        <Link
+          href={`/${locale}/campus/pruefung`}
+          className="touchable flex flex-col items-center gap-1 rounded-[14px] border border-border bg-surface p-3"
+        >
+          <span className="flex size-10 items-center justify-center rounded-[10px] bg-info-bg text-[16px] font-bold text-info">
+            P
+          </span>
+          <span className="text-[12px] font-bold text-fg">{t('pruefung')}</span>
+        </Link>
+      </section>
+
+      <section className="rounded-[16px] border border-border bg-surface p-4">
         {wochenbericht ? (
           <div className="space-y-3">
             <WochenberichtKarte bericht={wochenbericht} />
@@ -176,8 +210,10 @@ export default async function CampusStart({ params }: { params: Promise<{ locale
           </div>
         ) : (
           <div>
-            <p className="font-bold">Noch kein Wochenbericht</p>
-            <p className="mt-1 text-sm text-fg-muted">Sobald ein Bericht bereitsteht, erscheint er hier.</p>
+            <p className="text-[15px] font-bold text-fg">Noch kein Wochenbericht</p>
+            <p className="mt-1 text-[13px] text-fg-muted">
+              Sobald ein Bericht bereitsteht, erscheint er hier.
+            </p>
           </div>
         )}
       </section>

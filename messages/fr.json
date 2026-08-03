@@ -187,7 +187,9 @@
   },
   "topic": {
     "uebersicht": {
-      "kicker": "Thème"
+      "kicker": "Thème",
+      "lernpfad": "Parcours",
+      "fortschrittKurz": "{gelesen}/{gesamt}"
     },
     "abschnitte": {
       "fachkundeLesen": "Lire les connaissances techniques",
@@ -315,6 +317,14 @@
       "liste": "Aperçu des chapitres"
     },
     "lerneinheit": {
+      "zurueckLernpfad": "← Parcours",
+      "pruefungsrelevanz": "Pertinence examen : {stufe}",
+      "pruefungsrelevanzStufen": {
+        "niedrig": "faible",
+        "mittel": "moyenne",
+        "hoch": "élevée",
+        "sehr_hoch": "très élevée"
+      },
       "quellenTitel": "Sources",
       "lesezeitHinweis": "C’était plus rapide que le temps de lecture estimé. En cas de doute, revenez y jeter un œil — vous pouvez continuer malgré tout.",
       "demoHinweis": "Contenu d’exemple : votre progression de lecture n’est pas enregistrée ici.",
@@ -342,7 +352,8 @@
       "content": "Content"
     },
     "content": {
-      "nav": { "label": "Content management", "uebersicht": "Overview", "themen": "Topics", "lernziele": "Learning objectives", "inhalte": "Content", "fragen": "Questions", "lernkarten": "Flashcards", "praxisfaelle": "Practice cases", "rechenaufgaben": "Calculation tasks", "quizze": "Quizzes", "kiGenerator": "AI generator", "qualitaetspruefung": "Quality review", "wissensdatenbank": "Knowledge base" },
+      "nav": { "label": "Content management", "uebersicht": "Overview", "themen": "Topics", "lernziele": "Learning objectives", "inhalte": "Content", "fragen": "Questions", "lernkarten": "Flashcards", "praxisfaelle": "Practice cases", "rechenaufgaben": "Calculation tasks", "quizze": "Quizzes", "kiGenerator": "AI generator", "qualitaetspruefung": "Quality review", "fachkundeFreigabe": "Fachkunde approval", "wissensdatenbank": "Knowledge base" },
+      "fachkundeFreigabe": { "titel": "Fachkunde approval", "hinweis": "Overview of MDX drafts. Mini knowledge-check questions may be approved while the unit and sources remain drafts. This page does not save anything.", "kennzahlen": { "gesamt": "Units total", "entwurf": "Draft", "fragenFreigegeben": "Questions approved", "quellenOffen": "Sources open", "bereit": "Ready for subject review" }, "unvollstaendigTitel": "Incomplete required building blocks", "tabelleCaption": "Fachkunde learning units with review and source status", "spalten": { "thema": "Topic", "titel": "Title", "status": "Status", "fragen": "Questions", "quellen": "Sources", "bausteine": "Blocks" }, "quellen": { "offen": "open", "ok": "ok" }, "fragen": { "offen": "open", "ok": "approved" }, "bausteine": { "ok": "complete", "luecke": "gap" }, "mehr": "… and {rest} more units" },
       "dashboard": { "titel": "Content dashboard", "hinweis": "Metrics for visible content elements, questions, learning objectives and demo content.", "zurListe": "Open content list", "naechsteSchritteTitel": "Not active yet", "naechsteSchritteText": "AI generator, quality review and knowledge base are not functional in this phase." },
       "kennzahlen": { "fachbereiche": "Subject areas", "themen": "Topics", "unterthemen": "Subtopics", "lernziele": "Learning objectives", "erklaerungen": "Explanations", "fragen": "Questions", "lernkarten": "Flashcards", "praxisfaelle": "Practice cases", "rechenaufgaben": "Calculation tasks", "quizze": "Quizzes", "demoInhalte": "Demo content", "entwuerfe": "Drafts", "freigegeben": "Released", "kiGeneriert": "AI-generated", "manuell": "Manual" },
       "liste": { "titel": "Content list", "hinweis": "Manage content elements. Existing question management remains responsible for question approval and editing.", "tabelle": "Content elements", "auswahl": "Selection", "auswaehlen": "Select {titel}", "auswahlZaehler": "{anzahl} selected", "gesamt": "{gesamt} entries visible", "bulkStatusLabel": "Change status for selected content", "statusAendern": "Change status", "archivieren": "Archive", "bulkErfolg": "Bulk action saved." },

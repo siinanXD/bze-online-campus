@@ -1,0 +1,57 @@
+---
+titel: "Delamination"
+thema_code: "PT-FEK"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Materialursachen, Sperrweg und Bewertung muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Fachbuch Kunststofftechnik und betriebliche Materialfreigabe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Materialkompatibilitaet, Feuchte- und Fremdstoffbezug nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Oberflaeche">
+Die Oberflaeche eines Kunststoffteils loest sich schichtweise ab. Beim Biegen wirkt das Teil nicht homogen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Delamination", "Inkompatibilitaet", "Feuchte", "Sperrung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Delamination in Alltagssprache">
+Delamination bedeutet: Das Kunststoffteil trennt sich in Schichten oder die Oberflaeche loest sich.
+</EinfachErklaert>
+
+<DelaminationSchema />
+
+<DelaminationTrainer titel="Delamination" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Schichttrennung einordnen">
+Delamination kann durch unvertraegliche Materialien, Feuchte, Verunreinigung, falschen Materialwechsel oder Prozessbedingungen entstehen. Betroffene Teile werden getrennt, bis Material und Freigabe geklaert sind.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Rezyklatanteil">
+Nach einem Materialwechsel zeigt ein Teil schuppige Schichten. Du pruefst Charge, Materialfreigabe und Sperrweg.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Schichttrennung ist ein Material- und Prozesssignal.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEK-009::check"
+  fragen={[{ id: "delamination", masterySchluessel: "FK-3-FEK-009::delamination", aufgabenstellung: "Was ist bei Delamination richtig?", optionen: [{ id: "richtig", text: "Materialmix klaeren und Teil sperren.", istKorrekt: true, erklaerung: "Richtig. Schichttrennung braucht sichere Klaerung." }, { id: "falsch", text: "Schicht festkleben und ausliefern.", istKorrekt: false, erklaerung: "Nein. Das behebt die Ursache nicht und ist nicht freigegeben." }] }]}
+/>

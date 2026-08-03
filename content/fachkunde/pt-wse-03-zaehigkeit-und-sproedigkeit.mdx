@@ -1,0 +1,70 @@
+---
+titel: "Zaehigkeit und Sproedigkeit"
+thema_code: "PT-WSE"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Werkstoffbeispiele und Bruchbilder muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Bruchverhalten"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Beispiele und Pruefbegriffe muessen aus freigegebener Quelle stammen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation bei einem gebrochenen Teil">
+Ein Teil ist gebrochen. Du erkennst: Nicht jeder Bruch sieht gleich aus. Zaehe und sproede Werkstoffe
+verhalten sich unterschiedlich.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Zaehigkeit", "Sproedigkeit", "Bruch", "Werkstoff", "Beanspruchung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Bruchverhalten in Alltagssprache">
+Zaehe Werkstoffe verformen sich eher. Sproede Werkstoffe brechen eher ploetzlich oder scharf.
+</EinfachErklaert>
+
+<ZaehigkeitSproedigkeitSchema />
+
+<ZaehigkeitSproedigkeitTrainer titel="Zaehigkeit und Sproedigkeit" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Energieaufnahme und Bruch">
+Zaehigkeit beschreibt die Faehigkeit, Energie aufzunehmen und sich vor dem Bruch zu verformen.
+Sproedigkeit beschreibt ein Verhalten mit wenig plastischer Verformung vor dem Bruch.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Bruchstelle">
+Du findest ein gebrochenes Teil. Du feilst nicht weiter und setzt es nicht wieder ein, sondern meldest den
+Befund und sicherst die Beurteilung nach Vorgabe.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Zaeh verformt eher, sproede bricht eher scharf.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WSE-003::check"
+  fragen={[
+    {
+      id: "unterscheiden",
+      masterySchluessel: "FK-1-WSE-003::unterscheiden",
+      aufgabenstellung: "Was passt eher zu einem zaehen Werkstoff?",
+      optionen: [
+        { id: "verformt", text: "Er kann sich vor dem Bruch verformen.", istKorrekt: true, erklaerung: "Richtig." },
+        { id: "immer-scharf", text: "Er bricht immer ohne jede Verformung.", istKorrekt: false, erklaerung: "Nein. Das passt eher zu sproedem Verhalten." },
+      ],
+    },
+  ]}
+/>

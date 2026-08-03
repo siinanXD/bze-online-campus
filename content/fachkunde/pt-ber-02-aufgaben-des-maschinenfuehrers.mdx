@@ -1,0 +1,130 @@
+---
+titel: "Aufgaben des Maschinenfuehrers"
+thema_code: "PT-BER"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Aufgabenbezeichnungen und betriebliche Grenzen muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Rahmenlehrplan Maschinen- und Anlagenfuehrer/-in"
+    seite: "Lernfeldbezug [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkreter Lernfeld-/Abschnittsbezug muss vor Freigabe eingetragen werden."
+  - titel: "BZE-Traegerskript Maschinenfuehrung"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Rollenabgrenzungen und Beispiele sind durch den Traeger zu pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation an der laufenden Anlage">
+Die Anlage produziert gleichmaessig. Auf einmal fragst du dich: Was ist eigentlich meine Aufgabe?
+Nur Start druecken? Nur Teile abnehmen? Oder gehoeren Vorbereitung, Kontrolle, Sicherheit und Meldung
+auch dazu?
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Ruesten", "Bedienen", "Pruefen", "Meldeweg", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Die Rolle in einfachen Worten">
+Ein Maschinenfuehrer sorgt dafuer, dass eine Maschine nach Vorgabe arbeitet. Dazu gehoert vorbereiten,
+beobachten, pruefen, melden und sauber uebergeben. Du bist nicht allein verantwortlich fuer alles, aber
+du bist verantwortlich dafuer, aufmerksam und nach Vorgabe zu handeln.
+</EinfachErklaert>
+
+<Rollenrad />
+
+<RollenEntscheider titel="Welche Aufgabe steht zuerst an?" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Kernaufgaben im Produktionsalltag">
+Maschinen- und Anlagenfuehrer richten Maschinen nach Vorgabe ein, bedienen und ueberwachen den Prozess,
+pruefen Arbeitsergebnisse, erkennen Abweichungen und geben Informationen weiter. Die genaue Berechtigung
+haengt vom Betrieb, Ausbildungsstand, Auftrag und der jeweiligen Arbeitsanweisung ab. Wichtig ist: Wer eine
+Abweichung erkennt, darf sie nicht ignorieren.
+</FachlichErklaert>
+
+## Aufgaben und Grenzen
+
+| Aufgabe | Was du tust | Grenze |
+|---|---|---|
+| Ruesten | Arbeitsplatz, Material und Maschine nach Vorgabe vorbereiten | Keine eigenmaechtigen Aenderungen ohne Berechtigung |
+| Bedienen | Anlage starten, beobachten und Prozesszustand verfolgen | Warnungen, Schutzmangel oder Stoerungen nicht uebergehen |
+| Pruefen | Teile und Prozess nach Pruefplan kontrollieren | Keine Werte raten und keine Auffaelligkeit schoenreden |
+| Melden | Abweichungen an die richtige Stelle geben | Nicht warten, bis ein Fehler groesser wird |
+| Dokumentieren | Mengen, Pruefergebnisse und Stoerungen notieren | Nichts ausfuellen, was du nicht sicher weisst |
+
+<Praxisbeispiel titel="Praxisbeispiel Prozesskontrolle">
+Du nimmst stichprobenartig Teile ab und erkennst eine raue Oberflaeche. Du veraenderst nicht eigenmaechtig
+mehrere Parameter. Du pruefst nach Vorgabe, informierst die zustaendige Person und dokumentierst, was du
+beobachtet hast.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Diese Einheit beschreibt die Grundrolle. Konkrete Einstellwerte, Pruefintervalle und Berechtigungen kommen
+aus Auftrag, Arbeitsanweisung, Pruefplan oder Ausbilderfreigabe.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Maschinenfuehren heisst: vorbereiten, bedienen, pruefen, sichern, melden und dokumentieren.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-BER-002::check"
+  fragen={[
+    {
+      id: "rolle-kernaufgaben",
+      masterySchluessel: "FK-1-BER-002::rolle-kernaufgaben",
+      aufgabenstellung: "Welche Aussage beschreibt die Aufgabe eines Maschinenfuehrers am besten?",
+      optionen: [
+        {
+          id: "ganzheitlich",
+          text: "Er bereitet vor, bedient, ueberwacht, prueft, meldet und dokumentiert nach Vorgabe.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Die Rolle umfasst mehr als nur das Druecken einer Starttaste.",
+        },
+        {
+          id: "nur-start",
+          text: "Er drueckt nur Start und wartet, bis der Auftrag fertig ist.",
+          istKorrekt: false,
+          erklaerung: "Maschinenfuehrung verlangt Aufmerksamkeit fuer Sicherheit, Qualitaet und Prozesszustand.",
+        },
+        {
+          id: "frei-aendern",
+          text: "Er darf alle Parameter nach Gefuehl aendern.",
+          istKorrekt: false,
+          erklaerung: "Parameter werden nur nach Vorgabe und Berechtigung geaendert.",
+        },
+      ],
+    },
+    {
+      id: "abweichung",
+      masterySchluessel: "FK-1-BER-002::abweichung",
+      aufgabenstellung: "Was ist richtig, wenn du eine auffaellige Oberflaeche bemerkst?",
+      optionen: [
+        {
+          id: "melden",
+          text: "Nach Vorgabe pruefen, melden und dokumentieren.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Auffaelligkeiten muessen nachvollziehbar behandelt werden.",
+        },
+        {
+          id: "ignorieren",
+          text: "Ignorieren, solange die Maschine weiterlaeuft.",
+          istKorrekt: false,
+          erklaerung: "Eine laufende Maschine bedeutet nicht automatisch gute Qualitaet.",
+        },
+      ],
+    },
+  ]}
+/>

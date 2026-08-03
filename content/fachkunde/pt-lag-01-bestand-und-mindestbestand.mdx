@@ -1,0 +1,57 @@
+---
+titel: "Bestand und Mindestbestand"
+thema_code: "PT-LAG"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Bestandsgrenzen, Zaehllogik und betriebliche Lagerregeln muessen fachlich freigegeben werden."
+quellen:
+  - titel: "WiSo-Skript, Traegerskript, ERP-Auszug und betriebliche Lagerunterlagen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Mindestbestand, Zaehleinheit und Meldeweg nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Materialfach">
+Im Regal liegen nur noch wenige Beutel mit Einsaetzen. Auf dem Auftrag steht eine groessere Menge. Jetzt muss geprueft werden, ob der Bestand noch reicht oder gemeldet werden muss.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Bestand", "Mindestbestand", "Materialbedarf", "Menge", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Was ist noch da?">
+Bestand ist die Menge, die gerade vorhanden ist. Mindestbestand ist die Grenze, die nicht unterschritten werden soll, damit Materialmangel frueh auffaellt.
+</EinfachErklaert>
+
+<BestandMindestbestandSchema />
+
+<BestandMindestbestandTrainer titel="Bestand und Mindestbestand" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Bestand als Planungsinformation">
+Bestand wird gegen Auftrag, Materialbedarf und Lagergrenzen geprueft. Der Mindestbestand ist eine freigegebene Untergrenze und darf nicht nach Gefuehl veraendert werden. Wenn der Istbestand den Mindestbestand erreicht oder unterschreitet, braucht es den betrieblichen Melde- oder Nachschubweg.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel fast leeres Fach">
+Fuer einen Auftrag werden mehrere Kartons Granulat benoetigt. Im Lager steht nur noch ein Restbestand. Der sichere Schritt ist Bestand pruefen, Bedarf abgleichen und nach Vorgabe melden.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Bestand zeigt, was da ist. Mindestbestand zeigt, wann es kritisch wird.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-LAG-001::check"
+  fragen={[{ id: "bestand", masterySchluessel: "FK-4-LAG-001::bestand", aufgabenstellung: "Was machst du, wenn der Bestand nahe am Mindestbestand liegt?", optionen: [{ id: "richtig", text: "Istbestand pruefen, Bedarf abgleichen und nach Vorgabe melden.", istKorrekt: true, erklaerung: "Richtig. So wird Materialmangel frueh sichtbar." }, { id: "falsch", text: "Leeres Fach ignorieren, solange die Maschine noch laeuft.", istKorrekt: false, erklaerung: "Nein. Spaete Meldung gefaehrdet Auftrag und Planung." }] }]}
+/>

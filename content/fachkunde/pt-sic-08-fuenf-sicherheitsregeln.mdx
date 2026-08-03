@@ -1,0 +1,120 @@
+---
+titel: "Fuenf Sicherheitsregeln"
+thema_code: "PT-SIC"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Elektrotechnische Inhalte und betriebliche Zustaendigkeiten muessen durch eine fachkundige Person freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung elektrische Sicherheit"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Berechtigungen, Reihenfolge und Wortlaut muessen vor Freigabe gegen die betriebliche Vorgabe geprueft werden."
+  - titel: "BZE-Unterweisung Arbeitssicherheit"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit dient dem Verstehen und ersetzt keine Elektrofachkraft-Unterweisung."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "verstehen"]} />
+
+<StoryEinstieg titel="Situation am Schaltschrank">
+An einer Anlage soll etwas geprueft werden. Du hoerst Begriffe wie Freischalten, Spannungsfreiheit und Erden.
+Du musst die Sicherheitslogik verstehen, auch wenn du solche Arbeiten nicht eigenmaechtig ausfuehrst.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Freischalten", "Wiedereinschalten sichern", "Spannungsfreiheit", "Erden", "Gefahrbereich"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Reihenfolge merken">
+Die fuenf Sicherheitsregeln sind eine feste Sicherheitslogik fuer Arbeiten an elektrischen Anlagen. Fuer dich
+ist wichtig: nicht raten, nicht selber eingreifen, Reihenfolge kennen und Freigabe beachten.
+</EinfachErklaert>
+
+<SicherheitsregelnSchema />
+
+<SicherheitsregelnTrainer titel="Regeln in Reihenfolge bringen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Facharbeit braucht Berechtigung">
+Die Sicherheitsregeln gehoeren zur elektrotechnischen Sicherheit. Sie beschreiben eine Reihenfolge, mit der
+gefaehrliche elektrische Zustaende vermieden werden sollen. Ob und wie sie angewendet werden, entscheidet
+die fachkundige, berechtigte Person nach betrieblicher Vorgabe.
+</FachlichErklaert>
+
+## Lernreihenfolge
+
+| Nummer | Regel | Was du dir merken sollst |
+|---|---|---|
+| 1 | Freischalten | Energie wird getrennt |
+| 2 | Gegen Wiedereinschalten sichern | Niemand startet ungewollt |
+| 3 | Spannungsfreiheit feststellen | Zustand wird geprueft |
+| 4 | Erden und kurzschliessen | Schutzmassnahme nach Vorgabe |
+| 5 | Benachbarte Teile abdecken | Weitere Gefahrbereiche werden gesichert |
+
+<Praxisbeispiel titel="Praxisbeispiel Unsicherheit">
+Du sollst an einem Schaltschrank etwas nachsehen, bist aber nicht unterwiesen. Du oeffnest nichts, sondern
+meldest die Aufgabe und wartest auf eine berechtigte Person.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Die Reihenfolge und Begriffe muessen vor Freigabe durch eine fachkundige Person gegen die betriebliche
+Unterweisung geprueft werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Elektrische Sicherheit wird nicht geraten. Reihenfolge kennen, Berechtigung beachten, Freigabe abwarten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-SIC-008::check"
+  fragen={[
+    {
+      id: "erste-regel",
+      masterySchluessel: "FK-1-SIC-008::erste-regel",
+      aufgabenstellung: "Welche Regel steht in der Lernreihenfolge zuerst?",
+      optionen: [
+        {
+          id: "freischalten",
+          text: "Freischalten.",
+          istKorrekt: true,
+          erklaerung: "Richtig. In der Lernreihenfolge steht Freischalten am Anfang.",
+        },
+        {
+          id: "abdecken",
+          text: "Benachbarte Teile abdecken.",
+          istKorrekt: false,
+          erklaerung: "Das gehoert spaeter in die Reihenfolge.",
+        },
+      ],
+    },
+    {
+      id: "nicht-berechtigt",
+      masterySchluessel: "FK-1-SIC-008::nicht-berechtigt",
+      aufgabenstellung: "Was machst du, wenn du an elektrischen Teilen nicht unterwiesen oder berechtigt bist?",
+      optionen: [
+        {
+          id: "melden",
+          text: "Nicht eingreifen, melden und fachkundige Person/Freigabe abwarten.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Verstehen ersetzt keine Berechtigung.",
+        },
+        {
+          id: "probieren",
+          text: "Kurz probieren, wenn die Anlage steht.",
+          istKorrekt: false,
+          erklaerung: "Stillstand allein beweist keinen sicheren elektrischen Zustand.",
+        },
+      ],
+    },
+  ]}
+/>

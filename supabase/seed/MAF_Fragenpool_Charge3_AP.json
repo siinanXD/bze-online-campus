@@ -1,0 +1,1119 @@
+{
+  "meta": {
+    "beruf": "Maschinen- und Anlagenfuehrer/-in",
+    "schwerpunkt": "Metall- und Kunststofftechnik",
+    "kammer": "IHK",
+    "rechtsgrundlage": "MaschFueAusbV vom 27.04.2004, zuletzt geaendert 14.06.2023",
+    "charge": "Charge 3 - Abschlusspruefungsniveau (Phase 2)",
+    "erstellt": "2026-07-31",
+    "zielpruefung": "abschlusspruefung",
+    "format_hinweis": "Eigenentwickelte Aufgaben zur schriftlichen Abschlusspruefung. Keine Originalaufgaben von Kammern, PAL oder Pruefungsverlagen.",
+    "urheberrecht": "Alle Aufgaben sind Eigenentwicklungen des BZE. Uebernommen wurde nur die fachliche Struktur aus Ausbildungsordnung und PAL-Pruefungsuebersicht.",
+    "status_hinweis": "Alle Fragen haben Status 'entwurf'. Freigabe durch einen Ausbilder ist zwingend. Zahlen- und Tabellenbuchwerte sind nicht enthalten.",
+    "anzahl_mc": 20,
+    "anzahl_freitext": 5,
+    "beruf_slug": "maf-metall",
+    "bezeichnung_lang": "Maschinen- und Anlagenfuehrer/-in - Metall- und Kunststofftechnik",
+    "dauer_monate_umschulung": 16
+  },
+  "uebungspruefungen": [
+    {
+      "code": "AP-UE-01",
+      "titel": "Uebungs-Abschlusspruefung 01 - Metall- und Kunststofftechnik",
+      "bearbeitungszeit_minuten": 225,
+      "hinweis": "Gemischter Uebungssatz zu Produktionstechnik, Produktionsplanung und Wirtschafts- und Sozialkunde. Freitextaufgaben muessen durch Ausbilder oder KI-Bewertung geprueft werden.",
+      "aufgaben": [
+        "AP-PT-TU-201",
+        "AP-PT-WS-201",
+        "AP-PT-WZ-201",
+        "AP-PT-MA-201",
+        "AP-PT-PR-201",
+        "AP-PT-FT-201",
+        "AP-PT-TU-202",
+        "AP-PT-WS-202",
+        "AP-PT-WZ-202",
+        "AP-PT-MA-202",
+        "AP-PP-AS-201",
+        "AP-PP-QS-201",
+        "AP-PP-IH-201",
+        "AP-PP-PA-201",
+        "AP-PP-UP-201",
+        "AP-WISO-BA-201",
+        "AP-WISO-SV-201",
+        "AP-WISO-WI-201",
+        "AP-WISO-SU-201",
+        "AP-PP-QS-202",
+        "AP-PT-MA-F03",
+        "AP-PP-AS-F03",
+        "AP-PP-QS-F03",
+        "AP-PP-IH-F03",
+        "AP-WISO-BA-F03"
+      ]
+    }
+  ],
+  "fragen": [
+    {
+      "id": "AP-PT-TU-201",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Vor dem Ruesten liegt eine Zeichnung mit geaendertem Index vor. Welche Handlung ist fachlich richtig?",
+      "optionen": [
+        {
+          "text": "Den aktuellen Zeichnungsstand mit Auftrag, Stueckliste und Pruefplan abgleichen.",
+          "ist_korrekt": true,
+          "erklaerung": "Nur der freigegebene aktuelle Stand darf Grundlage fuer Fertigung und Pruefung sein."
+        },
+        {
+          "text": "Nach der alten Zeichnung fertigen, wenn das Teil optisch gleich aussieht.",
+          "ist_korrekt": false,
+          "erklaerung": "Optische Aehnlichkeit reicht nicht; Aenderungen koennen Masse, Werkstoff oder Pruefung betreffen."
+        },
+        {
+          "text": "Die Aenderung ignorieren, wenn das Werkzeug bereits geruestet ist.",
+          "ist_korrekt": false,
+          "erklaerung": "Ruestaufwand ist kein Grund, einen falschen Dokumentenstand zu verwenden."
+        },
+        {
+          "text": "Nur die Hauptmasse kontrollieren und dann starten.",
+          "ist_korrekt": false,
+          "erklaerung": "Auch Werkstoff, Toleranzen, Oberflaechen und Pruefmerkmale koennen betroffen sein."
+        },
+        {
+          "text": "Die Entscheidung der Folgeschicht ueberlassen.",
+          "ist_korrekt": false,
+          "erklaerung": "Der aktuelle Auftrag muss vor dem Start geklaert werden."
+        }
+      ]
+    },
+    {
+      "id": "AP-PT-WS-201",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum muss der Werkstoff vor Produktionsstart eindeutig identifiziert werden?",
+      "optionen": [
+        {
+          "text": "Weil Werkstoff, Werkzeugwahl, Bearbeitungsdaten und Pruefanforderungen zusammenhaengen.",
+          "ist_korrekt": true,
+          "erklaerung": "Ein falscher Werkstoff kann zu Ausschuss, Werkzeugschaden oder Sicherheitsrisiken fuehren."
+        },
+        {
+          "text": "Weil die Werkstoffnummer nur fuer die Lagerhaltung wichtig ist.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Kennzeichnung ist auch fuer Fertigung, Pruefung und Rueckverfolgbarkeit wichtig."
+        },
+        {
+          "text": "Weil alle Kunststoffe gleich bearbeitet werden koennen.",
+          "ist_korrekt": false,
+          "erklaerung": "Kunststoffe unterscheiden sich stark in Temperaturverhalten, Zaehigkeit und Bearbeitbarkeit."
+        },
+        {
+          "text": "Weil die Maschine den Werkstoff automatisch erkennt.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Verantwortung fuer Materialbereitstellung und Kontrolle bleibt beim Prozess."
+        },
+        {
+          "text": "Weil dann keine Zwischenpruefung mehr noetig ist.",
+          "ist_korrekt": false,
+          "erklaerung": "Materialkontrolle ersetzt keine fertigungsbegleitende Qualitaetspruefung."
+        }
+      ]
+    },
+    {
+      "id": "AP-PT-WZ-201",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Beim Start der Serie entstehen Brandspuren an der Schnittflaeche. Welche Ursache ist besonders naheliegend?",
+      "optionen": [
+        {
+          "text": "Stumpfes oder ungeeignetes Werkzeug beziehungsweise falsche Schnittdaten.",
+          "ist_korrekt": true,
+          "erklaerung": "Zu hohe Waermeentwicklung entsteht oft durch Verschleiss, falsche Drehzahl, Vorschub oder Kuehlung."
+        },
+        {
+          "text": "Zu genaue Zeichnungsvorgaben.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Zeichnung verursacht keine Brandspuren."
+        },
+        {
+          "text": "Zu viele Stichproben.",
+          "ist_korrekt": false,
+          "erklaerung": "Pruefhaeufigkeit beeinflusst die Schnittflaeche nicht direkt."
+        },
+        {
+          "text": "Ein vollstaendiges Schichtuebergabeprotokoll.",
+          "ist_korrekt": false,
+          "erklaerung": "Dokumentation ist kein technischer Fehler am Schnitt."
+        },
+        {
+          "text": "Ein korrekt gespannter Rohling.",
+          "ist_korrekt": false,
+          "erklaerung": "Korrektes Spannen verhindert Fehler eher, statt sie zu verursachen."
+        }
+      ]
+    },
+    {
+      "id": "AP-PT-MA-201",
+      "typ": "mc",
+      "thema": "PT-MA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Eine Anlage startet nach dem Ruesten nicht. Welche Reihenfolge ist sinnvoll?",
+      "optionen": [
+        {
+          "text": "Sicherheitszustand pruefen, Meldungen lesen, Energieversorgung und Freigaben kontrollieren.",
+          "ist_korrekt": true,
+          "erklaerung": "Systematische Stoerungssuche beginnt sicher und dokumentiert, nicht mit blindem Verstellen."
+        },
+        {
+          "text": "Alle Parameter veraendern, bis die Anlage startet.",
+          "ist_korrekt": false,
+          "erklaerung": "Unkontrolliertes Verstellen erzeugt neue Fehler und gefaehrdet die Prozessfaehigkeit."
+        },
+        {
+          "text": "Schutzeinrichtungen ueberbruecken, um die Ursache schneller zu finden.",
+          "ist_korrekt": false,
+          "erklaerung": "Schutzeinrichtungen duerfen nicht umgangen werden."
+        },
+        {
+          "text": "Den Auftrag abbrechen, ohne die Stoerung zu dokumentieren.",
+          "ist_korrekt": false,
+          "erklaerung": "Stoerungen muessen nachvollziehbar gemeldet und dokumentiert werden."
+        },
+        {
+          "text": "Erst nach Produktionsbeginn die Meldungen lesen.",
+          "ist_korrekt": false,
+          "erklaerung": "Meldungen liefern Hinweise vor dem Start."
+        }
+      ]
+    },
+    {
+      "id": "AP-PT-PR-201",
+      "typ": "mc",
+      "thema": "PT-PR",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welches Vorgehen ist bei einer Erstteilpruefung richtig?",
+      "optionen": [
+        {
+          "text": "Erstteil nach Zeichnung und Pruefplan pruefen, Ergebnis dokumentieren und Freigabe abwarten.",
+          "ist_korrekt": true,
+          "erklaerung": "Die Serie darf erst nach nachvollziehbarer Freigabe sicher anlaufen."
+        },
+        {
+          "text": "Nur die optische Oberflaeche bewerten.",
+          "ist_korrekt": false,
+          "erklaerung": "Mass-, Funktions- und Werkstoffmerkmale koennen ebenso pruefpflichtig sein."
+        },
+        {
+          "text": "Die ersten zehn Teile ungeprueft weitergeben.",
+          "ist_korrekt": false,
+          "erklaerung": "Ohne Erstteilfreigabe kann Serienauschuss entstehen."
+        },
+        {
+          "text": "Pruefmittel erst nach der Schicht kalibrieren.",
+          "ist_korrekt": false,
+          "erklaerung": "Das Pruefmittel muss fuer die Messung geeignet und verwendbar sein."
+        },
+        {
+          "text": "Bei Abweichung den Messwert abrunden.",
+          "ist_korrekt": false,
+          "erklaerung": "Messwerte werden korrekt dokumentiert; Abweichungen werden geklaert."
+        }
+      ]
+    },
+    {
+      "id": "AP-PT-FT-201",
+      "typ": "mc",
+      "thema": "PT-FT",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN 8580"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum ist die Unterscheidung der Fertigungsverfahren fuer MAF wichtig?",
+      "optionen": [
+        {
+          "text": "Weil daraus typische Werkzeuge, Gefahren, Pruefungen und Prozessparameter folgen.",
+          "ist_korrekt": true,
+          "erklaerung": "Fertigungsverfahren beeinflussen Vorbereitung, Bedienung, Kontrolle und Fehlerreaktion."
+        },
+        {
+          "text": "Weil alle Verfahren dieselben Pruefmittel verwenden.",
+          "ist_korrekt": false,
+          "erklaerung": "Pruefmittel haengen von Merkmal und Verfahren ab."
+        },
+        {
+          "text": "Weil die Hauptgruppe immer den Werkstoff ersetzt.",
+          "ist_korrekt": false,
+          "erklaerung": "Verfahren und Werkstoff sind unterschiedliche Informationen."
+        },
+        {
+          "text": "Weil dadurch Arbeitsschutz entfaellt.",
+          "ist_korrekt": false,
+          "erklaerung": "Arbeitsschutz ist bei jedem Verfahren zu beachten."
+        },
+        {
+          "text": "Weil nur Trennen pruefungsrelevant ist.",
+          "ist_korrekt": false,
+          "erklaerung": "Mehrere Hauptgruppen koennen fuer MAF relevant sein."
+        }
+      ]
+    },
+    {
+      "id": "AP-PT-TU-202",
+      "typ": "mc",
+      "thema": "PT-TU",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "In Zeichnung und Arbeitsplan widersprechen sich zwei Angaben. Was ist richtig?",
+      "optionen": [
+        {
+          "text": "Fertigung stoppen beziehungsweise nicht starten und die Abweichung mit der zustaendigen Stelle klaeren.",
+          "ist_korrekt": true,
+          "erklaerung": "Widerspruechliche Unterlagen muessen vor der Fertigung geklaert werden."
+        },
+        {
+          "text": "Immer den Arbeitsplan ignorieren.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Arbeitsplan enthaelt verbindliche Prozessvorgaben und darf nicht pauschal ignoriert werden."
+        },
+        {
+          "text": "Die Angabe waehlen, die schneller zu fertigen ist.",
+          "ist_korrekt": false,
+          "erklaerung": "Fertigungszeit entscheidet nicht ueber technische Gueltigkeit."
+        },
+        {
+          "text": "Den Widerspruch erst im Uebergabeprotokoll notieren.",
+          "ist_korrekt": false,
+          "erklaerung": "Dann koennte bereits falsch produziert worden sein."
+        },
+        {
+          "text": "Die Abweichung durch Schaetzen ausgleichen.",
+          "ist_korrekt": false,
+          "erklaerung": "Schaetzen ist bei technischen Vorgaben unzulaessig."
+        }
+      ]
+    },
+    {
+      "id": "AP-PT-WS-202",
+      "typ": "mc",
+      "thema": "PT-WS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Kunststoffgranulat wurde offen neben einer feuchten Zone gelagert. Was ist vor der Verarbeitung besonders zu pruefen?",
+      "optionen": [
+        {
+          "text": "Ob der Werkstoff getrocknet oder gesperrt werden muss.",
+          "ist_korrekt": true,
+          "erklaerung": "Feuchte kann Kunststoffverarbeitung und Bauteilqualitaet deutlich beeinflussen."
+        },
+        {
+          "text": "Ob die Maschine schneller laufen kann.",
+          "ist_korrekt": false,
+          "erklaerung": "Feuchteprobleme werden nicht durch hoeheren Durchsatz geloest."
+        },
+        {
+          "text": "Ob die Zeichnung ohne Pruefung geaendert werden darf.",
+          "ist_korrekt": false,
+          "erklaerung": "Zeichnungen werden nicht eigenmaechtig geaendert."
+        },
+        {
+          "text": "Ob das Material mit Metallspaenen gemischt werden kann.",
+          "ist_korrekt": false,
+          "erklaerung": "Vermischung erzeugt Verunreinigung und Ausschuss."
+        },
+        {
+          "text": "Ob die Schutzvorrichtung abgeschaltet werden kann.",
+          "ist_korrekt": false,
+          "erklaerung": "Sicherheitseinrichtungen bleiben aktiv."
+        }
+      ]
+    },
+    {
+      "id": "AP-PT-WZ-202",
+      "typ": "mc",
+      "thema": "PT-WZ",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum wird ein Werkzeugwechsel nicht nur nach Ausfall, sondern oft vorbeugend geplant?",
+      "optionen": [
+        {
+          "text": "Damit Qualitaetsabweichungen und ungeplante Stillstaende vermieden werden.",
+          "ist_korrekt": true,
+          "erklaerung": "Vorbeugender Wechsel stabilisiert Prozess und Qualitaet."
+        },
+        {
+          "text": "Damit weniger dokumentiert werden muss.",
+          "ist_korrekt": false,
+          "erklaerung": "Vorbeugende Massnahmen muessen ebenfalls nachvollziehbar sein."
+        },
+        {
+          "text": "Damit Pruefungen entfallen.",
+          "ist_korrekt": false,
+          "erklaerung": "Werkzeugwechsel ersetzt keine Qualitaetspruefung."
+        },
+        {
+          "text": "Damit verschlissene Werkzeuge weiterlaufen koennen.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Sinn ist gerade, kritischen Verschleiss zu vermeiden."
+        },
+        {
+          "text": "Damit der Werkstoff nicht identifiziert werden muss.",
+          "ist_korrekt": false,
+          "erklaerung": "Werkstoffidentifikation bleibt notwendig."
+        }
+      ]
+    },
+    {
+      "id": "AP-PT-MA-202",
+      "typ": "mc",
+      "thema": "PT-MA",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Ein Sensor meldet sporadisch kein Werkstueck, obwohl eines vorhanden ist. Welche Massnahme ist am sinnvollsten?",
+      "optionen": [
+        {
+          "text": "Sensor, Befestigung, Verschmutzung, Abstand und Signalzustand systematisch pruefen.",
+          "ist_korrekt": true,
+          "erklaerung": "Sporadische Fehler entstehen haeufig durch Verschmutzung, Justage oder lose Befestigung."
+        },
+        {
+          "text": "Die Meldung dauerhaft im Programm unterdruecken.",
+          "ist_korrekt": false,
+          "erklaerung": "Das kann Folgeschaeden und Sicherheitsrisiken verursachen."
+        },
+        {
+          "text": "Ohne Pruefung den kompletten Schaltschrank tauschen.",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist nicht zielgerichtet und meist unverhaeltnismaessig."
+        },
+        {
+          "text": "Nur die Stueckzahl zuruecksetzen.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Ursache der Fehlmeldung bleibt bestehen."
+        },
+        {
+          "text": "Bis zum Schichtende weiterproduzieren.",
+          "ist_korrekt": false,
+          "erklaerung": "Sporadische Sensorfehler koennen Ausschuss oder Stoerungen verursachen."
+        }
+      ]
+    },
+    {
+      "id": "AP-PP-AS-201",
+      "typ": "mc",
+      "thema": "PP-AS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Information gehoert in die Arbeitsplanung vor dem Serienstart?",
+      "optionen": [
+        {
+          "text": "Reihenfolge der Arbeitsschritte, Werkzeuge, Pruefmerkmale und Freigabepunkt.",
+          "ist_korrekt": true,
+          "erklaerung": "Diese Angaben steuern Vorbereitung, Durchfuehrung und Kontrolle."
+        },
+        {
+          "text": "Private Kontaktdaten der Bedienperson.",
+          "ist_korrekt": false,
+          "erklaerung": "Private Daten gehoeren nicht in die Produktionsplanung."
+        },
+        {
+          "text": "Eine Schaetzung ohne Pruefmerkmale.",
+          "ist_korrekt": false,
+          "erklaerung": "Ohne Pruefmerkmale ist keine sichere Freigabe moeglich."
+        },
+        {
+          "text": "Nur die Pausenzeit der Schicht.",
+          "ist_korrekt": false,
+          "erklaerung": "Pausenplanung ersetzt keine technische Arbeitsplanung."
+        },
+        {
+          "text": "Nur das Gewicht der Maschine.",
+          "ist_korrekt": false,
+          "erklaerung": "Das Maschinengewicht ist fuer den Serienstart in der Regel nicht die zentrale Planungsangabe."
+        }
+      ]
+    },
+    {
+      "id": "AP-PP-QS-201",
+      "typ": "mc",
+      "thema": "PP-QS",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Eine Stichprobe ist noch innerhalb der Toleranz, zeigt aber einen klaren Trend zur Grenze. Was ist richtig?",
+      "optionen": [
+        {
+          "text": "Trend dokumentieren, Ursache suchen und rechtzeitig korrigieren.",
+          "ist_korrekt": true,
+          "erklaerung": "Qualitaetssicherung soll Ausschuss vermeiden, bevor die Grenze ueberschritten wird."
+        },
+        {
+          "text": "Weiterproduzieren, bis Ausschuss entsteht.",
+          "ist_korrekt": false,
+          "erklaerung": "Das waere reaktive statt vorbeugende Qualitaetssicherung."
+        },
+        {
+          "text": "Alle guten Teile automatisch sperren.",
+          "ist_korrekt": false,
+          "erklaerung": "Eine Sperre kann noetig werden, aber zuerst wird der Sachverhalt bewertet."
+        },
+        {
+          "text": "Messwerte weglassen, solange sie noch innerhalb der Toleranz liegen.",
+          "ist_korrekt": false,
+          "erklaerung": "Gerade Trends muessen dokumentiert werden."
+        },
+        {
+          "text": "Den Pruefplan eigenmaechtig abschaffen.",
+          "ist_korrekt": false,
+          "erklaerung": "Pruefplaene werden nicht eigenmaechtig geaendert."
+        }
+      ]
+    },
+    {
+      "id": "AP-PP-IH-201",
+      "typ": "mc",
+      "thema": "PP-IH",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Aussage beschreibt vorbeugende Instandhaltung passend?",
+      "optionen": [
+        {
+          "text": "Geplante Massnahmen erhalten die Betriebsbereitschaft und reduzieren Ausfallrisiken.",
+          "ist_korrekt": true,
+          "erklaerung": "Vorbeugende Instandhaltung soll Stoerungen vermeiden oder frueh erkennen."
+        },
+        {
+          "text": "Es wird erst gehandelt, wenn die Anlage ausgefallen ist.",
+          "ist_korrekt": false,
+          "erklaerung": "Das waere rein korrektive Instandsetzung."
+        },
+        {
+          "text": "Wartungsplaene sind nur fuer die Verwaltung.",
+          "ist_korrekt": false,
+          "erklaerung": "Wartungsplaene sind praktische Arbeitsgrundlage."
+        },
+        {
+          "text": "Qualitaetspruefungen werden dadurch unnoetig.",
+          "ist_korrekt": false,
+          "erklaerung": "Instandhaltung und Qualitaetspruefung haben unterschiedliche Aufgaben."
+        },
+        {
+          "text": "Verschleissteile werden grundsaetzlich nie getauscht.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Tausch von Verschleissteilen ist eine typische Massnahme."
+        }
+      ]
+    },
+    {
+      "id": "AP-PP-PA-201",
+      "typ": "mc",
+      "thema": "PP-PA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum muessen Produktionsanlagen nach dem Umruesten mit einer Funktionskontrolle gestartet werden?",
+      "optionen": [
+        {
+          "text": "Damit korrekte Bewegung, Sicherheitseinrichtungen, Sensorik und Prozessablauf geprueft werden.",
+          "ist_korrekt": true,
+          "erklaerung": "Nach dem Umruesten koennen Einstellungen, Werkzeuge und Freigaben fehlerhaft sein."
+        },
+        {
+          "text": "Damit die Dokumentation ersetzt werden kann.",
+          "ist_korrekt": false,
+          "erklaerung": "Funktionskontrolle und Dokumentation gehoeren zusammen."
+        },
+        {
+          "text": "Damit alle Pruefmittel entfernt werden.",
+          "ist_korrekt": false,
+          "erklaerung": "Pruefmittel werden fuer die Freigabe benoetigt."
+        },
+        {
+          "text": "Damit die Anlage ohne Schutzvorrichtung schneller laeuft.",
+          "ist_korrekt": false,
+          "erklaerung": "Schutzvorrichtungen duerfen nicht entfernt werden."
+        },
+        {
+          "text": "Damit der Werkstoff beliebig gewechselt werden kann.",
+          "ist_korrekt": false,
+          "erklaerung": "Werkstoffwechsel muss freigegeben und geplant sein."
+        }
+      ]
+    },
+    {
+      "id": "AP-PP-UP-201",
+      "typ": "mc",
+      "thema": "PP-UP",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Information ist fuer die Schichtuebergabe besonders wichtig?",
+      "optionen": [
+        {
+          "text": "Produktionsstand, Stoerungen, getroffene Massnahmen, offene Punkte und Qualitaetsstatus.",
+          "ist_korrekt": true,
+          "erklaerung": "Diese Informationen verhindern Wiederholfehler und sichern den naechsten Prozessschritt."
+        },
+        {
+          "text": "Nur die private Telefonnummer der vorherigen Schicht.",
+          "ist_korrekt": false,
+          "erklaerung": "Private Daten gehoeren nicht in das Uebergabeprotokoll."
+        },
+        {
+          "text": "Nur ob die Maschine sauber aussieht.",
+          "ist_korrekt": false,
+          "erklaerung": "Der Zustand ist wichtig, aber allein nicht ausreichend."
+        },
+        {
+          "text": "Nur die Uhrzeit des Schichtendes.",
+          "ist_korrekt": false,
+          "erklaerung": "Die Uhrzeit ersetzt keine technischen und organisatorischen Angaben."
+        },
+        {
+          "text": "Keine Information, wenn keine Stoerung sichtbar ist.",
+          "ist_korrekt": false,
+          "erklaerung": "Auch Produktionsstand und offene Punkte sind relevant."
+        }
+      ]
+    },
+    {
+      "id": "AP-WISO-BA-201",
+      "typ": "mc",
+      "thema": "WISO-BA",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "BBiG"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Pflicht gehoert typischerweise zu den Pflichten Auszubildender?",
+      "optionen": [
+        {
+          "text": "Ausbildungsnachweise ordnungsgemaess fuehren.",
+          "ist_korrekt": true,
+          "erklaerung": "Der Ausbildungsnachweis dokumentiert die Ausbildung und ist pruefungsrelevant."
+        },
+        {
+          "text": "Ausbildungsmittel kostenpflichtig bereitstellen.",
+          "ist_korrekt": false,
+          "erklaerung": "Ausbildungsmittel sind Sache des Ausbildenden."
+        },
+        {
+          "text": "Pruefungsordnung der IHK erlassen.",
+          "ist_korrekt": false,
+          "erklaerung": "Das ist keine Aufgabe Auszubildender."
+        },
+        {
+          "text": "Ausbildungsberuf staatlich anerkennen.",
+          "ist_korrekt": false,
+          "erklaerung": "Die staatliche Anerkennung erfolgt rechtlich, nicht durch Auszubildende."
+        },
+        {
+          "text": "PAL-Aufgaben erstellen.",
+          "ist_korrekt": false,
+          "erklaerung": "Pruefungsaufgaben werden von zustaendigen Gremien erstellt."
+        }
+      ]
+    },
+    {
+      "id": "AP-WISO-SV-201",
+      "typ": "mc",
+      "thema": "WISO-SV",
+      "schwierigkeit": 1,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Welche Versicherung ist bei einem Arbeitsunfall in der Regel zustaendig?",
+      "optionen": [
+        {
+          "text": "Gesetzliche Unfallversicherung.",
+          "ist_korrekt": true,
+          "erklaerung": "Arbeitsunfaelle und Berufskrankheiten fallen in den Bereich der gesetzlichen Unfallversicherung."
+        },
+        {
+          "text": "Private Hausratversicherung.",
+          "ist_korrekt": false,
+          "erklaerung": "Sie deckt private Sachwerte, nicht Arbeitsunfaelle."
+        },
+        {
+          "text": "Kfz-Haftpflichtversicherung des Kollegen.",
+          "ist_korrekt": false,
+          "erklaerung": "Sie ist fuer Kfz-Haftpflichtschaeden gedacht."
+        },
+        {
+          "text": "Reiseruecktrittsversicherung.",
+          "ist_korrekt": false,
+          "erklaerung": "Sie hat keinen Bezug zum Arbeitsunfall."
+        },
+        {
+          "text": "Freiwillige Garantieversicherung fuer Maschinen.",
+          "ist_korrekt": false,
+          "erklaerung": "Maschinengarantien ersetzen keine Sozialversicherung."
+        }
+      ]
+    },
+    {
+      "id": "AP-WISO-WI-201",
+      "typ": "mc",
+      "thema": "WISO-WI",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Warum ist Ausschuss fuer einen Betrieb wirtschaftlich problematisch?",
+      "optionen": [
+        {
+          "text": "Material, Maschinenzeit, Energie und Arbeitszeit wurden eingesetzt, ohne verkaufsfaehiges Produkt zu erzeugen.",
+          "ist_korrekt": true,
+          "erklaerung": "Ausschuss verursacht Kosten und kann Termine sowie Kundenzufriedenheit belasten."
+        },
+        {
+          "text": "Ausschuss erhoeht immer den Gewinn.",
+          "ist_korrekt": false,
+          "erklaerung": "Ausschuss verursacht in der Regel Kosten."
+        },
+        {
+          "text": "Ausschuss ist nur fuer die Personalabteilung relevant.",
+          "ist_korrekt": false,
+          "erklaerung": "Ausschuss betrifft Produktion, Qualitaet, Kosten und Termine."
+        },
+        {
+          "text": "Ausschuss macht Pruefungen ueberfluessig.",
+          "ist_korrekt": false,
+          "erklaerung": "Ausschuss zeigt, dass Pruefung und Prozessverbesserung noetig sind."
+        },
+        {
+          "text": "Ausschuss verbessert automatisch die Lieferfaehigkeit.",
+          "ist_korrekt": false,
+          "erklaerung": "Ausschuss kann Lieferfaehigkeit verschlechtern."
+        }
+      ]
+    },
+    {
+      "id": "AP-WISO-SU-201",
+      "typ": "mc",
+      "thema": "WISO-SU",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Beim Reinigen einer Anlage muss ein Gefahrstoff verwendet werden. Welche Unterlage ist vor Arbeitsbeginn besonders wichtig?",
+      "optionen": [
+        {
+          "text": "Betriebsanweisung beziehungsweise Sicherheitsdatenblatt.",
+          "ist_korrekt": true,
+          "erklaerung": "Darin stehen Gefahren, Schutzmassnahmen, Lagerung und Verhalten im Notfall."
+        },
+        {
+          "text": "Private Einkaufsliste.",
+          "ist_korrekt": false,
+          "erklaerung": "Sie hat keinen Bezug zur Gefahrstoffarbeit."
+        },
+        {
+          "text": "Eine alte Zeichnung eines anderen Produkts.",
+          "ist_korrekt": false,
+          "erklaerung": "Sie liefert keine Gefahrstoffinformationen."
+        },
+        {
+          "text": "Nur das Pausenprotokoll.",
+          "ist_korrekt": false,
+          "erklaerung": "Pausenzeiten ersetzen keine Sicherheitsunterlage."
+        },
+        {
+          "text": "Ein ungepruefter Internetkommentar.",
+          "ist_korrekt": false,
+          "erklaerung": "Gefahrstoffinformationen muessen aus freigegebenen Unterlagen stammen."
+        }
+      ]
+    },
+    {
+      "id": "AP-PP-QS-202",
+      "typ": "mc",
+      "thema": "PP-QS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Was ist der Zweck einer Rueckverfolgbarkeit in der Produktion?",
+      "optionen": [
+        {
+          "text": "Betroffene Teile, Materialien, Chargen und Prozessdaten bei Abweichungen eingrenzen zu koennen.",
+          "ist_korrekt": true,
+          "erklaerung": "Rueckverfolgbarkeit hilft, Ursachen und betroffene Umfaenge gezielt zu klaeren."
+        },
+        {
+          "text": "Alle Pruefungen zu vermeiden.",
+          "ist_korrekt": false,
+          "erklaerung": "Rueckverfolgbarkeit ergaenzt Pruefungen, ersetzt sie aber nicht."
+        },
+        {
+          "text": "Nur die Maschine optisch sauber zu halten.",
+          "ist_korrekt": false,
+          "erklaerung": "Sauberkeit ist wichtig, aber nicht der Zweck der Rueckverfolgbarkeit."
+        },
+        {
+          "text": "Dokumente nach Schichtende zu vernichten.",
+          "ist_korrekt": false,
+          "erklaerung": "Dokumente muessen nachvollziehbar aufbewahrt werden."
+        },
+        {
+          "text": "Ausschuss nicht melden zu muessen.",
+          "ist_korrekt": false,
+          "erklaerung": "Abweichungen muessen gemeldet und bearbeitet werden."
+        }
+      ]
+    },
+    {
+      "id": "AP-PT-MA-F03",
+      "typ": "freitext",
+      "thema": "PT-MA",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Eine Anlage stoppt wiederholt wegen einer Stoermeldung am Werkstuecksensor. Beschreiben Sie ein systematisches Vorgehen zur Fehlersuche.",
+      "musterloesung": "Zuerst wird die Anlage sicher angehalten und gegen gefaehrliche Bewegungen gesichert. Danach werden Stoermeldung, Zeitpunkt und betroffene Station dokumentiert. Anschliessend prueft man Werkstuecklage, Verschmutzung, Sensorabstand, Befestigung, Kabel und Signalzustand. Wenn die Ursache gefunden ist, wird sie beseitigt oder an Instandhaltung beziehungsweise Vorgesetzten gemeldet. Nach der Korrektur erfolgt ein sicherer Probelauf mit Funktionskontrolle und Dokumentation.",
+      "bewertungsraster": {
+        "max_punkte": 5,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Sicheres Anhalten beziehungsweise Sichern der Anlage",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Stoermeldung und Zeitpunkt dokumentiert",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Sensorumfeld systematisch geprueft",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Meldung oder Beseitigung der Ursache beschrieben",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Probelauf und Dokumentation genannt",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Lichtschranke",
+          "Naeherschalter",
+          "Signal pruefen",
+          "Instandhaltung informieren"
+        ],
+        "haeufige_fehler": [
+          "Schutzeinrichtung ueberbruecken",
+          "Parameter blind veraendern"
+        ]
+      }
+    },
+    {
+      "id": "AP-PP-AS-F03",
+      "typ": "freitext",
+      "thema": "PP-AS",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Beschreiben Sie die wichtigsten Schritte, um einen Produktwechsel an einer Produktionsanlage vorzubereiten.",
+      "musterloesung": "Zuerst werden Auftrag, Zeichnung, Arbeitsplan, Pruefplan und aktueller Stand geprueft. Danach werden Material, Werkzeuge, Spannmittel, Hilfsstoffe und Pruefmittel bereitgestellt. Die Anlage wird sicher stillgesetzt, gereinigt und nach Vorgabe umgeruestet. Prozessdaten oder Programme werden geladen und kontrolliert. Anschliessend erfolgt ein Probelauf beziehungsweise Erstteil mit Pruefung und Freigabe. Offene Punkte und Einstellungen werden dokumentiert.",
+      "bewertungsraster": {
+        "max_punkte": 5,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Unterlagen und aktuellen Stand pruefen",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Material, Werkzeuge, Hilfs- und Pruefmittel bereitstellen",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Sicheres Stillsetzen und Umruesten beschrieben",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Parameter/Programm und Probelauf beziehungsweise Erstteil genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Freigabe und Dokumentation genannt",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Ruestplan",
+          "Erstmuster",
+          "Werkzeugwechsel",
+          "Pruefplan"
+        ],
+        "haeufige_fehler": [
+          "Serienstart ohne Freigabe",
+          "Materialkennzeichnung nicht pruefen"
+        ]
+      }
+    },
+    {
+      "id": "AP-PP-QS-F03",
+      "typ": "freitext",
+      "thema": "PP-QS",
+      "schwierigkeit": 3,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Bei einer Serienpruefung wird ein Mass ausserhalb der Toleranz festgestellt. Beschreiben Sie Ihr Vorgehen.",
+      "musterloesung": "Zuerst wird der Messwert durch geeignete Wiederholmessung und Pruefmittelkontrolle abgesichert. Wenn die Abweichung bestaetigt ist, wird die Fertigung gestoppt oder korrigiert und die zustaendige Person informiert. Seit der letzten guten Pruefung gefertigte Teile werden eingegrenzt, gesperrt und nachgeprueft. Die Ursache wird gesucht, zum Beispiel Werkzeugverschleiss, falsche Einstellung, Material- oder Temperaturproblem. Nach Korrektur wird ein neues Teil geprueft und die Massnahme dokumentiert.",
+      "bewertungsraster": {
+        "max_punkte": 5,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Messwert und Pruefmittel kontrolliert",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Fertigung stoppen/korrigieren und Verantwortliche informieren",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Betroffene Teile eingrenzen und sperren",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Ursachensuche beschrieben",
+            "punkte": 1
+          },
+          {
+            "id": "k5",
+            "beschreibung": "Nachkontrolle und Dokumentation genannt",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Sperrlager",
+          "Rueckverfolgbarkeit",
+          "Erstteil nach Korrektur"
+        ],
+        "haeufige_fehler": [
+          "Abweichung verschweigen",
+          "Weiterfertigen bis Schichtende"
+        ]
+      }
+    },
+    {
+      "id": "AP-PP-IH-F03",
+      "typ": "freitext",
+      "thema": "PP-IH",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "DIN 31051"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Erklaeren Sie den Unterschied zwischen Wartung, Inspektion und Instandsetzung an einem Beispiel aus der Produktion.",
+      "musterloesung": "Wartung soll den Abbau des Abnutzungsvorrats verzoegern, zum Beispiel Schmieren, Reinigen oder Nachstellen einer Fuehrung. Inspektion stellt den Ist-Zustand fest und beurteilt ihn, zum Beispiel Kontrolle von Spiel, Verschleiss oder Dichtheit. Instandsetzung stellt nach einem Fehler den Sollzustand wieder her, zum Beispiel Austausch eines defekten Sensors oder einer verschlissenen Dichtung. Die Massnahmen muessen geplant, sicher ausgefuehrt und dokumentiert werden.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Wartung zutreffend erklaert",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Inspektion zutreffend erklaert",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Instandsetzung zutreffend erklaert",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Passendes Produktionsbeispiel oder Dokumentation genannt",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Zustand feststellen",
+          "Sollzustand wiederherstellen",
+          "Schmieren"
+        ],
+        "haeufige_fehler": [
+          "Wartung und Inspektion verwechseln"
+        ]
+      }
+    },
+    {
+      "id": "AP-WISO-BA-F03",
+      "typ": "freitext",
+      "thema": "WISO-BA",
+      "schwierigkeit": 2,
+      "kern": true,
+      "quellenstufe": 2,
+      "enthaelt_zahlenwert": false,
+      "normbezuege": [
+        "BBiG"
+      ],
+      "tabellenbuch_fundstelle": null,
+      "status": "entwurf",
+      "aufgabenstellung": "Nennen Sie vier Gruende, warum der Ausbildungsnachweis sorgfaeltig gefuehrt werden muss.",
+      "musterloesung": "Der Ausbildungsnachweis dokumentiert, welche Taetigkeiten und Lerninhalte vermittelt wurden. Er hilft Auszubildenden und Ausbildenden, Luecken im Ausbildungsplan zu erkennen. Er dient als Nachweis gegenueber Betrieb und zustaendiger Stelle und ist fuer die Pruefungszulassung relevant. Ausserdem unterstuetzt er die Reflexion der eigenen Arbeit und macht Fortschritte nachvollziehbar.",
+      "bewertungsraster": {
+        "max_punkte": 4,
+        "kriterien": [
+          {
+            "id": "k1",
+            "beschreibung": "Dokumentation der Ausbildung genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k2",
+            "beschreibung": "Erkennen von Luecken im Ausbildungsplan genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k3",
+            "beschreibung": "Nachweis gegenueber zustaendiger Stelle oder Pruefungszulassung genannt",
+            "punkte": 1
+          },
+          {
+            "id": "k4",
+            "beschreibung": "Reflexion/Fortschritt oder Kommunikation mit Ausbilder genannt",
+            "punkte": 1
+          }
+        ],
+        "akzeptierte_synonyme": [
+          "Berichtsheft",
+          "Ausbildungsplan",
+          "Zulassung"
+        ],
+        "haeufige_fehler": [
+          "Ausbildungsnachweis als freiwillige Notiz darstellen"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+---
+titel: "Kunststoffabfaelle trennen"
+thema_code: "PT-UMW"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Konkrete Kunststoffsorten, Sammelstellen und Rezyklatwege muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Kunststoffabfaelle"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Betriebliche Sortierregeln und Materialcodes muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung Kunststoffverarbeitung"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit erklaert Sortenreinheit als Grundprinzip."
+---
+
+<WissensstufenLeiste stufen={["anwenden", "verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Spritzgiessmaschine">
+Anguesse, Fehlteile und Verpackungsfolie liegen nebeneinander. Wenn alles zusammen in eine Box kommt, kann
+das Material oft nicht mehr sauber wiederverwendet werden.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Rezyklat", "Sortenreinheit", "Abfall", "Recycling", "Fremdstoff"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Sortenrein in Alltagssprache">
+Sortenrein heisst: gleiches Material zusammen, Fremdes getrennt. Je sauberer getrennt wird, desto eher kann
+Kunststoff wieder genutzt werden.
+</EinfachErklaert>
+
+<KunststoffAbfallSchema />
+
+<KunststoffAbfallTrainer titel="Kunststoffrest richtig behandeln" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Sortierung bestimmt Verwertung">
+Kunststoffabfaelle koennen Produktionsreste, Fehlteile, Anguesse, Verpackungen oder verschmutzte Teile sein.
+Vermischung, Metallreste oder unbekannte Materialarten koennen Recycling oder Rezyklatnutzung verhindern.
+</FachlichErklaert>
+
+## Sortierlogik
+
+| Rest | Grundentscheidung |
+|---|---|
+| Sauberer Anguss | Sortenrein sammeln |
+| Fehlteil aus bekanntem Material | Nach Materialweg sammeln |
+| Kunststoff mit Metallrest | Fremdstoff trennen oder klaeren |
+| Unbekannte Mischung | Nicht vermischen, nach Vorgabe klaeren |
+
+<Praxisbeispiel titel="Praxisbeispiel Fremdstoff">
+Ein Kunststoffteil enthaelt noch einen Metallclip. Du wirfst es nicht in die sortenreine Kunststoffbox,
+sondern klaerst den vorgesehenen Weg.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Konkrete Kunststoffsorten, Materialcodes und Rezyklatwege sind betrieblich festgelegt und muessen freigegeben
+werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Sortenreinheit macht Recycling moeglich: gleich zu gleich, Fremdes raus, Unklares klaeren.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-UMW-006::check"
+  fragen={[
+    {
+      id: "sortenrein",
+      masterySchluessel: "FK-1-UMW-006::sortenrein",
+      aufgabenstellung: "Warum ist Sortenreinheit bei Kunststoffabfaellen wichtig?",
+      optionen: [
+        {
+          id: "recycling",
+          text: "Weil sortenreines Material besser wiederverwendet werden kann.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Vermischungen erschweren Recycling und Rezyklatnutzung.",
+        },
+        {
+          id: "farbe",
+          text: "Nur weil Boxen dadurch schoener aussehen.",
+          istKorrekt: false,
+          erklaerung: "Es geht um Materialqualitaet und Verwertung.",
+        },
+      ],
+    },
+    {
+      id: "unbekannt",
+      masterySchluessel: "FK-1-UMW-006::unbekannt",
+      aufgabenstellung: "Was machst du mit unbekannter Kunststoffmischung?",
+      optionen: [
+        {
+          id: "klaeren",
+          text: "Nicht vermischen und nach Vorgabe klaeren.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Unbekanntes Material gehoert nicht in eine sortenreine Box.",
+        },
+        {
+          id: "zusammen",
+          text: "Zu den sauberen Anguessen werfen.",
+          istKorrekt: false,
+          erklaerung: "Das kann die ganze Sammlung verunreinigen.",
+        },
+      ],
+    },
+  ]}
+/>

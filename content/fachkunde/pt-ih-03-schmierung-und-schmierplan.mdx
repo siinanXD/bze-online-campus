@@ -1,0 +1,57 @@
+---
+titel: "Schmierung und Schmierplan"
+thema_code: "PT-IH"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Schmierstoffe, Mengen, Intervalle und Nachweise muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Schmierplan, Betriebsanweisung, Maschinenhandbuch und Sicherheitsdatenblatt"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Schmierstelle, Schmierstoff, Menge, Intervall und Entsorgungsweg nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation am Schmierpunkt">
+An der Maschine ist ein Schmierpunkt markiert. Du darfst nicht irgendein Fett nehmen, sondern liest Schmierstelle, Schmierstoff, Menge und Intervall aus dem Schmierplan.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schmierung", "Schmierplan", "Schmierstoff", "Intervall", "Dokumentation"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schmierplan statt Bauchgefuehl">
+Schmierung verringert Reibung und Verschleiss. Der Schmierplan sagt, wo, womit, wie viel und wann geschmiert wird.
+</EinfachErklaert>
+
+<SchmierungSchmierplanSchema />
+
+<SchmierungSchmierplanTrainer titel="Schmierung und Schmierplan" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Schmierstelle und Vorgabe">
+Schmierstoffe muessen zur Maschine, zum Bauteil, zur Temperatur, zur Belastung und zur Betriebsanweisung passen. Falscher Schmierstoff oder falsche Menge kann genauso schaden wie fehlende Schmierung.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel falsches Fett">
+Du findest zwei Fettpressen am Arbeitsplatz. Statt nach Farbe oder Geruch zu entscheiden, vergleichst du Kennzeichnung, Schmierplan und Freigabe. Bei Unsicherheit meldest du den Punkt.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Schmierstoff, Menge und Intervall kommen aus dem Schmierplan.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-IH-003::check"
+  fragen={[{ id: "schmierplan", masterySchluessel: "FK-3-IH-003::schmierplan", aufgabenstellung: "Was ist beim Schmieren sicher richtig?", optionen: [{ id: "richtig", text: "Schmierstelle, Schmierstoff und Intervall aus dem Schmierplan uebernehmen.", istKorrekt: true, erklaerung: "Richtig. Der Schmierplan ist die verbindliche Quelle." }, { id: "falsch", text: "Ein Schmierstoff passt, wenn er aehnlich aussieht.", istKorrekt: false, erklaerung: "Nein. Aussehen ersetzt keine Freigabe." }] }]}
+/>

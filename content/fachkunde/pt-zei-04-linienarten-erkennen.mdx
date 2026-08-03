@@ -1,0 +1,113 @@
+---
+titel: "Linienarten erkennen"
+thema_code: "PT-ZEI"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Linienarten und Normbezeichnungen muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Technisches Zeichnen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Linienarten, Breiten und Bedeutungen muessen aus der freigegebenen Quelle uebernommen werden."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Zeichnungsblatt">
+Auf der Zeichnung sehen nicht alle Linien gleich aus. Manche sind durchgezogen, manche gestrichelt, manche
+haben Striche und Punkte. Diese Unterschiede sind Absicht.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Volllinie", "Strichlinie", "Strichpunktlinie", "Zeichnung", "Bauteil"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Linienarten in Alltagssprache">
+Linien sind nicht nur Striche. Eine durchgezogene Linie kann eine sichtbare Kante zeigen, eine gestrichelte
+Linie kann etwas Verdecktliegendes zeigen, und eine Strichpunktlinie kann eine Mitte anzeigen.
+</EinfachErklaert>
+
+<LinienartenSchema />
+
+<LinienartenTrainer titel="Linienart erkennen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Linien haben festgelegte Bedeutung">
+Linienarten werden nach Zeichnungsregeln verwendet. Ihre Form, Strichfolge und Staerke helfen, sichtbare
+Kanten, verdeckte Kanten, Mittellinien oder andere technische Informationen zu unterscheiden. Die genaue
+Bedeutung muss mit Tabellenbuch und freigegebener Zeichnung gelesen werden.
+</FachlichErklaert>
+
+## Erste Orientierung
+
+| Linienart | Grundidee im Lernbeispiel |
+|---|---|
+| Volllinie | Sichtbare Kante oder sichtbarer Umriss |
+| Strichlinie | Verdeckte Kante als Lernbeispiel |
+| Strichpunktlinie | Mittellinie oder Achse als Lernbeispiel |
+
+<Praxisbeispiel titel="Praxisbeispiel verdeckte Kante">
+Du siehst in einer Ansicht eine gestrichelte Linie. Du behandelst sie nicht wie Dekoration, sondern pruefst,
+welche verdeckte Form oder Kante damit beschrieben wird.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Die genauen Linienarten, Linienbreiten und Anwendungen muessen aus der freigegebenen Quelle gelesen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Linienarten sind Sprache der Zeichnung: erst erkennen, dann deuten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-ZEI-004::check"
+  fragen={[
+    {
+      id: "volllinie",
+      masterySchluessel: "FK-1-ZEI-004::volllinie",
+      aufgabenstellung: "Welche Linienart zeigt im Lernbeispiel eine sichtbare Kante?",
+      optionen: [
+        {
+          id: "voll",
+          text: "Volllinie.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Die Volllinie steht typischerweise fuer sichtbare Konturen.",
+        },
+        {
+          id: "zufall",
+          text: "Irgendeine Linie, weil alle Linien gleich gemeint sind.",
+          istKorrekt: false,
+          erklaerung: "Nein. Linienarten haben unterschiedliche technische Bedeutungen.",
+        },
+      ],
+    },
+    {
+      id: "deutung",
+      masterySchluessel: "FK-1-ZEI-004::deutung",
+      aufgabenstellung: "Wie gehst du mit einer unbekannten Linienart um?",
+      optionen: [
+        {
+          id: "nachschlagen",
+          text: "Nach Zeichnungsregel, Tabellenbuch oder Ausbilderfreigabe klaeren.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Unbekannte Zeichnungszeichen werden nicht geraten.",
+        },
+        {
+          id: "ignorieren",
+          text: "Ignorieren, solange die Aussenform passt.",
+          istKorrekt: false,
+          erklaerung: "Das kann wichtige technische Informationen ausblenden.",
+        },
+      ],
+    },
+  ]}
+/>

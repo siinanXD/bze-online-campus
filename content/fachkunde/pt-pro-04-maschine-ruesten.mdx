@@ -1,0 +1,57 @@
+---
+titel: "Maschine ruesten"
+thema_code: "PT-PRO"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Ruestreihenfolge, Sicherung und Bezugspunkte muessen fachlich geprueft werden."
+quellen:
+  - titel: "Betriebliche Ruestanweisung Maschine"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Ruestschritte, Sicherheitsfreigaben und Nullpunktbezug nach Maschinentyp ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation beim Umruesten">
+Die Maschine wird fuer den naechsten Auftrag vorbereitet. Du haeltst die Reihenfolge ein und achtest auf Schutz, Werkzeug und Bezugspunkte.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Ruesten", "Nullpunkt", "Schutzeinrichtung", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Ruesten in Alltagssprache">
+Ruesten heisst: Die Maschine sicher fuer den naechsten Auftrag bereitmachen.
+</EinfachErklaert>
+
+<MaschineRuestenSchema />
+
+<MaschineRuestenTrainer titel="Maschine ruesten" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Sicherer Ablauf vor dem Serienstart">
+Beim Ruesten werden Maschine, Werkzeug, Hilfsmittel, Schutz, Bezugspunkte und Prozessdaten vorbereitet. Eingriffe erfolgen nach Stillsetzung, Sicherung und Freigabe.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel vergessener Bezugspunkt">
+Nach einem Werkzeugwechsel stimmt die Lage nicht. Du pruefst Bezug und Nullpunkt nach Vorgabe, statt die Abweichung mit Gewalt auszugleichen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Beim Ruesten zaehlt sichere Reihenfolge vor Geschwindigkeit.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-PRO-004::check"
+  fragen={[{ id: "sichern", masterySchluessel: "FK-2-PRO-004::sichern", aufgabenstellung: "Was kommt vor einem Eingriff in die Maschine?", optionen: [{ id: "richtig", text: "Maschine sichern und Freigabe beachten.", istKorrekt: true, erklaerung: "Richtig. Sicherheit steht vor dem Ruestschritt." }, { id: "falsch", text: "Schutz offen lassen und schnell arbeiten.", istKorrekt: false, erklaerung: "Nein. Schutzfunktionen werden nicht umgangen." }] }]}
+/>

@@ -1,0 +1,114 @@
+---
+titel: "Oberflaechenangaben erkennen"
+thema_code: "PT-ZEI"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Symbolik, Rauheitswerte und Oberflaechenanforderungen muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Oberflaechenangaben"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Symbole, Kennwerte und Normbezug muessen vor Freigabe ergaenzt werden."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "tabellenbuch"]} />
+
+<StoryEinstieg titel="Situation an einer Funktionsflaeche">
+Ein Bauteil passt von der Form her, aber eine Flaeche soll besonders glatt oder gezielt bearbeitet sein.
+Diese Information steht als Oberflaechenangabe in der Zeichnung.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Oberflaechenanforderung", "Rauheit", "Zeichnung", "Bauteil", "Tabellenbuch"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Oberflaeche in Alltagssprache">
+Nicht jede Flaeche darf beliebig rau sein. Eine Oberflaechenangabe sagt, welche Flaechenqualitaet gefordert
+ist und wo du genauer in Zeichnung oder Tabellenbuch nachsehen musst.
+</EinfachErklaert>
+
+<OberflaechenangabenSchema />
+
+<OberflaechenangabenTrainer titel="Oberflaechenangaben erkennen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Flaechenqualitaet als Zeichnungsangabe">
+Oberflaechenangaben beschreiben Anforderungen an bearbeitete oder zu pruefende Flaechen. Sie koennen fuer
+Funktionsflaechen, Dichtflaechen oder Sichtflaechen wichtig sein. Symbolik, Kennwerte und Bezug werden aus
+Zeichnung und freigegebener Quelle gelesen.
+</FachlichErklaert>
+
+## Orientierung
+
+| Frage | Warum wichtig? |
+|---|---|
+| Welche Flaeche ist gemeint? | Der Bezug entscheidet |
+| Welche Anforderung gilt? | Symbol und Kennwert lesen |
+| Wo steht die Bedeutung? | Tabellenbuch oder freigegebene Quelle |
+
+<Praxisbeispiel titel="Praxisbeispiel Funktionsflaeche">
+Eine Fuehrungsflaeche soll nicht nur masslich stimmen, sondern auch die geforderte Oberflaeche haben. Du
+pruefst die Angabe und meldest Unsicherheit vor der Weitergabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Oberflaechensymbole und Rauheitskennwerte duerfen nicht frei interpretiert werden. Sie muessen nach
+Tabellenbuch, Zeichnung und Pruefvorgabe gelesen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Oberflaechenangaben gehoeren zur Zeichnung und koennen pruefrelevant sein.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-ZEI-010::check"
+  fragen={[
+    {
+      id: "rauheit",
+      masterySchluessel: "FK-1-ZEI-010::rauheit",
+      aufgabenstellung: "Was beschreibt eine Rauheitsangabe grundsaetzlich?",
+      optionen: [
+        {
+          id: "flaeche",
+          text: "Die geforderte Beschaffenheit einer Oberflaeche.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Es geht um die Flaechenqualitaet.",
+        },
+        {
+          id: "menge",
+          text: "Die Anzahl der Teile in der Stueckliste.",
+          istKorrekt: false,
+          erklaerung: "Das ist eine Stuecklistenangabe, keine Oberflaechenangabe.",
+        },
+      ],
+    },
+    {
+      id: "quelle",
+      masterySchluessel: "FK-1-ZEI-010::quelle",
+      aufgabenstellung: "Was machst du bei unbekannter Oberflaechensymbolik?",
+      optionen: [
+        {
+          id: "nachsehen",
+          text: "In Tabellenbuch, Zeichnung oder freigegebener Vorgabe klaeren.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Symbole werden nicht geraten.",
+        },
+        {
+          id: "ignorieren",
+          text: "Ignorieren, wenn das Mass stimmt.",
+          istKorrekt: false,
+          erklaerung: "Oberflaechenanforderungen koennen genauso verbindlich sein wie Masse.",
+        },
+      ],
+    },
+  ]}
+/>

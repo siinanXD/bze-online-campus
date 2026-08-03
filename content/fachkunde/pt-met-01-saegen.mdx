@@ -1,0 +1,60 @@
+---
+titel: "Saegen"
+thema_code: "PT-MET"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Saegeverfahren, Schnittspalt und Sicherheitsbezug muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Saegen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Saegeblattarten, Schnittwerte und betriebliche Vorgaben nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Rohmaterial">
+Ein Stab soll auf Laenge getrennt werden. Du pruefst Werkstueckspannung, Saegeblatt, Schnittbereich und
+Spanabfuhr, bevor du den Prozess einordnest.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Saegeblatt", "Schnittspalt", "Span", "Trennen"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Saegen in Alltagssprache">
+Beim Saegen trennt ein Werkzeug das Material. Dabei entsteht ein Schnittspalt und oft Spaene.
+</EinfachErklaert>
+
+<SaegeSchema />
+
+<SaegeTrainer titel="Saegen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Trennen mit vielen Schneiden">
+Saegen gehoert zu den trennenden Verfahren. Saegeblatt, Werkstoff, Einspannung und Schnittfuehrung bestimmen,
+ob der Schnitt sicher und masshaltig ausgefuehrt werden kann.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Zuschnitt">
+Ein Rohling soll vorbereitet werden. Du haeltst ihn nicht mit der Hand, sondern nutzt die vorgesehene
+Einspannung und beachtest den Schnittbereich.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Saegen trennt Werkstoff und braucht sichere Spannung.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-001::check"
+  fragen={[{ id: "trennen", masterySchluessel: "FK-2-MET-001::trennen", aufgabenstellung: "Welche Hauptwirkung hat Saegen?", optionen: [{ id: "trennen", text: "Werkstoff wird getrennt.", istKorrekt: true, erklaerung: "Richtig." }, { id: "kleben", text: "Bauteile werden geklebt.", istKorrekt: false, erklaerung: "Nein. Saegen trennt." }] }]}
+/>

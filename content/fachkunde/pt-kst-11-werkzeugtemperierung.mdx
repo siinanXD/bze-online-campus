@@ -1,0 +1,57 @@
+---
+titel: "Werkzeugtemperierung"
+thema_code: "PT-KST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Temperierkreis, Prozesswirkung und Sicherheitsbezug muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Kunststofftechnik Temperierung"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Werkzeugtemperierung und typische Auswirkungen nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Temperiergeraet">
+Ein Bauteil verzieht sich. Du beachtest Werkzeugtemperierung, Kuehlung und Durchfluss statt nur die Einspritzphase anzuschauen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Werkzeugtemperierung", "Kuehlzeit", "Schwindung", "Verzug"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Temperierung in Alltagssprache">
+Das Werkzeug wird kontrolliert warm oder kalt gehalten, damit Teile gleichmaessiger entstehen und abkuehlen.
+</EinfachErklaert>
+
+<WerkzeugtemperierungSchema />
+
+<WerkzeugtemperierungTrainer titel="Werkzeugtemperierung" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Temperaturfuehrung im Werkzeug">
+Temperiermedium fliesst durch Kanaele im Werkzeug. Die Werkzeugtemperierung beeinflusst Fuellung, Erstarrung, Oberflaeche, Schwindung, Verzug und Zykluszeit.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel geknickter Schlauch">
+Ein Temperierschlauch ist geknickt. Du meldest den Zustand, weil ein instabiler Temperierkreis die Teilequalitaet veraendern kann.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Stabile Werkzeugtemperierung hilft, stabile Teile zu produzieren.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-KST-011::check"
+  fragen={[{ id: "temperierung", masterySchluessel: "FK-2-KST-011::temperierung", aufgabenstellung: "Was beeinflusst die Werkzeugtemperierung?", optionen: [{ id: "richtig", text: "Kuehlung, Oberflaeche und Masshaltigkeit.", istKorrekt: true, erklaerung: "Richtig. Temperierung wirkt direkt auf den Prozess." }, { id: "falsch", text: "Nur die Farbe des Bedienpanels.", istKorrekt: false, erklaerung: "Nein. Das hat keinen fachlichen Prozessbezug." }] }]}
+/>

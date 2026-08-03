@@ -1,0 +1,115 @@
+---
+titel: "Messunsicherheit einfach verstehen"
+thema_code: "PT-MES"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Begriffstiefe und Grenzfallregeln muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Messfehler und Messunsicherheit"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Begriff, Beispiele und betriebliche Grenzfallregeln muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Grenzfall">
+Du misst ein Teil mehrmals. Die Werte liegen sehr nah beieinander, aber nicht exakt gleich. Ausgerechnet
+das Teil liegt nahe an einer Grenze.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Messunsicherheit", "Messwert", "Toleranz", "Pruefen", "Freigabe"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Messunsicherheit in Alltagssprache">
+Ein Messwert ist nicht immer absolut sicher. Messmittel, Werkstueck, Mensch und Umgebung koennen kleine
+Unterschiede verursachen.
+</EinfachErklaert>
+
+<MessunsicherheitSchema />
+
+<MessunsicherheitTrainer titel="Messunsicherheit einfach verstehen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Ergebnis kritisch sehen">
+Messunsicherheit beschreibt, wie verlaesslich ein Messergebnis unter den gegebenen Bedingungen ist.
+Ursachen koennen Messmittel, Ablesung, Temperatur, Schmutz, Werkstuecklage oder Bedienung sein.
+Bei Grenzfaellen wird nach Vorgabe abgesichert statt geraten.
+</FachlichErklaert>
+
+## Typische Einfluesse
+
+| Einfluss | Beispiel |
+|---|---|
+| Messmittel | Aufloesung, Zustand, Kalibrierstatus |
+| Mensch | Schraegblick, zu viel Kraft, falscher Tastpunkt |
+| Werkstueck | Schmutz, Grat, Temperatur |
+| Umgebung | Waerme, Vibration, unstabiler Aufbau |
+
+<Praxisbeispiel titel="Praxisbeispiel knapp an der Grenze">
+Ein Wert liegt knapp im Gutbereich, aber die Messung war unsicher. Du entscheidest nicht allein nach
+Gefuehl, sondern pruefst Messbedingungen und holst bei Bedarf Freigabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Wie Messunsicherheit bewertet wird und was bei Grenzfaellen gilt, muss aus Pruefplan, Tabellenbuch,
+Qualitaetsvorgabe oder Unterweisung kommen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Je naeher am Grenzwert, desto wichtiger ist eine sichere Messung.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MES-011::check"
+  fragen={[
+    {
+      id: "streuung",
+      masterySchluessel: "FK-1-MES-011::streuung",
+      aufgabenstellung: "Was bedeutet es, wenn Wiederholmessungen leicht streuen?",
+      optionen: [
+        {
+          id: "unsicherheit",
+          text: "Die Messunsicherheit muss beachtet werden.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Streuung kann Hinweise auf unsichere Bedingungen geben.",
+        },
+        {
+          id: "egal",
+          text: "Der hoechste Wert ist automatisch richtig.",
+          istKorrekt: false,
+          erklaerung: "Nein. Einzelwerte werden nicht willkuerlich ausgesucht.",
+        },
+      ],
+    },
+    {
+      id: "grenzfall",
+      masterySchluessel: "FK-1-MES-011::grenzfall",
+      aufgabenstellung: "Was machst du bei einem unsicheren Grenzfall?",
+      optionen: [
+        {
+          id: "absichern",
+          text: "Nach Vorgabe absichern und Messbedingungen pruefen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Grenzfaelle brauchen klare Regeln.",
+        },
+        {
+          id: "schoenrechnen",
+          text: "Den Wert passend runden.",
+          istKorrekt: false,
+          erklaerung: "Nein. Schoenrechnen ist keine Pruefung.",
+        },
+      ],
+    },
+  ]}
+/>

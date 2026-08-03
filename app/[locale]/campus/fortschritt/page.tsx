@@ -1,11 +1,14 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { createServerSupabase } from '@bze/db/server';
-import { Card, ProgressRing } from '@bze/ui';
+import { ProgressRing } from '@bze/ui';
 import { ladeFortschrittSeite } from './_lib/queries';
 import { GateZeile } from './_components/gate-zeile';
 import { AbzeichenListe } from './_components/abzeichen-liste';
 
+/**
+ * Fortschritt im Figma-Mobile-Look.
+ */
 export default async function FortschrittPage({
   params,
 }: {
@@ -14,12 +17,14 @@ export default async function FortschrittPage({
   const { locale } = await params;
   const t = await getTranslations('fortschritt');
   const supabase = await createServerSupabase();
-  const { data: { user } } = await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
 
   if (!user) {
     return (
-      <main className="mx-auto max-w-2xl p-4">
-        <p className="text-fg-muted">{t('nichtAngemeldet')}</p>
+      <main className="mx-auto max-w-md px-5 py-6">
+        <p className="text-[14px] text-fg-muted">{t('nichtAngemeldet')}</p>
       </main>
     );
   }
@@ -30,83 +35,87 @@ export default async function FortschrittPage({
   const phaseGates = data.gates.filter((g) => g.ebene === 'phase' || g.ebene === 'pruefungsreife');
 
   return (
-    <main className="mx-auto max-w-2xl space-y-4 p-4">
-      <header className="flex items-center justify-between gap-3 pt-2">
-        <div>
-          <h1 className="text-2xl font-extrabold">{t('titel')}</h1>
-          <p className="text-sm text-fg-muted">{t('untertitel')}</p>
+    <main className="mx-auto flex min-h-full max-w-md flex-col gap-4 px-5 pb-6 pt-3">
+      <header className="flex items-center justify-between gap-3">
+        <div className="min-w-0">
+          <h1 className="text-[22px] font-extrabold leading-7 text-fg">{t('titel')}</h1>
+          <p className="mt-1 text-[14px] text-fg-muted">{t('untertitel')}</p>
         </div>
         <ProgressRing
           value={data.fortschrittBeruf}
-          size={64}
+          size={58}
           label={t('gesamtLabel', { wert: data.fortschrittBeruf })}
         />
       </header>
 
-      <Card className="flex items-center justify-between gap-3">
+      <section className="flex items-center justify-between gap-3 rounded-[16px] border border-border bg-surface p-4">
         <div>
-          <p className="text-sm font-bold uppercase tracking-wide text-primary">{t('lernpunkte')}</p>
-          <p className="text-2xl font-extrabold">{data.lernpunkte}</p>
+          <p className="text-[11px] font-bold uppercase tracking-wide text-primary">{t('lernpunkte')}</p>
+          <p className="text-[22px] font-extrabold text-fg">{data.lernpunkte}</p>
         </div>
         <Link
           href={`/${locale}/campus/fortschritt/pruefungsreife`}
-          className="touchable text-sm font-semibold text-primary underline-offset-4 hover:underline"
+          className="touchable text-[13px] font-semibold text-primary"
         >
-          {t('pruefungsreifeLink')}
+          {t('pruefungsreifeLink')} →
         </Link>
-      </Card>
+      </section>
 
-      {data.empfehlung && (
-        <Card>
-          <p className="mb-1 text-sm font-bold uppercase tracking-wide text-primary">{t('fortsetzen')}</p>
-          <p className="font-semibold">{data.empfehlung.bezeichnung}</p>
-          <p className="text-sm text-fg-muted">
+      {data.empfehlung ? (
+        <section className="rounded-[16px] border border-border bg-surface p-4">
+          <p className="text-[11px] font-bold uppercase tracking-wide text-primary">{t('fortsetzen')}</p>
+          <p className="mt-1 text-[15px] font-bold text-fg">{data.empfehlung.bezeichnung}</p>
+          <p className="mt-1 text-[13px] text-fg-muted">
             {t(`empfehlungGrund.${data.empfehlung.grund}`, { offen: data.empfehlung.kernOffen })}
           </p>
           <Link
             href={`/${locale}/campus/lernen/thema/${data.empfehlung.themaId}`}
-            className="touchable mt-3 inline-flex min-h-12 items-center rounded-lg bg-primary px-4 text-sm font-semibold text-white"
+            className="touchable mt-3 flex min-h-11 items-center justify-center rounded-full bg-primary px-4 text-[14px] font-bold text-fg-onPrimary"
           >
             {t('fortsetzenCta')}
           </Link>
-        </Card>
-      )}
+        </section>
+      ) : null}
 
-      <section className="space-y-2">
-        <h2 className="text-sm font-bold uppercase tracking-wide text-primary">{t('gates.phasen')}</h2>
+      <section className="flex flex-col gap-2">
+        <h2 className="text-[11px] font-bold uppercase tracking-wide text-primary">{t('gates.phasen')}</h2>
         {phaseGates.length === 0 ? (
-          <Card><p className="text-sm text-fg-muted">{t('keineDaten')}</p></Card>
+          <div className="rounded-[16px] border border-border bg-surface p-4">
+            <p className="text-[13px] text-fg-muted">{t('keineDaten')}</p>
+          </div>
         ) : (
           phaseGates.map((g) => <GateZeile key={g.id} gate={g} />)
         )}
       </section>
 
-      <section className="space-y-2">
-        <h2 className="text-sm font-bold uppercase tracking-wide text-primary">{t('gates.fachgebiete')}</h2>
+      <section className="flex flex-col gap-2">
+        <h2 className="text-[11px] font-bold uppercase tracking-wide text-primary">
+          {t('gates.fachgebiete')}
+        </h2>
         {bereichGates.length === 0 ? (
-          <Card><p className="text-sm text-fg-muted">{t('keineFachgebiete')}</p></Card>
+          <div className="rounded-[16px] border border-border bg-surface p-4">
+            <p className="text-[13px] text-fg-muted">{t('keineFachgebiete')}</p>
+          </div>
         ) : (
           bereichGates.map((g) => <GateZeile key={g.id} gate={g} />)
         )}
       </section>
 
-      <section className="space-y-2">
-        <h2 className="text-sm font-bold uppercase tracking-wide text-primary">{t('gates.topics')}</h2>
+      <section className="flex flex-col gap-2">
+        <h2 className="text-[11px] font-bold uppercase tracking-wide text-primary">{t('gates.topics')}</h2>
         {topicGates.length === 0 ? (
-          <Card><p className="text-sm text-fg-muted">{t('keineThemen')}</p></Card>
+          <div className="rounded-[16px] border border-border bg-surface p-4">
+            <p className="text-[13px] text-fg-muted">{t('keineThemen')}</p>
+          </div>
         ) : (
           topicGates.map((g) => (
-            <GateZeile
-              key={g.id}
-              gate={g}
-              href={`/${locale}/campus/lernen/thema/${g.id}`}
-            />
+            <GateZeile key={g.id} gate={g} href={`/${locale}/campus/lernen/thema/${g.id}`} />
           ))
         )}
       </section>
 
-      <section className="space-y-2">
-        <h2 className="text-sm font-bold uppercase tracking-wide text-primary">{t('abzeichen')}</h2>
+      <section className="flex flex-col gap-2">
+        <h2 className="text-[11px] font-bold uppercase tracking-wide text-primary">{t('abzeichen')}</h2>
         <AbzeichenListe items={data.achievements} />
       </section>
     </main>

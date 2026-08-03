@@ -1,0 +1,29 @@
+{
+  "erzeugtAm": "2026-08-01T14:54:04.300Z",
+  "statistik": {
+    "gesamt": 299,
+    "entwurf": 299,
+    "fachlichGeprueft": 0,
+    "freigegeben": 0,
+    "quellenOffen": 299,
+    "bereitFuerFachpruefung": 299,
+    "unvollstaendig": 0
+  },
+  "mdx": {
+    "gesamt": 299,
+    "ohnePflichtbausteine": 0,
+    "quellenOffen": 299,
+    "freigegeben": 0,
+    "ohneErkanntenVisualBlock": [],
+    "ohneTrainerOderQuiz": []
+  },
+  "visualsUi": {
+    "svgElemente": 93,
+    "svgOhneRoleImgUndAriaLabelledby": 0
+  },
+  "hinweise": [
+    "Kontrastmessung im Browser: pnpm design:kontrast (Server muss laufen).",
+    "Mobile-Viewport-Audit bleibt manuell bzw. design:shots.",
+    "Illustrationen: Labels im Frontend/SVG-Text, nicht in Rasterexporten einbrennen."
+  ]
+}

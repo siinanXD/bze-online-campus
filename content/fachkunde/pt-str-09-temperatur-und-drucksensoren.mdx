@@ -1,0 +1,57 @@
+---
+titel: "Temperatur- und Drucksensoren"
+thema_code: "PT-STR"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Sensorwerte, Einheiten, p=F/A-Bezug und Grenzwerte muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch, Sensordatenblatt und betriebliche Prozessvorgabe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Einheiten, Grenzwerte, Messstellen und Reaktionswege nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Prozessdisplay">
+Eine Anzeige meldet Temperatur und Druck. Der Wert ist nur sinnvoll, wenn du Messstelle, Einheit und Grenzwert kennst.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Temperatursensor", "Drucksensor", "Druck", "Grenzwert"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Prozesswerte einfach">
+Temperatursensoren messen Waerme. Drucksensoren messen, wie stark ein Medium oder Prozess drueckt.
+</EinfachErklaert>
+
+<TemperaturDrucksensorenSchema />
+
+<TemperaturDrucksensorenTrainer titel="Temperatur- und Drucksensoren" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Sensorwerte bewerten">
+Temperatur- und Drucksensoren liefern Prozesswerte. Bei Druck gilt als Grundlagenbezug `p = F / A`; konkrete Einheiten, Grenzwerte und Reaktionen kommen aus Datenblatt, Tabellenbuch oder betrieblicher Vorgabe.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Druckwarnung">
+Eine Anlage meldet einen auffaelligen Druckwert. Du verschiebst keinen Grenzwert, sondern pruefst Messstelle, Einheit, Vorgabe und Meldeweg.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Sensorwert ohne Messstelle und Einheit ist nicht bewertbar.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-STR-009::check"
+  fragen={[{ id: "druck", masterySchluessel: "FK-3-STR-009::druck", aufgabenstellung: "Was brauchst du zur Bewertung eines Drucksensorwerts?", optionen: [{ id: "richtig", text: "Messstelle, Einheit, Grenzwert und Vorgabe.", istKorrekt: true, erklaerung: "Richtig. Erst damit ist der Wert fachlich einzuordnen." }, { id: "falsch", text: "Einen frei verschobenen Grenzwert.", istKorrekt: false, erklaerung: "Nein. Grenzwerte sind quellen- und freigabepflichtig." }] }]}
+/>

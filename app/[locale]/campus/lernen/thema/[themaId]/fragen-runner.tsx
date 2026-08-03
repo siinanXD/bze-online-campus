@@ -3,7 +3,7 @@
 import * as React from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { Button, Card, StatusBadge, cn, type FrageStatus } from '@bze/ui';
+import { Button, StatusBadge, cn, type FrageStatus } from '@bze/ui';
 import type { LernFrage, MasteryStatus } from '@bze/core/mastery';
 import { ZurueckIcon } from '@/components/shell/icons';
 import { beantworteMc, type AntwortFeedback } from '../../_actions';
@@ -22,7 +22,7 @@ export interface FragenRunnerProps {
 }
 
 /**
- * Fuehrt Lernende durch eine gespeicherte Multiple-Choice-Fragenrunde.
+ * Figma 04.5–04.8 Frage / Feedback — Multiple-Choice-Runde.
  */
 export function FragenRunner({ queue, backHref, sessionLabel }: FragenRunnerProps) {
   const t = useTranslations('lernen');
@@ -44,25 +44,24 @@ export function FragenRunner({ queue, backHref, sessionLabel }: FragenRunnerProp
 
   if (fertig || !frage) {
     return (
-      <Card className="space-y-4">
+      <div className="flex flex-col gap-4 rounded-[16px] border border-border bg-surface p-5">
         <div>
-          <h2 className="text-lg font-bold">{t('fertig.titel')}</h2>
-          <p className="mt-1 text-fg-muted">
+          <h2 className="text-[20px] font-extrabold text-fg">{t('fertig.titel')}</h2>
+          <p className="mt-1 text-[14px] text-fg-muted">
             {t('fertig.zusammenfassung', { richtig: richtigZahl, gesamt: queue.length })}
           </p>
         </div>
         {backHref && (
           <Link href={backHref} className="block">
-            <Button volleBreite iconLinks={<ZurueckIcon className="h-5 w-5" />}>Zurück zur Auswahl</Button>
+            <Button volleBreite iconLinks={<ZurueckIcon className="h-5 w-5" />}>
+              Zurück zur Auswahl
+            </Button>
           </Link>
         )}
-      </Card>
+      </div>
     );
   }
 
-  /**
-   * Speichert die ausgewaehlte Antwort und zeigt direkt den neuen Mastery-Stand.
-   */
   async function absenden() {
     if (!gewaehlt || pending || !frage) return;
     setPending(true);
@@ -82,9 +81,6 @@ export function FragenRunner({ queue, backHref, sessionLabel }: FragenRunnerProp
     }
   }
 
-  /**
-   * Wechselt zur naechsten Frage der aktuellen Sitzung.
-   */
   function weiter() {
     setFeedback(null);
     setGewaehlt(null);
@@ -98,15 +94,21 @@ export function FragenRunner({ queue, backHref, sessionLabel }: FragenRunnerProp
     ? feedback.ergebnis.status === 'abgeschlossen'
       ? 'Abgeschlossen'
       : `${feedback.ergebnis.streak}/2 richtig in Folge`
-    : 'Ziel: 2x richtig in Folge';
+    : 'Ziel: 2× richtig in Folge';
 
   return (
     <div className="flex min-h-full flex-col gap-3">
       <div className="shrink-0 space-y-2">
         <div className="flex items-center justify-between gap-2 text-sm">
           <div className="min-w-0">
-            {sessionLabel && <p className="truncate text-xs font-bold uppercase text-primary">{sessionLabel}</p>}
-            <p className="font-semibold text-fg-muted">{t('fortschritt', { pos: i + 1, gesamt: queue.length })}</p>
+            {sessionLabel && (
+              <p className="truncate text-[11px] font-bold uppercase tracking-wide text-primary">
+                {sessionLabel}
+              </p>
+            )}
+            <p className="text-[13px] font-semibold text-fg-muted">
+              {t('fortschritt', { pos: i + 1, gesamt: queue.length })}
+            </p>
           </div>
           {backHref && (
             <Link
@@ -119,14 +121,14 @@ export function FragenRunner({ queue, backHref, sessionLabel }: FragenRunnerProp
             </Link>
           )}
         </div>
-        <div className="h-2 overflow-hidden rounded-full bg-bg-subtle" aria-hidden="true">
+        <div className="h-1.5 overflow-hidden rounded-full bg-border" aria-hidden="true">
           <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${prozent}%` }} />
         </div>
       </div>
 
-      <Card className="min-h-0 flex-1 overflow-y-auto p-4">
+      <div className="min-h-0 flex-1 overflow-y-auto rounded-[16px] border border-border bg-surface p-4">
         <div className="mb-3 flex items-center justify-between gap-2">
-          <span className="rounded-full bg-primary-subtle px-2 py-1 text-xs font-bold text-primary">
+          <span className="rounded-full bg-primary-subtle px-2.5 py-1 text-[12px] font-bold text-primary">
             {streakText}
           </span>
           {feedback && (
@@ -137,12 +139,13 @@ export function FragenRunner({ queue, backHref, sessionLabel }: FragenRunnerProp
           )}
         </div>
 
-        <p className="text-[17px] font-bold leading-snug">{frage.aufgabenstellung}</p>
+        <p className="text-[17px] font-bold leading-snug text-fg">{frage.aufgabenstellung}</p>
 
         <div className="mt-4 space-y-2">
-          {frage.optionen.map((option) => {
+          {frage.optionen.map((option, optionIndex) => {
             const istRichtige = feedback?.richtigeOptionId === option.id;
             const istGewaehltFalsch = beantwortet && gewaehlt === option.id && !istRichtige;
+            const buchstabe = String.fromCharCode(65 + optionIndex);
             return (
               <button
                 key={option.id}
@@ -151,18 +154,28 @@ export function FragenRunner({ queue, backHref, sessionLabel }: FragenRunnerProp
                 onClick={() => setGewaehlt(option.id)}
                 aria-pressed={gewaehlt === option.id}
                 className={cn(
-                  'touchable flex w-full items-start gap-2 rounded-lg border p-3 text-start text-[15px] transition',
-                  !beantwortet && gewaehlt === option.id && 'border-primary ring-2 ring-primary',
-                  !beantwortet && gewaehlt !== option.id && 'border-border hover:border-primary',
-                  istRichtige && 'border-status-fertig text-status-fertig',
-                  istGewaehltFalsch && 'border-status-falsch text-status-falsch',
-                  beantwortet && !istRichtige && !istGewaehltFalsch && 'border-border opacity-70',
+                  'touchable flex w-full min-h-12 items-start gap-3 rounded-[14px] border px-3.5 py-3 text-start text-[15px] transition',
+                  !beantwortet && gewaehlt === option.id && 'border-primary bg-primary-subtle ring-2 ring-primary',
+                  !beantwortet && gewaehlt !== option.id && 'border-border bg-bg hover:border-primary',
+                  istRichtige && 'border-status-fertig bg-success-bg text-status-fertig',
+                  istGewaehltFalsch && 'border-status-falsch bg-danger-bg text-status-falsch',
+                  beantwortet && !istRichtige && !istGewaehltFalsch && 'border-border opacity-60',
                 )}
               >
-                <span aria-hidden="true" className="mt-0.5 font-bold">
-                  {istRichtige ? '+' : istGewaehltFalsch ? 'x' : 'o'}
+                <span
+                  aria-hidden="true"
+                  className={cn(
+                    'mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full text-[12px] font-bold',
+                    !beantwortet && gewaehlt === option.id && 'bg-primary text-fg-onPrimary',
+                    !beantwortet && gewaehlt !== option.id && 'bg-bg-subtle text-fg-muted',
+                    istRichtige && 'bg-status-fertig text-white',
+                    istGewaehltFalsch && 'bg-status-falsch text-white',
+                    beantwortet && !istRichtige && !istGewaehltFalsch && 'bg-bg-subtle text-fg-subtle',
+                  )}
+                >
+                  {istRichtige ? '✓' : istGewaehltFalsch ? '✗' : buchstabe}
                 </span>
-                <span>{option.text}</span>
+                <span className="pt-0.5">{option.text}</span>
               </button>
             );
           })}
@@ -175,8 +188,15 @@ export function FragenRunner({ queue, backHref, sessionLabel }: FragenRunnerProp
         )}
 
         {beantwortet && (
-          <div className="mt-4 space-y-2 border-t border-border pt-3 text-sm">
-            <p className="font-semibold">
+          <div
+            className={cn(
+              'mt-4 space-y-2 rounded-[14px] border px-3.5 py-3 text-sm',
+              feedback.ergebnis.ist_korrekt
+                ? 'border-status-fertig/30 bg-success-bg'
+                : 'border-status-falsch/30 bg-danger-bg',
+            )}
+          >
+            <p className="text-[15px] font-bold">
               {feedback.ergebnis.ist_korrekt ? t('feedback.richtig') : t('feedback.falsch')}
             </p>
             {feedback.richtigErklaerung && <p className="text-fg-muted">{feedback.richtigErklaerung}</p>}
@@ -191,15 +211,15 @@ export function FragenRunner({ queue, backHref, sessionLabel }: FragenRunnerProp
             )}
           </div>
         )}
-      </Card>
+      </div>
 
       <div className="shrink-0">
         {!beantwortet ? (
-          <Button className="w-full min-h-12" onClick={absenden} disabled={!gewaehlt || pending}>
+          <Button className="w-full min-h-12 rounded-full" onClick={absenden} disabled={!gewaehlt || pending}>
             {pending ? t('pruefe') : t('antworten')}
           </Button>
         ) : (
-          <Button className="w-full min-h-12" onClick={weiter}>
+          <Button className="w-full min-h-12 rounded-full" onClick={weiter}>
             {t('weiter')}
           </Button>
         )}

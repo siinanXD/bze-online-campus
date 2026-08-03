@@ -1,0 +1,221 @@
+---
+titel: "Messschieber sicher verwenden"
+thema_code: "PT-MES"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "uebungswerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer den Vertical Slice. Ein Ausbilder muss fachliche Aussagen, Fundstellen und Uebungswerte vor einer produktiven Nutzung freigeben."
+quellen:
+  - titel: "Tabellenbuch Metall mit Formelsammlung"
+    verlag: "Europa-Lehrmittel"
+    auflage: "50. Auflage 2025 (Europa-Nr. 10609)"
+    seite: "S. [vom Ausbilder]"
+    status: "offen"
+    hinweis: "Konkrete Tabellenbuchseite/Fundstelle muss vor Freigabe eingetragen werden."
+  - titel: "BZE-Uebungszeichnung Messbolzen"
+    seite: "Zeichnungswert [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Die Mess- und Toleranzwerte sind technische Uebungswerte, keine freigegebenen Produktionswerte."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden", "tabellenbuch_finden"]} />
+
+<StoryEinstieg titel="Situation an der Maschine">
+Du bekommst ein frisch gefertigtes Teil aus der Drehmaschine. Auf der Zeichnung steht ein Mass.
+Dein Ausbilder sagt: "Pruef zuerst mit dem Messschieber, ob das Teil im Toleranzfeld liegt."
+Bevor du misst, musst du wissen, welche Messschenkel du benutzt und wie du den Messwert sauber abliest.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Messschieber", "Aussenmessung", "Innenmessung", "Tiefenmessung", "Hauptskala", "Nonius", "Nennmass", "Toleranz"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Messschieber in Alltagssprache">
+Ein Messschieber ist wie ein sehr genauer Lineal-Schieber. Du legst das Werkstueck zwischen zwei
+Schenkel und schiebst vorsichtig zu. Dann liest du auf der Skala ab, wie breit, innen gross oder tief
+etwas ist.
+</EinfachErklaert>
+
+<MessschieberSchema />
+
+<InteraktiverMessschieber
+  titel="Aussenmass am Messschieber einstellen"
+  startwertMm={19.9}
+  nennmassMm={20}
+  oberesAbmassMm={0.1}
+  unteresAbmassMm={-0.05}
+  quellenHinweis="Uebungswerte aus der BZE-Uebungszeichnung Messbolzen. Reale Grenzwerte immer aus Zeichnung, Pruefplan oder Tabellenbuch uebernehmen."
+/>
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Fachliche Erklaerung">
+Ein Messschieber ist ein mechanisches Pruefmittel zur direkten Laengenmessung an Werkstuecken.
+Mit ihm werden Aussenmasse, Innenmasse und Tiefenmasse geprueft, sofern Genauigkeit und
+Messbereich fuer die Aufgabe ausreichen. In der Produktion ist der Messschieber wichtig, weil
+Bediener damit schnell erkennen, ob ein Teil innerhalb der Zeichnungsvorgabe liegt oder ob eine
+Freigabe, Nacharbeit oder Sperrung noetig ist.
+</FachlichErklaert>
+
+## Messarten erkennen
+
+| Messart | Wofuer? | Worauf achten? |
+|---|---|---|
+| Aussenmessung | Breite, Durchmesser, Dicke | Messschenkel gerade anlegen, nicht verkanten |
+| Innenmessung | Bohrung oder Nut innen | Innenmessschenkel sauber spreizen |
+| Tiefenmessung | Tiefe einer Nut oder Bohrung | Tiefenmass plan aufsetzen |
+
+<Praxisbeispiel titel="Praxisbeispiel Drehmaschine">
+Nach dem Plandrehen pruefst du den Aussendurchmesser eines Bolzens. Du reinigst zuerst das Teil und
+die Messflaechen, setzt den Messschieber rechtwinklig an und liest den Wert ruhig ab. Wenn der Wert
+auffaellig ist, veraenderst du nicht einfach die Maschine, sondern meldest die Abweichung und pruefst
+nach Vorgabe noch einmal.
+</Praxisbeispiel>
+
+## Toleranz kurz mitdenken
+
+Eine Zeichnung gibt nicht nur ein Wunschmass an. Sie gibt oft auch an, wie weit das Istmass vom
+Nennmass abweichen darf. Nur wenn der Messwert zwischen unterem und oberem Grenzmass liegt, ist das
+Teil in Ordnung.
+
+<InteraktivesToleranzfeld
+  titel="Istmass gegen Grenzmasse entscheiden"
+  nennmassMm={20}
+  oberesAbmassMm={0.1}
+  unteresAbmassMm={-0.05}
+  startIstmassMm={20.04}
+  quellenHinweis="Uebungswerte aus der BZE-Uebungszeichnung Messbolzen. Reale Grenzwerte immer aus Zeichnung, Pruefplan oder Tabellenbuch uebernehmen."
+/>
+
+<Formelkarte
+  name="Oberes und unteres Grenzmass"
+  formel="oberes Grenzmass = Nennmass + oberes Abmass; unteres Grenzmass = Nennmass + unteres Abmass"
+  einheiten="Nennmass, Abmasse und Grenzmasse stehen in derselben Laengeneinheit, meistens mm."
+  verwendung="Wenn auf der Zeichnung ein Nennmass mit oberem und unterem Abmass angegeben ist."
+  beispiel="Steht auf einer freigegebenen Uebungszeichnung 20,00 mm mit +0,10 mm und -0,05 mm, dann liegen die Grenzmasse bei 20,10 mm und 19,95 mm."
+  typischerFehler="Plus- und Minuszeichen vertauschen oder mm und cm mischen."
+  tabellenbuchHinweis="Allgemeine Regeln und Symbole im Tabellenbuch nachschlagen; konkrete Grenzmasse kommen aus der Zeichnung."
+/>
+
+<TabellenbuchHinweis>
+Messgenauigkeit, Toleranzangaben und Passungssymbole werden nicht geraten. Schlage die Bedeutung im
+Tabellenbuch nach und nutze fuer konkrete Werte immer Zeichnung, Pruefplan oder Betriebsanweisung.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Erst Messflaechen reinigen, dann gerade anlegen, ruhig ablesen und erst danach bewerten.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-MES-005::check"
+  fragen={[
+    {
+      id: "messart-aussen",
+      masterySchluessel: "FK-1-MES-005::messart-aussen",
+      aufgabenstellung: "Welche Messart nutzt du fuer den Aussendurchmesser eines Bolzens?",
+      optionen: [
+        {
+          id: "aussenmessung",
+          text: "Aussenmessung mit den grossen Messschenkeln",
+          istKorrekt: true,
+          erklaerung: "Richtig. Die grossen Messschenkel liegen aussen am Werkstueck an.",
+        },
+        {
+          id: "innenmessung",
+          text: "Innenmessung mit den kleinen Messschenkeln",
+          istKorrekt: false,
+          erklaerung: "Innenmessung nutzt du fuer Bohrungen oder Nuten, nicht fuer den Aussendurchmesser.",
+        },
+        {
+          id: "tiefenmessung",
+          text: "Tiefenmessung mit der Tiefenstange",
+          istKorrekt: false,
+          erklaerung: "Tiefenmessung ist fuer Nuten oder Bohrungstiefen gedacht.",
+        },
+      ],
+    },
+    {
+      id: "ablesen-gerade",
+      masterySchluessel: "FK-1-MES-005::ablesen-gerade",
+      aufgabenstellung: "Warum darfst du den Messschieber beim Ablesen nicht schraeg halten?",
+      optionen: [
+        {
+          id: "wert-verfaelscht",
+          text: "Weil Verkanten und schraeges Ablesen den Messwert verfaelschen koennen",
+          istKorrekt: true,
+          erklaerung: "Richtig. Der Messschieber muss gerade sitzen, sonst passt der abgelesene Wert nicht sicher zum Bauteil.",
+        },
+        {
+          id: "skala-verschwindet",
+          text: "Weil die Hauptskala sonst nicht mehr sichtbar ist",
+          istKorrekt: false,
+          erklaerung: "Die Skala bleibt sichtbar. Das Problem ist der falsche Messkontakt und der Blickwinkel.",
+        },
+        {
+          id: "nonius-blockiert",
+          text: "Weil der Nonius mechanisch blockiert",
+          istKorrekt: false,
+          erklaerung: "Der Nonius blockiert dadurch nicht automatisch. Entscheidend ist die Messabweichung.",
+        },
+      ],
+    },
+    {
+      id: "grenzmasse-rechnen",
+      masterySchluessel: "FK-1-MES-005::grenzmasse-rechnen",
+      aufgabenstellung: "Eine freigegebene Uebungszeichnung nennt 20,00 mm, oberes Abmass +0,10 mm und unteres Abmass -0,05 mm. Welche Grenzmasse ergeben sich?",
+      optionen: [
+        {
+          id: "og-2010-ug-1995",
+          text: "Oberes Grenzmass 20,10 mm und unteres Grenzmass 19,95 mm",
+          istKorrekt: true,
+          erklaerung: "Richtig. Oberes Grenzmass = 20,00 mm + 0,10 mm; unteres Grenzmass = 20,00 mm - 0,05 mm.",
+        },
+        {
+          id: "og-1990-ug-2005",
+          text: "Oberes Grenzmass 19,90 mm und unteres Grenzmass 20,05 mm",
+          istKorrekt: false,
+          erklaerung: "Hier sind Plus und Minus vertauscht. Das obere Grenzmass muss groesser als das untere sein.",
+        },
+        {
+          id: "og-2001-ug-1995",
+          text: "Oberes Grenzmass 20,01 mm und unteres Grenzmass 19,95 mm",
+          istKorrekt: false,
+          erklaerung: "0,10 mm sind zehn Hundertstel, also 20,10 mm, nicht 20,01 mm.",
+        },
+      ],
+      tabellenbuchHinweis: "Die Zahlen sind Uebungswerte aus der Zeichnung, keine Normwerte.",
+    },
+    {
+      id: "freigabe-aenderung",
+      masterySchluessel: "FK-1-MES-005::freigabe-aenderung",
+      aufgabenstellung: "Welche Aenderung darfst du nicht ohne Freigabe machen?",
+      optionen: [
+        {
+          id: "parameter-korrektur",
+          text: "Maschinenparameter oder Werkzeugkorrekturen eigenmaechtig veraendern",
+          istKorrekt: true,
+          erklaerung: "Richtig. Wenn der Betrieb dafuer eine Freigabe verlangt, meldest du die Abweichung und handelst nach Vorgabe.",
+        },
+        {
+          id: "messflaechen-reinigen",
+          text: "Messflaechen vor der Messung reinigen",
+          istKorrekt: false,
+          erklaerung: "Reinigen ist Teil einer sauberen Messung und braucht normalerweise keine gesonderte Freigabe.",
+        },
+        {
+          id: "nochmal-pruefen",
+          text: "Einen auffaelligen Messwert noch einmal pruefen",
+          istKorrekt: false,
+          erklaerung: "Nachpruefen ist sinnvoll. Kritisch wird es erst, wenn du ohne Freigabe in den Prozess eingreifst.",
+        },
+      ],
+    },
+  ]}
+/>

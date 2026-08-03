@@ -1,0 +1,57 @@
+---
+titel: "OEE verbessern"
+thema_code: "PT-OEE"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Verlustkategorien und Massnahmenkatalog muessen fachlich freigegeben werden."
+quellen:
+  - titel: "OEE-Standard, KVP-Unterlagen und Betriebsdaten"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Verlustarten und Beispielmassnahmen nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation in der Verbesserungsrunde">
+Die OEE ist zu niedrig. Jetzt darf nicht geraten werden. Erst wird der groesste Verlust gefunden, dann die Massnahme.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["OEE","Verlust","Massnahme","Stillstandszeit","KVP"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Verlust zuerst finden">
+OEE verbessert man, indem man den groessten Verlust angeht: Stopps, zu langsame Takte oder Ausschuss.
+</EinfachErklaert>
+
+<OeeVerbessernSchema />
+
+<OeeVerbessernTrainer titel="OEE verbessern" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Verbesserung ueber Verlustursachen">
+OEE-Verbesserung startet mit der Zerlegung in Verfuegbarkeit, Leistungsgrad und Qualitaetsrate. Danach werden Ursachen priorisiert und Massnahmen auf Wirksamkeit geprueft. Kennzahlen allein aendern nichts.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel kurze Stopps">
+Viele Mikrostopps senken die Verfuegbarkeit. Das Team verbessert Materialbereitstellung und 5S am Platz, danach wird die OEE erneut ausgewertet.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Erst Verlust finden, dann Massnahme pruefen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-OEE-005::check"
+  fragen={[{ id: "005", masterySchluessel: "FK-4-OEE-005::kern", aufgabenstellung: "Was ist der sinnvolle erste Schritt zur OEE-Verbesserung?", optionen: [{ id: "richtig", text: "Den groessten Verlustfaktor und seine Ursache finden.", istKorrekt: true, erklaerung: "Richtig. Ohne Verlustbild bleibt Verbesserung Zufall." }, { id: "falsch", text: "Sofort alle Parameter ohne Daten aendern.", istKorrekt: false, erklaerung: "Nein. Ohne Analyse entsteht neues Risiko." }] }]}
+/>

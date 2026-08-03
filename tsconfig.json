@@ -48,6 +48,9 @@
       ],
       "@bze/core/content": [
         "./packages/core/content/index.ts"
+      ],
+      "@bze/core/fachkunde": [
+        "./packages/core/fachkunde/index.ts"
       ]
     },
     "lib": [

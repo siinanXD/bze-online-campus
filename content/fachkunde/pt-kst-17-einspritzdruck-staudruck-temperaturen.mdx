@@ -1,0 +1,57 @@
+---
+titel: "Einspritzdruck, Staudruck, Temperaturen"
+thema_code: "PT-KST"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Parameterbegriffe muessen mit Tabellenbuch, Datenblatt und Prozessvorgabe freigegeben werden."
+quellen:
+  - titel: "Materialdatenblatt und Maschinenprozessvorgabe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Druck- und Temperaturwerte duerfen nur aus freigegebenen Quellen uebernommen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Einstellblatt">
+Auf dem Einstellblatt stehen Druck- und Temperaturparameter. Du lernst, die Begriffe zu unterscheiden, ohne Werte zu raten.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Einspritzdruck", "Staudruck", "Zylinder", "Werkzeugtemperierung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Parameter in Alltagssprache">
+Druck und Temperatur beschreiben, wie die Schmelze vorbereitet und in das Werkzeug gebracht wird. Konkrete Zahlen brauchen eine Quelle.
+</EinfachErklaert>
+
+<SpritzgiessParameterSchema />
+
+<SpritzgiessParameterTrainer titel="Einspritzdruck, Staudruck, Temperaturen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Parameter im Zusammenhang lesen">
+Einspritzdruck wirkt beim Fuellen, Staudruck beim Plastifizieren und Dosieren. Zylinder- und Werkzeugtemperaturen beeinflussen Schmelzezustand, Fuellung und Abkuehlung.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel fehlender Wert">
+Ein Wert fehlt im Auftrag. Du setzt keinen Erfahrungswert ein, sondern klaerst Datenblatt, Tabellenbuch oder freigegebene Prozessvorgabe.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Druck- und Temperaturwerte sind quellenpflichtig.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-KST-017::check"
+  fragen={[{ id: "quelle", masterySchluessel: "FK-2-KST-017::quelle", aufgabenstellung: "Wie gehst du mit konkreten Temperaturen um?", optionen: [{ id: "richtig", text: "Aus freigegebener Quelle uebernehmen.", istKorrekt: true, erklaerung: "Richtig. Zahlenwerte sind quellenpflichtig." }, { id: "falsch", text: "Nach Gefuehl einstellen.", istKorrekt: false, erklaerung: "Nein. Prozesswerte werden nicht geraten." }] }]}
+/>

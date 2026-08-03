@@ -1,0 +1,120 @@
+---
+titel: "Verhalten bei Unfall und Beinaheunfall"
+thema_code: "PT-SIC"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Betriebliche Notruf-, Erste-Hilfe- und Dokumentationswege muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Unfallmeldung und Erste Hilfe"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Betriebliche Rufnummern, Ersthelfer, Meldewege und Dokumentation muessen vor Freigabe eingetragen werden."
+  - titel: "BZE-Unterweisung Arbeitssicherheit"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit ersetzt keine Erste-Hilfe-Unterweisung."
+---
+
+<WissensstufenLeiste stufen={["auswendig_wissen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation nach einem Vorfall">
+Ein Teil rutscht aus einer Vorrichtung und trifft fast den Kollegen. Niemand ist verletzt. Trotzdem ist das
+nicht egal: Ein Beinaheunfall zeigt, dass beim naechsten Mal jemand verletzt werden kann.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Erste Hilfe", "Beinaheunfall", "Meldeweg", "Verbandbuch", "Dokumentieren"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Erst sichern, dann melden">
+Bei Unfall oder Beinaheunfall wird nicht vertuscht und nicht einfach weitergearbeitet. Zuerst wird weitere
+Gefahr verhindert, dann Hilfe geholt, gemeldet und nach Vorgabe dokumentiert.
+</EinfachErklaert>
+
+<UnfallMeldeketteSchema />
+
+<UnfallMeldeTrainer titel="Unfall und Beinaheunfall einordnen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Melden verhindert Wiederholung">
+Unfaelle und Beinaheunfaelle sind wichtige Sicherheitsinformationen. Die Meldung hilft, Ursachen zu klaeren,
+Gefahrstellen zu beseitigen und Wiederholungen zu verhindern. Die betriebliche Dokumentation richtet sich
+nach Vorgabe, zum Beispiel ueber Meldeweg, Ersthelfer oder Verbandbuch.
+</FachlichErklaert>
+
+## Grundfolge
+
+| Schritt | Ziel |
+|---|---|
+| Sichern | Weitere Gefahr verhindern |
+| Hilfe holen | Ersthelfer, Ausbilder oder Notruf nach Vorgabe erreichen |
+| Erste Hilfe | Verletzte Person unterstuetzen, ohne dich selbst zu gefaehrden |
+| Melden | Verantwortliche informieren |
+| Dokumentieren | Vorfall nachvollziehbar festhalten |
+
+<Praxisbeispiel titel="Praxisbeispiel Beinaheunfall">
+Ein Werkstueck faellt knapp neben den Fuss. Du sagst nicht "Ist ja nichts passiert", sondern meldest den
+Beinaheunfall. So kann die Ursache geklaert werden.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Betriebliche Notrufnummern, Ersthelfer, Meldewege und Dokumentationspflichten muessen aus der lokalen
+Unterweisung uebernommen und fachlich freigegeben werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Unfall und Beinaheunfall werden gemeldet. Sicherheit lernt aus Vorfaellen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-SIC-010::check"
+  fragen={[
+    {
+      id: "beinaheunfall",
+      masterySchluessel: "FK-1-SIC-010::beinaheunfall",
+      aufgabenstellung: "Warum wird ein Beinaheunfall gemeldet?",
+      optionen: [
+        {
+          id: "risiko",
+          text: "Weil er ein Risiko zeigt, bevor jemand verletzt wird.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Beinaheunfaelle helfen, Ursachen zu beseitigen.",
+        },
+        {
+          id: "egal",
+          text: "Gar nicht, wenn niemand verletzt wurde.",
+          istKorrekt: false,
+          erklaerung: "Das Risiko bleibt bestehen und muss nach Vorgabe gemeldet werden.",
+        },
+      ],
+    },
+    {
+      id: "erste-reaktion",
+      masterySchluessel: "FK-1-SIC-010::erste-reaktion",
+      aufgabenstellung: "Was steht bei einem Unfall zuerst im Vordergrund?",
+      optionen: [
+        {
+          id: "sichern-hilfe",
+          text: "Weitere Gefahr sichern und Hilfe holen.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Niemand soll zusaetzlich gefaehrdet werden.",
+        },
+        {
+          id: "weiterarbeiten",
+          text: "Erst den Auftrag fertig machen.",
+          istKorrekt: false,
+          erklaerung: "Sicherheit und Hilfe haben Vorrang vor Produktion.",
+        },
+      ],
+    },
+  ]}
+/>

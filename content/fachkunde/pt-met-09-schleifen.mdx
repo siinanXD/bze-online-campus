@@ -1,0 +1,59 @@
+---
+titel: "Schleifen"
+thema_code: "PT-MET"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Schleifscheiben, Schutz und Prozesswerte muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Schleifen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Schleifwerte, Scheibendaten und Schutzvorgaben nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Schleifstelle">
+Beim Schleifen entstehen feine Spaene, Waerme und manchmal Funken. Du achtest auf Schutz, Werkstueck,
+Scheibenzustand und Vorgabe.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Schleifscheibe", "Korn", "Waermeausdehnung", "Schutz"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Schleifen in Alltagssprache">
+Eine Schleifscheibe hat viele harte Koerner. Sie tragen Material ab.
+</EinfachErklaert>
+
+<SchleifenSchema />
+
+<SchleifenTrainer titel="Schleifen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Viele Schneiden im Korn">
+Schleifen ist ein trennendes Verfahren mit vielen unbestimmten Schneiden. Waerme, Schleifscheibenzustand,
+Schutzhaube und Werkstueckspannung sind sicherheitsrelevant.
+</FachlichErklaert>
+
+<TabellenbuchHinweis>
+Scheibendaten, Zustellung und Prozesswerte sind quellenpflichtig.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Beim Schleifen schneiden viele Koerner.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-009::check"
+  fragen={[{ id: "korn", masterySchluessel: "FK-2-MET-009::korn", aufgabenstellung: "Womit traegt die Schleifscheibe Material ab?", optionen: [{ id: "korn", text: "Mit Schleifkoernern.", istKorrekt: true, erklaerung: "Richtig." }, { id: "kleber", text: "Mit Klebstoff.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

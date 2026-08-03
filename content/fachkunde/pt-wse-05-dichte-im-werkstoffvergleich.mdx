@@ -1,0 +1,78 @@
+---
+titel: "Dichte im Werkstoffvergleich"
+thema_code: "PT-WSE"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Dichtewerte und Rechenbeispiele muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Dichte"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Konkrete Dichtewerte duerfen erst nach Quellenabgleich genutzt werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Materialvergleich">
+Zwei gleich grosse Teile fuehlen sich unterschiedlich schwer an. Du erkennst: Dichte verbindet Masse und
+Volumen.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Dichte", "Masse", "Volumen", "Werkstoff", "Tabellenbuch"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Dichte in Alltagssprache">
+Dichte sagt, wie viel Masse in einem bestimmten Volumen steckt.
+</EinfachErklaert>
+
+<DichteVergleichSchema />
+
+<DichteVergleichTrainer titel="Dichte im Werkstoffvergleich" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Masse und Volumen zusammen denken">
+Dichte ist Masse bezogen auf Volumen. Bei gleicher Bauteilgroesse kann ein Werkstoff leichter oder schwerer
+sein. Rechenwerte werden aus Tabellenbuch, Datenblatt oder Aufgabe entnommen.
+</FachlichErklaert>
+
+<Formelkarte titel="Grundformel Dichte" formel="rho = m / V">
+Nutze die Formel erst mit freigegebenen Werten und passenden Einheiten.
+</Formelkarte>
+
+<Praxisbeispiel titel="Praxisbeispiel Werkstoffwechsel">
+Ein Bauteil soll leichter werden. Du pruefst nicht nur die Masse, sondern auch Festigkeit, Funktion,
+Freigabe und Zeichnungsvorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Dichtewerte sind quellenpflichtig. Dieser Entwurf nennt keine konkreten Materialwerte.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Dichte vergleicht Masse mit Volumen.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-WSE-005::check"
+  fragen={[
+    {
+      id: "formel",
+      masterySchluessel: "FK-1-WSE-005::formel",
+      aufgabenstellung: "Welche Groessen verbindet Dichte?",
+      optionen: [
+        { id: "mv", text: "Masse und Volumen.", istKorrekt: true, erklaerung: "Richtig." },
+        { id: "farbe", text: "Farbe und Oberflaeche.", istKorrekt: false, erklaerung: "Nein. Das beschreibt keine Dichte." },
+      ],
+    },
+  ]}
+/>

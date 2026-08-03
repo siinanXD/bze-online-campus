@@ -1,0 +1,57 @@
+---
+titel: "Pruefplan lesen"
+thema_code: "PT-QS"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Aufbau und Pflichtfelder des betrieblichen Pruefplans muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Betrieblicher Pruefplan"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Pruefplanfelder, Merkmalslogik und Dokumentationsorte nach Traegervorgabe ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation mit vielen Angaben">
+Auf dem Pruefplan stehen mehrere Merkmale. Du musst erkennen, was geprueft wird, womit geprueft wird und wo du das Ergebnis eintraegst.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Pruefplan", "Merkmal", "Pruefmittel", "Protokoll"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Pruefplan in Alltagssprache">
+Der Pruefplan ist deine Checkliste fuer die Qualitaetspruefung: was, womit, wann und wo dokumentieren.
+</EinfachErklaert>
+
+<PruefplanLesenSchema />
+
+<PruefplanLesenTrainer titel="Pruefplan lesen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Merkmale aus Vorgabe entnehmen">
+Ein Pruefplan legt Pruefmerkmale, Pruefmittel, Pruefhaeufigkeit, Grenzwerte und Dokumentationsanforderungen fest. Er verhindert, dass Merkmale nach Gefuehl ausgewaehlt werden.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel falsches Messmittel">
+Du willst schnell mit dem Messschieber pruefen. Im Pruefplan steht aber eine Lehre. Dann verwendest du die vorgegebene Pruefmethode oder fragst nach.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Der Pruefplan sagt, was zaehlt.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-QS-004::check"
+  fragen={[{ id: "merkmal", masterySchluessel: "FK-3-QS-004::merkmal", aufgabenstellung: "Woher nimmst du das zu pruefende Merkmal?", optionen: [{ id: "richtig", text: "Aus Pruefplan, Zeichnung oder freigegebener Vorgabe.", istKorrekt: true, erklaerung: "Richtig. Pruefmerkmale brauchen eine Quelle." }, { id: "falsch", text: "Aus dem Teil, das dir am wichtigsten aussieht.", istKorrekt: false, erklaerung: "Nein. Sichtbarer Eindruck ersetzt keine Vorgabe." }] }]}
+/>

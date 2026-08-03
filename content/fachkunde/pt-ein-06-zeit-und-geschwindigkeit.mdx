@@ -1,0 +1,113 @@
+---
+titel: "Zeit und Geschwindigkeit"
+thema_code: "PT-EIN"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "beispielwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Formelzeichen, Beispielwerte und Prozessbezug muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Bewegungsformeln"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Geschwindigkeitsformeln und Einheiten muessen vor Freigabe abgeglichen werden."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation am Foerderband">
+Ein Teil bewegt sich auf einem Foerderband. Wenn du wissen willst, wie schnell es ist, brauchst du den Weg
+und die Zeit.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Zeit", "Geschwindigkeit", "Laenge", "Einheit", "Umrechnung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Geschwindigkeit in Alltagssprache">
+Geschwindigkeit sagt, wie viel Weg in einer bestimmten Zeit geschafft wird. Gleicher Weg in weniger Zeit
+bedeutet groessere Geschwindigkeit.
+</EinfachErklaert>
+
+<GeschwindigkeitSchema />
+
+<GeschwindigkeitTrainer titel="Zeit und Geschwindigkeit" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Weg pro Zeit">
+Geschwindigkeit beschreibt das Verhaeltnis von Weg zu Zeit. Vor Rechnungen muessen Weg- und Zeiteinheiten
+passen. Im Betrieb kann das bei Foerderbaendern, Vorschueben, Bewegungen und Prozesszeiten wichtig sein.
+</FachlichErklaert>
+
+## Grundzusammenhang
+
+| Groesse | Bedeutung |
+|---|---|
+| Weg | Zurueckgelegte Strecke |
+| Zeit | Benoetigte Dauer |
+| Geschwindigkeit | Weg pro Zeit |
+
+<Praxisbeispiel titel="Praxisbeispiel Taktzeit">
+Ein Teil legt auf dem Foerderband dieselbe Strecke schneller zurueck als vorher. Dann hat sich die
+Geschwindigkeit erhoeht oder die Zeit verringert.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Formelzeichen, Einheiten und Umstellungen fuer Bewegungsaufgaben muessen nach Tabellenbuch oder
+freigegebenem Skript gelesen werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Geschwindigkeit ist Weg geteilt durch Zeit.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-EIN-006::check"
+  fragen={[
+    {
+      id: "formel",
+      masterySchluessel: "FK-1-EIN-006::formel",
+      aufgabenstellung: "Welche Grundformel beschreibt Geschwindigkeit im Lernbeispiel?",
+      optionen: [
+        {
+          id: "v",
+          text: "v = Weg / Zeit.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Geschwindigkeit verbindet Weg und Zeit.",
+        },
+        {
+          id: "a",
+          text: "A = Laenge x Breite.",
+          istKorrekt: false,
+          erklaerung: "Das ist eine Flaechenformel.",
+        },
+      ],
+    },
+    {
+      id: "weniger-zeit",
+      masterySchluessel: "FK-1-EIN-006::weniger-zeit",
+      aufgabenstellung: "Was passiert bei gleicher Strecke und weniger Zeit?",
+      optionen: [
+        {
+          id: "groesser",
+          text: "Die Geschwindigkeit wird groesser.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Derselbe Weg wird schneller geschafft.",
+        },
+        {
+          id: "gleich",
+          text: "Die Geschwindigkeit bleibt immer gleich.",
+          istKorrekt: false,
+          erklaerung: "Nein. Zeit und Geschwindigkeit haengen zusammen.",
+        },
+      ],
+    },
+  ]}
+/>

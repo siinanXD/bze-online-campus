@@ -1,0 +1,59 @@
+---
+titel: "Stanzen und Schneiden"
+thema_code: "PT-MET"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Schnittspalt, Grat, Werkzeugteile und Schutzbereiche muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Stanzen und Schneiden"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Schnittspalt, Werkzeugdaten und Sicherheitsvorgaben nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Stanzwerkzeug">
+Blech liegt im Werkzeug. Stempel und Matrize trennen das Material. Du haeltst Abstand vom Schutzbereich und
+pruefst die Schnittkante.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Stempel", "Matrize", "Grat", "Schnittspalt"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Stanzen in Alltagssprache">
+Ein Stempel drueckt Material durch oder gegen eine Matrize. Dadurch wird geschnitten oder ausgestanzt.
+</EinfachErklaert>
+
+<StanzenSchneidenSchema />
+
+<StanzenSchneidenTrainer titel="Stanzen und Schneiden" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Schneiden im Werkzeug">
+Stanzen und Schneiden sind trennende Verfahren. Stempel, Matrize, Schnittspalt und Werkstoff beeinflussen
+Schnittbild, Grat und Prozesssicherheit.
+</FachlichErklaert>
+
+<TabellenbuchHinweis>
+Schnittspalt, Werkzeugfreigabe und Schutzvorgaben werden aus freigegebenen Unterlagen uebernommen.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Stanzwerkzeuge trennen Material und haben klare Gefahrbereiche.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-010::check"
+  fragen={[{ id: "werkzeug", masterySchluessel: "FK-2-MET-010::werkzeug", aufgabenstellung: "Welche Werkzeugteile gehoeren zum Stanzen?", optionen: [{ id: "stempel", text: "Stempel und Matrize.", istKorrekt: true, erklaerung: "Richtig." }, { id: "riemen", text: "Riemen und Riemenscheibe.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

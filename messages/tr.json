@@ -187,7 +187,9 @@
   },
   "topic": {
     "uebersicht": {
-      "kicker": "Konu"
+      "kicker": "Konu",
+      "lernpfad": "Öğrenme yolu",
+      "fortschrittKurz": "{gelesen}/{gesamt}"
     },
     "abschnitte": {
       "fachkundeLesen": "Meslek bilgisini oku",
@@ -315,6 +317,14 @@
       "liste": "Bölüm listesi"
     },
     "lerneinheit": {
+      "zurueckLernpfad": "← Öğrenme yolu",
+      "pruefungsrelevanz": "Sınav önemi: {stufe}",
+      "pruefungsrelevanzStufen": {
+        "niedrig": "düşük",
+        "mittel": "orta",
+        "hoch": "yüksek",
+        "sehr_hoch": "çok yüksek"
+      },
       "quellenTitel": "Kaynaklar",
       "lesezeitHinweis": "Bu, tahmini okuma süresinden hızlı oldu. Emin değilseniz bir daha göz atın — yine de devam edebilirsiniz.",
       "demoHinweis": "Örnek içerik: Okuma ilerlemeniz burada kaydedilmez.",

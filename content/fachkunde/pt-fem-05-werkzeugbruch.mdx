@@ -1,0 +1,57 @@
+---
+titel: "Werkzeugbruch"
+thema_code: "PT-FEM"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Sofortmassnahmen, Sperrlogik und Meldeweg bei Werkzeugbruch muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Betriebsanweisung Werkzeugbruch"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Sicherheitsablauf, Teiletrennung und Freigaberollen nach Betriebsvorgabe ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation im laufenden Prozess">
+Beim Bearbeiten bricht ein Werkzeug. Ab jetzt geht es nicht um Tempo, sondern um Sicherheit, Teiletrennung und Meldung.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Werkzeugbruch", "Bruch", "Sperrung", "Meldeweg"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Werkzeugbruch in Alltagssprache">
+Wenn ein Werkzeug bricht, stoppst du sicher, trennst betroffene Teile und meldest den Fall nach Vorgabe.
+</EinfachErklaert>
+
+<WerkzeugbruchSchema />
+
+<WerkzeugbruchTrainer titel="Werkzeugbruch" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Sofortmassnahmen vor Serienfortsetzung">
+Werkzeugbruch kann Teile beschaedigen, Masse veraendern und Sicherheitsrisiken erzeugen. Betroffene Teile werden gesperrt, Werkzeug und Maschine geprueft und der Vorfall dokumentiert.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel unklare Teile">
+Nach einem Bohrerbruch liegen mehrere Teile aus der letzten Minute bereit. Du gibst sie nicht frei, sondern trennst sie fuer Pruefung und Entscheidung.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Nach Werkzeugbruch ist erst Sicherheit, dann Pruefung, dann Freigabe.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-FEM-005::check"
+  fragen={[{ id: "stop", masterySchluessel: "FK-3-FEM-005::stop", aufgabenstellung: "Was ist bei Werkzeugbruch richtig?", optionen: [{ id: "richtig", text: "Sicher stoppen, Teile sperren und melden.", istKorrekt: true, erklaerung: "Richtig. Bruch ist ein Sofortmassnahmenfall." }, { id: "falsch", text: "Mit dem Restwerkzeug weiterfahren.", istKorrekt: false, erklaerung: "Nein. Das gefaehrdet Qualitaet und Sicherheit." }] }]}
+/>

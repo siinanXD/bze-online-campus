@@ -1,0 +1,64 @@
+---
+titel: "Werkzeugdaten sicher uebernehmen"
+thema_code: "PT-FER"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Tabellenbuchpfad, Werkzeugdaten und betriebliche Freigabe muessen fachlich geprueft werden."
+quellen:
+  - titel: "Werkzeugdatenblatt und Tabellenbuch"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "vc, n, Vorschub und Einsatzgrenzen nur aus freigegebener Quelle uebernehmen."
+---
+
+<WissensstufenLeiste stufen={["tabellenbuch", "anwenden"]} />
+
+<StoryEinstieg titel="Situation mit Tabellenwert">
+Du brauchst einen Schnittwert. Statt aus Erinnerung zu handeln, gleichst du Werkzeug, Werkstoff, Verfahren und
+Quelle ab.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Werkzeugdaten", "Schnittgeschwindigkeit", "Drehzahl", "Vorschub", "Tabellenbuch"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Werkzeugdaten in Alltagssprache">
+Werkzeugdaten sagen, wie ein Werkzeug sinnvoll eingesetzt wird. Du uebernimmst sie aus einer freigegebenen
+Quelle.
+</EinfachErklaert>
+
+<WerkzeugdatenSchema />
+
+<WerkzeugdatenTrainer titel="Werkzeugdaten sicher uebernehmen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Datenpfad pruefen">
+Werkzeugdaten haengen von Werkzeug, Schneidstoff, Werkstoff, Verfahren, Maschine und Zielqualitaet ab. Wenn
+Angaben fehlen oder widerspruechlich sind, wird Rueckfrage gestellt.
+</FachlichErklaert>
+
+<Formelkarte titel="Typische Datenfelder" formel="vc, n, f, vf">
+Die Formelzeichen sind Orientierung. Konkrete Zahlenwerte duerfen erst nach Quellenabgleich eingesetzt werden.
+</Formelkarte>
+
+<TabellenbuchHinweis>
+Werkzeugdaten nicht aus dem Kopf uebernehmen, wenn Quelle, Werkstoff oder Werkzeug nicht eindeutig sind.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Werkzeugdaten sind Quellenarbeit, kein Ratespiel.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-FER-009::check"
+  fragen={[{ id: "quelle", masterySchluessel: "FK-2-FER-009::quelle", aufgabenstellung: "Was machst du bei unklaren Werkzeugdaten?", optionen: [{ id: "rueckfrage", text: "Quelle klaeren oder Rueckfrage stellen.", istKorrekt: true, erklaerung: "Richtig." }, { id: "merken", text: "Wert aus Erinnerung nehmen.", istKorrekt: false, erklaerung: "Nein. Das ist nicht sicher." }] }]}
+/>

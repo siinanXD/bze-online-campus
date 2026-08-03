@@ -1,0 +1,58 @@
+---
+titel: "Walzen"
+thema_code: "PT-MET"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenpflichtig"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Walzspalt, Dickenbezug und Schutzvorgaben muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Walzen"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Walzparameter und Beispiele nach Quelle pruefen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation am Walzspalt">
+Ein Band laeuft zwischen zwei Walzen. Der Spalt beeinflusst die Dicke. In den Walzbereich greifst du nicht.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Walze", "Walzspalt", "Umformen", "Oberflaechenanforderung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Walzen in Alltagssprache">
+Beim Walzen wird Material zwischen drehenden Walzen umgeformt.
+</EinfachErklaert>
+
+<WalzenSchema />
+
+<WalzenTrainer titel="Walzen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Umformen im Spalt">
+Walzen ist ein Umformverfahren. Walzspalt, Werkstoff, Temperatur, Richtung und Oberflaeche beeinflussen das
+Ergebnis.
+</FachlichErklaert>
+
+<TabellenbuchHinweis>
+Dickenwerte, Walzbedingungen und Prozessparameter sind quellenpflichtig.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+Der Walzspalt bestimmt die Umformung wesentlich mit.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-MET-012::check"
+  fragen={[{ id: "spalt", masterySchluessel: "FK-2-MET-012::spalt", aufgabenstellung: "Was beeinflusst der Walzspalt?", optionen: [{ id: "dicke", text: "Die Dicke des Werkstuecks.", istKorrekt: true, erklaerung: "Richtig." }, { id: "farbe", text: "Nur die Farbe.", istKorrekt: false, erklaerung: "Nein." }] }]}
+/>

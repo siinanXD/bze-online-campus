@@ -1,0 +1,57 @@
+---
+titel: "Produktionsfreigabe"
+thema_code: "PT-PRO"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 2. Freigaberegeln, Sperrung und Serienstart muessen fachlich geprueft werden."
+quellen:
+  - titel: "Betriebliche Freigabeanweisung Produktion"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Freigaberolle, Sperrkennzeichnung und Dokumentationsweg nach Betriebsvorgabe ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen", "anwenden"]} />
+
+<StoryEinstieg titel="Situation vor Serienstart">
+Das Erstteil wurde geprueft. Jetzt muss klar entschieden werden, ob die Produktion starten darf oder ob Teile gesperrt werden.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Produktionsfreigabe", "Freigabe", "Sperrung", "Ausschuss"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Freigabe in Alltagssprache">
+Freigabe bedeutet: Die richtigen Personen haben geprueft und entschieden, dass es weitergehen darf.
+</EinfachErklaert>
+
+<ProduktionsfreigabeSchema />
+
+<ProduktionsfreigabeTrainer titel="Produktionsfreigabe" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Entscheidung fuer oder gegen Serienlauf">
+Produktionsfreigabe basiert auf Vorbereitung, Pruefergebnis und Vorgabe. Auffaellige Teile oder unsichere Prozesse werden gesperrt und geklaert.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel ungepruefte Teile">
+Ein Karton wurde vor der Freigabe gefuellt. Du kennzeichnest und klaerst die Teile, damit sie nicht unbemerkt in den Gutbestand gelangen.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Ohne Freigabe kein Serienlauf.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-2-PRO-008::check"
+  fragen={[{ id: "serie", masterySchluessel: "FK-2-PRO-008::serie", aufgabenstellung: "Was passiert ohne Produktionsfreigabe?", optionen: [{ id: "richtig", text: "Serienlauf wird nicht als freigegeben gestartet.", istKorrekt: true, erklaerung: "Richtig. Erst pruefen und freigeben." }, { id: "falsch", text: "Fehlerhafte Teile laufen einfach weiter.", istKorrekt: false, erklaerung: "Nein. Auffaelliges wird gesperrt oder geklaert." }] }]}
+/>

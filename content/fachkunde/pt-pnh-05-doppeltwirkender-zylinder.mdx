@@ -1,0 +1,57 @@
+---
+titel: "Doppeltwirkender Zylinder"
+thema_code: "PT-PNH"
+lesedauer_minuten: 8
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "quellenwert"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 3. Anschluesse, Endlagensignale, Drosselung und Bewegungszeiten muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Tabellenbuch Metall/Mechatronik, Pneumatikplan und Maschinenunterlage"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Anschlussbezeichnungen, Bewegungszeiten, Drosselvorgaben und zulaessige Einstellungen nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["verstehen"]} />
+
+<StoryEinstieg titel="Situation an der Schiebeeinheit">
+Eine Schiebeeinheit faehrt aktiv vor und aktiv zurueck. Im Plan erkennst du zwei Luftanschluesse am Zylinder und ein Wegeventil, das die Luftseiten wechselt.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Pneumatikzylinder", "Doppeltwirkend", "Ventil", "Drossel", "Endschalter"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Zwei Richtungen mit Luft">
+Beim doppeltwirkenden Zylinder gibt es Druckluft fuer beide Bewegungen. Eine Seite wird belueftet, die andere muss entlueften.
+</EinfachErklaert>
+
+<DoppeltwirkenderZylinderSchema />
+
+<DoppeltwirkenderZylinderTrainer titel="Doppeltwirkender Zylinder" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Zwei Arbeitsraeume und definierte Bewegungen">
+Ein doppeltwirkender Zylinder hat zwei Arbeitsraeume. Je nach Ventilstellung wird eine Seite mit Druckluft versorgt, waehrend die andere Seite entlueftet. Drosseln, Endlagensignale und mechanische Last beeinflussen den Ablauf und werden nach Vorgabe bewertet.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel faehrt aus, aber nicht ein">
+Wenn ein doppeltwirkender Zylinder nur in eine Richtung arbeitet, beschreibst du Ventilstellung, Luftanschluesse, Abluftweg, Endlagensignal und mechanische Blockade als moegliche Pruefpunkte. Schlaeuche werden nicht blind vertauscht.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Doppeltwirkend: ein Anschluss fuer Ausfahren, ein Anschluss fuer Einfahren.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-3-PNH-005::check"
+  fragen={[{ id: "doppeltwirkend", masterySchluessel: "FK-3-PNH-005::doppeltwirkend", aufgabenstellung: "Was ist typisch fuer einen doppeltwirkenden Zylinder?", optionen: [{ id: "richtig", text: "Er kann aktiv ausfahren und aktiv einfahren.", istKorrekt: true, erklaerung: "Richtig. Beide Bewegungsrichtungen werden durch Druckluft gesteuert." }, { id: "falsch", text: "Er darf bei falscher Richtung durch Schlauchtausch ausprobiert werden.", istKorrekt: false, erklaerung: "Nein. Schlauch- und Ventilaenderungen brauchen einen sicheren Freigabeweg." }] }]}
+/>

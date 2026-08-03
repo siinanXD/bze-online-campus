@@ -1,0 +1,57 @@
+---
+titel: "Arbeitsfolge planen"
+thema_code: "PT-PLA"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 4. Betriebliche Arbeitsplanlogik, Pruefschritte und Freigabeweg muessen fachlich freigegeben werden."
+quellen:
+  - titel: "Traegerskript, Arbeitsplan-Muster und betriebliche Ablaufvorgaben"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Arbeitsfolge, Betriebsmittel und Pruefschritte nach Quelle ergaenzen."
+---
+
+<WissensstufenLeiste stufen={["anwenden"]} />
+
+<StoryEinstieg titel="Situation mit Prozesskarten">
+Der Auftrag ist klar. Jetzt muss das Team festlegen, welche Arbeit zuerst kommt, welche Maschine gebraucht wird und wann geprueft wird.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["Arbeitsfolge", "Arbeitsgang", "Arbeitsplan", "Betriebsmittel", "Pruefschritt"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Reihenfolge hat einen Grund">
+Arbeitsfolge bedeutet: Die Arbeitsschritte stehen in sinnvoller Reihenfolge. Manche Schritte muessen vor anderen passieren, sonst passt das Ergebnis nicht.
+</EinfachErklaert>
+
+<ArbeitsfolgePlanenSchema />
+
+<ArbeitsfolgePlanenTrainer titel="Arbeitsfolge planen" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="Arbeitsfolge als Ablaufentscheidung">
+Eine Arbeitsfolge ordnet Arbeitsgaenge, Betriebsmittel, Pruefungen und Freigaben. Sie beruecksichtigt technische Abhaengigkeiten, Sicherheit, Qualitaet und Materialfluss. Pruefschritte werden dort eingeplant, wo Abweichungen noch sinnvoll erkannt und behandelt werden koennen.
+</FachlichErklaert>
+
+<Praxisbeispiel titel="Praxisbeispiel Bohrung vor Beschichtung">
+Eine Bohrung muss vor einer Oberflaechenbehandlung eingebracht werden. Wird die Reihenfolge vertauscht, kann die Beschichtung beschaedigt werden oder die Bohrung erfuellt die Vorgabe nicht mehr.
+</Praxisbeispiel>
+
+<Merksatz titel="Merksatz">
+Arbeitsfolge ist geplante Logik: erst lesen, dann begruenden, dann ausfuehren.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-4-PLA-002::check"
+  fragen={[{ id: "folge", masterySchluessel: "FK-4-PLA-002::folge", aufgabenstellung: "Warum darf eine Arbeitsfolge nicht frei gemischt werden?", optionen: [{ id: "richtig", text: "Weil Arbeitsschritte technische Abhaengigkeiten und Pruefzeitpunkte haben.", istKorrekt: true, erklaerung: "Richtig. Reihenfolge, Betriebsmittel und Pruefung gehoeren zusammen." }, { id: "falsch", text: "Weil immer zuerst der kuerzeste Schritt kommen muss.", istKorrekt: false, erklaerung: "Nein. Die technische und fachliche Logik ist wichtiger als reine Schrittlaenge." }] }]}
+/>

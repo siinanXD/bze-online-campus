@@ -1,0 +1,118 @@
+---
+titel: "Sicherheitsdatenblatt nutzen"
+thema_code: "PT-UMW"
+lesedauer_minuten: 9
+review_status: "entwurf"
+fragen_status: "freigegeben"
+zahlenwerte_status: "keine_zahlenwerte"
+fachliche_freigabe:
+  erforderlich: true
+  freigegeben_von: null
+  freigegeben_am: null
+  hinweis: "Entwurf fuer Kapitel 1. Konkrete SDB-Abschnitte und betriebliche Ablageorte muessen durch einen Ausbilder freigegeben werden."
+quellen:
+  - titel: "Sicherheitsdatenblatt [Stoff vom Ausbilder einzutragen]"
+    seite: "Abschnitt [vom Ausbilder einzutragen]"
+    status: "offen"
+    hinweis: "Ein reales Sicherheitsdatenblatt muss vor Freigabe hinterlegt werden."
+  - titel: "BZE-Unterweisung Gefahrstoffe"
+    seite: "Kapitel [vom Ausbilder freizugeben]"
+    status: "offen"
+    hinweis: "Diese Einheit trainiert Navigation und ersetzt keine Stofffreigabe."
+---
+
+<WissensstufenLeiste stufen={["tabellenbuch_finden", "anwenden"]} />
+
+<StoryEinstieg titel="Situation nach Hautkontakt">
+Ein Betriebsstoff ist auf deine Haut gekommen. Du brauchst schnell die richtige Information: Was tun? Welche
+Schutzmassnahme? Wo steht Entsorgung? Das Sicherheitsdatenblatt hilft beim gezielten Finden.
+</StoryEinstieg>
+
+<BegriffListe begriffe={["SDB", "Gefahrstoff", "Erste Hilfe", "PSA", "Entsorgung"]} />
+
+## Sehr einfach erklaert
+
+<EinfachErklaert titel="Datenblatt als Nachschlagewerk">
+Das Sicherheitsdatenblatt ist kein Text zum Raten. Du suchst den passenden Abschnitt: Gefahr, Erste Hilfe,
+Handhabung, PSA oder Entsorgung.
+</EinfachErklaert>
+
+<SicherheitsdatenblattSchema />
+
+<SicherheitsdatenblattTrainer titel="Passenden SDB-Abschnitt finden" />
+
+## Fachlich richtig erklaert
+
+<FachlichErklaert titel="SDB gibt Stoffinformationen">
+Ein Sicherheitsdatenblatt beschreibt Eigenschaften, Gefahren, Schutzmassnahmen, Verhalten bei Unfaellen,
+Lagerung, Handhabung und Entsorgung eines Stoffs. Im Betrieb muss klar sein, wo das aktuelle SDB zu finden ist.
+</FachlichErklaert>
+
+## Orientierung
+
+| Frage | Gesuchter Abschnitt |
+|---|---|
+| Was ist gefaehrlich? | Gefahren |
+| Was tun bei Kontakt? | Erste Hilfe |
+| Welche PSA? | Schutzmassnahmen |
+| Wie lagern oder handhaben? | Handhabung |
+| Wie entsorgen? | Entsorgung |
+
+<Praxisbeispiel titel="Praxisbeispiel Spritzer">
+Nach einem Spritzer suchst du nicht im Internet, sondern nutzt die betriebliche Ablage und meldest den Vorfall
+nach Vorgabe.
+</Praxisbeispiel>
+
+<TabellenbuchHinweis>
+Die echte Abschnittsnummer und der Ablageort des SDB muessen betrieblich eingetragen und freigegeben werden.
+</TabellenbuchHinweis>
+
+<Merksatz titel="Merksatz">
+SDB nicht blind lesen: passende Frage stellen, richtigen Abschnitt finden.
+</Merksatz>
+
+## Mini-Wissenscheck
+
+<MiniWissenscheck
+  id="FK-1-UMW-004::check"
+  fragen={[
+    {
+      id: "psa-abschnitt",
+      masterySchluessel: "FK-1-UMW-004::psa-abschnitt",
+      aufgabenstellung: "Wo suchst du im SDB nach vorgeschriebener PSA?",
+      optionen: [
+        {
+          id: "schutz",
+          text: "Bei Schutzmassnahmen/PSA.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Dort stehen Schutzinformationen zum Stoff.",
+        },
+        {
+          id: "zufall",
+          text: "Irgendwo im Datenblatt.",
+          istKorrekt: false,
+          erklaerung: "Gezieltes Suchen ist schneller und sicherer.",
+        },
+      ],
+    },
+    {
+      id: "hautkontakt",
+      masterySchluessel: "FK-1-UMW-004::hautkontakt",
+      aufgabenstellung: "Welcher Abschnitt ist bei Hautkontakt besonders wichtig?",
+      optionen: [
+        {
+          id: "erste-hilfe",
+          text: "Erste Hilfe.",
+          istKorrekt: true,
+          erklaerung: "Richtig. Dort stehen Sofortmassnahmen nach Kontakt.",
+        },
+        {
+          id: "preis",
+          text: "Lieferpreis.",
+          istKorrekt: false,
+          erklaerung: "Das ist keine Sicherheitsinformation im SDB.",
+        },
+      ],
+    },
+  ]}
+/>
